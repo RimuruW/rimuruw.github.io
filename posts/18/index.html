@@ -1,0 +1,290 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
+  Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
+ 有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
+ 具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料  即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
+如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思。一般来说，安装过程也不会出现什么技术难点。
+如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
+如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
+为什么写这篇教程？  该部分内容还处于编辑中
+ ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。"><title>Arch Linux + Windows 双系统安装教程</title><link rel=canonical href=https://blog.qingxu.live/posts/18/><link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="Arch Linux + Windows 双系统安装教程"><meta property="og:description" content="在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
+  Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
+ 有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
+ 具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料  即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
+如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思。一般来说，安装过程也不会出现什么技术难点。
+如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
+如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
+为什么写这篇教程？  该部分内容还处于编辑中
+ ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。"><meta property="og:url" content="https://blog.qingxu.live/posts/18/"><meta property="og:site_name" content="清絮的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Arch Linux"><meta property="article:published_time" content="2020-03-25T11:56:38+00:00"><meta property="article:modified_time" content="2020-03-25T11:56:38+00:00"><meta name=twitter:site content="QingxuMo"><meta name=twitter:title content="Arch Linux + Windows 双系统安装教程"><meta name=twitter:description content="在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
+  Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
+ 有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
+ 具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料  即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
+如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思。一般来说，安装过程也不会出现什么技术难点。
+如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
+如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
+为什么写这篇教程？  该部分内容还处于编辑中
+ ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。"><link rel="shortcut icon" href=img/favicon.ico></head><body><script>(function(){const colorSchemeKey='StackColorScheme';if(!localStorage.getItem(colorSchemeKey)){localStorage.setItem(colorSchemeKey,"auto");}})();</script><script>(function(){const colorSchemeKey='StackColorScheme';const colorSchemeItem=localStorage.getItem(colorSchemeKey);const supportDarkMode=window.matchMedia('(prefers-color-scheme: dark)').matches===true;if(colorSchemeItem=='dark'||colorSchemeItem==='auto'&&supportDarkMode){document.body.dataset.scheme='dark';}else{document.body.dataset.scheme='light';}})();</script><div class="container main-container flex on-phone--column extended article-page with-toolbar"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header class=site-info><figure class=site-avatar><img src=/img/avatar_hu27ccc19b65f346fcf34441b370c4340e_204950_300x0_resize_q75_box.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+<span class=emoji>✨</span></figure><h1 class=site-name><a href=https://blog.qingxu.live>清絮的博客</a></h1><h2 class=site-description>人生如逆旅，我亦是行人。</h2></header><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>首页</span></a></li><li><a href=/talk><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="13" y1="20" x2="20" y2="13"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><span>说说</span></a></li><li><a href=/archives><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>归档</span></a></li><li><a href=/links><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>友链</span></a></li><li><a href=/about><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/search><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>搜索</span></a></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Dark Mode</span></li></ol></aside><main class="main full-width"><div id=article-toolbar><a href=https://blog.qingxu.live class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>Back</span></a></div><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/linux/>Linux</a>
+<a href=/categories/arch-linux/>Arch Linux</a></header><h2 class=article-title><a href=/posts/18/>Arch Linux + Windows 双系统安装教程</a></h2><footer class=article-time><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--published>Mar 25, 2020</time></footer></div></header><section class=article-content><blockquote><p>在安装Arch Linux之前，相信你已经对它有了充分的了解
+<strong>这不是一个对新手友好的Linux发行版</strong>，可这并不影响它在世界各地受到热烈欢迎</p></blockquote><blockquote><p><strong>Note:</strong> 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。</p></blockquote><h2 id=有些话必须放在前面>有些话必须放在前面……</h2><p><strong>无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版</strong>。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：</p><ul><li>具有基本阅读理解水平，至少要能跟着教程来</li><li>掌握电脑基础使用，能够正常开关机</li><li>对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了）</li><li>能够面对满屏的命令行保持基本冷静</li><li>具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误</li><li>已经查阅相关资料，对 Linux 发行版和桌面环境有所了解</li><li>有一定自主操作能力，能根据自己实际情况解决相应问题</li><li>出现突发情况，能够自行解决或者上网查阅相关资料</li></ul><p>即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前<strong>包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux</strong>，何况是 Arch Linux + Windows 双系统。</p><p>如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，<strong>大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思</strong>。一般来说，<strong>安装过程也不会出现什么技术难点</strong>。</p><p>如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。</p><p>如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。</p><h2 id=为什么写这篇教程>为什么写这篇教程？</h2><blockquote><p>该部分内容还处于编辑中</p></blockquote><h2 id=iso-镜像烧录>ISO 镜像烧录</h2><ul><li>Windows 建议使用 <a class=link href=http://rufus.akeo.ie/downloads/ target=_blank rel=noopener>Rufus</a> 烧录镜像。</li></ul><blockquote><p>Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</p></blockquote><blockquote><p>注意，在某些 Linux 可用的软碟通(UItraISO)<strong>不适用于</strong> Arch Linux</p></blockquote><ol><li><p>下载完成后，双击打开该文件，允许 Rufus 联网检查程序更新。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/6d1d86f6e363c.png alt=检查更新></p></li><li><p>插入你的 U 盘，在 <strong>设备</strong> 选项框中选择你的 U 盘（当然你也可以用别的设备）（以下图片均为示例）。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/0f603f3cf3f5f.png alt=选择设备></p></li><li><p>在 <strong>引导类型选择</strong> 下选择 <strong>镜像文件（请选择）</strong>（默认），然后单击右侧的 <strong>选择</strong> 来选择弄下载的镜像。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/f1f580a8a0ff3.png alt></p></li><li><p><strong>持久分区大小</strong> 默认，<strong>分区类别</strong> 请根据你的设备来进行选择。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/69aa1ec442d7a.png alt=示例></p></li><li><p>格式化选项保持默认即可，单击开始来进行下一步。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/5377133faa985.png alt=示例></p></li><li><p>选择 <strong>以 ISO 镜像 模式写入（推荐）</strong>，单击 OK 进行下一步。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/ea1b166c824e3.png alt></p></li><li><p>单机开始来烧录镜像。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/b3191015dc98e.png alt=示例></p></li><li><p>等待烧录完成即可。（下图即为烧录完成的一个示例）</p><p><img src=https://global.cdn.mikupics.cn/2020/04/07/7b7db13921e76.png alt=示例></p></li></ol><ul><li>Linux 使用 dd 指令 ：</li></ul><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash> dd <span class=k>if</span><span class=o>=</span>ISO镜像位置 <span class=nv>of</span><span class=o>=</span>/dev/sdX <span class=nv>bs</span><span class=o>=</span>4M
+</code></pre></div><p><code>/dev/sdX </code>为用作启动盘的U盘标识。
+输入如下指令确定获取电脑硬盘信息，所获取的信息中应该包含U盘标识
+<code>sudo fdisk -l</code></p><h2 id=目的>目的</h2><p>话说，都准备装 Arch Linux 了，那肯定是为了 Windows+Arch Linux 双系统啊~~</p><h2 id=启动前准备工作>启动前准备工作</h2><p>首先打开电脑启动到 Windows。不管是 Windows XP 还是 Windows7 或 10，<em>操作是一样的</em>。(话说，现在也不会有 Windows XP 的用户吧？Arch Linux 官方不支持 32 位已经很多年了……)
+接着右键“我的电脑”，点击“管理”。Windows 10 默认貌似是“此电脑”（或者你把它改成了别的名字）。
+总之用鼠标右键这玩意，然后点“管理”，然后在出现的界面，点“磁盘管理”。
+这个界面显示的是你电脑上安装的所有存储设备的情况。
+<em>不止是电脑的硬盘</em>，其余如光驱和 U 盘（如果已经插入）也会在此处显示。</p><p><img src=https://global.cdn.mikupics.cn/2020/04/08/7fe58c1243b16.png alt=示例></p><p>一般情况下，在该界面中，深蓝色的分区是主分区，浅蓝色的分区是扩展分区，绿色的是空闲没有使用的空间。我们现在要做的是看看哪个分区里面资料少，空间大，能够空出来给我们的 Arch Linux 使用。</p><blockquote><p><em>以下分为两种情况处理</em></p></blockquote><ul><li><p>如果分区空间不是特别充裕，建议把最后一个分区空出来，即把该分区的数据全部备份到其他电脑分区然后把空出来的分区删掉。
+注意，<em>是删掉整个分区，不是格式化!!</em>
+方法是，右键你要删除的分区，然后点击“删除卷”再确认。注意，该操作会擦除该分区的所有数据，而且过程不可逆。操作完成后该分区就会变成成绿色的“可用空间”。这就是为 Arch Linux 准备好的空间。</p></li><li><p>如果你的 Windows 下的分区空闲空间足够大，则可以从空闲空间里压缩一部分空间来安装 Arch Linux。
+先在磁盘管理器（上图界面）中该分区上点右键，然后点“压缩卷”，会让你输入一个数值。这个数值是以 MB 为单位，输入的是你要分割出来的空间大小。这个数值最大不能超过该分区的空闲空间大小。
+然后点击确定，接着会有一个整理数据和分割的过程，等它整理完“空闲空间”出现就完成了。</p></li></ul><blockquote><p>提醒：<strong>不同分区压缩出来的空闲空间不会合并在一起给你用。所以，不要想着从每个分区里拿一个空间出来凑足需要的空闲空间。</strong></p></blockquote><p>关于这个空间的大小，我认为对于初步的接触和学习来说，至少要 30G 以上。安装基本系统及其他一些后面讲到的目录，需要 15-20GB 左右，再加上一个至少相当于你内存大小，最好是内存 2 倍大的交换空间（你内存够大当然也可以不要），还有将来在 Linux 下供用户使用的空间<code>/home</code>。
+所以如果小于 30G 但是在 20G 以上，安装当然没有问题，不过<em>基本上没有空间给用户存储数据使用了</em>。(如果你安装系统只是为了装 B 而非日用，当我没说)</p><h2 id=禁用快速启动和安全启动>禁用快速启动和安全启动</h2><blockquote><p>该部分内容还处于编辑中</p></blockquote><h2 id=电脑环境>电脑环境</h2><p>进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。</p><ul><li>电脑使用传统BIOS引导+MBR分区，且电脑已经安装一个运行正常的Windows。电脑无与Arch Linux安装有关的硬件问题。</li><li>电脑使用UEFI引导+GPT分区，且电脑已经安装一个运行正常的Windows。电脑无与Arch Linux安装有关的硬件问题。</li></ul><h2 id=启动盘使用>启动盘使用</h2><p>首先让电脑从 U 盘启动。</p><blockquote><p>你问怎么从 U 盘启动？？我建议你点击此<a class=link href=https://www.baidu.com target=_blank rel=noopener>链接</a>获取帮助
+如果你的电脑旧到不支持从 U 盘启动……
+建议还是换台电脑吧…</p></blockquote><p>从U盘启动后电脑会出现一个新界面，传统BIOS启动和UEFI启动在该界面显示结果不一样。</p><p>BIOS 启动界面：</p><p><img src=https://global.cdn.mikupics.cn/2020/04/08/4cda84d1a6d0c.png alt=BIOS></p><p>​ UEFI 启动界面：</p><p><img src=https://global.cdn.mikupics.cn/2020/04/08/303179878abc6.png alt=UEFI></p><p>无论你是哪种启动，用光标选中第一项然后回车即可启动镜像。
+启动成功后你应该看到如图所示界面：
+<img src=https://global.cdn.mikupics.cn/2020/04/08/bf76fecd4806a.png alt=示例></p><blockquote><p>如果未出现该提示符，则可能是启动盘出现了问题，建议重新烧录镜像…</p></blockquote><h2 id=连接网络>连接网络</h2><ul><li>如果你能连接有线网络，则直接用网线连接</li><li>如果你没有网线，则必须通过 WiFi 连接
+在终端输入如下指令
+<code>wifi-menu</code>
+此时电脑会自动搜索附近的可用 WiFi
+剩下的就是输入 WiFi 密码，连接 WiFi 了</li></ul><blockquote><p><em>如果无搜索结果可能是你打错了指令或网卡挂了，你可以尝试用手机USB共享网络或插无线网卡</em></p></blockquote><blockquote><p>如果你的 WiFi 是用 <em>WPA2-Enterpise</em> 验证的（输入用户名和密码连接网络），那还是放弃吧…… wifi-menu 目前貌似还不支持这个……</p></blockquote><ul><li>如果你没有有线网络也没有 WiFi，建议你下次安装</li></ul><p>为了检测电脑是否连接上网络，我们可以输入如下指令
+<code>ping www.baidu.com</code>
+ping 后面的网址可以是任何国内可以直连的网址。
+如果已连接上网络，则电脑会疯狂输出一大堆 balabala 的结果。反之则只有简单的<code>Timeout</code>报错或长时间无输出结果。
+此时按<code>Ctrl+C</code>以中止输出。</p><h2 id=确定电脑的启动方式>确定电脑的启动方式</h2><p>（<em>如果你已经确定电脑启动方式则可忽略此步骤</em>）
+目前电脑的启动方式只有 UEFI 启动和传统 BIOS 启动
+在终端输入如下指令
+<code>efivar -l</code>
+如果电脑疯狂输出满屏 balabala 的东西，则电脑说明是 UEFI 启动；反之则是传统 BIOS 启动。</p><blockquote><p>注意，不同启动方式在后续部分操作上也会有所不同!!
+<strong>请务必认真检测并记住自己电脑的启动方式！！</strong></p></blockquote><blockquote><p>其实一般情况下是不需要专门步骤验证的……因为两种启动方式差距太明显…比如UEFI和传统BIOS从U盘启动的界面是不一样的。</p></blockquote><h2 id=准备硬盘分区>准备硬盘分区</h2><blockquote><p>对于双系统而言，最麻烦的一部分无疑就是硬盘分区和双系统引导。完成这部分需要读者拥有发育健全的大脑并且有一定的自主操作能力。</p></blockquote><p>你可以先输入<code>fdisk -l</code>查看当前电脑硬盘的状态。
+输出结果中的/dev/sdX 代表的是你电脑的硬盘。</p><blockquote><p>（<em>输出结果不可能真的出现<code>/dev/sdX</code>，此处的 X 只是代表如 a、b、c 这样的符号，如数学中用字母代替数的作用</em>）</p></blockquote><blockquote><p>如果你的电脑只有一个硬盘，你的输出结果应该仅含 <code>/dev/sda</code>和<code>/dev/sdb</code>。
+其中，<code>/dev/sda</code> 代表的是你电脑的硬盘，<code>/dev/sdb </code>代表的是你的启动盘（U 盘）。
+<code>/dev/sda</code> 后的数字，如<code>/dev/sda1</code>，则代表<code>/dev/sda</code> 这个磁盘下的第几个分区。
+如果这是一块新硬盘或者已经清空的硬盘的话，你大概看不到 <code>/dev/sda1 </code>这样的分区。</p></blockquote><blockquote><p>如果你看到了一些其它的东西,
+比如<code>/dev/nvme0n1</code> 这样的，则代表你的电脑上有一块 NVMe SSD
+如果是<code>/dev/mmcblk0</code> 这样的，则代表你的电脑上有 eMMC 存储
+此时你的启动盘可能会被归为 <code>/dev/sda </code>，所以<strong>下面要根据你自己实际情况操作</strong></p></blockquote><p><del>再有其他情况我也不知道了</del></p><h2 id=对硬盘进行分区>对硬盘进行分区</h2><p>在终端输入如下指令
+<code>cfdisk /dev/sda</code>
+此时屏幕应该显示你电脑的第一块硬盘的信息。
+同时，屏幕底部会显示几个［xxx］，其中有</p><pre><code>[ Delete ] [ New ] [ Quit ] [ Help ] [ Write ] [ Dump ]
+</code></pre><p>这几个［xxx］的意思分别是</p><pre><code>[删除] [新建] [退出] [帮助] [写入] [转储]
+</code></pre><p>（如果你有尚可的英语水平，你应该可以看懂的）</p><blockquote><p>如果你电脑有多块硬盘且需要对非第一块硬盘进行分区，则应该指明是是哪块硬盘。如，需要对第二块硬盘进行分区，你的指令应该为<code>cfdisk /dev/sdb</code></p></blockquote><p>在硬盘信息处，应该出现一个绿色的<code>Free space</code>，这个就是你在 Windows 中压缩给 Arch Linux 的空间。
+将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，以新建分区。</p><blockquote><p>新建分区需要手动输入分区大小。
+例如新建一个30G大小的分区，你应该将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，敲回车后输入<code>30G</code>，然后回车确认</p></blockquote><p>对于双系统来说，你应该分以下几个区</p><ul><li><code>/mnt</code>分区，即根目录，用来存储系统和将来安装的软件，这个分区一般需要20G-50G，根据你的需求和剩余空间大小而定。</li><li><code>/boot</code>分区，用来存储启动信息，该分区一般200M足够。
+<strong>UEFI引导在这时不要分出<code>/boot</code>分区，因为要双系统启动需要把Windows的EFI分区挂载到<code>/boot</code>上。</strong></li><li><code>/swap</code>分区，交换分区，相当于Windows的虚拟内存。该分区大小视电脑内存大小而定。电脑小于或等于2G内存则建议设为内存大小的2倍及以上(不过太大也没有意义)。电脑内存大于2G可以设置为内存大小。如果你的内存足够大，也可以考虑不分这个区</li><li><code>/home</code>分区，即用户分区，用于存储用户的数据。该分区是用户自己数据存储的地方，所以建议把磁盘剩余的所有空间都留给这个分区。</li></ul><blockquote><p>如果电脑是传统BIOS启动，选择<code>[ New ]</code>回车后有可能需要选择建立<code>主分区</code>还是<code>扩展分区</code>。(该情形会在硬盘中没有分区或者主分区不足4个时询问。如果硬盘已经有4个主分区则不会询问，默认建立扩展分区。)
+EFI启动可以建立无限个主分区，所以不会询问，直接建立主分区。</p></blockquote><blockquote><p>原则上尽量使用主分区。如果主分区用尽，建立扩展分区时注意<strong>不要修改分区大小</strong>，直接回车。因为扩展分区本身<em>不是一个分区</em>。
+回车后会发现扩展分区下的硬盘还是剩余空间，只是被划分到扩展分区下了。</p></blockquote><p>按上面建议的分区大小，分别建立四个分区后，选择<code>[ Write ]</code>写入再选择<code>[ Quit ]</code>退出。退出时你需要输入<code>yes</code>确认。<em>输入完整的<code>yes</code>不是输入一个<code>y</code></em>。</p><h2 id=挂载分区>挂载分区</h2><p>在终端输入如下指令以检查分区情况：
+<code>fdisk -l</code>
+此时屏幕应该显示你当前电脑的硬盘及各硬盘的分区情况。
+分区表应该出现你所新建的分区，且大小与你输入的分区大小一致。
+确认新分区建立无误后，输入如下指令对新建分区进行格式化。</p><blockquote><p>下面所有的分区符号如<code>/dev/sda1</code>仅为示例，实际操作时应该结合自己实际情况进行格式化。
+假设新建的<code>/mnt</code>分区符号为<code>/dev/sdb3</code>，则应该输入<code>mkfs.ext4 /dev/sdb3</code>以格式化</p></blockquote><ul><li>格式化<code>/mnt</code>分区：
+<code>mkfs.ext4 /dev/sda1</code></li><li>格式化<code>/boot</code>分区
+为了通用性，建议该分区格式化为<code>fat32</code>格式：
+<code>mkfs.vfat -F32 /dev/sda2</code>
+<strong>同上，UEFI引导忽略此步</strong></li><li>格式化<code>/swap</code>分区：
+<code>mkswap /dev/sda3</code></li><li>格式化<code>/home</code>分区：
+<code>mkfs.ext4 /dev/sda4</code></li></ul><blockquote><p>格式化分区为ext4分区时通常需要输入<code>y</code>以确认。
+其他分区格式化，没有报错则意味着操作成功。</p></blockquote><p>接下来挂载分区</p><ol><li>挂载<code>/mnt</code>分区：
+<code>mount /dev/sda1 /mnt</code></li><li>挂载<code>/boot</code>分区：
+<em>此处分为传统BIOS启动和UEFI启动</em>
+a. 传统BIOS启动输入如下指令：
+<code>mkdir /mnt/boot</code>
+<code>mount /dev/sda2 /mnt/boot</code>
+b. UEFI启动输入如下指令：
+<code>mkdir -p /mnt/boot</code>
+<code>mount /dev/sda2 /mnt/boot</code>
+<strong>对于UEFI引导，<code>/dev/sda2</code>应该改为Windows的EFI分区</strong></li><li><code>/swap</code>分区无需挂载，但是需要输入如下指令启用：
+<code>swapon /dev/sda3</code></li><li>建立<code>/home</code>分区目录并挂载分区：
+<code>mkdir /mnt/home</code>
+<code>mount /dev/sda4 /mnt/home</code></li></ol><p>至此，硬盘分区和相应目录挂载已经全部完成。</p><blockquote><p>建议再次输入<code>fdisk -l</code>指令检查硬盘分区情况，一般情况下，每个相应的分区后面应该标注其挂载的目录。</p></blockquote><blockquote><p>以上过程中若出现报错不通过的情况，为了节约排查问题时间，可以直接从重新执行<code>cfdisk</code>指令重新分区开始。<strong>重新分区前，已经挂载好的目录需要进行卸载。</strong>
+例，卸载<code>/home</code>分区目录的指令如下：
+<code>unmount /dev/sda4 /mnt/home</code></p></blockquote><h2 id=安装-arch-linux-基本系统>安装 Arch Linux 基本系统</h2><blockquote><p>Arch Linux 的安装不仅需要连接网络，而且还要从网络下载大量数据。因为 Arch Linux 主服务器在国外，加之某些众所周知的原因，国内网络使用国外服务器下载会非常慢。因此，建议使用国内镜像网站进行下载和安装工作。</p></blockquote><ul><li>修改源为国内镜像源：
+<code>nano /etc/pacman.d/mirrorlist</code>
+<em>该步骤亦可用vim等编辑器编辑，但是系统可能并不自带除nano外的编辑器，请自行选择</em></li></ul><p>如果你对 Linux 下编辑有所了解，尤其是nano编辑有所了解的话，这一步对于你来说应该不算陌生。
+如果你对 Linux 下编辑不算熟悉，或者对 nano 不熟悉，也不要紧。你只要同时按<code>Ctrl+F</code>，接着输入 China 再回车进行搜索。
+如果一切顺利，你应该看到以下字符</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1>#China</span>
+<span class=nv>Server</span> <span class=o>=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinux/<span class=nv>$repo</span>/os/<span class=nv>$arch</span>
+</code></pre></div><p>此时，你的终端光标应该也在此闪烁。
+同时按住<code>Ctrl+K</code>剪切镜像网址，接着同时按住Ctrl和键盘的上方向键返回顶端，然后同时按住<code>Ctrl+U</code>粘贴你剪切的镜像源，最后同时按住<code>Ctrl+X</code>，输入<code>y</code>确认退出。</p><p>当然，你也可以选择下面镜像源中的某一个以完成后续安装。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1># 网易</span>
+<span class=nv>Server</span> <span class=o>=</span> http://mirrors.163.com/archlinux/<span class=nv>$repo</span>/os/<span class=nv>$arch</span>
+<span class=c1># 阿里</span>
+<span class=nv>Server</span> <span class=o>=</span> http://mirrors.aliyun.com/archlinux/<span class=nv>$repo</span>/os/<span class=nv>$arch</span>
+<span class=c1># 中国科学技术大学</span>
+<span class=nv>Server</span> <span class=o>=</span> https://mirrors.ustc.edu.cn/archlinux/<span class=nv>$repo</span>/os/<span class=nv>$arch</span>
+<span class=c1># 西安交通大学</span>
+<span class=nv>Server</span> <span class=o>=</span> https://mirrors.xjtu.edu.cn/archlinux/<span class=nv>$repo</span>/os/<span class=nv>$arch</span>
+</code></pre></div><p>修改完镜像源之后，输入如下指令刷新镜像源
+<code>sudo pacman -Syy</code></p><ul><li>真正开始安装基本系统
+输入如下指令开始安装</li></ul><div class=highlight><pre class=chroma><code class=language-zsh data-lang=zsh>pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd
+</code></pre></div><blockquote><p>可以将上述指令中的<code>linux</code>替换为 <a class=link href=https://wiki.archlinux.org/index.php/Kernel target=_blank rel=noopener>Kernel</a> 页面中介绍的内核软件包。如果知道自己的需求，可以不安装内核和固件软件包。</p></blockquote><blockquote><p>安装过程中会出现几个选择软件包的提示，建议“默认=all”，即直接敲回车默认安装，输入一个“y”确认安装。
+在网络不佳的情况下，下载过程可能会出现意外断流。对自己网络没有自信的话，建议在上述修改镜像源步骤中<strong>多添加几个镜像源</strong>。当某个源出现问题时，系统会自动从其他源尝试下载。</p></blockquote><p>当安装停止且成功后，输入如下指令以生成fstab文件：
+<code>genfstab -U -p /mnt >> /mnt/etc/fstab</code></p><p>为了确认文件生成，建议输入如下指令以确认
+<code>nano /mnt/etc/fstab</code>
+确认无误后，输入<code>Ctrl + X</code>退出</p><p>如果一切正常的话，此时你应该成功在电脑硬盘安装了 Arch Linux 基本系统。</p><h2 id=安装基本系统后的环境配置>安装基本系统后的环境配置</h2><p>输入如下指令进入新安装的系统：
+<code>arch-chroot /mnt /bin/bash</code>
+现在你进入了电脑硬盘上的 Arch Linux 。
+如果一切正常的话，细心的你会发现提示符由<code>root@archiso ~ #</code>变为<code>[root@archiso /]#</code>。</p><p>Linux中默认有一个用户叫<code>root</code>，即超级用户(根用户)，拥有对系统的一切权力。这意味着，即使让系统删除自己本身也会执行无误，比如著名指令<code>rm -rf /*</code>，<strong>千万不要输入这个指令，否则后果自负</strong>。
+现在安装系统默认使用的是root用户。
+输入下面命令来设置root用户密码：
+<code>passwd</code></p><blockquote><p>输入密码后需要回车确认，密码需要输入两次。
+密码在输入的时候不会显示，不用担心是自己键盘坏了。</p></blockquote><p>因为root用户权力过大大，即使删掉系统本身，也会被执行。为了避免日常使用因为权限过高造成某些不可逆而又本可以避免的损失，Linux 需要添加一个普通用户，且该用户可以获取临时root权限。
+一般情况下，这个新添加的用户将会是你后续登录 Linux 的<em>主要用户</em>。</p><p>执行以下命令新建一个隶属于wheel组的新用户：
+<code>useradd -m -G wheel -s /bin/bash 你的用户名</code></p><p>输入如下指令为新建用户设置密码：
+<code>passwd 你的用户名</code></p><blockquote><p>同上，密码需要输入两次，且密码不会显示</p></blockquote><p>为了该普通用户能获取临时root权限，我们需要修改wheel的权限设置。
+输入如下指令打开sudoers文件：
+<code>nano /etc/sudoers</code></p><p>在打开的文件中找到以下两行：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1>## Uncomment to allow members of group wheel to execute any command</span>
+<span class=c1># %wheel ALL=(ALL) ALL</span>
+</code></pre></div><p>确认无误后， 把<code>%wheel</code>前面的注释符号（#）去掉，（%）要留下。
+最后的结果应该是下面这样：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1>## Uncomment to allow members of group wheel to execute any command</span>
+%wheel <span class=nv>ALL</span><span class=o>=(</span>ALL<span class=o>)</span> ALL
+</code></pre></div><p>同时按<code>Ctrl + X</code>，然后保存退出。</p><blockquote><p>后续若需要普通用户在执行某条指令时临时获得 root 权限，则在该条指令前加上<code>sudo</code>
+例：<code>sudo pacman -Syu</code>
+　　<code>sudo rm -rf /*</code></p></blockquote><p>如同用户有一个名字一样，Linux 下电脑也需要一个名字。
+输入如下指令配置电脑的主机名：
+<code>echo 你电脑的主机名 > /etc/hostname</code></p><blockquote><p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。</p></blockquote><p>然后输入以下命令：
+<code>nano /etc/hosts</code>
+你应该会看到如下符号</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1>#&lt;ip-address&gt; &lt;hostname.domain.org&gt; &lt;hostname&gt;</span>
+</code></pre></div><p>你需要添加相应字符，使得界面如下所示：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>127.0.0.1	localhost
+::1		localhost
+127.0.1.1	你电脑主机名.localdomain	你电脑主机名
+</code></pre></div><blockquote><p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>。</p></blockquote><p>确认无误后，同时按住<code>Ctrl + X</code>，输入<code>y</code>，回车再退出。</p><h2 id=安装grub引导>安装Grub引导</h2><p><em>以下操作分为传统BIOS引导和UEFI引导</em></p><ul><li>如果你是传统BIOS引导，则输入以下指令：
+<code>pacman -S grub os-prober</code>
+然后输入以下指令安装到硬盘：
+<code>grub-install --target=i386-pc /dev/sda --recheck</code></li></ul><blockquote><p>第二条指令中<code>/dev/sda</code>应该根据你实际情况，改为你自己硬盘名字</p></blockquote><ul><li>如果你是UEFI引导，则输入以下指令：
+<code>pacman -S grub efibootmgr os-prober</code>
+然后输入以下指令安装到硬盘：</li></ul><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>grub-install --target<span class=o>=</span>x86_64-efi --efi-directory<span class=o>=</span>/boot --bootloader-id<span class=o>=</span>grub --recheck
+</code></pre></div><blockquote><p>如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，<em>请自行修改 &ndash;efi-directory 的值</em></p></blockquote><p>然后输入如下指令生成必要的配置文件：
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code>
+注意，你一定要确定输入上面指令有输出结果
+输出结果大致如下：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-linux
+Found initrd image<span class=o>(</span>s<span class=o>)</span> in /boot: initramfs-linux.img
+Found fallback initrd image<span class=o>(</span>s<span class=o>)</span> in /boot: initramfs-linux-fallback.img
+<span class=k>done</span>
+</code></pre></div><blockquote><p>如果输入上一条指令没有任何输出结果，<strong>请务必停下来检查</strong>上面所有步骤有没有哪一处出现问题，或者重新进行所有安装步骤！！</p></blockquote><p>为了重启后还能连接到当前网络，输入如下指令：
+<code>systemctl enable dhcpcd.service</code></p><p>接着输入如下指令退回U盘安装环境：
+<code>exit</code>
+然后输入如下指令重启电脑：
+<code>reboot</code>
+在电脑关机的时候拔掉你的启动盘。</p><blockquote><p>系统重新启动时会显示 Grub 的启动选单，<em>此时选单中没有Windows系统</em>，这是<strong>正常现象</strong>，下面将会解决这个问题。</p></blockquote><p>成功启动后会显示登录界面。
+此时使用默认用户 root 登录。
+输入用户名 root，回车，再输入你在前面给 root 用户设置的密码。
+成功登录后，输如下指令重新生成一次 Grub 的配置文件：
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p><blockquote><p>如果一切正常的话，你的输出结果倒数第二行应该出现<code>Windows</code>字样。如果没有出现，则可能是 Windows 被加密，这个问题在后面会给出解决方法。</p></blockquote><h2 id=配置语言和区域>配置语言和区域</h2><p>/etc/locale.gen 是一个仅包含注释文档的文本文件。指定您需要的本地化类型，只需移除对应行前面的注释符号<code>＃</code>即可。（建议选择带 UTF-8 的项）
+输入如下指令修改 locale.gen 文件，配置语言环境：
+<code>nano /etc/locale.gen</code></p><p>分别找到以下字符，删除该行最前面的<code>#</code></p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1>#en_US.UTF-8 UTF-8</span>
+<span class=c1>#zh_CN.UTF-8 UTF-8</span>
+<span class=c1>#zh_TW.UTF-8 UTF-8</span>
+</code></pre></div><blockquote><p>比如，你看到<code>#en_US.UTF-8 UTF-8</code>时，你需要删除该行最前面的<code>#</code>，使之变成<code>en_US.UTF-8 UTF-8</code>。</p></blockquote><blockquote><p>你也可以根据自己需求，添加其他环境。</p></blockquote><p>编辑完成后同时按住<code>Ctrl + X</code>退出。</p><p>退出后输入如下指令刷新区域信息：
+<code>locale-gen</code>
+如果你上一步操作无误的话，指令输出结果应该包含</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>en_US.UTF-8 UTF-8
+zh_CN.UTF-8 UTF-8
+zh_TW.UTF-8 UTF-8
+</code></pre></div><p>输入如下指令将区域信息写入 locale-conf 文件：
+<code>echo LANG=en_US.UTF-8 > /etc/locale.conf</code></p><blockquote><p>毫无疑问，你可以选择将上一条指令的<code>en_US.UTF-8</code>改为<code>zh_CN.UTF-8</code>。<strong>但请谨慎考虑后进行操作</strong>。
+locale.conf 文件是全局设置，如果这里设成中文或者其他非英文环境，桌面环境下字符会正常显示，<strong>但是在命令行下会变成乱码</strong>。
+如果看不懂请忽略此步。</p></blockquote><p>输入如下指令设置时区为亚洲上海：
+<code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</code></p><p>将系统时区设置为 localhost：
+<code>hwclock --systohc --localtime</code></p><blockquote><p>如果你选择单系统安装，请输入以下指令
+<code>hwclock --systohc --utc</code>
+<code>timedatectl set-ntp true</code></p></blockquote><blockquote><p>使用 localhost 有一定弊端，详见 <a class=link href=https://wiki.archlinux.org/index.php/Dual_boot_with_Windows_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29#%E6%97%B6%E9%97%B4%E6%A0%87%E5%87%86 target=_blank rel=noopener>Arch Wiki</a></p></blockquote><h2 id=安装桌面环境>安装桌面环境</h2><p>Arch Linux 可选择的桌面环境很多，可以根据自己需求进行选择。
+此处只介绍 KDE 的安装。</p><ol><li>安装Xorg。
+Xorg是所有桌面环境的基础，安装所有桌面环境都要依赖它：
+<code>pacman -S xorg</code></li></ol><blockquote><p>安装过程中，系统会询问你安装其中哪些软件包。如无其他需求或考虑，直接回车即可。</p></blockquote><ol start=2><li>安装登录管理器和桌面环境</li></ol><blockquote><p>登录管理器负责衔接终端和桌面环境，使用桌面环境登录系统。登录管理器在某些地方也叫显示管理器（其实是一个意思）。
+登录管理器有很多种，而且可以与不同的桌面环境相互交叉组合使用。</p></blockquote><p>配合 KDE-Plasma 使用的最佳选择是 SDDM 登录管理器， KDE 和 Arch Wiki 都推荐使用此组合。
+输入如下指令安装 SDDM 和 KDE 基础包：
+<code>pacman -S plasma sddm kdebase</code>
+输入如下指令设置 SDDM 开机自启：
+<code>systemctl enable sddm</code>
+输入完指令后，下次开机会直接进入图形界面，而非命令行界面。</p><h2 id=对系统进行本地化>对系统进行本地化</h2><ol><li>安装中文字体
+可选的字体含以下几种：</li></ol><ul><li>Google Noto Fonts 系列
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji</li><li>思源黑体
+adobe-source-han-sans-otc-fonts</li><li>文泉驿
+wqy-microhei
+wqy-zenhei</li></ul><p>以文泉驿为例，输入如下指令安装文泉驿米黑字体：
+<code>pacman -S wqy-microhei</code></p><blockquote><p>特别说明，文泉驿以外的字体，在某些环境下<strong>均存在一定的显示异常</strong>。请根据自己的需求进行选择。</p></blockquote><ol start=2><li>设置中文区域
+输入如下指令新建.xprofile文件：
+<code>nano ~/.xprofile</code>
+<em>如果已有此文件，也可以输入如上指令打开此文件</em>
+在文件中添加以下内容：</li></ol><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>LANG</span><span class=o>=</span>zh_CN.UTF-8
+
+<span class=nb>export</span> <span class=nv>LANGUAGE</span><span class=o>=</span>zh_CN:en_US
+
+<span class=nb>export</span> <span class=nv>LC_CTYPE</span><span class=o>=</span>en_US.UTF-8
+</code></pre></div><p>同时按住<code>Ctrl + X</code>，然后保存退出。</p><p>如果你是一步步按照本教程操作，则你此时是在 root 用户目录创建了.xprofile文件。因此，此时.xprofile只会影响root用户。
+输入如下指令，将该文件复制到你创建的普通用户目录下：
+<code>cp .xprofile /home/你的用户名</code>
+此时，你创建的普通用户区域也配置完成。</p><p>此时输入<code>reboot</code>重启。安装教程到此正式结束。</p><h2 id=安装完成后的一些基本配置和某些问题的解决>安装完成后的一些基本配置和某些问题的解决</h2><ul><li>安装中文输入法
+安装fcitx输入法模块：
+<code>sudo pacman -S fcitx-im fcitx-configtool</code>
+配置输入法的环境变量，输入如下指令编辑.xprofile文件
+<code>nano ~/.xprofile</code>
+在文件中添加以下内容：</li></ul><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>GTK_IM_MODULE</span><span class=o>=</span>fcitx
+
+<span class=nb>export</span> <span class=nv>QT_IM_MODULE</span><span class=o>=</span>fcitx
+
+<span class=nb>export</span> <span class=nv>XMODIFIERS</span><span class=o>=</span><span class=s2>&#34;@im=fcitx&#34;</span>
+</code></pre></div><p>　　修改完成后，保存退出。</p><blockquote><p>重启电脑后在 fcitx 设置即可选择中文输入法。你也可以根据自己的需求安装其他输入法，如搜狗输入法。</p></blockquote><blockquote><p>此时配置的输入法只会对<strong>当前用户</strong>生效，如需对其他用户生效，则输入<code>cp .xprofile /home/其他用户的用户名</code>复制文件。</p></blockquote><ul><li>安装 Firefox 浏览器
+输入如下指令安装 Firefox 浏览器：
+<code>sudo pacman -S firefox</code></li></ul><p>你也可以根据自己需求安装其他浏览器，如 Chrome</p><ul><li>添加 Arch Linux CN
+输入如下指令编辑 pacman.conf 文件：
+<code>sudo nano /etc/pacman.conf</code>
+在该文件末尾添加以下内容</li></ul><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>archlinuxcn<span class=o>]</span>
+<span class=nv>Server</span> <span class=o>=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class=nv>$arch</span>
+</code></pre></div><p>接着输入如下指令刷新源：
+<code>sudo pacman -Syy</code>
+然后安装密匙：
+<code>sudo pacman -S archlinuxcn-keyring</code></p><blockquote><p>若密匙安装出错，则依次输入以下指令解决：</p></blockquote><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -Syu haveged
+systemctl start haveged
+systemctl <span class=nb>enable</span> haveged
+rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman-key --populate archlinuxcn
+sudo pacman -S archlinuxcn-keyring
+</code></pre></div><blockquote><p>Arch Linux 中文社区仓库是由 Arch Linux 中文社区驱动的非官方软件仓库，包含许多官方仓库未提供的额外的软件包，以及已有软件的 git 版本等变种。一部分软件包的打包脚本来源于 AUR，但也有许多包与 AUR 不一样。
+详情见 <a class=link href=https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/ target=_blank rel=noopener>Arch 中文社区</a></p></blockquote><ul><li>安装 yay
+安装 yay 之前，你需要先了解一下什么是 <a class=link href=https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29 target=_blank rel=noopener>AUR</a>
+输入如下指令安装 yay</li></ul><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -S git 
+<span class=nb>cd</span>
+git clone https://aur.archlinux.org/yay.git
+<span class=nb>cd</span> yay
+makepkg -si
+</code></pre></div><blockquote><p>yay 使用上与 Pacman 大致一致。
+应避免以 root 权限运行 yay，即避免<code>sudo yay</code>这样的指令。
+你也可以选择其他的 AUR 助手。</p></blockquote><ul><li>解决 Windows 加密问题
+若在前面步骤中 Windows 无法挂载，则输入以下指令安装 dislocker 。
+<code>yay -S dislocker</code>
+然后输入如下指令再次生成配置文件：
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code>
+如果一切正常，现在输出结果中应该含有<code>Windows</code>字样
+<del>如果没有的话，我也不知道怎么办了</del></li></ul><p>你还可以选择安装 zsh 和 Yakuake，这里不再介绍。</p><h2 id=相关内容补充>相关内容补充</h2><h3 id=pacman-常用指令>Pacman 常用指令：</h3><ul><li>核心指令
+<code>sudo pacman -Syu</code> ：进行全面系统更新(即通俗意义的“滚”)
+<code>sudo pacman -Syy</code> ： 刷新数据库</li><li>安装软件
+<code>sudo pacman -S packagename</code> ： 安装指定软件
+<code>sudo pacman -Sy packagename</code> ： 刷新数据库后安装指定软件
+<code>sudo pacman -Sv packagename</code> ： 显示一些操作信息后安装指定软件
+<code>sudo pacman -U pkg.tar.xz</code> ：安装本地包
+<code>sudo pacman -U link.tar.xz</code> ：安装远程包</li><li>删除软件
+<code>sudo pacman -R packagename</code> ：删除指定软件，保留其全部已经安装的依赖关系
+<code>sudo pacman -Rs packagename</code> ：删除指定软件，并删除仅与该软件存在依赖关系的其他软件
+<code>sudo pacman -Rsc packagename</code> ：删除指定软件，并删除所有与该软件存在依赖关系的其他软件
+<code>sudo pacman -Rd packagename</code> ：删除指定软件，不检查依赖</li><li>搜索软件
+<code>sudo pacman -Ss keyword</code>：在仓库中搜索含关键字的软件
+<code>sudo pacman -Qs keyword</code>：在已安装软件中搜索含关键词的软件
+<code>sudo pacman -Qi packagename</code>：搜索指定软件的详细信息
+<code>sudo pacman -Ql packagename</code>：列出指定软件的文件</li><li>其他指令
+<code>sudo pacman -Sw packagename</code>：只下载指定软件而不安装
+<code>sudo pacman -Sc</code> ：清理未安装的软件包
+<code>sudo pacman -Scc</code> ：清理所有的缓存文件</li></ul><h3 id=arch-相关链接>Arch 相关链接</h3><p>Arch Wiki：<a class=link href=https://wiki.archlinux.org/index.php/Main_page_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29 target=_blank rel=noopener>Link</a>
+Arch 官方软件仓库：<a class=link href=https://www.archlinux.org/packages/ target=_blank rel=noopener>Link</a>
+Arch Linux CN软件仓库：<a class=link href=https://build.archlinuxcn.org/packages/#/ target=_blank rel=noopener>Link</a>
+AUR：<a class=link href=https://aur.archlinux.org/ target=_blank rel=noopener>Link</a></p></section><footer class=article-footer><section class=article-tags><a href=/tags/arch-linux/>Arch Linux</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-contents--wrapper><h2 class=section-title>Related contents</h2><div class=related-contents><div class="flex article-list--tile"><article><a href=/posts/5/><div class=article-details><h2 class=article-title>Arch Linux 服务器安装 LNMP</h2></div></a></article><article><a href=/posts/minecraft-build/><div class=article-details><h2 class=article-title>Minecraft 服务器搭建教程</h2></div></a></article><article><a href=/posts/6/><div class=article-details><h2 class=article-title>DD 指令用法详解</h2></div></a></article></div></div></aside><script src=//unpkg.com/@waline/client/dist/Waline.min.js></script><div class=pagination__title><span class=pagination__title-h><span class=vcount></span>Comments</span><hr></div><div id=waline></div><script>new Waline({el:'#waline',visitor:true,highlight:true,serverURL:'https://waline.qingxu.live',requiredFields:['mail'],avatar:'mp',avatarCDN:'https://cdn.v2ex.com/gravatar/'});</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2021 清絮的博客</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=2.0.1>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const customFont=document.createElement('link');customFont.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";customFont.type="text/css";customFont.rel="stylesheet";document.head.appendChild(customFont);}());</script><script>window.ga_tid="UA-165980047-1";window.ga_api="https://statistics.qingxu.live/cfga/jquery.js"</script><script src=https://cdn.jsdelivr.net/npm/cfga@1.0.3 async></script></body></html>

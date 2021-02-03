@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arch Linux on 清絮的博客</title><link>https://blog.qingxu.live/categories/arch-linux/</link><description>Recent content in Arch Linux on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 30 May 2020 20:31:49 +0000</lastBuildDate><atom:link href="https://blog.qingxu.live/categories/arch-linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux 服务器安装 LNMP</title><link>https://blog.qingxu.live/posts/5/</link><pubDate>Sat, 30 May 2020 20:31:49 +0000</pubDate><guid>https://blog.qingxu.live/posts/5/</guid><description>没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
+对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
+sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。
+sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline）
+sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。
+systemctl status nginx 输出：
+● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.</description></item><item><title>Arch Linux + Windows 双系统安装教程</title><link>https://blog.qingxu.live/posts/18/</link><pubDate>Wed, 25 Mar 2020 11:56:38 +0000</pubDate><guid>https://blog.qingxu.live/posts/18/</guid><description>在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
+Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
+有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
+具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料 即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
+如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思。一般来说，安装过程也不会出现什么技术难点。
+如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
+如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
+为什么写这篇教程？ 该部分内容还处于编辑中
+ISO 镜像烧录 Windows 建议使用 Rufus 烧录镜像。 Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</description></item></channel></rss>
