@@ -13,7 +13,7 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
 刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
 方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 个人云盘 （极不推荐，下载请使用 Aria2 或 IDM+） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description></item><item><title>如何在 Redmi Note 7 Pro 上刷机？</title><link>https://blog.linioi.com/posts/11/</link><pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate><guid>https://blog.linioi.com/posts/11/</guid><description>拿到手机后干什么？刷机！
+下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description></item><item><title>如何在 Redmi Note 7 Pro 上刷机？</title><link>https://blog.linioi.com/posts/11/</link><pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate><guid>https://blog.linioi.com/posts/11/</guid><description>拿到手机后干什么？刷机！
 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
