@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redmi Note 7 Pro on 清絮的博客</title><link>https://blog.qingxu.live/tags/redmi-note-7-pro/</link><description>Recent content in Redmi Note 7 Pro on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 17 Sep 2020 13:05:37 +0000</lastBuildDate><atom:link href="https://blog.qingxu.live/tags/redmi-note-7-pro/index.xml" rel="self" type="application/rss+xml"/><item><title>Violet 机型 HT OS 刷入教程</title><link>https://blog.qingxu.live/posts/12/</link><pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate><guid>https://blog.qingxu.live/posts/12/</guid><description>Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redmi Note 7 Pro on 清絮的博客</title><link>https://blog.linioi.com/tags/redmi-note-7-pro/</link><description>Recent content in Redmi Note 7 Pro on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 17 Sep 2020 13:05:37 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/redmi-note-7-pro/index.xml" rel="self" type="application/rss+xml"/><item><title>Violet 机型 HT OS 刷入教程</title><link>https://blog.linioi.com/posts/12/</link><pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate><guid>https://blog.linioi.com/posts/12/</guid><description>Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…
 前言 待会再补上
 刷入步骤 注意：以下为 hentaiOS 作者 Dyneteve 给出的官方刷入步骤。其他刷机方法待更新。
 如果你无法理解本文的某些内容，你可以参照这篇教程。
@@ -6,14 +6,14 @@
 上面连接无法访问的可以试试下面的链接。
 hentaiOS 刷机包：Link
 AOSP Recovery：Link
-那么，让我们开始… 备份你的数据，准备好相应的救砖工具以备不时之需。 关机下长按电源键和音量-进入 fastboot 模式。 使用 USB 数据线连接手机和电脑。如果可以，请尽量使用原装数据线。 输入fastboot devices检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照这篇教程配置 ADB 环境。对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。 解压你下载的 AOSP Recovery ROM Flasher V4.</description></item><item><title>Violet 机型 PE/Plus 刷入教程</title><link>https://blog.qingxu.live/posts/10/</link><pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate><guid>https://blog.qingxu.live/posts/10/</guid><description>PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
+那么，让我们开始… 备份你的数据，准备好相应的救砖工具以备不时之需。 关机下长按电源键和音量-进入 fastboot 模式。 使用 USB 数据线连接手机和电脑。如果可以，请尽量使用原装数据线。 输入fastboot devices检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照这篇教程配置 ADB 环境。对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。 解压你下载的 AOSP Recovery ROM Flasher V4.</description></item><item><title>Violet 机型 PE/Plus 刷入教程</title><link>https://blog.linioi.com/posts/10/</link><pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate><guid>https://blog.linioi.com/posts/10/</guid><description>PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
 注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
 PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
 之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
 刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
 方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 个人云盘 （极不推荐，下载请使用 Aria2 或 IDM+） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description></item><item><title>如何在 Redmi Note 7 Pro 上刷机？</title><link>https://blog.qingxu.live/posts/11/</link><pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate><guid>https://blog.qingxu.live/posts/11/</guid><description>拿到手机后干什么？刷机！
+下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 个人云盘 （极不推荐，下载请使用 Aria2 或 IDM+） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description></item><item><title>如何在 Redmi Note 7 Pro 上刷机？</title><link>https://blog.linioi.com/posts/11/</link><pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate><guid>https://blog.linioi.com/posts/11/</guid><description>拿到手机后干什么？刷机！
 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
