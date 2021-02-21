@@ -348,7 +348,10 @@ sed -i &lt;span class="s1">&amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https:/
 &lt;p>请参照 &lt;a class="link" href="https:///blog.linioi.com/posts/minecraft-build/#linux-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B" target="_blank" rel="noopener"
 >Linux 搭建教程&lt;/a>。&lt;/p>
 &lt;blockquote>
-&lt;p>注意，官方基岩版服务端程序可能无法在 Linux Deploy 容器中运行，建议改用第三方服务端程序，如 &lt;a class="link" href="https://github.com/CloudburstMC/Nukkit" target="_blank" rel="noopener"
+&lt;p>鉴于手机 CPU 架构及性能，建议不要尝试在手机上搭建 Java 服务器&amp;hellip;&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>官方基岩版服务端程序可能无法在 Linux Deploy 容器中运行，建议改用第三方服务端程序，如 &lt;a class="link" href="https://github.com/CloudburstMC/Nukkit" target="_blank" rel="noopener"
 >Nukkit&lt;/a>。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="连接服务器端">连接服务器端&lt;/h2>
