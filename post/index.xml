@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 清絮的博客</title><link>https://blog.linioi.com/post/</link><description>Recent content in Posts on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 Feb 2021 16:25:19 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>博客域名迁移</title><link>https://blog.linioi.com/posts/change-to-new-domain/</link><pubDate>Sat, 13 Feb 2021 16:25:19 +0000</pubDate><guid>https://blog.linioi.com/posts/change-to-new-domain/</guid><description>经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃原博客域名。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 清絮的博客</title><link>https://blog.linioi.com/post/</link><description>Recent content in Posts on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Feb 2021 01:26:46 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>记 Gnome 的初体验</title><link>https://blog.linioi.com/posts/the-first-gnome-try/</link><pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate><guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid><description>记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
+反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
+因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
+无奈地一次 Gnome 尝试 是的，是“无奈的一次尝试”。
+起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
+强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。
+长时间地查教程、社区提问无果后，我逐渐放弃了挣扎，并在纠结很久之后选择装了一个 Windows 10（至少这台电脑的 Windows 支持非常完善，Windows 10 不会开盖花屏）。
+这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 Gnome 呢？”
+我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 Gnome“的提议。
+既然别无选择，为什么不给 Gnome 一个机会呢？（态度好像不太对
+意料之外：Gnome 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + Gnome 的安装。
+重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</description></item><item><title>博客域名迁移</title><link>https://blog.linioi.com/posts/change-to-new-domain/</link><pubDate>Sat, 13 Feb 2021 16:25:19 +0000</pubDate><guid>https://blog.linioi.com/posts/change-to-new-domain/</guid><description>经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃原博客域名。
 更换域名的原因及旧域名处理方式 更换域名的原因有两个：
 .live 域名续费价格超出我的想象…根据我查询结果，即使是最便宜的域名注册商(境外)的续费价格也是 $16 以上。这大概是两个 .com 域名的续费价格了(按最便宜的域名注册商价格算)。考虑到我对 .live 域名后缀没有特别的需求(当初选择这个纯粹是因为腾讯云域名列表就它最便宜)，似乎没有坚持这个域名的必要了。 因为一系列原因，我对现域名注册商(腾讯云)由原来的略微反感到现在的强烈抵触。大概是不想被国内域名注册商喂💩，即使是国内域名注册商价格明显优势的情况下，我还是选择了国外的域名注册商(当然，是最便宜那种)。 目前对旧域名的处理方案是：
 暂不出售（我感觉也没人会买） 保留绝大多数原旧域名链接并确保在未来几年里都可以正常访问。 设置部分关键链接的 301 重定向，*.linioi.com 将成为绝对的主域名 修改几乎所有我可编辑的文档中的 *.qingxu.live 为 *.linioi.com 对于以 @qingxu.live 为后缀的邮件地址采取保持收件但停止发件。在未来的几年里逐步把绑定 @qingxu.live 邮件地址的其他帐号换绑为 @linioi.com（那些不能换绑邮箱的平台真让人头疼）。 话说好像还有很多人博客友链也还是指向 *.qingxu.live，我该怎么通知他们呢……
