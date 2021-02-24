@@ -1,93 +1,601 @@
-<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
  对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。
 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline）
 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。
 systemctl status nginx 输出：
-● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx."><title>Arch Linux 服务器安装 LNMP</title><link rel=canonical href=https://blog.linioi.com/posts/5/><link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="Arch Linux 服务器安装 LNMP"><meta property="og:description" content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
+● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.'><title>Arch Linux 服务器安装 LNMP</title>
+
+<link rel='canonical' href='https://blog.linioi.com/posts/5/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Arch Linux 服务器安装 LNMP'>
+<meta property='og:description' content='没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
  对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。
 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline）
 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。
 systemctl status nginx 输出：
-● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx."><meta property="og:url" content="https://blog.linioi.com/posts/5/"><meta property="og:site_name" content="清絮的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Arch Linux"><meta property="article:tag" content="Server"><meta property="article:published_time" content="2020-05-30T20:31:49+00:00"><meta property="article:modified_time" content="2020-05-30T20:31:49+00:00"><meta name=twitter:site content="QingxuMo"><meta name=twitter:title content="Arch Linux 服务器安装 LNMP"><meta name=twitter:description content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
+● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.'>
+<meta property='og:url' content='https://blog.linioi.com/posts/5/'>
+<meta property='og:site_name' content='清絮的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Server' /><meta property='article:published_time' content='2020-05-30T20:31:49&#43;00:00'/><meta property='article:modified_time' content='2020-05-30T20:31:49&#43;00:00'/>
+<meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="Arch Linux 服务器安装 LNMP">
+<meta name="twitter:description" content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
  对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。
 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline）
 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。
 systemctl status nginx 输出：
-● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx."><link rel="shortcut icon" href=img/favicon.ico></head><body><script>(function(){const colorSchemeKey='StackColorScheme';if(!localStorage.getItem(colorSchemeKey)){localStorage.setItem(colorSchemeKey,"auto");}})();</script><script>(function(){const colorSchemeKey='StackColorScheme';const colorSchemeItem=localStorage.getItem(colorSchemeKey);const supportDarkMode=window.matchMedia('(prefers-color-scheme: dark)').matches===true;if(colorSchemeItem=='dark'||colorSchemeItem==='auto'&&supportDarkMode){document.body.dataset.scheme='dark';}else{document.body.dataset.scheme='light';}})();</script><div class="container main-container flex on-phone--column extended article-page with-toolbar"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header class=site-info><figure class=site-avatar><img src=/img/avatar_hu27ccc19b65f346fcf34441b370c4340e_204950_300x0_resize_q75_box.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
-<span class=emoji>✨</span></figure><h1 class=site-name><a href=https://blog.linioi.com>清絮的博客</a></h1><h2 class=site-description>人生如逆旅，我亦是行人。</h2></header><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>首页</span></a></li><li><a href=/talk><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="13" y1="20" x2="20" y2="13"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><span>说说</span></a></li><li><a href=/archives><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>归档</span></a></li><li><a href=/links><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>友链</span></a></li><li><a href=/about><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/search><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>搜索</span></a></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Dark Mode</span></li></ol></aside><main class="main full-width"><div id=article-toolbar><a href=https://blog.linioi.com class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>Back</span></a></div><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/linux/>Linux</a>
-<a href=/categories/arch-linux/>Arch Linux</a></header><h2 class=article-title><a href=/posts/5/>Arch Linux 服务器安装 LNMP</a></h2><footer class=article-time><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--published>May 30, 2020</time></footer></div></header><section class=article-content><blockquote><p>没有其他发行版的一键脚本/运维面板
+● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu27ccc19b65f346fcf34441b370c4340e_204950_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">✨</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://blog.linioi.com">清絮的博客</a></h1>
+        <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/talk'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="13" y1="20" x2="20" y2="13" />
+  <path d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+</svg>
+                
+                <span>说说</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://blog.linioi.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/linux/" >
+                Linux
+            </a>
+        
+            <a href="/categories/arch-linux/" >
+                Arch Linux
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/5/">Arch Linux 服务器安装 LNMP</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 30, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <blockquote>
+<p>没有其他发行版的一键脚本/运维面板
 Arch Linux 用它的方式体现着它的超凡脱俗
-<del>其实就是用的人太少，没人写脚本</del></p></blockquote><h2 id=对-arch-linux-进行一次全面更新>对 Arch Linux 进行一次全面更新</h2><p><del>话说，这不是每天开机第一件事吗</del></p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -Syu
-</code></pre></div><h2 id=安装-nginx>安装 Nginx</h2><p>Arch Linux 软件库中有两个版本的 Nginx，分别是
-<a class=link href=https://www.archlinux.org/packages/extra/x86_64/nginx/ target=_blank rel=noopener>nginx</a> 和 <a class=link href=https://www.archlinux.org/packages/community/x86_64/nginx-mainline/ target=_blank rel=noopener>nginx-mainline</a>，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。
+<del>其实就是用的人太少，没人写脚本</del></p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h2 id="对-arch-linux-进行一次全面更新">对 Arch Linux 进行一次全面更新</h2>
+<p><del>话说，这不是每天开机第一件事吗</del></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Syu
+</code></pre></div><h2 id="安装-nginx">安装 Nginx</h2>
+<p>Arch Linux 软件库中有两个版本的 Nginx，分别是
+<a class="link" href="https://www.archlinux.org/packages/extra/x86_64/nginx/"  target="_blank" rel="noopener"
+    >nginx</a> 和 <a class="link" href="https://www.archlinux.org/packages/community/x86_64/nginx-mainline/"  target="_blank" rel="noopener"
+    >nginx-mainline</a>，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。
 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。
-输入如下命令安装旧版本 Nginx。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -S nginx
-</code></pre></div><p>安装 nginx-mainline。（本教程安装的是 mainline）</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -S nginx-mainline
-</code></pre></div><p>以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>systemctl status nginx
-</code></pre></div><p>输出：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>● nginx.service - A high performance web server and a reverse proxy server
-     Loaded: loaded <span class=o>(</span>/usr/lib/systemd/system/nginx.service<span class=p>;</span> enabled<span class=p>;</span> vendor preset: disabled<span class=o>)</span>
-     Active: active <span class=o>(</span>running<span class=o>)</span> since Tue 2016-04-12 13:10:57 CST<span class=p>;</span> <span class=m>1</span> day 7h ago
-   Main PID: <span class=m>2010</span> <span class=o>(</span>nginx<span class=o>)</span>
-      Tasks: <span class=m>2</span> <span class=o>(</span>limit: 512<span class=o>)</span>
+输入如下命令安装旧版本 Nginx。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S nginx
+</code></pre></div><p>安装 nginx-mainline。（本教程安装的是 mainline）</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S nginx-mainline
+</code></pre></div><p>以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status nginx
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded <span class="o">(</span>/usr/lib/systemd/system/nginx.service<span class="p">;</span> enabled<span class="p">;</span> vendor preset: disabled<span class="o">)</span>
+     Active: active <span class="o">(</span>running<span class="o">)</span> since Tue 2016-04-12 13:10:57 CST<span class="p">;</span> <span class="m">1</span> day 7h ago
+   Main PID: <span class="m">2010</span> <span class="o">(</span>nginx<span class="o">)</span>
+      Tasks: <span class="m">2</span> <span class="o">(</span>limit: 512<span class="o">)</span>
      CGroup: /system.slice/nginx.service
-             ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid<span class=p>;</span> daemon on<span class=p>;</span> master_process on
+             ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid<span class="p">;</span> daemon on<span class="p">;</span> master_process on
              └─2011 nginx: worker process
-</code></pre></div><p>如果 Nginx 未运行，则输入以下的命令启动它。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo systemctl start nginx <span class=c1>#启动 Nginx</span>
-sudo systemctl <span class=nb>enable</span> nginx <span class=c1>#设置 Nginx 开机自启动</span>
-</code></pre></div><p>输入如下命令可查看 Nginx 的版本号</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>user@arch ~<span class=o>]</span>$ nginx -v
+</code></pre></div><p>如果 Nginx 未运行，则输入以下的命令启动它。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl start nginx <span class="c1">#启动 Nginx</span>
+sudo systemctl <span class="nb">enable</span> nginx <span class="c1">#设置 Nginx 开机自启动</span>
+</code></pre></div><p>输入如下命令可查看 Nginx 的版本号</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>user@arch ~<span class="o">]</span>$ nginx -v
 nginx version: nginx/1.9.14
 </code></pre></div><p>在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
-<img src=https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png alt="Nginx 欢迎界面"></p><p>如果你不知道服务器公网 IP，可以输入这条命令查看。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>curl http://icanhazip.com
-</code></pre></div><p>如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。</p><h2 id=安装-mariadb>安装 MariaDB</h2><p>2013 年开始，Arch Linux 将 MariaDB 作为默认的 SQL 数据库软件，Oracle 的 MySQL 则被丢进 AUR（（（</p><p>输入如下命令安装 MariaDB</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -S mariadb
-</code></pre></div><p>在启动 MariaDB 服务之前，需要使用用 <code>mysql_install_db</code>命令初始化 MariaDB 的数据目录</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo mysql_install_db --user<span class=o>=</span>mysql --basedir<span class=o>=</span>/usr --datadir<span class=o>=</span>/var/lib/mysql
-</code></pre></div><p>启动 MariaDB 服务。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo systemctl start mysqld
-</code></pre></div><p>查看 MariaDB 状态。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>systemctl status mysqld
-</code></pre></div><p>输出：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>● mysqld.service - MariaDB database server
-   Loaded: loaded <span class=o>(</span>/usr/lib/systemd/system/mysqld.service<span class=p>;</span> disabled<span class=p>;</span> vendor preset: disabled<span class=o>)</span>
-   Active: active <span class=o>(</span>running<span class=o>)</span> since Wed 2016-04-13 21:09:45 CST<span class=p>;</span> 5s ago
-  Process: <span class=m>8373</span> <span class=nv>ExecStartPost</span><span class=o>=</span>/usr/bin/mysqld-post <span class=o>(</span><span class=nv>code</span><span class=o>=</span>exited, <span class=nv>status</span><span class=o>=</span>0/SUCCESS<span class=o>)</span>
- Main PID: <span class=m>8372</span> <span class=o>(</span>mysqld<span class=o>)</span>
-    Tasks: <span class=m>26</span> <span class=o>(</span>limit: 512<span class=o>)</span>
+<img src="https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png" alt="Nginx 欢迎界面"  /></p>
+<p>如果你不知道服务器公网 IP，可以输入这条命令查看。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl http://icanhazip.com
+</code></pre></div><p>如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。</p>
+<h2 id="安装-mariadb">安装 MariaDB</h2>
+<p>2013 年开始，Arch Linux 将 MariaDB 作为默认的 SQL 数据库软件，Oracle 的 MySQL 则被丢进 AUR（（（</p>
+<p>输入如下命令安装 MariaDB</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S mariadb
+</code></pre></div><p>在启动 MariaDB 服务之前，需要使用用 <code>mysql_install_db</code>命令初始化 MariaDB 的数据目录</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo mysql_install_db --user<span class="o">=</span>mysql --basedir<span class="o">=</span>/usr --datadir<span class="o">=</span>/var/lib/mysql
+</code></pre></div><p>启动 MariaDB 服务。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl start mysqld
+</code></pre></div><p>查看 MariaDB 状态。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status mysqld
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">● mysqld.service - MariaDB database server
+   Loaded: loaded <span class="o">(</span>/usr/lib/systemd/system/mysqld.service<span class="p">;</span> disabled<span class="p">;</span> vendor preset: disabled<span class="o">)</span>
+   Active: active <span class="o">(</span>running<span class="o">)</span> since Wed 2016-04-13 21:09:45 CST<span class="p">;</span> 5s ago
+  Process: <span class="m">8373</span> <span class="nv">ExecStartPost</span><span class="o">=</span>/usr/bin/mysqld-post <span class="o">(</span><span class="nv">code</span><span class="o">=</span>exited, <span class="nv">status</span><span class="o">=</span>0/SUCCESS<span class="o">)</span>
+ Main PID: <span class="m">8372</span> <span class="o">(</span>mysqld<span class="o">)</span>
+    Tasks: <span class="m">26</span> <span class="o">(</span>limit: 512<span class="o">)</span>
    CGroup: /system.slice/mysqld.service
-           └─8372 /usr/bin/mysqld --pid-file<span class=o>=</span>/run/mysqld/mysqld.pid
-</code></pre></div><p>设置 MariaDB 开机自启动。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo systemclt <span class=nb>enable</span> mysqld
-</code></pre></div><p>运行安全安装脚本。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo mysql_secure_installation
-</code></pre></div><p>它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。</p><p>查看 MariaDB 的版本。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>user@arch ~<span class=o>]</span>$ mysql --version
-mysql  Ver 15.1 Distrib 10.1.13-MariaDB, <span class=k>for</span> Linux <span class=o>(</span>x86_64<span class=o>)</span> using readline 5.1
-</code></pre></div><p>默认的配置文件位置为 <code>/etc/mysql/my.cnf</code>。</p><p>第 4 步：安装 PHP7
-Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo pacman -S php-fpm
-</code></pre></div><p>安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo nano /etc/nginx/nginx.conf
-</code></pre></div><p>找到 location ~ .php$这部分的配置，将这部分配置修改成如下。</p><div class=highlight><pre class=chroma><code class=language-nginx data-lang=nginx><span class=k>location</span> <span class=p>~</span> <span class=sr>\.php$</span> <span class=p>{</span>
-            <span class=kn>root</span>           <span class=s>/usr/share/nginx/html</span><span class=p>;</span>
-            <span class=kn>fastcgi_pass</span>   <span class=s>unix:/run/php-fpm/php-fpm.sock</span><span class=p>;</span>
-            <span class=kn>fastcgi_index</span>  <span class=s>index.php</span><span class=p>;</span>
-            <span class=kn>fastcgi_param</span>  <span class=s>SCRIPT_FILENAME</span>  <span class=nv>$document_root$fastcgi_script_name</span><span class=p>;</span>
-            <span class=kn>include</span>        <span class=s>fastcgi_params</span><span class=p>;</span>
-        <span class=p>}</span>
-</code></pre></div><p>保存文件。然后启动 php-fpm，并设置开机自启动。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo systemctl start php-fpm
-sudo systemctl <span class=nb>enable</span> php-fpm
+           └─8372 /usr/bin/mysqld --pid-file<span class="o">=</span>/run/mysqld/mysqld.pid
+</code></pre></div><p>设置 MariaDB 开机自启动。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemclt <span class="nb">enable</span> mysqld
+</code></pre></div><p>运行安全安装脚本。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo mysql_secure_installation
+</code></pre></div><p>它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。</p>
+<p>查看 MariaDB 的版本。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>user@arch ~<span class="o">]</span>$ mysql --version
+mysql  Ver 15.1 Distrib 10.1.13-MariaDB, <span class="k">for</span> Linux <span class="o">(</span>x86_64<span class="o">)</span> using readline 5.1
+</code></pre></div><p>默认的配置文件位置为 <code>/etc/mysql/my.cnf</code>。</p>
+<p>第 4 步：安装 PHP7
+Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S php-fpm
+</code></pre></div><p>安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo nano /etc/nginx/nginx.conf
+</code></pre></div><p>找到 location ~ .php$这部分的配置，将这部分配置修改成如下。</p>
+<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
+            <span class="kn">root</span>           <span class="s">/usr/share/nginx/html</span><span class="p">;</span>
+            <span class="kn">fastcgi_pass</span>   <span class="s">unix:/run/php-fpm/php-fpm.sock</span><span class="p">;</span>
+            <span class="kn">fastcgi_index</span>  <span class="s">index.php</span><span class="p">;</span>
+            <span class="kn">fastcgi_param</span>  <span class="s">SCRIPT_FILENAME</span>  <span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+            <span class="kn">include</span>        <span class="s">fastcgi_params</span><span class="p">;</span>
+        <span class="p">}</span>
+</code></pre></div><p>保存文件。然后启动 php-fpm，并设置开机自启动。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl start php-fpm
+sudo systemctl <span class="nb">enable</span> php-fpm
 </code></pre></div><p>第 5 步：测试 PHP
-在网站根目录创建一个 test.php 文件。默认的网站根目录是/usr/share/nginx/html。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo nano /usr/share/nginx/html/test.php
-</code></pre></div><p>在文件中添加如下 PHP 代码。</p><div class=highlight><pre class=chroma><code class=language-php data-lang=php><span class=o>&lt;?</span><span class=nx>php</span>
-  <span class=nx>phpinfo</span><span class=p>();</span>
-<span class=cp>?&gt;</span><span class=err>
-</span></code></pre></div><p>保存文件。重新加载 Nginx。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo systemctl reload nginx
+在网站根目录创建一个 test.php 文件。默认的网站根目录是/usr/share/nginx/html。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo nano /usr/share/nginx/html/test.php
+</code></pre></div><p>在文件中添加如下 PHP 代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
+  <span class="nx">phpinfo</span><span class="p">();</span>
+<span class="cp">?&gt;</span><span class="err">
+</span></code></pre></div><p>保存文件。重新加载 Nginx。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl reload nginx
 </code></pre></div><p>然后在浏览器地址栏输入 <code>http://你服务器或本地主机IP/test.php</code>。将 server-ip 替换成 Arch Linux 服务器或本地主机 IP。
-此时，浏览器会显示有关 PHP 到底信息，这意味着你已修改成功。</p><p>test.php 文件只是用来测试 PHP 的，为了不让他人看见服务器的信息，测试之后要将它删除。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo rm /usr/share/nginx/html/test.php
+此时，浏览器会显示有关 PHP 到底信息，这意味着你已修改成功。</p>
+<p>test.php 文件只是用来测试 PHP 的，为了不让他人看见服务器的信息，测试之后要将它删除。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo rm /usr/share/nginx/html/test.php
 </code></pre></div><p>启用 PHP 扩展
-编辑 /etc/php/php.ini 配置文件。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>sudo nano /etc/php/php.ini
-</code></pre></div><p>找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。</p><div class=highlight><pre class=chroma><code class=language-php data-lang=php><span class=p>;</span><span class=nx>extension</span><span class=o>=</span><span class=nx>mysqli</span><span class=o>.</span><span class=nx>so</span>
-<span class=p>;</span><span class=nx>extension</span><span class=o>=</span><span class=nx>pdo_mysql</span><span class=o>.</span><span class=nx>so</span>
-</code></pre></div><p><code>mysqli.do</code> 用来建立数据库连接。<code>pdo_mysql.so</code> 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。</p><p>安装教程到此结束。</p><p>转载自</p><ul><li><a class=link href=https://www.linuxbabe.com/linux-server/install-lemp-nginx-mariadb-php7-arch-linux-server target=_blank rel=noopener>Install Nginx, MariaDB, PHP7 (LEMP) on Arch Linux Server in 2019</a>
-转载略有修改</li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/arch-linux/>Arch Linux</a>
-<a href=/tags/server/>Server</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-contents--wrapper><h2 class=section-title>Related contents</h2><div class=related-contents><div class="flex article-list--tile"><article><a href=/posts/the-first-gnome-try/><div class=article-details><h2 class=article-title>记 Gnome 的初体验</h2></div></a></article><article><a href=/posts/18/><div class=article-details><h2 class=article-title>Arch Linux + Windows 双系统安装教程</h2></div></a></article><article><a href=/posts/minecraft-build/><div class=article-details><h2 class=article-title>Minecraft 服务器搭建教程</h2></div></a></article><article><a href=/posts/6/><div class=article-details><h2 class=article-title>DD 指令用法详解</h2></div></a></article></div></div></aside><script src=//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js></script><div class=pagination__title><span class=pagination__title-h><span class=vcount></span>Comments</span><hr></div><div id=waline></div><script>new Waline({el:'#waline',visitor:true,highlight:true,serverURL:'https://waline.linioi.com',requiredFields:['mail'],avatar:'mp',avatarCDN:'https://cdn.v2ex.com/gravatar/'});</script><footer class=site-footer><section class=copyright>&copy;
-2020 -
-2021 清絮的博客</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=2.0.1>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const customFont=document.createElement('link');customFont.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";customFont.type="text/css";customFont.rel="stylesheet";document.head.appendChild(customFont);}());</script><script>window.ga_tid="UA-165980047-1";window.ga_api="https://statistics.linioi.com/cfga/jquery.js"</script><script src=https://cdn.jsdelivr.net/npm/cfga@1.0.3 async></script></body></html>
+编辑 /etc/php/php.ini 配置文件。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo nano /etc/php/php.ini
+</code></pre></div><p>找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="p">;</span><span class="nx">extension</span><span class="o">=</span><span class="nx">mysqli</span><span class="o">.</span><span class="nx">so</span>
+<span class="p">;</span><span class="nx">extension</span><span class="o">=</span><span class="nx">pdo_mysql</span><span class="o">.</span><span class="nx">so</span>
+</code></pre></div><p><code>mysqli.do</code> 用来建立数据库连接。<code>pdo_mysql.so</code> 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。</p>
+<p>安装教程到此结束。</p>
+<p>转载自</p>
+<ul>
+<li><a class="link" href="https://www.linuxbabe.com/linux-server/install-lemp-nginx-mariadb-php7-arch-linux-server"  target="_blank" rel="noopener"
+    >Install Nginx, MariaDB, PHP7 (LEMP) on Arch Linux Server in 2019</a>
+转载略有修改</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/arch-linux/">Arch Linux</a>
+        
+            <a href="/tags/server/">Server</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/the-first-gnome-try/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">记 Gnome 的初体验</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/18/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Arch Linux &#43; Windows 双系统安装教程</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/minecraft-build/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Minecraft 服务器搭建教程</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">DD 指令用法详解</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+      <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+  <div class="pagination__title">
+       <span class="pagination__title-h"><span class="vcount"></span>Comments</span>
+       <hr />
+  </div>
+  <div id="waline"></div>
+  <script>
+      new Waline({
+        el: '#waline',
+        visitor: true,
+        highlight: true,
+        serverURL: 'https://waline.linioi.com',
+        requiredFields: ['mail'],
+        avatar: 'mp',
+        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+      });
+  </script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 清絮的博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script>window.ga_tid = "UA-165980047-1";window.ga_api = "https://statistics.linioi.com/cfga/jquery.js"</script><script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
+
+    </body>
+</html>

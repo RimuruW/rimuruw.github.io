@@ -1,110 +1,632 @@
-<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
 为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
 当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。
-Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
+Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
 在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。
 但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
-虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。"><title>利用 Cloudflare Workers Site 部署静态博客</title><link rel=canonical href=https://blog.linioi.com/posts/deploy-blog-to-cf/><link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="利用 Cloudflare Workers Site 部署静态博客"><meta property="og:description" content="前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
+虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。'><title>利用 Cloudflare Workers Site 部署静态博客</title>
+
+<link rel='canonical' href='https://blog.linioi.com/posts/deploy-blog-to-cf/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='利用 Cloudflare Workers Site 部署静态博客'>
+<meta property='og:description' content='前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
 为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
 当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。
-Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
+Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
 在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。
 但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
-虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。"><meta property="og:url" content="https://blog.linioi.com/posts/deploy-blog-to-cf/"><meta property="og:site_name" content="清絮的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Cloudflare"><meta property="article:tag" content="Hexo"><meta property="article:tag" content="Blog"><meta property="article:tag" content="GitHub Action"><meta property="article:published_time" content="2020-11-29T13:54:04+00:00"><meta property="article:modified_time" content="2020-11-29T13:54:04+00:00"><meta name=twitter:site content="QingxuMo"><meta name=twitter:title content="利用 Cloudflare Workers Site 部署静态博客"><meta name=twitter:description content="前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
+虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。'>
+<meta property='og:url' content='https://blog.linioi.com/posts/deploy-blog-to-cf/'>
+<meta property='og:site_name' content='清絮的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloudflare' /><meta property='article:tag' content='Hexo' /><meta property='article:tag' content='Blog' /><meta property='article:tag' content='GitHub Action' /><meta property='article:published_time' content='2020-11-29T13:54:04&#43;00:00'/><meta property='article:modified_time' content='2020-11-29T13:54:04&#43;00:00'/>
+<meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="利用 Cloudflare Workers Site 部署静态博客">
+<meta name="twitter:description" content="前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
 为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
 当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。
-Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
+Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
 在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。
 但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
-虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。"><link rel="shortcut icon" href=img/favicon.ico></head><body><script>(function(){const colorSchemeKey='StackColorScheme';if(!localStorage.getItem(colorSchemeKey)){localStorage.setItem(colorSchemeKey,"auto");}})();</script><script>(function(){const colorSchemeKey='StackColorScheme';const colorSchemeItem=localStorage.getItem(colorSchemeKey);const supportDarkMode=window.matchMedia('(prefers-color-scheme: dark)').matches===true;if(colorSchemeItem=='dark'||colorSchemeItem==='auto'&&supportDarkMode){document.body.dataset.scheme='dark';}else{document.body.dataset.scheme='light';}})();</script><div class="container main-container flex on-phone--column extended article-page with-toolbar"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header class=site-info><figure class=site-avatar><img src=/img/avatar_hu27ccc19b65f346fcf34441b370c4340e_204950_300x0_resize_q75_box.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
-<span class=emoji>✨</span></figure><h1 class=site-name><a href=https://blog.linioi.com>清絮的博客</a></h1><h2 class=site-description>人生如逆旅，我亦是行人。</h2></header><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>首页</span></a></li><li><a href=/talk><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="13" y1="20" x2="20" y2="13"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><span>说说</span></a></li><li><a href=/archives><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>归档</span></a></li><li><a href=/links><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>友链</span></a></li><li><a href=/about><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/search><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>搜索</span></a></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Dark Mode</span></li></ol></aside><main class="main full-width"><div id=article-toolbar><a href=https://blog.linioi.com class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>Back</span></a></div><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/others/>Others</a></header><h2 class=article-title><a href=/posts/deploy-blog-to-cf/>利用 Cloudflare Workers Site 部署静态博客</a></h2><footer class=article-time><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--published>Nov 29, 2020</time></footer></div></header><section class=article-content><h2 id=前言>前言</h2><p>作为一个 <del>很少更新博客</del> 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。</p><p>可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。
-（关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）</p><h3 id=为什么选择-cloudflare>为什么选择 Cloudflare</h3><p>引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」</p><p>当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。</p><p>Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是<strong>直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据</strong>。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。</p><p>在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。</p><p>但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：<a class=link href=https://blog.cloudflare.com/workers-kv-free-tier/ target=_blank rel=noopener>Cloudflare Workers KV 向 Workers Free Plan 免费开放</a>。</p><p>虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。</p><p>不仅如此，Cloudflare 还特意把 Workers KV 的单个文件大小限制由 10MB 调整到了 25MB，这无疑更方便了网站静态资源的存放。而每天 Workers 10w 次免费调用次数我想对于绝大多数站长还是绰绰有余的。</p><p>全球边缘网络加速 + 慷慨大方的免费额度，既然找不到拒绝的理由，那么就勉为其难地接受吧~~</p><h2 id=常规部署>常规部署</h2><h3 id=准备-cli-部署工具>准备 CLI 部署工具</h3><p>开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 <a class=link href=https://github.com/cloudflare/wrangler target=_blank rel=noopener>Wrangler</a>。</p><p>Wrangler 可以通过 <code>npm</code> 或 <code>cargo</code> 安装。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>npm i @cloudflare/wrangler -g
-<span class=c1># 你也可以使用 Yarn 安装 Wrangler</span>
-<span class=c1># yarn global add @cloudflare/wrangler</span>
-</code></pre></div><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>cargo install wrangler
+虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu27ccc19b65f346fcf34441b370c4340e_204950_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">✨</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://blog.linioi.com">清絮的博客</a></h1>
+        <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/talk'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="13" y1="20" x2="20" y2="13" />
+  <path d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+</svg>
+                
+                <span>说说</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://blog.linioi.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/others/" >
+                Others
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/deploy-blog-to-cf/">利用 Cloudflare Workers Site 部署静态博客</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 29, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="前言">前言</h2>
+<p>作为一个 <del>很少更新博客</del> 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。</p>
+<p>可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。
+（关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）</p>
+<h3 id="为什么选择-cloudflare">为什么选择 Cloudflare</h3>
+<p>引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」</p>
+<p>当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。</p>
+<p>Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是<strong>直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据</strong>。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。</p>
+<p>在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。</p>
+<p>但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：<a class="link" href="https://blog.cloudflare.com/workers-kv-free-tier/"  target="_blank" rel="noopener"
+    >Cloudflare Workers KV 向 Workers Free Plan 免费开放</a>。</p>
+<p>虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。</p>
+<p>不仅如此，Cloudflare 还特意把 Workers KV 的单个文件大小限制由 10MB 调整到了 25MB，这无疑更方便了网站静态资源的存放。而每天 Workers 10w 次免费调用次数我想对于绝大多数站长还是绰绰有余的。</p>
+<p>全球边缘网络加速 + 慷慨大方的免费额度，既然找不到拒绝的理由，那么就勉为其难地接受吧~~</p>
+<h2 id="常规部署">常规部署</h2>
+<h3 id="准备-cli-部署工具">准备 CLI 部署工具</h3>
+<p>开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 <a class="link" href="https://github.com/cloudflare/wrangler"  target="_blank" rel="noopener"
+    >Wrangler</a>。</p>
+<p>Wrangler 可以通过 <code>npm</code> 或 <code>cargo</code> 安装。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm i @cloudflare/wrangler -g
+<span class="c1"># 你也可以使用 Yarn 安装 Wrangler</span>
+<span class="c1"># yarn global add @cloudflare/wrangler</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cargo install wrangler
 </code></pre></div><p>{% note info simple %}
 经过实测，Wrangler 可能无法安装在 ARM 架构的设备上。如果可以，尽量使用 x86 设备。
-{% endnote %}</p><h3 id=获取-api-token>获取 API Token</h3><p>如果你没有一个 Cloudflare 帐号，则需要先<a class=link href=https://dash.cloudflare.com/sign-up target=_blank rel=noopener>注册一个 Cloudflare 帐号</a>，并绑定你的自定义域名。</p><p>使用 Wrangler 前需要先 <a class=link href=https://dash.cloudflare.com/profile/api-tokens target=_blank rel=noopener>申请一个 API Token</a>。</p><p>在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。</p><h3 id=初始化项目>初始化项目</h3><p>在博客源码的根目录输入如下命令进行初始化</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash><span class=c1># my-static-blog 是目录名称，你可以改成你喜欢的其他名字</span>
+{% endnote %}</p>
+<h3 id="获取-api-token">获取 API Token</h3>
+<p>如果你没有一个 Cloudflare 帐号，则需要先<a class="link" href="https://dash.cloudflare.com/sign-up"  target="_blank" rel="noopener"
+    >注册一个 Cloudflare 帐号</a>，并绑定你的自定义域名。</p>
+<p>使用 Wrangler 前需要先 <a class="link" href="https://dash.cloudflare.com/profile/api-tokens"  target="_blank" rel="noopener"
+    >申请一个 API Token</a>。</p>
+<p>在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。</p>
+<h3 id="初始化项目">初始化项目</h3>
+<p>在博客源码的根目录输入如下命令进行初始化</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># my-static-blog 是目录名称，你可以改成你喜欢的其他名字</span>
 wrangler init --site my-static-blog
-</code></pre></div><p>Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。</p><p>先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改</p><div class=highlight><pre class=chroma><code class=language-toml data-lang=toml><span class=p>[</span><span class=nx>site</span><span class=p>]</span>
-<span class=nx>bucket</span> <span class=p>=</span> <span class=s2>&#34;./public&#34;</span> <span class=c># 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录</span>
-<span class=nx>entry</span><span class=err>-</span><span class=nx>point</span> <span class=p>=</span> <span class=s2>&#34;workers-site&#34;</span> <span class=c># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
-<span class=nx>account_id</span> <span class=p>=</span> <span class=s2>&#34;&#34;</span> <span class=c># Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责</span>
-<span class=nx>workers_dev</span> <span class=p>=</span> <span class=kc>false</span> <span class=c># 是否启用 workers.dev 子域名，推荐不启用</span>
-<span class=nx>route</span> <span class=p>=</span> <span class=s2>&#34;blog.linioi.com/*&#34;</span> <span class=c># Workers 路由配置，请指向你想绑定的自定义域名</span>
-<span class=nx>zone_id</span> <span class=p>=</span> <span class=s2>&#34;&#34;</span> <span class=c># 域名的 Zone ID，可在 Cloudflare 仪表盘查看</span>
-</code></pre></div><p>完成 wrangler.toml 的配置后，运行<code>wrangler config</code>命令并依照命令行提示输入上一步获取的 API Token。</p><h3 id=预览与部署>预览与部署</h3><p>配置完成后，我们可以先输入如下命令预览一下部署效果。</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>wrangler preview --watch
-</code></pre></div><p>Wrangler 会上传配置文件中设定的<code>bucket</code>路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。</p><p>确认无误后，输入如下命令进行部署</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>wrangler publish
-</code></pre></div><h3 id=配置域名-dns-解析>配置域名 DNS 解析</h3><p>上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。</p><ul><li>如果你在前面修改配置文件时设置了「workers_dev=true」，则 Cloudflare 会自动分配给你一个三级域名，你可以在 DNS 解析设置处创建你的自定义域名的 CNAME 解析，指向 Cloudflare 分配的三级域名。</li><li>如果你在前面修改配置文件时设置了「workers_dev=false」，则在 DNS 解析设置处创建你自定义域名的 A 解析，指向 IP <code>2.2.2.2</code>。</li></ul><h3 id=大功告成>大功告成！</h3><p>如果一切正常，现在你可以输入你的自定义域名即可访问
-你的博客。如果你想要实现更多的玩法，可以自己编辑 workers-site 下的 index.js。</p><h2 id=使用-github-action-实现持续集成>使用 GitHub Action 实现持续集成</h2><p>如果你从未接触过 GitHub Action 自动部署，建议你先看一下我写的另一篇文章 <a class=link href=https://blog.linioi.com/archives/9/ target=_blank rel=noopener>GitHub Action 实现 Hexo 博客持续集成</a>。</p><p>与我写的另一篇文章略有不同，这里需要将文件推送到 Cloudflare Workers Site。我们可以 Cloudflare 官方 <a class=link href=https://github.com/cloudflare/wrangler-action target=_blank rel=noopener>wrangler-action</a> 轻松实现这一过程。</p><p>wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。</p><p>然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 <code>CF_WORKERS_TOKEN</code>，内容为你申请的 API Token。</p><p>最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）</p><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to Cloudflare Workers</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>cloudflare/wrangler-action@1.3.0</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>                </span><span class=nt>apiToken</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.CF_WORKERS_TOKEN }}</span><span class=w>
-</span></code></pre></div><h3 id=我的-github-action-配置文件仅供参考>我的 GitHub Action 配置文件（仅供参考）</h3><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>GitHub Auto Builder For Blog</span><span class=w>
-</span><span class=w>
-</span><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=nt>push</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=nt>branches</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=l>master</span><span class=w>
-</span><span class=w></span><span class=c>#  schedule:</span><span class=w>
-</span><span class=w></span><span class=c>#    - cron: &#39;0 21 * * *&#39;</span><span class=w>
-</span><span class=w>
-</span><span class=w></span><span class=nt>env</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=nt>TZ</span><span class=p>:</span><span class=w> </span><span class=l>Asia/Shanghai</span><span class=w>
-</span><span class=w>
-</span><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=nt>blog-cicd</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Hexo build and deploy</span><span class=w>
-</span><span class=w>    </span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-latest</span><span class=w>
-</span><span class=w>    </span><span class=nt>strategy</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span><span class=nt>matrix</span><span class=p>:</span><span class=w>
-</span><span class=w>        </span><span class=nt>node-version</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span>- <span class=m>12.</span><span class=l>x</span><span class=w>
-</span><span class=w>          
-</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Checkout codes</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v2</span><span class=w>
-</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Use Node.js ${{ matrix.node-version }}</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/setup-node@v1</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>node-version</span><span class=p>:</span><span class=w> </span><span class=l>${{ matrix.node-version }}</span><span class=w>
-</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Cache Node Dependencies</span><span class=w>
-</span><span class=w>        </span><span class=nt>id</span><span class=p>:</span><span class=w> </span><span class=l>cache</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/cache@v1</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>path</span><span class=p>:</span><span class=w> </span><span class=l>.npm</span><span class=w>
-</span><span class=w>          </span><span class=nt>key</span><span class=p>:</span><span class=w> </span><span class=l>${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span><span class=w>
-</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Clone themes</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
-</span><span class=sd>          </span><span class=w>          </span><span class=l>git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><span class=w>
-</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install dependencies</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
-</span><span class=sd>          npm install hexo-cli -g
-</span><span class=sd>          npm install</span><span class=w>          
-</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Generate files and gulp</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
-</span><span class=sd>          </span><span class=w>          </span><span class=l>hexo clean &amp;&amp; hexo generate &amp;&amp; gulp</span><span class=w>
-</span><span class=w>      
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to Cloudflare Workers</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>cloudflare/wrangler-action@1.3.0</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>                </span><span class=nt>apiToken</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.CF_WORKERS_TOKEN }}</span><span class=w>
-</span></code></pre></div></section><footer class=article-footer><section class=article-tags><a href=/tags/cloudflare/>Cloudflare</a>
-<a href=/tags/hexo/>Hexo</a>
-<a href=/tags/blog/>Blog</a>
-<a href=/tags/github-action/>GitHub Action</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-contents--wrapper><h2 class=section-title>Related contents</h2><div class=related-contents><div class="flex article-list--tile"><article><a href=/posts/9/><div class=article-details><h2 class=article-title>GitHub Action 实现 Hexo 博客持续集成</h2></div></a></article><article><a href=/posts/change-to-new-domain/><div class=article-details><h2 class=article-title>博客域名迁移</h2></div></a></article><article><a href=/posts/3/><div class=article-details><h2 class=article-title>浅谈手机通知推送</h2></div></a></article><article><a href=/posts/13/><div class=article-details><h2 class=article-title>欧盟或将仿造中国建网络防火墙</h2></div></a></article><article><a href=/posts/7/><div class=article-details><h2 class=article-title>First Blog</h2></div></a></article></div></div></aside><script src=//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js></script><div class=pagination__title><span class=pagination__title-h><span class=vcount></span>Comments</span><hr></div><div id=waline></div><script>new Waline({el:'#waline',visitor:true,highlight:true,serverURL:'https://waline.linioi.com',requiredFields:['mail'],avatar:'mp',avatarCDN:'https://cdn.v2ex.com/gravatar/'});</script><footer class=site-footer><section class=copyright>&copy;
-2020 -
-2021 清絮的博客</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=2.0.1>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const customFont=document.createElement('link');customFont.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";customFont.type="text/css";customFont.rel="stylesheet";document.head.appendChild(customFont);}());</script><script>window.ga_tid="UA-165980047-1";window.ga_api="https://statistics.linioi.com/cfga/jquery.js"</script><script src=https://cdn.jsdelivr.net/npm/cfga@1.0.3 async></script></body></html>
+</code></pre></div><p>Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。</p>
+<p>先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">site</span><span class="p">]</span>
+<span class="nx">bucket</span> <span class="p">=</span> <span class="s2">&#34;./public&#34;</span> <span class="c"># 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录</span>
+<span class="nx">entry</span><span class="err">-</span><span class="nx">point</span> <span class="p">=</span> <span class="s2">&#34;workers-site&#34;</span> <span class="c"># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
+<span class="nx">account_id</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span> <span class="c"># Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责</span>
+<span class="nx">workers_dev</span> <span class="p">=</span> <span class="kc">false</span> <span class="c"># 是否启用 workers.dev 子域名，推荐不启用</span>
+<span class="nx">route</span> <span class="p">=</span> <span class="s2">&#34;blog.linioi.com/*&#34;</span> <span class="c"># Workers 路由配置，请指向你想绑定的自定义域名</span>
+<span class="nx">zone_id</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span> <span class="c"># 域名的 Zone ID，可在 Cloudflare 仪表盘查看</span>
+</code></pre></div><p>完成 wrangler.toml 的配置后，运行<code>wrangler config</code>命令并依照命令行提示输入上一步获取的 API Token。</p>
+<h3 id="预览与部署">预览与部署</h3>
+<p>配置完成后，我们可以先输入如下命令预览一下部署效果。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wrangler preview --watch
+</code></pre></div><p>Wrangler 会上传配置文件中设定的<code>bucket</code>路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。</p>
+<p>确认无误后，输入如下命令进行部署</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wrangler publish
+</code></pre></div><h3 id="配置域名-dns-解析">配置域名 DNS 解析</h3>
+<p>上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。</p>
+<ul>
+<li>如果你在前面修改配置文件时设置了「workers_dev=true」，则 Cloudflare 会自动分配给你一个三级域名，你可以在 DNS 解析设置处创建你的自定义域名的 CNAME 解析，指向 Cloudflare 分配的三级域名。</li>
+<li>如果你在前面修改配置文件时设置了「workers_dev=false」，则在 DNS 解析设置处创建你自定义域名的 A 解析，指向 IP <code>2.2.2.2</code>。</li>
+</ul>
+<h3 id="大功告成">大功告成！</h3>
+<p>如果一切正常，现在你可以输入你的自定义域名即可访问
+你的博客。如果你想要实现更多的玩法，可以自己编辑 workers-site 下的 index.js。</p>
+<h2 id="使用-github-action-实现持续集成">使用 GitHub Action 实现持续集成</h2>
+<p>如果你从未接触过 GitHub Action 自动部署，建议你先看一下我写的另一篇文章  <a class="link" href="https://blog.linioi.com/archives/9/"  target="_blank" rel="noopener"
+    >GitHub Action 实现 Hexo 博客持续集成</a>。</p>
+<p>与我写的另一篇文章略有不同，这里需要将文件推送到 Cloudflare Workers Site。我们可以 Cloudflare 官方 <a class="link" href="https://github.com/cloudflare/wrangler-action"  target="_blank" rel="noopener"
+    >wrangler-action</a> 轻松实现这一过程。</p>
+<p>wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。</p>
+<p>然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 <code>CF_WORKERS_TOKEN</code>，内容为你申请的 API Token。</p>
+<p>最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Cloudflare Workers</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">cloudflare/wrangler-action@1.3.0</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">                </span><span class="nt">apiToken</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.CF_WORKERS_TOKEN }}</span><span class="w">
+</span></code></pre></div><h3 id="我的-github-action-配置文件仅供参考">我的 GitHub Action 配置文件（仅供参考）</h3>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub Auto Builder For Blog</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">master</span><span class="w">
+</span><span class="w"></span><span class="c">#  schedule:</span><span class="w">
+</span><span class="w"></span><span class="c">#    - cron: &#39;0 21 * * *&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">TZ</span><span class="p">:</span><span class="w"> </span><span class="l">Asia/Shanghai</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">blog-cicd</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Hexo build and deploy</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">strategy</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">matrix</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">node-version</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span>- <span class="m">12.</span><span class="l">x</span><span class="w">
+</span><span class="w">          
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout codes</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Use Node.js ${{ matrix.node-version }}</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/setup-node@v1</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">node-version</span><span class="p">:</span><span class="w"> </span><span class="l">${{ matrix.node-version }}</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache Node Dependencies</span><span class="w">
+</span><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">cache</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v1</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">.npm</span><span class="w">
+</span><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Clone themes</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span><span class="sd">          </span><span class="w">          </span><span class="l">git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install dependencies</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span><span class="sd">          npm install hexo-cli -g
+</span><span class="sd">          npm install</span><span class="w">          
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Generate files and gulp</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span><span class="sd">          </span><span class="w">          </span><span class="l">hexo clean &amp;&amp; hexo generate &amp;&amp; gulp</span><span class="w">
+</span><span class="w">      
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Cloudflare Workers</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">cloudflare/wrangler-action@1.3.0</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">                </span><span class="nt">apiToken</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.CF_WORKERS_TOKEN }}</span><span class="w">
+</span></code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/cloudflare/">Cloudflare</a>
+        
+            <a href="/tags/hexo/">Hexo</a>
+        
+            <a href="/tags/blog/">Blog</a>
+        
+            <a href="/tags/github-action/">GitHub Action</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/9/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GitHub Action 实现 Hexo 博客持续集成</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/change-to-new-domain/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">博客域名迁移</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/3/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">浅谈手机通知推送</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/13/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">欧盟或将仿造中国建网络防火墙</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/7/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">First Blog</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+      <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+  <div class="pagination__title">
+       <span class="pagination__title-h"><span class="vcount"></span>Comments</span>
+       <hr />
+  </div>
+  <div id="waline"></div>
+  <script>
+      new Waline({
+        el: '#waline',
+        visitor: true,
+        highlight: true,
+        serverURL: 'https://waline.linioi.com',
+        requiredFields: ['mail'],
+        avatar: 'mp',
+        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+      });
+  </script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 清絮的博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script>window.ga_tid = "UA-165980047-1";window.ga_api = "https://statistics.linioi.com/cfga/jquery.js"</script><script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
+
+    </body>
+</html>

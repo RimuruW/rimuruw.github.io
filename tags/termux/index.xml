@@ -1,10 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Termux on 清絮的博客</title><link>https://blog.linioi.com/tags/termux/</link><description>Recent content in Termux on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 17 Oct 2020 22:19:36 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/termux/index.xml" rel="self" type="application/rss+xml"/><item><title>Android 一键安装配置 Aria2</title><link>https://blog.linioi.com/posts/aria2-for-termux/</link><pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate><guid>https://blog.linioi.com/posts/aria2-for-termux/</guid><description>Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Termux on 清絮的博客</title>
+    <link>https://blog.linioi.com/tags/termux/</link>
+    <description>Recent content in Termux on 清絮的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 17 Oct 2020 22:19:36 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/termux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android 一键安装配置 Aria2</title>
+      <link>https://blog.linioi.com/posts/aria2-for-termux/</link>
+      <pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/aria2-for-termux/</guid>
+      <description>Aria2 是什么？  Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
 &amp;ndash; 摘自 维基百科
-如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
+ 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
 为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
 为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
 遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
 但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
 下面，让我们开始…
 下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
-Google Play Store： https://play.</description></item></channel></rss>
+ Google Play Store： https://play.</description>
+    </item>
+    
+  </channel>
+</rss>

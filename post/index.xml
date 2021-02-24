@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 清絮的博客</title><link>https://blog.linioi.com/post/</link><description>Recent content in Posts on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Feb 2021 01:26:46 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>记 Gnome 的初体验</title><link>https://blog.linioi.com/posts/the-first-gnome-try/</link><pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate><guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid><description>记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 清絮的博客</title>
+    <link>https://blog.linioi.com/post/</link>
+    <description>Recent content in Posts on 清絮的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 23 Feb 2021 01:26:46 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记 Gnome 的初体验</title>
+      <link>https://blog.linioi.com/posts/the-first-gnome-try/</link>
+      <pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid>
+      <description>记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
 无奈地一次 Gnome 尝试 是的，是“无奈的一次尝试”。
@@ -9,121 +24,261 @@
 我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 Gnome“的提议。
 既然别无选择，为什么不给 Gnome 一个机会呢？（态度好像不太对
 意料之外：Gnome 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + Gnome 的安装。
-重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</description></item><item><title>博客域名迁移</title><link>https://blog.linioi.com/posts/change-to-new-domain/</link><pubDate>Sat, 13 Feb 2021 16:25:19 +0000</pubDate><guid>https://blog.linioi.com/posts/change-to-new-domain/</guid><description>经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃原博客域名。
+重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</description>
+    </item>
+    
+    <item>
+      <title>博客域名迁移</title>
+      <link>https://blog.linioi.com/posts/change-to-new-domain/</link>
+      <pubDate>Sat, 13 Feb 2021 16:25:19 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/change-to-new-domain/</guid>
+      <description>经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃原博客域名。
 更换域名的原因及旧域名处理方式 更换域名的原因有两个：
-.live 域名续费价格超出我的想象…根据我查询结果，即使是最便宜的域名注册商(境外)的续费价格也是 $16 以上。这大概是两个 .com 域名的续费价格了(按最便宜的域名注册商价格算)。考虑到我对 .live 域名后缀没有特别的需求(当初选择这个纯粹是因为腾讯云域名列表就它最便宜)，似乎没有坚持这个域名的必要了。 因为一系列原因，我对现域名注册商(腾讯云)由原来的略微反感到现在的强烈抵触。大概是不想被国内域名注册商喂💩，即使是国内域名注册商价格明显优势的情况下，我还是选择了国外的域名注册商(当然，是最便宜那种)。 目前对旧域名的处理方案是：
-暂不出售（我感觉也没人会买） 保留绝大多数原旧域名链接并确保在未来几年里都可以正常访问。 设置部分关键链接的 301 重定向，*.linioi.com 将成为绝对的主域名 修改几乎所有我可编辑的文档中的 *.qingxu.live 为 *.linioi.com 对于以 @qingxu.live 为后缀的邮件地址采取保持收件但停止发件。在未来的几年里逐步把绑定 @qingxu.live 邮件地址的其他帐号换绑为 @linioi.com（那些不能换绑邮箱的平台真让人头疼）。 话说好像还有很多人博客友链也还是指向 *.qingxu.live，我该怎么通知他们呢……
+ .live 域名续费价格超出我的想象…根据我查询结果，即使是最便宜的域名注册商(境外)的续费价格也是 $16 以上。这大概是两个 .com 域名的续费价格了(按最便宜的域名注册商价格算)。考虑到我对 .live 域名后缀没有特别的需求(当初选择这个纯粹是因为腾讯云域名列表就它最便宜)，似乎没有坚持这个域名的必要了。 因为一系列原因，我对现域名注册商(腾讯云)由原来的略微反感到现在的强烈抵触。大概是不想被国内域名注册商喂💩，即使是国内域名注册商价格明显优势的情况下，我还是选择了国外的域名注册商(当然，是最便宜那种)。  目前对旧域名的处理方案是：
+ 暂不出售（我感觉也没人会买） 保留绝大多数原旧域名链接并确保在未来几年里都可以正常访问。 设置部分关键链接的 301 重定向，*.linioi.com 将成为绝对的主域名 修改几乎所有我可编辑的文档中的 *.qingxu.live 为 *.linioi.com 对于以 @qingxu.live 为后缀的邮件地址采取保持收件但停止发件。在未来的几年里逐步把绑定 @qingxu.live 邮件地址的其他帐号换绑为 @linioi.com（那些不能换绑邮箱的平台真让人头疼）。  话说好像还有很多人博客友链也还是指向 *.qingxu.live，我该怎么通知他们呢……
 闲话 更换的新域名其实是思考近半年后的结果了。期间考虑过无数域名前缀，但总不满意字符的美观性(奇怪的审美增加了)及其代表的意义。当然，更关键的原因是我想到的域名都被注册了……最后选择的 linioi 其实是开始被否决了无数次的选项，但最后输入时却不由自主地输入了 linioi。或许是我平常 Linux 敲多了所以打字时有这样的下意识的举动，也或许是注定的奇妙的缘分，总之最后就是它了，凑合着也能用。
 倒是域名后缀几乎没有纠结。之前最心心念念的其实是 .moe 域名后缀，但是 $13.99（最低价格）的购买价格让我不敢多看……其他很多域名都是购买价格还算正常，续费价格高得离谱（比如 .ink 这样本来极其适合做博客的域名…）。在了解域名定价机制之后，我深刻认识到了 .com 域名虽然看起来昂贵（$8.99 起步），但实际上是最靠谱的那个域名——价格波动非常小而且续费价格稳定（泪）。并且 .com 域名是完全意义上的国际通用，换上 .com 域名的博客看起来就靠谱（虽然还是没人看）
 说起来我折腾博客等其他一系列网站已经近一年了，一年前的我或许也从未想过自己竟然为了愿意为了博客破费购买域名吧（当初想要搭建一个静态博客就是因为听说静态博客免费）。自己第一个域名还是 Freenom 上免费领的，当时想到我也有了一个自己的域名而不是用 GitHub 的 github.io 的时候可激动了，现在认识了那些免费域名的套路后不禁因为当时的自己笑了起来。
-所以换了新域名后，博客更新会勤快一点吗？</description></item><item><title>利用 Cloudflare Workers Site 部署静态博客</title><link>https://blog.linioi.com/posts/deploy-blog-to-cf/</link><pubDate>Sun, 29 Nov 2020 13:54:04 +0000</pubDate><guid>https://blog.linioi.com/posts/deploy-blog-to-cf/</guid><description>前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
+所以换了新域名后，博客更新会勤快一点吗？</description>
+    </item>
+    
+    <item>
+      <title>利用 Cloudflare Workers Site 部署静态博客</title>
+      <link>https://blog.linioi.com/posts/deploy-blog-to-cf/</link>
+      <pubDate>Sun, 29 Nov 2020 13:54:04 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/deploy-blog-to-cf/</guid>
+      <description>前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
 为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
 当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。
 Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
 在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。
 但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
-虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。</description></item><item><title>Minecraft 服务器搭建教程</title><link>https://blog.linioi.com/posts/minecraft-build/</link><pubDate>Fri, 30 Oct 2020 22:33:32 +0000</pubDate><guid>https://blog.linioi.com/posts/minecraft-build/</guid><description>教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
-Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
+虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。</description>
+    </item>
+    
+    <item>
+      <title>Minecraft 服务器搭建教程</title>
+      <link>https://blog.linioi.com/posts/minecraft-build/</link>
+      <pubDate>Fri, 30 Oct 2020 22:33:32 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/minecraft-build/</guid>
+      <description>教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。   Linux 搭建教程  本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
+ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
 如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……
 以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。
-厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。</description></item><item><title>Android 一键安装配置 Aria2</title><link>https://blog.linioi.com/posts/aria2-for-termux/</link><pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate><guid>https://blog.linioi.com/posts/aria2-for-termux/</guid><description>Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
+   厂商 优缺点 评价     谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选   Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了   阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（   腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察…    SSH 连接服务器(家用设备请跳过)  SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。</description>
+    </item>
+    
+    <item>
+      <title>Android 一键安装配置 Aria2</title>
+      <link>https://blog.linioi.com/posts/aria2-for-termux/</link>
+      <pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/aria2-for-termux/</guid>
+      <description>Aria2 是什么？  Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
 &amp;ndash; 摘自 维基百科
-如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
+ 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
 为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
 为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
 遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
 但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
 下面，让我们开始…
 下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
-Google Play Store： https://play.</description></item><item><title>浅谈手机通知推送</title><link>https://blog.linioi.com/posts/3/</link><pubDate>Thu, 01 Oct 2020 15:49:01 +0000</pubDate><guid>https://blog.linioi.com/posts/3/</guid><description>场景如下
+ Google Play Store： https://play.</description>
+    </item>
+    
+    <item>
+      <title>浅谈手机通知推送</title>
+      <link>https://blog.linioi.com/posts/3/</link>
+      <pubDate>Thu, 01 Oct 2020 15:49:01 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/3/</guid>
+      <description>场景如下
 QQ/WeChat:
-A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000+ 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……
-声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。
+ A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000+ 字）  忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……
+声明  限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。  iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。
 即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。
 这里简单介绍一下 iOS 通知推送机制。
 本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。
-远程推送 前提已满足条件：App 已注册远程推送通知。
-Apple 开发者文档给出的推送过程示意图如下： 通知推送示意图
+远程推送  前提已满足条件：App 已注册远程推送通知。
+ Apple 开发者文档给出的推送过程示意图如下：  通知推送示意图 
 用文字描述过程如下：
-软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。</description></item><item><title>Violet 机型 HT OS 刷入教程</title><link>https://blog.linioi.com/posts/12/</link><pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate><guid>https://blog.linioi.com/posts/12/</guid><description>Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…
-前言 待会再补上
-刷入步骤 注意：以下为 hentaiOS 作者 Dyneteve 给出的官方刷入步骤。其他刷机方法待更新。
+ 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。  可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。</description>
+    </item>
+    
+    <item>
+      <title>Violet 机型 HT OS 刷入教程</title>
+      <link>https://blog.linioi.com/posts/12/</link>
+      <pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/12/</guid>
+      <description>Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…
+ 前言 待会再补上
+刷入步骤  注意：以下为 hentaiOS 作者 Dyneteve 给出的官方刷入步骤。其他刷机方法待更新。
 如果你无法理解本文的某些内容，你可以参照这篇教程。
-你需要准备什么？ 一台电脑 (Windows 和 Linux 皆可) 一台能正常工作的 Redmi Note 7 Pro (Violet) 一双能照着教程操作的手 下载 hentaiOS 刷机包 和 AOSP Recovery ROM Flasher V4.zip 至电脑； 对于 Linux 用户，你还需要下载 linux_flash.zip 现已搬运 hentaiOS 刷机包和 AOSP Recovery 至我网盘。
+ 你需要准备什么？  一台电脑 (Windows 和 Linux 皆可) 一台能正常工作的 Redmi Note 7 Pro (Violet) 一双能照着教程操作的手 下载 hentaiOS 刷机包 和 AOSP Recovery ROM Flasher V4.zip 至电脑； 对于 Linux 用户，你还需要下载 linux_flash.zip   现已搬运 hentaiOS 刷机包和 AOSP Recovery 至我网盘。
 上面连接无法访问的可以试试下面的链接。
 hentaiOS 刷机包：Link
 AOSP Recovery：Link
-那么，让我们开始… 备份你的数据，准备好相应的救砖工具以备不时之需。 关机下长按电源键和音量-进入 fastboot 模式。 使用 USB 数据线连接手机和电脑。如果可以，请尽量使用原装数据线。 输入fastboot devices检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照这篇教程配置 ADB 环境。对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。 解压你下载的 AOSP Recovery ROM Flasher V4.</description></item><item><title>欧盟或将仿造中国建网络防火墙</title><link>https://blog.linioi.com/posts/13/</link><pubDate>Thu, 13 Aug 2020 15:52:45 +0000</pubDate><guid>https://blog.linioi.com/posts/13/</guid><description> 一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”
-上个月，欧盟议会发布了一份关于数字经济未来发展策略的研究报告，提出将建立欧盟的“互联网防火墙”，报告明确指出这个防火墙将“像中国的一样，会封锁一部分支持或者容忍（对欧盟而言的）非法行为的第三方国家的互联网服务。
-互联网防火墙可能是有预兆的必然 不禁让我想起了去年俄罗斯开始和中国交流“互联网防火墙”的建设。
+ 那么，让我们开始…  备份你的数据，准备好相应的救砖工具以备不时之需。 关机下长按电源键和音量-进入 fastboot 模式。 使用 USB 数据线连接手机和电脑。如果可以，请尽量使用原装数据线。 输入fastboot devices检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照这篇教程配置 ADB 环境。对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。 解压你下载的 AOSP Recovery ROM Flasher V4.</description>
+    </item>
+    
+    <item>
+      <title>欧盟或将仿造中国建网络防火墙</title>
+      <link>https://blog.linioi.com/posts/13/</link>
+      <pubDate>Thu, 13 Aug 2020 15:52:45 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/13/</guid>
+      <description> 一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”
+  上个月，欧盟议会发布了一份关于数字经济未来发展策略的研究报告，提出将建立欧盟的“互联网防火墙”，报告明确指出这个防火墙将“像中国的一样，会封锁一部分支持或者容忍（对欧盟而言的）非法行为的第三方国家的互联网服务。
+ 互联网防火墙可能是有预兆的必然 不禁让我想起了去年俄罗斯开始和中国交流“互联网防火墙”的建设。
 所谓“网络主权”正在被越来越多的国家挂在嘴上，而所谓“互联网自由”逐渐变成了一个笑话。一切真如很久以前有人说的，「互联网审查并将成为世界绝大多数国家的共识，互联网自由将随着互联网的发展而有名无实」。
 历史总是相似的 此时被无数人想起的莫过于茨威格的《昨日的世界》
-自从第一次世界大战以来，世界所经历的能让人感觉到的最大倒退，莫过于对个人行动自由的限制，以及自由权利的缩小。 在1914年以前，地球属于所有的人。每个人可以去他想去的地方，想停留多长时间就停留多长时间。没有所谓的许可，没有准入。 当我跟现在的年轻人讲到我在1914年以前去了印度和美国，没有带护照，也根本没见过护照是什么样子，我总是看到他们脸上的惊奇。 人们上车下车，不需要问什么，也不被人盘问；今天人们被要求填写的上百份表格，当时一份也不用填写。没有居留许可，没有签证，没有刁难。 今天的国界线，因为大家彼此之间病态的不信任，已经被海关、警察、哨所变成了一道铁丝网，而那时的国界线无非是一条象征性的界线，谁都可以不假思索地越过，就如同格林尼治的子午线一样。
+ 自从第一次世界大战以来，世界所经历的能让人感觉到的最大倒退，莫过于对个人行动自由的限制，以及自由权利的缩小。 在1914年以前，地球属于所有的人。每个人可以去他想去的地方，想停留多长时间就停留多长时间。没有所谓的许可，没有准入。 当我跟现在的年轻人讲到我在1914年以前去了印度和美国，没有带护照，也根本没见过护照是什么样子，我总是看到他们脸上的惊奇。 人们上车下车，不需要问什么，也不被人盘问；今天人们被要求填写的上百份表格，当时一份也不用填写。没有居留许可，没有签证，没有刁难。 今天的国界线，因为大家彼此之间病态的不信任，已经被海关、警察、哨所变成了一道铁丝网，而那时的国界线无非是一条象征性的界线，谁都可以不假思索地越过，就如同格林尼治的子午线一样。
 　——茨威格 《昨日的世界》
-所谓自由只是在管制下的一点漏洞。当制度逐渐完善，自由只剩下狭义的自由，也就是政治中的「真正的自由」。
+ 所谓自由只是在管制下的一点漏洞。当制度逐渐完善，自由只剩下狭义的自由，也就是政治中的「真正的自由」。
 想起许多年前无数人苦苦追求的“言论自由”，又与无数人把西方某些国家当作自由的标杆，心中自由的圣地，便觉得可笑到了极点，世界总是这样让人意想不到、啼笑皆非。
 引用一位博主的一段话：
-互联网也曾撕开一个时代的裂缝，现在中文互联网上还有人在怀念上一个十年乃至上上个十年，怀念那时候自由的互联网风气，全世界的网站、服务须臾指间，点击可达——和茨威格一样，他们也认为那是理所当然。
+ 互联网也曾撕开一个时代的裂缝，现在中文互联网上还有人在怀念上一个十年乃至上上个十年，怀念那时候自由的互联网风气，全世界的网站、服务须臾指间，点击可达——和茨威格一样，他们也认为那是理所当然。
 其实我们都不过是见证了裂缝渐渐闭合的过程而已，现在这个过程也要降临到欧洲了。一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”
-恍然间，昨日如梦。
+ 恍然间，昨日如梦。
 参考文章:
-逸文笔记</description></item><item><title>Arch Linux 服务器安装 LNMP</title><link>https://blog.linioi.com/posts/5/</link><pubDate>Sat, 30 May 2020 20:31:49 +0000</pubDate><guid>https://blog.linioi.com/posts/5/</guid><description>没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
-对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
+ 逸文笔记  </description>
+    </item>
+    
+    <item>
+      <title>Arch Linux 服务器安装 LNMP</title>
+      <link>https://blog.linioi.com/posts/5/</link>
+      <pubDate>Sat, 30 May 2020 20:31:49 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/5/</guid>
+      <description>没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本
+ 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗
 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。
 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline）
 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。
 systemctl status nginx 输出：
-● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.</description></item><item><title>GitHub Action 实现 Hexo 博客持续集成</title><link>https://blog.linioi.com/posts/9/</link><pubDate>Wed, 29 Apr 2020 01:47:09 +0000</pubDate><guid>https://blog.linioi.com/posts/9/</guid><description>无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
-你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
+● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Action 实现 Hexo 博客持续集成</title>
+      <link>https://blog.linioi.com/posts/9/</link>
+      <pubDate>Wed, 29 Apr 2020 01:47:09 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/9/</guid>
+      <description>无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
+ 你要先清楚某些东西…  在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub   据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.</description></item><item><title>通过 ADB 给手机刷入第三方 Recovery</title><link>https://blog.linioi.com/posts/8/</link><pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate><guid>https://blog.linioi.com/posts/8/</guid><description>对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
-刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
+  在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字：  This is the workflow execution time which may be different than the billed time.</description>
+    </item>
+    
+    <item>
+      <title>通过 ADB 给手机刷入第三方 Recovery</title>
+      <link>https://blog.linioi.com/posts/8/</link>
+      <pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/8/</guid>
+      <description>对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
+ 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
 Windows 操作系统下 ADB 环境配置请参阅该链接
-OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本
-刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。
-以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
+ OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本
+ 刷入步骤   手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。
+  以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。
-打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
-C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.</description></item><item><title>Violet 机型 PE/Plus 刷入教程</title><link>https://blog.linioi.com/posts/10/</link><pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate><guid>https://blog.linioi.com/posts/10/</guid><description>PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
-注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
-PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
+  打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
+C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.</description>
+    </item>
+    
+    <item>
+      <title>Violet 机型 PE/Plus 刷入教程</title>
+      <link>https://blog.linioi.com/posts/10/</link>
+      <pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/10/</guid>
+      <description>PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
+  注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
+ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
 之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
-对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
-刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
-方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description></item><item><title>如何在 Redmi Note 7 Pro 上刷机？</title><link>https://blog.linioi.com/posts/11/</link><pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate><guid>https://blog.linioi.com/posts/11/</guid><description>拿到手机后干什么？刷机！
+ 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
+ 刷前需知  刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。   本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
+ 方法一：  如果你电脑是 Linux 发行版，请忽略此方法。
+  下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。   GitHub （推荐） Google Drive （不推荐，需要审核）   解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description>
+    </item>
+    
+    <item>
+      <title>如何在 Redmi Note 7 Pro 上刷机？</title>
+      <link>https://blog.linioi.com/posts/11/</link>
+      <pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/11/</guid>
+      <description>拿到手机后干什么？刷机！
+ 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
 如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-刷机前请先看看最下面的乱七八糟的问题（
+ 刷机前请先看看最下面的乱七八糟的问题（
 由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。
-Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
-一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
+ Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
+ 一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
 二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。
-三、下载刷机所需文件 Android Debug Bridge
-Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
-具体下载和配置可参考少数派的这篇文章。
+三、下载刷机所需文件   Android Debug Bridge
+ Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
+ 具体下载和配置可参考少数派的这篇文章。
 如果你使用一键刷入之类的应用，则不需要此操作。
-Recovery
+  Recovery
 目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd）
-底包
+  底包
 前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。
 有的系统自带底包，我们可以不刷入底包。
-如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。</description></item><item><title>DD 指令用法详解</title><link>https://blog.linioi.com/posts/6/</link><pubDate>Sun, 29 Mar 2020 23:42:43 +0000</pubDate><guid>https://blog.linioi.com/posts/6/</guid><description>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
-dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
-注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
-参数注释：
-if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
-count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
-dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.</description></item><item><title>Arch Linux + Windows 双系统安装教程</title><link>https://blog.linioi.com/posts/18/</link><pubDate>Wed, 25 Mar 2020 11:56:38 +0000</pubDate><guid>https://blog.linioi.com/posts/18/</guid><description>在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
-Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
-有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
-具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料 即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
+如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。</description>
+    </item>
+    
+    <item>
+      <title>DD 指令用法详解</title>
+      <link>https://blog.linioi.com/posts/6/</link>
+      <pubDate>Sun, 29 Mar 2020 23:42:43 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/6/</guid>
+      <description>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
+ dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
+ 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
+ 参数注释：
+ if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。   注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
+  count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。   ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
+ dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux &#43; Windows 双系统安装教程</title>
+      <link>https://blog.linioi.com/posts/18/</link>
+      <pubDate>Wed, 25 Mar 2020 11:56:38 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/18/</guid>
+      <description>在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
+  Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
+ 有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型Linux发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
+ 具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了） 能够面对满屏的命令行保持基本冷静 具有基础的英语水平，至少命令行报错的时候，你能反应过来该指令执行出现错误 已经查阅相关资料，对 Linux 发行版和桌面环境有所了解 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料  即使目前网上的 Arch Linux 的安装教程极其繁多，Arch Wiki 也素以详尽而闻名，但是目前包括本教程在内没有一个教程能保证让一个纯小白顺利安装 Arch Linux，何况是 Arch Linux + Windows 双系统。
 如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行指令的意思。一般来说，安装过程也不会出现什么技术难点。
 如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
 如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
-为什么写这篇教程？ 该部分内容还处于编辑中
-ISO 镜像烧录 Windows 建议使用 Rufus 烧录镜像。 Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</description></item><item><title>First Blog</title><link>https://blog.linioi.com/posts/7/</link><pubDate>Tue, 24 Mar 2020 19:01:10 +0000</pubDate><guid>https://blog.linioi.com/posts/7/</guid><description>第一篇博客，Hello world~~
-希望自己删库跑路不要那么快</description></item></channel></rss>
+为什么写这篇教程？  该部分内容还处于编辑中
+ ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</description>
+    </item>
+    
+    <item>
+      <title>First Blog</title>
+      <link>https://blog.linioi.com/posts/7/</link>
+      <pubDate>Tue, 24 Mar 2020 19:01:10 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/7/</guid>
+      <description>第一篇博客，Hello world~~
+ 希望自己删库跑路不要那么快
+ </description>
+    </item>
+    
+  </channel>
+</rss>

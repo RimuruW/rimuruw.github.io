@@ -1,9 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recovery on 清絮的博客</title><link>https://blog.linioi.com/tags/recovery/</link><description>Recent content in Recovery on 清絮的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 13 Apr 2020 11:46:44 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/recovery/index.xml" rel="self" type="application/rss+xml"/><item><title>通过 ADB 给手机刷入第三方 Recovery</title><link>https://blog.linioi.com/posts/8/</link><pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate><guid>https://blog.linioi.com/posts/8/</guid><description>对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
-刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recovery on 清絮的博客</title>
+    <link>https://blog.linioi.com/tags/recovery/</link>
+    <description>Recent content in Recovery on 清絮的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 13 Apr 2020 11:46:44 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/recovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 ADB 给手机刷入第三方 Recovery</title>
+      <link>https://blog.linioi.com/posts/8/</link>
+      <pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/8/</guid>
+      <description>对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
+ 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
 Windows 操作系统下 ADB 环境配置请参阅该链接
-OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本
-刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。
-以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
+ OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本
+ 刷入步骤   手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。
+  以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。
-打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
-C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.</description></item></channel></rss>
+  打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
+C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.</description>
+    </item>
+    
+  </channel>
+</rss>
