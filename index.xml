@@ -638,9 +638,17 @@ sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s@^\(deb.*science stable\)$@#\1\n
 &lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Google Play Store： &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux&#34;&gt;https://play.google.com/store/apps/details?id=com.termux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;~~Google Play Store： &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux~~&#34;&gt;https://play.google.com/store/apps/details?id=com.termux~~&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;因为&lt;a class=&#34;link&#34; href=&#34;https://github.com/termux/termux-app/issues/1072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这些原因&lt;/a&gt;，Google Play 不再是受推荐的下载渠道。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;F-Droid：https://f-droid.org/packages/com.termux/&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;如果因为网络原因无法正常访问 F-Droid，也可以在&lt;a class=&#34;link&#34; href=&#34;https://cloud.linioi.com/s/RYhb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的分享站&lt;/a&gt;下载。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;请勿交叉安装和更新这两个渠道的 Termux&lt;/strong&gt;！即，如果你是在 Google Play Store 下载和安装 Termux，&lt;strong&gt;请勿在 F-Droid 下载安装包并覆盖安装&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;安装后打开 Termux，你会看到如大致下图所示的终端界面&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 77; flex-basis: 186px&#34;&gt;
