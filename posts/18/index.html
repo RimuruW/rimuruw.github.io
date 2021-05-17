@@ -25,7 +25,7 @@
  ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。'>
 <meta property='og:url' content='https://blog.linioi.com/posts/18/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:published_time' content='2020-03-25T11:56:38&#43;00:00'/><meta property='article:modified_time' content='2020-03-25T11:56:38&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:published_time' content='2020-03-25T11:56:38&#43;00:00'/><meta property='article:modified_time' content='2020-03-25T11:56:38&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="Arch Linux &#43; Windows 双系统安装教程">
 <meta name="twitter:description" content="在安装Arch Linux之前，相信你已经对它有了充分的了解 这不是一个对新手友好的Linux发行版，可这并不影响它在世界各地受到热烈欢迎
   Note: 因为长期没有时间修改教程以适配 Arch Linux 最新变化，现暂且将该教程归档。
@@ -35,8 +35,9 @@
 如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux &#43; Windows 双系统的安装，部分指令可以根据你的习惯或者需求改为其他指令，本教程仅供参照。
 如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动。
 为什么写这篇教程？  该部分内容还处于编辑中
- ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+ ISO 镜像烧录  Windows 建议使用 Rufus 烧录镜像。   Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -67,7 +68,7 @@
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -224,7 +225,7 @@
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -356,7 +357,7 @@
 <ul>
 <li>Linux 使用 dd 指令 ：</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> dd <span class="k">if</span><span class="o">=</span>ISO镜像位置 <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">bs</span><span class="o">=</span>4M
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>ISO镜像位置 of<span style="color:#f92672">=</span>/dev/sdX bs<span style="color:#f92672">=</span>4M
 </code></pre></div><p><code>/dev/sdX </code>为用作启动盘的U盘标识。
 输入如下指令确定获取电脑硬盘信息，所获取的信息中应该包含U盘标识
 <code>sudo fdisk -l</code></p>
@@ -578,26 +579,26 @@ b. UEFI启动输入如下指令：
 <p>如果你对 Linux 下编辑有所了解，尤其是nano编辑有所了解的话，这一步对于你来说应该不算陌生。
 如果你对 Linux 下编辑不算熟悉，或者对 nano 不熟悉，也不要紧。你只要同时按<code>Ctrl+F</code>，接着输入 China 再回车进行搜索。
 如果一切顺利，你应该看到以下字符</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#China</span>
-<span class="nv">Server</span> <span class="o">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinux/<span class="nv">$repo</span>/os/<span class="nv">$arch</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#China</span>
+Server <span style="color:#f92672">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 </code></pre></div><p>此时，你的终端光标应该也在此闪烁。
 同时按住<code>Ctrl+K</code>剪切镜像网址，接着同时按住Ctrl和键盘的上方向键返回顶端，然后同时按住<code>Ctrl+U</code>粘贴你剪切的镜像源，最后同时按住<code>Ctrl+X</code>，输入<code>y</code>确认退出。</p>
 <p>当然，你也可以选择下面镜像源中的某一个以完成后续安装。</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 网易</span>
-<span class="nv">Server</span> <span class="o">=</span> http://mirrors.163.com/archlinux/<span class="nv">$repo</span>/os/<span class="nv">$arch</span>
-<span class="c1"># 阿里</span>
-<span class="nv">Server</span> <span class="o">=</span> http://mirrors.aliyun.com/archlinux/<span class="nv">$repo</span>/os/<span class="nv">$arch</span>
-<span class="c1"># 中国科学技术大学</span>
-<span class="nv">Server</span> <span class="o">=</span> https://mirrors.ustc.edu.cn/archlinux/<span class="nv">$repo</span>/os/<span class="nv">$arch</span>
-<span class="c1"># 西安交通大学</span>
-<span class="nv">Server</span> <span class="o">=</span> https://mirrors.xjtu.edu.cn/archlinux/<span class="nv">$repo</span>/os/<span class="nv">$arch</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 网易</span>
+Server <span style="color:#f92672">=</span> http://mirrors.163.com/archlinux/$repo/os/$arch
+<span style="color:#75715e"># 阿里</span>
+Server <span style="color:#f92672">=</span> http://mirrors.aliyun.com/archlinux/$repo/os/$arch
+<span style="color:#75715e"># 中国科学技术大学</span>
+Server <span style="color:#f92672">=</span> https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+<span style="color:#75715e"># 西安交通大学</span>
+Server <span style="color:#f92672">=</span> https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
 </code></pre></div><p>修改完镜像源之后，输入如下指令刷新镜像源
 <code>sudo pacman -Syy</code></p>
 <ul>
 <li>真正开始安装基本系统
 输入如下指令开始安装</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd
 </code></pre></div><blockquote>
 <p>可以将上述指令中的<code>linux</code>替换为 <a class="link" href="https://wiki.archlinux.org/index.php/Kernel"  target="_blank" rel="noopener"
     >Kernel</a> 页面中介绍的内核软件包。如果知道自己的需求，可以不安装内核和固件软件包。</p>
@@ -638,12 +639,12 @@ b. UEFI启动输入如下指令：
 输入如下指令打开sudoers文件：
 <code>nano /etc/sudoers</code></p>
 <p>在打开的文件中找到以下两行：</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Uncomment to allow members of group wheel to execute any command</span>
-<span class="c1"># %wheel ALL=(ALL) ALL</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## Uncomment to allow members of group wheel to execute any command</span>
+<span style="color:#75715e"># %wheel ALL=(ALL) ALL</span>
 </code></pre></div><p>确认无误后， 把<code>%wheel</code>前面的注释符号（#）去掉，（%）要留下。
 最后的结果应该是下面这样：</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Uncomment to allow members of group wheel to execute any command</span>
-%wheel <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> ALL
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## Uncomment to allow members of group wheel to execute any command</span>
+%wheel ALL<span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> ALL
 </code></pre></div><p>同时按<code>Ctrl + X</code>，然后保存退出。</p>
 <blockquote>
 <p>后续若需要普通用户在执行某条指令时临时获得 root 权限，则在该条指令前加上<code>sudo</code>
@@ -659,9 +660,9 @@ b. UEFI启动输入如下指令：
 <p>然后输入以下命令：
 <code>nano /etc/hosts</code>
 你应该会看到如下符号</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#&lt;ip-address&gt; &lt;hostname.domain.org&gt; &lt;hostname&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#&lt;ip-address&gt; &lt;hostname.domain.org&gt; &lt;hostname&gt;</span>
 </code></pre></div><p>你需要添加相应字符，使得界面如下所示：</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">127.0.0.1	localhost
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">127.0.0.1	localhost
 ::1		localhost
 127.0.1.1	你电脑主机名.localdomain	你电脑主机名
 </code></pre></div><blockquote>
@@ -684,7 +685,7 @@ b. UEFI启动输入如下指令：
 <code>pacman -S grub efibootmgr os-prober</code>
 然后输入以下指令安装到硬盘：</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot --bootloader-id<span class="o">=</span>grub --recheck
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grub-install --target<span style="color:#f92672">=</span>x86_64-efi --efi-directory<span style="color:#f92672">=</span>/boot --bootloader-id<span style="color:#f92672">=</span>grub --recheck
 </code></pre></div><blockquote>
 <p>如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，<em>请自行修改 &ndash;efi-directory 的值</em></p>
 </blockquote>
@@ -692,11 +693,11 @@ b. UEFI启动输入如下指令：
 <code>grub-mkconfig -o /boot/grub/grub.cfg</code>
 注意，你一定要确定输入上面指令有输出结果
 输出结果大致如下：</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Generating grub configuration file ...
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Generating grub configuration file ...
 Found linux image: /boot/vmlinuz-linux
-Found initrd image<span class="o">(</span>s<span class="o">)</span> in /boot: initramfs-linux.img
-Found fallback initrd image<span class="o">(</span>s<span class="o">)</span> in /boot: initramfs-linux-fallback.img
-<span class="k">done</span>
+Found initrd image<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> in /boot: initramfs-linux.img
+Found fallback initrd image<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> in /boot: initramfs-linux-fallback.img
+<span style="color:#66d9ef">done</span>
 </code></pre></div><blockquote>
 <p>如果输入上一条指令没有任何输出结果，<strong>请务必停下来检查</strong>上面所有步骤有没有哪一处出现问题，或者重新进行所有安装步骤！！</p>
 </blockquote>
@@ -723,9 +724,9 @@ Found fallback initrd image<span class="o">(</span>s<span class="o">)</span> in 
 输入如下指令修改 locale.gen 文件，配置语言环境：
 <code>nano /etc/locale.gen</code></p>
 <p>分别找到以下字符，删除该行最前面的<code>#</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#en_US.UTF-8 UTF-8</span>
-<span class="c1">#zh_CN.UTF-8 UTF-8</span>
-<span class="c1">#zh_TW.UTF-8 UTF-8</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#en_US.UTF-8 UTF-8</span>
+<span style="color:#75715e">#zh_CN.UTF-8 UTF-8</span>
+<span style="color:#75715e">#zh_TW.UTF-8 UTF-8</span>
 </code></pre></div><blockquote>
 <p>比如，你看到<code>#en_US.UTF-8 UTF-8</code>时，你需要删除该行最前面的<code>#</code>，使之变成<code>en_US.UTF-8 UTF-8</code>。</p>
 </blockquote>
@@ -736,7 +737,7 @@ Found fallback initrd image<span class="o">(</span>s<span class="o">)</span> in 
 <p>退出后输入如下指令刷新区域信息：
 <code>locale-gen</code>
 如果你上一步操作无误的话，指令输出结果应该包含</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">en_US.UTF-8 UTF-8
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">en_US.UTF-8 UTF-8
 zh_CN.UTF-8 UTF-8
 zh_TW.UTF-8 UTF-8
 </code></pre></div><p>输入如下指令将区域信息写入 locale-conf 文件：
@@ -811,11 +812,11 @@ wqy-zenhei</li>
 <em>如果已有此文件，也可以输入如上指令打开此文件</em>
 在文件中添加以下内容：</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export LANG<span style="color:#f92672">=</span>zh_CN.UTF-8
 
-<span class="nb">export</span> <span class="nv">LANGUAGE</span><span class="o">=</span>zh_CN:en_US
+export LANGUAGE<span style="color:#f92672">=</span>zh_CN:en_US
 
-<span class="nb">export</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>en_US.UTF-8
+export LC_CTYPE<span style="color:#f92672">=</span>en_US.UTF-8
 </code></pre></div><p>同时按住<code>Ctrl + X</code>，然后保存退出。</p>
 <p>如果你是一步步按照本教程操作，则你此时是在 root 用户目录创建了.xprofile文件。因此，此时.xprofile只会影响root用户。
 输入如下指令，将该文件复制到你创建的普通用户目录下：
@@ -831,11 +832,11 @@ wqy-zenhei</li>
 <code>nano ~/.xprofile</code>
 在文件中添加以下内容：</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GTK_IM_MODULE<span style="color:#f92672">=</span>fcitx
 
-<span class="nb">export</span> <span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx
+export QT_IM_MODULE<span style="color:#f92672">=</span>fcitx
 
-<span class="nb">export</span> <span class="nv">XMODIFIERS</span><span class="o">=</span><span class="s2">&#34;@im=fcitx&#34;</span>
+export XMODIFIERS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@im=fcitx&#34;</span>
 </code></pre></div><p>　　修改完成后，保存退出。</p>
 <blockquote>
 <p>重启电脑后在 fcitx 设置即可选择中文输入法。你也可以根据自己的需求安装其他输入法，如搜狗输入法。</p>
@@ -855,8 +856,8 @@ wqy-zenhei</li>
 <code>sudo nano /etc/pacman.conf</code>
 在该文件末尾添加以下内容</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>archlinuxcn<span class="o">]</span>
-<span class="nv">Server</span> <span class="o">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>archlinuxcn<span style="color:#f92672">]</span>
+Server <span style="color:#f92672">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 </code></pre></div><p>接着输入如下指令刷新源：
 <code>sudo pacman -Syy</code>
 然后安装密匙：
@@ -864,9 +865,9 @@ wqy-zenhei</li>
 <blockquote>
 <p>若密匙安装出错，则依次输入以下指令解决：</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Syu haveged
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu haveged
 systemctl start haveged
-systemctl <span class="nb">enable</span> haveged
+systemctl enable haveged
 rm -rf /etc/pacman.d/gnupg
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
@@ -883,10 +884,10 @@ sudo pacman -S archlinuxcn-keyring
     >AUR</a>
 输入如下指令安装 yay</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S git 
-<span class="nb">cd</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S git 
+cd
 git clone https://aur.archlinux.org/yay.git
-<span class="nb">cd</span> yay
+cd yay
 makepkg -si
 </code></pre></div><blockquote>
 <p>yay 使用上与 Pacman 大致一致。
@@ -972,7 +973,7 @@ AUR：<a class="link" href="https://aur.archlinux.org/"  target="_blank" rel="no
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -1036,13 +1037,13 @@ AUR：<a class="link" href="https://aur.archlinux.org/"  target="_blank" rel="no
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 

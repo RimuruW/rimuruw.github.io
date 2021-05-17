@@ -29,7 +29,7 @@ QQ/WeChat:
  软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。  可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。'>
 <meta property='og:url' content='https://blog.linioi.com/posts/3/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='通知推送' /><meta property='article:published_time' content='2020-10-01T15:49:01&#43;00:00'/><meta property='article:modified_time' content='2020-10-01T15:49:01&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='通知推送' /><meta property='article:published_time' content='2020-10-01T15:49:01&#43;00:00'/><meta property='article:modified_time' content='2020-10-01T15:49:01&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="浅谈手机通知推送">
 <meta name="twitter:description" content="场景如下
 QQ/WeChat:
@@ -41,8 +41,9 @@ QQ/WeChat:
 远程推送  前提已满足条件：App 已注册远程推送通知。
  Apple 开发者文档给出的推送过程示意图如下：  通知推送示意图 
 用文字描述过程如下：
- 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。  可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+ 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。  可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -73,7 +74,7 @@ QQ/WeChat:
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -230,7 +231,7 @@ QQ/WeChat:
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -486,7 +487,7 @@ QQ/WeChat:
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -562,13 +563,13 @@ QQ/WeChat:
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 

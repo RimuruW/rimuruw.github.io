@@ -25,7 +25,7 @@ Windows 操作系统下 ADB 环境配置请参阅该链接
 C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.'>
 <meta property='og:url' content='https://blog.linioi.com/posts/8/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Recovery' /><meta property='article:published_time' content='2020-04-13T11:46:44&#43;00:00'/><meta property='article:modified_time' content='2020-04-13T11:46:44&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Recovery' /><meta property='article:published_time' content='2020-04-13T11:46:44&#43;00:00'/><meta property='article:modified_time' content='2020-04-13T11:46:44&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="通过 ADB 给手机刷入第三方 Recovery">
 <meta name="twitter:description" content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
  刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
@@ -35,8 +35,9 @@ Windows 操作系统下 ADB 环境配置请参阅该链接
   以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。
   打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
-C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -67,7 +68,7 @@ C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.">
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -224,7 +225,7 @@ C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.">
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -368,7 +369,7 @@ Finished. Total time: 2.427s
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -432,13 +433,13 @@ Finished. Total time: 2.427s
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 

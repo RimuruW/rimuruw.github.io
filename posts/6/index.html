@@ -21,7 +21,7 @@
  dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.'>
 <meta property='og:url' content='https://blog.linioi.com/posts/6/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='shell' /><meta property='article:published_time' content='2020-03-29T23:42:43&#43;00:00'/><meta property='article:modified_time' content='2020-03-29T23:42:43&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='shell' /><meta property='article:published_time' content='2020-03-29T23:42:43&#43;00:00'/><meta property='article:modified_time' content='2020-03-29T23:42:43&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="DD 指令用法详解">
 <meta name="twitter:description" content="平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
  dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
@@ -29,8 +29,9 @@
  参数注释：
  if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。   注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
   count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。   ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
- dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+ dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -61,7 +62,7 @@
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -218,7 +219,7 @@
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -360,16 +361,16 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <ul>
 <li>测试硬盘的读写速度</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">bs</span><span class="o">=</span><span class="m">1024</span> <span class="nv">count</span><span class="o">=</span><span class="m">1000000</span> <span class="nv">of</span><span class="o">=</span>/root/1Gb.file<span class="sb">`</span>
-dd <span class="k">if</span><span class="o">=</span>/root/1Gb.file <span class="nv">bs</span><span class="o">=</span>64k <span class="p">|</span> dd <span class="nv">of</span><span class="o">=</span>/dev/null
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file<span style="color:#e6db74">`</span>
+dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/root/1Gb.file bs<span style="color:#f92672">=</span>64k | dd of<span style="color:#f92672">=</span>/dev/null
 </code></pre></div><p>通过以上两个命令输出的命令执行时间，可以计算出硬盘的读、写速度。</p>
 <ul>
 <li>确定硬盘的最佳块大小：</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">bs</span><span class="o">=</span><span class="m">1024</span> <span class="nv">count</span><span class="o">=</span><span class="m">1000000</span> <span class="nv">of</span><span class="o">=</span>/root/1Gb.file
-dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">bs</span><span class="o">=</span><span class="m">2048</span> <span class="nv">count</span><span class="o">=</span><span class="m">500000</span> <span class="nv">of</span><span class="o">=</span>/root/1Gb.file
-dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">bs</span><span class="o">=</span><span class="m">4096</span> <span class="nv">count</span><span class="o">=</span><span class="m">250000</span> <span class="nv">of</span><span class="o">=</span>/root/1Gb.file
-dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">bs</span><span class="o">=</span><span class="m">8192</span> <span class="nv">count</span><span class="o">=</span><span class="m">125000</span> <span class="nv">of</span><span class="o">=</span>/root/1Gb.file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
+dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">2048</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">500000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
+dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">4096</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">250000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
+dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">125000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
 </code></pre></div><p>通过比较以上命令输出中所显示的命令执行时间，即可确定系统最佳的块大小。</p>
 <ul>
 <li>修复硬盘：
@@ -386,8 +387,8 @@ dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">b
 <code>#netcat -l -p 1234 | dd of=/dev/hdc bs=16065b</code>
 在目的主机上执行此命令来接收数据并写入/dev/hdc</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">netcat -l -p <span class="m">1234</span> <span class="p">|</span> bzip2 &gt; partition.img
-netcat -l -p <span class="m">1234</span> <span class="p">|</span> gzip &gt; partition.img
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">netcat -l -p <span style="color:#ae81ff">1234</span> | bzip2 &gt; partition.img
+netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
 </code></pre></div><p>以上两条指令是目的主机指令的变化分别采用bzip2、gzip对数据进行压缩，并将备份文件保存在当前目录。</p>
 <ul>
 <li>将一个大视频文件的第i个字节的值改成0x41（大写字母A的ASCII值）
@@ -401,33 +402,33 @@ netcat -l -p <span class="m">1234</span> <span class="p">|</span> gzip &gt; part
 <p>1)以root用户创建一个ASM磁盘所在的目录。</p>
 <p><code>#mkdir –p /u01/asmdisks</code></p>
 <p>2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@book u01<span class="o">]</span><span class="c1"># cd asmdisks</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book u01<span style="color:#f92672">]</span><span style="color:#75715e"># cd asmdisks</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk1 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk1 bs=1024k count=400</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk2 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk2 bs=1024k count=400</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk3 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk3 bs=1024k count=400</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk4 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk4 bs=1024k count=400</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk5 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk5 bs=1024k count=400</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># dd if=/dev/zero of=asm_disk6 bs=1024k count=400</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk6 bs=1024k count=400</span>
 </code></pre></div><p>3)将这些文件与裸设备关联。</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># chmod 777 asm_disk*</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># chmod 777 asm_disk*</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop1 asm_disk1</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop1 asm_disk1</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop2 asm_disk2</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop2 asm_disk2</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop3 asm_disk3</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop3 asm_disk3</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop4 asm_disk4</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop4 asm_disk4</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop5 asm_disk5</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop5 asm_disk5</span>
 
-<span class="o">[</span>root@book asmdisks<span class="o">]</span><span class="c1"># losetup /dev/loop6 asm_disk6</span>
+<span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop6 asm_disk6</span>
 </code></pre></div><blockquote>
 <p>注意：如果要删除通过dd模拟出的虚拟磁盘文件的话，直接删除模拟出的磁盘文件
 （也就是asm_disk1、asm_disk2…asm_disk6）还不够，还必须执行losetup -d /dev/loopN，在这里N从1到6。否则，磁盘文件所占用的磁盘空间不能释放</p>
@@ -465,7 +466,7 @@ netcat -l -p <span class="m">1234</span> <span class="p">|</span> gzip &gt; part
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -529,13 +530,13 @@ netcat -l -p <span class="m">1234</span> <span class="p">|</span> gzip &gt; part
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 

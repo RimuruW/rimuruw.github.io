@@ -31,7 +31,7 @@
 重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。'>
 <meta property='og:url' content='https://blog.linioi.com/posts/the-first-gnome-try/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Gnome' /><meta property='article:tag' content='随笔' /><meta property='article:published_time' content='2021-02-23T01:26:46&#43;08:00'/><meta property='article:modified_time' content='2021-02-23T01:26:46&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Gnome' /><meta property='article:tag' content='随笔' /><meta property='article:published_time' content='2021-02-23T01:26:46&#43;08:00'/><meta property='article:modified_time' content='2021-02-23T01:26:46&#43;08:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="记 Gnome 的初体验">
 <meta name="twitter:description" content="记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
@@ -44,8 +44,9 @@
 我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 Gnome“的提议。
 既然别无选择，为什么不给 Gnome 一个机会呢？（态度好像不太对
 意料之外：Gnome 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux &#43; Gnome 的安装。
-重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -76,7 +77,7 @@
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -233,7 +234,7 @@
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -343,17 +344,17 @@
 <p>After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start"  target="_blank" rel="noopener"
     >start KMS early</a>. Another possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units"  target="_blank" rel="noopener"
     >edit the systemd service</a> and either set its type to &ldquo;idle&rdquo; or add a small delay:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="o">[</span>Service<span class="o">]</span>
- <span class="nv">Type</span><span class="o">=</span>idle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+ Type<span style="color:#f92672">=</span>idle
 </code></pre></div><p>or</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="o">[</span>Service<span class="o">]</span>
- <span class="nv">ExecStartPre</span><span class="o">=</span>/bin/sleep <span class="m">2</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+ ExecStartPre<span style="color:#f92672">=</span>/bin/sleep <span style="color:#ae81ff">2</span>
 </code></pre></div><p>If a longer delay is required, increase the delay time.</p>
 <p>看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？</p>
 <p>于是继续顺着超链接看了下去。</p>
 <p>嗯，在<code>/etc/mkinitcpio.conf</code>添加模块（MODULES），我是 AMD 核显所以应该添加<code>amdgpu</code>。</p>
 <p>所以应该是</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">MODULES</span><span class="o">=(</span>amdgpu<span class="o">)</span>  <span class="c1">#又不是旧架构，我为啥要加 radeon？</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
 </code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
 <p>确保这次开机不是偶然，我特意再重启了一遍，然后&hellip;&hellip;又卡在那个光标了。</p>
 <p>我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（</p>
@@ -520,7 +521,7 @@
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -584,13 +585,13 @@
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 

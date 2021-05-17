@@ -23,7 +23,7 @@
 所以换了新域名后，博客更新会勤快一点吗？'>
 <meta property='og:url' content='https://blog.linioi.com/posts/change-to-new-domain/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2021-02-13T16:25:19&#43;00:00'/><meta property='article:modified_time' content='2021-02-13T16:25:19&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2021-02-13T16:25:19&#43;00:00'/><meta property='article:modified_time' content='2021-02-13T16:25:19&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="博客域名迁移">
 <meta name="twitter:description" content="经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃原博客域名。
 更换域名的原因及旧域名处理方式 更换域名的原因有两个：
@@ -32,8 +32,9 @@
 闲话 更换的新域名其实是思考近半年后的结果了。期间考虑过无数域名前缀，但总不满意字符的美观性(奇怪的审美增加了)及其代表的意义。当然，更关键的原因是我想到的域名都被注册了……最后选择的 linioi 其实是开始被否决了无数次的选项，但最后输入时却不由自主地输入了 linioi。或许是我平常 Linux 敲多了所以打字时有这样的下意识的举动，也或许是注定的奇妙的缘分，总之最后就是它了，凑合着也能用。
 倒是域名后缀几乎没有纠结。之前最心心念念的其实是 .moe 域名后缀，但是 $13.99（最低价格）的购买价格让我不敢多看……其他很多域名都是购买价格还算正常，续费价格高得离谱（比如 .ink 这样本来极其适合做博客的域名…）。在了解域名定价机制之后，我深刻认识到了 .com 域名虽然看起来昂贵（$8.99 起步），但实际上是最靠谱的那个域名——价格波动非常小而且续费价格稳定（泪）。并且 .com 域名是完全意义上的国际通用，换上 .com 域名的博客看起来就靠谱（虽然还是没人看）
 说起来我折腾博客等其他一系列网站已经近一年了，一年前的我或许也从未想过自己竟然为了愿意为了博客破费购买域名吧（当初想要搭建一个静态博客就是因为听说静态博客免费）。自己第一个域名还是 Freenom 上免费领的，当时想到我也有了一个自己的域名而不是用 GitHub 的 github.io 的时候可激动了，现在认识了那些免费域名的套路后不禁因为当时的自己笑了起来。
-所以换了新域名后，博客更新会勤快一点吗？">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+所以换了新域名后，博客更新会勤快一点吗？"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -64,7 +65,7 @@
     })();
 </script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -221,7 +222,7 @@
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
@@ -327,7 +328,7 @@
     <aside class="related-contents--wrapper">
     
     
-        <h2 class="section-title">Related contents</h2>
+        <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
                 
@@ -403,13 +404,13 @@
   <div id="waline"></div>
   <script>
       new Waline({
-        el: '#waline',
+        el: '/css/waline.css',
         visitor: true,
         highlight: true,
         serverURL: 'https://waline.linioi.com',
         requiredFields: ['mail'],
         avatar: 'mp',
-        avatarCDN: 'https://cdn.v2ex.com/gravatar/'
+        dark: 'html[data-scheme="dark"]'
       });
   </script>
 
