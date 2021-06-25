@@ -314,7 +314,7 @@ wrangler init --site my-static-blog
 <p>先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">site</span>]
 <span style="color:#a6e22e">bucket</span> = <span style="color:#e6db74">&#34;./public&#34;</span> <span style="color:#75715e"># 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录</span>
-<span style="color:#a6e22e">entry</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#a6e22e">point</span> = <span style="color:#e6db74">&#34;workers-site&#34;</span> <span style="color:#75715e"># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
+<span style="color:#a6e22e">entry-point</span> = <span style="color:#e6db74">&#34;workers-site&#34;</span> <span style="color:#75715e"># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
 <span style="color:#a6e22e">account_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责</span>
 <span style="color:#a6e22e">workers_dev</span> = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># 是否启用 workers.dev 子域名，推荐不启用</span>
 <span style="color:#a6e22e">route</span> = <span style="color:#e6db74">&#34;blog.linioi.com/*&#34;</span> <span style="color:#75715e"># Workers 路由配置，请指向你想绑定的自定义域名</span>
