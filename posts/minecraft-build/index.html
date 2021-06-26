@@ -591,19 +591,19 @@ sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb htt
         
     <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
 
-  <div id="waline"></div>
-  <script>
-      new Waline({
-        el: '#waline',
-        visitor: true,
-        highlight: true,
-        serverURL: 'https://waline.linioi.com',
-        requiredFields: ['mail'],
-        avatar: 'mp',
-        dark: 'html[data-scheme="dark"]'
-      });
-  </script>
-
+<div id="waline"></div>
+<script>
+  new Waline({
+    el: '#waline',
+    visitor: true,
+    highlight: true,
+    serverURL: 'https://waline.linioi.com',
+    requiredFields: ['mail'],
+    avatar: 'mp',
+    emojiCDN: 'https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/',
+    dark: 'auto'
+  });
+</script>
 
     
 
