@@ -34,7 +34,7 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
 但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
 虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.jpg' />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="src/favicon.ico" />
 <style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
 </style> 
 <script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
@@ -519,20 +519,6 @@ wrangler init --site my-static-blog
 <script>
   new Waline({
     el: '#waline',
-    visitor: true,
-    highlight: true,
-    serverURL: 'https://waline.linioi.com',
-    requiredMeta: ['mail'],
-    avatar: 'mp',
-    mathTagSupport: 'true',
-    emoji: [
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-    ],
     dark: 'auto',
   });
 </script>
