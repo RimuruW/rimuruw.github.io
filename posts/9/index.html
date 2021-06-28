@@ -695,6 +695,20 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 <script>
   new Waline({
     el: '#waline',
+    visitor: true,
+    highlight: true,
+    serverURL: 'https://waline.linioi.com',
+    requiredMeta: ['mail'],
+    avatar: 'mp',
+    mathTagSupport: 'true',
+    emoji: [
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+    ],
     dark: 'auto',
   });
 </script>

@@ -532,6 +532,20 @@ netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
 <script>
   new Waline({
     el: '#waline',
+    visitor: true,
+    highlight: true,
+    serverURL: 'https://waline.linioi.com',
+    requiredMeta: ['mail'],
+    avatar: 'mp',
+    mathTagSupport: 'true',
+    emoji: [
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+    ],
     dark: 'auto',
   });
 </script>
