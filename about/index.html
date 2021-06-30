@@ -22,7 +22,8 @@
 <meta property='og:url' content='https://blog.linioi.com/about/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='og:image' content='https://blog.linioi.com/src/opengraph.jpg' />
-<meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="关于">
+<meta name="twitter:site" content="@QingxuMo">
+    <meta name="twitter:creator" content="@QingxuMo"><meta name="twitter:title" content="关于">
 <meta name="twitter:description" content="关于博主  长期吃土 Arch Linux User &amp;amp;&amp;amp; iOS Fans 精通 CSS、JavaScript、PHP、C、C&#43;&#43;、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript 等单词的拼写 精通各大 Linux 发行版的安装与删库跑路   Qingxu 是中文「清絮」的拼音，没有其他的解读的… 「清絮」二字取自于我很久之前写的一首短诗的末尾二字。虽然诗写得不堪入目，但是末尾二字我自以为颇有意境，所以一直以来将其作为自己互联网的 ID，目前为止还算满意。
  友链格式 如果你的博客内容不违背社会主义核心价值观，可以选择在留言板下评论区遵循如下格式提交你的博客或发送邮件给我，我将会在审核后添加你的博客到友链。
 - link: #你站点的 URL［必填］ avatar: #你头像的 URL [必填] name: #你的名字/昵称 [与 blog 二选一] blog: #你博客的名字 [与 name 二选一] descr: #一句话描述你或你的博客 [必填，内容需符合社会主义核心价值观] 你申请友链无需将我的博客添加至你博客友链。
@@ -38,7 +39,9 @@
 </script>
 
     </head>
-    <body class="article-page keep-sidebar">
+    <body class="
+    article-page 
+">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -55,13 +58,19 @@
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div class="container main-container flex on-phone--column extended ">
-            <aside class="sidebar left-sidebar sticky">
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -115,7 +124,7 @@
         
 
         <li >
-            <a href='/talk'>
+            <a href='talk'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -130,7 +139,7 @@
         
 
         <li >
-            <a href='/archives'>
+            <a href='archives'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -149,7 +158,7 @@
         
 
         <li >
-            <a href='/links'>
+            <a href='links'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -167,7 +176,7 @@
         
 
         <li  class='current' >
-            <a href='/about'>
+            <a href='about'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -185,7 +194,7 @@
         
 
         <li >
-            <a href='/search'>
+            <a href='search'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -225,7 +234,8 @@
     </ol>
 </aside>
 
-            <main class="main full-width">
+    
+<main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -304,30 +314,29 @@
     
 </article>
 
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
      
         
-    <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
-
-<div id="waline"></div>
-<script>
-  new Waline({
-    el: '#waline',
-    visitor: true,
-    highlight: true,
-    serverURL: 'https://waline.linioi.com',
-    requiredMeta: ['mail'],
-    avatar: 'mp',
-    mathTagSupport: 'true',
-    emoji: [
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-    ],
-    dark: 'auto',
-  });
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"avatar":"mp","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji"],"highlight":true,"locale":{"admin":"Admin"},"mathtagsupport":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","visitor":true});
 </script>
 
     
@@ -343,7 +352,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.4.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -409,18 +418,31 @@
 
     </div>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
 
             </main>
+    
+
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
-    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

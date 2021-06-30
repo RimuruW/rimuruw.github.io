@@ -18,7 +18,8 @@
 <meta property='og:url' content='https://blog.linioi.com/posts/minecraft-build/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Minecraft' /><meta property='article:published_time' content='2020-10-30T22:33:32&#43;00:00'/><meta property='article:modified_time' content='2020-10-30T22:33:32&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.jpg' />
-<meta name="twitter:site" content="QingxuMo"><meta name="twitter:title" content="Minecraft 服务器搭建教程">
+<meta name="twitter:site" content="@QingxuMo">
+    <meta name="twitter:creator" content="@QingxuMo"><meta name="twitter:title" content="Minecraft 服务器搭建教程">
 <meta name="twitter:description" content="教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。   Linux 搭建教程  本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
  Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
 如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……
@@ -32,7 +33,9 @@
 </script>
 
     </head>
-    <body class="">
+    <body class="
+    article-page 
+">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -49,13 +52,19 @@
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
-            <aside class="sidebar left-sidebar sticky">
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -109,7 +118,7 @@
         
 
         <li >
-            <a href='/talk'>
+            <a href='talk'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -124,7 +133,7 @@
         
 
         <li >
-            <a href='/archives'>
+            <a href='archives'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -143,7 +152,7 @@
         
 
         <li >
-            <a href='/links'>
+            <a href='links'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -161,7 +170,7 @@
         
 
         <li >
-            <a href='/about'>
+            <a href='about'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -179,7 +188,7 @@
         
 
         <li >
-            <a href='/search'>
+            <a href='search'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -219,20 +228,8 @@
     </ol>
 </aside>
 
-            <main class="main full-width">
-    <div id="article-toolbar">
-        <a href="https://blog.linioi.com" class="back-home">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
-</svg>
-
-
-
-            <span>Back</span>
-        </a>
-    </div>
-
+    
+<main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -586,31 +583,24 @@ sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb htt
     
 </aside>
 
-
-    
+     
+     
         
-    <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
-
-<div id="waline"></div>
-<script>
-  new Waline({
-    el: '#waline',
-    visitor: true,
-    highlight: true,
-    serverURL: 'https://waline.linioi.com',
-    requiredMeta: ['mail'],
-    avatar: 'mp',
-    mathTagSupport: 'true',
-    emoji: [
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-    ],
-    dark: 'auto',
-  });
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"avatar":"mp","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji"],"highlight":true,"locale":{"admin":"Admin"},"mathtagsupport":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","visitor":true});
 </script>
 
     
@@ -626,9 +616,11 @@ sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb htt
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.4.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
+
+    
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     
@@ -690,17 +682,31 @@ sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb htt
 
     </div>
 
-</div>
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
 
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
             </main>
+    
+
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
-    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
