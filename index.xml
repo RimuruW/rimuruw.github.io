@@ -713,7 +713,7 @@ export LC_CTYPE=en_US.UTF-8
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp .xprofile /home/你的用户名
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时，你创建的普通用户区域也配置完成。&lt;/p&gt;
 &lt;h2 id=&#34;arch-linux-已成功安装在你的电脑上&#34;&gt;Arch Linux 已成功安装在你的电脑上！&lt;/h2&gt;
-&lt;p&gt;至此，Arch Linux 已经算是安装完成了。但是我们对于日常桌面用户，我们还有一些东西没有配置，而这些配置能优化我们的桌面体验。以及，你是否还记得 Windows 的引导还没生成呢（&lt;/p&gt;
+&lt;p&gt;至此，Arch Linux 已经算是安装完成了。但是对于日常桌面用户，我们还有一些东西没有配置，而这些配置能优化我们的桌面体验。以及，你是否还记得 Windows 的引导还没生成呢（&lt;/p&gt;
 &lt;p&gt;我们先输入如下命令启用 NetworkManager（注意大小写）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable NetworkManager
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;NetworkManager 是一个方便好用的网络管理小组件，大部分桌面环境都内置了该软件。如果你当前使用的桌面环境没有内置该软件，则输入以下命令安装并启用。&lt;/p&gt;
