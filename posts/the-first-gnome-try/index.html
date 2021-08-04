@@ -94,13 +94,14 @@
 
     <header class="site-info">
         
+            
             <figure class="site-avatar">
                 
                     
                     
                     
                         
-                        <img src="/img/avatar_hu8d96836ce38a6440007125d75e9b673e_279526_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu7f1af6d331cbba0f8e4c9234cacd7d0d_485408_300x0_resize_q75_box.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -109,6 +110,7 @@
                     <span class="emoji">✨</span>
                 
             </figure>
+            
         
         <h1 class="site-name"><a href="https://blog.linioi.com">清絮的博客</a></h1>
         <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
@@ -273,17 +275,29 @@
         <a href="/posts/the-first-gnome-try/">记 Gnome 的初体验</a>
     </h2>
 
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">Feb 23, 2021</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">Feb 23, 2021</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -307,7 +321,7 @@
 <p>比如说大家最熟悉的 VS Code,图标是这样的：</p>
 <p><figure style="flex-grow: 187; flex-basis: 449px">
 		<a href="/posts/the-first-gnome-try/vscode-icon.png" data-size="476x254"><img src="/posts/the-first-gnome-try/vscode-icon.png"
-				srcset="/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w"
 				width="476"
 				height="254"
 				loading="lazy"
@@ -341,17 +355,17 @@
 <p>After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start"  target="_blank" rel="noopener"
     >start KMS early</a>. Another possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units"  target="_blank" rel="noopener"
     >edit the systemd service</a> and either set its type to &ldquo;idle&rdquo; or add a small delay:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
  Type<span style="color:#f92672">=</span>idle
 </code></pre></div><p>or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
  ExecStartPre<span style="color:#f92672">=</span>/bin/sleep <span style="color:#ae81ff">2</span>
 </code></pre></div><p>If a longer delay is required, increase the delay time.</p>
 <p>看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？</p>
 <p>于是继续顺着超链接看了下去。</p>
 <p>嗯，在<code>/etc/mkinitcpio.conf</code>添加模块（MODULES），我是 AMD 核显所以应该添加<code>amdgpu</code>。</p>
 <p>所以应该是</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
 </code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
 <p>确保这次开机不是偶然，我特意再重启了一遍，然后&hellip;&hellip;又卡在那个光标了。</p>
 <p>我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（</p>
@@ -365,7 +379,7 @@
 <p>具体表现为，桌面在我点击后先显示了应用列表，然后再显示了一个扩散开来的 Dock 栏抽屉点击动画。我猜这可能是扩展动画和桌面自带动画冲突的缘故。不出所料，我在 <em>Dash To Dock</em> 扩展中找到了 <em>动画方式</em> -<em>显示应用程序</em>  这个选项。</p>
 <p><figure style="flex-grow: 496; flex-basis: 1190px">
 		<a href="/posts/the-first-gnome-try/image-20210223004213775.png" data-size="1052x212"><img src="/posts/the-first-gnome-try/image-20210223004213775.png"
-				srcset="/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w"
 				width="1052"
 				height="212"
 				loading="lazy"
@@ -385,7 +399,7 @@
 <p>该节仅为记录备份，请勿照搬安装我截图中的扩展。</p>
 <p><figure style="flex-grow: 167; flex-basis: 401px">
 		<a href="/posts/the-first-gnome-try/image-20210223010034467.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010034467.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1532"
 				loading="lazy"
@@ -397,7 +411,7 @@
 	</figure></p>
 <p><figure style="flex-grow: 167; flex-basis: 401px">
 		<a href="/posts/the-first-gnome-try/image-20210223010209578.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010209578.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1532"
 				loading="lazy"
@@ -409,7 +423,7 @@
 	</figure></p>
 <p><figure style="flex-grow: 167; flex-basis: 401px">
 		<a href="/posts/the-first-gnome-try/image-20210223010538858.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010538858.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1532"
 				loading="lazy"
@@ -421,7 +435,7 @@
 	</figure></p>
 <p><figure style="flex-grow: 751; flex-basis: 1802px">
 		<a href="/posts/the-first-gnome-try/image-20210223010623143.png" data-size="2554x340"><img src="/posts/the-first-gnome-try/image-20210223010623143.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w"
 				width="2554"
 				height="340"
 				loading="lazy"
@@ -434,7 +448,7 @@
 <p>各人审美不同，请勿照用我使用的主题和字体。</p>
 <p><figure style="flex-grow: 167; flex-basis: 401px">
 		<a href="/posts/the-first-gnome-try/image-20210223005830704.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223005830704.png"
-				srcset="/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1532"
 				loading="lazy"
@@ -446,7 +460,7 @@
 	</figure></p>
 <p><figure style="flex-grow: 167; flex-basis: 401px">
 		<a href="/posts/the-first-gnome-try/image-20210223005924530.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223005924530.png"
-				srcset="/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1532"
 				loading="lazy"
@@ -459,7 +473,7 @@
 <p>最后的桌面效果如图</p>
 <p><figure style="flex-grow: 160; flex-basis: 384px">
 		<a href="/posts/the-first-gnome-try/image-20210223010757838.png" data-size="2560x1600"><img src="/posts/the-first-gnome-try/image-20210223010757838.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_2.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w"
 				width="2560"
 				height="1600"
 				loading="lazy"
@@ -511,6 +525,7 @@
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
     </footer>
+
 
     
 </article>

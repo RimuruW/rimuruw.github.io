@@ -102,17 +102,29 @@
         <a href="/posts/6/">DD 指令用法详解</a>
     </h2>
 
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">Mar 29, 2020</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">Mar 29, 2020</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -206,13 +218,13 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <ul>
 <li>测试硬盘的读写速度</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file<span style="color:#e6db74">`</span>
 dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/root/1Gb.file bs<span style="color:#f92672">=</span>64k | dd of<span style="color:#f92672">=</span>/dev/null
 </code></pre></div><p>通过以上两个命令输出的命令执行时间，可以计算出硬盘的读、写速度。</p>
 <ul>
 <li>确定硬盘的最佳块大小：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
 dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">2048</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">500000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
 dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">4096</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">250000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
 dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">125000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
@@ -232,7 +244,7 @@ dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev
 <code>#netcat -l -p 1234 | dd of=/dev/hdc bs=16065b</code>
 在目的主机上执行此命令来接收数据并写入/dev/hdc</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">netcat -l -p <span style="color:#ae81ff">1234</span> | bzip2 &gt; partition.img
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">netcat -l -p <span style="color:#ae81ff">1234</span> | bzip2 &gt; partition.img
 netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
 </code></pre></div><p>以上两条指令是目的主机指令的变化分别采用bzip2、gzip对数据进行压缩，并将备份文件保存在当前目录。</p>
 <ul>
@@ -247,7 +259,7 @@ netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
 <p>1)以root用户创建一个ASM磁盘所在的目录。</p>
 <p><code>#mkdir –p /u01/asmdisks</code></p>
 <p>2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book u01<span style="color:#f92672">]</span><span style="color:#75715e"># cd asmdisks</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book u01<span style="color:#f92672">]</span><span style="color:#75715e"># cd asmdisks</span>
 
 <span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk1 bs=1024k count=400</span>
 
@@ -261,7 +273,7 @@ netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
 
 <span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk6 bs=1024k count=400</span>
 </code></pre></div><p>3)将这些文件与裸设备关联。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># chmod 777 asm_disk*</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># chmod 777 asm_disk*</span>
 
 <span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop1 asm_disk1</span>
 
@@ -304,6 +316,7 @@ netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
     </footer>
+
 
     
 </article>

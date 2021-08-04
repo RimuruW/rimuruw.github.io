@@ -96,17 +96,29 @@
         <a href="/posts/9/">GitHub Action 实现 Hexo 博客持续集成</a>
     </h2>
 
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">Apr 29, 2020</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">Apr 29, 2020</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -134,7 +146,7 @@
 <pre><code>This is the workflow execution time which may be different than the billed time.
 </code></pre><ul>
 <li>如果你需要自定义域名，你的<code>CNAME</code>文件应放在 Hexo 源码仓库的 source 文件夹下。</li>
-<li><a href="mailto:hexo-action@v1.0.0">hexo-action@v1.0.0</a> 会自动删除项目仓库下的<code>.deploy_git</code>文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 <a href="mailto:hexo-action@1.0.1">hexo-action@1.0.1</a> 被修复。我认为这个修复是不合理的。</li>
+<li><a class="link" href="mailto:hexo-action@v1.0.0" >hexo-action@v1.0.0</a> 会自动删除项目仓库下的<code>.deploy_git</code>文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 <a class="link" href="mailto:hexo-action@1.0.1" >hexo-action@1.0.1</a> 被修复。我认为这个修复是不合理的。</li>
 <li>如果需要添加额外的 node module，则在<code>package.json</code>中添加相应依赖。</li>
 </ul>
 <h2 id="默认已满足的条件">默认已满足的条件</h2>
@@ -158,7 +170,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <ol start="2">
 <li>在博客源码中新建<code>.github/workflows/hexo.yml</code>文件，在文件添加如下内容：</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span> <span style="color:#75715e"># workflow 名字</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span> <span style="color:#75715e"># workflow 名字</span>
 
 <span style="color:#f92672">on</span>:
   [<span style="color:#ae81ff">push]</span> <span style="color:#75715e"># 触发事件</span>
@@ -205,7 +217,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <ol start="4">
 <li>输入如下命令再生成一对 SSH 密匙。</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C <span style="color:#e6db74">&#34;example@example.com&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C <span style="color:#e6db74">&#34;example@example.com&#34;</span>
 </code></pre></div><p>如果你使用的是未预安装 OpenSSH 软件的 Linux 发行版，你需要先安装 OpenSSH 再进行如下步骤。
 命令中的邮箱填自己 GitHub 的邮箱。此时会在本地生成一对公匙和私匙。</p>
 <ol start="5">
@@ -244,21 +256,21 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
     >成品</a> 复制并根据自己情况修改即可。</p>
 <h3 id="配置内容">配置内容</h3>
 <p>1.名称(这个随意取)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo Blog Deploy</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo Blog Deploy</span>
 </code></pre></div><p>2.指定触发 workflow 的事件，这里选择的是推送至指定分支的事件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">on</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">on</span>:
   <span style="color:#f92672">push</span>: <span style="color:#75715e"># 这里是推送事件</span>
     <span style="color:#f92672">branches</span>:
       - <span style="color:#ae81ff">master</span> <span style="color:#75715e"># 这里指定了推送的分支</span>
 </code></pre></div><p>3.设置时区，这里设置的是上海的</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">env</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">env</span>:
   <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
 </code></pre></div><p>4.指定 workflow 所运行的系统，此处设置的是最新 Ubuntu。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">blog-cicd</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">blog-cicd</span>:
   <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build</span>
   <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
 </code></pre></div><p>5.检出代码，设置 Node 环境</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
   <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
 
 - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup node</span>
@@ -266,29 +278,29 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
   <span style="color:#f92672">with</span>:
     <span style="color:#f92672">node-version</span>: <span style="color:#e6db74">&#34;12.x&#34;</span> <span style="color:#75715e"># Node 的版本</span>
 </code></pre></div><p>6.同步子模块。如果没有使用子模块的话，这一步可以忽略。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout submodules</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout submodules</span>
   <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
 </span><span style="color:#e6db74">    auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;
 </span><span style="color:#e6db74">    git submodule sync --recursive
 </span><span style="color:#e6db74">    git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span>    
 </code></pre></div><p>7.缓存 .npm 目录，加快构建速度</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span> <span style="color:#75715e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span> <span style="color:#75715e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
   <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
   <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
   <span style="color:#f92672">with</span>:
     <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
     <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
 </code></pre></div><p>8.安装依赖。我建议，如果可以，请每次都执行以下步骤。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
   <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
 </span><span style="color:#e6db74">    npm install hexo-cli -g
 </span><span style="color:#e6db74">    npm install</span>    
 </code></pre></div><p>9.生成文件。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
   <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
 </span><span style="color:#e6db74">    </span>    <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate</span>
 </code></pre></div><p>10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
   <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
 </span><span style="color:#e6db74">    git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
 </span><span style="color:#e6db74">    mv ./deploy_git/.git ./public/
@@ -300,7 +312,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span><span style="color:#e6db74">    git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>    
 </code></pre></div><h3 id="成品">成品</h3>
 <p>最后的 workflow</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Blog Deploy</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Blog Deploy</span>
 
 <span style="color:#f92672">on</span>:
   <span style="color:#f92672">push</span>:
@@ -363,7 +375,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 <blockquote>
 <p>Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Auto Buider For Blog</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Auto Buider For Blog</span>
 
 <span style="color:#f92672">on</span>:
   <span style="color:#f92672">push</span>:
@@ -455,6 +467,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
     </footer>
+
 
     
 </article>

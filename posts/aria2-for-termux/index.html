@@ -88,13 +88,14 @@
 
     <header class="site-info">
         
+            
             <figure class="site-avatar">
                 
                     
                     
                     
                         
-                        <img src="/img/avatar_hu8d96836ce38a6440007125d75e9b673e_279526_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu7f1af6d331cbba0f8e4c9234cacd7d0d_485408_300x0_resize_q75_box.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -103,6 +104,7 @@
                     <span class="emoji">✨</span>
                 
             </figure>
+            
         
         <h1 class="site-name"><a href="https://blog.linioi.com">清絮的博客</a></h1>
         <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
@@ -267,17 +269,29 @@
         <a href="/posts/aria2-for-termux/">Android 一键安装配置 Aria2</a>
     </h2>
 
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">Oct 17, 2020</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">Oct 17, 2020</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -301,7 +315,8 @@
 <h2 id="下载和安装-termux">下载和安装 Termux</h2>
 <p><strong>目前仅推荐以下两个下载渠道下载 Termux</strong></p>
 <ul>
-<li>~~Google Play Store： <a href="https://play.google.com/store/apps/details?id=com.termux~~">https://play.google.com/store/apps/details?id=com.termux~~</a></li>
+<li>~~Google Play Store： <a class="link" href="https://play.google.com/store/apps/details?id=com.termux~~"  target="_blank" rel="noopener"
+    >https://play.google.com/store/apps/details?id=com.termux~~</a></li>
 </ul>
 <blockquote>
 <p><em>因为<a class="link" href="https://github.com/termux/termux-app/issues/1072"  target="_blank" rel="noopener"
@@ -333,7 +348,7 @@
 </ul>
 <h2 id="下载和启动脚本">下载和启动脚本</h2>
 <p>下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。<del>如果出现了报错则另说</del></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><ul>
 <li>输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。</li>
 </ul>
@@ -374,7 +389,7 @@
     >唤醒锁</a>，这意味你退出 Termux 时需要手动在状态栏点击「Release wakerlock」后才能真正退出。
 <figure style="flex-grow: 263; flex-basis: 632px">
 		<a href="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png" data-size="1080x410"><img src="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png"
-				srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_2.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_2.png 1024w"
+				srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w"
 				width="1080"
 				height="410"
 				loading="lazy"
@@ -460,6 +475,7 @@
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
     </footer>
+
 
     
 </article>

@@ -49,7 +49,7 @@
 &lt;p&gt;下载完成后，双击打开该文件，允许或不允许 Rufus 联网检查程序更新皆可。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 308; flex-basis: 739px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c.png&#34; data-size=&#34;462x150&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;462&#34;
 				height=&#34;150&#34;
 				loading=&#34;lazy&#34;
@@ -72,7 +72,7 @@
 &lt;p&gt;「持久分区大小」默认即可。对于「分区类型」，UEFI 引导选择「GPT」，BIOS 引导保持「MBR」即可&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 72; flex-basis: 172px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a.png&#34; data-size=&#34;418x580&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;418&#34;
 				height=&#34;580&#34;
 				loading=&#34;lazy&#34;
@@ -87,7 +87,7 @@
 &lt;p&gt;「格式化选项」保持默认即可，单击开始来进行下一步。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 72; flex-basis: 172px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/5377133faa985.png&#34; data-size=&#34;418x580&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/5377133faa985.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;418&#34;
 				height=&#34;580&#34;
 				loading=&#34;lazy&#34;
@@ -102,7 +102,7 @@
 &lt;p&gt;选择 「以 ISO 镜像 模式写入（推荐）」，单击「OK」进行下一步。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 203; flex-basis: 488px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3.png&#34; data-size=&#34;548x269&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;548&#34;
 				height=&#34;269&#34;
 				loading=&#34;lazy&#34;
@@ -115,7 +115,7 @@
 &lt;p&gt;单击开始来烧录镜像。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 258; flex-basis: 619px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/b3191015dc98e.png&#34; data-size=&#34;431x167&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/b3191015dc98e.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;431&#34;
 				height=&#34;167&#34;
 				loading=&#34;lazy&#34;
@@ -130,7 +130,7 @@
 &lt;p&gt;等待烧录完成即可。（下图即为烧录完成的一个示例）&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 72; flex-basis: 172px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/7b7db13921e76.png&#34; data-size=&#34;418x580&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/7b7db13921e76.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;418&#34;
 				height=&#34;580&#34;
 				loading=&#34;lazy&#34;
@@ -145,7 +145,7 @@
 &lt;ul&gt;
 &lt;li&gt;Linux 使用 dd 命令 ：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ISO镜像位置 of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/sdX bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;4M
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ISO镜像位置 of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/sdX bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;4M
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;/dev/sdX &lt;/code&gt;为用作启动盘的 U 盘标识。&lt;/p&gt;
 &lt;p&gt;输入如下命令确定获取电脑硬盘信息，所获取的信息中应该包含 U 盘标识
 &lt;code&gt;sudo fdisk -l&lt;/code&gt;&lt;/p&gt;
@@ -160,7 +160,7 @@
 &lt;p&gt;&lt;em&gt;不止是电脑的硬盘&lt;/em&gt;，其余如光驱和 U 盘（如果已经插入）也会在此处显示。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 139; flex-basis: 334px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16.png&#34; data-size=&#34;986x708&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;986&#34;
 				height=&#34;708&#34;
 				loading=&#34;lazy&#34;
@@ -196,7 +196,7 @@
 &lt;p&gt;Linux 和 Windows 对硬件时钟的处理方式不同，如果不加以特别设置容易造成两个系统时间混乱。&lt;/p&gt;
 &lt;p&gt;Arch Wiki 及我个人推荐的方法是设置 Windows 时区偏移。&lt;/p&gt;
 &lt;p&gt;Windows 下使用管理员权限执行下列命令即可。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;reg add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34;&lt;/span&gt; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;reg add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34;&lt;/span&gt; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;电脑环境确认&#34;&gt;电脑环境确认&lt;/h3&gt;
 &lt;p&gt;进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。&lt;/p&gt;
 &lt;ul&gt;
@@ -216,7 +216,7 @@
 &lt;p&gt;BIOS 启动界面：&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c.png&#34; data-size=&#34;640x480&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;640&#34;
 				height=&#34;480&#34;
 				loading=&#34;lazy&#34;
@@ -229,7 +229,7 @@
 &lt;p&gt;​	UEFI 启动界面：&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/303179878abc6.png&#34; data-size=&#34;1024x768&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/303179878abc6.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1024&#34;
 				height=&#34;768&#34;
 				loading=&#34;lazy&#34;
@@ -243,7 +243,7 @@
 启动成功后你应该看到类似如图所示界面：
 &lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a.png&#34; data-size=&#34;800x600&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;800&#34;
 				height=&#34;600&#34;
 				loading=&#34;lazy&#34;
@@ -263,14 +263,14 @@
 &lt;p&gt;就像用户有自己的用户名，电脑或者说主机（host）也有自己的主机名（hostname）。考虑到一个操作系统一般不会同时运行在多个设备上，所以主机名一般是给系统和程序看的，你无需特别关心。你可以自定义你电脑的主机名。&lt;/p&gt;
 &lt;p&gt;补充一下，上面那段话中括号内的英文不是我矫情作秀所以特意加上去体现我的文化水平（虽然也体现不了啥），而是告诉你这些常见名词的英文称呼。你可能会在系统安装过程中或者日后使用中遇到这些名词所对应的英文单词，了解这些英文称呼能帮助你判断当前系统的情况该从何下手。&lt;/p&gt;
 &lt;p&gt;言归正传。经过上面简单解释，我们可以对如下的提示符进行科学的解释。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root@archiso ~ &lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root@archiso ~ &lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;提示符 @ 前的 root 是当前用户的用户名，@ 后的 archiso 是当前系统（Arch Linux 启动盘）的主机名，～ 符号代表你当前所处的目录（至于 ～ 算啥目录&amp;hellip;这里就不加大新手理解负担了），# 代表当前用户为管理员用户（普通用户为 $），# 后面输入的命令将会以管理员权限无条件执行。&lt;/p&gt;
 &lt;p&gt;特别说明，并非终端一定有这个提示符，也不是说提示符一定按照这个格式存在，因为这些都是可以由你自定义的。&lt;/p&gt;
 &lt;p&gt;你需要在这个称之为终端的界面输入你的命令完成安装过程，命令输入后必须回车确认，系统才会执行。&lt;/p&gt;
 &lt;p&gt;终端的命令需要精确到字符的大小写以及空格。除非你有进行特别配置，否则终端并不能智能地识别你的输入错误。所以，当你终端报错时，第一时间该做的就是检查是否打错了字符或者少了空格。&lt;/p&gt;
 &lt;p&gt;终端（特指 zsh 和 bash 这样的 shell）有个特别强大且实用的功能是 Tab 键补全。比如当你需要输入 &lt;code&gt;pacstrap&lt;/code&gt;，你可以只输入 &lt;code&gt;pacs&lt;/code&gt; 然后按一次键盘的 Tab 键，终端会自动补全 &lt;code&gt;pacstrap&lt;/code&gt;。当存在多个可能的补全项，比如你只输入一个 s 就按下了 Tab 键，终端无法做到自动补全，这时它可能会列出所有可能的选项或者报错。当然，就像上面一样，这也可以由你自定义。善用 Tab 补全能极高地提高我们的输入效率。&lt;/p&gt;
 &lt;p&gt;我们通过下面一行简单的命令认识一下终端的命令。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rm -rf /*
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rm -rf /*
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;rm&lt;/code&gt; 是英语单词 remove（移除）的简写，在 Linux 下通常指&lt;strong&gt;删除文件&lt;/strong&gt;；短横线 &lt;code&gt;-&lt;/code&gt; 后是该命令的参数，&lt;code&gt;r&lt;/code&gt; 代表递归，&lt;code&gt;f&lt;/code&gt; 代表强制执行；最后的 &lt;code&gt;/&lt;/code&gt; 代表根目录，&lt;code&gt;/&lt;/code&gt; 后加 &lt;code&gt;*&lt;/code&gt; 是一种常见的匹配方法（姑且先这样解释），代表 / 目录下所有文件的和文件夹。&lt;/p&gt;
 &lt;p&gt;所以，根据上面的解释，我们现在可以理解，上面那行命令的意思是，删除 / 目录下所有文件和文件夹。空格将命令 &lt;code&gt;rm&lt;/code&gt; 与参数 &lt;code&gt;-rf&lt;/code&gt; 隔开，如果不隔开，终端会识别你输入的命令为 &lt;code&gt;rm-rf&lt;/code&gt;。显然，这个命令不存在，所以终端会报错。&lt;/p&gt;
 &lt;h3 id=&#34;连接网络并同步时间&#34;&gt;连接网络并同步时间&lt;/h3&gt;
@@ -287,27 +287,27 @@
 &lt;p&gt;物理禁用一般需要你的电脑存在可以物理按键或滑块可以手动关闭或打开网卡（当然，我觉得一般电脑是没有这玩意的）。&lt;/p&gt;
 &lt;p&gt;软件禁用则考虑网卡是否被 rfkill 禁用，目前已知 ideapad（联想小新系列）会自动禁用无线网卡和蓝牙。&lt;/p&gt;
 &lt;p&gt;对于无线网卡被 rfkill 禁用的用户，输入以下命令解除 block&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rfkill unblock all
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rfkill unblock all
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在确认无误后，输入 &lt;code&gt;iwctl&lt;/code&gt; 进入 iwd 的 shell。&lt;/p&gt;
 &lt;p&gt;输入 &lt;code&gt;device list&lt;/code&gt; 列出你电脑的无线网络设备（一般就是你电脑的网卡）&lt;/p&gt;
 &lt;p&gt;常见的网卡名称是 &lt;code&gt;wlan0&lt;/code&gt; 这样的。请根据自己电脑的实际情况判断（如果看不懂上一个命令的输出可以用 &lt;code&gt;wlan0&lt;/code&gt; 这个名字试试）。&lt;/p&gt;
 &lt;p&gt;输入如下命令列出所有网络，命令中的 &lt;code&gt;device&lt;/code&gt; 需要替换为你上一步看到的网卡的名称&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station device get-networks
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station device get-networks
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;比如，如果你的网卡名称是 &lt;code&gt;wlan0&lt;/code&gt;，那么你应该输入的命令是&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station wlan0 get-networks
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station wlan0 get-networks
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你的电脑无线网卡工作正常的话，此时屏幕上会列出你熟悉的 WiFi 名称。如果没有任何结果或者出现报错的话，则需要你自己检查是否是网卡出现问题或者你打错了某个字符或者少了空格。&lt;/p&gt;
 &lt;p&gt;输入如下命令连接 WiFi，就像上面一样，&lt;code&gt;device&lt;/code&gt; 需要替换成你电脑网卡的名字，&lt;code&gt;SSID&lt;/code&gt; 需要替换成你想要连接且上面已经列出的 WiFi 名称&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station device connect SSID
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;station device connect SSID
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果 WiFi 有密码，此时会提示你输入密码，输入 WiFi 密码后回车即可。&lt;/p&gt;
 &lt;p&gt;完成上述操作后，输入 &lt;code&gt;exit&lt;/code&gt; 退出 iwd 的 shell。&lt;/p&gt;
 &lt;p&gt;为了检测电脑真的是否连接上网络，我们可以输入如下命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ping www.baidu.com
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ping www.baidu.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ping 后面的网址可以是任何国内可以直连的网址。&lt;/p&gt;
 &lt;p&gt;如果已连接上网络，则电脑会疯狂输出一大堆延迟测试数据。反之则只有简单的&lt;code&gt;Timeout&lt;/code&gt;报错或长时间无输出结果。&lt;/p&gt;
 &lt;p&gt;此时按 &lt;code&gt;Ctrl+C&lt;/code&gt; 以中止输出。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Ctrl+C&lt;/code&gt; 的意思是同时按住 Ctrl 键和 C 键。在 Linux 终端下，&lt;code&gt;Ctrl+C&lt;/code&gt; 可以近似理解为强行终止当前终端的活动进程。比如上面，ping 这个进程正在运行，我们通过 &lt;code&gt;Ctrl+C&lt;/code&gt; 将它强行终止。&lt;/p&gt;
 &lt;p&gt;输入如下命令设置时间为 UTC 并完成 NTP 时间同步。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hwclock --systohc --utc
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hwclock --systohc --utc
 timedatectl set-ntp true
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;准备硬盘分区&#34;&gt;准备硬盘分区&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -368,7 +368,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 &lt;p&gt;按上面建议的分区大小，分别建立四个分区后，选择&lt;code&gt;[ Write ]&lt;/code&gt;写入再选择&lt;code&gt;[ Quit ]&lt;/code&gt;退出。退出时你需要输入&lt;code&gt;yes&lt;/code&gt;确认。&lt;em&gt;输入完整的&lt;code&gt;yes&lt;/code&gt;不是输入一个&lt;code&gt;y&lt;/code&gt;&lt;/em&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;挂载分区&#34;&gt;挂载分区&lt;/h2&gt;
 &lt;p&gt;在终端输入如下命令以检查分区情况：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;fdisk -l
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;fdisk -l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时屏幕应该显示你当前电脑的硬盘及各硬盘的分区情况。&lt;/p&gt;
 &lt;p&gt;分区表应该出现你所新建的分区，且大小与你输入的分区大小一致。&lt;/p&gt;
 &lt;p&gt;确认新分区建立无误后，输入如下命令对新建分区进行格式化。这里使用经典的 ext4 文件系统，在你对 Linux 文件系统有一点了解后，你可以换用其他的文件系统，比如 btrfs。&lt;/p&gt;
@@ -379,21 +379,21 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;格式化&lt;code&gt;/mnt&lt;/code&gt;分区：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.ext4 /dev/sda1
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.ext4 /dev/sda1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;格式化&lt;code&gt;/boot&lt;/code&gt;分区
 为了通用性，建议该分区格式化为&lt;code&gt;fat32&lt;/code&gt;格式：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.vfat -F32 /dev/sda2
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.vfat -F32 /dev/sda2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;同上，UEFI引导忽略此步&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;初始化&lt;code&gt;/swap&lt;/code&gt;分区：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkswap /dev/sda3
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkswap /dev/sda3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;格式化&lt;code&gt;/home&lt;/code&gt;分区（如果有）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.ext4 /dev/sda4
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkfs.ext4 /dev/sda4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -404,21 +404,21 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 &lt;ol&gt;
 &lt;li&gt;挂载&lt;code&gt;/mnt&lt;/code&gt;分区：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mount /dev/sda1 /mnt
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mount /dev/sda1 /mnt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;挂载&lt;code&gt;/boot&lt;/code&gt;分区：
 &lt;strong&gt;对于 UEFI 引导，&lt;code&gt;/dev/sda2&lt;/code&gt;应该改为 Windows 的 EFI 分区&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir -p /mnt/boot
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir -p /mnt/boot
 mount /dev/sda2 /mnt/boot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;code&gt;/swap&lt;/code&gt;分区无需挂载，但是需要输入如下命令启用：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;swapon /dev/sda3
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;swapon /dev/sda3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;建立&lt;code&gt;/home&lt;/code&gt;分区目录并挂载分区：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir /mnt/home
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir /mnt/home
 mount /dev/sda4 /mnt/home
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;至此，硬盘分区和相应目录挂载已经全部完成。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -434,10 +434,10 @@ mount /dev/sda4 /mnt/home
 &lt;p&gt;Arch Linux 的安装不仅需要连接网络，而且还要从网络下载大量数据。因为 Arch Linux 主服务器在国外，加之某些众所周知的原因，国内网络使用国外服务器下载会非常慢。因此，建议使用国内镜像网站进行下载和安装工作。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;输入如下命令，利用 reflector 自动替换国内镜像源&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;reflector --country &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;China&amp;#39;&lt;/span&gt; --age &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;reflector --country &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;China&amp;#39;&lt;/span&gt; --age &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;该命令相对来说比较长，请注意不要打错字符或漏空格。&lt;/p&gt;
 &lt;p&gt;修改完镜像源之后，输入如下命令刷新镜像源&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -Syy
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -Syy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;下面开始安装基本系统。&lt;/p&gt;
 &lt;p&gt;开始之前，我有必要介绍一下 Linux 的 软件包管理程序（package manager，我简称为包管理）。Linux 的 包管理 是 Linux 发行版中最重要的软件之一（虽然有的 Linux 发行版没有包管理），不同的 Linux 发行版除非存在父子关系否则包管理是不同的，Linux 几乎所有的软件都必须通过 包管理 安装。&lt;/p&gt;
 &lt;p&gt;包管理安装软件分为在线安装和本地安装。这里仅介绍在线安装（本地安装大家都懂吧&amp;hellip;）。&lt;/p&gt;
@@ -445,7 +445,7 @@ mount /dev/sda4 /mnt/home
 &lt;p&gt;Arch Linux 的包管理软件叫做 Pacman（没开玩笑，就这名字&amp;hellip;）。Pacman 在线安装软件的命令为  &lt;code&gt;pacman -S 软件包名字&lt;/code&gt;  ，关于 Pacman 的更多用法文末会进行介绍。&lt;/p&gt;
 &lt;p&gt;输入如下命令借助 &lt;a class=&#34;link&#34; href=&#34;https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;pacstrap&lt;/a&gt; 脚本完成安装。pacstrap 是 ArchISO 中的一个脚本，可以自动完成基础但繁琐的系统配置如内核的配置。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacstrap /mnt base base-devel linux linux-firmware nano vim e2fsprogs ntfs-3g 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacstrap /mnt base base-devel linux linux-firmware nano vim e2fsprogs ntfs-3g 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在上述命令中，base 是元软件包（基本系统所需依赖，你可以不知道它是啥但是必须安装），base-devel 是基础软件包组，linux 是内核，linux-firmware 是固件包，nano、vim 是常用编辑器，e2fsprogs 是 ext4 文件系统所需工具，如果你是按照上面教程使用 ext4 文件系统则必须安装该软件包。ntfs-3g 是与 Windows 的 NTFS 有关的软件包，如果是单系统可以不安装。&lt;/p&gt;
 &lt;p&gt;这里简单介绍一下软件包组。对于 Linux 用户来说，我们可能需要一次性安装一大堆软件包。虽然我们可以通过包管理批量安装多个软件，但是敲那么多软件的名字无疑非常的枯燥无聊且繁琐。因此，Arch Linux 的打包者将具有相关性的多个软件包归入一个软件包组，虽然软件包组不是一个软件包但是安装操作于一个真正的软件包相同。比如上面的 base-devel 就是将系统基础软件包归入一个软件包组，我们只需要输入软件包组的名字就可以安装这些软件包。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -457,21 +457,21 @@ mount /dev/sda4 /mnt/home
 在网络不佳的情况下，下载过程可能会出现意外断流，此时重复上面的命令即可。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;genfstab -U -p /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;genfstab -U -p /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;为了确认文件生成，建议输入如下命令以确认：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /mnt/etc/fstab
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /mnt/etc/fstab
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;确认无误后，输入&lt;code&gt;Ctrl + X&lt;/code&gt;退出。&lt;/p&gt;
 &lt;p&gt;Nano 是 Linux 下一个简单轻量的文本编辑器，适合新手使用，后文还会多次使用该编辑器。如果已经有一定的 Linux 使用经验，建议换用 Vim。&lt;/p&gt;
 &lt;p&gt;如果一切正常的话，此时你应该成功在电脑硬盘安装了 Arch Linux 基本系统。&lt;/p&gt;
 &lt;h2 id=&#34;安装基本系统后的环境配置&#34;&gt;安装基本系统后的环境配置&lt;/h2&gt;
 &lt;p&gt;输入如下命令进入新安装的系统：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;arch-chroot /mnt /bin/bash
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;arch-chroot /mnt /bin/bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;现在你进入了电脑硬盘上的 Arch Linux 。&lt;/p&gt;
 &lt;p&gt;如果一切正常的话，细心的你会发现提示符由 &lt;code&gt;root@archiso ~ #&lt;/code&gt; 变为 &lt;code&gt;[root@archiso /]#&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;上面有提及，Linux 中默认有一个用户叫 &lt;code&gt;root&lt;/code&gt;，拥有对系统的一切权力。这意味着，即使让系统删除自己本身也会执行无误，比如著名命令 &lt;code&gt;rm -rf /*&lt;/code&gt;，&lt;strong&gt;千万不要输入这个命令，否则后果自负&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;现在安装系统默认使用的是 root 用户。&lt;/p&gt;
 &lt;p&gt;输入下面命令来设置 root 用户密码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;passwd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;passwd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;输入密码后需要回车确认，密码需要输入两次。&lt;/p&gt;
 &lt;p&gt;密码在输入的时候不会显示，不用担心是自己键盘坏了。&lt;/p&gt;
@@ -479,23 +479,23 @@ mount /dev/sda4 /mnt/home
 &lt;p&gt;因为root用户权力过大大，即使删掉系统本身，也会被执行。为了避免日常使用因为权限过高造成某些不可逆而又本可以避免的损失，Linux 桌面用户需要添加一个普通用户，且该用户可以获取临时root权限。
 一般情况下，这个新添加的用户将会是你后续登录 Linux 的&lt;em&gt;主要用户&lt;/em&gt;。&lt;/p&gt;
 &lt;p&gt;执行以下命令新建一个隶属于 wheel 组的新用户。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;useradd -m -G wheel -s /bin/bash 你的用户名 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;useradd -m -G wheel -s /bin/bash 你的用户名 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里友情提醒一下，上面所设的用户名必须是小写字母，而且最好短一点（如果你不怕之后使用麻烦的话就随意吧）。&lt;/p&gt;
 &lt;p&gt;输入如下命令为新建用户设置密码（修改密码也是这个命令），密码不少于 6 位或 8 位。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;passwd 你的用户名
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;passwd 你的用户名
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;同上，密码需要输入两次，且密码不会显示。&lt;/p&gt;
 &lt;p&gt;因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;为了该普通用户能获取临时 root 权限，我们需要修改 wheel 的权限设置。
 输入如下命令打开sudoers文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/sudoers
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/sudoers
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在打开的文件中找到以下两行：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Uncomment to allow members of group wheel to execute any command&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Uncomment to allow members of group wheel to execute any command&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# %wheel ALL=(ALL) ALL&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;确认无误后， 把&lt;code&gt;%wheel&lt;/code&gt;前面的注释符号（#）去掉，（%）要留下。
 最后的结果应该是下面这样：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Uncomment to allow members of group wheel to execute any command&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Uncomment to allow members of group wheel to execute any command&lt;/span&gt;
 %wheel ALL&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt;ALL&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; ALL
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;同时按&lt;code&gt;Ctrl + X&lt;/code&gt;，然后保存退出。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -506,17 +506,17 @@ mount /dev/sda4 /mnt/home
 &lt;/blockquote&gt;
 &lt;p&gt;如同用户有一个名字一样，Linux 下电脑也需要一个名字。
 输入如下命令配置电脑的主机名：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo 你电脑的主机名 &amp;gt; /etc/hostname
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo 你电脑的主机名 &amp;gt; /etc/hostname
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;主机名可以是任何你喜欢的名字，但是不能含空格等字符。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;下面对系统 host 进行配置（可选，如果嫌麻烦可以跳过这一步，如果不设置可能会在网络变更时出现应用无法启动等问题）。&lt;/p&gt;
 &lt;p&gt;输入以下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/hosts
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/hosts
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你应该会看到如下符号&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;lt;ip-address&amp;gt; &amp;lt;hostname.domain.org&amp;gt; &amp;lt;hostname&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;lt;ip-address&amp;gt; &amp;lt;hostname.domain.org&amp;gt; &amp;lt;hostname&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你需要添加相应字符，使得界面如下所示：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;127.0.0.1	localhost
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;127.0.0.1	localhost
 ::1		localhost
 127.0.1.1	你电脑主机名.localdomain	你电脑主机名
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
@@ -528,11 +528,11 @@ mount /dev/sda4 /mnt/home
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Intel 用户输入如下命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S intel-ucode
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S intel-ucode
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;AMD 用户输入如下命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S amd-ucode
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S amd-ucode
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;至于其他型号的处理器比如国产处理器我就不知道怎么安装了&amp;hellip;&lt;/p&gt;
@@ -541,9 +541,9 @@ mount /dev/sda4 /mnt/home
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;如果你是传统BIOS引导，则输入以下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S grub os-prober
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S grub os-prober
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后输入以下命令安装到硬盘：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-install --target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i386-pc /dev/sda --recheck
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-install --target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i386-pc /dev/sda --recheck
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -552,22 +552,22 @@ mount /dev/sda4 /mnt/home
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;如果你是UEFI引导，则输入以下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S grub efibootmgr os-prober
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S grub efibootmgr os-prober
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后输入以下命令安装到硬盘：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-install --target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x86_64-efi --efi-directory&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/boot --bootloader-id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;grub --recheck
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-install --target&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;x86_64-efi --efi-directory&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/boot --bootloader-id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;grub --recheck
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，&lt;em&gt;请自行修改 &amp;ndash;efi-directory 的值&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Grub 2.06 更新后默认禁用 os-prober。虽然我一时半会也还不知道这样做的意义何在，但是上游有改动，我们用户也只能动手适配了。&lt;/p&gt;
 &lt;p&gt;输入下面命令为 Grub 启用 os-prober。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GRUB_DISABLE_OS_PROBER=false&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/grub/grub.cfg
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GRUB_DISABLE_OS_PROBER=false&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/grub/grub.cfg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后输入如下命令生成必要的配置文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-mkconfig -o /boot/grub/grub.cfg
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;grub-mkconfig -o /boot/grub/grub.cfg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意，你一定要确定输入上面命令有输出结果。&lt;/p&gt;
 &lt;p&gt;输出结果大致如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Generating grub configuration file ...
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Generating grub configuration file ...
 Found linux image: /boot/vmlinuz-linux
 Found initrd image&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; in /boot: initramfs-linux.img
 Found fallback initrd image&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; in /boot: initramfs-linux-fallback.img
@@ -580,7 +580,7 @@ Found fallback initrd image&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&
 输入如下命令修改 locale.gen 文件，配置语言环境：
 &lt;code&gt;nano /etc/locale.gen&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;分别找到以下字符，删除该行最前面的&lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#en_US.UTF-8 UTF-8&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#en_US.UTF-8 UTF-8&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#zh_CN.UTF-8 UTF-8&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#zh_TW.UTF-8 UTF-8&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
@@ -591,20 +591,20 @@ Found fallback initrd image&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&
 &lt;/blockquote&gt;
 &lt;p&gt;编辑完成后同时按住&lt;code&gt;Ctrl + X&lt;/code&gt;退出。&lt;/p&gt;
 &lt;p&gt;退出后输入如下命令刷新区域信息：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;locale-gen
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;locale-gen
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你上一步操作无误的话，命令输出结果应该包含&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;en_US.UTF-8 UTF-8
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;en_US.UTF-8 UTF-8
 zh_CN.UTF-8 UTF-8
 zh_TW.UTF-8 UTF-8
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入如下命令将区域信息写入 locale-conf 文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo LANG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8 &amp;gt; /etc/locale.conf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo LANG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8 &amp;gt; /etc/locale.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;毫无疑问，你可以选择将上一条命令的&lt;code&gt;en_US.UTF-8&lt;/code&gt;改为&lt;code&gt;zh_CN.UTF-8&lt;/code&gt;。&lt;strong&gt;但请谨慎考虑后进行操作&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;locale.conf 文件是全局设置，如果这里设成中文或者其他非英文环境，桌面环境下字符会正常显示，&lt;strong&gt;但是在命令行下会变成乱码&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;如果看不懂请忽略此段。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;输入如下命令设置时区为亚洲上海：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装桌面环境&#34;&gt;安装桌面环境&lt;/h2&gt;
 &lt;p&gt;没错，对于 Linux 发行版，系统和 GUI 环境是分离的。（GUI 是图形化用户界面的简称）&lt;/p&gt;
 &lt;p&gt;一般来说，一个完整的 Linux 操作系统是不需要 GUI 的。如果我们是想将电脑变成一个 Linux 服务器，安装教程可以到此为止，但是对于我们普通的 Linux 桌面用户，则需要安装相应的图形化界面。&lt;/p&gt;
@@ -630,7 +630,7 @@ zh_TW.UTF-8 UTF-8
 &lt;p&gt;没错，显示管理器和桌面环境也是分开的。虽然这看起来让人感觉有点凌乱，但是这不恰恰说明 Linux 的高度自由性吗？（雾）&lt;/p&gt;
 &lt;p&gt;Arch Linux 可选择的桌面环境很多，这里只介绍相对主流和热门的两个桌面环境，显示管理器会附带介绍。&lt;/p&gt;
 &lt;p&gt;不过在安装桌面环境之前，我们需要先安装 Xorg。输入如下命令安装 Xorg 软件包组。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S xorg
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S xorg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装过程中，系统会询问你安装其中哪些软件包。如无其他需求或考虑，直接回车即可。&lt;/p&gt;
 &lt;h3 id=&#34;kde&#34;&gt;KDE&lt;/h3&gt;
 &lt;p&gt;KDE 被誉为“最像 Windows 的 Linux 桌面”（雾）。基于 Qt 的 KDE 拥有超高的可自定义性、华丽的系统特效、完善的系统功能、人类友好的交互逻辑，以及你熟悉的开始菜单（&lt;/p&gt;
@@ -639,19 +639,19 @@ zh_TW.UTF-8 UTF-8
 &lt;p&gt;由于以上诸多优点，KDE 被认为是最适合新手并且也是最适合人类的 Linux 桌面环境，Arch Linux + KDE 很多时候被认为是一种标配。&lt;/p&gt;
 &lt;p&gt;配合 KDE-Plasma 使用的最佳选择是 SDDM 显示管理器， KDE 和 Arch Wiki 都推荐使用此组合。&lt;/p&gt;
 &lt;p&gt;输入如下命令安装 SDDM 和 KDE Plasma 桌面和某些 KDE 基础组件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma sddm konsole dolphin ark gwenview
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma sddm konsole dolphin ark gwenview
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你也可以直接输入下面的命令安装 SDDM 和 KDE 全家桶：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma sddm kde-applications
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma sddm kde-applications
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;KDE 全家桶内包含了许多小游戏和某些意义不明的软件，适合 KDE 信仰用户。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;目前为止，KDE 默认使用的是 X11，Wayland 支持尚不完善。如果你想使用 Wayland，则需要安装 plasma-wayland，然后在 SDDM 登录时选择 Wayland 版本 Plasma。&lt;/p&gt;
 &lt;p&gt;输入如下命令安装 plasma-wayland：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma-wayland
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S plasma-wayland
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你使用 Nvida 显卡，则需要额外安装 egl-wayland：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S egl-wayland
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S egl-wayland
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;
 &lt;p&gt;输入如下命令设置 SDDM 开机自启：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable sddm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable sddm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入完命令后，下次开机会直接进入图形界面，而非命令行界面。&lt;/p&gt;
 &lt;h3 id=&#34;gnome&#34;&gt;GNOME&lt;/h3&gt;
 &lt;p&gt;GNOME 被誉为“超像 macOS 的 Linux 桌面”（不是最像，因为很多桌面比它还像，让人叹为观止）。GNOME 基于 GTK，是 GNU 项目的一部分，虽然前段时间由于某些开源社区的冲突，官方公开声明表示自己不属于 GNU，但是这不改变它最初的性质。因为 GNU 协议，GNOME 是 Ubuntu 等一众 Linux 桌面发行版的默认桌面。&lt;/p&gt;
@@ -661,20 +661,20 @@ zh_TW.UTF-8 UTF-8
 &lt;p&gt;因为 GNOME 功能高度依赖扩展，而扩展又大多是非官方人员开发的，所以可能存在各种兼容性问题，也是“GNOME=bug”这个说法的来源之一。&lt;/p&gt;
 &lt;p&gt;GNOME 自带软件实用性较差，如果有需求的话，可以使用 KDE 软件作为补充。&lt;/p&gt;
 &lt;p&gt;GNOME 有配套的显示管理器 GDM。输入如下命令安装 GNOME 和 GDM。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S gnome gdm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S gnome gdm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果想要 GNOME 全家桶的话，可以安装 gnome-extras 软件包组&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S gnome-extras
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S gnome-extras
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;GNOME 默认使用 Wayland 且表现基本满足日常使用需求（我没有开玩笑），但是如果你使用 Wayland 出现问题，可以通过在 GDM 禁用 Wayland 以更换为 X11。&lt;/p&gt;
 &lt;p&gt;我们需要编辑 &lt;code&gt;/etc/gdm/custom.conf&lt;/code&gt; 以禁用 Wayland。输入如下命令打开该文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/gdm/custom.conf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano /etc/gdm/custom.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在文件中找到以下行：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#WaylandEnable=false&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#WaylandEnable=false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;去除该行开头的 &lt;code&gt;#&lt;/code&gt; 注释，然后 &lt;code&gt;Ctrl+X&lt;/code&gt; 再输入 y 保存退出。&lt;/p&gt;
 &lt;p&gt;重启后下次登录将默认禁用 Wayland。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;输入如下命令设置 GDM 开机自启：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable gdm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable gdm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入完命令后，下次开机会直接进入图形界面，而非命令行界面。&lt;/p&gt;
 &lt;h2 id=&#34;对系统进行本地化&#34;&gt;对系统进行本地化&lt;/h2&gt;
 &lt;h3 id=&#34;安装中文字体&#34;&gt;安装中文字体&lt;/h3&gt;
@@ -691,7 +691,7 @@ wqy-microhei
 wqy-zenhei&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以文泉驿为例，输入如下命令安装文泉驿米黑字体：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S wqy-microhei
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S wqy-microhei
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里建议全部安装以避免字体缺失导致的显示异常。&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
@@ -710,19 +710,19 @@ export LC_CTYPE=en_US.UTF-8
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;同时按住&lt;code&gt;Ctrl + X&lt;/code&gt;，然后保存退出。&lt;/p&gt;
 &lt;p&gt;如果你是一步步按照本教程操作，则你此时是在 root 用户目录创建了 .xprofile 文件。因此，此时 .xprofile 只会影响 root 用户。
 输入如下命令，将该文件复制到你创建的普通用户目录下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp .xprofile /home/你的用户名
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cp .xprofile /home/你的用户名
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时，你创建的普通用户区域也配置完成。&lt;/p&gt;
 &lt;h2 id=&#34;arch-linux-已成功安装在你的电脑上&#34;&gt;Arch Linux 已成功安装在你的电脑上！&lt;/h2&gt;
 &lt;p&gt;至此，Arch Linux 已经算是安装完成了。但是对于日常桌面用户，我们还有一些东西没有配置，而这些配置能优化我们的桌面体验。以及，你是否还记得 Windows 的引导还没生成呢（&lt;/p&gt;
 &lt;p&gt;我们先输入如下命令启用 NetworkManager（注意大小写）。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable NetworkManager
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl enable NetworkManager
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;NetworkManager 是一个方便好用的网络管理小组件，大部分桌面环境都内置了该软件。如果你当前使用的桌面环境没有内置该软件，则输入以下命令安装并启用。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S networkmanager
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S networkmanager
 systemctl enable NetworkManager
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;做完这些，我们先重启到你的桌面环境完成后续步骤。重启到桌面环境的好处是，你可以直接使用鼠标复制我后续的命令。&lt;/p&gt;
 &lt;p&gt;如果你是按照我的教程一步一步来的，你现在应该还没有安装浏览器。这里推荐先安装 Firefox 浏览器（Chrome、Edge 之类的由于打包协议不在官方软件仓库中，无法在 Pacman 直接安装，后续会介绍如何安装 Chrome 和 Edge）。&lt;/p&gt;
 &lt;p&gt;输入如下命令安装 Firefox：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S firefox
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pacman -S firefox
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;先输入 &lt;code&gt;exit&lt;/code&gt; 退出 chroot，然后输入&lt;code&gt;reboot&lt;/code&gt;重启，在屏幕完全黑下来的时候拔掉你的 U 盘。&lt;/p&gt;
 &lt;p&gt;启动成功后，登录你的普通用户即可。&lt;/p&gt;
 &lt;h2 id=&#34;安装完成后的一些基本配置和某些问题的解决&#34;&gt;安装完成后的一些基本配置和某些问题的解决&lt;/h2&gt;
@@ -730,11 +730,11 @@ systemctl enable NetworkManager
 &lt;p&gt;接着找到你桌面环境的虚拟终端（Terminal，KDE 自带的叫做 Konsole，GNOME 自带的叫做 gnome-terminal）。后续命令在这个虚拟终端输入就行。&lt;/p&gt;
 &lt;h3 id=&#34;安装中文输入法&#34;&gt;安装中文输入法&lt;/h3&gt;
 &lt;p&gt;安装 fcitx 输入法模块：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S fcitx-im fcitx5-chinese-addons 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S fcitx-im fcitx5-chinese-addons 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;配置输入法的环境变量，输入如下命令编辑 /etc/environment&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/environment
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/environment
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在文件中添加以下内容：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;GTK_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;GTK_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
 QT_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
 XMODIFIERS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;@im&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
 SDL_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
@@ -744,18 +744,18 @@ SDL_IM_MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;添加-arch-linux-cn-源&#34;&gt;添加 Arch Linux CN 源&lt;/h3&gt;
 &lt;p&gt;输入如下命令编辑 pacman.conf 文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/pacman.conf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/pacman.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在该文件末尾添加以下内容&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;archlinuxcn&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;archlinuxcn&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 Server &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着输入如下命令刷新源：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syy
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后安装密匙：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S archlinuxcn-keyring
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S archlinuxcn-keyring
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;若密匙安装出错，则依次输入以下命令解决：&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syu haveged
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syu haveged
 systemctl start haveged
 systemctl enable haveged
 rm -rf /etc/pacman.d/gnupg
@@ -772,27 +772,27 @@ sudo pacman -S archlinuxcn-keyring
 &lt;p&gt;yay 是目前比较好用的 &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AUR&lt;/a&gt; 助手之一，可以方便快捷地帮助你完成 AUR 软件的安装。
 archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S yay
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S yay
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;yay 使用上与 Pacman 大致一致。
 应避免以 root 权限运行 yay，即避免&lt;code&gt;sudo yay&lt;/code&gt;这样的命令。
 你也可以选择其他的 AUR 助手。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;有了 yay，我们可以直接输入命令安装 AUR 的软件，比如，我们可以输入如下命令安装 Chrome。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yay -S google-chrome
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yay -S google-chrome
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;解决-windows-加密问题&#34;&gt;解决 Windows 加密问题&lt;/h3&gt;
 &lt;p&gt;如果你是双系统安装，则输入以下命令安装 dislocker 。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yay -S dislocker
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yay -S dislocker
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后输入如下命令再次生成配置文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo grub-mkconfig -o /boot/grub/grub.cfg
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo grub-mkconfig -o /boot/grub/grub.cfg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果一切正常，现在输出结果中应该含有&lt;code&gt;Windows&lt;/code&gt;字样
 &lt;del&gt;如果没有的话，我也不知道怎么办了&lt;/del&gt;&lt;/p&gt;
 &lt;h3 id=&#34;禁用-reflector&#34;&gt;禁用 reflector&lt;/h3&gt;
 &lt;p&gt;如果你还有印象的话，在安装过程中我们曾使用 reflector 更换替换国内镜像源。之所以使用 reflector 而不是直接修改文件不是因为这个东东多好用，而是这玩意它会未经你同意自动帮你替换镜像源列表，这样的话还不如直接就先用它替换国内镜像源。在日常使用中，我推荐禁用 reflector（默认应该是禁用状态，如果你喜欢也可以启用，不过它的国内体验非常感人&amp;hellip;）。&lt;/p&gt;
 &lt;p&gt;输入如下命令禁用并停止 reflector：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl disable --now reflector.service
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl disable --now reflector.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入如下命令启用并启动 reflector：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl enable --now reflector.service
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl enable --now reflector.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你还可以选择安装 zsh 和 Yakuake，这里不再介绍。&lt;/p&gt;
 &lt;p&gt;安装教程至此可以说已经正式结束。Arch Linux 的配置当然不止于此（显卡驱动之类的还没配置呢），还有许多玩法等待你发现，但是这些内容放在安装教程中肯定不太合适。我后续应该会写一篇专门的优化教程，但是肯定不会像这篇教程一样详细了（实在太累了&amp;hellip;）。&lt;/p&gt;
 &lt;h2 id=&#34;相关内容补充&#34;&gt;相关内容补充&lt;/h2&gt;
@@ -880,7 +880,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;比如说大家最熟悉的 VS Code,图标是这样的：&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 187; flex-basis: 449px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon.png&#34; data-size=&#34;476x254&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;476&#34;
 				height=&#34;254&#34;
 				loading=&#34;lazy&#34;
@@ -914,17 +914,17 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;start KMS early&lt;/a&gt;. Another possible workaround is to &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;edit the systemd service&lt;/a&gt; and either set its type to &amp;ldquo;idle&amp;rdquo; or add a small delay:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
  Type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;idle
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
  ExecStartPre&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/bin/sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If a longer delay is required, increase the delay time.&lt;/p&gt;
 &lt;p&gt;看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？&lt;/p&gt;
 &lt;p&gt;于是继续顺着超链接看了下去。&lt;/p&gt;
 &lt;p&gt;嗯，在&lt;code&gt;/etc/mkinitcpio.conf&lt;/code&gt;添加模块（MODULES），我是 AMD 核显所以应该添加&lt;code&gt;amdgpu&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;所以应该是&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;MODULES&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt;amdgpu&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#又不是旧架构，我为啥要加 radeon？&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;MODULES&lt;span style=&#34;color:#f92672&#34;&gt;=(&lt;/span&gt;amdgpu&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#又不是旧架构，我为啥要加 radeon？&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。&lt;/p&gt;
 &lt;p&gt;确保这次开机不是偶然，我特意再重启了一遍，然后&amp;hellip;&amp;hellip;又卡在那个光标了。&lt;/p&gt;
 &lt;p&gt;我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（&lt;/p&gt;
@@ -938,7 +938,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;具体表现为，桌面在我点击后先显示了应用列表，然后再显示了一个扩散开来的 Dock 栏抽屉点击动画。我猜这可能是扩展动画和桌面自带动画冲突的缘故。不出所料，我在 &lt;em&gt;Dash To Dock&lt;/em&gt; 扩展中找到了 &lt;em&gt;动画方式&lt;/em&gt; -&lt;em&gt;显示应用程序&lt;/em&gt;  这个选项。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 496; flex-basis: 1190px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775.png&#34; data-size=&#34;1052x212&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1052&#34;
 				height=&#34;212&#34;
 				loading=&#34;lazy&#34;
@@ -958,7 +958,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;该节仅为记录备份，请勿照搬安装我截图中的扩展。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 167; flex-basis: 401px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467.png&#34; data-size=&#34;2560x1532&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1532&#34;
 				loading=&#34;lazy&#34;
@@ -970,7 +970,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 167; flex-basis: 401px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578.png&#34; data-size=&#34;2560x1532&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1532&#34;
 				loading=&#34;lazy&#34;
@@ -982,7 +982,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 167; flex-basis: 401px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858.png&#34; data-size=&#34;2560x1532&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1532&#34;
 				loading=&#34;lazy&#34;
@@ -994,7 +994,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 751; flex-basis: 1802px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143.png&#34; data-size=&#34;2554x340&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2554&#34;
 				height=&#34;340&#34;
 				loading=&#34;lazy&#34;
@@ -1007,7 +1007,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;各人审美不同，请勿照用我使用的主题和字体。&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 167; flex-basis: 401px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704.png&#34; data-size=&#34;2560x1532&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1532&#34;
 				loading=&#34;lazy&#34;
@@ -1019,7 +1019,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 167; flex-basis: 401px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530.png&#34; data-size=&#34;2560x1532&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1532&#34;
 				loading=&#34;lazy&#34;
@@ -1032,7 +1032,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;最后的桌面效果如图&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 160; flex-basis: 384px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838.png&#34; data-size=&#34;2560x1600&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;2560&#34;
 				height=&#34;1600&#34;
 				loading=&#34;lazy&#34;
@@ -1110,10 +1110,10 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wrangler&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;Wrangler 可以通过 &lt;code&gt;npm&lt;/code&gt; 或 &lt;code&gt;cargo&lt;/code&gt; 安装。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;npm i @cloudflare/wrangler -g
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;npm i @cloudflare/wrangler -g
 &lt;span style=&#34;color:#75715e&#34;&gt;# 你也可以使用 Yarn 安装 Wrangler&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# yarn global add @cloudflare/wrangler&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cargo install wrangler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cargo install wrangler
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{% note info simple %}
 经过实测，Wrangler 可能无法安装在 ARM 架构的设备上。如果可以，尽量使用 x86 设备。
 {% endnote %}&lt;/p&gt;
@@ -1125,11 +1125,11 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。&lt;/p&gt;
 &lt;h3 id=&#34;初始化项目&#34;&gt;初始化项目&lt;/h3&gt;
 &lt;p&gt;在博客源码的根目录输入如下命令进行初始化&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# my-static-blog 是目录名称，你可以改成你喜欢的其他名字&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# my-static-blog 是目录名称，你可以改成你喜欢的其他名字&lt;/span&gt;
 wrangler init --site my-static-blog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。&lt;/p&gt;
 &lt;p&gt;先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;]
 &lt;span style=&#34;color:#a6e22e&#34;&gt;bucket&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./public&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;entry-point&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;workers-site&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Workers Site 配置代码目录，默认 workers-site 目录&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;account_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责&lt;/span&gt;
@@ -1139,10 +1139,10 @@ wrangler init --site my-static-blog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;完成 wrangler.toml 的配置后，运行&lt;code&gt;wrangler config&lt;/code&gt;命令并依照命令行提示输入上一步获取的 API Token。&lt;/p&gt;
 &lt;h3 id=&#34;预览与部署&#34;&gt;预览与部署&lt;/h3&gt;
 &lt;p&gt;配置完成后，我们可以先输入如下命令预览一下部署效果。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wrangler preview --watch
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wrangler preview --watch
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会上传配置文件中设定的&lt;code&gt;bucket&lt;/code&gt;路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。&lt;/p&gt;
 &lt;p&gt;确认无误后，输入如下命令进行部署&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wrangler publish
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wrangler publish
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置域名-dns-解析&#34;&gt;配置域名 DNS 解析&lt;/h3&gt;
 &lt;p&gt;上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。&lt;/p&gt;
 &lt;ul&gt;
@@ -1160,12 +1160,12 @@ wrangler init --site my-static-blog
 &lt;p&gt;wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。&lt;/p&gt;
 &lt;p&gt;然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 &lt;code&gt;CF_WORKERS_TOKEN&lt;/code&gt;，内容为你申请的 API Token。&lt;/p&gt;
 &lt;p&gt;最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;
         &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
                 &lt;span style=&#34;color:#f92672&#34;&gt;apiToken&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.CF_WORKERS_TOKEN }}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;我的-github-action-配置文件仅供参考&#34;&gt;我的 GitHub Action 配置文件（仅供参考）&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Builder For Blog&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Builder For Blog&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
@@ -1293,7 +1293,7 @@ wrangler init --site my-static-blog
 &lt;p&gt;对于未安装 OpenSSH 的系统，请手动安装 &lt;code&gt;openssh&lt;/code&gt; 软件包。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在确认已安装 OpenSSH 后，输入如下命令连接你的服务器&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p &amp;lt;port&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;ip&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh -p &amp;lt;port&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;ip&amp;gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#&amp;lt;port&amp;gt; 为 SSH 进程端口号，如默认端口号 22 可以省略。&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#&amp;lt;username&amp;gt; 为服务器用户名，&amp;lt;ip&amp;gt; 为服务器 IP 地址&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#以下是示例连接命令&lt;/span&gt;
@@ -1304,13 +1304,13 @@ wrangler init --site my-static-blog
     &gt;Android 搭建教程-连接 Linux Deploy 容器&lt;/a&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;设置-jre&#34;&gt;设置 JRE&lt;/h3&gt;
 &lt;p&gt;下面是几种常见的 Linux 发行版的安装命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Debian/Ubuntu&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Debian/Ubuntu&lt;/span&gt;
 sudo apt-get install -y default-jre-headless
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#CentOS 8.0+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#CentOS 8.0+&lt;/span&gt;
 sudo dnf install -y java-1.8.0-openjdk
 &lt;span style=&#34;color:#75715e&#34;&gt;#对于 CentOS 8.0 以下的服务器，请输入下面的命令&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#sudo yum install -y java-1.8.0-openjdk&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Arch Linux&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Arch Linux&lt;/span&gt;
 sudo pacman -S --noconfirm jdk8-openjdk
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;下载-minecraft-服务端&#34;&gt;下载 Minecraft 服务端&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -1320,12 +1320,14 @@ sudo pacman -S --noconfirm jdk8-openjdk
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;建议先建立一个专门的文件夹存放服务器数据。&lt;/strong&gt;
 示例命令如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir $HOME/minecraft
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir $HOME/minecraft
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;根据你的客户端平台，从以下两个链接中选择一个链接下载。&lt;/p&gt;
-&lt;p&gt;Java 版请点击 &lt;a href=&#34;https://www.minecraft.net/en-us/download/server&#34;&gt;https://www.minecraft.net/en-us/download/server&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;基岩版请点击  &lt;a href=&#34;https://www.minecraft.net/en-us/download/server/bedrock&#34;&gt;https://www.minecraft.net/en-us/download/server/bedrock&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Java 版请点击 &lt;a class=&#34;link&#34; href=&#34;https://www.minecraft.net/en-us/download/server&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.minecraft.net/en-us/download/server&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基岩版请点击  &lt;a class=&#34;link&#34; href=&#34;https://www.minecraft.net/en-us/download/server/bedrock&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.minecraft.net/en-us/download/server/bedrock&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;示例下载命令如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 如果创建了 minecraft 文件夹则先转到 minecraft 文件夹&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 如果创建了 minecraft 文件夹则先转到 minecraft 文件夹&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# cd $HOME/minecraft&lt;/span&gt;
 wget https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
@@ -1333,11 +1335,11 @@ wget https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b366
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;运行服务器端&#34;&gt;运行服务器端&lt;/h3&gt;
 &lt;p&gt;确认文件已下载完成后，根据自己服务器端版本输入以下命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;java -Xmx&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;初始启动分配内存&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -Xms&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;最大分配内存&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -jar &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;jar 包所在路径&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; nogui
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;java -Xmx&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;初始启动分配内存&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -Xms&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;最大分配内存&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -jar &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;jar 包所在路径&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; nogui
 &lt;span style=&#34;color:#75715e&#34;&gt;# 如果要使用其图形用户界面启动服务器端，则可以省略「 nogui」部分。&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# 运行示例命令&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.3.jar nogui&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 基岩版下载的默认是 zip 文件，需要解压后使用&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 基岩版下载的默认是 zip 文件，需要解压后使用&lt;/span&gt;
 unzip bedrock-server*.zip &lt;span style=&#34;color:#75715e&#34;&gt;#解压下载的 zip 文件&lt;/span&gt;
 LD_LIBRARY_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;. ./bedrock_server
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Java  版服务端程序在第一次运行后会生成初始配置文件后自动中止。你可以用任意 Linux 文本编辑器（如 VIM、nano）打开服务器端目录下的&lt;code&gt;eula.txt&lt;/code&gt;，然后将 &lt;code&gt;eula=false&lt;/code&gt; 改为 &lt;code&gt;eula=true&lt;/code&gt;。&lt;/p&gt;
@@ -1347,9 +1349,9 @@ LD_LIBRARY_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;. ./bedro
 &lt;p&gt;你当然可以不同意，不过与之对应的是服务端程序无法运行。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;输入如下命令再次启动服务器端&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 示例命令&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 示例命令&lt;/span&gt;
 java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.3.jar nogui
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 示例命令&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 示例命令&lt;/span&gt;
 LD_LIBRARY_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;. ./bedrock_server
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如需停止服务端，请直接输入&lt;code&gt;/stop&lt;/code&gt;或&lt;code&gt;Ctrl+C&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;官方服务器端配置中默认开启了正版验证，意在禁止盗版客户端连接服务器端，但是在实际操作中可能会出现正版用户也无法连接的情况。如果你在确认配置无误后不能连接服务器，请将 &lt;code&gt;server.properties&lt;/code&gt; 中的 &lt;code&gt;online=true&lt;/code&gt; 改为 &lt;code&gt;online=false&lt;/code&gt;。&lt;/p&gt;
@@ -1359,16 +1361,16 @@ LD_LIBRARY_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;. ./bedro
 &lt;p&gt;你可以点击这个&lt;a class=&#34;link&#34; href=&#34;https://minecraft-zh.gamepedia.com/Server.properties&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;以了解有关 &lt;code&gt;server.properties&lt;/code&gt; 的配置。&lt;/p&gt;
 &lt;p&gt;为服务器端会话稳定，建议安装 Screen 并在 Screen 会话中运行服务端程序，这是远优于 nohup 的后台运行解决方案。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Debian/Ubuntu&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Debian/Ubuntu&lt;/span&gt;
 sudo apt-get install -y screen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#CentOS 8.0+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#CentOS 8.0+&lt;/span&gt;
 sudo dnf install -y screen
 &lt;span style=&#34;color:#75715e&#34;&gt;#CentOS 8.0 以下请输入以下命令&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#sudo yum install -y screen&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Arch Linux&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Arch Linux&lt;/span&gt;
 sudo pacman -S --noconfirm screen
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入如下命令创建一个 screen 会话&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;screen -S mc
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;screen -S mc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Screen 其他基础命令：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;创建会话：&lt;code&gt;screen -S &amp;lt;name&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -1412,12 +1414,12 @@ sudo pacman -S --noconfirm screen
 &lt;blockquote&gt;
 &lt;p&gt;Termux 默认没有安装 &lt;code&gt;openssh&lt;/code&gt;，需要输入&lt;code&gt;pkg in -y openssh&lt;/code&gt;手动安装。&lt;/p&gt;
 &lt;p&gt;对于审查地区，Termux 默认源的连接速度可能非常慢，可以输入如下命令更换清华源以提速&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39;&lt;/span&gt; $PREFIX/etc/apt/sources.list
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39;&lt;/span&gt; $PREFIX/etc/apt/sources.list
 sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&amp;#39;&lt;/span&gt; $PREFIX/etc/apt/sources.list.d/game.list
 sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&amp;#39;&lt;/span&gt; $PREFIX/etc/apt/sources.list.d/science.list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;
 &lt;p&gt;安装完 OpenSSH 后，输入以下命令连接 Linux Deploy 容器。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh &amp;lt;username&amp;gt;@&amp;lt;ip&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh &amp;lt;username&amp;gt;@&amp;lt;ip&amp;gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#示例&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#ssh root@127.0.0.1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入该命令后会需要你输入密码，请输入你在 Linux Deploy 配置时设置的密码，密码在输入过程中无回显。&lt;/p&gt;
@@ -1486,7 +1488,8 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;~~Google Play Store： &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.termux~~&#34;&gt;https://play.google.com/store/apps/details?id=com.termux~~&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;~~Google Play Store： &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux~~&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://play.google.com/store/apps/details?id=com.termux~~&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;因为&lt;a class=&#34;link&#34; href=&#34;https://github.com/termux/termux-app/issues/1072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1518,7 +1521,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;/ul&gt;
 &lt;h2 id=&#34;下载和启动脚本&#34;&gt;下载和启动脚本&lt;/h2&gt;
 &lt;p&gt;下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。&lt;del&gt;如果出现了报错则另说&lt;/del&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。&lt;/li&gt;
 &lt;/ul&gt;
@@ -1559,7 +1562,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
     &gt;唤醒锁&lt;/a&gt;，这意味你退出 Termux 时需要手动在状态栏点击「Release wakerlock」后才能真正退出。
 &lt;figure style=&#34;flex-grow: 263; flex-basis: 632px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34; data-size=&#34;1080x410&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1080&#34;
 				height=&#34;410&#34;
 				loading=&#34;lazy&#34;
@@ -1652,7 +1655,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;p&gt;Apple 开发者文档给出的推送过程示意图如下：
 &lt;figure style=&#34;flex-grow: 338; flex-basis: 811px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34; data-size=&#34;1329x393&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1329&#34;
 				height=&#34;393&#34;
 				loading=&#34;lazy&#34;
@@ -1682,7 +1685,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 80; flex-basis: 193px&#34;&gt;
 		&lt;a href=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34; data-size=&#34;1120x1387&#34;&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
-				srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_2.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1120&#34;
 				height=&#34;1387&#34;
 				loading=&#34;lazy&#34;
@@ -1939,7 +1942,7 @@ Arch Linux 用它的方式体现着它的超凡脱俗
 &lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;对-arch-linux-进行一次全面更新&#34;&gt;对 Arch Linux 进行一次全面更新&lt;/h2&gt;
 &lt;p&gt;&lt;del&gt;话说，这不是每天开机第一件事吗&lt;/del&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syu
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syu
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-nginx&#34;&gt;安装 Nginx&lt;/h2&gt;
 &lt;p&gt;Arch Linux 软件库中有两个版本的 Nginx，分别是
 &lt;a class=&#34;link&#34; href=&#34;https://www.archlinux.org/packages/extra/x86_64/nginx/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1947,13 +1950,13 @@ Arch Linux 用它的方式体现着它的超凡脱俗
     &gt;nginx-mainline&lt;/a&gt;，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。
 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。
 输入如下命令安装旧版本 Nginx。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S nginx
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S nginx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装 nginx-mainline。（本教程安装的是 mainline）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S nginx-mainline
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S nginx-mainline
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl status nginx
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl status nginx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;● nginx.service - A high performance web server and a reverse proxy server
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;● nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
      Active: active &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;running&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; since Tue 2016-04-12 13:10:57 CST; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; day 7h ago
    Main PID: &lt;span style=&#34;color:#ae81ff&#34;&gt;2010&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;nginx&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
@@ -1962,28 +1965,28 @@ Arch Linux 用它的方式体现着它的超凡脱俗
              ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid; daemon on; master_process on
              └─2011 nginx: worker process
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果 Nginx 未运行，则输入以下的命令启动它。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start nginx &lt;span style=&#34;color:#75715e&#34;&gt;#启动 Nginx&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start nginx &lt;span style=&#34;color:#75715e&#34;&gt;#启动 Nginx&lt;/span&gt;
 sudo systemctl enable nginx &lt;span style=&#34;color:#75715e&#34;&gt;#设置 Nginx 开机自启动&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入如下命令可查看 Nginx 的版本号&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user@arch ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;$ nginx -v
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user@arch ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;$ nginx -v
 nginx version: nginx/1.9.14
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
 &lt;img src=&#34;https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png&#34; alt=&#34;Nginx 欢迎界面&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;如果你不知道服务器公网 IP，可以输入这条命令查看。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://icanhazip.com
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://icanhazip.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。&lt;/p&gt;
 &lt;h2 id=&#34;安装-mariadb&#34;&gt;安装 MariaDB&lt;/h2&gt;
 &lt;p&gt;2013 年开始，Arch Linux 将 MariaDB 作为默认的 SQL 数据库软件，Oracle 的 MySQL 则被丢进 AUR（（（&lt;/p&gt;
 &lt;p&gt;输入如下命令安装 MariaDB&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S mariadb
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S mariadb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在启动 MariaDB 服务之前，需要使用用 &lt;code&gt;mysql_install_db&lt;/code&gt;命令初始化 MariaDB 的数据目录&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo mysql_install_db --user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mysql --basedir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr --datadir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/lib/mysql
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo mysql_install_db --user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mysql --basedir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr --datadir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/lib/mysql
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;启动 MariaDB 服务。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start mysqld
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start mysqld
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查看 MariaDB 状态。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl status mysqld
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl status mysqld
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;● mysqld.service - MariaDB database server
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;● mysqld.service - MariaDB database server
    Loaded: loaded &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;/usr/lib/systemd/system/mysqld.service; disabled; vendor preset: disabled&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
    Active: active &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;running&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; since Wed 2016-04-13 21:09:45 CST; 5s ago
   Process: &lt;span style=&#34;color:#ae81ff&#34;&gt;8373&lt;/span&gt; ExecStartPost&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/bin/mysqld-post &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;code&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;exited, status&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0/SUCCESS&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
@@ -1992,21 +1995,21 @@ nginx version: nginx/1.9.14
    CGroup: /system.slice/mysqld.service
            └─8372 /usr/bin/mysqld --pid-file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/run/mysqld/mysqld.pid
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;设置 MariaDB 开机自启动。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemclt enable mysqld
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemclt enable mysqld
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行安全安装脚本。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo mysql_secure_installation
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo mysql_secure_installation
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。&lt;/p&gt;
 &lt;p&gt;查看 MariaDB 的版本。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user@arch ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;$ mysql --version
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user@arch ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;$ mysql --version
 mysql  Ver 15.1 Distrib 10.1.13-MariaDB, &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; Linux &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;x86_64&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; using readline 5.1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;默认的配置文件位置为 &lt;code&gt;/etc/mysql/my.cnf&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;第 4 步：安装 PHP7
 Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S php-fpm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -S php-fpm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/nginx/nginx.conf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/nginx/nginx.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;找到 location ~ .php$这部分的配置，将这部分配置修改成如下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;location&lt;/span&gt; ~ &lt;span style=&#34;color:#e6db74&#34;&gt;\.php$&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;location&lt;/span&gt; ~ &lt;span style=&#34;color:#e6db74&#34;&gt;\.php$&lt;/span&gt; {
             &lt;span style=&#34;color:#f92672&#34;&gt;root&lt;/span&gt;           &lt;span style=&#34;color:#e6db74&#34;&gt;/usr/share/nginx/html&lt;/span&gt;;
             &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_pass&lt;/span&gt;   &lt;span style=&#34;color:#e6db74&#34;&gt;unix:/run/php-fpm/php-fpm.sock&lt;/span&gt;;
             &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_index&lt;/span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;index.php&lt;/span&gt;;
@@ -2014,26 +2017,26 @@ Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）&l
             &lt;span style=&#34;color:#f92672&#34;&gt;include&lt;/span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;fastcgi_params&lt;/span&gt;;
         }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;保存文件。然后启动 php-fpm，并设置开机自启动。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start php-fpm
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;第 5 步：测试 PHP
 在网站根目录创建一个 test.php 文件。默认的网站根目录是/usr/share/nginx/html。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /usr/share/nginx/html/test.php
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /usr/share/nginx/html/test.php
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在文件中添加如下 PHP 代码。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt;
   &lt;span style=&#34;color:#a6e22e&#34;&gt;phpinfo&lt;/span&gt;();
 &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;保存文件。重新加载 Nginx。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl reload nginx
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl reload nginx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后在浏览器地址栏输入 &lt;code&gt;http://你服务器或本地主机IP/test.php&lt;/code&gt;。将 server-ip 替换成 Arch Linux 服务器或本地主机 IP。
 此时，浏览器会显示有关 PHP 到底信息，这意味着你已修改成功。&lt;/p&gt;
 &lt;p&gt;test.php 文件只是用来测试 PHP 的，为了不让他人看见服务器的信息，测试之后要将它删除。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo rm /usr/share/nginx/html/test.php
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo rm /usr/share/nginx/html/test.php
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;启用 PHP 扩展
 编辑 /etc/php/php.ini 配置文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/php/php.ini
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo nano /etc/php/php.ini
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;;&lt;span style=&#34;color:#a6e22e&#34;&gt;extension&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mysqli&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;so&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;;&lt;span style=&#34;color:#a6e22e&#34;&gt;extension&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mysqli&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;so&lt;/span&gt;
 ;&lt;span style=&#34;color:#a6e22e&#34;&gt;extension&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;pdo_mysql&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;so&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;mysqli.do&lt;/code&gt; 用来建立数据库连接。&lt;code&gt;pdo_mysql.so&lt;/code&gt; 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。&lt;/p&gt;
 &lt;p&gt;安装教程到此结束。&lt;/p&gt;
@@ -2075,7 +2078,7 @@ sudo systemctl enable php-fpm
 &lt;pre&gt;&lt;code&gt;This is the workflow execution time which may be different than the billed time.
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;如果你需要自定义域名，你的&lt;code&gt;CNAME&lt;/code&gt;文件应放在 Hexo 源码仓库的 source 文件夹下。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;mailto:hexo-action@v1.0.0&#34;&gt;hexo-action@v1.0.0&lt;/a&gt; 会自动删除项目仓库下的&lt;code&gt;.deploy_git&lt;/code&gt;文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 &lt;a href=&#34;mailto:hexo-action@1.0.1&#34;&gt;hexo-action@1.0.1&lt;/a&gt; 被修复。我认为这个修复是不合理的。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@v1.0.0&#34; &gt;hexo-action@v1.0.0&lt;/a&gt; 会自动删除项目仓库下的&lt;code&gt;.deploy_git&lt;/code&gt;文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 &lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@1.0.1&#34; &gt;hexo-action@1.0.1&lt;/a&gt; 被修复。我认为这个修复是不合理的。&lt;/li&gt;
 &lt;li&gt;如果需要添加额外的 node module，则在&lt;code&gt;package.json&lt;/code&gt;中添加相应依赖。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;默认已满足的条件&#34;&gt;默认已满足的条件&lt;/h2&gt;
@@ -2099,7 +2102,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;在博客源码中新建&lt;code&gt;.github/workflows/hexo.yml&lt;/code&gt;文件，在文件添加如下内容：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# workflow 名字&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# workflow 名字&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
   [&lt;span style=&#34;color:#ae81ff&#34;&gt;push]&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 触发事件&lt;/span&gt;
@@ -2146,7 +2149,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;输入如下命令再生成一对 SSH 密匙。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;example@example.com&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;example@example.com&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你使用的是未预安装 OpenSSH 软件的 Linux 发行版，你需要先安装 OpenSSH 再进行如下步骤。
 命令中的邮箱填自己 GitHub 的邮箱。此时会在本地生成一对公匙和私匙。&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
@@ -2185,21 +2188,21 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
     &gt;成品&lt;/a&gt; 复制并根据自己情况修改即可。&lt;/p&gt;
 &lt;h3 id=&#34;配置内容&#34;&gt;配置内容&lt;/h3&gt;
 &lt;p&gt;1.名称(这个随意取)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo Blog Deploy&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo Blog Deploy&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2.指定触发 workflow 的事件，这里选择的是推送至指定分支的事件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 这里是推送事件&lt;/span&gt;
     &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
       - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 这里指定了推送的分支&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;3.设置时区，这里设置的是上海的&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;4.指定 workflow 所运行的系统，此处设置的是最新 Ubuntu。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;5.检出代码，设置 Node 环境&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
 
 - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup node&lt;/span&gt;
@@ -2207,29 +2210,29 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
     &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Node 的版本&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;6.同步子模块。如果没有使用子模块的话，这一步可以忽略。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout submodules&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout submodules&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git submodule sync --recursive
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;7.缓存 .npm 目录，加快构建速度&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
     &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
     &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;8.安装依赖。我建议，如果可以，请每次都执行以下步骤。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    npm install hexo-cli -g
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    npm install&lt;/span&gt;    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;9.生成文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog&lt;/span&gt;
   &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    mv ./deploy_git/.git ./public/
@@ -2241,7 +2244,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;成品&#34;&gt;成品&lt;/h3&gt;
 &lt;p&gt;最后的 workflow&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Blog Deploy&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Blog Deploy&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
@@ -2304,7 +2307,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Buider For Blog&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Buider For Blog&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
   &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
@@ -2953,13 +2956,13 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 &lt;ul&gt;
 &lt;li&gt;测试硬盘的读写速度&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;64k | dd of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/null
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过以上两个命令输出的命令执行时间，可以计算出硬盘的读、写速度。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;确定硬盘的最佳块大小：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
 dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
 dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;250000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
 dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8192&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;125000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
@@ -2979,7 +2982,7 @@ dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;
 &lt;code&gt;#netcat -l -p 1234 | dd of=/dev/hdc bs=16065b&lt;/code&gt;
 在目的主机上执行此命令来接收数据并写入/dev/hdc&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | bzip2 &amp;gt; partition.img
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | bzip2 &amp;gt; partition.img
 netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | gzip &amp;gt; partition.img
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上两条指令是目的主机指令的变化分别采用bzip2、gzip对数据进行压缩，并将备份文件保存在当前目录。&lt;/p&gt;
 &lt;ul&gt;
@@ -2994,7 +2997,7 @@ netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | gzip 
 &lt;p&gt;1)以root用户创建一个ASM磁盘所在的目录。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;#mkdir –p /u01/asmdisks&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book u01&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# cd asmdisks&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book u01&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# cd asmdisks&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk1 bs=1024k count=400&lt;/span&gt;
 
@@ -3008,7 +3011,7 @@ netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | gzip 
 
 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk6 bs=1024k count=400&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;3)将这些文件与裸设备关联。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# chmod 777 asm_disk*&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# chmod 777 asm_disk*&lt;/span&gt;
 
 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop1 asm_disk1&lt;/span&gt;
 

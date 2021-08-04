@@ -106,17 +106,29 @@ systemctl status nginx 输出：
         <a href="/posts/5/">Arch Linux 服务器安装 LNMP</a>
     </h2>
 
+    
+
+    
     <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
 </svg>
+                <time class="article-time--published">May 30, 2020</time>
+            </div>
+        
 
-
-
-        <time class="article-time--published">May 30, 2020</time>
-    </footer></div>
+        
+    </footer>
+    
+</div>
 </header>
 
     <section class="article-content">
@@ -128,7 +140,7 @@ Arch Linux 用它的方式体现着它的超凡脱俗
 <!-- raw HTML omitted -->
 <h2 id="对-arch-linux-进行一次全面更新">对 Arch Linux 进行一次全面更新</h2>
 <p><del>话说，这不是每天开机第一件事吗</del></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
 </code></pre></div><h2 id="安装-nginx">安装 Nginx</h2>
 <p>Arch Linux 软件库中有两个版本的 Nginx，分别是
 <a class="link" href="https://www.archlinux.org/packages/extra/x86_64/nginx/"  target="_blank" rel="noopener"
@@ -136,13 +148,13 @@ Arch Linux 用它的方式体现着它的超凡脱俗
     >nginx-mainline</a>，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。
 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。
 输入如下命令安装旧版本 Nginx。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nginx
 </code></pre></div><p>安装 nginx-mainline。（本教程安装的是 mainline）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nginx-mainline
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nginx-mainline
 </code></pre></div><p>以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status nginx
 </code></pre></div><p>输出：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">● nginx.service - A high performance web server and a reverse proxy server
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">● nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded <span style="color:#f92672">(</span>/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled<span style="color:#f92672">)</span>
      Active: active <span style="color:#f92672">(</span>running<span style="color:#f92672">)</span> since Tue 2016-04-12 13:10:57 CST; <span style="color:#ae81ff">1</span> day 7h ago
    Main PID: <span style="color:#ae81ff">2010</span> <span style="color:#f92672">(</span>nginx<span style="color:#f92672">)</span>
@@ -151,28 +163,28 @@ Arch Linux 用它的方式体现着它的超凡脱俗
              ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid; daemon on; master_process on
              └─2011 nginx: worker process
 </code></pre></div><p>如果 Nginx 未运行，则输入以下的命令启动它。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start nginx <span style="color:#75715e">#启动 Nginx</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start nginx <span style="color:#75715e">#启动 Nginx</span>
 sudo systemctl enable nginx <span style="color:#75715e">#设置 Nginx 开机自启动</span>
 </code></pre></div><p>输入如下命令可查看 Nginx 的版本号</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>user@arch ~<span style="color:#f92672">]</span>$ nginx -v
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>user@arch ~<span style="color:#f92672">]</span>$ nginx -v
 nginx version: nginx/1.9.14
 </code></pre></div><p>在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
 <img src="https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png" alt="Nginx 欢迎界面"  /></p>
 <p>如果你不知道服务器公网 IP，可以输入这条命令查看。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl http://icanhazip.com
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl http://icanhazip.com
 </code></pre></div><p>如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。</p>
 <h2 id="安装-mariadb">安装 MariaDB</h2>
 <p>2013 年开始，Arch Linux 将 MariaDB 作为默认的 SQL 数据库软件，Oracle 的 MySQL 则被丢进 AUR（（（</p>
 <p>输入如下命令安装 MariaDB</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S mariadb
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S mariadb
 </code></pre></div><p>在启动 MariaDB 服务之前，需要使用用 <code>mysql_install_db</code>命令初始化 MariaDB 的数据目录</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_install_db --user<span style="color:#f92672">=</span>mysql --basedir<span style="color:#f92672">=</span>/usr --datadir<span style="color:#f92672">=</span>/var/lib/mysql
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_install_db --user<span style="color:#f92672">=</span>mysql --basedir<span style="color:#f92672">=</span>/usr --datadir<span style="color:#f92672">=</span>/var/lib/mysql
 </code></pre></div><p>启动 MariaDB 服务。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start mysqld
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start mysqld
 </code></pre></div><p>查看 MariaDB 状态。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status mysqld
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status mysqld
 </code></pre></div><p>输出：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">● mysqld.service - MariaDB database server
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">● mysqld.service - MariaDB database server
    Loaded: loaded <span style="color:#f92672">(</span>/usr/lib/systemd/system/mysqld.service; disabled; vendor preset: disabled<span style="color:#f92672">)</span>
    Active: active <span style="color:#f92672">(</span>running<span style="color:#f92672">)</span> since Wed 2016-04-13 21:09:45 CST; 5s ago
   Process: <span style="color:#ae81ff">8373</span> ExecStartPost<span style="color:#f92672">=</span>/usr/bin/mysqld-post <span style="color:#f92672">(</span>code<span style="color:#f92672">=</span>exited, status<span style="color:#f92672">=</span>0/SUCCESS<span style="color:#f92672">)</span>
@@ -181,21 +193,21 @@ nginx version: nginx/1.9.14
    CGroup: /system.slice/mysqld.service
            └─8372 /usr/bin/mysqld --pid-file<span style="color:#f92672">=</span>/run/mysqld/mysqld.pid
 </code></pre></div><p>设置 MariaDB 开机自启动。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemclt enable mysqld
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemclt enable mysqld
 </code></pre></div><p>运行安全安装脚本。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_secure_installation
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_secure_installation
 </code></pre></div><p>它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。</p>
 <p>查看 MariaDB 的版本。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>user@arch ~<span style="color:#f92672">]</span>$ mysql --version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>user@arch ~<span style="color:#f92672">]</span>$ mysql --version
 mysql  Ver 15.1 Distrib 10.1.13-MariaDB, <span style="color:#66d9ef">for</span> Linux <span style="color:#f92672">(</span>x86_64<span style="color:#f92672">)</span> using readline 5.1
 </code></pre></div><p>默认的配置文件位置为 <code>/etc/mysql/my.cnf</code>。</p>
 <p>第 4 步：安装 PHP7
 Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S php-fpm
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S php-fpm
 </code></pre></div><p>安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/nginx/nginx.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/nginx/nginx.conf
 </code></pre></div><p>找到 location ~ .php$这部分的配置，将这部分配置修改成如下。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">\.php$</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">\.php$</span> {
             <span style="color:#f92672">root</span>           <span style="color:#e6db74">/usr/share/nginx/html</span>;
             <span style="color:#f92672">fastcgi_pass</span>   <span style="color:#e6db74">unix:/run/php-fpm/php-fpm.sock</span>;
             <span style="color:#f92672">fastcgi_index</span>  <span style="color:#e6db74">index.php</span>;
@@ -203,26 +215,26 @@ Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）</
             <span style="color:#f92672">include</span>        <span style="color:#e6db74">fastcgi_params</span>;
         }
 </code></pre></div><p>保存文件。然后启动 php-fpm，并设置开机自启动。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start php-fpm
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 </code></pre></div><p>第 5 步：测试 PHP
 在网站根目录创建一个 test.php 文件。默认的网站根目录是/usr/share/nginx/html。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /usr/share/nginx/html/test.php
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /usr/share/nginx/html/test.php
 </code></pre></div><p>在文件中添加如下 PHP 代码。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
   <span style="color:#a6e22e">phpinfo</span>();
 <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>保存文件。重新加载 Nginx。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl reload nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl reload nginx
 </code></pre></div><p>然后在浏览器地址栏输入 <code>http://你服务器或本地主机IP/test.php</code>。将 server-ip 替换成 Arch Linux 服务器或本地主机 IP。
 此时，浏览器会显示有关 PHP 到底信息，这意味着你已修改成功。</p>
 <p>test.php 文件只是用来测试 PHP 的，为了不让他人看见服务器的信息，测试之后要将它删除。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rm /usr/share/nginx/html/test.php
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rm /usr/share/nginx/html/test.php
 </code></pre></div><p>启用 PHP 扩展
 编辑 /etc/php/php.ini 配置文件。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/php/php.ini
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/php/php.ini
 </code></pre></div><p>找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">;<span style="color:#a6e22e">extension</span><span style="color:#f92672">=</span><span style="color:#a6e22e">mysqli</span><span style="color:#f92672">.</span><span style="color:#a6e22e">so</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">;<span style="color:#a6e22e">extension</span><span style="color:#f92672">=</span><span style="color:#a6e22e">mysqli</span><span style="color:#f92672">.</span><span style="color:#a6e22e">so</span>
 ;<span style="color:#a6e22e">extension</span><span style="color:#f92672">=</span><span style="color:#a6e22e">pdo_mysql</span><span style="color:#f92672">.</span><span style="color:#a6e22e">so</span>
 </code></pre></div><p><code>mysqli.do</code> 用来建立数据库连接。<code>pdo_mysql.so</code> 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。</p>
 <p>安装教程到此结束。</p>
@@ -260,6 +272,7 @@ sudo systemctl enable php-fpm
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
     </footer>
+
 
     
 </article>
