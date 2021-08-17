@@ -6,18 +6,27 @@
     <description>Recent content in Tags on 清絮的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Jul 2021 11:28:38 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 23:32:39 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux</title>
       <link>https://blog.linioi.com/tags/arch-linux/</link>
-      <pubDate>Sat, 03 Jul 2021 11:28:38 +0000</pubDate>
+      <pubDate>Tue, 17 Aug 2021 23:32:39 +0800</pubDate>
       
       <guid>https://blog.linioi.com/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gnome</title>
+      <title>Clash</title>
+      <link>https://blog.linioi.com/tags/clash/</link>
+      <pubDate>Tue, 17 Aug 2021 23:32:39 +0800</pubDate>
+      
+      <guid>https://blog.linioi.com/tags/clash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GNOME</title>
       <link>https://blog.linioi.com/tags/gnome/</link>
       <pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate>
       

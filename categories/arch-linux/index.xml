@@ -6,7 +6,24 @@
     <description>Recent content in Arch Linux on 清絮的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Jul 2021 11:28:38 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 23:32:39 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/categories/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Clash 安装配置记录</title>
+      <link>https://blog.linioi.com/posts/clash-on-arch/</link>
+      <pubDate>Tue, 17 Aug 2021 23:32:39 +0800</pubDate>
+      
+      <guid>https://blog.linioi.com/posts/clash-on-arch/</guid>
+      <description>前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。
+Qv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。
+但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。
+  Qv2ray: 2019-03-28 - 2021-08-17
+ 自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。
+感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者
+致敬
+gcc 写于 8 月 17 日
+ 作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。</description>
+    </item>
+    
     <item>
       <title>Arch Linux &#43; Windows 双系统安装教程</title>
       <link>https://blog.linioi.com/posts/18/</link>
@@ -25,22 +42,22 @@
     </item>
     
     <item>
-      <title>记 Gnome 的初体验</title>
+      <title>记 GNOME 的初体验</title>
       <link>https://blog.linioi.com/posts/the-first-gnome-try/</link>
       <pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate>
       
       <guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid>
-      <description>记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
+      <description>记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
-无奈地一次 Gnome 尝试 是的，是“无奈的一次尝试”。
+无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。
 起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
 强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。
 长时间地查教程、社区提问无果后，我逐渐放弃了挣扎，并在纠结很久之后选择装了一个 Windows 10（至少这台电脑的 Windows 支持非常完善，Windows 10 不会开盖花屏）。
-这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 Gnome 呢？”
-我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 Gnome“的提议。
-既然别无选择，为什么不给 Gnome 一个机会呢？（态度好像不太对
-意料之外：Gnome 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + Gnome 的安装。
+这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 GNOME 呢？”
+我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 GNOME“的提议。
+既然别无选择，为什么不给 GNOME 一个机会呢？（态度好像不太对
+意料之外：GNOME 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + GNOME 的安装。
 重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</description>
     </item>
     

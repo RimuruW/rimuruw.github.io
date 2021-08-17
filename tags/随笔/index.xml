@@ -8,22 +8,22 @@
     <language>zh-cn</language>
     <lastBuildDate>Tue, 23 Feb 2021 01:26:46 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>记 Gnome 的初体验</title>
+      <title>记 GNOME 的初体验</title>
       <link>https://blog.linioi.com/posts/the-first-gnome-try/</link>
       <pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate>
       
       <guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid>
-      <description>记 Gnome 的初体验 长期以来，我使用 KDE 而非 Gnome。劝退我的不只网上关于 Gnome 的负面言论诸如“Gnome 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 Gnome “无可容忍的凌乱”。
+      <description>记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
-无奈地一次 Gnome 尝试 是的，是“无奈的一次尝试”。
+无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。
 起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
 强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。
 长时间地查教程、社区提问无果后，我逐渐放弃了挣扎，并在纠结很久之后选择装了一个 Windows 10（至少这台电脑的 Windows 支持非常完善，Windows 10 不会开盖花屏）。
-这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 Gnome 呢？”
-我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 Gnome“的提议。
-既然别无选择，为什么不给 Gnome 一个机会呢？（态度好像不太对
-意料之外：Gnome 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + Gnome 的安装。
+这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 GNOME 呢？”
+我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 GNOME“的提议。
+既然别无选择，为什么不给 GNOME 一个机会呢？（态度好像不太对
+意料之外：GNOME 给我的惊喜 经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + GNOME 的安装。
 重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</description>
     </item>
     
