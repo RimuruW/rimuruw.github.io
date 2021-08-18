@@ -300,9 +300,15 @@ WantedBy<span style="color:#f92672">=</span>multi-user.target
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl enable clash
 </code></pre></div><p>立即启动 Clash</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start clash
-</code></pre></div><p>重新启动 Clash</p>
+</code></pre></div><blockquote>
+<p>其他 systemd 命令：</p>
+<ul>
+<li>重新启动 Clash</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl restart clash
-</code></pre></div><p>获取 Clash 日志</p>
+</code></pre></div><ul>
+<li>获取 Clash 日志</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status clash
 <span style="color:#75715e"># 或者</span>
 journalctl -xe
@@ -310,7 +316,8 @@ journalctl -xe
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Works only in systemd v240 and newer!</span>
 StandardOutput<span style="color:#f92672">=</span>append:/var/log/clash/log.log
 StandardError<span style="color:#f92672">=</span>append:/var/log/clash/error.log
-</code></pre></div><h2 id="添加外置规则premium-版本可用">添加外置规则（Premium 版本可用）</h2>
+</code></pre></div></blockquote>
+<h2 id="添加外置规则premium-版本可用">添加外置规则（Premium 版本可用）</h2>
 <p><a class="link" href="https://github.com/Loyalsoldier/clash-rules"  target="_blank" rel="noopener"
     >clash-rules</a> 提供了 Clash Premium 可用的规则合集，只需要在 Clash 配置文件中添加如下 <code>rule-providers</code> 和 <code>rules</code> 即可使用。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">rule-providers</span>:
@@ -533,15 +540,16 @@ yarn install
 				width="2564"
 				height="1536"
 				loading="lazy"
-				alt="image-20210818025247047">
+				alt="clash-dashboard">
 		</a>
 		
-		<figcaption>image-20210818025247047</figcaption>
+		<figcaption>clash-dashboard</figcaption>
 		
 	</figure></p>
-<p>**注意！！**你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 <code>/etc/clash/config.conf</code> 然后重启 Clash。</p>
+<p><strong>注意</strong>！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 <code>/etc/clash/config.conf</code> 然后重启 Clash。</p>
 <p>问：所以 clash-dashboard 有什么用啊？</p>
-<p>答：我也不知道。</p>
+<p>答：<del>我也不知道</del>。</p>
+<p>其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。</p>
 <hr>
 <p>参考：</p>
 <ul>

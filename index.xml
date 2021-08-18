@@ -160,9 +160,15 @@ WantedBy&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;multi-user.targe
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl enable clash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;立即启动 Clash&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start clash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;重新启动 Clash&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;其他 systemd 命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重新启动 Clash&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl restart clash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;获取 Clash 日志&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;获取 Clash 日志&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl status clash
 &lt;span style=&#34;color:#75715e&#34;&gt;# 或者&lt;/span&gt;
 journalctl -xe
@@ -170,7 +176,8 @@ journalctl -xe
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Works only in systemd v240 and newer!&lt;/span&gt;
 StandardOutput&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;append:/var/log/clash/log.log
 StandardError&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;append:/var/log/clash/error.log
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;添加外置规则premium-版本可用&#34;&gt;添加外置规则（Premium 版本可用）&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;添加外置规则premium-版本可用&#34;&gt;添加外置规则（Premium 版本可用）&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Loyalsoldier/clash-rules&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;clash-rules&lt;/a&gt; 提供了 Clash Premium 可用的规则合集，只需要在 Clash 配置文件中添加如下 &lt;code&gt;rule-providers&lt;/code&gt; 和 &lt;code&gt;rules&lt;/code&gt; 即可使用。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;rule-providers&lt;/span&gt;:
@@ -393,15 +400,16 @@ yarn install
 				width=&#34;2564&#34;
 				height=&#34;1536&#34;
 				loading=&#34;lazy&#34;
-				alt=&#34;image-20210818025247047&#34;&gt;
+				alt=&#34;clash-dashboard&#34;&gt;
 		&lt;/a&gt;
 		
-		&lt;figcaption&gt;image-20210818025247047&lt;/figcaption&gt;
+		&lt;figcaption&gt;clash-dashboard&lt;/figcaption&gt;
 		
 	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;**注意！！**你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 &lt;code&gt;/etc/clash/config.conf&lt;/code&gt; 然后重启 Clash。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 &lt;code&gt;/etc/clash/config.conf&lt;/code&gt; 然后重启 Clash。&lt;/p&gt;
 &lt;p&gt;问：所以 clash-dashboard 有什么用啊？&lt;/p&gt;
-&lt;p&gt;答：我也不知道。&lt;/p&gt;
+&lt;p&gt;答：&lt;del&gt;我也不知道&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
