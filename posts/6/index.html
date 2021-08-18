@@ -33,11 +33,23 @@
  dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.jpg' />
     <link rel="shortcut icon" href="src/favicon.ico" />
-<style>     :root {         --article-font-family: "Noto Serif SC", var(--base-font-family);     }
-</style> 
-<script>  	(function () {       const customFont = document.createElement('link');       customFont.href = "/fonts/google";          customFont.type = "text/css";       customFont.rel = "stylesheet";          document.head.appendChild(customFont);  	}());
-</script>
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
 
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
     </head>
     <body class="
     article-page has-toc
