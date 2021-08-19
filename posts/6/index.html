@@ -32,7 +32,7 @@
   count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。   ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
  dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.jpg' />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 <style>
     :root {
         --article-font-family: "Noto Serif SC", var(--base-font-family);
