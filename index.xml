@@ -12,7 +12,7 @@
         <pubDate>Tue, 17 Aug 2021 23:32:39 +0800</pubDate>
         
         <guid>https://blog.linioi.com/posts/clash-on-arch/</guid>
-        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <description>&lt;img src="https://blog.linioi.com/posts/clash-on-arch/clash.png" alt="Featured image of post Arch Linux Clash 安装配置记录" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Qv2ray/Qv2ray&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Qv2ray&lt;/a&gt; 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。&lt;/p&gt;
@@ -2042,7 +2042,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
         <pubDate>Thu, 01 Oct 2020 15:49:01 +0000</pubDate>
         
         <guid>https://blog.linioi.com/posts/3/</guid>
-        <description>&lt;p&gt;场景如下&lt;/p&gt;
+        <description>&lt;img src="https://blog.linioi.com/posts/3/cover.jpg" alt="Featured image of post 浅谈手机通知推送" /&gt;&lt;p&gt;场景如下&lt;/p&gt;
 &lt;p&gt;QQ/WeChat:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A：我给你发消息你怎么半天没回？&lt;/li&gt;
