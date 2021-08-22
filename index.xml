@@ -349,17 +349,16 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.nvm&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$NVM_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/nvm.sh&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$NVM_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/nvm.sh&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# This loads nvm&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$NVM_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/bash_completion&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$NVM_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/bash_completion&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# This loads nvm bash_completion&lt;/span&gt;
+
 &lt;span style=&#34;color:#75715e&#34;&gt;# 如果你使用的是 zsh 的话，同时也向 ～/.zshrc 加入如下内容&lt;/span&gt;
 source ~/.bashrc
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# 然后加载配置文件&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# bash 用户&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后加载配置文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# bash 用户&lt;/span&gt;
 source ~/.bashrc
 &lt;span style=&#34;color:#75715e&#34;&gt;# zsh 用户&lt;/span&gt;
 source ~/.zshrc
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# 最后安装 Node.js Stable 版本&lt;/span&gt;
-nvm install stable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后安装 Node.js Stable 版本&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nvm install stable
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你没有安装 Yarn 的话，可以使用 NPM 全局安装 Yarn。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 修改 NPM 镜像源为淘宝源（可选）&lt;/span&gt;
 npm config set registry http://registry.npm.taobao.org/
@@ -409,7 +408,7 @@ yarn install
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 &lt;code&gt;/etc/clash/config.conf&lt;/code&gt; 然后重启 Clash。&lt;/p&gt;
 &lt;p&gt;问：所以 clash-dashboard 有什么用啊？&lt;/p&gt;
 &lt;p&gt;答：&lt;del&gt;我也不知道&lt;/del&gt;。&lt;/p&gt;
-&lt;p&gt;其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。&lt;/p&gt;
+&lt;p&gt;其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。（&lt;del&gt;强行为其辩护&lt;/del&gt;）&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;

@@ -513,17 +513,16 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.nvm&#34;</span>
 <span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span>  <span style="color:#75715e"># This loads nvm</span>
 <span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/bash_completion&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/bash_completion&#34;</span>  <span style="color:#75715e"># This loads nvm bash_completion</span>
+
 <span style="color:#75715e"># 如果你使用的是 zsh 的话，同时也向 ～/.zshrc 加入如下内容</span>
 source ~/.bashrc
-
-<span style="color:#75715e"># 然后加载配置文件</span>
-<span style="color:#75715e"># bash 用户</span>
+</code></pre></div><p>然后加载配置文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bash 用户</span>
 source ~/.bashrc
 <span style="color:#75715e"># zsh 用户</span>
 source ~/.zshrc
-
-<span style="color:#75715e"># 最后安装 Node.js Stable 版本</span>
-nvm install stable
+</code></pre></div><p>最后安装 Node.js Stable 版本</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nvm install stable
 </code></pre></div><p>如果你没有安装 Yarn 的话，可以使用 NPM 全局安装 Yarn。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 修改 NPM 镜像源为淘宝源（可选）</span>
 npm config set registry http://registry.npm.taobao.org/
@@ -573,7 +572,7 @@ yarn install
 <p><strong>注意</strong>！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 <code>/etc/clash/config.conf</code> 然后重启 Clash。</p>
 <p>问：所以 clash-dashboard 有什么用啊？</p>
 <p>答：<del>我也不知道</del>。</p>
-<p>其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。</p>
+<p>其实参考它的名字，思考一下为什么是 clash-dashboard 而不是 clash-web-manager 就可以得出答案了。clash-dashboard 作为仪表盘很好地、直观地向我们展示了 Clash 当前运行状况，在管理上也能提高一定的便利性。（<del>强行为其辩护</del>）</p>
 <hr>
 <p>参考：</p>
 <ul>
