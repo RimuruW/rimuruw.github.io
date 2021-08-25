@@ -691,7 +691,6 @@ yarn install
 &lt;h3 id=&#34;连接网络并同步时间&#34;&gt;连接网络并同步时间&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你能连接有线网络，最好的办法是直接插网线连接网络。&lt;/li&gt;
-&lt;li&gt;如果你&lt;/li&gt;
 &lt;li&gt;如果你电脑有无线网卡的话（绝大多数电脑应该都有），则可以尝试通过 WiFi 连接。我们可以通过 archiso 内置的 iwd 软件完成这一过程。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
