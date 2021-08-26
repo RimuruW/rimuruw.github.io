@@ -175,18 +175,25 @@
 <p>在几分钟的试体验中，GNOME 精致的 MD 设计接近颠覆了我对 Linux 桌面一贯的认知。KDE 高自定义当然很好，但是不如 GNOME 这般简直为我的简约向审美量身定制。</p>
 <p>（不要和我说 GNOME 的默认应用图标，那玩意差点弄瞎了我的眼睛）</p>
 <p>比如说大家最熟悉的 VS Code,图标是这样的：</p>
-<p><figure style="flex-grow: 187; flex-basis: 449px">
-		<a href="/posts/the-first-gnome-try/vscode-icon.png" data-size="476x254"><img src="/posts/the-first-gnome-try/vscode-icon.png"
-				srcset="/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w"
-				width="476"
-				height="254"
-				loading="lazy"
-				alt="你敢相信这个是 VS Code？">
-		</a>
-		
-		<figcaption>你敢相信这个是 VS Code？</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 187; 
+			flex-basis: 449px"
+	>
+	<a href="/posts/the-first-gnome-try/vscode-icon.png" data-size="476x254">
+		<img src="/posts/the-first-gnome-try/vscode-icon.png"
+			width="476"
+			height="254"
+			srcset="/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="你敢相信这个是 VS Code？">
+	</a>
+	
+	<figcaption>你敢相信这个是 VS Code？</figcaption>
+	
+</figure></p>
 <p>大概感觉是，看完这默认的图标设计，我感觉我挺有当设计师的天赋。</p>
 <p>在确定 GNOME 合盖不会花屏之后，我可以肯定，GNOME 将会是我未来很长一段时间的 Linux 桌面环境解决方案。</p>
 <h2 id="与-gnome-bug-的搏斗">与 GNOME bug 的搏斗</h2>
@@ -233,18 +240,25 @@
 <p>我觉得我的语言很难向别人表述清楚问题所在，但是考虑到我博客好像只有自己看，那就按照我的感觉描述，自己能懂就好了（bushi</p>
 <p>简单来说，我只<strong>点击了抽屉一次</strong>，而 Dock 栏抽屉的<strong>动画显示了两次</strong>。</p>
 <p>具体表现为，桌面在我点击后先显示了应用列表，然后再显示了一个扩散开来的 Dock 栏抽屉点击动画。我猜这可能是扩展动画和桌面自带动画冲突的缘故。不出所料，我在 <em>Dash To Dock</em> 扩展中找到了 <em>动画方式</em> -<em>显示应用程序</em>  这个选项。</p>
-<p><figure style="flex-grow: 496; flex-basis: 1190px">
-		<a href="/posts/the-first-gnome-try/image-20210223004213775.png" data-size="1052x212"><img src="/posts/the-first-gnome-try/image-20210223004213775.png"
-				srcset="/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w"
-				width="1052"
-				height="212"
-				loading="lazy"
-				alt="Dash To Dock-启动项">
-		</a>
-		
-		<figcaption>Dash To Dock-启动项</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 496; 
+			flex-basis: 1190px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223004213775.png" data-size="1052x212">
+		<img src="/posts/the-first-gnome-try/image-20210223004213775.png"
+			width="1052"
+			height="212"
+			srcset="/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Dash To Dock-启动项">
+	</a>
+	
+	<figcaption>Dash To Dock-启动项</figcaption>
+	
+</figure></p>
 <p>关闭该选项后，动画的不和谐感消失。</p>
 <p>当然，对于内心追求完美的我来说，一切本应还没有结束。考虑到 GNOME 扩展都是为 GNOME 定制的，扩展作者怎么可能加这种明显有问题的功能呢？最可能的情况是，这个功能本应该在某种情况下正常工作，但是我当前环境不满足扩展正常工作所需条件，因此才会出现这个 bug。</p>
 <p>我当然也更喜欢扩展提供的动画，但是在网上找很久都没有找到相关解决方案后，我还是决定放弃该动画，毕竟使用 Linux 不应把过多的时间放在美化上（<del>才不是为自己找借口</del>）。</p>
@@ -253,92 +267,141 @@
 <p>是的，GNOME 日常使用如果加上扩展的话 bug 太多了&hellip;每天体验不同的 bug或者也是一种乐趣吧？</p>
 <h2 id="gnome-中我的扩展与美化">GNOME 中我的扩展与美化</h2>
 <p>该节仅为记录备份，请勿照搬安装我截图中的扩展。</p>
-<p><figure style="flex-grow: 167; flex-basis: 401px">
-		<a href="/posts/the-first-gnome-try/image-20210223010034467.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010034467.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1532"
-				loading="lazy"
-				alt="我的扩展1">
-		</a>
-		
-		<figcaption>我的扩展1</figcaption>
-		
-	</figure></p>
-<p><figure style="flex-grow: 167; flex-basis: 401px">
-		<a href="/posts/the-first-gnome-try/image-20210223010209578.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010209578.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1532"
-				loading="lazy"
-				alt="我的扩展2">
-		</a>
-		
-		<figcaption>我的扩展2</figcaption>
-		
-	</figure></p>
-<p><figure style="flex-grow: 167; flex-basis: 401px">
-		<a href="/posts/the-first-gnome-try/image-20210223010538858.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223010538858.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1532"
-				loading="lazy"
-				alt="我的扩展3">
-		</a>
-		
-		<figcaption>我的扩展3</figcaption>
-		
-	</figure></p>
-<p><figure style="flex-grow: 751; flex-basis: 1802px">
-		<a href="/posts/the-first-gnome-try/image-20210223010623143.png" data-size="2554x340"><img src="/posts/the-first-gnome-try/image-20210223010623143.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w"
-				width="2554"
-				height="340"
-				loading="lazy"
-				alt="我的扩展4">
-		</a>
-		
-		<figcaption>我的扩展4</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 167; 
+			flex-basis: 401px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223010034467.png" data-size="2560x1532">
+		<img src="/posts/the-first-gnome-try/image-20210223010034467.png"
+			width="2560"
+			height="1532"
+			srcset="/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的扩展1">
+	</a>
+	
+	<figcaption>我的扩展1</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 167; 
+			flex-basis: 401px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223010209578.png" data-size="2560x1532">
+		<img src="/posts/the-first-gnome-try/image-20210223010209578.png"
+			width="2560"
+			height="1532"
+			srcset="/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的扩展2">
+	</a>
+	
+	<figcaption>我的扩展2</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 167; 
+			flex-basis: 401px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223010538858.png" data-size="2560x1532">
+		<img src="/posts/the-first-gnome-try/image-20210223010538858.png"
+			width="2560"
+			height="1532"
+			srcset="/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的扩展3">
+	</a>
+	
+	<figcaption>我的扩展3</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 751; 
+			flex-basis: 1802px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223010623143.png" data-size="2554x340">
+		<img src="/posts/the-first-gnome-try/image-20210223010623143.png"
+			width="2554"
+			height="340"
+			srcset="/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的扩展4">
+	</a>
+	
+	<figcaption>我的扩展4</figcaption>
+	
+</figure></p>
 <p>各人审美不同，请勿照用我使用的主题和字体。</p>
-<p><figure style="flex-grow: 167; flex-basis: 401px">
-		<a href="/posts/the-first-gnome-try/image-20210223005830704.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223005830704.png"
-				srcset="/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1532"
-				loading="lazy"
-				alt="我的主题搭配">
-		</a>
-		
-		<figcaption>我的主题搭配</figcaption>
-		
-	</figure></p>
-<p><figure style="flex-grow: 167; flex-basis: 401px">
-		<a href="/posts/the-first-gnome-try/image-20210223005924530.png" data-size="2560x1532"><img src="/posts/the-first-gnome-try/image-20210223005924530.png"
-				srcset="/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1532"
-				loading="lazy"
-				alt="我的字体搭配">
-		</a>
-		
-		<figcaption>我的字体搭配</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 167; 
+			flex-basis: 401px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223005830704.png" data-size="2560x1532">
+		<img src="/posts/the-first-gnome-try/image-20210223005830704.png"
+			width="2560"
+			height="1532"
+			srcset="/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的主题搭配">
+	</a>
+	
+	<figcaption>我的主题搭配</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 167; 
+			flex-basis: 401px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223005924530.png" data-size="2560x1532">
+		<img src="/posts/the-first-gnome-try/image-20210223005924530.png"
+			width="2560"
+			height="1532"
+			srcset="/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的字体搭配">
+	</a>
+	
+	<figcaption>我的字体搭配</figcaption>
+	
+</figure></p>
 <p>最后的桌面效果如图</p>
-<p><figure style="flex-grow: 160; flex-basis: 384px">
-		<a href="/posts/the-first-gnome-try/image-20210223010757838.png" data-size="2560x1600"><img src="/posts/the-first-gnome-try/image-20210223010757838.png"
-				srcset="/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w"
-				width="2560"
-				height="1600"
-				loading="lazy"
-				alt="我的桌面">
-		</a>
-		
-		<figcaption>我的桌面</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 160; 
+			flex-basis: 384px"
+	>
+	<a href="/posts/the-first-gnome-try/image-20210223010757838.png" data-size="2560x1600">
+		<img src="/posts/the-first-gnome-try/image-20210223010757838.png"
+			width="2560"
+			height="1600"
+			srcset="/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="我的桌面">
+	</a>
+	
+	<figcaption>我的桌面</figcaption>
+	
+</figure></p>
 <p>有人评价说我的桌面像 Mac。说实话，装扮桌面的时候没有刻意模仿 Mac，完全是自己觉得怎么舒服怎么来。</p>
 <p>直到现在，我对我的图标包还是不算满意，但是换了几套还是找不到称心如意的，索性就将就着用吧。</p>
 <p><strong>Dock 放底栏是非高效率的做法！</strong></p>
@@ -501,7 +564,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.1.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

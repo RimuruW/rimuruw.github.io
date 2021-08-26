@@ -215,31 +215,45 @@ sudo chmod +x /usr/local/bin/clash
 <span style="color:#f92672">sercet</span>:  <span style="color:#75715e"># 外置管理器连接密钥</span>
 </code></pre></div><h3 id="系统代理设置">系统代理设置</h3>
 <p>理想情况下，我们可以直接在 <code>设置</code> 设置系统代理。一般在 <code>设置</code>-<code>网络</code> 可以找到相关选项。</p>
-<p><figure style="flex-grow: 140; flex-basis: 338px">
-		<a href="/posts/clash-on-arch/image-20210818012020999.png" data-size="2052x1456"><img src="/posts/clash-on-arch/image-20210818012020999.png"
-				srcset="/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_1024x0_resize_box_3.png 1024w"
-				width="2052"
-				height="1456"
-				loading="lazy"
-				alt="网络代理">
-		</a>
-		
-		<figcaption>网络代理</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 140; 
+			flex-basis: 338px"
+	>
+	<a href="/posts/clash-on-arch/image-20210818012020999.png" data-size="2052x1456">
+		<img src="/posts/clash-on-arch/image-20210818012020999.png"
+			width="2052"
+			height="1456"
+			srcset="/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="网络代理">
+	</a>
+	
+	<figcaption>网络代理</figcaption>
+	
+</figure></p>
 <p>然后根据自己配置文件填入相关配置信息即可。</p>
-<p><figure style="flex-grow: 112; flex-basis: 270px">
-		<a href="/posts/clash-on-arch/image-20210818012226124.png" data-size="970x860"><img src="/posts/clash-on-arch/image-20210818012226124.png"
-				srcset="/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_1024x0_resize_box_3.png 1024w"
-				width="970"
-				height="860"
-				loading="lazy"
-				alt="网络代理">
-		</a>
-		
-		<figcaption>网络代理</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 112; 
+			flex-basis: 270px"
+	>
+	<a href="/posts/clash-on-arch/image-20210818012226124.png" data-size="970x860">
+		<img src="/posts/clash-on-arch/image-20210818012226124.png"
+			width="970"
+			height="860"
+			srcset="/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="网络代理">
+	</a>
+	
+	<figcaption>网络代理</figcaption>
+	
+</figure></p>
 <p>其中，<code>127.0.0.1</code> 是本机地址（localhost），如果你不懂什么意思，保持默认即可。</p>
 <p><code>7890</code> 和 <code>7891</code> 这样的是端口（port）地址，对应你配置文件的 <code>port</code> 和 <code>socks-port</code>。</p>
 <h3 id="设置终端代理">设置终端代理</h3>
@@ -526,33 +540,47 @@ yarn install
 </code></pre></div><p>以上都配置完后，在 clash-dashboard 输入如下命令即可启动 clash-dashboard</p>
 <pre><code>yarn start
 </code></pre><p>此时终端会显示 Web 管理面版的地址，如下图所示</p>
-<p><figure style="flex-grow: 134; flex-basis: 321px">
-		<a href="/posts/clash-on-arch/image-20210818024446945.png" data-size="1400x1044"><img src="/posts/clash-on-arch/image-20210818024446945.png"
-				srcset="/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_1024x0_resize_box_3.png 1024w"
-				width="1400"
-				height="1044"
-				loading="lazy"
-				alt="yarn start">
-		</a>
-		
-		<figcaption>yarn start</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 134; 
+			flex-basis: 321px"
+	>
+	<a href="/posts/clash-on-arch/image-20210818024446945.png" data-size="1400x1044">
+		<img src="/posts/clash-on-arch/image-20210818024446945.png"
+			width="1400"
+			height="1044"
+			srcset="/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="yarn start">
+	</a>
+	
+	<figcaption>yarn start</figcaption>
+	
+</figure></p>
 <p>我们可以看到，上图所示地址为 http://localhost:3000/，我们可以直接打开这个网址访问 Web 管理界面。</p>
 <p>首次进入管理界面会要求你输入 Clash 的外置端口（默认 9090）和 sercet（默认为空），根据自己 Clash 配置文件输入即可。</p>
 <p>最后界面大致如图所示</p>
-<p><figure style="flex-grow: 166; flex-basis: 400px">
-		<a href="/posts/clash-on-arch/image-20210818025247047.png" data-size="2564x1536"><img src="/posts/clash-on-arch/image-20210818025247047.png"
-				srcset="/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_1024x0_resize_box_3.png 1024w"
-				width="2564"
-				height="1536"
-				loading="lazy"
-				alt="clash-dashboard">
-		</a>
-		
-		<figcaption>clash-dashboard</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 166; 
+			flex-basis: 400px"
+	>
+	<a href="/posts/clash-on-arch/image-20210818025247047.png" data-size="2564x1536">
+		<img src="/posts/clash-on-arch/image-20210818025247047.png"
+			width="2564"
+			height="1536"
+			srcset="/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_480x0_resize_box_3.png 480w, /posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="clash-dashboard">
+	</a>
+	
+	<figcaption>clash-dashboard</figcaption>
+	
+</figure></p>
 <p><strong>注意</strong>！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 <code>/etc/clash/config.conf</code> 然后重启 Clash。</p>
 <p>问：所以 clash-dashboard 有什么用啊？</p>
 <p>答：<del>我也不知道</del>。</p>
@@ -707,7 +735,7 @@ yarn install
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.1.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

@@ -189,18 +189,25 @@ QQ/WeChat:
 <p>前提已满足条件：App 已注册远程推送通知。</p>
 </blockquote>
 <p>Apple 开发者文档给出的推送过程示意图如下：
-<figure style="flex-grow: 338; flex-basis: 811px">
-		<a href="/posts/3/f70fd156eda99becc550aa1e97bc87d6.png" data-size="1329x393"><img src="/posts/3/f70fd156eda99becc550aa1e97bc87d6.png"
-				srcset="/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, /posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w"
-				width="1329"
-				height="393"
-				loading="lazy"
-				alt="通知推送示意图">
-		</a>
-		
-		<figcaption>通知推送示意图</figcaption>
-		
-	</figure></p>
+<figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 338; 
+			flex-basis: 811px"
+	>
+	<a href="/posts/3/f70fd156eda99becc550aa1e97bc87d6.png" data-size="1329x393">
+		<img src="/posts/3/f70fd156eda99becc550aa1e97bc87d6.png"
+			width="1329"
+			height="393"
+			srcset="/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, /posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="通知推送示意图">
+	</a>
+	
+	<figcaption>通知推送示意图</figcaption>
+	
+</figure></p>
 <p>用文字描述过程如下：</p>
 <ol>
 <li>软件需要推送通知</li>
@@ -219,18 +226,25 @@ QQ/WeChat:
 <p>2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。</p>
 <p>2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。</p>
 </blockquote>
-<p><figure style="flex-grow: 80; flex-basis: 193px">
-		<a href="/posts/3/430ad3ada8a599674eb6136131587ad7.png" data-size="1120x1387"><img src="/posts/3/430ad3ada8a599674eb6136131587ad7.png"
-				srcset="/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, /posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w"
-				width="1120"
-				height="1387"
-				loading="lazy"
-				alt="FCM 示意图">
-		</a>
-		
-		<figcaption>FCM 示意图</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 80; 
+			flex-basis: 193px"
+	>
+	<a href="/posts/3/430ad3ada8a599674eb6136131587ad7.png" data-size="1120x1387">
+		<img src="/posts/3/430ad3ada8a599674eb6136131587ad7.png"
+			width="1120"
+			height="1387"
+			srcset="/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, /posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="FCM 示意图">
+	</a>
+	
+	<figcaption>FCM 示意图</figcaption>
+	
+</figure></p>
 <p>从原理上来看，FCM 和 APNs 一致，也是按照 <code>软件服务器</code> ==&gt; <code>FCM 服务器</code> ==&gt; <code>用户</code> 这一流程实现的。</p>
 <p>也就是说，对于 Android 系统 FCM 推送，整个推送过程中的 通知的接收与发送 都由 FCM 完成。这一过程中，设备上的软件<strong>本身没有参与</strong>。</p>
 <p>虽然可能和你以前想象的不太一样，但是事实如此：<strong>Android 系统同样有一套较为完善的推送机制，这个推送机制绿色高效，实现原理类似于 Apple。</strong></p>
@@ -241,18 +255,25 @@ QQ/WeChat:
 <li>FCM 在国内的连接不稳定。</li>
 </ul>
 <p>对于已安装 Google Play Service 的用户，可以在手机拨号盘输入 <code>*#*#426#*#*</code> 查看你当前的 FCM 连接状态。</p>
-<p><figure style="flex-grow: 210; flex-basis: 504px">
-		<a href="/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg" data-size="1080x514"><img src="/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg"
-				srcset="/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, /posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w"
-				width="1080"
-				height="514"
-				loading="lazy"
-				alt="FCM 已连接示意图">
-		</a>
-		
-		<figcaption>FCM 已连接示意图</figcaption>
-		
-	</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 210; 
+			flex-basis: 504px"
+	>
+	<a href="/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg" data-size="1080x514">
+		<img src="/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg"
+			width="1080"
+			height="514"
+			srcset="/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, /posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w"
+			loading="lazy"
+			alt="FCM 已连接示意图">
+	</a>
+	
+	<figcaption>FCM 已连接示意图</figcaption>
+	
+</figure></p>
 <h3 id="各大互联网公司的解决方案">各大互联网公司的解决方案</h3>
 <p>由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。</p>
 <p>事实上，这种小问题根本难不倒我们大天朝的互联网公司，以阿里巴巴等互联网巨头为首率先想出一种行之有效的解决方法——<strong>团结就是力量</strong>。</p>
@@ -305,18 +326,25 @@ QQ/WeChat:
 <p>不到两年时间里，统一推送联盟就实现了由「全民讨论统一推送后 Android 美好的幸福生活」到「全民讨论 统一推送联盟 到底黄没黄」的巨大转变。</p>
 <p>但是，我们要客观、发展性地看待问题，统一推送联盟一直在时刻努力着，前段时间还发表了一篇名为 <a class="link" href="https://mp.weixin.qq.com/s/JJ_cd3kHiggqb8pNqAOQkA"  target="_blank" rel="noopener"
     >《统一推送能给手机带来什么？》</a> 的科普性文章。文章底部留言中，官方更是回复「推必达将于近期上线」。
-<figure style="flex-grow: 326; flex-basis: 783px">
-		<a href="/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg" data-size="1080x331"><img src="/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg"
-				srcset="/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, /posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w"
-				width="1080"
-				height="331"
-				loading="lazy"
-				alt="官方回复「近期上线」">
-		</a>
-		
-		<figcaption>官方回复「近期上线」</figcaption>
-		
-	</figure></p>
+<figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 326; 
+			flex-basis: 783px"
+	>
+	<a href="/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg" data-size="1080x331">
+		<img src="/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg"
+			width="1080"
+			height="331"
+			srcset="/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, /posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w"
+			loading="lazy"
+			alt="官方回复「近期上线」">
+	</a>
+	
+	<figcaption>官方回复「近期上线」</figcaption>
+	
+</figure></p>
 <p><del>我也不知道我有生之年能不能等到这天了。</del></p>
 <h2 id="题外话让我们回头看看-qqwechat">题外话：让我们回头看看 QQ/WeChat</h2>
 <p>看到这里，你大概对手机系统推送有了比较全面的了解。</p>
@@ -469,7 +497,7 @@ QQ/WeChat:
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.1.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
