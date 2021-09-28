@@ -29,7 +29,7 @@
 &lt;p&gt;gcc 写于 8 月 17 日&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。&lt;/p&gt;
-&lt;p&gt;属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是一步步压垮它的石头。&lt;/p&gt;
+&lt;p&gt;属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。&lt;/p&gt;
 &lt;h2 id=&#34;安装-clash&#34;&gt;安装 Clash&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dreamacro/clash&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Clash&lt;/a&gt; 是一个由 Go 语言开发的多平台代理客户端。&lt;/p&gt;
@@ -117,7 +117,7 @@ sudo pacman -S proxychains-ng
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo vim /etc/proxychains.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接翻到文件末尾，按照你的 Clash 配置文件设置代理列表。&lt;/p&gt;
 &lt;p&gt;例如：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[ProxyList]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[ProxyList]
 # add proxy here ...
 # meanwile
 # defaults set to &amp;quot;tor&amp;quot;
@@ -390,7 +390,7 @@ cd clash-dashboard
 &lt;span style=&#34;color:#75715e&#34;&gt;# Yarn 安装所需依赖&lt;/span&gt;
 yarn install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上都配置完后，在 clash-dashboard 输入如下命令即可启动 clash-dashboard&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yarn start
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yarn start
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此时终端会显示 Web 管理面版的地址，如下图所示&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	
@@ -848,9 +848,9 @@ timedatectl set-ntp true
 &lt;p&gt;&lt;strong&gt;最后一次提醒，&lt;code&gt;/dev/sdX&lt;/code&gt; 只是示例，具体命令需要根据你实际情况进行更改，比如 &lt;code&gt;cfdisk /dev/nvme0n1&lt;/code&gt; 这样的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;此时屏幕应该显示你电脑相应的系统硬盘的信息。
 同时，屏幕底部会显示几个［xxx］，其中有&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[ Delete ] [ New ] [ Quit ] [ Help ] [ Write ] [ Dump ]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[ Delete ] [ New ] [ Quit ] [ Help ] [ Write ] [ Dump ]
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这几个［xxx］的意思分别是&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[删除] [新建] [退出] [帮助] [写入] [转储]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[删除] [新建] [退出] [帮助] [写入] [转储]
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;底部的选项的位置可能会随着 cfdisk 的更新发生变化，但是相应选项的功能不会改变。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在硬盘信息处，应该出现一个绿色的&lt;code&gt;Free space&lt;/code&gt;，这个就是你在 Windows 中压缩给 Arch Linux 的空间。
@@ -1214,7 +1214,7 @@ wqy-zenhei&lt;/li&gt;
 在文件中添加以下内容：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;export LANG=zh_CN.UTF-8
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export LANG=zh_CN.UTF-8
 
 export LANGUAGE=zh_CN:en_US
 
@@ -2506,7 +2506,7 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;li&gt;解压你下载的 &lt;code&gt;AOSP Recovery ROM Flasher V4.zip&lt;/code&gt; 。
 解压后文件夹目录如下&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;AOSP Recovery ROM Flasher V4
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;AOSP Recovery ROM Flasher V4
 ├── flashme.bat
 ├── images
 ├── sideload
@@ -2746,7 +2746,7 @@ sudo systemctl enable php-fpm
 &lt;li&gt;在测试过程中，&lt;strong&gt;我发现即使使用 Linux 作为 Operating system，  GitHub Action 实际工作时间也和 GitHub 计费时间并不相同&lt;/strong&gt;。
 同时，我在 GitHub Action 界面发现如下文字：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;This is the workflow execution time which may be different than the billed time.
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;This is the workflow execution time which may be different than the billed time.
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;如果你需要自定义域名，你的&lt;code&gt;CNAME&lt;/code&gt;文件应放在 Hexo 源码仓库的 source 文件夹下。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@v1.0.0&#34; &gt;hexo-action@v1.0.0&lt;/a&gt; 会自动删除项目仓库下的&lt;code&gt;.deploy_git&lt;/code&gt;文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 &lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@1.0.1&#34; &gt;hexo-action@1.0.1&lt;/a&gt; 被修复。我认为这个修复是不合理的。&lt;/li&gt;
@@ -3075,7 +3075,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;打开 cmd （或者其它终端），输入 &lt;code&gt;fastboot flash recovery 上一步解压的 recovery.img 的文件地址&lt;/code&gt; 。以下是一个示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
 Sending &#39;recovery&#39; (65536 KB)                      OKAY [  2.040s]
 Writing &#39;recovery&#39;                                 OKAY [  0.368s]
 Finished. Total time: 2.427s
@@ -3224,7 +3224,7 @@ Finished. Total time: 2.427s
 &lt;p&gt;在 Windows 命令行窗口回车后，选择要 sideload 的文件，输入文件前面的数字，回车，等待刷入到 47%，以下是一个示例。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;Press POWER + VOL UP till you get to the redmi screen after you get there release after 2s
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Press POWER + VOL UP till you get to the redmi screen after you get there release after 2s
 Press enter after you put your recovery into sideload and the rom into the sideload folder
 Check your device you might need to press yes to continue flashing after 47
 To select the file press press the number in front of it
@@ -3267,7 +3267,7 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 文件夹前几层结构大致如下：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;├── flashme.bat
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;├── flashme.bat
 ├── images
 │   ├── BTFM.bin
 │   ├── NON-HLOS.bin
@@ -3347,7 +3347,7 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;strong&gt;如果需要刷入 Magisk，直接在 AOSP Recovery 中刷入即可&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;不借助-recovery-刷入-magisk&#34;&gt;不借助 Recovery 刷入 Magisk&lt;/h2&gt;
 &lt;p&gt;解压 PE 刷机包，结构大致如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;├── META-INF
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;├── META-INF
 │   └── com
 │       ├── android
 │       │   ├── metadata
@@ -3488,7 +3488,7 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;p&gt;打开 cmd （或者其它终端），输入 &lt;code&gt;fastboot flash recovery 上一步解压的 recovery.img 的文件地址&lt;/code&gt; 。以下是一个示例：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
 Sending &#39;recovery&#39; (65536 KB)                      OKAY [  2.040s]
 Writing &#39;recovery&#39;                                 OKAY [  0.368s]
 Finished. Total time: 2.427s
@@ -3589,7 +3589,7 @@ Finished. Total time: 2.427s
 &lt;p&gt;这个与 AVB 2.0 有关。具体请参见 &lt;a class=&#34;link&#34; href=&#34;https://source.android.com/security/verifiedboot/avb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Google 官方说明&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;解决方法是打开你下载的刷机包（只要不是官方 MIUI 的刷机包），解压 &lt;code&gt;vbmeta.img&lt;/code&gt; （可能在 &lt;code&gt;/firmware-update&lt;/code&gt; 下）到任意一个位置。手机进入 &lt;code&gt;FASTBOOT&lt;/code&gt; 模式，电脑打开 cmd 输入 &lt;code&gt;fastboot flash vbmeta 解压的 vbmeta.img 的文件地址&lt;/code&gt; ，等待刷入完成，重启到 Recovery 即可。以下是一条示例命令：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash vbmeta D:\vbmeta.img
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash vbmeta D:\vbmeta.img
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;发现 Recovery 被替换？&lt;/p&gt;

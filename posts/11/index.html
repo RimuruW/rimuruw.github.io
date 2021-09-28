@@ -259,7 +259,7 @@
 <p>打开 cmd （或者其它终端），输入 <code>fastboot flash recovery 上一步解压的 recovery.img 的文件地址</code> 。以下是一个示例：</p>
 </li>
 </ol>
-<pre><code>C:\Users\XXXX&gt;fastboot flash recovery D:\recovery.img
+<pre tabindex="0"><code>C:\Users\XXXX&gt;fastboot flash recovery D:\recovery.img
 Sending 'recovery' (65536 KB)                      OKAY [  2.040s]
 Writing 'recovery'                                 OKAY [  0.368s]
 Finished. Total time: 2.427s
@@ -360,7 +360,7 @@ Finished. Total time: 2.427s
 <p>这个与 AVB 2.0 有关。具体请参见 <a class="link" href="https://source.android.com/security/verifiedboot/avb"  target="_blank" rel="noopener"
     >Google 官方说明</a>。</p>
 <p>解决方法是打开你下载的刷机包（只要不是官方 MIUI 的刷机包），解压 <code>vbmeta.img</code> （可能在 <code>/firmware-update</code> 下）到任意一个位置。手机进入 <code>FASTBOOT</code> 模式，电脑打开 cmd 输入 <code>fastboot flash vbmeta 解压的 vbmeta.img 的文件地址</code> ，等待刷入完成，重启到 Recovery 即可。以下是一条示例命令：</p>
-<pre><code>C:\Users\XXXX&gt;fastboot flash vbmeta D:\vbmeta.img
+<pre tabindex="0"><code>C:\Users\XXXX&gt;fastboot flash vbmeta D:\vbmeta.img
 </code></pre></li>
 <li>
 <p>发现 Recovery 被替换？</p>
@@ -505,7 +505,7 @@ Finished. Total time: 2.427s
 </aside>
 
      
-     
+    
         
     <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
 <div id="waline" class="waline-container"></div>
