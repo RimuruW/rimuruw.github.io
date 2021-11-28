@@ -512,11 +512,11 @@ yarn install
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;插入你的 U 盘，在「设备」选项框中选择你的 U 盘（一般会默认选中，以下图片均为示例）。&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在「引导类型选择」下选择 「镜像文件（请选择）」，然后单击右侧的「选择」来选择你下载好的镜像。&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;「持久分区大小」默认即可。对于「分区类型」，UEFI 引导选择「GPT」，BIOS 引导保持「MBR」即可&lt;/p&gt;
@@ -2063,8 +2063,8 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;~~Google Play Store： &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux~~&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://play.google.com/store/apps/details?id=com.termux~~&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Google Play Store： &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://play.google.com/store/apps/details?id=com.termux&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;因为&lt;a class=&#34;link&#34; href=&#34;https://github.com/termux/termux-app/issues/1072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
