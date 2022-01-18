@@ -1372,7 +1372,16 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
         <pubDate>Tue, 23 Feb 2021 01:26:46 +0800</pubDate>
         
         <guid>https://blog.linioi.com/posts/the-first-gnome-try/</guid>
-        <description>&lt;h1 id=&#34;记-gnome-的初体验&#34;&gt;记 GNOME 的初体验&lt;/h1&gt;
+        <description>&lt;p&gt;2022 年 1 月 18 日注：
+经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。&lt;del&gt;没想到我的博客居然真的有人看&lt;/del&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;这篇博客本质上其实也只是一篇&lt;strong&gt;个人吐槽性博客&lt;/strong&gt;，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，&lt;strong&gt;但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;限于我当时写这篇博客的技术水平及认知水平，&lt;strong&gt;这篇博客许多观点和表述上其实存在很多问题&lt;/strong&gt;。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（&lt;del&gt;我这样说会不会被打啊&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。&lt;/li&gt;
+&lt;li&gt;文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我&lt;strong&gt;个人的配置问题&lt;/strong&gt;。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。&lt;/li&gt;
+&lt;li&gt;最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;记-gnome-的初体验&#34;&gt;记 GNOME 的初体验&lt;/h1&gt;
 &lt;p&gt;长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。&lt;/p&gt;
 &lt;p&gt;反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。&lt;/p&gt;
 &lt;p&gt;因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)&lt;/p&gt;
