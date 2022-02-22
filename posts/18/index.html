@@ -13,7 +13,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/18/'>
 
-<link rel="stylesheet" href="/scss/style.min.775dbd4fd34fda61c5273b4bc3415f7c9666414fb6c40aab164a7ded4397da98.css"><meta property='og:title' content='Arch Linux &#43; Windows 双系统安装教程'>
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Arch Linux &#43; Windows 双系统安装教程'>
 <meta property='og:description' content='有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型 Linux 发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
  具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了。。。） 能够面对满屏的命令行输出保持基本冷静 具有基础的英语水平，至少命令行报错（比如出现 error）的时候，你能反应过来该命令执行出现错误。 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料  必须说明的是，写一篇面向新手的教程本身就是一件非常令人苦恼的事情。我不能确定我眼中的常识是否是新手闻所未闻的新知识，我不能确定我习惯并自以为清晰明了的描述会不会让新手看的云里雾里。因此在教程中我尽可能侧重于讲解而不是一直单调地告诉你如何去做。同时，因为面向新手，教程也会尽量避免其他知识的扩展以减少新手的阅读压力。此外，因为我很少使用 Windows（或者说 Windows 使用经验几乎为零），所以下文关于 Windows 的描述可能会有一些不准确的地方。如有错误还请指正。
 当然，你可以另辟蹊径，通过一些特殊方法（如安装脚本）完成安装过程，但是这样无疑失去了 Arch Linux 安装的意义。这样做最直接的后果是，对于 Arch Linux 这种需要你自己维护的系统，如果你甚至没有自己动手完成你的系统安装过程，那么在系统出现问题的时候你多半无计可施只能重装系统了。
@@ -148,6 +148,8 @@
 </header>
 
     <section class="article-content">
+    
+    
     <h2 id="有些话必须放在前面">有些话必须放在前面……</h2>
 <p><strong>无论从哪个角度看，Arch Linux 都不是一个新手友好型 Linux 发行版</strong>。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：</p>
 <ul>
@@ -183,25 +185,20 @@
 <ol>
 <li>
 <p>下载完成后，双击打开该文件，允许或不允许 Rufus 联网检查程序更新皆可。</p>
-<p><figure 
+<p><img src="/posts/18/6d1d86f6e363c.png"
+	width="462"
+	height="150"
+	srcset="/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_3.png 480w, /posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="检查更新"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 308; 
-			flex-basis: 739px"
-	>
-	<a href="/posts/18/6d1d86f6e363c.png" data-size="462x150">
-		<img src="/posts/18/6d1d86f6e363c.png"
-			width="462"
-			height="150"
-			srcset="/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_3.png 480w, /posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="检查更新">
-	</a>
+		data-flex-grow="308"
+		data-flex-basis="739px"
 	
-	<figcaption>检查更新</figcaption>
-	
-</figure></p>
+></p>
 </li>
 <li>
 <p>插入你的 U 盘，在「设备」选项框中选择你的 U 盘（一般会默认选中，以下图片均为示例）。</p>
@@ -213,111 +210,86 @@
 </li>
 <li>
 <p>「持久分区大小」默认即可。对于「分区类型」，UEFI 引导选择「GPT」，BIOS 引导保持「MBR」即可</p>
-<p><figure 
+<p><img src="/posts/18/69aa1ec442d7a.png"
+	width="418"
+	height="580"
+	srcset="/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_3.png 480w, /posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 72; 
-			flex-basis: 172px"
-	>
-	<a href="/posts/18/69aa1ec442d7a.png" data-size="418x580">
-		<img src="/posts/18/69aa1ec442d7a.png"
-			width="418"
-			height="580"
-			srcset="/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_3.png 480w, /posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="72"
+		data-flex-basis="172px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 </li>
 <li>
 <p>「格式化选项」保持默认即可，单击开始来进行下一步。</p>
-<p><figure 
+<p><img src="/posts/18/5377133faa985.png"
+	width="418"
+	height="580"
+	srcset="/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_3.png 480w, /posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 72; 
-			flex-basis: 172px"
-	>
-	<a href="/posts/18/5377133faa985.png" data-size="418x580">
-		<img src="/posts/18/5377133faa985.png"
-			width="418"
-			height="580"
-			srcset="/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_3.png 480w, /posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="72"
+		data-flex-basis="172px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 </li>
 <li>
 <p>选择 「以 ISO 镜像 模式写入（推荐）」，单击「OK」进行下一步。</p>
-<p><figure 
+<p><img src="/posts/18/ea1b166c824e3.png"
+	width="548"
+	height="269"
+	srcset="/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_3.png 480w, /posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 203; 
-			flex-basis: 488px"
-	>
-	<a href="/posts/18/ea1b166c824e3.png" data-size="548x269">
-		<img src="/posts/18/ea1b166c824e3.png"
-			width="548"
-			height="269"
-			srcset="/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_3.png 480w, /posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			>
-	</a>
+		data-flex-grow="203"
+		data-flex-basis="488px"
 	
-</figure></p>
+></p>
 </li>
 <li>
 <p>单击开始来烧录镜像。</p>
-<p><figure 
+<p><img src="/posts/18/b3191015dc98e.png"
+	width="431"
+	height="167"
+	srcset="/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_3.png 480w, /posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 258; 
-			flex-basis: 619px"
-	>
-	<a href="/posts/18/b3191015dc98e.png" data-size="431x167">
-		<img src="/posts/18/b3191015dc98e.png"
-			width="431"
-			height="167"
-			srcset="/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_3.png 480w, /posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="258"
+		data-flex-basis="619px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 </li>
 <li>
 <p>等待烧录完成即可。（下图即为烧录完成的一个示例）</p>
-<p><figure 
+<p><img src="/posts/18/7b7db13921e76.png"
+	width="418"
+	height="580"
+	srcset="/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_3.png 480w, /posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 72; 
-			flex-basis: 172px"
-	>
-	<a href="/posts/18/7b7db13921e76.png" data-size="418x580">
-		<img src="/posts/18/7b7db13921e76.png"
-			width="418"
-			height="580"
-			srcset="/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_3.png 480w, /posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="72"
+		data-flex-basis="172px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 </li>
 </ol>
 <ul>
@@ -336,25 +308,20 @@
 </ul>
 <p>这个界面显示的是你电脑上安装的所有存储设备的情况。</p>
 <p><em>不止是电脑的硬盘</em>，其余如光驱和 U 盘（如果已经插入）也会在此处显示。</p>
-<p><figure 
+<p><img src="/posts/18/7fe58c1243b16.png"
+	width="986"
+	height="708"
+	srcset="/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_3.png 480w, /posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 139; 
-			flex-basis: 334px"
-	>
-	<a href="/posts/18/7fe58c1243b16.png" data-size="986x708">
-		<img src="/posts/18/7fe58c1243b16.png"
-			width="986"
-			height="708"
-			srcset="/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_3.png 480w, /posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="139"
+		data-flex-basis="334px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 <p>一般情况下，在该界面中，深蓝色的分区是主分区，浅蓝色的分区是扩展分区，绿色的是空闲没有使用的空间。我们现在要做的是选择一个剩余空间足够大的分区，空出来给我们的 Arch Linux 使用。</p>
 <p><em>以下分为两种情况处理</em></p>
 <ul>
@@ -399,66 +366,51 @@
 建议还是换台电脑吧……</p>
 <p>从U盘启动后电脑会出现一个新界面，传统BIOS启动和UEFI启动在该界面显示结果不一样。</p>
 <p>BIOS 启动界面：</p>
-<p><figure 
+<p><img src="/posts/18/4cda84d1a6d0c.png"
+	width="640"
+	height="480"
+	srcset="/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_3.png 480w, /posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="BIOS"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 133; 
-			flex-basis: 320px"
-	>
-	<a href="/posts/18/4cda84d1a6d0c.png" data-size="640x480">
-		<img src="/posts/18/4cda84d1a6d0c.png"
-			width="640"
-			height="480"
-			srcset="/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_3.png 480w, /posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="BIOS">
-	</a>
+		data-flex-grow="133"
+		data-flex-basis="320px"
 	
-	<figcaption>BIOS</figcaption>
-	
-</figure></p>
+></p>
 <p>​	UEFI 启动界面：</p>
-<p><figure 
+<p><img src="/posts/18/303179878abc6.png"
+	width="1024"
+	height="768"
+	srcset="/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_3.png 480w, /posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="UEFI"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 133; 
-			flex-basis: 320px"
-	>
-	<a href="/posts/18/303179878abc6.png" data-size="1024x768">
-		<img src="/posts/18/303179878abc6.png"
-			width="1024"
-			height="768"
-			srcset="/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_3.png 480w, /posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="UEFI">
-	</a>
+		data-flex-grow="133"
+		data-flex-basis="320px"
 	
-	<figcaption>UEFI</figcaption>
-	
-</figure></p>
+></p>
 <p>无论你是哪种启动，用光标选中第一项然后回车即可启动镜像。
 启动成功后你应该看到类似如图所示界面：
-<figure 
+<img src="/posts/18/bf76fecd4806a.png"
+	width="800"
+	height="600"
+	srcset="/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_3.png 480w, /posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="示例"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 133; 
-			flex-basis: 320px"
-	>
-	<a href="/posts/18/bf76fecd4806a.png" data-size="800x600">
-		<img src="/posts/18/bf76fecd4806a.png"
-			width="800"
-			height="600"
-			srcset="/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_3.png 480w, /posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="示例">
-	</a>
+		data-flex-grow="133"
+		data-flex-basis="320px"
 	
-	<figcaption>示例</figcaption>
-	
-</figure></p>
+></p>
 <blockquote>
 <p>如果未出现该提示符，则可能是启动盘出现了问题，建议重新烧录镜像…</p>
 </blockquote>
@@ -1206,7 +1158,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.6.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -1275,11 +1227,11 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
@@ -1371,7 +1323,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

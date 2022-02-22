@@ -14,7 +14,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/aria2-for-termux/'>
 
-<link rel="stylesheet" href="/scss/style.min.775dbd4fd34fda61c5273b4bc3415f7c9666414fb6c40aab164a7ded4397da98.css"><meta property='og:title' content='Android 一键安装配置 Aria2'>
+<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='Android 一键安装配置 Aria2'>
 <meta property='og:description' content='Aria2 是什么？  Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
 &amp;ndash; 摘自 维基百科
  如上所述，不同于其他下载器（如 IDM&#43;）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
@@ -151,6 +151,8 @@
 </header>
 
     <section class="article-content">
+    
+    
     <h2 id="aria2-是什么">Aria2 是什么？</h2>
 <blockquote>
 <p>Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。</p>
@@ -185,25 +187,20 @@
     >我的分享站</a>下载。</p>
 <p><strong>请勿交叉安装和更新这两个渠道的 Termux</strong>！即，如果你是在 Google Play Store 下载和安装 Termux，<strong>请勿在 F-Droid 下载安装包并覆盖安装</strong>。</p>
 <p>安装后打开 Termux，你会看到如大致下图所示的终端界面</p>
-<p><figure 
+<p><img src="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg"
+	width="1080"
+	height="1390"
+	srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="Termux 界面"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 77; 
-			flex-basis: 186px"
-	>
-	<a href="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg" data-size="1080x1390">
-		<img src="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg"
-			width="1080"
-			height="1390"
-			srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="Termux 界面">
-	</a>
+		data-flex-grow="77"
+		data-flex-basis="186px"
 	
-	<figcaption>Termux 界面</figcaption>
-	
-</figure></p>
+></p>
 <ul>
 <li>你的界面和我的截图会有些许不同，<strong>请不要惊慌</strong>，这是因为我已经对 Termux 进行了一些自定义。<del>长得不像是正常现象</del></li>
 <li>请不要害怕终端的黑屏白字，实际上你需要操作的东西<strong>非常简单</strong>，大部分终端里你看不懂的输出，<strong>都是你不需要关心的细节</strong>。</li>
@@ -216,25 +213,20 @@
 <li>输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。</li>
 </ul>
 <p>脚本启动成功后如下图</p>
-<p><figure 
+<p><img src="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg"
+	width="1073"
+	height="814"
+	srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="脚本启动后界面"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 131; 
-			flex-basis: 316px"
-	>
-	<a href="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg" data-size="1073x814">
-		<img src="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg"
-			width="1073"
-			height="814"
-			srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="脚本启动后界面">
-	</a>
+		data-flex-grow="131"
+		data-flex-basis="316px"
 	
-	<figcaption>脚本启动后界面</figcaption>
-	
-</figure></p>
+></p>
 <p>后续启动脚本，如果你没有手动改变文件位置，则你只需要输入<code>bash aria2.sh</code>即可启动脚本。</p>
 <h2 id="安装-aria2">安装 Aria2</h2>
 <p>脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。</p>
@@ -243,69 +235,54 @@
 <li>Aria2 的下载和安装需要一定时间，请耐心等待并保证 Termux 进程存活。</li>
 </ul>
 <p>安装完成后脚本会自动启动 Aria2，安装并启动成功后界面如下图</p>
-<p><figure 
+<p><img src="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg"
+	width="1080"
+	height="984"
+	srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="Aria2 安装和启动成功图"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 109; 
-			flex-basis: 263px"
-	>
-	<a href="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg" data-size="1080x984">
-		<img src="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg"
-			width="1080"
-			height="984"
-			srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="Aria2 安装和启动成功图">
-	</a>
+		data-flex-grow="109"
+		data-flex-basis="263px"
 	
-	<figcaption>Aria2 安装和启动成功图</figcaption>
-	
-</figure></p>
+></p>
 <p>注意，为保证 Aria2 后台存活，脚本在启动 Aria2 会自动开启<a class="link" href="https://developer.android.com/training/scheduling/wakelock?hl=zh_cn"  target="_blank" rel="noopener"
     >唤醒锁</a>，这意味你退出 Termux 时需要手动在状态栏点击「Release wakerlock」后才能真正退出。
-<figure 
+<img src="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png"
+	width="1080"
+	height="410"
+	srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Release wakelock"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 263; 
-			flex-basis: 632px"
-	>
-	<a href="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png" data-size="1080x410">
-		<img src="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png"
-			width="1080"
-			height="410"
-			srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="Release wakelock">
-	</a>
+		data-flex-grow="263"
+		data-flex-basis="632px"
 	
-	<figcaption>Release wakelock</figcaption>
-	
-</figure></p>
+></p>
 <p>此时你已经完成了 Aria2 安装所需的基本步骤，你的手机上已经成功配置一个可用的 Aria2。</p>
 <h2 id="使用-ariang">使用 AriaNg</h2>
 <p>如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。</p>
 <p>在脚本起始界面输入「7」查看 Aria2 配置信息如下图</p>
-<p><figure 
+<p><img src="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg"
+	width="1080"
+	height="521"
+	srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="Aria2 配置信息"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 207; 
-			flex-basis: 497px"
-	>
-	<a href="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg" data-size="1080x521">
-		<img src="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg"
-			width="1080"
-			height="521"
-			srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="Aria2 配置信息">
-	</a>
+		data-flex-grow="207"
+		data-flex-basis="497px"
 	
-	<figcaption>Aria2 配置信息</figcaption>
-	
-</figure></p>
+></p>
 <blockquote>
 <p>对于大部分普通用户，你只需要复制下面 <code>AriaNg</code> 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容</p>
 </blockquote>
@@ -317,45 +294,36 @@
 </ul>
 </blockquote>
 <p>进入 AriaNg 并连接成功后界面如图所示</p>
-<p><figure 
+<p><img src="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg"
+	width="1080"
+	height="2340"
+	srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="AriaNg 连接成功"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 46; 
-			flex-basis: 110px"
-	>
-	<a href="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg" data-size="1080x2340">
-		<img src="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg"
-			width="1080"
-			height="2340"
-			srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="AriaNg 连接成功">
-	</a>
+		data-flex-grow="46"
+		data-flex-basis="110px"
 	
-	<figcaption>AriaNg 连接成功</figcaption>
-	
-</figure></p>
+></p>
 <p>点击左上角的「新建」，输入下载链接后点击右上角「立即下载」即可以创建一个下载任务，下载的文件默认保存在 Download 文件夹中。</p>
 <hr>
 <p>使用文档到此结束，其他细节请参照脚本内说明（我觉得脚本内说明已经很详细了…）。</p>
 <p>如果对 Aria2 其他细节感兴趣，请自行参阅网上文档。</p>
 <p>如果这个项目对你有帮助，请 Star 以让更多人发现这个项目并受益，你的支持是我持续维护和开发的动力！</p>
 <p><a class="link" href="https://github.com/RimuruW/Aria2-Termux"  target="_blank" rel="noopener"
-    ><figure 
-	>
-	<a href="https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;repo=Aria2-Termux" >
-		<img src="https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;repo=Aria2-Termux"
-			
-			
-			
-			loading="lazy"
-			alt="Aria2-Termux">
-	</a>
+    ><img src="https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;repo=Aria2-Termux"
 	
-	<figcaption>Aria2-Termux</figcaption>
 	
-</figure></a></p>
+	
+	loading="lazy"
+	
+		alt="Aria2-Termux"
+	
+	
+></a></p>
 
 </section>
 
@@ -486,7 +454,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.6.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -555,11 +523,11 @@
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
@@ -606,7 +574,7 @@
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

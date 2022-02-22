@@ -67,45 +67,35 @@ sudo chmod +x /usr/local/bin/clash
 &lt;span style=&#34;color:#f92672&#34;&gt;sercet&lt;/span&gt;:  &lt;span style=&#34;color:#75715e&#34;&gt;# 外置管理器连接密钥&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;系统代理设置&#34;&gt;系统代理设置&lt;/h3&gt;
 &lt;p&gt;理想情况下，我们可以直接在 &lt;code&gt;设置&lt;/code&gt; 设置系统代理。一般在 &lt;code&gt;设置&lt;/code&gt;-&lt;code&gt;网络&lt;/code&gt; 可以找到相关选项。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999.png&#34;
+	width=&#34;2052&#34;
+	height=&#34;1456&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;网络代理&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 140; 
-			flex-basis: 338px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999.png&#34; data-size=&#34;2052x1456&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999.png&#34;
-			width=&#34;2052&#34;
-			height=&#34;1456&#34;
-			srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu3e5aa5be8bf63212cc5f8ab501d7385b_112366_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;网络代理&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;338px&#34;
 	
-	&lt;figcaption&gt;网络代理&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;然后根据自己配置文件填入相关配置信息即可。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124.png&#34;
+	width=&#34;970&#34;
+	height=&#34;860&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;网络代理&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 112; 
-			flex-basis: 270px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124.png&#34; data-size=&#34;970x860&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124.png&#34;
-			width=&#34;970&#34;
-			height=&#34;860&#34;
-			srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hue2eb9f9f9a3fd4f7c5518a6f21f67ec6_71513_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;网络代理&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;270px&#34;
 	
-	&lt;figcaption&gt;网络代理&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;其中，&lt;code&gt;127.0.0.1&lt;/code&gt; 是本机地址（localhost），如果你不懂什么意思，保持默认即可。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;7890&lt;/code&gt; 和 &lt;code&gt;7891&lt;/code&gt; 这样的是端口（port）地址，对应你配置文件的 &lt;code&gt;port&lt;/code&gt; 和 &lt;code&gt;socks-port&lt;/code&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;设置终端代理&#34;&gt;设置终端代理&lt;/h3&gt;
@@ -392,47 +382,37 @@ yarn install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上都配置完后，在 clash-dashboard 输入如下命令即可启动 clash-dashboard&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yarn start
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此时终端会显示 Web 管理面版的地址，如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945.png&#34;
+	width=&#34;1400&#34;
+	height=&#34;1044&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;yarn start&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 134; 
-			flex-basis: 321px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945.png&#34; data-size=&#34;1400x1044&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945.png&#34;
-			width=&#34;1400&#34;
-			height=&#34;1044&#34;
-			srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu8100f458ccd970d0c69038a79883624e_45718_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;yarn start&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;321px&#34;
 	
-	&lt;figcaption&gt;yarn start&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;我们可以看到，上图所示地址为 http://localhost:3000/，我们可以直接打开这个网址访问 Web 管理界面。&lt;/p&gt;
 &lt;p&gt;首次进入管理界面会要求你输入 Clash 的外置端口（默认 9090）和 sercet（默认为空），根据自己 Clash 配置文件输入即可。&lt;/p&gt;
 &lt;p&gt;最后界面大致如图所示&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047.png&#34;
+	width=&#34;2564&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;clash-dashboard&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 166; 
-			flex-basis: 400px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047.png&#34; data-size=&#34;2564x1536&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047.png&#34;
-			width=&#34;2564&#34;
-			height=&#34;1536&#34;
-			srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_huf421a4604269890a5ea660d0a76c633b_200677_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;clash-dashboard&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
 	
-	&lt;figcaption&gt;clash-dashboard&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;！！你在 clash-board 中所有自定义设置均为临时设置，在 Clash 重启后会重置这些设置。如果真的想改什么的话建议直接修改 &lt;code&gt;/etc/clash/config.conf&lt;/code&gt; 然后重启 Clash。&lt;/p&gt;
 &lt;p&gt;问：所以 clash-dashboard 有什么用啊？&lt;/p&gt;
 &lt;p&gt;答：&lt;del&gt;我也不知道&lt;/del&gt;。&lt;/p&gt;
@@ -490,25 +470,20 @@ yarn install
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;下载完成后，双击打开该文件，允许或不允许 Rufus 联网检查程序更新皆可。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c.png&#34;
+	width=&#34;462&#34;
+	height=&#34;150&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;检查更新&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 308; 
-			flex-basis: 739px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c.png&#34; data-size=&#34;462x150&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c.png&#34;
-			width=&#34;462&#34;
-			height=&#34;150&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/6d1d86f6e363c_hu553b21a56a1d70220c4c99a22393eaa9_8076_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;检查更新&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;308&#34;
+		data-flex-basis=&#34;739px&#34;
 	
-	&lt;figcaption&gt;检查更新&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;插入你的 U 盘，在「设备」选项框中选择你的 U 盘（一般会默认选中，以下图片均为示例）。&lt;/p&gt;
@@ -520,111 +495,86 @@ yarn install
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;「持久分区大小」默认即可。对于「分区类型」，UEFI 引导选择「GPT」，BIOS 引导保持「MBR」即可&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a.png&#34;
+	width=&#34;418&#34;
+	height=&#34;580&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 72; 
-			flex-basis: 172px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a.png&#34; data-size=&#34;418x580&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a.png&#34;
-			width=&#34;418&#34;
-			height=&#34;580&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/69aa1ec442d7a_hud6499ad0759c686d232c26547d61a112_32012_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;72&#34;
+		data-flex-basis=&#34;172px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;「格式化选项」保持默认即可，单击开始来进行下一步。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/5377133faa985.png&#34;
+	width=&#34;418&#34;
+	height=&#34;580&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 72; 
-			flex-basis: 172px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/5377133faa985.png&#34; data-size=&#34;418x580&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/5377133faa985.png&#34;
-			width=&#34;418&#34;
-			height=&#34;580&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/5377133faa985_hu15749a12508dfa06aa62734b0d6d1315_30282_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;72&#34;
+		data-flex-basis=&#34;172px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;选择 「以 ISO 镜像 模式写入（推荐）」，单击「OK」进行下一步。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3.png&#34;
+	width=&#34;548&#34;
+	height=&#34;269&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 203; 
-			flex-basis: 488px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3.png&#34; data-size=&#34;548x269&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3.png&#34;
-			width=&#34;548&#34;
-			height=&#34;269&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/ea1b166c824e3_hu6229d3959ca5cd3e016ae7259e2376dd_21134_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;203&#34;
+		data-flex-basis=&#34;488px&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;单击开始来烧录镜像。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/b3191015dc98e.png&#34;
+	width=&#34;431&#34;
+	height=&#34;167&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 258; 
-			flex-basis: 619px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/b3191015dc98e.png&#34; data-size=&#34;431x167&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/b3191015dc98e.png&#34;
-			width=&#34;431&#34;
-			height=&#34;167&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/b3191015dc98e_hude06f69179e9c4444bce83cf7221fe4b_5939_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;258&#34;
+		data-flex-basis=&#34;619px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;等待烧录完成即可。（下图即为烧录完成的一个示例）&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/7b7db13921e76.png&#34;
+	width=&#34;418&#34;
+	height=&#34;580&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 72; 
-			flex-basis: 172px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/7b7db13921e76.png&#34; data-size=&#34;418x580&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/7b7db13921e76.png&#34;
-			width=&#34;418&#34;
-			height=&#34;580&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7b7db13921e76_hu0384ddfbf83f4a57e4887ac5705b7d44_26183_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;72&#34;
+		data-flex-basis=&#34;172px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
@@ -643,25 +593,20 @@ yarn install
 &lt;/ul&gt;
 &lt;p&gt;这个界面显示的是你电脑上安装的所有存储设备的情况。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;不止是电脑的硬盘&lt;/em&gt;，其余如光驱和 U 盘（如果已经插入）也会在此处显示。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16.png&#34;
+	width=&#34;986&#34;
+	height=&#34;708&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 139; 
-			flex-basis: 334px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16.png&#34; data-size=&#34;986x708&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16.png&#34;
-			width=&#34;986&#34;
-			height=&#34;708&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/7fe58c1243b16_hu62992cbcd6ba8d58f4c84cd34d96c0bd_36511_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;334px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;一般情况下，在该界面中，深蓝色的分区是主分区，浅蓝色的分区是扩展分区，绿色的是空闲没有使用的空间。我们现在要做的是选择一个剩余空间足够大的分区，空出来给我们的 Arch Linux 使用。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;以下分为两种情况处理&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -706,66 +651,51 @@ yarn install
 建议还是换台电脑吧……&lt;/p&gt;
 &lt;p&gt;从U盘启动后电脑会出现一个新界面，传统BIOS启动和UEFI启动在该界面显示结果不一样。&lt;/p&gt;
 &lt;p&gt;BIOS 启动界面：&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c.png&#34;
+	width=&#34;640&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BIOS&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 133; 
-			flex-basis: 320px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c.png&#34; data-size=&#34;640x480&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c.png&#34;
-			width=&#34;640&#34;
-			height=&#34;480&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/4cda84d1a6d0c_hub6d7166dfc9dc58c90a58b4ebed67f62_53627_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;BIOS&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
 	
-	&lt;figcaption&gt;BIOS&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;​	UEFI 启动界面：&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/18/303179878abc6.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;UEFI&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 133; 
-			flex-basis: 320px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/303179878abc6.png&#34; data-size=&#34;1024x768&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/303179878abc6.png&#34;
-			width=&#34;1024&#34;
-			height=&#34;768&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/303179878abc6_hu9105abd6ef4758d4c8f4e6afe821d368_4379_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;UEFI&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
 	
-	&lt;figcaption&gt;UEFI&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;无论你是哪种启动，用光标选中第一项然后回车即可启动镜像。
 启动成功后你应该看到类似如图所示界面：
-&lt;figure 
+&lt;img src=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a.png&#34;
+	width=&#34;800&#34;
+	height=&#34;600&#34;
+	srcset=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 133; 
-			flex-basis: 320px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a.png&#34; data-size=&#34;800x600&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a.png&#34;
-			width=&#34;800&#34;
-			height=&#34;600&#34;
-			srcset=&#34;https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/18/bf76fecd4806a_hudd0a0bce924234a324ffb343a3f7a670_2778_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如果未出现该提示符，则可能是启动盘出现了问题，建议重新烧录镜像…&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1399,25 +1329,20 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;在几分钟的试体验中，GNOME 精致的 MD 设计接近颠覆了我对 Linux 桌面一贯的认知。KDE 高自定义当然很好，但是不如 GNOME 这般简直为我的简约向审美量身定制。&lt;/p&gt;
 &lt;p&gt;（不要和我说 GNOME 的默认应用图标，那玩意差点弄瞎了我的眼睛）&lt;/p&gt;
 &lt;p&gt;比如说大家最熟悉的 VS Code,图标是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon.png&#34;
+	width=&#34;476&#34;
+	height=&#34;254&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;你敢相信这个是 VS Code？&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 187; 
-			flex-basis: 449px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon.png&#34; data-size=&#34;476x254&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon.png&#34;
-			width=&#34;476&#34;
-			height=&#34;254&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;你敢相信这个是 VS Code？&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
 	
-	&lt;figcaption&gt;你敢相信这个是 VS Code？&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;大概感觉是，看完这默认的图标设计，我感觉我挺有当设计师的天赋。&lt;/p&gt;
 &lt;p&gt;在确定 GNOME 合盖不会花屏之后，我可以肯定，GNOME 将会是我未来很长一段时间的 Linux 桌面环境解决方案。&lt;/p&gt;
 &lt;h2 id=&#34;与-gnome-bug-的搏斗&#34;&gt;与 GNOME bug 的搏斗&lt;/h2&gt;
@@ -1464,25 +1389,20 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;我觉得我的语言很难向别人表述清楚问题所在，但是考虑到我博客好像只有自己看，那就按照我的感觉描述，自己能懂就好了（bushi&lt;/p&gt;
 &lt;p&gt;简单来说，我只&lt;strong&gt;点击了抽屉一次&lt;/strong&gt;，而 Dock 栏抽屉的&lt;strong&gt;动画显示了两次&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;具体表现为，桌面在我点击后先显示了应用列表，然后再显示了一个扩散开来的 Dock 栏抽屉点击动画。我猜这可能是扩展动画和桌面自带动画冲突的缘故。不出所料，我在 &lt;em&gt;Dash To Dock&lt;/em&gt; 扩展中找到了 &lt;em&gt;动画方式&lt;/em&gt; -&lt;em&gt;显示应用程序&lt;/em&gt;  这个选项。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775.png&#34;
+	width=&#34;1052&#34;
+	height=&#34;212&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Dash To Dock-启动项&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 496; 
-			flex-basis: 1190px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775.png&#34; data-size=&#34;1052x212&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775.png&#34;
-			width=&#34;1052&#34;
-			height=&#34;212&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Dash To Dock-启动项&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;496&#34;
+		data-flex-basis=&#34;1190px&#34;
 	
-	&lt;figcaption&gt;Dash To Dock-启动项&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;关闭该选项后，动画的不和谐感消失。&lt;/p&gt;
 &lt;p&gt;当然，对于内心追求完美的我来说，一切本应还没有结束。考虑到 GNOME 扩展都是为 GNOME 定制的，扩展作者怎么可能加这种明显有问题的功能呢？最可能的情况是，这个功能本应该在某种情况下正常工作，但是我当前环境不满足扩展正常工作所需条件，因此才会出现这个 bug。&lt;/p&gt;
 &lt;p&gt;我当然也更喜欢扩展提供的动画，但是在网上找很久都没有找到相关解决方案后，我还是决定放弃该动画，毕竟使用 Linux 不应把过多的时间放在美化上（&lt;del&gt;才不是为自己找借口&lt;/del&gt;）。&lt;/p&gt;
@@ -1491,141 +1411,106 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：&lt
 &lt;p&gt;是的，GNOME 日常使用如果加上扩展的话 bug 太多了&amp;hellip;每天体验不同的 bug或者也是一种乐趣吧？&lt;/p&gt;
 &lt;h2 id=&#34;gnome-中我的扩展与美化&#34;&gt;GNOME 中我的扩展与美化&lt;/h2&gt;
 &lt;p&gt;该节仅为记录备份，请勿照搬安装我截图中的扩展。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1532&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;我的扩展1&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 167; 
-			flex-basis: 401px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467.png&#34; data-size=&#34;2560x1532&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1532&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的扩展1&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
-	&lt;figcaption&gt;我的扩展1&lt;/figcaption&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1532&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+		alt=&#34;我的扩展2&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 167; 
-			flex-basis: 401px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578.png&#34; data-size=&#34;2560x1532&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1532&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的扩展2&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
-	&lt;figcaption&gt;我的扩展2&lt;/figcaption&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1532&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+		alt=&#34;我的扩展3&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 167; 
-			flex-basis: 401px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858.png&#34; data-size=&#34;2560x1532&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1532&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的扩展3&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
-	&lt;figcaption&gt;我的扩展3&lt;/figcaption&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143.png&#34;
+	width=&#34;2554&#34;
+	height=&#34;340&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+		alt=&#34;我的扩展4&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 751; 
-			flex-basis: 1802px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143.png&#34; data-size=&#34;2554x340&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143.png&#34;
-			width=&#34;2554&#34;
-			height=&#34;340&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的扩展4&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;751&#34;
+		data-flex-basis=&#34;1802px&#34;
 	
-	&lt;figcaption&gt;我的扩展4&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;各人审美不同，请勿照用我使用的主题和字体。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1532&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;我的主题搭配&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 167; 
-			flex-basis: 401px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704.png&#34; data-size=&#34;2560x1532&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1532&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的主题搭配&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
-	&lt;figcaption&gt;我的主题搭配&lt;/figcaption&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1532&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+		alt=&#34;我的字体搭配&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 167; 
-			flex-basis: 401px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530.png&#34; data-size=&#34;2560x1532&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1532&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的字体搭配&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
-	&lt;figcaption&gt;我的字体搭配&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;最后的桌面效果如图&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1600&#34;
+	srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;我的桌面&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 160; 
-			flex-basis: 384px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838.png&#34; data-size=&#34;2560x1600&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1600&#34;
-			srcset=&#34;https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;我的桌面&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
 	
-	&lt;figcaption&gt;我的桌面&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;有人评价说我的桌面像 Mac。说实话，装扮桌面的时候没有刻意模仿 Mac，完全是自己觉得怎么舒服怎么来。&lt;/p&gt;
 &lt;p&gt;直到现在，我对我的图标包还是不算满意，但是换了几套还是找不到称心如意的，索性就将就着用吧。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Dock 放底栏是非高效率的做法！&lt;/strong&gt;&lt;/p&gt;
@@ -2086,25 +1971,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
     &gt;我的分享站&lt;/a&gt;下载。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;请勿交叉安装和更新这两个渠道的 Termux&lt;/strong&gt;！即，如果你是在 Google Play Store 下载和安装 Termux，&lt;strong&gt;请勿在 F-Droid 下载安装包并覆盖安装&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;安装后打开 Termux，你会看到如大致下图所示的终端界面&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1390&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Termux 界面&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 77; 
-			flex-basis: 186px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34; data-size=&#34;1080x1390&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;1390&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Termux 界面&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;77&#34;
+		data-flex-basis=&#34;186px&#34;
 	
-	&lt;figcaption&gt;Termux 界面&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;你的界面和我的截图会有些许不同，&lt;strong&gt;请不要惊慌&lt;/strong&gt;，这是因为我已经对 Termux 进行了一些自定义。&lt;del&gt;长得不像是正常现象&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;请不要害怕终端的黑屏白字，实际上你需要操作的东西&lt;strong&gt;非常简单&lt;/strong&gt;，大部分终端里你看不懂的输出，&lt;strong&gt;都是你不需要关心的细节&lt;/strong&gt;。&lt;/li&gt;
@@ -2117,25 +1997,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;li&gt;输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;脚本启动成功后如下图&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34;
+	width=&#34;1073&#34;
+	height=&#34;814&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;脚本启动后界面&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 131; 
-			flex-basis: 316px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34; data-size=&#34;1073x814&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34;
-			width=&#34;1073&#34;
-			height=&#34;814&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;脚本启动后界面&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;316px&#34;
 	
-	&lt;figcaption&gt;脚本启动后界面&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;后续启动脚本，如果你没有手动改变文件位置，则你只需要输入&lt;code&gt;bash aria2.sh&lt;/code&gt;即可启动脚本。&lt;/p&gt;
 &lt;h2 id=&#34;安装-aria2&#34;&gt;安装 Aria2&lt;/h2&gt;
 &lt;p&gt;脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。&lt;/p&gt;
@@ -2144,69 +2019,54 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;li&gt;Aria2 的下载和安装需要一定时间，请耐心等待并保证 Termux 进程存活。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;安装完成后脚本会自动启动 Aria2，安装并启动成功后界面如下图&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;984&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2 安装和启动成功图&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 109; 
-			flex-basis: 263px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34; data-size=&#34;1080x984&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;984&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Aria2 安装和启动成功图&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;263px&#34;
 	
-	&lt;figcaption&gt;Aria2 安装和启动成功图&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;注意，为保证 Aria2 后台存活，脚本在启动 Aria2 会自动开启&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/training/scheduling/wakelock?hl=zh_cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;唤醒锁&lt;/a&gt;，这意味你退出 Termux 时需要手动在状态栏点击「Release wakerlock」后才能真正退出。
-&lt;figure 
+&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
+	width=&#34;1080&#34;
+	height=&#34;410&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Release wakelock&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 263; 
-			flex-basis: 632px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34; data-size=&#34;1080x410&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
-			width=&#34;1080&#34;
-			height=&#34;410&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Release wakelock&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
 	
-	&lt;figcaption&gt;Release wakelock&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;此时你已经完成了 Aria2 安装所需的基本步骤，你的手机上已经成功配置一个可用的 Aria2。&lt;/p&gt;
 &lt;h2 id=&#34;使用-ariang&#34;&gt;使用 AriaNg&lt;/h2&gt;
 &lt;p&gt;如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。&lt;/p&gt;
 &lt;p&gt;在脚本起始界面输入「7」查看 Aria2 配置信息如下图&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;521&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2 配置信息&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 207; 
-			flex-basis: 497px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34; data-size=&#34;1080x521&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;521&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Aria2 配置信息&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;497px&#34;
 	
-	&lt;figcaption&gt;Aria2 配置信息&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;对于大部分普通用户，你只需要复制下面 &lt;code&gt;AriaNg&lt;/code&gt; 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2218,45 +2078,36 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;进入 AriaNg 并连接成功后界面如图所示&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;2340&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;AriaNg 连接成功&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 46; 
-			flex-basis: 110px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34; data-size=&#34;1080x2340&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;2340&#34;
-			srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;AriaNg 连接成功&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;110px&#34;
 	
-	&lt;figcaption&gt;AriaNg 连接成功&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;点击左上角的「新建」，输入下载链接后点击右上角「立即下载」即可以创建一个下载任务，下载的文件默认保存在 Download 文件夹中。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;使用文档到此结束，其他细节请参照脚本内说明（我觉得脚本内说明已经很详细了…）。&lt;/p&gt;
 &lt;p&gt;如果对 Aria2 其他细节感兴趣，请自行参阅网上文档。&lt;/p&gt;
 &lt;p&gt;如果这个项目对你有帮助，请 Star 以让更多人发现这个项目并受益，你的支持是我持续维护和开发的动力！&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/RimuruW/Aria2-Termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;amp;repo=Aria2-Termux&#34; &gt;
-		&lt;img src=&#34;https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;amp;repo=Aria2-Termux&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;Aria2-Termux&#34;&gt;
-	&lt;/a&gt;
+    &gt;&lt;img src=&#34;https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;amp;repo=Aria2-Termux&#34;
 	
-	&lt;figcaption&gt;Aria2-Termux&lt;/figcaption&gt;
 	
-&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2-Termux&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -2292,25 +2143,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Apple 开发者文档给出的推送过程示意图如下：
-&lt;figure 
+&lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
+	width=&#34;1329&#34;
+	height=&#34;393&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;通知推送示意图&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 338; 
-			flex-basis: 811px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34; data-size=&#34;1329x393&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
-			width=&#34;1329&#34;
-			height=&#34;393&#34;
-			srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;通知推送示意图&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;338&#34;
+		data-flex-basis=&#34;811px&#34;
 	
-	&lt;figcaption&gt;通知推送示意图&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;用文字描述过程如下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;软件需要推送通知&lt;/li&gt;
@@ -2329,25 +2175,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;p&gt;2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。&lt;/p&gt;
 &lt;p&gt;2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
+	width=&#34;1120&#34;
+	height=&#34;1387&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;FCM 示意图&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 80; 
-			flex-basis: 193px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34; data-size=&#34;1120x1387&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
-			width=&#34;1120&#34;
-			height=&#34;1387&#34;
-			srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;FCM 示意图&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;80&#34;
+		data-flex-basis=&#34;193px&#34;
 	
-	&lt;figcaption&gt;FCM 示意图&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;从原理上来看，FCM 和 APNs 一致，也是按照 &lt;code&gt;软件服务器&lt;/code&gt; ==&amp;gt; &lt;code&gt;FCM 服务器&lt;/code&gt; ==&amp;gt; &lt;code&gt;用户&lt;/code&gt; 这一流程实现的。&lt;/p&gt;
 &lt;p&gt;也就是说，对于 Android 系统 FCM 推送，整个推送过程中的 通知的接收与发送 都由 FCM 完成。这一过程中，设备上的软件&lt;strong&gt;本身没有参与&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;虽然可能和你以前想象的不太一样，但是事实如此：&lt;strong&gt;Android 系统同样有一套较为完善的推送机制，这个推送机制绿色高效，实现原理类似于 Apple。&lt;/strong&gt;&lt;/p&gt;
@@ -2358,25 +2199,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;li&gt;FCM 在国内的连接不稳定。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;对于已安装 Google Play Service 的用户，可以在手机拨号盘输入 &lt;code&gt;*#*#426#*#*&lt;/code&gt; 查看你当前的 FCM 连接状态。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;514&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;FCM 已连接示意图&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 210; 
-			flex-basis: 504px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34; data-size=&#34;1080x514&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;514&#34;
-			srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;FCM 已连接示意图&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;504px&#34;
 	
-	&lt;figcaption&gt;FCM 已连接示意图&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;h3 id=&#34;各大互联网公司的解决方案&#34;&gt;各大互联网公司的解决方案&lt;/h3&gt;
 &lt;p&gt;由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。&lt;/p&gt;
 &lt;p&gt;事实上，这种小问题根本难不倒我们大天朝的互联网公司，以阿里巴巴等互联网巨头为首率先想出一种行之有效的解决方法——&lt;strong&gt;团结就是力量&lt;/strong&gt;。&lt;/p&gt;
@@ -2429,25 +2265,20 @@ sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s@^\(deb.*science stab
 &lt;p&gt;不到两年时间里，统一推送联盟就实现了由「全民讨论统一推送后 Android 美好的幸福生活」到「全民讨论 统一推送联盟 到底黄没黄」的巨大转变。&lt;/p&gt;
 &lt;p&gt;但是，我们要客观、发展性地看待问题，统一推送联盟一直在时刻努力着，前段时间还发表了一篇名为 &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/JJ_cd3kHiggqb8pNqAOQkA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;《统一推送能给手机带来什么？》&lt;/a&gt; 的科普性文章。文章底部留言中，官方更是回复「推必达将于近期上线」。
-&lt;figure 
+&lt;img src=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;331&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;官方回复「近期上线」&#34;
+	
 	
 		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 326; 
-			flex-basis: 783px&#34;
-	&gt;
-	&lt;a href=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34; data-size=&#34;1080x331&#34;&gt;
-		&lt;img src=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34;
-			width=&#34;1080&#34;
-			height=&#34;331&#34;
-			srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;官方回复「近期上线」&#34;&gt;
-	&lt;/a&gt;
+		data-flex-grow=&#34;326&#34;
+		data-flex-basis=&#34;783px&#34;
 	
-	&lt;figcaption&gt;官方回复「近期上线」&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;我也不知道我有生之年能不能等到这天了。&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题外话让我们回头看看-qqwechat&#34;&gt;题外话：让我们回头看看 QQ/WeChat&lt;/h2&gt;
 &lt;p&gt;看到这里，你大概对手机系统推送有了比较全面的了解。&lt;/p&gt;
@@ -2638,20 +2469,16 @@ sudo systemctl enable nginx &lt;span style=&#34;color:#75715e&#34;&gt;#设置 Ng
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user@arch ~&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;$ nginx -v
 nginx version: nginx/1.9.14
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
-&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png&#34; &gt;
-		&lt;img src=&#34;https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;Nginx 欢迎界面&#34;&gt;
-	&lt;/a&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png&#34;
 	
-	&lt;figcaption&gt;Nginx 欢迎界面&lt;/figcaption&gt;
 	
-&lt;/figure&gt;&lt;/p&gt;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Nginx 欢迎界面&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;如果你不知道服务器公网 IP，可以输入这条命令查看。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://icanhazip.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。&lt;/p&gt;
@@ -3099,48 +2926,36 @@ Finished. Total time: 2.427s
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;经过十秒左右秒钟的解密后，不出意外会显示欢迎界面，点击屏幕下方勾即可。然后就是挂载 &lt;code&gt;System&lt;/code&gt; 的界面，滑动下方滑块即可。最后就进入了主界面。下图依次是 欢迎界面 &amp;ndash;&amp;gt; 挂载 &lt;code&gt;System&lt;/code&gt; 界面 &amp;ndash;&amp;gt; 主界面。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;欢迎界面&#34;&gt;
-	&lt;/a&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
 	
-	&lt;figcaption&gt;欢迎界面&lt;/figcaption&gt;
 	
-&lt;/figure&gt;
-&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;挂载 System 界面&#34;&gt;
-	&lt;/a&gt;
 	
-	&lt;figcaption&gt;挂载 System 界面&lt;/figcaption&gt;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;
-&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;主界面&#34;&gt;
-	&lt;/a&gt;
+		alt=&#34;欢迎界面&#34;
 	
-	&lt;figcaption&gt;主界面&lt;/figcaption&gt;
 	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载 System 界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主界面&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果需要改简体中文，点击底部的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; 右上角的齿轮图标 &amp;ndash;&amp;gt; &lt;code&gt;Regional&lt;/code&gt; &amp;ndash;&amp;gt; 点击 &lt;code&gt;Language&lt;/code&gt; 下的 &lt;code&gt;English&lt;/code&gt; ，选择 &lt;code&gt;Chinese Simplified&lt;/code&gt; 。&lt;/p&gt;
@@ -3454,30 +3269,22 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
     &gt;这里&lt;/a&gt;下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。&lt;/p&gt;
 &lt;p&gt;有的系统自带底包，我们可以不刷入底包。&lt;/p&gt;
 &lt;p&gt;如图，在 &lt;code&gt;Device&lt;/code&gt; 那搜索并选择 &lt;code&gt;violet&lt;/code&gt;  ，点击 &lt;code&gt;Download&lt;/code&gt; ，在跳转的页面中选择你需要的底包，点击 &lt;code&gt;Download&lt;/code&gt; 来下载。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/24/852c32cb62ffa.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/852c32cb62ffa.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			&gt;
-	&lt;/a&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/852c32cb62ffa.png&#34;
 	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/24/e39efa0905324.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/e39efa0905324.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			&gt;
-	&lt;/a&gt;
 	
-&lt;/figure&gt;&lt;/p&gt;
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/e39efa0905324.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;刷机包&lt;/p&gt;
@@ -3513,48 +3320,36 @@ Finished. Total time: 2.427s
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;经过十秒左右秒钟的解密后，不出意外会显示欢迎界面，点击屏幕下方勾即可。然后就是挂载 &lt;code&gt;System&lt;/code&gt; 的界面，滑动下方滑块即可。最后就进入了主界面。下图依次是 欢迎界面 &amp;ndash;&amp;gt; 挂载 &lt;code&gt;System&lt;/code&gt; 界面 &amp;ndash;&amp;gt; 主界面。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;欢迎界面&#34;&gt;
-	&lt;/a&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
 	
-	&lt;figcaption&gt;欢迎界面&lt;/figcaption&gt;
 	
-&lt;/figure&gt;
-&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;挂载 System 界面&#34;&gt;
-	&lt;/a&gt;
 	
-	&lt;figcaption&gt;挂载 System 界面&lt;/figcaption&gt;
+	loading=&#34;lazy&#34;
 	
-&lt;/figure&gt;
-&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;主界面&#34;&gt;
-	&lt;/a&gt;
+		alt=&#34;欢迎界面&#34;
 	
-	&lt;figcaption&gt;主界面&lt;/figcaption&gt;
 	
-&lt;/figure&gt;&lt;/p&gt;
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载 System 界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主界面&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果需要改简体中文，点击底部的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; 右上角的齿轮图标 &amp;ndash;&amp;gt; &lt;code&gt;Regional&lt;/code&gt; &amp;ndash;&amp;gt; 点击 &lt;code&gt;Language&lt;/code&gt; 下的 &lt;code&gt;English&lt;/code&gt; ，选择 &lt;code&gt;Chinese Simplified&lt;/code&gt; 。&lt;/p&gt;
@@ -3570,20 +3365,16 @@ Finished. Total time: 2.427s
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;重启到 Recovery 后，点击下方的 &lt;code&gt;Wipe&lt;/code&gt; &amp;gt; 选择你想选择清除的分区（以下是一个示例） &amp;gt; 滑动下方滑块来清除数据。清除完成后再次重启一次 Recovery 。&lt;/p&gt;
-&lt;p&gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://global.cdn.mikupics.cn/2020/04/03/951d19cd95606.png&#34; &gt;
-		&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/951d19cd95606.png&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;示例&#34;&gt;
-	&lt;/a&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/951d19cd95606.png&#34;
 	
-	&lt;figcaption&gt;示例&lt;/figcaption&gt;
 	
-&lt;/figure&gt;&lt;/p&gt;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;通过数据线将刷机包，底包传到手机。先选择底包，滑动下方滑块来刷入，再刷入系统（有的系统自带底包，我们不需要额外刷入底包）。刷入完成后就可以重启到系统。&lt;/p&gt;
