@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
@@ -12,7 +12,7 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
 
 <link rel='canonical' href='https://blog.linioi.com/posts/deploy-blog-to-cf/'>
 
-<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='利用 Cloudflare Workers Site 部署静态博客'>
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='利用 Cloudflare Workers Site 部署静态博客'>
 <meta property='og:description' content='前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
 可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
 为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
@@ -39,8 +39,8 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
 
     </head>
     <body class="
-    article-page has-toc
-">
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -63,25 +63,200 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
         }
     })();
 </script>
-<div class="container main-container flex 
-    
-        extended
-    
-">
-    
-        <div id="article-toolbar">
-            <a href="/" class="back-home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu1d83b9e8d28c2a8fa0449695166a4930_1210632_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">✨</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">清絮的博客</a></h1>
+            <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' target="_blank">
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
 </svg>
 
 
 
-                <span>返回</span>
+                
+                <span>首页</span>
             </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/talk' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="13" y1="20" x2="20" y2="13" />
+  <path d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+</svg>
+                
+                <span>说说</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
         </div>
-    
+    </ol>
+</aside>
 <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
@@ -97,11 +272,13 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
     </header>
     
 
-    <h2 class="article-title">
-        <a href="/posts/deploy-blog-to-cf/">利用 Cloudflare Workers Site 部署静态博客</a>
-    </h2>
-
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/deploy-blog-to-cf/">利用 Cloudflare Workers Site 部署静态博客</a>
+        </h2>
     
+        
+    </div>
 
     
     <footer class="article-time">
@@ -137,6 +314,8 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
         
     </footer>
     
+
+    
 </div>
 </header>
 
@@ -162,11 +341,11 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
 <p>开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 <a class="link" href="https://github.com/cloudflare/wrangler"  target="_blank" rel="noopener"
     >Wrangler</a>。</p>
 <p>Wrangler 可以通过 <code>npm</code> 或 <code>cargo</code> 安装。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm i @cloudflare/wrangler -g
-<span style="color:#75715e"># 你也可以使用 Yarn 安装 Wrangler</span>
-<span style="color:#75715e"># yarn global add @cloudflare/wrangler</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo install wrangler
-</code></pre></div><p>{% note info simple %}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm i @cloudflare/wrangler -g
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 你也可以使用 Yarn 安装 Wrangler</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># yarn global add @cloudflare/wrangler</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cargo install wrangler
+</span></span></code></pre></div><p>{% note info simple %}
 经过实测，Wrangler 可能无法安装在 ARM 架构的设备上。如果可以，尽量使用 x86 设备。
 {% endnote %}</p>
 <h3 id="获取-api-token">获取 API Token</h3>
@@ -177,25 +356,25 @@ Cloudflare 拥有遍布全球的网络节点，200&#43; 数据中心让它的速
 <p>在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。</p>
 <h3 id="初始化项目">初始化项目</h3>
 <p>在博客源码的根目录输入如下命令进行初始化</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># my-static-blog 是目录名称，你可以改成你喜欢的其他名字</span>
-wrangler init --site my-static-blog
-</code></pre></div><p>Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># my-static-blog 是目录名称，你可以改成你喜欢的其他名字</span>
+</span></span><span style="display:flex;"><span>wrangler init --site my-static-blog
+</span></span></code></pre></div><p>Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。</p>
 <p>先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">site</span>]
-<span style="color:#a6e22e">bucket</span> = <span style="color:#e6db74">&#34;./public&#34;</span> <span style="color:#75715e"># 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录</span>
-<span style="color:#a6e22e">entry-point</span> = <span style="color:#e6db74">&#34;workers-site&#34;</span> <span style="color:#75715e"># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
-<span style="color:#a6e22e">account_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责</span>
-<span style="color:#a6e22e">workers_dev</span> = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># 是否启用 workers.dev 子域名，推荐不启用</span>
-<span style="color:#a6e22e">route</span> = <span style="color:#e6db74">&#34;blog.linioi.com/*&#34;</span> <span style="color:#75715e"># Workers 路由配置，请指向你想绑定的自定义域名</span>
-<span style="color:#a6e22e">zone_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 域名的 Zone ID，可在 Cloudflare 仪表盘查看</span>
-</code></pre></div><p>完成 wrangler.toml 的配置后，运行<code>wrangler config</code>命令并依照命令行提示输入上一步获取的 API Token。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">site</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">bucket</span> = <span style="color:#e6db74">&#34;./public&#34;</span> <span style="color:#75715e"># 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">entry-point</span> = <span style="color:#e6db74">&#34;workers-site&#34;</span> <span style="color:#75715e"># Cloudflare Workers Site 配置代码目录，默认 workers-site 目录</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">account_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">workers_dev</span> = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># 是否启用 workers.dev 子域名，推荐不启用</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">route</span> = <span style="color:#e6db74">&#34;blog.linioi.com/*&#34;</span> <span style="color:#75715e"># Workers 路由配置，请指向你想绑定的自定义域名</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">zone_id</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 域名的 Zone ID，可在 Cloudflare 仪表盘查看</span>
+</span></span></code></pre></div><p>完成 wrangler.toml 的配置后，运行<code>wrangler config</code>命令并依照命令行提示输入上一步获取的 API Token。</p>
 <h3 id="预览与部署">预览与部署</h3>
 <p>配置完成后，我们可以先输入如下命令预览一下部署效果。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wrangler preview --watch
-</code></pre></div><p>Wrangler 会上传配置文件中设定的<code>bucket</code>路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wrangler preview --watch
+</span></span></code></pre></div><p>Wrangler 会上传配置文件中设定的<code>bucket</code>路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。</p>
 <p>确认无误后，输入如下命令进行部署</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wrangler publish
-</code></pre></div><h3 id="配置域名-dns-解析">配置域名 DNS 解析</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wrangler publish
+</span></span></code></pre></div><h3 id="配置域名-dns-解析">配置域名 DNS 解析</h3>
 <p>上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。</p>
 <ul>
 <li>如果你在前面修改配置文件时设置了「workers_dev=true」，则 Cloudflare 会自动分配给你一个三级域名，你可以在 DNS 解析设置处创建你的自定义域名的 CNAME 解析，指向 Cloudflare 分配的三级域名。</li>
@@ -212,66 +391,66 @@ wrangler init --site my-static-blog
 <p>wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。</p>
 <p>然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 <code>CF_WORKERS_TOKEN</code>，内容为你申请的 API Token。</p>
 <p>最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to Cloudflare Workers</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">cloudflare/wrangler-action@1.3.0</span>
-        <span style="color:#f92672">with</span>:
-                <span style="color:#f92672">apiToken</span>: <span style="color:#ae81ff">${{ secrets.CF_WORKERS_TOKEN }}</span>
-</code></pre></div><h3 id="我的-github-action-配置文件仅供参考">我的 GitHub Action 配置文件（仅供参考）</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Auto Builder For Blog</span>
-
-<span style="color:#f92672">on</span>:
-  <span style="color:#f92672">push</span>:
-    <span style="color:#f92672">branches</span>:
-      - <span style="color:#ae81ff">master</span>
-<span style="color:#75715e">#  schedule:</span>
-<span style="color:#75715e">#    - cron: &#39;0 21 * * *&#39;</span>
-
-<span style="color:#f92672">env</span>:
-  <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
-
-<span style="color:#f92672">jobs</span>:
-  <span style="color:#f92672">blog-cicd</span>:
-    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build and deploy</span>
-    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
-    <span style="color:#f92672">strategy</span>:
-      <span style="color:#f92672">matrix</span>:
-        <span style="color:#f92672">node-version</span>:
-          - <span style="color:#ae81ff">12.</span><span style="color:#ae81ff">x</span>
-          
-    <span style="color:#f92672">steps</span>:
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Use Node.js ${{ matrix.node-version }}</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">node-version</span>: <span style="color:#ae81ff">${{ matrix.node-version }}</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span>
-        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
-          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Clone themes</span>
-        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
-        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span><span style="color:#e6db74">          npm install hexo-cli -g
-</span><span style="color:#e6db74">          npm install</span>          
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files and gulp</span>
-        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate &amp;&amp; gulp</span>
-      
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to Cloudflare Workers</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">cloudflare/wrangler-action@1.3.0</span>
-        <span style="color:#f92672">with</span>:
-                <span style="color:#f92672">apiToken</span>: <span style="color:#ae81ff">${{ secrets.CF_WORKERS_TOKEN }}</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to Cloudflare Workers</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">cloudflare/wrangler-action@1.3.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">apiToken</span>: <span style="color:#ae81ff">${{ secrets.CF_WORKERS_TOKEN }}</span>
+</span></span></code></pre></div><h3 id="我的-github-action-配置文件仅供参考">我的 GitHub Action 配置文件（仅供参考）</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Auto Builder For Blog</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">master</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#  schedule:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#    - cron: &#39;0 21 * * *&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">blog-cicd</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build and deploy</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">strategy</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">matrix</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">node-version</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">12.</span><span style="color:#ae81ff">x</span>
+</span></span><span style="display:flex;"><span>          
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Use Node.js ${{ matrix.node-version }}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">node-version</span>: <span style="color:#ae81ff">${{ matrix.node-version }}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Clone themes</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install hexo-cli -g
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install</span>          
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files and gulp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate &amp;&amp; gulp</span>
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to Cloudflare Workers</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">cloudflare/wrangler-action@1.3.0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">apiToken</span>: <span style="color:#ae81ff">${{ secrets.CF_WORKERS_TOKEN }}</span>
+</span></span></code></pre></div>
 </section>
 
 
@@ -310,14 +489,14 @@ wrangler init --site my-static-blog
 
     
 
-    <aside class="related-contents--wrapper">
     
-    
-        <h2 class="section-title">相关文章</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
+
+<aside class="related-contents--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-contents">
+        <div class="flex article-list--tile">
+            
                 
-                    
 <article class="">
     <a href="/posts/9/">
         
@@ -328,8 +507,8 @@ wrangler init --site my-static-blog
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/change-to-new-domain/">
         
@@ -340,8 +519,8 @@ wrangler init --site my-static-blog
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="has-image">
     <a href="/posts/3/">
         
@@ -363,8 +542,8 @@ wrangler init --site my-static-blog
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/13/">
         
@@ -375,8 +554,8 @@ wrangler init --site my-static-blog
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/7/">
         
@@ -387,10 +566,9 @@ wrangler init --site my-static-blog
         </div>
     </a>
 </article>
-                
-            </div>
+            
         </div>
-    
+    </div>
 </aside>
 
      
@@ -426,7 +604,7 @@ wrangler init --site my-static-blog
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -510,51 +688,6 @@ wrangler init --site my-static-blog
             >
 
             </main>
-    
-        <aside class="sidebar right-sidebar sticky">
-            <section class="widget archives">
-                <div class="widget-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-                </div>
-                <h2 class="widget-title section-title">目录</h2>
-                
-                <div class="widget--toc">
-                    <nav id="TableOfContents">
-  <ol>
-    <li><a href="#前言">前言</a>
-      <ol>
-        <li><a href="#为什么选择-cloudflare">为什么选择 Cloudflare</a></li>
-      </ol>
-    </li>
-    <li><a href="#常规部署">常规部署</a>
-      <ol>
-        <li><a href="#准备-cli-部署工具">准备 CLI 部署工具</a></li>
-        <li><a href="#获取-api-token">获取 API Token</a></li>
-        <li><a href="#初始化项目">初始化项目</a></li>
-        <li><a href="#预览与部署">预览与部署</a></li>
-        <li><a href="#配置域名-dns-解析">配置域名 DNS 解析</a></li>
-        <li><a href="#大功告成">大功告成！</a></li>
-      </ol>
-    </li>
-    <li><a href="#使用-github-action-实现持续集成">使用 GitHub Action 实现持续集成</a>
-      <ol>
-        <li><a href="#我的-github-action-配置文件仅供参考">我的 GitHub Action 配置文件（仅供参考）</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-                </div>
-            </section>
-        </aside>
     
 
         </div>

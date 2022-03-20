@@ -1,106 +1,839 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Android on 清絮的博客</title>
-    <link>https://blog.linioi.com/categories/android/</link>
-    <description>Recent content in Android on 清絮的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Oct 2020 22:19:36 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Android 一键安装配置 Aria2</title>
-      <link>https://blog.linioi.com/posts/aria2-for-termux/</link>
-      <pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/aria2-for-termux/</guid>
-      <description>Aria2 是什么？  Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
-&amp;ndash; 摘自 维基百科
- 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
-为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
-为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
-遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
-但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
-下面，让我们开始…
-下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
- Google Play Store： https://play.</description>
-    </item>
-    
-    <item>
-      <title>Violet 机型 HT OS 刷入教程</title>
-      <link>https://blog.linioi.com/posts/12/</link>
-      <pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/12/</guid>
-      <description>Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…
- 前言 待会再补上
-刷入步骤  注意：以下为 hentaiOS 作者 Dyneteve 给出的官方刷入步骤。其他刷机方法待更新。
-如果你无法理解本文的某些内容，你可以参照这篇教程。
- 你需要准备什么？  一台电脑 (Windows 和 Linux 皆可) 一台能正常工作的 Redmi Note 7 Pro (Violet) 一双能照着教程操作的手 下载 hentaiOS 刷机包 和 AOSP Recovery ROM Flasher V4.zip 至电脑； 对于 Linux 用户，你还需要下载 linux_flash.zip   现已搬运 hentaiOS 刷机包和 AOSP Recovery 至我网盘。
-上面连接无法访问的可以试试下面的链接。
-hentaiOS 刷机包：Link
-AOSP Recovery：Link
- 那么，让我们开始…  备份你的数据，准备好相应的救砖工具以备不时之需。 关机下长按电源键和音量-进入 fastboot 模式。 使用 USB 数据线连接手机和电脑。如果可以，请尽量使用原装数据线。 输入fastboot devices检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照这篇教程配置 ADB 环境。对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。 解压你下载的 AOSP Recovery ROM Flasher V4.</description>
-    </item>
-    
-    <item>
-      <title>通过 ADB 给手机刷入第三方 Recovery</title>
-      <link>https://blog.linioi.com/posts/8/</link>
-      <pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/8/</guid>
-      <description>对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利
- 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP）
-Windows 操作系统下 ADB 环境配置请参阅该链接
- OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本
- 刷入步骤   手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。
-  以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。)
-如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。
-  打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例：
-C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.</description>
-    </item>
-    
-    <item>
-      <title>Violet 机型 PE/Plus 刷入教程</title>
-      <link>https://blog.linioi.com/posts/10/</link>
-      <pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/10/</guid>
-      <description>PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
-  注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
- PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
-之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
- 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
- 刷前需知  刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。   本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
- 方法一：  如果你电脑是 Linux 发行版，请忽略此方法。
-  下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。   GitHub （推荐） Google Drive （不推荐，需要审核）   解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。</description>
-    </item>
-    
-    <item>
-      <title>如何在 Redmi Note 7 Pro 上刷机？</title>
-      <link>https://blog.linioi.com/posts/11/</link>
-      <pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/11/</guid>
-      <description>拿到手机后干什么？刷机！
- 如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
- 刷机前请先看看最下面的乱七八糟的问题（
-由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。
- Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
- 一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
-二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。
-三、下载刷机所需文件   Android Debug Bridge
- Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
- 具体下载和配置可参考少数派的这篇文章。
-如果你使用一键刷入之类的应用，则不需要此操作。
-  Recovery
-目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd）
-  底包
-前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。
-有的系统自带底包，我们可以不刷入底包。
-如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Android on 清絮的博客</title>
+        <link>https://blog.linioi.com/categories/android/</link>
+        <description>Recent content in Android on 清絮的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 17 Oct 2020 22:19:36 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/categories/android/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Android 一键安装配置 Aria2</title>
+        <link>https://blog.linioi.com/posts/aria2-for-termux/</link>
+        <pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/aria2-for-termux/</guid>
+        <description>&lt;h2 id=&#34;aria2-是什么&#34;&gt;Aria2 是什么？&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。&lt;/p&gt;
+&lt;p&gt;&amp;ndash; 摘自 &lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/zh-hans/Aria2?wprov=sfla1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;维基百科&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。&lt;/p&gt;
+&lt;h2 id=&#34;为什么会有这篇文章&#34;&gt;为什么会有这篇文章&lt;/h2&gt;
+&lt;p&gt;Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 &lt;a class=&#34;link&#34; href=&#34;https://github.com/mayswind/AriaNg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AriaNg&lt;/a&gt; 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。&lt;/p&gt;
+&lt;p&gt;为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。&lt;/p&gt;
+&lt;p&gt;遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/P3TERX/aria2.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;aria2.sh&lt;/a&gt;，制作了该一键管理脚本的 Termux 移植版 &lt;a class=&#34;link&#34; href=&#34;https://github.com/RimuruW/Aria2-Termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Aria2-Termux&lt;/a&gt;，便于 Android 用户一键安装、配置和管理 Aria2。&lt;/p&gt;
+&lt;p&gt;但是考虑到 &lt;a class=&#34;link&#34; href=&#34;https://termux.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Termux&lt;/a&gt; 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。&lt;/p&gt;
+&lt;p&gt;下面，让我们开始…&lt;/p&gt;
+&lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Google Play Store： &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://play.google.com/store/apps/details?id=com.termux&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;因为&lt;a class=&#34;link&#34; href=&#34;https://github.com/termux/termux-app/issues/1072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这些原因&lt;/a&gt;，Google Play 不再是受推荐的下载渠道。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;F-Droid：https://f-droid.org/packages/com.termux/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果因为网络原因无法正常访问 F-Droid，也可以在&lt;a class=&#34;link&#34; href=&#34;https://cloud.linioi.com/s/RYhb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的分享站&lt;/a&gt;下载。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请勿交叉安装和更新这两个渠道的 Termux&lt;/strong&gt;！即，如果你是在 Google Play Store 下载和安装 Termux，&lt;strong&gt;请勿在 F-Droid 下载安装包并覆盖安装&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;安装后打开 Termux，你会看到如大致下图所示的终端界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1390&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Termux 界面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;77&#34;
+		data-flex-basis=&#34;186px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你的界面和我的截图会有些许不同，&lt;strong&gt;请不要惊慌&lt;/strong&gt;，这是因为我已经对 Termux 进行了一些自定义。&lt;del&gt;长得不像是正常现象&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;请不要害怕终端的黑屏白字，实际上你需要操作的东西&lt;strong&gt;非常简单&lt;/strong&gt;，大部分终端里你看不懂的输出，&lt;strong&gt;都是你不需要关心的细节&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;第一次打开可能会要求进行初始化，请耐心等待初始化完成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;下载和启动脚本&#34;&gt;下载和启动脚本&lt;/h2&gt;
+&lt;p&gt;下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。&lt;del&gt;如果出现了报错则另说&lt;/del&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;脚本启动成功后如下图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34;
+	width=&#34;1073&#34;
+	height=&#34;814&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;脚本启动后界面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;316px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;后续启动脚本，如果你没有手动改变文件位置，则你只需要输入&lt;code&gt;bash aria2.sh&lt;/code&gt;即可启动脚本。&lt;/p&gt;
+&lt;h2 id=&#34;安装-aria2&#34;&gt;安装 Aria2&lt;/h2&gt;
+&lt;p&gt;脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;输入命令后脚本可能会询问你是否更换 Termux 镜像源，&lt;strong&gt;如果你是国内用户，请选择输入「y」确认更换&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;Aria2 的下载和安装需要一定时间，请耐心等待并保证 Termux 进程存活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装完成后脚本会自动启动 Aria2，安装并启动成功后界面如下图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;984&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2 安装和启动成功图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;263px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;注意，为保证 Aria2 后台存活，脚本在启动 Aria2 会自动开启&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/training/scheduling/wakelock?hl=zh_cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;唤醒锁&lt;/a&gt;，这意味你退出 Termux 时需要手动在状态栏点击「Release wakerlock」后才能真正退出。
+&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
+	width=&#34;1080&#34;
+	height=&#34;410&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Release wakelock&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此时你已经完成了 Aria2 安装所需的基本步骤，你的手机上已经成功配置一个可用的 Aria2。&lt;/p&gt;
+&lt;h2 id=&#34;使用-ariang&#34;&gt;使用 AriaNg&lt;/h2&gt;
+&lt;p&gt;如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。&lt;/p&gt;
+&lt;p&gt;在脚本起始界面输入「7」查看 Aria2 配置信息如下图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;521&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2 配置信息&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;497px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于大部分普通用户，你只需要复制下面 &lt;code&gt;AriaNg&lt;/code&gt; 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于已经对 Aria2 有所了解的用户，请明确以下内容&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大多数情况下，请将 Aria2 的地址设为 127.0.0.1 而非内网 IP，已确保连接在 Aria2 每次启动后都始终可用&lt;/li&gt;
+&lt;li&gt;如果你需要在其他同区域网设备上连接该设备，Aria2 地址请设为配置信息中的「内网 IP」&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;进入 AriaNg 并连接成功后界面如图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;2340&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;AriaNg 连接成功&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;110px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击左上角的「新建」，输入下载链接后点击右上角「立即下载」即可以创建一个下载任务，下载的文件默认保存在 Download 文件夹中。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;使用文档到此结束，其他细节请参照脚本内说明（我觉得脚本内说明已经很详细了…）。&lt;/p&gt;
+&lt;p&gt;如果对 Aria2 其他细节感兴趣，请自行参阅网上文档。&lt;/p&gt;
+&lt;p&gt;如果这个项目对你有帮助，请 Star 以让更多人发现这个项目并受益，你的支持是我持续维护和开发的动力！&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/RimuruW/Aria2-Termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://github-readme-stats.linioi.com/api/pin?username=RimuruW&amp;amp;repo=Aria2-Termux&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Aria2-Termux&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Violet 机型 HT OS 刷入教程</title>
+        <link>https://blog.linioi.com/posts/12/</link>
+        <pubDate>Thu, 17 Sep 2020 13:05:37 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/12/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;刷入步骤&#34;&gt;刷入步骤&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：以下为 hentaiOS 作者 Dyneteve 给出的&lt;a class=&#34;link&#34; href=&#34;https://t.me/hentaiOSViolet/238933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方刷入步骤&lt;/a&gt;。其他刷机方法待更新。&lt;/p&gt;
+&lt;p&gt;如果你无法理解本文的某些内容，你可以参照&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/10/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这篇教程&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;你需要准备什么&#34;&gt;你需要准备什么？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一台电脑 (Windows 和 Linux 皆可)&lt;/li&gt;
+&lt;li&gt;一台能正常工作的 Redmi Note 7 Pro (Violet)&lt;/li&gt;
+&lt;li&gt;一双能照着教程操作的手&lt;/li&gt;
+&lt;li&gt;下载 &lt;a class=&#34;link&#34; href=&#34;https://downloads.hentaios.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hentaiOS 刷机包&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1q0IJzcWdxQWUoBRgBKfwZauLQveiZbJy/view?usp=sharing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AOSP Recovery ROM Flasher V4.zip&lt;/a&gt; 至电脑；
+&lt;em&gt;对于 Linux 用户，你还需要下载 &lt;a class=&#34;link&#34; href=&#34;https://t.me/hentaiOSViolet/240957&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;linux_flash.zip&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;现已搬运 hentaiOS 刷机包和 AOSP Recovery 至我网盘。&lt;/p&gt;
+&lt;p&gt;上面连接无法访问的可以试试下面的链接。&lt;/p&gt;
+&lt;p&gt;hentaiOS 刷机包：&lt;a class=&#34;link&#34; href=&#34;https://one.linioi.com/onedrive/%E5%88%B7%E6%9C%BA%E8%B5%84%E6%BA%90/Redmi%20Note%207%20Pro%20%28Violet%29/ROM/Hentai%20OS/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AOSP Recovery：&lt;a class=&#34;link&#34; href=&#34;https://one.linioi.com/onedrive/%E5%88%B7%E6%9C%BA%E8%B5%84%E6%BA%90/Redmi%20Note%207%20Pro%20%28Violet%29/Recovery/AOSP%20Recovery%20ROM%20Flasher%20V4.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;那么让我们开始&#34;&gt;那么，让我们开始…&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;备份你的数据，准备好相应的救砖工具以备不时之需。&lt;/li&gt;
+&lt;li&gt;关机下长按&lt;code&gt;电源键&lt;/code&gt;和&lt;code&gt;音量-&lt;/code&gt;进入 &lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/fastboot/3228436&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;fastboot&lt;/a&gt; 模式。&lt;/li&gt;
+&lt;li&gt;使用 USB 数据线连接手机和电脑。如果可以，请尽量使用&lt;strong&gt;原装数据线&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;输入&lt;code&gt;fastboot devices&lt;/code&gt;检查设备是否已正常连接。如果你电脑没有配置 ADB 环境，建议参照&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/40471&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这篇教程&lt;/a&gt;配置 ADB 环境。&lt;em&gt;对于 Linux 用户，请自行查阅你使用的发行版所需要安装的软件包。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;解压你下载的 &lt;code&gt;AOSP Recovery ROM Flasher V4.zip&lt;/code&gt; 。
+解压后文件夹目录如下&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;AOSP Recovery ROM Flasher V4
+├── flashme.bat
+├── images
+├── sideload
+└── windows
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;你可能需要手动将你下载的 hentaiOS 刷机包放入解压后的 &lt;code&gt;sideload&lt;/code&gt; 文件夹&lt;/em&gt;。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;对于 Windows 用户，请打开你解压后的文件夹，双击 &lt;code&gt;flashme.bat&lt;/code&gt; 并等待刷入结束；对于 Linux 用户，请解压你下载的&lt;code&gt;linux_flash.zip&lt;/code&gt;到 &lt;code&gt;AOSP Recovery ROM Flasher V4.zip&lt;/code&gt;解压后的文件夹中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;长按&lt;code&gt;电源键&lt;/code&gt;和&lt;code&gt;音量+&lt;/code&gt;进入 AOSP Recovery。&lt;em&gt;如果屏幕显示 &lt;code&gt;no comand&lt;/code&gt; 或者 &lt;code&gt;没有指令&lt;/code&gt;，请按一次&lt;code&gt;音量+&lt;/code&gt;。&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用&lt;code&gt;音量键&lt;/code&gt;和&lt;code&gt;电源键&lt;/code&gt;选中&lt;code&gt;Apply update from ADB&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;电脑在命令行回车，脚本会自动刷入 ROM。进度到 49% 时可能需要你手动确认，选择 &lt;code&gt;Yes&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入过程结束后，使用&lt;code&gt;电源键&lt;/code&gt;和&lt;code&gt;音量键&lt;/code&gt;选中&lt;code&gt;Factory Reset&lt;/code&gt;，等待清除完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用&lt;code&gt;电源键&lt;/code&gt;和&lt;code&gt;音量键&lt;/code&gt;选中&lt;code&gt;Reboot to system&lt;/code&gt;，等待手机开机。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;至此，hentaiOS 已刷入完成&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;某些问题的简单解答待更新&#34;&gt;某些问题的简单解答（待更新）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Magisk &lt;strong&gt;所有版本不能正常工作&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;TWRP 及 TWRP 魔改版本(如 OrangeFox)&lt;strong&gt;无法正常工作&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;ROM &lt;strong&gt;无法解密&lt;/strong&gt;，解密会导致&lt;code&gt;The system has been destroyed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;目前仅 AOSP Recovery 可以完全正常刷入 ROM，其他方式待验证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;后记&#34;&gt;后记&lt;/h2&gt;
+&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>通过 ADB 给手机刷入第三方 Recovery</title>
+        <link>https://blog.linioi.com/posts/8/</link>
+        <pubDate>Mon, 13 Apr 2020 11:46:44 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/8/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;刷入适合你机型的第三方--recoveryhttpswapbaikebaiducomitemrecovery9995978ms1rid11417116585990428221rt-err900rt-msgunkown&#34;&gt;刷入适合你机型的第三方  &lt;a class=&#34;link&#34; href=&#34;https://wapbaike.baidu.com/item/Recovery/9995978?ms=1&amp;amp;rid=11417116585990428221&amp;amp;rt-err=900&amp;amp;rt-msg=unkown&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Recovery&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;目前推荐的第三方 Recovery 有 &lt;a class=&#34;link&#34; href=&#34;https://wiki.orangefox.tech/en/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OrangeFox&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://twrp.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TeamWinRecoveryProject&lt;/a&gt; （即 TWRP）&lt;/p&gt;
+&lt;p&gt;Windows 操作系统下 ADB 环境配置请参阅&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/40471&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;该链接&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;刷入步骤&#34;&gt;刷入步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;手机关机，&lt;strong&gt;长按 音量减键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;FASTBOOT&lt;/code&gt; 模式。用数据线把手机和电脑连接起来。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 &lt;code&gt;recovery.img&lt;/code&gt; 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 &lt;code&gt;recovery.img&lt;/code&gt; 来使用 &lt;code&gt;fastboot&lt;/code&gt; 刷入。)&lt;/p&gt;
+&lt;p&gt;如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步&lt;del&gt;复杂&lt;/del&gt;的操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 cmd （或者其它终端），输入 &lt;code&gt;fastboot flash recovery 上一步解压的 recovery.img 的文件地址&lt;/code&gt; 。以下是一个示例：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
+Sending &amp;#39;recovery&amp;#39; (65536 KB)                      OKAY [  2.040s]
+Writing &amp;#39;recovery&amp;#39;                                 OKAY [  0.368s]
+Finished. Total time: 2.427s
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果出现&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;fastboot&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。&lt;/code&gt; 说明你没有配置好 ADB 环境。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在上一步的状态下，&lt;strong&gt;长按 音量加键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;Recovery&lt;/code&gt; 模式。（当然你也可以使用 &lt;code&gt;fastboot reboot recovery&lt;/code&gt; 来进入 &lt;code&gt;Recovery&lt;/code&gt; 模式，但是我没成功过（&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一般情况下，会出现一个英文界面，从上往下依次写着 &lt;code&gt;Mount&lt;/code&gt; &lt;code&gt;Dectypt&lt;/code&gt; ，这是让你解密 Data 。输入你的锁屏密码即可，记得输入完后点击右下角的勾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;经过十秒左右秒钟的解密后，不出意外会显示欢迎界面，点击屏幕下方勾即可。然后就是挂载 &lt;code&gt;System&lt;/code&gt; 的界面，滑动下方滑块即可。最后就进入了主界面。下图依次是 欢迎界面 &amp;ndash;&amp;gt; 挂载 &lt;code&gt;System&lt;/code&gt; 界面 &amp;ndash;&amp;gt; 主界面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;欢迎界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载 System 界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主界面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果需要改简体中文，点击底部的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; 右上角的齿轮图标 &amp;ndash;&amp;gt; &lt;code&gt;Regional&lt;/code&gt; &amp;ndash;&amp;gt; 点击 &lt;code&gt;Language&lt;/code&gt; 下的 &lt;code&gt;English&lt;/code&gt; ，选择 &lt;code&gt;Chinese Simplified&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;一点小小的补充&#34;&gt;一点小小的补充&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;给手机刷入 Recovery ，电脑不必是 Windows 系统。Linux 发行版同样可以安装相应软件包然后输入上述指令安装，这里不再赘述，请参阅 &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/command-line/adb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google 开发者文档&lt;/a&gt;。&lt;strong&gt;注意，Linux 下执行 &lt;code&gt;fastboot&lt;/code&gt; 需要在 ROOT 用户下执行。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;给手机刷入 Recovery 其实也不需要电脑，用另一部手机借助 &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Termux&lt;/a&gt; 也是同样可以的。在 Termux 配置好 ADB 环境后，照上述步骤刷入即可。安装 Termux 的那部手机无需 ROOT。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>Violet 机型 PE/Plus 刷入教程</title>
+        <link>https://blog.linioi.com/posts/10/</link>
+        <pubDate>Mon, 13 Apr 2020 11:44:52 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/10/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/11/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Violet 通用刷机教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;PE/Plus 刷入教程又更新了！！&lt;/strong&gt;
+原先的&lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/15857831?shareKey=OTdjZWMwNTk2N2E3NWU5M2M5ZmU~&amp;amp;shareUid=2815584&amp;amp;shareFrom=com.coolapk.market_10.0.4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;刷入教程&lt;/a&gt;因为 Dyneteve 一番操作，目前已经完全没有作用……&lt;/p&gt;
+&lt;p&gt;之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，&lt;del&gt;拖你们下水&lt;/del&gt;  带你们上车&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于有一定英语水平的用户，直接看 Dyneteve 的 &lt;a class=&#34;link&#34; href=&#34;https://telegra.ph/FlashingUpdating-PE-to-the-latest-version-using-AOSP-Recovery-v3-04-10-2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Flash Guide&lt;/a&gt; 即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;刷前需知&#34;&gt;刷前需知&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;刷入 ROM 前，请确保你的设备已解锁 Bootloader。&lt;/li&gt;
+&lt;li&gt;建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文会提供两种刷入方式，请根据自己需求选择。
+阅读本教程建议搭配这篇&lt;a class=&#34;link&#34; href=&#34;https://riwihow.github.io/2020/04/03/How-to-flash-on-violet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教程&lt;/a&gt;，食用效果更佳&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;方法一&#34;&gt;方法一：&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你电脑是 Linux 发行版，请忽略此方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 &lt;a class=&#34;link&#34; href=&#34;https://t.me/pixelexperienceviolet/197641&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AOSP Recovery Flasher v4&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://download.pixelexperience.org/changelog/violet/PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PE/Plus 刷机包&lt;/a&gt;
+&lt;em&gt;如果你不使用 Telegram，可以从以下两个链接中选择一个下载。&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/RimuruW/qingxumo.github.io/releases/download/0.0.1/AOSP.Recovery.ROM.Flasher.V4.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt; （推荐）&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1-Gp1Mp_nHsH58zFc_iYMWlR3COgRAgcz/view?usp=drivesdk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Drive&lt;/a&gt; （不推荐，需要审核）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复制下载好的刷机包至第 2 步解压后生成文件夹中 sideload 文件夹下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;手机长按电源键和音量-进入 Fastboot 模式并用数据线连接电脑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开第 2 步解压后生成的文件夹，双击 flashme.bat。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;坐和放宽，等待 Recovery 和 Vendor 刷入完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷入完成后，长按电源键和音量+ 进入 AOSP Recovery。若手机显示 &lt;em&gt;no command&lt;/em&gt; 或者&lt;em&gt;没有指令&lt;/em&gt;，请按一次音量 + 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用音量键控制光标，使用电源键选择 &lt;strong&gt;Apply update from ADB&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Windows 命令行窗口回车后，选择要 sideload 的文件，输入文件前面的数字，回车，等待刷入到 47%，以下是一个示例。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Press POWER + VOL UP till you get to the redmi screen after you get there release after 2s
+Press enter after you put your recovery into sideload and the rom into the sideload folder
+Check your device you might need to press yes to continue flashing after 47
+To select the file press press the number in front of it
+   
+[1]. PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
+Enter a file to load: 1
+
+You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;输入到 47% 时，AOSP Recovery 会提示验证失败，是否继续刷入。使用手机的音量键和电源键，在上方的选项中选择 Yes，等待刷入完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷入完成后，在 AOSP Recovery 中选择 &lt;strong&gt;Wipe data/factory reset&lt;/strong&gt; ,选择 &lt;strong&gt;Factory data reset&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Factory Reset 完成后，选择 &lt;strong&gt;Reboot system now&lt;/strong&gt; 开机。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至此，刷入完成。&lt;/p&gt;
+&lt;h3 id=&#34;方法二&#34;&gt;方法二：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 &lt;a class=&#34;link&#34; href=&#34;https://t.me/pixelexperienceviolet/197641&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AOSP Recovery Flasher v4&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://download.pixelexperience.org/changelog/violet/PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PE/Plus 刷机包&lt;/a&gt;
+&lt;em&gt;如果你不使用 Telegram，可以从以下两个链接中选择一个下载。&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/RimuruW/qingxumo.github.io/releases/download/0.0.1/AOSP.Recovery.ROM.Flasher.V4.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt; （推荐）&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1-Gp1Mp_nHsH58zFc_iYMWlR3COgRAgcz/view?usp=drivesdk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Drive&lt;/a&gt; （不推荐，需要审核）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;解压 AOSP Recovery Flasher v4 到手机任意一个你可以找到的目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开你第 2 步解压得到的文件夹。
+文件夹前几层结构大致如下：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;├── flashme.bat
+├── images
+│   ├── BTFM.bin
+│   ├── NON-HLOS.bin
+│   ├── abl.elf
+│   ├── aop.mbn
+│   ├── cmnlib.mbn
+│   ├── cmnlib64.mbn
+│   ├── devcfg.mbn
+│   ├── dspso.bin
+│   ├── dtbo.img
+│   ├── hyp.mbn
+│   ├── imagefv.elf
+│   ├── km4.mbn
+│   ├── multi_image.mbn
+│   ├── qupv3fw.elf
+│   ├── recovery.img
+│   ├── storsec.mbn
+│   ├── tz.mbn
+│   ├── uefi_sec.mbn
+│   ├── vbmeta.img
+│   ├── vendor.img
+│   ├── xbl.elf
+│   └── xbl_config.elf
+├── sideload
+├── t.md
+└── windows
+    ├── AdbWinApi.dll
+    ├── AdbWinUsbApi.dll
+    ├── NOTICE.txt
+    ├── adb.exe
+    ├── api
+    ├── dmtracedump.exe
+    ├── etc1tool.exe
+    ├── fastboot.exe
+    ├── hprof-conv.exe
+    ├── lib64
+    ├── libwinpthread-1.dll
+    ├── make_f2fs.exe
+    ├── mke2fs.conf
+    ├── mke2fs.exe
+    ├── sideload.bat
+    ├── source.properties
+    ├── sqlite3.exe
+    └── systrace
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;找到 images 文件夹下 vendor.img 文件，并解压至任意一个你可以找到的目录下。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;手机参照&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/8/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;此教程&lt;/a&gt;刷入第三方 Recovery&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;据反馈，使用 TWRP 刷入可能出现不开机情况。
+建议使用 OrangeFox 刷入。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;手机长按音量+和电源键进入第三方 Recovery。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在第三方 Recovery 中点击清除-高级清除。勾选 Davilk Cache + Cache + Data + System，滑动清除。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按返回键返回主界面，选择安装，找到你解压的 vendor.img 刷入到 Vendor 分区。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;返回到安装界面，找到你下载的 PE/Plus 刷机包，滑动刷入。&lt;strong&gt;不要勾选签名校验和自动重启&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按返回键回到主界面，选择清除-格式化 Data。输入 yes 确定。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PE/Plus 会将 Recovery 替换成 AOSP Recovery。如果不想 Recovery 被替换，请在开机前刷入 Magisk。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;刷入教程至此结束。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AOSP Recovery 现证实可以刷入 Magisk Installer&lt;/strong&gt;
+&lt;strong&gt;如果需要刷入 Magisk，直接在 AOSP Recovery 中刷入即可&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;不借助-recovery-刷入-magisk&#34;&gt;不借助 Recovery 刷入 Magisk&lt;/h2&gt;
+&lt;p&gt;解压 PE 刷机包，结构大致如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;├── META-INF
+│   └── com
+│       ├── android
+│       │   ├── metadata
+│       │   └── otacert
+│       └── google
+│           └── android
+│               ├── update-binary
+│               └── updater-script
+├── boot.img
+├── firmware-update
+│   ├── BTFM.bin
+│   ├── NON-HLOS.bin
+│   ├── abl.elf
+│   ├── aop.mbn
+│   ├── cmnlib.mbn
+│   ├── cmnlib64.mbn
+│   ├── devcfg.mbn
+│   ├── dspso.bin
+│   ├── dtbo.img
+│   ├── hyp.mbn
+│   ├── imagefv.elf
+│   ├── km4.mbn
+│   ├── multi_image.mbn
+│   ├── qupv3fw.elf
+│   ├── storsec.mbn
+│   ├── tz.mbn
+│   ├── uefi_sec.mbn
+│   ├── vbmeta.img
+│   ├── xbl.elf
+│   └── xbl_config.elf
+├── install
+│   └── bin
+│       ├── backuptool.functions
+│       └── backuptool.sh
+├── system.new.dat.br
+├── system.patch.dat
+└── system.transfer.list
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;找到其中的 boot.img 文件，复制至手机任何一个你可以找到的目录。&lt;/li&gt;
+&lt;li&gt;下载并安装 Magisk Manager，打开 Magisk Manager，点击 Magisk 旁的安装，点击“修补一个文件”。&lt;/li&gt;
+&lt;li&gt;选择你解压的 boot.img 文件，等待 Magisk Manager 修补完成。修补后的文件会自动存放于 Download 文件夹中。你需要将该文件传输至电脑任意一个你可以找到的目录。&lt;/li&gt;
+&lt;li&gt;配置 ADB 环境，手机进入 Fastboot 模式并连接电脑，电脑输入 &lt;code&gt;fastboot flash boot boot.img&lt;/code&gt;。输入完后回车。
+&lt;strong&gt;其中， boot.img 需要替换为你 boot.img 的文件地址。&lt;/strong&gt;
+如果你不知道怎么获取文件地址，或者觉得太过麻烦，&lt;em&gt;你其实只需要将文件用鼠标拖入命令框&lt;/em&gt;。&lt;/li&gt;
+&lt;li&gt;手机开机，享受你的 Magisk 吧~~&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>如何在 Redmi Note 7 Pro 上刷机？</title>
+        <link>https://blog.linioi.com/posts/11/</link>
+        <pubDate>Fri, 03 Apr 2020 11:56:06 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/11/</guid>
+        <description>&lt;p&gt;拿到手机后干什么？刷机！&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
+&lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
+&lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;刷机前请先看看最下面的乱七八糟的问题（&lt;/p&gt;
+&lt;p&gt;由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/10/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;来刷入。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 &lt;code&gt;violet&lt;/code&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;一得到这部手机&#34;&gt;一、得到这部手机&lt;/h2&gt;
+&lt;p&gt;小米商城已经没有了，去其它地方看看吧（&lt;/p&gt;
+&lt;h2 id=&#34;二解锁-bootloader&#34;&gt;二、解锁 Bootloader&lt;/h2&gt;
+&lt;p&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://www.miui.com/unlock/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;小米官方解锁页面&lt;/a&gt;申请权限并根据提示解锁。&lt;/p&gt;
+&lt;h2 id=&#34;三下载刷机所需文件&#34;&gt;三、下载刷机所需文件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Android Debug Bridge&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/command-line/adb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google 官方页面&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;具体下载和配置可参考少数派的&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/40471&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这篇&lt;/a&gt;文章。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果你使用一键刷入之类的应用，则不需要此操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recovery&lt;/p&gt;
+&lt;p&gt;目前我只推荐两个 Recovery：&lt;a class=&#34;link&#34; href=&#34;https://orangefox.download/zh-CN/device/violet&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OrangeFox&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1ASj4JaqCQBOdXF04gC8Y7Q&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LR.Team 定制版 TWRP&lt;/a&gt;（提取码：xipd）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;底包&lt;/p&gt;
+&lt;p&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://xiaomifirmwareupdater.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。&lt;/p&gt;
+&lt;p&gt;有的系统自带底包，我们可以不刷入底包。&lt;/p&gt;
+&lt;p&gt;如图，在 &lt;code&gt;Device&lt;/code&gt; 那搜索并选择 &lt;code&gt;violet&lt;/code&gt;  ，点击 &lt;code&gt;Download&lt;/code&gt; ，在跳转的页面中选择你需要的底包，点击 &lt;code&gt;Download&lt;/code&gt; 来下载。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/852c32cb62ffa.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/24/e39efa0905324.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷机包&lt;/p&gt;
+&lt;p&gt;看各位喜好啦~~&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四刷入-recovery&#34;&gt;四、刷入 Recovery&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;手机关机，&lt;strong&gt;长按 音量减键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;FASTBOOT&lt;/code&gt; 模式。用数据线把手机和电脑连接起来。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这里我以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 &lt;code&gt;recovery.img&lt;/code&gt; 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 &lt;code&gt;recovery.img&lt;/code&gt; 来使用 &lt;code&gt;fastboot&lt;/code&gt; 刷入。)&lt;/p&gt;
+&lt;p&gt;如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步&lt;del&gt;复杂&lt;/del&gt;的操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 cmd （或者其它终端），输入 &lt;code&gt;fastboot flash recovery 上一步解压的 recovery.img 的文件地址&lt;/code&gt; 。以下是一个示例：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash recovery D:\recovery.img
+Sending &amp;#39;recovery&amp;#39; (65536 KB)                      OKAY [  2.040s]
+Writing &amp;#39;recovery&amp;#39;                                 OKAY [  0.368s]
+Finished. Total time: 2.427s
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;如果出现 &lt;code&gt;&#39;fastboot&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。&lt;/code&gt; 说明你没有配置好 ADB 环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;在上一步的状态下，&lt;strong&gt;长按 音量加键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;Recovery&lt;/code&gt; 模式。（当然你也可以使用 &lt;code&gt;fastboot reboot recovery&lt;/code&gt; 来进入 &lt;code&gt;Recovery&lt;/code&gt; 模式，但是我没成功过（&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一般情况下，会出现一个英文界面，从上往下依次写着 &lt;code&gt;Mount&lt;/code&gt; &lt;code&gt;Dectypt&lt;/code&gt; ，这是让你解密 Data 。输入你的锁屏密码即可，记得输入完后点击右下角的勾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;经过十秒左右秒钟的解密后，不出意外会显示欢迎界面，点击屏幕下方勾即可。然后就是挂载 &lt;code&gt;System&lt;/code&gt; 的界面，滑动下方滑块即可。最后就进入了主界面。下图依次是 欢迎界面 &amp;ndash;&amp;gt; 挂载 &lt;code&gt;System&lt;/code&gt; 界面 &amp;ndash;&amp;gt; 主界面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/5bea670e5d857.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;欢迎界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/06/1da0444377e5b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载 System 界面&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/9e1ab647cc3a6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主界面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果需要改简体中文，点击底部的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; 右上角的齿轮图标 &amp;ndash;&amp;gt; &lt;code&gt;Regional&lt;/code&gt; &amp;ndash;&amp;gt; 点击 &lt;code&gt;Language&lt;/code&gt; 下的 &lt;code&gt;English&lt;/code&gt; ，选择 &lt;code&gt;Chinese Simplified&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;五刷入-rom&#34;&gt;五、刷入 ROM&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在上一步的状态下，返回主界面，点击下方的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;Manage Parttions&lt;/code&gt; &amp;ndash;&amp;gt; 选择 &lt;code&gt;Data&lt;/code&gt; &amp;ndash;&amp;gt; 点击右下方的勾 &amp;ndash;&amp;gt; 点击 &lt;code&gt;Format Data&lt;/code&gt; &amp;ndash;&amp;gt; 输入 &lt;code&gt;yes&lt;/code&gt; 来格式化 Data 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在上一步的状态下，回到主界面，点击下方的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;Reboot&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;Recovery&lt;/code&gt; 来重启一次 Recovery 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启到 Recovery 后，点击下方的 &lt;code&gt;Wipe&lt;/code&gt; &amp;gt; 选择你想选择清除的分区（以下是一个示例） &amp;gt; 滑动下方滑块来清除数据。清除完成后再次重启一次 Recovery 。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://global.cdn.mikupics.cn/2020/04/03/951d19cd95606.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;示例&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过数据线将刷机包，底包传到手机。先选择底包，滑动下方滑块来刷入，再刷入系统（有的系统自带底包，我们不需要额外刷入底包）。刷入完成后就可以重启到系统。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;六φ&#34;&gt;六、φ(゜▽゜*)♪&lt;/h2&gt;
+&lt;p&gt;不出意外，我们已经成功刷入了一个系统！！！&lt;/p&gt;
+&lt;h2 id=&#34;七乱七八糟的问题&#34;&gt;七、乱七八糟的问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;重启到 Recovery 后显示 &lt;code&gt;The system has been destoryed&lt;/code&gt; （可能只会出现在官方 MIUI 系统上）？&lt;/p&gt;
+&lt;p&gt;这个与 AVB 2.0 有关。具体请参见 &lt;a class=&#34;link&#34; href=&#34;https://source.android.com/security/verifiedboot/avb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google 官方说明&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;解决方法是打开你下载的刷机包（只要不是官方 MIUI 的刷机包），解压 &lt;code&gt;vbmeta.img&lt;/code&gt; （可能在 &lt;code&gt;/firmware-update&lt;/code&gt; 下）到任意一个位置。手机进入 &lt;code&gt;FASTBOOT&lt;/code&gt; 模式，电脑打开 cmd 输入 &lt;code&gt;fastboot flash vbmeta 解压的 vbmeta.img 的文件地址&lt;/code&gt; ，等待刷入完成，重启到 Recovery 即可。以下是一条示例命令：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\XXXX&amp;gt;fastboot flash vbmeta D:\vbmeta.img
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;发现 Recovery 被替换？&lt;/p&gt;
+&lt;p&gt;刷入 &lt;a class=&#34;link&#34; href=&#34;https://github.com/topjohnwu/Magisk/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Magisk&lt;/a&gt; 。（如果你不想使用 Magisk，可以试试 OrangeFox 的防止还原 Recovery 的功能，在 &lt;code&gt;设置&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;OTA&lt;/code&gt; 下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google 开机向导无法跳过？&lt;/p&gt;
+&lt;p&gt;看&lt;a class=&#34;link&#34; href=&#34;https://bbs.letitfly.me/d/856&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;。（在刷机前退出原先系统登录的 Google 账户就行啦~&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从 Dyneteve 的系统线刷到 MIUI 出现 &lt;code&gt;The system has destoryed&lt;/code&gt; ？&lt;/p&gt;
+&lt;p&gt;找售后！！！&lt;/p&gt;
+&lt;p&gt;你可能线刷选择了上锁（&lt;/p&gt;
+&lt;p&gt;所以说，刷过 Dyneteve 的系统后，回 MIUI &lt;strong&gt;千万不能上锁&lt;/strong&gt;（（（（（&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷机后第一次开机无限重启到 Recovery ？&lt;/p&gt;
+&lt;p&gt;大概率是你没格式化 Data （建议去格式化一下&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recovery 乱码？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;格式化 Data&lt;/li&gt;
+&lt;li&gt;换 Recovery&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Camera 一直停止运行？&lt;/p&gt;
+&lt;p&gt;如果你用的是基于 LOS 的系统的话，那么停止运行可能是因为你的系统中没有 GApps 。选择以下的其中之一从 Recovery 刷入即可：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://opengapps.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenGApps&lt;/a&gt;，选择  &lt;code&gt;ARM64&lt;/code&gt; &lt;code&gt;pico&lt;/code&gt; ，&lt;code&gt;Android&lt;/code&gt; 那一列根据你的系统的安卓版本选择。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nikgapps.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NikGApps&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum.xda-developers.com/android/software/custom-bitgapps-android-t4012165/post81060589#post81060589&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BiTGApps&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://microg.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MicroG&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你确定已经安装了 GApps，仍然停止运行，那么可以换一个 Google Camera 的版本试试。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

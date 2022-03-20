@@ -1,26 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>shell on 清絮的博客</title>
-    <link>https://blog.linioi.com/tags/shell/</link>
-    <description>Recent content in shell on 清絮的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Mar 2020 23:42:43 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/shell/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DD 指令用法详解</title>
-      <link>https://blog.linioi.com/posts/6/</link>
-      <pubDate>Sun, 29 Mar 2020 23:42:43 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/6/</guid>
-      <description>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
- dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
- 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
- 参数注释：
- if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。   注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
-  count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。   ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
- dd指令应用实例  将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>shell on 清絮的博客</title>
+        <link>https://blog.linioi.com/tags/shell/</link>
+        <description>Recent content in shell on 清絮的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 29 Mar 2020 23:42:43 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/shell/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>DD 指令用法详解</title>
+        <link>https://blog.linioi.com/posts/6/</link>
+        <pubDate>Sun, 29 Mar 2020 23:42:43 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/6/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;dd-指令的解释&#34;&gt;dd 指令的解释&lt;/h2&gt;
+&lt;p&gt;dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：指定数字的地方若以下列字符结尾，则乘以相应的数字
+例如&lt;code&gt;b=512；c=1；k=1024；w=2&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;参数注释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&lt;code&gt;&amp;lt; if=input file &amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&lt;code&gt;&amp;lt; of=output file &amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ibs=&lt;!-- raw HTML omitted --&gt;：一次读入bytes个字节，即指定一个块大小为bytes个字节。&lt;/li&gt;
+&lt;li&gt;obs=&lt;!-- raw HTML omitted --&gt;：一次输出bytes个字节，即指定一个块大小为bytes个字节。&lt;/li&gt;
+&lt;li&gt;bs=&lt;!-- raw HTML omitted --&gt;：同时设置读入/输出的块大小为bytes个字节。&lt;/li&gt;
+&lt;li&gt;cbs=&lt;!-- raw HTML omitted --&gt;：一次转换bytes个字节，即指定转换缓冲区大小。&lt;/li&gt;
+&lt;li&gt;skip=&lt;!-- raw HTML omitted --&gt;：从输入文件开头跳过blocks个块后再开始复制。&lt;/li&gt;
+&lt;li&gt;seek=&lt;!-- raw HTML omitted --&gt;：从输出文件开头跳过blocks个块后再开始复制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。&lt;/li&gt;
+&lt;li&gt;conv=conversion：用指定的参数转换文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ascii：转换ebcdic为ascii
+ebcdic：转换ascii为ebcdic
+ibm：转换ascii为alternate ebcdic
+block：把每一行转换为长度为cbs，不足部分用空格填充
+unblock：使每一行的长度都为cbs，不足部分用空格填充
+lcase：把大写字符转换为小写字符
+ucase：把小写字符转换为大写字符
+swab：交换输入的每对字节
+noerror：出错时不停止
+notrunc：不截短输出文件
+sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;dd指令应用实例&#34;&gt;dd指令应用实例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将本地的/dev/hdb整盘备份到/dev/hdd
+&lt;code&gt;#dd if=/dev/hdb of=/dev/hdd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将/dev/hdb全盘数据备份到指定路径的image文件
+&lt;code&gt;#dd if=/dev/hdb of=/root/image&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将备份文件恢复到指定盘
+&lt;code&gt;#dd if=/root/image of=/dev/hdb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径
+&lt;code&gt;#dd if=/dev/hdb | gzip &amp;gt; /root/image.gz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将压缩的备份文件恢复到指定盘
+&lt;code&gt;#gzip -dc /root/image.gz | dd of=/dev/hdb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;备份与恢复MBR
+备份磁盘开始的512个字节大小的MBR信息到指定文件：
+&lt;code&gt;#dd if=/dev/hda of=/root/image count=1 bs=512&lt;/code&gt;
+恢复：
+&lt;code&gt;#dd if=/root/image of=/dev/had&lt;/code&gt;
+将备份的MBR信息写到磁盘开始部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;count=1指仅拷贝一个块；bs=512指块大小为512个字节。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;备份软盘
+&lt;code&gt;#dd if=/dev/fd0 of=disk.img count=1 bs=1440k&lt;/code&gt;
+(即块大小为1.44M)&lt;/li&gt;
+&lt;li&gt;拷贝内存内容到硬盘
+&lt;code&gt;#dd if=/dev/mem of=/root/mem.bin bs=1024&lt;/code&gt;
+(指定块大小为1k)&lt;/li&gt;
+&lt;li&gt;拷贝光盘内容到指定文件夹，并保存为cd.iso文件
+&lt;code&gt;#dd if=/dev/cdrom(hdc) of=/root/cd.iso&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;增加swap分区文件大小
+第一步：创建一个大小为256M的文件：
+&lt;code&gt;#dd if=/dev/zero of=/swapfile bs=1024 count=262144&lt;/code&gt;
+第二步：把这个文件变成swap文件：
+&lt;code&gt;#mkswap /swapfile&lt;/code&gt;
+第三步：启用这个swap文件：
+&lt;code&gt;#swapon /swapfile&lt;/code&gt;
+第四步：编辑/etc/fstab文件，使在每次开机时自动加载swap文件：
+&lt;code&gt;swapfile    swap    swap    default   0 0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;销毁磁盘数据
+&lt;code&gt;#dd if=/dev/urandom of=/dev/hda1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：利用随机的数据填充硬盘，在某些必要的场合可以用来&lt;em&gt;销毁数据&lt;/em&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;测试硬盘的读写速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;64k | dd of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过以上两个命令输出的命令执行时间，可以计算出硬盘的读、写速度。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;确定硬盘的最佳块大小：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;250000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/zero bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8192&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;125000&lt;/span&gt; of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/root/1Gb.file
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过比较以上命令输出中所显示的命令执行时间，即可确定系统最佳的块大小。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;修复硬盘：
+&lt;code&gt;#dd if=/dev/sda of=/dev/sda&lt;/code&gt;或&lt;code&gt;dd if=/dev/hda of=/dev/hda&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若硬盘较长时间(一年以上)放置不使用，磁盘上会产生magnetic flux point。当磁头读到这些区域时会遇到困难，并可能导致I/O错误。
+当这种情况影响到硬盘的第一个扇区时，可能导致硬盘报废。上边的命令有可能使这些数据起死回生。并且这个过程是&lt;strong&gt;安全、高效&lt;/strong&gt;的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;利用netcat远程备份
+&lt;code&gt;#dd if=/dev/hda bs=16065b | netcat &amp;lt; targethost-IP &amp;gt; 1234&lt;/code&gt;
+在源主机上执行此命令备份/dev/hda
+&lt;code&gt;#netcat -l -p 1234 | dd of=/dev/hdc bs=16065b&lt;/code&gt;
+在目的主机上执行此命令来接收数据并写入/dev/hdc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | bzip2 &amp;gt; partition.img
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;netcat -l -p &lt;span style=&#34;color:#ae81ff&#34;&gt;1234&lt;/span&gt; | gzip &amp;gt; partition.img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上两条指令是目的主机指令的变化分别采用bzip2、gzip对数据进行压缩，并将备份文件保存在当前目录。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将一个大视频文件的第i个字节的值改成0x41（大写字母A的ASCII值）
+&lt;code&gt;#echo A | dd of=bigfile seek=$i bs=1 count=1 conv=notrunc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;建立linux虚拟盘，用文件模拟磁盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在进行linux的实验中，如果没有多余的硬盘来做测试。则可以在linux下使用文件来模拟磁盘，以供测试目的。
+其模拟过程如下所示，摘录自《Oracle数据库核心技术与实务详解－教你如何成为Oracle 10g OCP》一书。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1)以root用户创建一个ASM磁盘所在的目录。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#mkdir –p /u01/asmdisks&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book u01&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# cd asmdisks&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk1 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk2 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk3 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk4 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk5 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dd if=/dev/zero of=asm_disk6 bs=1024k count=400&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;3)将这些文件与裸设备关联。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# chmod 777 asm_disk*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop1 asm_disk1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop2 asm_disk2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop3 asm_disk3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop4 asm_disk4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop5 asm_disk5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@book asmdisks&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# losetup /dev/loop6 asm_disk6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：如果要删除通过dd模拟出的虚拟磁盘文件的话，直接删除模拟出的磁盘文件
+（也就是asm_disk1、asm_disk2…asm_disk6）还不够，还必须执行losetup -d /dev/loopN，在这里N从1到6。否则，磁盘文件所占用的磁盘空间不能释放&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

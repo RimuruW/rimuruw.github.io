@@ -1,27 +1,147 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cloudflare on 清絮的博客</title>
-    <link>https://blog.linioi.com/tags/cloudflare/</link>
-    <description>Recent content in Cloudflare on 清絮的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Nov 2020 13:54:04 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>利用 Cloudflare Workers Site 部署静态博客</title>
-      <link>https://blog.linioi.com/posts/deploy-blog-to-cf/</link>
-      <pubDate>Sun, 29 Nov 2020 13:54:04 +0000</pubDate>
-      
-      <guid>https://blog.linioi.com/posts/deploy-blog-to-cf/</guid>
-      <description>前言 作为一个 很少更新博客 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。
-可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）
-为什么选择 Cloudflare 引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」
-当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。
-Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。
-在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。
-但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：Cloudflare Workers KV 向 Workers Free Plan 免费开放。
-虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Cloudflare on 清絮的博客</title>
+        <link>https://blog.linioi.com/tags/cloudflare/</link>
+        <description>Recent content in Cloudflare on 清絮的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 29 Nov 2020 13:54:04 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>利用 Cloudflare Workers Site 部署静态博客</title>
+        <link>https://blog.linioi.com/posts/deploy-blog-to-cf/</link>
+        <pubDate>Sun, 29 Nov 2020 13:54:04 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/deploy-blog-to-cf/</guid>
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;作为一个 &lt;del&gt;很少更新博客&lt;/del&gt; 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。&lt;/p&gt;
+&lt;p&gt;可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。
+（关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）&lt;/p&gt;
+&lt;h3 id=&#34;为什么选择-cloudflare&#34;&gt;为什么选择 Cloudflare&lt;/h3&gt;
+&lt;p&gt;引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」&lt;/p&gt;
+&lt;p&gt;当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。&lt;/p&gt;
+&lt;p&gt;Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是&lt;strong&gt;直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据&lt;/strong&gt;。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。&lt;/p&gt;
+&lt;p&gt;在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。&lt;/p&gt;
+&lt;p&gt;但令我不敢想象的是，Cloudflare 于 2020 年 11 月 28 日正式宣布：&lt;a class=&#34;link&#34; href=&#34;https://blog.cloudflare.com/workers-kv-free-tier/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloudflare Workers KV 向 Workers Free Plan 免费开放&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。&lt;/p&gt;
+&lt;p&gt;不仅如此，Cloudflare 还特意把 Workers KV 的单个文件大小限制由 10MB 调整到了 25MB，这无疑更方便了网站静态资源的存放。而每天 Workers 10w 次免费调用次数我想对于绝大多数站长还是绰绰有余的。&lt;/p&gt;
+&lt;p&gt;全球边缘网络加速 + 慷慨大方的免费额度，既然找不到拒绝的理由，那么就勉为其难地接受吧~~&lt;/p&gt;
+&lt;h2 id=&#34;常规部署&#34;&gt;常规部署&lt;/h2&gt;
+&lt;h3 id=&#34;准备-cli-部署工具&#34;&gt;准备 CLI 部署工具&lt;/h3&gt;
+&lt;p&gt;开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wrangler&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Wrangler 可以通过 &lt;code&gt;npm&lt;/code&gt; 或 &lt;code&gt;cargo&lt;/code&gt; 安装。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm i @cloudflare/wrangler -g
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 你也可以使用 Yarn 安装 Wrangler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# yarn global add @cloudflare/wrangler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo install wrangler
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{% note info simple %}
+经过实测，Wrangler 可能无法安装在 ARM 架构的设备上。如果可以，尽量使用 x86 设备。
+{% endnote %}&lt;/p&gt;
+&lt;h3 id=&#34;获取-api-token&#34;&gt;获取 API Token&lt;/h3&gt;
+&lt;p&gt;如果你没有一个 Cloudflare 帐号，则需要先&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/sign-up&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;注册一个 Cloudflare 帐号&lt;/a&gt;，并绑定你的自定义域名。&lt;/p&gt;
+&lt;p&gt;使用 Wrangler 前需要先 &lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/profile/api-tokens&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;申请一个 API Token&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。&lt;/p&gt;
+&lt;h3 id=&#34;初始化项目&#34;&gt;初始化项目&lt;/h3&gt;
+&lt;p&gt;在博客源码的根目录输入如下命令进行初始化&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# my-static-blog 是目录名称，你可以改成你喜欢的其他名字&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler init --site my-static-blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。&lt;/p&gt;
+&lt;p&gt;先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;bucket&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./public&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;entry-point&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;workers-site&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Workers Site 配置代码目录，默认 workers-site 目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;account_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;workers_dev&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 是否启用 workers.dev 子域名，推荐不启用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;route&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blog.linioi.com/*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Workers 路由配置，请指向你想绑定的自定义域名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;zone_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 域名的 Zone ID，可在 Cloudflare 仪表盘查看&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;完成 wrangler.toml 的配置后，运行&lt;code&gt;wrangler config&lt;/code&gt;命令并依照命令行提示输入上一步获取的 API Token。&lt;/p&gt;
+&lt;h3 id=&#34;预览与部署&#34;&gt;预览与部署&lt;/h3&gt;
+&lt;p&gt;配置完成后，我们可以先输入如下命令预览一下部署效果。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler preview --watch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会上传配置文件中设定的&lt;code&gt;bucket&lt;/code&gt;路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。&lt;/p&gt;
+&lt;p&gt;确认无误后，输入如下命令进行部署&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler publish
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置域名-dns-解析&#34;&gt;配置域名 DNS 解析&lt;/h3&gt;
+&lt;p&gt;上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你在前面修改配置文件时设置了「workers_dev=true」，则 Cloudflare 会自动分配给你一个三级域名，你可以在 DNS 解析设置处创建你的自定义域名的 CNAME 解析，指向 Cloudflare 分配的三级域名。&lt;/li&gt;
+&lt;li&gt;如果你在前面修改配置文件时设置了「workers_dev=false」，则在 DNS 解析设置处创建你自定义域名的 A 解析，指向 IP &lt;code&gt;2.2.2.2&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;大功告成&#34;&gt;大功告成！&lt;/h3&gt;
+&lt;p&gt;如果一切正常，现在你可以输入你的自定义域名即可访问
+你的博客。如果你想要实现更多的玩法，可以自己编辑 workers-site 下的 index.js。&lt;/p&gt;
+&lt;h2 id=&#34;使用-github-action-实现持续集成&#34;&gt;使用 GitHub Action 实现持续集成&lt;/h2&gt;
+&lt;p&gt;如果你从未接触过 GitHub Action 自动部署，建议你先看一下我写的另一篇文章  &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/archives/9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Action 实现 Hexo 博客持续集成&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;与我写的另一篇文章略有不同，这里需要将文件推送到 Cloudflare Workers Site。我们可以 Cloudflare 官方 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler-action&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;wrangler-action&lt;/a&gt; 轻松实现这一过程。&lt;/p&gt;
+&lt;p&gt;wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。&lt;/p&gt;
+&lt;p&gt;然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 &lt;code&gt;CF_WORKERS_TOKEN&lt;/code&gt;，内容为你申请的 API Token。&lt;/p&gt;
+&lt;p&gt;最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;apiToken&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.CF_WORKERS_TOKEN }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;我的-github-action-配置文件仅供参考&#34;&gt;我的 GitHub Action 配置文件（仅供参考）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Builder For Blog&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#  schedule:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#    - cron: &amp;#39;0 21 * * *&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build and deploy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;strategy&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;matrix&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          - &lt;span style=&#34;color:#ae81ff&#34;&gt;12.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;x&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Use Node.js ${{ matrix.node-version }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-node@v1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ matrix.node-version }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Clone themes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          &lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install hexo-cli -g
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files and gulp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          &lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; gulp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;apiToken&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.CF_WORKERS_TOKEN }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

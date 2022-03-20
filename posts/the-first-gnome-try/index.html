@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看
  这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾）  记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
@@ -11,7 +11,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/the-first-gnome-try/'>
 
-<link rel="stylesheet" href="/scss/style.min.b949db8bead9abdc40291b93383b8da6abc3aa62e74f5580356c06ddbb792dab.css"><meta property='og:title' content='记 GNOME 的初体验'>
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='记 GNOME 的初体验'>
 <meta property='og:description' content='2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看
  这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾）  记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
@@ -36,8 +36,8 @@
 
     </head>
     <body class="
-    article-page has-toc
-">
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -60,25 +60,200 @@
         }
     })();
 </script>
-<div class="container main-container flex 
-    
-        extended
-    
-">
-    
-        <div id="article-toolbar">
-            <a href="/" class="back-home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu1d83b9e8d28c2a8fa0449695166a4930_1210632_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">✨</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">清絮的博客</a></h1>
+            <h2 class="site-description">人生如逆旅，我亦是行人。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' target="_blank">
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
 </svg>
 
 
 
-                <span>返回</span>
+                
+                <span>首页</span>
             </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/talk' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-note" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="13" y1="20" x2="20" y2="13" />
+  <path d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+</svg>
+                
+                <span>说说</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search' >
+                
+                
+                    
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
         </div>
-    
+    </ol>
+</aside>
 <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
@@ -98,11 +273,13 @@
     </header>
     
 
-    <h2 class="article-title">
-        <a href="/posts/the-first-gnome-try/">记 GNOME 的初体验</a>
-    </h2>
-
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/the-first-gnome-try/">记 GNOME 的初体验</a>
+        </h2>
     
+        
+    </div>
 
     
     <footer class="article-time">
@@ -137,6 +314,8 @@
             </div>
         
     </footer>
+    
+
     
 </div>
 </header>
@@ -209,18 +388,18 @@
 <p>After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start"  target="_blank" rel="noopener"
     >start KMS early</a>. Another possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units"  target="_blank" rel="noopener"
     >edit the systemd service</a> and either set its type to &ldquo;idle&rdquo; or add a small delay:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
- Type<span style="color:#f92672">=</span>idle
-</code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
- ExecStartPre<span style="color:#f92672">=</span>/bin/sleep <span style="color:#ae81ff">2</span>
-</code></pre></div><p>If a longer delay is required, increase the delay time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span> Type<span style="color:#f92672">=</span>idle
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span> ExecStartPre<span style="color:#f92672">=</span>/bin/sleep <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>If a longer delay is required, increase the delay time.</p>
 <p>看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？</p>
 <p>于是继续顺着超链接看了下去。</p>
 <p>嗯，在<code>/etc/mkinitcpio.conf</code>添加模块（MODULES），我是 AMD 核显所以应该添加<code>amdgpu</code>。</p>
 <p>所以应该是</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
-</code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
+</span></span></code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
 <p>确保这次开机不是偶然，我特意再重启了一遍，然后&hellip;&hellip;又卡在那个光标了。</p>
 <p>我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（</p>
 <p>抱着破罐子破摔的态度，我开始尝试我能想到的玄学方法，比如安装 linux-zen 内核（据说专为 Arch Linux 用户定制，对笔记本有玄学优化的神奇内核）。然后，就真开机了&hellip;&hellip;</p>
@@ -402,14 +581,14 @@
 
     
 
-    <aside class="related-contents--wrapper">
     
-    
-        <h2 class="section-title">相关文章</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
+
+<aside class="related-contents--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-contents">
+        <div class="flex article-list--tile">
+            
                 
-                    
 <article class="has-image">
     <a href="/posts/clash-on-arch/">
         
@@ -431,8 +610,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/18/">
         
@@ -443,8 +622,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/5/">
         
@@ -455,8 +634,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/minecraft-build/">
         
@@ -467,8 +646,8 @@
         </div>
     </a>
 </article>
+            
                 
-                    
 <article class="">
     <a href="/posts/6/">
         
@@ -479,10 +658,9 @@
         </div>
     </a>
 </article>
-                
-            </div>
+            
         </div>
-    
+    </div>
 </aside>
 
      
@@ -518,7 +696,7 @@
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -602,42 +780,6 @@
             >
 
             </main>
-    
-        <aside class="sidebar right-sidebar sticky">
-            <section class="widget archives">
-                <div class="widget-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-                </div>
-                <h2 class="widget-title section-title">目录</h2>
-                
-                <div class="widget--toc">
-                    <nav id="TableOfContents">
-  <ol>
-    <li><a href="#无奈地一次-gnome-尝试">无奈地一次 GNOME 尝试</a></li>
-    <li><a href="#意料之外gnome-给我的惊喜">意料之外：GNOME 给我的惊喜</a></li>
-    <li><a href="#与-gnome-bug-的搏斗">与 GNOME bug 的搏斗</a>
-      <ol>
-        <li><a href="#第一回合下马威gdm-的罢工">第一回合：下马威，GDM 的罢工</a></li>
-        <li><a href="#第二回合下酒菜薛定谔的桌面动画">第二回合：下酒菜，薛定谔的桌面动画</a></li>
-        <li><a href="#第三回合压轴戏无尽-bug">第三回合：压轴戏，无尽 bug</a></li>
-      </ol>
-    </li>
-    <li><a href="#gnome-中我的扩展与美化">GNOME 中我的扩展与美化</a></li>
-    <li><a href="#使用小结">使用小结</a></li>
-  </ol>
-</nav>
-                </div>
-            </section>
-        </aside>
     
 
         </div>
