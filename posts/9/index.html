@@ -2,29 +2,29 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
- 你要先清楚某些东西…  在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub   据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
+你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-  在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字：  This is the workflow execution time which may be different than the billed time.'><title>GitHub Action 实现 Hexo 博客持续集成</title>
+在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.'><title>GitHub Action 实现 Hexo 博客持续集成</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/9/'>
 
 <link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='GitHub Action 实现 Hexo 博客持续集成'>
 <meta property='og:description' content='无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
- 你要先清楚某些东西…  在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub   据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
+你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-  在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字：  This is the workflow execution time which may be different than the billed time.'>
+在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.'>
 <meta property='og:url' content='https://blog.linioi.com/posts/9/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub Action' /><meta property='article:tag' content='Hexo' /><meta property='article:published_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='article:modified_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.jpg' />
 <meta name="twitter:site" content="@QingxuMo">
     <meta name="twitter:creator" content="@QingxuMo"><meta name="twitter:title" content="GitHub Action 实现 Hexo 博客持续集成">
 <meta name="twitter:description" content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
- 你要先清楚某些东西…  在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub   据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
+你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-  在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字：  This is the workflow execution time which may be different than the billed time."><meta name="twitter:card" content="summary_large_image">
+在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
