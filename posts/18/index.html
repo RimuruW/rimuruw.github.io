@@ -315,7 +315,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 9 分钟
+                    阅读时长: 10 分钟
                 </time>
             </div>
         
@@ -501,7 +501,7 @@
 		data-flex-basis="334px"
 	
 ></p>
-<p>一般情况下，在该界面中，深蓝色的分区是主分区，浅蓝色的分区是扩展分区，绿色的是空闲没有使用的空间。我们现在要做的是选择一个剩余空间足够大的分区，空出来给我们的 Arch Linux 使用。</p>
+<p>一般情况下，在该界面中，深蓝色的分区是主分区，浅蓝色的分区是扩展分区，绿色的是空闲没有使用的空间。我们现在要做的是选择一个剩余空间足够大的分区，空出来给我们的 Arch Linux 使用。因为 Windows 版本不同，相应的分区的名字和颜色可能会有所不同，但是我相信聪明的你一定能发现这些不同的名字其实是同一个意思的。</p>
 <p><em>以下分为两种情况处理</em></p>
 <ul>
 <li>
@@ -526,9 +526,10 @@
 <p>Arch Linux 单系统安装可以跳过这步。</p>
 <p>Linux 和 Windows 对硬件时钟的处理方式不同，如果不加以特别设置容易造成两个系统时间混乱。</p>
 <p>Arch Wiki 及我个人推荐的方法是设置 Windows 时区偏移。</p>
-<p>Windows 下使用管理员权限执行下列命令即可。</p>
+<p>Windows 下<strong>使用管理员权限</strong>执行下列命令即可。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>reg add <span style="color:#e6db74">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
-</span></span></code></pre></div><h3 id="电脑环境确认">电脑环境确认</h3>
+</span></span></code></pre></div><p>直接执行此命令可能会导致 Windows 显示的当前时间向后偏移 8 个小时。请不用担心，安装 Arch Linux 并联网校时之后时间会恢复正常。</p>
+<h3 id="电脑环境确认">电脑环境确认</h3>
 <p>进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。</p>
 <ul>
 <li>电脑使用传统 BIOS 引导+MBR 分区，且电脑已经安装一个运行正常的 Windows。电脑无与 Arch Linux 安装有关的硬件问题。</li>
@@ -614,9 +615,10 @@
 <ul>
 <li>如果你能连接有线网络，最好的办法是直接插网线连接网络。</li>
 <li>如果你电脑有无线网卡的话（绝大多数电脑应该都有），则可以尝试通过 WiFi 连接。我们可以通过 archiso 内置的 iwd 软件完成这一过程。</li>
+<li>如果你操作半天还是发现自己不会用 iwd 的话，直接使用 Android 手机直接给电脑 USB 共享网络也不失为一个不错的选择。</li>
 </ul>
 <blockquote>
-<p>2020 年 7 月的 ArchISO 砍掉了 netctl，经典的 wifi-menu 已被 iwctl 取代。如果你在某个教程里还看到了「使用 wifi-menu 连接 WiFi」这样的字样，请提醒作者更新教程……</p>
+<p>2020 年 7 月的 ArchISO 砍掉了 netctl，经典的 wifi-menu 已被 iwctl 取代。如果你在某个教程里还看到了「使用 wifi-menu 连接 WiFi」的字样，请提醒作者更新教程……</p>
 <p><del>所以 wpa_supplicant 使用者竟成最后赢家。</del></p>
 </blockquote>
 <p>在使用 iwctl 之前，我们需要先检查一下你的网卡是否被物理禁用或软件禁用。</p>
@@ -687,12 +689,74 @@
 <p>对于怎么分区以及分多大我先要进行一些说明。你可能在其他 Arch Linux 安装教程或者其他别的 Linux 发行版安装教程中看到他们关于分区大小的各种理论或规范，实际上，如何分区、分区多大是没有固定标准的。当你对 Linux 足够熟悉并清楚该如何操作，不分区都是可以的，只要完成 Windows 的引导要求即可。</p>
 <p>这里介绍一个比较通行的分区方法，同时也建议按照如下顺序进行分区。</p>
 <ul>
-<li><code>/boot</code>分区，用来存储启动信息，该分区一般400M足够。
-<strong>UEFI 引导在这时不要分出<code>/boot</code>分区，因为要双系统启动需要把 Windows 的 EFI 分区挂载到<code>/boot</code>上。</strong></li>
-<li><code>/swap</code>分区，交换分区，相当于Windows的虚拟内存。该分区大小视电脑内存大小而定。电脑小于或等于2G内存则建议设为内存大小的2倍及以上，即 4G，不过太大也没有意义。电脑内存大于2G可以设置为 4G。如果你的内存足够大（大于或等于 8G），也可以考虑不分这个区。你也可以设置交换文件代替交换分区，这里不进行介绍。</li>
-<li><code>/home</code>分区（可选），即用户分区，用于存储用户的数据。该分区是用户自己数据存储的地方。如果你不单独分出 <code>home</code> 分区，则你的所有数据将仅存储在 <code>/mnt </code>分区。你可以将 <code>/mnt</code> 分区理解为 Windows 下的 C 盘，<code>/home</code> 是 Windows 下的 D 盘、E 盘。对于新手，建议不创建单独的 <code>/home</code> 分区；对于有一点经验的用户，建议先创建 <code>/mnt</code> 再创建 <code>/home</code>，并把磁盘剩余的所有空间都留给 <code>/home</code>。</li>
+<li><code>/boot</code>分区，用来存储启动信息（有时候内核也会安装在这个分区），该分区一般 512M 足够。BIOS 引导可以不单独分这个分区，但是 UEFI 引导<strong>必须</strong>有该分区（或者能完成引导要求的类似分区）作为 EFI 分区。双系统启动可以在此时不分出<code>/boot</code>分区，因为双系统启动可以直接把 Windows 的 EFI 分区挂载到<code>/boot</code>上，但是据反馈因为 Windows 的 EFI 分区只有 100MB，在 Windows 11 上可能出现分区大小不足的问题。</li>
+<li><code>/swap</code>分区，交换分区，该分区功能很多，不等同于 Windows 的虚拟内存，建议每一个用户至少创建一个 2G 大小的交换分区。该分区大小视电脑内存大小而定。电脑小于或等于 2G 内存则建议设为内存大小的 2 倍及以上，即 4G，不过太大也没有意义。电脑内存大于 2G 可以设置为 4G。你也可以设置交换文件代替交换分区，这里不进行介绍。请不要担心 swap 分区会造成磁盘读写量过多而不设立 swap 分区（这通常是某些被厨子迫害到 ptsd 的 Mac 玩家的奇怪想法），关于 swap 分区的更多介绍可以参阅<a class="link" href="https://farseerfc.me/zhs/in-defence-of-swap.html"  target="_blank" rel="noopener"
+    > 【译】替 swap 辩护：常见的误解</a> 和 <a class="link" href="https://farseerfc.me/zhs/followup-about-swap.html"  target="_blank" rel="noopener"
+    >关于 swap 的一些补充</a>。</li>
+<li><code>/home</code>分区（可选），即用户分区，用于存储用户的数据。该分区是用户自己数据存储的地方。如果你不单独分出 <code>home</code> 分区，则你的所有数据将仅存储在 <code>/mnt </code>分区。你可以将 <code>/mnt</code> 分区理解为 Windows 下的 C 盘，<code>/home</code> 是 Windows 下的 D 盘、E 盘。对于新手，建议不创建单独的 <code>/home</code> 分区；对于有一点经验并有相关需求的用户，建议先创建 <code>/mnt</code> 再创建 <code>/home</code>，并把磁盘剩余的所有空间都留给 <code>/home</code>。</li>
 <li><code>/mnt</code>分区，即根目录，用来存储系统和将来安装的软件等数据，如果你创建单独的 <code>/home</code> 分区，则建议该分区大小不小于 20G，根据你的需求和剩余空间大小而定；如果不创建单独的 <code>/home</code> 分区，请把磁盘所有剩余空间留给 <code>/mnt</code>。</li>
 </ul>
+<h3 id="以下是-arch-linux-官方推荐的分区方式">以下是 Arch Linux 官方推荐的分区方式</h3>
+<ul>
+<li>UEFI 与 GPT 分区</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">挂载点</th>
+<th style="text-align:center">分区</th>
+<th style="text-align:center">分区类型</th>
+<th style="text-align:center">推荐大小</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/mnt/boot</td>
+<td style="text-align:center"><em>/dev/efi_system_partition</em></td>
+<td style="text-align:center">EFI 系统分区</td>
+<td style="text-align:center">至少 300MB</td>
+</tr>
+<tr>
+<td style="text-align:center">[SWAP]</td>
+<td style="text-align:center"><em>/dev/swap_partition</em></td>
+<td style="text-align:center">Linux swap</td>
+<td style="text-align:center">大于512MB</td>
+</tr>
+<tr>
+<td style="text-align:center">/mnt</td>
+<td style="text-align:center">/dev/root_partition</td>
+<td style="text-align:center">Linux x86-64 root (/)</td>
+<td style="text-align:center">设备的所有剩余空间</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>BIOS 与 MBR 分区</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">挂载点</th>
+<th style="text-align:center">分区</th>
+<th style="text-align:center">分区类型</th>
+<th style="text-align:center">推荐大小</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">[SWAP]</td>
+<td style="text-align:center"><em>/dev/swap_partition</em></td>
+<td style="text-align:center">Linux swap</td>
+<td style="text-align:center">大于512MB</td>
+</tr>
+<tr>
+<td style="text-align:center">/mnt</td>
+<td style="text-align:center">/dev/root_partition</td>
+<td style="text-align:center">Linux x86-64 root (/)</td>
+<td style="text-align:center">设备的所有剩余空间</td>
+</tr>
+</tbody>
+</table></div>
 <blockquote>
 <p>如果电脑是传统BIOS启动，选择<code>[ New ]</code>回车后有可能需要选择建立<code>主分区</code>还是<code>扩展分区</code>。(该情形会在硬盘中没有分区或者主分区不足4个时询问。如果硬盘已经有4个主分区则不会询问，默认建立扩展分区。)
 EFI启动可以建立无限个主分区，所以不会询问，直接建立主分区。</p>
@@ -718,11 +782,10 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.ext4 /dev/sda1
 </span></span></code></pre></div></li>
 <li>
-<p>格式化<code>/boot</code>分区
-为了通用性，建议该分区格式化为<code>fat32</code>格式：</p>
+<p>格式化<code>/boot</code>分区（如果自行创建了 boot 分区）
+为了通用性，建议将该分区格式化为<code>fat32</code>格式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.vfat -F32 /dev/sda2
-</span></span></code></pre></div><p><strong>同上，UEFI引导忽略此步</strong></p>
-</li>
+</span></span></code></pre></div></li>
 <li>
 <p>初始化<code>/swap</code>分区：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkswap /dev/sda3
@@ -743,7 +806,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mount /dev/sda1 /mnt
 </span></span></code></pre></div><ol start="2">
 <li>挂载<code>/boot</code>分区：
-<strong>对于 UEFI 引导，<code>/dev/sda2</code>应该改为 Windows 的 EFI 分区</strong></li>
+再次强调，UEFI 引导<strong>必须</strong>有独立的 boot 分区（或者有类似功能的其他分区）作为 EFI 分区，<strong>否则系统将因无引导而无法启动</strong>。双系统安装可以直接挂载 Windows 的 EFI 分区，如果出现分区大小不足请自行创建一个 boot 分区。</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p /mnt/boot
 </span></span><span style="display:flex;"><span>mount /dev/sda2 /mnt/boot
@@ -792,7 +855,19 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>安装过程中会出现选择软件包的提示，建议“默认=all”，即直接敲回车默认安装，输入一个“y”确认安装。
 在网络不佳的情况下，下载过程可能会出现意外断流，此时重复上面的命令即可。</p>
 </blockquote>
-<p>当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。</p>
+<blockquote>
+<p>根据 <a class="link" href="https://t.me/archlinuxcn"  target="_blank" rel="noopener"
+    >Arch Linux CN Messages</a> 的<a class="link" href="https://t.me/archlinuxcn/228"  target="_blank" rel="noopener"
+    >消息</a>，因为 archlinux-keyring 20220713 替换了一部分 master key ，一些包使用新 key 打包，安装时可能出现一些包无法经过签名校验。如果你上一个命令执行出现报错，可以先尝试以下命令单独更新 archlinux-keyring，然后再重新进行安装。</p>
+</blockquote>
+<p>报错示例：</p>
+<pre tabindex="0"><code>#这是错误日志不是命令
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+==&gt; ERROR: Failed to install packages to new root
+</code></pre><p>单独更新 archlinux-keyring：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -Sy archlinux-keyring
+</span></span></code></pre></div><p>当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
 </span></span></code></pre></div><p>为了确认文件生成，建议输入如下命令以确认：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /mnt/etc/fstab
@@ -821,9 +896,9 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd 你的用户名
 </span></span></code></pre></div><blockquote>
 <p>同上，密码需要输入两次，且密码不会显示。</p>
-<p>因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长。</p>
+<p>因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长，但为了安全性也不要太短太简单。</p>
 </blockquote>
-<p>为了该普通用户能获取临时 root 权限，我们需要修改 wheel 的权限设置。
+<p>为了该普通用户能获取临时 root 权限，我们需要修改 wheel 的权限设置。修改权限设置的最好方法就是使用 <code>visudo</code>，但是对于不会使用 vi 的新手，也可以直接使用 nano 修改相关文件。
 输入如下命令打开sudoers文件：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /etc/sudoers
 </span></span></code></pre></div><p>在打开的文件中找到以下两行：</p>
@@ -844,7 +919,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 输入如下命令配置电脑的主机名：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo 你电脑的主机名 &gt; /etc/hostname
 </span></span></code></pre></div><blockquote>
-<p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。</p>
+<p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。如果你不清楚的话，最好不要在主机名中加入一些奇奇怪怪的特殊字符（不会真的有人那么无聊吧）。</p>
 </blockquote>
 <p>下面对系统 host 进行配置（可选，如果嫌麻烦可以跳过这一步，如果不设置可能会在网络变更时出现应用无法启动等问题）。</p>
 <p>输入以下命令：</p>
@@ -856,7 +931,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span><span style="display:flex;"><span>::1		localhost
 </span></span><span style="display:flex;"><span>127.0.1.1	你电脑主机名.localdomain	你电脑主机名
 </span></span></code></pre></div><blockquote>
-<p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>。</p>
+<p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>，不过一般来说是没有这个东西的。</p>
 </blockquote>
 <p>确认无误后，同时按住<code>Ctrl + X</code>，输入<code>y</code>，回车再退出。</p>
 <h2 id="安装微码并配置-grub-引导">安装微码并配置 Grub 引导</h2>
@@ -1124,7 +1199,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
 </span></span></code></pre></div><p>如果一切正常，现在输出结果中应该含有<code>Windows</code>字样
 <del>如果没有的话，我也不知道怎么办了</del></p>
 <h3 id="禁用-reflector">禁用 reflector</h3>
-<p>如果你还有印象的话，在安装过程中我们曾使用 reflector 更换替换国内镜像源。之所以使用 reflector 而不是直接修改文件不是因为这个东东多好用，而是这玩意它会未经你同意自动帮你替换镜像源列表，这样的话还不如直接就先用它替换国内镜像源。在日常使用中，我推荐禁用 reflector（默认应该是禁用状态，如果你喜欢也可以启用，不过它的国内体验非常感人&hellip;）。</p>
+<p>如果你还有印象的话，在安装过程中我们曾使用 reflector 更换替换国内镜像源。之所以使用 reflector 而不是直接修改镜像源列表不是因为这个东东多好用，而是这玩意它会未经你同意自动帮你替换镜像源列表，与其辛辛苦苦敲了半天网址结果被它自动换掉了，还不如直接就先用它替换国内镜像源。在日常使用中，我推荐禁用 reflector（默认应该是禁用状态，如果你喜欢也可以启用，不过它的国内体验非常感人&hellip;）。</p>
 <p>输入如下命令禁用并停止 reflector：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl disable --now reflector.service
 </span></span></code></pre></div><p>输入如下命令启用并启动 reflector：</p>
