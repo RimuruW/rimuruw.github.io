@@ -952,7 +952,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
     &gt;pacstrap&lt;/a&gt; 脚本完成安装。pacstrap 是 ArchISO 中的一个脚本，可以自动完成基础但繁琐的系统配置如内核的配置。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacstrap /mnt base base-devel linux linux-firmware nano vim e2fsprogs ntfs-3g 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在上述命令中，base 是元软件包（基本系统所需依赖，你可以不知道它是啥但是必须安装），base-devel 是基础软件包组，linux 是内核，linux-firmware 是固件包，nano、vim 是常用编辑器，e2fsprogs 是 ext4 文件系统所需工具，如果你是按照上面教程使用 ext4 文件系统则必须安装该软件包。ntfs-3g 是与 Windows 的 NTFS 有关的软件包，如果是单系统可以不安装。&lt;/p&gt;
-&lt;p&gt;这里简单介绍一下软件包组。对于 Linux 用户来说，我们可能需要一次性安装一大堆软件包。虽然我们可以通过包管理批量安装多个软件，但是敲那么多软件的名字无疑非常的枯燥无聊且繁琐。因此，Arch Linux 的打包者将具有相关性的多个软件包归入一个软件包组，虽然软件包组不是一个软件包但是安装操作于一个真正的软件包相同。比如上面的 base-devel 就是将系统基础软件包归入一个软件包组，我们只需要输入软件包组的名字就可以安装这些软件包。&lt;/p&gt;
+&lt;p&gt;这里简单介绍一下软件包组。对于 Linux 用户来说，我们可能需要一次性安装一大堆软件包。虽然我们可以通过包管理批量安装多个软件，但是敲那么多软件的名字无疑非常的枯燥无聊且繁琐。因此，Arch Linux 的打包者将具有相关性的多个软件包归入一个软件包组，虽然软件包组不是一个软件包，但是安装操作与一个真正的软件包相同。比如上面的 base-devel 就是将系统基础软件包归入一个软件包组，我们只需要输入软件包组的名字就可以安装这些软件包。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你可以将上述命令中的&lt;code&gt;linux&lt;/code&gt;替换为 &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Kernel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Kernel&lt;/a&gt; 页面中介绍的内核软件包。如果知道自己的需求并了解后果，可以不安装 &lt;code&gt;linux-firmware&lt;/code&gt;.&lt;/p&gt;
