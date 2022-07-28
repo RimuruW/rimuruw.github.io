@@ -1136,23 +1136,23 @@ Errors occurred, no packages were upgraded.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如果你电脑不属于 HiDPI，这里建议先使用 X11 而不是 Wayland。如果你的电脑属于 HiDPI，这里建议先尝试在 X11 完成 HiDPI 配置，如果配置效果不佳或者不愿动手完成复杂的配置，再尝试 Wayland。&lt;/p&gt;
-&lt;p&gt;郑重申明，我不是歧视 Wayland。虽然说 Wayland 很可能是未来 Linux 桌面环境的主流，但是 Wayland 的目前的表现确实有点感人。且不论支持 Wayland 的桌面环境已经是少之又少，在支持 Wayland 的桌面环境中，除了少数桌面环境下表现尚可，其他的桌面环境下表现几乎不能日常桌面环境使用的需求。&lt;/p&gt;
+&lt;p&gt;郑重申明，我不是歧视 Wayland。虽然说 Wayland 很可能是未来 Linux 桌面环境的主流，但是 Wayland 的目前的表现确实有点感人。且不论支持 Wayland 的桌面环境已经是少之又少，在支持 Wayland 的桌面环境中，除了少数桌面环境下表现尚可，其他的桌面环境下表现几乎不能满足日常桌面环境使用的需求。&lt;del&gt;如果哪天 Wayland 已经完全稳定可用请到我的坟前通知我。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;（以上发言来自一名 Wayland 受害者）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这里插几句题外话。&lt;/p&gt;
-&lt;p&gt;你可能在某些地方看到一些 Linux 狂热粉/半吊子 狂吹 “Linux bug 数量少”、“稳定性吊打 Windows 和 macOS”、“安全性高”之类的&lt;del&gt;鬼话&lt;/del&gt;发言。虽然我的观点一直是“系统的稳定性和安全性取决于用户”，但可以肯定的是，Linux 的安全性和稳定性确实很高，前提是没有安装 GUI 环境。。。。&lt;/p&gt;
-&lt;p&gt;虽然较之前几年，Linux 的 GUI 环境尤其是桌面环境有了长足发展，从开始“能看个视频就不错”到现在“甚至还能玩游戏”，但是平心而论当前综合体验相较 Windows 和 macOS 来说，功能属于勉强能用，bug 是只多不少。Linux 有很多桌面环境可以选择，但是几乎每一款都很坑。如果你没有感受到桌面的 bug 的话，只能说明你没发现（所以 Linux 用户都去玩窗口管理器了。。。&lt;/p&gt;
+&lt;p&gt;你可能在某些地方看到一些 Linux 狂热粉/半吊子 狂吹 “Linux bug 数量少”、“稳定性吊打 Windows 和 macOS”、“安全性高”之类的&lt;del&gt;鬼话&lt;/del&gt;发言。虽然我的观点一直是“系统的稳定性和安全性取决于用户”，但可以肯定的是，Linux 的安全性和稳定性确实很高，但是前提是没有安装 GUI 环境。。。。&lt;/p&gt;
+&lt;p&gt;虽然较之前几年，Linux 的 GUI 环境尤其是桌面环境有了长足发展，从开始“能看个视频就不错”到现在“甚至还能玩游戏”，但是平心而论当前综合体验相较 Windows 和 macOS 来说，功能属于基本能用，bug 数量相较 Windows 和 macOS 堪称各有千秋。Linux 有很多桌面环境可以自由选择，但是几乎每一款都很坑。如果你没有感受到桌面的 bug 的话，只能说明你没发现（所以很多 Linux 用户都去玩窗口管理器了。。。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;咳咳，言归正传。上面已经说到，Linux 的桌面是独立于系统本身的，也就是说，系统的启动和桌面的启动是完完全全的两码事。如果你不想每次启动系统后都要在黑乎乎的终端手动启动桌面的话，可以借助显示管理器（Display Manager，简称 DM，有些地方叫做登录管理器）。显示管理器同样也有很多个，可以和不同的桌面环境交叉使用。&lt;/p&gt;
 &lt;p&gt;没错，显示管理器和桌面环境也是分开的。虽然这看起来让人感觉有点凌乱，但是这不恰恰说明 Linux 的高度自由性吗？（雾）&lt;/p&gt;
-&lt;p&gt;Arch Linux 可选择的桌面环境很多，这里只介绍相对主流和热门的两个桌面环境，显示管理器会附带介绍。&lt;/p&gt;
+&lt;p&gt;Arch Linux 可选择的桌面环境很多，这里只介绍相对主流和热门的两个桌面环境，显示管理器会附带介绍。请千万&lt;strong&gt;不要同时安装两个及以上的桌面环境&lt;/strong&gt;，虽然确实可以同时安装多个桌面环境然后开机时切换自己想要的桌面环境，但是多个桌面环境的软件包和配置文件是共存于你的系统中的，而不同桌面的软件包和配置文件又往往有兼容性问题。说简单点，如果不知道怎么操作又盲目地安装多个桌面环境，&lt;del&gt;你可能怎么死的都不知道&lt;/del&gt; 电脑容易出现一些奇怪的问题。也正因如此，如果你想更换桌面环境，请务必将前一个桌面环境&lt;strong&gt;卸载干净&lt;/strong&gt;再安装新的桌面环境。&lt;/p&gt;
 &lt;p&gt;不过在安装桌面环境之前，我们需要先安装 Xorg。输入如下命令安装 Xorg 软件包组。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacman -S xorg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装过程中，系统会询问你安装其中哪些软件包。如无其他需求或考虑，直接回车即可。&lt;/p&gt;
 &lt;h3 id=&#34;kde&#34;&gt;KDE&lt;/h3&gt;
 &lt;p&gt;KDE 被誉为“最像 Windows 的 Linux 桌面”（雾）。基于 Qt 的 KDE 拥有超高的可自定义性、华丽的系统特效、完善的系统功能、人类友好的交互逻辑，以及你熟悉的开始菜单（&lt;/p&gt;
 &lt;p&gt;虽然 KDE 默认的样式有点一言难尽，但是 KDE 的高度可自定义性让 KDE 可以变得极其华丽甚至长得和 Windows 或 macOS 接近一模一样。不夸张地说，KDE 几乎可以在外观上做到变成用户想要的任何样子，这一点可以参考 KDE 的美化教程的数量（虽然和 KDE 默认长得太丑也有一点关系）。&lt;/p&gt;
-&lt;p&gt;除桌面本身以外，KDE 软件如 Kate 这样的编辑器也是非常简单好用（你之后体会到的），自带的系统组件可以满足绝大多数日常桌面需求。&lt;/p&gt;
+&lt;p&gt;除桌面本身以外，KDE 软件如 Kate 这样的编辑器也是非常简单好用（你之后体会到的），自带的系统组件可以满足大多数日常桌面需求。&lt;/p&gt;
 &lt;p&gt;由于以上诸多优点，KDE 被认为是最适合新手并且也是最适合人类的 Linux 桌面环境，Arch Linux + KDE 很多时候被认为是一种标配。&lt;/p&gt;
 &lt;p&gt;配合 KDE-Plasma 使用的最佳选择是 SDDM 显示管理器， KDE 和 Arch Wiki 都推荐使用此组合。&lt;/p&gt;
 &lt;p&gt;输入如下命令安装 SDDM 和 KDE Plasma 桌面和某些 KDE 基础组件：&lt;/p&gt;
@@ -1171,12 +1171,13 @@ Errors occurred, no packages were upgraded.
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;systemctl enable sddm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输入完命令后，下次开机会直接进入图形界面，而非命令行界面。&lt;/p&gt;
 &lt;h3 id=&#34;gnome&#34;&gt;GNOME&lt;/h3&gt;
-&lt;p&gt;GNOME 被誉为“超像 macOS 的 Linux 桌面”（不是最像，因为很多桌面比它还像，让人叹为观止）。GNOME 基于 GTK，是 GNU 项目的一部分，虽然前段时间由于某些开源社区的冲突，官方公开声明表示自己不属于 GNU，但是这不改变它最初的性质。因为 GNU 协议，GNOME 是 Ubuntu 等一众 Linux 桌面发行版的默认桌面。&lt;/p&gt;
+&lt;p&gt;GNOME 被誉为“超像 macOS 的 Linux 桌面”（不是最像，因为某些桌面比它还像，令人叹为观止）。GNOME 基于 GTK，是 GNU 项目的一部分，虽然前段时间由于某些开源社区的冲突，GNOME 官方公开声明表示自己不属于 GNU，但是这不改变它最初的性质。因为 GNU 协议，GNOME 是 Ubuntu 等一众 Linux 桌面发行版的默认桌面。&lt;/p&gt;
 &lt;p&gt;GNOME 遵循 Material Degisn 设计语言，界面圆润清新，动画优雅舒适，自带功能较少但是扩展插件极多且功能丰富，可自定义性较强，有着先进但是不怎么人类友好的交互逻辑。&lt;/p&gt;
 &lt;p&gt;GNOME 默认样式除了图标以外都属于尚可，GTK 的特效和样式丰富的主题让 GNOME 随便配置一下就可以做到简约与美观并存（当然，你可以配置得非常华丽）。&lt;/p&gt;
-&lt;p&gt;GNOME 40 正式砍掉了侧边 Dash 栏并将其移动到桌面切换界面的底端，重新定义了 GUI 桌面的操作逻辑，极大地提高了桌面的使用效率。虽然目前骂声一片，但是真金不怕火炼，GNOME 40 一定会在未来彰显它对人类进步做出的巨大贡献。&lt;/p&gt;
-&lt;p&gt;因为 GNOME 功能高度依赖扩展，而扩展又大多是非官方人员开发的，所以可能存在各种兼容性问题，也是“GNOME=bug”这个说法的来源之一。&lt;/p&gt;
+&lt;p&gt;GNOME 40 正式砍掉了侧边 Dash 栏并将其移动到桌面切换界面的底端，重新定义了 GUI 桌面的操作逻辑，极大地提高了桌面的使用效率。虽然目前骂声一片，但是真金不怕火炼，GNOME 40 一定会在未来彰显它对推动人类进步做出的巨大贡献。&lt;/p&gt;
+&lt;p&gt;因为 GNOME 功能高度依赖扩展，而扩展又大多是非官方人员开发又往往直接作用于系统，所以可能存在各种兼容性问题，也是“GNOME=bug”这个说法的来源之一。虽然这些兼容性问题一定程度也确实不能怪官方开发人员，但是从用户的体验上考虑，这些问题也确实属于 GNOME 现在存在的问题。&lt;/p&gt;
 &lt;p&gt;GNOME 自带软件实用性较差，如果有需求的话，可以使用 KDE 软件作为补充。&lt;/p&gt;
+&lt;p&gt;值得一提的是，截止目前，我本人使用的桌面环境还是 GNOME，所以请各位友军放下刀，&lt;del&gt;我真的不是 GNOME 黑&lt;/del&gt;。&lt;/p&gt;
 &lt;p&gt;GNOME 有配套的显示管理器 GDM。输入如下命令安装 GNOME 和 GDM。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacman -S gnome gdm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果想要 GNOME 全家桶的话，可以安装 gnome-extras 软件包组&lt;/p&gt;
