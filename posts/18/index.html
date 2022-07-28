@@ -859,15 +859,15 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>根据 <a class="link" href="https://t.me/archlinuxcn"  target="_blank" rel="noopener"
     >Arch Linux CN Messages</a> 的<a class="link" href="https://t.me/archlinuxcn/228"  target="_blank" rel="noopener"
     >消息</a>，因为 archlinux-keyring 20220713 替换了一部分 master key ，一些包使用新 key 打包，安装时可能出现一些包无法经过签名校验。如果你上一个命令执行出现报错，可以先尝试以下命令单独更新 archlinux-keyring，然后再重新进行安装。</p>
-</blockquote>
 <p>报错示例：</p>
 <pre tabindex="0"><code>#这是错误日志不是命令
-error: failed to commit transaction (invalid or corrupted package)
+error: failed to commit transaction (invalid or corrupted &gt; package)
 Errors occurred, no packages were upgraded.
 ==&gt; ERROR: Failed to install packages to new root
 </code></pre><p>单独更新 archlinux-keyring：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -Sy archlinux-keyring
-</span></span></code></pre></div><p>当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。</p>
+</span></span></code></pre></div></blockquote>
+<p>当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
 </span></span></code></pre></div><p>为了确认文件生成，建议输入如下命令以确认：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /mnt/etc/fstab
