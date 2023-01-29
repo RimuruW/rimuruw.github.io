@@ -633,7 +633,7 @@ socks5 	127.0.0.1 7891
 &lt;p&gt;Linux 和 Windows 对硬件时钟的处理方式不同，如果不加以特别设置容易造成两个系统时间混乱。&lt;/p&gt;
 &lt;p&gt;Arch Wiki 及我个人推荐的方法是设置 Windows 时区偏移。&lt;/p&gt;
 &lt;p&gt;Windows 下&lt;strong&gt;使用管理员权限&lt;/strong&gt;执行下列命令即可。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;reg add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34;&lt;/span&gt; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;reg add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;#34;&lt;/span&gt; /v RealTimeIsUniversal /d &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; /t REG_DWORD /f
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接执行此命令可能会导致 Windows 显示的当前时间向后偏移 8 个小时。请不用担心，安装 Arch Linux 并联网校时之后时间会恢复正常。&lt;/p&gt;
 &lt;h3 id=&#34;电脑环境确认&#34;&gt;电脑环境确认&lt;/h3&gt;
 &lt;p&gt;进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。&lt;/p&gt;

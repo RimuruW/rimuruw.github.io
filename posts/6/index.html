@@ -7,11 +7,12 @@ dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝�
 参数注释：
 if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
 count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
-dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。'><title>DD 指令用法详解</title>
+dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。'>
+<title>DD 指令用法详解</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/6/'>
 
-<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='DD 指令用法详解'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='DD 指令用法详解'>
 <meta property='og:description' content='平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
 dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
@@ -97,7 +98,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         
         
         
-
         <li >
             <a href='/' target="_blank">
                 
@@ -120,7 +120,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </li>
         
         
-
         <li >
             <a href='/talk' >
                 
@@ -139,7 +138,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </li>
         
         
-
         <li >
             <a href='/archives' >
                 
@@ -162,7 +160,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </li>
         
         
-
         <li >
             <a href='/links' >
                 
@@ -184,7 +181,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </li>
         
         
-
         <li >
             <a href='/about' >
                 
@@ -206,7 +202,6 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </li>
         
         
-
         <li >
             <a href='/search' >
                 
@@ -254,7 +249,10 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -277,6 +275,9 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -314,6 +315,7 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -631,12 +633,12 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
             2020 - 
         
-        2022 清絮的博客
+        2023 清絮的博客
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -720,8 +722,6 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
             >
 
             </main>
-    
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

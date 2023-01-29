@@ -9,11 +9,12 @@
 如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动（教程步骤中也会进行说明）或参阅我单独的 Arch Linux 安装教程（写完了会贴在评论区）。
 我更希望的是，新人们能通过我这篇教程更多地了解 Arch Linux 和 Linux 本身，而不是机械式和目的性地完成一个操作系统的安装。
 正文 确定电脑的启动类型 电脑启动类型可以粗略地分为「传统 BIOS」（简称 BIOS）和「UEFI」。因为两者在启动盘制作上和安装步骤上存在差异，所以必须在安装前对电脑的启动类型进行确认。如果是最近十年生产的设备，使用的一般是 UEFI 引导。
-首先启动进入 Windows 桌面，同时按下 Win&#43;R 打开运行对话框，然后输入 msinfo32 后回车确认打开系统信息，查看「BIOS 模式」是不是 UEFI。如果是，则为 UEFI 引导，反之则为传统 BIOS 引导。'><title>Arch Linux &#43; Windows 双系统安装教程</title>
+首先启动进入 Windows 桌面，同时按下 Win&#43;R 打开运行对话框，然后输入 msinfo32 后回车确认打开系统信息，查看「BIOS 模式」是不是 UEFI。如果是，则为 UEFI 引导，反之则为传统 BIOS 引导。'>
+<title>Arch Linux &#43; Windows 双系统安装教程</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/18/'>
 
-<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='Arch Linux &#43; Windows 双系统安装教程'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Arch Linux &#43; Windows 双系统安装教程'>
 <meta property='og:description' content='有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型 Linux 发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：
 具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了。。。） 能够面对满屏的命令行输出保持基本冷静 具有基础的英语水平，至少命令行报错（比如出现 error）的时候，你能反应过来该命令执行出现错误。 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料 必须说明的是，写一篇面向新手的教程本身就是一件非常令人苦恼的事情。我不能确定我眼中的常识是否是新手闻所未闻的新知识，我不能确定我习惯并自以为清晰明了的描述会不会让新手看的云里雾里。因此在教程中我尽可能侧重于讲解而不是一直单调地告诉你如何去做。同时，因为面向新手，教程也会尽量避免其他知识的扩展以减少新手的阅读压力。此外，因为我很少使用 Windows（或者说 Windows 使用经验几乎为零），所以下文关于 Windows 的描述可能会有一些不准确的地方。如有错误还请指正。
 当然，你可以另辟蹊径，通过一些特殊方法（如安装脚本）完成安装过程，但是这样无疑失去了 Arch Linux 安装的意义。这样做最直接的后果是，对于 Arch Linux 这种需要你自己维护的系统，如果你甚至没有自己动手完成你的系统安装过程，那么在系统出现问题的时候你多半无计可施只能重装系统了。
@@ -103,7 +104,6 @@
         
         
         
-
         <li >
             <a href='/' target="_blank">
                 
@@ -126,7 +126,6 @@
         </li>
         
         
-
         <li >
             <a href='/talk' >
                 
@@ -145,7 +144,6 @@
         </li>
         
         
-
         <li >
             <a href='/archives' >
                 
@@ -168,7 +166,6 @@
         </li>
         
         
-
         <li >
             <a href='/links' >
                 
@@ -190,7 +187,6 @@
         </li>
         
         
-
         <li >
             <a href='/about' >
                 
@@ -212,7 +208,6 @@
         </li>
         
         
-
         <li >
             <a href='/search' >
                 
@@ -260,7 +255,10 @@
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -287,6 +285,9 @@
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -324,6 +325,7 @@
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -527,7 +529,7 @@
 <p>Linux 和 Windows 对硬件时钟的处理方式不同，如果不加以特别设置容易造成两个系统时间混乱。</p>
 <p>Arch Wiki 及我个人推荐的方法是设置 Windows 时区偏移。</p>
 <p>Windows 下<strong>使用管理员权限</strong>执行下列命令即可。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>reg add <span style="color:#e6db74">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>reg add <span style="color:#e6db74">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> /v RealTimeIsUniversal /d <span style="color:#ae81ff">1</span> /t REG_DWORD /f
 </span></span></code></pre></div><p>直接执行此命令可能会导致 Windows 显示的当前时间向后偏移 8 个小时。请不用担心，安装 Arch Linux 并联网校时之后时间会恢复正常。</p>
 <h3 id="电脑环境确认">电脑环境确认</h3>
 <p>进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。</p>
@@ -1414,12 +1416,12 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
         
             2020 - 
         
-        2022 清絮的博客
+        2023 清絮的博客
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -1503,8 +1505,6 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
             >
 
             </main>
-    
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
