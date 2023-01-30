@@ -6,7 +6,24 @@
         <description>Recent content in Posts on 清絮的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 17 Aug 2021 23:32:39 +0800</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 29 Jan 2023 23:52:45 +0000</lastBuildDate><atom:link href="https://blog.linioi.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>20230129 小事随笔</title>
+        <link>https://blog.linioi.com/posts/informal-essay/</link>
+        <pubDate>Sun, 29 Jan 2023 23:52:45 +0000</pubDate>
+        
+        <guid>https://blog.linioi.com/posts/informal-essay/</guid>
+        <description>&lt;p&gt;记录很久之前一件无足轻重的小事。&lt;/p&gt;
+&lt;p&gt;我之前 Twitter 常有一个帐号的推文明明我未关注却经常出现在我的主页上。出现的原因我当时未留意如今也不愿为此深究，可能是我关注的人中有人关注 TA 或者按趋势的推荐，但这已无足轻重。这个帐号时常会以一种清醒者的姿态反驳当代人许多固有观念，有些观点颇有新意，有些观点我也不敢苟同。但毕竟也不碍眼，一直以来我对 TA 的处理是既不 follow 也不 ban。&lt;/p&gt;
+&lt;p&gt;这件小事还得从这个帐号的一篇推文说起。推文的内容大意是：现在许多人被马克思主义洗脑，认为资本主义中资本家和工人阶级是对立的，但实际上工人阶级在资本主义制度下待遇是最好的，资本主义是世界上最好的制度。
+我无意对该推文发表观点，如开头所言，我只是要记录一件小事。在这篇推文下面有个人针对推文提出的「资本主义是世界上最好的制度」提出质疑，认为该博主并没有提出任何论据证明它是最好的制度，并且表述制度的发展中并不会有所谓的最好，本质上都是妥协产物，更先进的制度会取代资本主义（大意如此，这个人的回复中一定程度透露他是正在从事相关方面的研究生，我凭借浅薄的见识姑且猜测他是一个历史系学生吧）。&lt;/p&gt;
+&lt;p&gt;然后博主举例反驳说，大意为你总不能因为未来会有更好的就否定它是最好的。两个人争论了好几条，最后那个质疑的人不再回复了。我点开那个人的主页看了一下，他最新推文说他再也不和别人在网上争论了。而在他们两个争论的几条回复中，博主的回复的点赞量对比质询者显然有压倒性优势。&lt;/p&gt;
+&lt;p&gt;因为这毕竟是许久之前的事情了，我又向来不是一个记性好的人，许多细节如果当时没有给我留下太多印象，现在想起来的可能性也微乎其微了。虽然这只是一点模糊的记忆，但是偶然回想起来，又能和现实形成一点参照。&lt;/p&gt;
+&lt;p&gt;作为一个理科生，对文史粗略的涉猎不足以让我对他们的争论发表什么高深的见解，我只是品味出了博主在推文中的煽动性。博主不需要如何如何论证他观点的合理性，他只要找到一个渲泄口煽动群众感情就可以了。「最好的」这一定语对于他来说可谓必须，因为这可以显著增强语言的说服力。他可以在社会主义国家说资本主义制度如何先进，也可以在资本主义国家鼓吹社会主义制度的优越性。群众需要的是符合他们情感倾向的东西，而这个博主恰恰在提供这些。从这个角度来看，又有点《乌合之众》的味道了。&lt;/p&gt;
+&lt;p&gt;可这样的现象又往往是大多数。我看见 Twitter 和国内社交平台上有很多这样「人间清醒者」，被各种固有观念把控而不自知，做着自以为正确的事。&lt;/p&gt;
+&lt;p&gt;不过现在好像已经很久没看到那个帐号了。也许是那个帐号已经消失了，也许是那个帐号把我屏蔽或者我把它屏蔽了。总之，这也无关紧要了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Arch Linux Clash 安装配置记录</title>
         <link>https://blog.linioi.com/posts/clash-on-arch/</link>
         <pubDate>Tue, 17 Aug 2021 23:32:39 +0800</pubDate>
