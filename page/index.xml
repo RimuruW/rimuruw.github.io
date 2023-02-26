@@ -30,27 +30,40 @@
         <guid>https://blog.linioi.com/about/</guid>
         <description>&lt;h2 id=&#34;关于博主&#34;&gt;关于博主&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;长期吃土&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/zh-hans/INFP&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;INFP&lt;/a&gt;,长期吃土&lt;/li&gt;
 &lt;li&gt;Arch Linux User &amp;amp;&amp;amp; iOS Fans&lt;/li&gt;
 &lt;li&gt;精通 CSS、JavaScript、PHP、C、C++、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript 等单词的拼写&lt;/li&gt;
 &lt;li&gt;精通各大 Linux 发行版的安装与删库跑路&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Qingxu 是中文「清絮」的拼音，没有其他的解读的…
-「清絮」二字取自于我很久之前写的一首短诗的末尾二字。虽然诗写得不堪入目，但是末尾二字我自以为颇有意境，所以一直以来将其作为自己互联网的 ID，目前为止还算满意。&lt;/p&gt;
+「清絮」二字取自于我很久之前写的一首短诗的末尾二字。虽然诗写得
+，但是末尾二字我自以为颇有意境，所以一直以来将其作为自己互联网的 ID，目前为止还算满意。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;友链格式&#34;&gt;友链格式&lt;/h2&gt;
-&lt;p&gt;如果你的博客内容不违背&lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%E8%A7%82/3271832&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;社会主义核心价值观&lt;/a&gt;，可以选择在留言板下评论区遵循如下格式提交你的博客或发送邮件给我，我将会在审核后添加你的博客到友链。&lt;/p&gt;
+&lt;p&gt;如果你可以选择在留言板下评论区遵循如下格式提交你的博客或发送邮件给我，我将会在审核后添加你的博客到友链。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;#你站点的 URL［必填］&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;avatar&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;#你头像的 URL [必填]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;#你的名字/昵称 [与 blog 二选一]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;blog&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;#你博客的名字 [与 name 二选一]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;descr&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;#一句话描述你或你的博客 [必填，内容需符合社会主义核心价值观]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;你申请友链无需将我的博客添加至你博客友链&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;作为双方之间的尊重，我希望你的博客至少满足以下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;保证内容大部分为原创且对于转载注明出处&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不含无逻辑、过分煽动性强的文章，符合大多数人的道德标准&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不含侵入性广告或浮窗，以不干扰正常阅读为准&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;如果你想添加我的博客至你博客友链，可以参照下面的信息&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://blog.linioi.com/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;avatar&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/ass/avatar.jpg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;avatar&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://blog.linioi.com/avatar/avatar.jpg&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Qingxu&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;blog&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;清絮的博客&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;wordcr&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;人生如逆旅，我亦是行人&lt;/span&gt;
@@ -203,10 +216,10 @@
 &lt;/p&gt;
 
 
-&lt;p&gt;&lt;a target=&#34;_blank&#34; href=https://young3030.rth1.me/ title=yolanda2010ya class=&#34;friendurl&#34;&gt;
+&lt;p&gt;&lt;a target=&#34;_blank&#34; href=https://young3030.rth1.vip/ title=yolanda2010ya class=&#34;friendurl&#34;&gt;
     &lt;div class=&#34;frienddiv&#34;&gt;
       &lt;div class=&#34;frienddivleft&#34;&gt;
-	&lt;img class=&#34;myfriend&#34; src=https://s6.jpg.cm/2022/03/18/L3SbfE.png /&gt;
+	&lt;img class=&#34;myfriend&#34; src=http://pad.hutaomu.top/i/2023/01/06/63b782e3099e9.jpeg /&gt;
       &lt;/div&gt;
       &lt;div class=&#34;frienddivright&#34;&gt;
 	yolanda2010ya&lt;br /&gt;塔是昔日之塔，如暮烟似钟声
@@ -223,6 +236,19 @@
       &lt;/div&gt;
       &lt;div class=&#34;frienddivright&#34;&gt;
 	muzing的杂货铺&lt;br /&gt;车辆工程师的编程小站
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a target=&#34;_blank&#34; href=https://lbqaq.top title=luoboQAQ class=&#34;friendurl&#34;&gt;
+    &lt;div class=&#34;frienddiv&#34;&gt;
+      &lt;div class=&#34;frienddivleft&#34;&gt;
+	&lt;img class=&#34;myfriend&#34; src=https://cdn.jsdelivr.net/gh/luoboQAQ/luoboQAQ.github.io/android-chrome-192x192.png /&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;frienddivright&#34;&gt;
+	luoboQAQ&lt;br /&gt;快乐学习每一天
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/a&gt;
