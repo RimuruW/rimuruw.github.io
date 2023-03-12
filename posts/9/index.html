@@ -18,7 +18,7 @@
 在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.'>
 <meta property='og:url' content='https://blog.linioi.com/posts/9/'>
 <meta property='og:site_name' content='清絮的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub Action' /><meta property='article:tag' content='Hexo' /><meta property='article:published_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='article:modified_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub Action' /><meta property='article:tag' content='Hexo' /><meta property='article:published_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='article:modified_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="GitHub Action 实现 Hexo 博客持续集成">
 <meta name="twitter:description" content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
@@ -26,8 +26,9 @@
 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
 在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.jpg' />
+    <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+ 
 
     </head>
     <body class="
@@ -72,7 +73,7 @@
                     
                     
                         
-                        <img src="/img/avatar_huafffb3eeac5eb8e123682ee41feaf78e_255634_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_huad36341c26afab9f00566fbf222cb1c4_3008381_300x0_resize_q75_box.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -374,7 +375,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">node_modules</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">restore-keys</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">${{ runner.os }}-node-</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          ${{ runner.os }}-node-</span>          
 </span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Dependencies</span> <span style="color:#75715e"># Step 3 </span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">if</span>: <span style="color:#ae81ff">steps.cache.outputs.cache-hit != &#39;true&#39;</span> <span style="color:#75715e"># 如果变量 cache-hit 不等于 true</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: <span style="color:#ae81ff">npm install</span> <span style="color:#75715e"># 安装 NPM 相关依赖</span>
@@ -479,7 +480,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></code></pre></div><p>9.生成文件。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    </span>    <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    hexo clean &amp;&amp; hexo generate</span>    
 </span></span></code></pre></div><p>10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
@@ -539,7 +540,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hexo clean &amp;&amp; hexo generate</span>          
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
@@ -584,7 +585,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Clone themes</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span>          
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
@@ -601,7 +602,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          </span>          <span style="color:#ae81ff">hexo clean &amp;&amp; hexo generate</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hexo clean &amp;&amp; hexo generate</span>          
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
