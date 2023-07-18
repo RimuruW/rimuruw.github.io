@@ -124,12 +124,12 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo vim /etc/proxychains.conf
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接翻到文件末尾，按照你的 Clash 配置文件设置代理列表。&lt;/p&gt;
 &lt;p&gt;例如：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[ProxyList]
-# add proxy here ...
-# meanwile
-# defaults set to &amp;#34;tor&amp;#34;
-socks5 	127.0.0.1 7891
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样，我们直接在终端输入 &lt;code&gt;proxychains&lt;/code&gt; 再加上命令就可以让这个命令走代理了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;[&lt;/span&gt;ProxyList&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# add proxy here ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# meanwile
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# defaults set to &amp;#34;tor&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;socks5 	&lt;span style=&#34;color:#ae81ff&#34;&gt;127.0.0.1&lt;/span&gt; 7891
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样，我们直接在终端输入 &lt;code&gt;proxychains&lt;/code&gt; 再加上命令就可以让这个命令走代理了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;proxychains &amp;lt;command&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们还可以设置相应代理的环境变量，大部分终端运行的程序会读取这这些变量。&lt;/p&gt;
 &lt;p&gt;输入如下命令在当前 shell 设置代理&lt;/p&gt;
@@ -3782,11 +3782,10 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
         <guid>https://blog.linioi.com/links/</guid>
         <description>&lt;p&gt;你可以选择在留言板下评论区遵循如下格式提交你的博客或发送邮件给我，我将会在审核后添加你的博客到友链。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  - link: #你站点的 URL [必填]
-    avatar: #你头像的 URL [必填]
-    name: #你的名字/昵称 [与 blog 二选一]
-    blog: #你博客的名字 [与 name 二选一]
-    description: #一句话描述你或你的博客 [必填，内容需符合大多数人的道德标准]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  - title: # 你博客的名字/你的名字
+    description: # 你的简介
+    website: # 你的博客网址
+    image: # 头像/图片的永久链接
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;你申请友链无需将我的博客添加至你博客友链&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;出于对彼此的尊重，我希望你的博客至少满足以下几点：&lt;/p&gt;
 &lt;ol&gt;
