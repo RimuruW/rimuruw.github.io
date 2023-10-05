@@ -15,7 +15,7 @@ gcc 写于 8 月 17 日
 
 <link rel='canonical' href='https://blog.linioi.com/posts/clash-on-arch/'>
 
-<link rel="stylesheet" href="/scss/style.min.f2f21d9d961219a01621263328d8997e1ae3b4f0371d455628df1fdc27d57bd6.css"><meta property='og:title' content='Arch Linux Clash 安装配置记录'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Arch Linux Clash 安装配置记录'>
 <meta property='og:description' content='前言 在此之前，我使用的代理解决方案是 Qv2ray &#43; cgproxy 透明代理。
 Qv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。
 但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。
@@ -430,12 +430,12 @@ gcc 写于 8 月 17 日
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/proxychains.conf
 </span></span></code></pre></div><p>直接翻到文件末尾，按照你的 Clash 配置文件设置代理列表。</p>
 <p>例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-conf" data-lang="conf"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">[</span>ProxyList<span style="color:#960050;background-color:#1e0010">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># add proxy here ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># meanwile
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># defaults set to &#34;tor&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>socks5 	<span style="color:#ae81ff">127.0.0.1</span> 7891
-</span></span></code></pre></div><p>这样，我们直接在终端输入 <code>proxychains</code> 再加上命令就可以让这个命令走代理了。</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">[ProxyList]
+# add proxy here ...
+# meanwile
+# defaults set to &#34;tor&#34;
+socks5 	127.0.0.1 7891
+</code></pre><p>这样，我们直接在终端输入 <code>proxychains</code> 再加上命令就可以让这个命令走代理了。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>proxychains &lt;command&gt;
 </span></span></code></pre></div><p>我们还可以设置相应代理的环境变量，大部分终端运行的程序会读取这这些变量。</p>
 <p>输入如下命令在当前 shell 设置代理</p>
@@ -882,7 +882,7 @@ gcc 写于 8 月 17 日
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -898,7 +898,7 @@ gcc 写于 8 月 17 日
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.18.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
