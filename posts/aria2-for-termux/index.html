@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
-&amp;ndash; 摘自 维基百科
-如上所述，不同于其他下载器（如 IDM&#43;）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
-为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
-为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
-遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
-但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
-下面，让我们开始…
-下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
-Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。 &ndash; 摘自 维基百科 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。 为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。 为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。 遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。 但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。 下面，让我们开始… 下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。">
 <title>Android 一键安装配置 Aria2</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/aria2-for-termux/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Android 一键安装配置 Aria2'>
-<meta property='og:description' content='Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
-&amp;ndash; 摘自 维基百科
-如上所述，不同于其他下载器（如 IDM&#43;）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
-为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
-为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
-遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
-但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
-下面，让我们开始…
-下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
-Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Android 一键安装配置 Aria2">
+<meta property='og:description' content="Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。 &ndash; 摘自 维基百科 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。 为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。 为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。 遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。 但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。 下面，让我们开始… 下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。">
 <meta property='og:url' content='https://blog.linioi.com/posts/aria2-for-termux/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='Aria2' /><meta property='article:tag' content='Termux' /><meta property='article:published_time' content='2020-10-17T22:19:36&#43;00:00'/><meta property='article:modified_time' content='2020-10-17T22:19:36&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="Android 一键安装配置 Aria2">
-<meta name="twitter:description" content="Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。
-&amp;ndash; 摘自 维基百科
-如上所述，不同于其他下载器（如 IDM&#43;）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。
-为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。
-为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。
-遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。
-但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。
-下面，让我们开始…
-下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux
-Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。 &ndash; 摘自 维基百科 如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。 为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。 为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。 遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。 但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。 下面，让我们开始… 下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux Google Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -88,7 +64,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -220,12 +196,12 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -233,7 +209,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -241,10 +217,11 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -323,15 +300,15 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
     <section class="article-content">
     
     
-    <h2 id="aria2-是什么">Aria2 是什么？</h2>
-<blockquote>
+    <h2 id="aria2-是什么">Aria2 是什么？
+</h2><blockquote>
 <p>Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。</p>
 <p>&ndash; 摘自 <a class="link" href="https://zh.wikipedia.org/zh-hans/Aria2?wprov=sfla1"  target="_blank" rel="noopener"
     >维基百科</a></p>
 </blockquote>
 <p>如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。</p>
-<h2 id="为什么会有这篇文章">为什么会有这篇文章</h2>
-<p>Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 <a class="link" href="https://github.com/mayswind/AriaNg"  target="_blank" rel="noopener"
+<h2 id="为什么会有这篇文章">为什么会有这篇文章
+</h2><p>Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 <a class="link" href="https://github.com/mayswind/AriaNg"  target="_blank" rel="noopener"
     >AriaNg</a> 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。</p>
 <p>为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。</p>
 <p>遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 <a class="link" href="https://github.com/P3TERX/aria2.sh"  target="_blank" rel="noopener"
@@ -340,8 +317,8 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <p>但是考虑到 <a class="link" href="https://termux.com/"  target="_blank" rel="noopener"
     >Termux</a> 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。</p>
 <p>下面，让我们开始…</p>
-<h2 id="下载和安装-termux">下载和安装 Termux</h2>
-<p><strong>目前仅推荐以下两个下载渠道下载 Termux</strong></p>
+<h2 id="下载和安装-termux">下载和安装 Termux
+</h2><p><strong>目前仅推荐以下两个下载渠道下载 Termux</strong></p>
 <ul>
 <li><del>Google Play Store： <a class="link" href="https://play.google.com/store/apps/details?id=com.termux"  target="_blank" rel="noopener"
     >https://play.google.com/store/apps/details?id=com.termux</a></del></li>
@@ -360,7 +337,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <p><img src="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg"
 	width="1080"
 	height="1390"
-	srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu11526315287323940314.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu15580938213580145718.jpg 1024w"
 	loading="lazy"
 	
 		alt="Termux 界面"
@@ -376,9 +353,9 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <li>请不要害怕终端的黑屏白字，实际上你需要操作的东西<strong>非常简单</strong>，大部分终端里你看不懂的输出，<strong>都是你不需要关心的细节</strong>。</li>
 <li>第一次打开可能会要求进行初始化，请耐心等待初始化完成。</li>
 </ul>
-<h2 id="下载和启动脚本">下载和启动脚本</h2>
-<p>下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。<del>如果出现了报错则另说</del></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<h2 id="下载和启动脚本">下载和启动脚本
+</h2><p>下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。<del>如果出现了报错则另说</del></p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bash -c <span style="color:#98c379">&#34;</span><span style="color:#c678dd">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span style="color:#c678dd">)</span><span style="color:#98c379">&#34;</span>
 </span></span></code></pre></div><ul>
 <li>输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。</li>
 </ul>
@@ -386,7 +363,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <p><img src="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg"
 	width="1073"
 	height="814"
-	srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu9165247423246775450.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu18235387852486129134.jpg 1024w"
 	loading="lazy"
 	
 		alt="脚本启动后界面"
@@ -398,8 +375,8 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 	
 ></p>
 <p>后续启动脚本，如果你没有手动改变文件位置，则你只需要输入<code>bash aria2.sh</code>即可启动脚本。</p>
-<h2 id="安装-aria2">安装 Aria2</h2>
-<p>脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。</p>
+<h2 id="安装-aria2">安装 Aria2
+</h2><p>脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。</p>
 <ul>
 <li>输入命令后脚本可能会询问你是否更换 Termux 镜像源，<strong>如果你是国内用户，请选择输入「y」确认更换</strong>。</li>
 <li>Aria2 的下载和安装需要一定时间，请耐心等待并保证 Termux 进程存活。</li>
@@ -408,7 +385,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <p><img src="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg"
 	width="1080"
 	height="984"
-	srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu4172826850386494957.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu14286092974263947683.jpg 1024w"
 	loading="lazy"
 	
 		alt="Aria2 安装和启动成功图"
@@ -424,7 +401,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <img src="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png"
 	width="1080"
 	height="410"
-	srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu7382376384748909761.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu1024724787410120803.png 1024w"
 	loading="lazy"
 	
 		alt="Release wakelock"
@@ -436,13 +413,13 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 	
 ></p>
 <p>此时你已经完成了 Aria2 安装所需的基本步骤，你的手机上已经成功配置一个可用的 Aria2。</p>
-<h2 id="使用-ariang">使用 AriaNg</h2>
-<p>如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。</p>
+<h2 id="使用-ariang">使用 AriaNg
+</h2><p>如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。</p>
 <p>在脚本起始界面输入「7」查看 Aria2 配置信息如下图</p>
 <p><img src="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg"
 	width="1080"
 	height="521"
-	srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu9276399075247098766.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu1075058956219610262.jpg 1024w"
 	loading="lazy"
 	
 		alt="Aria2 配置信息"
@@ -467,7 +444,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
 <p><img src="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg"
 	width="1080"
 	height="2340"
-	srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu1322458794347702212.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu5146318273024582684.jpg 1024w"
 	loading="lazy"
 	
 		alt="AriaNg 连接成功"
@@ -613,7 +590,7 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -624,12 +601,12 @@ Google Play Store： https://play.google.com/store/apps/details?id=com.termux �
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

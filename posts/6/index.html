@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
-dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
-注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
-参数注释：
-if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
-count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
-dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看 dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2 参数注释： if=&lt;文件名&gt;：输入文件名，缺省为标准输入。即指定源文件。&lt; if=input file &gt; of=&lt;文件名&gt;：输出文件名，缺省为标准输出。即指定目的文件。&lt; of=output file &gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。 count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。 dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。">
 <title>DD 指令用法详解</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/6/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='DD 指令用法详解'>
-<meta property='og:description' content='平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
-dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
-注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
-参数注释：
-if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
-count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
-dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="DD 指令用法详解">
+<meta property='og:description' content="平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看 dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2 参数注释： if=&lt;文件名&gt;：输入文件名，缺省为标准输入。即指定源文件。&lt; if=input file &gt; of=&lt;文件名&gt;：输出文件名，缺省为标准输出。即指定目的文件。&lt; of=output file &gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。 count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。 dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。">
 <meta property='og:url' content='https://blog.linioi.com/posts/6/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='shell' /><meta property='article:published_time' content='2020-03-29T23:42:43&#43;00:00'/><meta property='article:modified_time' content='2020-03-29T23:42:43&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="DD 指令用法详解">
-<meta name="twitter:description" content="平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看
-dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。
-注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2
-参数注释：
-if=&amp;lt;文件名&amp;gt;：输入文件名，缺省为标准输入。即指定源文件。&amp;lt; if=input file &amp;gt; of=&amp;lt;文件名&amp;gt;：输出文件名，缺省为标准输出。即指定目的文件。&amp;lt; of=output file &amp;gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。
-count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。
-dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &amp;gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看 dd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。 注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2 参数注释： if=&lt;文件名&gt;：输入文件名，缺省为标准输入。即指定源文件。&lt; if=input file &gt; of=&lt;文件名&gt;：输出文件名，缺省为标准输出。即指定目的文件。&lt; of=output file &gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。 count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。 dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -79,7 +64,7 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -211,12 +196,12 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -224,7 +209,7 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -232,10 +217,11 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -314,8 +300,8 @@ dd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb
 <p>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h2 id="dd-指令的解释">dd 指令的解释</h2>
-<p>dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。</p>
+<h2 id="dd-指令的解释">dd 指令的解释
+</h2><p>dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。</p>
 <blockquote>
 <p>注意：指定数字的地方若以下列字符结尾，则乘以相应的数字
 例如<code>b=512；c=1；k=1024；w=2</code></p>
@@ -351,8 +337,8 @@ noerror：出错时不停止
 notrunc：不截短输出文件
 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。</p>
 </blockquote>
-<h2 id="dd指令应用实例">dd指令应用实例</h2>
-<ul>
+<h2 id="dd指令应用实例">dd指令应用实例
+</h2><ul>
 <li>将本地的/dev/hdb整盘备份到/dev/hdd
 <code>#dd if=/dev/hdb of=/dev/hdd</code></li>
 <li>将/dev/hdb全盘数据备份到指定路径的image文件
@@ -400,16 +386,16 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <ul>
 <li>测试硬盘的读写速度</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file<span style="color:#e6db74">`</span>
-</span></span><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/root/1Gb.file bs<span style="color:#f92672">=</span>64k | dd of<span style="color:#f92672">=</span>/dev/null
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/dev/zero <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">1024</span> <span style="color:#e06c75">count</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">1000000</span> <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/root/1Gb.file<span style="color:#98c379">`</span>
+</span></span><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/root/1Gb.file <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span>64k | dd <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/dev/null
 </span></span></code></pre></div><p>通过以上两个命令输出的命令执行时间，可以计算出硬盘的读、写速度。</p>
 <ul>
 <li>确定硬盘的最佳块大小：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">1000000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
-</span></span><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">2048</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">500000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
-</span></span><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">4096</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">250000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
-</span></span><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero bs<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">125000</span> of<span style="color:#f92672">=</span>/root/1Gb.file
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/dev/zero <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">1024</span> <span style="color:#e06c75">count</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">1000000</span> <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/root/1Gb.file
+</span></span><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/dev/zero <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">2048</span> <span style="color:#e06c75">count</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">500000</span> <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/root/1Gb.file
+</span></span><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/dev/zero <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">4096</span> <span style="color:#e06c75">count</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">250000</span> <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/root/1Gb.file
+</span></span><span style="display:flex;"><span>dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>/dev/zero <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">8192</span> <span style="color:#e06c75">count</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">125000</span> <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/root/1Gb.file
 </span></span></code></pre></div><p>通过比较以上命令输出中所显示的命令执行时间，即可确定系统最佳的块大小。</p>
 <ul>
 <li>修复硬盘：
@@ -426,8 +412,8 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <code>#netcat -l -p 1234 | dd of=/dev/hdc bs=16065b</code>
 在目的主机上执行此命令来接收数据并写入/dev/hdc</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>netcat -l -p <span style="color:#ae81ff">1234</span> | bzip2 &gt; partition.img
-</span></span><span style="display:flex;"><span>netcat -l -p <span style="color:#ae81ff">1234</span> | gzip &gt; partition.img
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>netcat -l -p <span style="color:#d19a66">1234</span> | bzip2 &gt; partition.img
+</span></span><span style="display:flex;"><span>netcat -l -p <span style="color:#d19a66">1234</span> | gzip &gt; partition.img
 </span></span></code></pre></div><p>以上两条指令是目的主机指令的变化分别采用bzip2、gzip对数据进行压缩，并将备份文件保存在当前目录。</p>
 <ul>
 <li>将一个大视频文件的第i个字节的值改成0x41（大写字母A的ASCII值）
@@ -441,33 +427,33 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <p>1)以root用户创建一个ASM磁盘所在的目录。</p>
 <p><code>#mkdir –p /u01/asmdisks</code></p>
 <p>2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book u01<span style="color:#f92672">]</span><span style="color:#75715e"># cd asmdisks</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book u01<span style="color:#56b6c2">]</span><span style="color:#7f848e"># cd asmdisks</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk1 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk1 bs=1024k count=400</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk2 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk2 bs=1024k count=400</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk3 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk3 bs=1024k count=400</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk4 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk4 bs=1024k count=400</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk5 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk5 bs=1024k count=400</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># dd if=/dev/zero of=asm_disk6 bs=1024k count=400</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># dd if=/dev/zero of=asm_disk6 bs=1024k count=400</span>
 </span></span></code></pre></div><p>3)将这些文件与裸设备关联。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># chmod 777 asm_disk*</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># chmod 777 asm_disk*</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop1 asm_disk1</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop1 asm_disk1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop2 asm_disk2</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop2 asm_disk2</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop3 asm_disk3</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop3 asm_disk3</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop4 asm_disk4</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop4 asm_disk4</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop5 asm_disk5</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop5 asm_disk5</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>root@book asmdisks<span style="color:#f92672">]</span><span style="color:#75715e"># losetup /dev/loop6 asm_disk6</span>
+</span></span><span style="display:flex;"><span><span style="color:#56b6c2">[</span>root@book asmdisks<span style="color:#56b6c2">]</span><span style="color:#7f848e"># losetup /dev/loop6 asm_disk6</span>
 </span></span></code></pre></div><blockquote>
 <p>注意：如果要删除通过dd模拟出的虚拟磁盘文件的话，直接删除模拟出的磁盘文件
 （也就是asm_disk1、asm_disk2…asm_disk6）还不够，还必须执行losetup -d /dev/loopN，在这里N从1到6。否则，磁盘文件所占用的磁盘空间不能释放</p>
@@ -480,7 +466,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
     
     <section class="article-tags">
         
-            <a href="/tags/shell/">shell</a>
+            <a href="/tags/shell/">Shell</a>
         
     </section>
 
@@ -518,7 +504,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
         
             <div class="article-image">
-                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hua5d991d6ea7f5c9325c13aae37ad3ea1_62330_250x150_fill_box_smart1_3.png" 
+                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu15090158947573214185.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -611,7 +597,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -622,12 +608,12 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

@@ -16,17 +16,17 @@
 &lt;p&gt;Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;刷入步骤&#34;&gt;刷入步骤&lt;/h2&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;刷入步骤&#34;&gt;刷入步骤
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;注意：以下为 hentaiOS 作者 Dyneteve 给出的&lt;a class=&#34;link&#34; href=&#34;https://t.me/hentaiOSViolet/238933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方刷入步骤&lt;/a&gt;。其他刷机方法待更新。&lt;/p&gt;
 &lt;p&gt;如果你无法理解本文的某些内容，你可以参照&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/10/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这篇教程&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;你需要准备什么&#34;&gt;你需要准备什么？&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;你需要准备什么&#34;&gt;你需要准备什么？
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一台电脑 (Windows 和 Linux 皆可)&lt;/li&gt;
 &lt;li&gt;一台能正常工作的 Redmi Note 7 Pro (Violet)&lt;/li&gt;
 &lt;li&gt;一双能照着教程操作的手&lt;/li&gt;
@@ -44,8 +44,8 @@
 &lt;p&gt;AOSP Recovery：&lt;a class=&#34;link&#34; href=&#34;https://one.linioi.com/onedrive/%E5%88%B7%E6%9C%BA%E8%B5%84%E6%BA%90/Redmi%20Note%207%20Pro%20%28Violet%29/Recovery/AOSP%20Recovery%20ROM%20Flasher%20V4.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;那么让我们开始&#34;&gt;那么，让我们开始…&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;那么让我们开始&#34;&gt;那么，让我们开始…
+&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;备份你的数据，准备好相应的救砖工具以备不时之需。&lt;/li&gt;
 &lt;li&gt;关机下长按&lt;code&gt;电源键&lt;/code&gt;和&lt;code&gt;音量-&lt;/code&gt;进入 &lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/fastboot/3228436&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;fastboot&lt;/a&gt; 模式。&lt;/li&gt;
@@ -82,15 +82,15 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;至此，hentaiOS 已刷入完成&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;某些问题的简单解答待更新&#34;&gt;某些问题的简单解答（待更新）&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;某些问题的简单解答待更新&#34;&gt;某些问题的简单解答（待更新）
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Magisk &lt;strong&gt;所有版本不能正常工作&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;TWRP 及 TWRP 魔改版本(如 OrangeFox)&lt;strong&gt;无法正常工作&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;ROM &lt;strong&gt;无法解密&lt;/strong&gt;，解密会导致&lt;code&gt;The system has been destroyed&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;目前仅 AOSP Recovery 可以完全正常刷入 ROM，其他方式待验证&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;后记&#34;&gt;后记&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;后记&#34;&gt;后记
+&lt;/h2&gt;&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -115,8 +115,8 @@
 &lt;p&gt;对于有一定英语水平的用户，直接看 Dyneteve 的 &lt;a class=&#34;link&#34; href=&#34;https://telegra.ph/FlashingUpdating-PE-to-the-latest-version-using-AOSP-Recovery-v3-04-10-2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Flash Guide&lt;/a&gt; 即可。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;刷前需知&#34;&gt;刷前需知&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;刷前需知&#34;&gt;刷前需知
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;刷入 ROM 前，请确保你的设备已解锁 Bootloader。&lt;/li&gt;
 &lt;li&gt;建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。&lt;/li&gt;
 &lt;/ul&gt;
@@ -125,8 +125,8 @@
 阅读本教程建议搭配这篇&lt;a class=&#34;link&#34; href=&#34;https://riwihow.github.io/2020/04/03/How-to-flash-on-violet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;教程&lt;/a&gt;，食用效果更佳&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;方法一&#34;&gt;方法一：&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;方法一&#34;&gt;方法一：
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;如果你电脑是 Linux 发行版，请忽略此方法。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -188,8 +188,8 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;至此，刷入完成。&lt;/p&gt;
-&lt;h3 id=&#34;方法二&#34;&gt;方法二：&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;方法二&#34;&gt;方法二：
+&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;下载 &lt;a class=&#34;link&#34; href=&#34;https://t.me/pixelexperienceviolet/197641&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AOSP Recovery Flasher v4&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://download.pixelexperience.org/changelog/violet/PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;PE/Plus 刷机包&lt;/a&gt;
@@ -287,8 +287,8 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;p&gt;刷入教程至此结束。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;AOSP Recovery 现证实可以刷入 Magisk Installer&lt;/strong&gt;
 &lt;strong&gt;如果需要刷入 Magisk，直接在 AOSP Recovery 中刷入即可&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;不借助-recovery-刷入-magisk&#34;&gt;不借助 Recovery 刷入 Magisk&lt;/h2&gt;
-&lt;p&gt;解压 PE 刷机包，结构大致如下：&lt;/p&gt;
+&lt;h2 id=&#34;不借助-recovery-刷入-magisk&#34;&gt;不借助 Recovery 刷入 Magisk
+&lt;/h2&gt;&lt;p&gt;解压 PE 刷机包，结构大致如下：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;├── META-INF
 │   └── com
 │       ├── android
@@ -357,13 +357,13 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;blockquote&gt;
 &lt;p&gt;Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 &lt;code&gt;violet&lt;/code&gt; 。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;一得到这部手机&#34;&gt;一、得到这部手机&lt;/h2&gt;
-&lt;p&gt;小米商城已经没有了，去其它地方看看吧（&lt;/p&gt;
-&lt;h2 id=&#34;二解锁-bootloader&#34;&gt;二、解锁 Bootloader&lt;/h2&gt;
-&lt;p&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://www.miui.com/unlock/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;一得到这部手机&#34;&gt;一、得到这部手机
+&lt;/h2&gt;&lt;p&gt;小米商城已经没有了，去其它地方看看吧（&lt;/p&gt;
+&lt;h2 id=&#34;二解锁-bootloader&#34;&gt;二、解锁 Bootloader
+&lt;/h2&gt;&lt;p&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://www.miui.com/unlock/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;小米官方解锁页面&lt;/a&gt;申请权限并根据提示解锁。&lt;/p&gt;
-&lt;h2 id=&#34;三下载刷机所需文件&#34;&gt;三、下载刷机所需文件&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;三下载刷机所需文件&#34;&gt;三、下载刷机所需文件
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Android Debug Bridge&lt;/p&gt;
 &lt;blockquote&gt;
@@ -408,8 +408,8 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 &lt;p&gt;看各位喜好啦~~&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;四刷入-recovery&#34;&gt;四、刷入 Recovery&lt;/h2&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;四刷入-recovery&#34;&gt;四、刷入 Recovery
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;手机关机，&lt;strong&gt;长按 音量减键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;FASTBOOT&lt;/code&gt; 模式。用数据线把手机和电脑连接起来。&lt;/p&gt;
 &lt;/li&gt;
@@ -472,8 +472,8 @@ Finished. Total time: 2.427s
 &lt;p&gt;如果需要改简体中文，点击底部的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; 右上角的齿轮图标 &amp;ndash;&amp;gt; &lt;code&gt;Regional&lt;/code&gt; &amp;ndash;&amp;gt; 点击 &lt;code&gt;Language&lt;/code&gt; 下的 &lt;code&gt;English&lt;/code&gt; ，选择 &lt;code&gt;Chinese Simplified&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;五刷入-rom&#34;&gt;五、刷入 ROM&lt;/h2&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;五刷入-rom&#34;&gt;五、刷入 ROM
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在上一步的状态下，返回主界面，点击下方的 &lt;code&gt;Menu&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;Manage Parttions&lt;/code&gt; &amp;ndash;&amp;gt; 选择 &lt;code&gt;Data&lt;/code&gt; &amp;ndash;&amp;gt; 点击右下方的勾 &amp;ndash;&amp;gt; 点击 &lt;code&gt;Format Data&lt;/code&gt; &amp;ndash;&amp;gt; 输入 &lt;code&gt;yes&lt;/code&gt; 来格式化 Data 。&lt;/p&gt;
 &lt;/li&gt;
@@ -497,10 +497,10 @@ Finished. Total time: 2.427s
 &lt;p&gt;通过数据线将刷机包，底包传到手机。先选择底包，滑动下方滑块来刷入，再刷入系统（有的系统自带底包，我们不需要额外刷入底包）。刷入完成后就可以重启到系统。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;六φ&#34;&gt;六、φ(゜▽゜*)♪&lt;/h2&gt;
-&lt;p&gt;不出意外，我们已经成功刷入了一个系统！！！&lt;/p&gt;
-&lt;h2 id=&#34;七乱七八糟的问题&#34;&gt;七、乱七八糟的问题&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;六φ&#34;&gt;六、φ(゜▽゜*)♪
+&lt;/h2&gt;&lt;p&gt;不出意外，我们已经成功刷入了一个系统！！！&lt;/p&gt;
+&lt;h2 id=&#34;七乱七八糟的问题&#34;&gt;七、乱七八糟的问题
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;重启到 Recovery 后显示 &lt;code&gt;The system has been destoryed&lt;/code&gt; （可能只会出现在官方 MIUI 系统上）？&lt;/p&gt;
 &lt;p&gt;这个与 AVB 2.0 有关。具体请参见 &lt;a class=&#34;link&#34; href=&#34;https://source.android.com/security/verifiedboot/avb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

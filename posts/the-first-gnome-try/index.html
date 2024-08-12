@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看
-这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
-反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
-因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
-无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。
-起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
-强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看 这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&hellip;) 无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。 起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。 强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。">
 <title>记 GNOME 的初体验</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/the-first-gnome-try/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='记 GNOME 的初体验'>
-<meta property='og:description' content='2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看
-这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
-反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
-因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
-无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。
-起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
-强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="记 GNOME 的初体验">
+<meta property='og:description' content="2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看 这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&hellip;) 无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。 起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。 强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。">
 <meta property='og:url' content='https://blog.linioi.com/posts/the-first-gnome-try/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='GNOME' /><meta property='article:tag' content='随笔' /><meta property='article:published_time' content='2021-02-23T01:26:46&#43;08:00'/><meta property='article:modified_time' content='2021-02-23T01:26:46&#43;08:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="记 GNOME 的初体验">
-<meta name="twitter:description" content="2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看
-这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。
-反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。
-因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&amp;hellip;)
-无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。
-起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。
-强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="2022 年 1 月 18 日注： 经 Arch Linux CN 社区中一些大佬指正，现对该博文进行补充说明，以免误导 Linux 萌新。没想到我的博客居然真的有人看 这篇博客本质上其实也只是一篇个人吐槽性博客，而并非严谨的技术性文档。我很高兴会有人愿意花时间看我的这样一篇无聊的博客，但请不要将这篇博客所呈现的内容或其中的观点作为你评判事物的参考。 限于我当时写这篇博客的技术水平及认知水平，这篇博客许多观点和表述上其实存在很多问题。我对这些错误大体上持较为宽容的态度，毕竟使用 Linux 的过程中，我始终是一个还在路上的求学者。在自身认知还不完善的情况下，错误其实在所难免。不过我觉得存在错误并不可耻，知错不改、止步不前才可怕。曾经的我写下的幼稚言论固然漏洞百出，但是当作难得珍贵的黑历史又何尝不是一种乐趣呢？这又何尝不是记录性博客的意义所在呢？（我这样说会不会被打啊 如果你是萌新纠结 Linux 桌面环境的选择，你应该亲自一个一个尝试而不是在网上搜索相关文章或视频。他人的意见固然值得参考，但是适合自己的才是最好的。 文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我个人的配置问题。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。 最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾） 记 GNOME 的初体验 长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。 反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。 因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&hellip;) 无奈地一次 GNOME 尝试 是的，是“无奈的一次尝试”。 起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。 强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -79,7 +64,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -211,12 +196,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -224,7 +209,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -232,10 +217,11 @@
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -323,20 +309,20 @@
 <li>文章中存在一些对 GNOME 的负面评论，但并不代表我否认 GNOME 是现 Linux 桌面环境大家庭中极为出色的一个。事实上截至目前，我使用的桌面环境仍是 GNOME，这同样代表了我对它的认可。博客中大篇幅描述了当时的我使用 GNOME 遇到的 bug，但是在后续处理中已经证明这些只不过是我<strong>个人的配置问题</strong>。桌面环境的稳定性其实很大程度上取决于用户水平，因此请理性看待当时的我提出的 bug。</li>
 <li>最后，如果聪明的你在阅读这篇博客的时候发现了博客中存在的问题，欢迎在评论区指出，说不定还能开展一场捉虫大赛呢对吧？（雾）</li>
 </ol>
-<h1 id="记-gnome-的初体验">记 GNOME 的初体验</h1>
-<p>长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。</p>
+<h1 id="记-gnome-的初体验">记 GNOME 的初体验
+</h1><p>长期以来，我使用 KDE 而非 GNOME。劝退我的不只网上关于 GNOME 的负面言论诸如“GNOME 资源占用大”、“扩展 bug 多”、“开发线混乱，整个项目四分五裂”等，还有 Linus 在 Google＋ 中描述 GNOME “无可容忍的凌乱”。</p>
 <p>反观 KDE 却是出奇的一致好评，比如“最小的等离子桌面”、“高度可自定义”、“界面统一，新手易使用”等。</p>
 <p>因此，我几乎没有任何纠结地选择了 KDE（重要原因还是当时电脑配置太低，所以后面又换 Xfce 了&hellip;)</p>
-<h2 id="无奈地一次-gnome-尝试">无奈地一次 GNOME 尝试</h2>
-<p>是的，是“无奈的一次尝试”。</p>
+<h2 id="无奈地一次-gnome-尝试">无奈地一次 GNOME 尝试
+</h2><p>是的，是“无奈的一次尝试”。</p>
 <p>起因是 KDE 出现“合盖睡死”、“合盖再开盖花屏”等问题。</p>
 <p>强迫症的我当然不能忍受开机就铺面而来的撕裂感。对于不喜欢经常关机的我来说，如果仅 睡眠/挂起 意味着每次开机一片刺眼的条纹，那么继续使用 KDE 基本上可以帮助我戒掉电脑了（强迫症的挣扎）。</p>
 <p>长时间地查教程、社区提问无果后，我逐渐放弃了挣扎，并在纠结很久之后选择装了一个 Windows 10（至少这台电脑的 Windows 支持非常完善，Windows 10 不会开盖花屏）。</p>
 <p>这件事让我很沮丧，第一次因为自己能力不够而被迫选择自己所抗拒的 Windows 到底是一件让人开心不起来的事情。我将我的想法这样传达给了我的一个朋友，那个朋友这样反问，“为什么不试试 GNOME 呢？”</p>
 <p>我当然下意识拒绝了，理由便是开篇那些网上的负面言论。但是拒绝后的那个下午，我反复想起”使用 GNOME“的提议。</p>
 <p>既然别无选择，为什么不给 GNOME 一个机会呢？（<del>态度好像不太对</del></p>
-<h2 id="意料之外gnome-给我的惊喜">意料之外：GNOME 给我的惊喜</h2>
-<p>经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + GNOME 的安装。</p>
+<h2 id="意料之外gnome-给我的惊喜">意料之外：GNOME 给我的惊喜
+</h2><p>经过一番熟练的操作（别问我我为什么这么熟练），我完成了 Arch Linux + GNOME 的安装。</p>
 <p>重启第一眼看到的 GDM 就给了我一个惊喜——精致的 MD 设计，简约大方，一瞬间让我不敢想起 SDDM 那土掉渣的开机界面（我当然知道 SDDM 主题，但是 SDDM 主题很少有能做到 GDM 这般简约与美观并重）。</p>
 <p>在几分钟的试体验中，GNOME 精致的 MD 设计接近颠覆了我对 Linux 桌面一贯的认知。KDE 高自定义当然很好，但是不如 GNOME 这般简直为我的简约向审美量身定制。</p>
 <p>（不要和我说 GNOME 的默认应用图标，那玩意差点弄瞎了我的眼睛）</p>
@@ -344,7 +330,7 @@
 <p><img src="/posts/the-first-gnome-try/vscode-icon.png"
 	width="476"
 	height="254"
-	srcset="/posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/vscode-icon_hu63a188e671494b1b972d7d63125d9417_4873_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/vscode-icon_hu1465805879109096961.png 480w, /posts/the-first-gnome-try/vscode-icon_hu15309290630281653602.png 1024w"
 	loading="lazy"
 	
 		alt="你敢相信这个是 VS Code？"
@@ -357,9 +343,9 @@
 ></p>
 <p>大概感觉是，看完这默认的图标设计，我感觉我挺有当设计师的天赋。</p>
 <p>在确定 GNOME 合盖不会花屏之后，我可以肯定，GNOME 将会是我未来很长一段时间的 Linux 桌面环境解决方案。</p>
-<h2 id="与-gnome-bug-的搏斗">与 GNOME bug 的搏斗</h2>
-<h3 id="第一回合下马威gdm-的罢工">第一回合：下马威，GDM 的罢工</h3>
-<p>如上文所说，我不喜欢经常关机，所以直到当我装 VMware 需要重启的时候，我才发现原来这 GDM 是一次性产品，就第一次开机能一睹它尊容（</p>
+<h2 id="与-gnome-bug-的搏斗">与 GNOME bug 的搏斗
+</h2><h3 id="第一回合下马威gdm-的罢工">第一回合：下马威，GDM 的罢工
+</h3><p>如上文所说，我不喜欢经常关机，所以直到当我装 VMware 需要重启的时候，我才发现原来这 GDM 是一次性产品，就第一次开机能一睹它尊容（</p>
 <p>具体 bug 表现为内核启动后，电脑一直卡在光标闪动界面而没出现 GDM（显示管理器）。刚开始我寻思可能是 VMware 有点傲娇，重启开机系统的工作量有点大（自欺欺人ing&hellip;)，所以开机稍微慢了了一点。加上这光标一直在闪，而我暂时也不急着用电脑，所以姑且耐心地等了下来，直到半个小时后我与电脑漆黑屏幕里闪动的光标从相顾无言到怒目而向。</p>
 <p>好吧，大概是挂了。没想到自己 Arch Linux 第一次嗝屁居然不是因为滚挂了，而是新系统的第一次重启&hellip;</p>
 <p>我仔细进行了一番思考，简单罗列一下可能的原因，最后得出了结论：可能<del>又</del>要重装了。</p>
@@ -379,24 +365,24 @@
 <p>After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start"  target="_blank" rel="noopener"
     >start KMS early</a>. Another possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units"  target="_blank" rel="noopener"
     >edit the systemd service</a> and either set its type to &ldquo;idle&rdquo; or add a small delay:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span> Type<span style="color:#f92672">=</span>idle
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#56b6c2">[</span>Service<span style="color:#56b6c2">]</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e06c75">Type</span><span style="color:#56b6c2">=</span>idle
 </span></span></code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span> ExecStartPre<span style="color:#f92672">=</span>/bin/sleep <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#56b6c2">[</span>Service<span style="color:#56b6c2">]</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e06c75">ExecStartPre</span><span style="color:#56b6c2">=</span>/bin/sleep <span style="color:#d19a66">2</span>
 </span></span></code></pre></div><p>If a longer delay is required, increase the delay time.</p>
 <p>看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？</p>
 <p>于是继续顺着超链接看了下去。</p>
 <p>嗯，在<code>/etc/mkinitcpio.conf</code>添加模块（MODULES），我是 AMD 核显所以应该添加<code>amdgpu</code>。</p>
 <p>所以应该是</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>MODULES<span style="color:#f92672">=(</span>amdgpu<span style="color:#f92672">)</span>  <span style="color:#75715e">#又不是旧架构，我为啥要加 radeon？</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e06c75">MODULES</span><span style="color:#56b6c2">=(</span>amdgpu<span style="color:#56b6c2">)</span>  <span style="color:#7f848e">#又不是旧架构，我为啥要加 radeon？</span>
 </span></span></code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
 <p>确保这次开机不是偶然，我特意再重启了一遍，然后&hellip;&hellip;又卡在那个光标了。</p>
 <p>我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（</p>
 <p>抱着破罐子破摔的态度，我开始尝试我能想到的玄学方法，比如安装 linux-zen 内核（据说专为 Arch Linux 用户定制，对笔记本有玄学优化的神奇内核）。然后，就真开机了&hellip;&hellip;</p>
 <p>是的，这次不是偶然事件了。截至我先这篇博文，我亲爱的 GDM 都 works very well。感谢 linux-zen 鼎力相助以及 GDM 的手下留情，不然我就真的可能把 GDM 换 SDDM 或 LightDM 试试了（雾）。</p>
-<h3 id="第二回合下酒菜薛定谔的桌面动画">第二回合：下酒菜，薛定谔的桌面动画</h3>
-<p>考虑到如果要将这次较量完整的记录下来，5000 字可能不够写大纲。因此，我只记录我印象最深刻的 <em>显示应用程序动画</em>。</p>
+<h3 id="第二回合下酒菜薛定谔的桌面动画">第二回合：下酒菜，薛定谔的桌面动画
+</h3><p>考虑到如果要将这次较量完整的记录下来，5000 字可能不够写大纲。因此，我只记录我印象最深刻的 <em>显示应用程序动画</em>。</p>
 <p>起因是每次点击 Dock 栏的抽屉（姑且先这样叫吧），动画都有一种莫名的卡顿感。我是一个很少在意动画的人，但动画明显的不和谐感引发了我的疑惑。仔细想了想，我感觉我电脑配置算不上高但怎么也不至于带不动一个桌面的动画。于是我特意仔细观察了一下点击 Dock 栏抽屉的动画，然后发现了问题所在。</p>
 <p>我觉得我的语言很难向别人表述清楚问题所在，但是考虑到我博客好像只有自己看，那就按照我的感觉描述，自己能懂就好了（bushi</p>
 <p>简单来说，我只<strong>点击了抽屉一次</strong>，而 Dock 栏抽屉的<strong>动画显示了两次</strong>。</p>
@@ -404,7 +390,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223004213775.png"
 	width="1052"
 	height="212"
-	srcset="/posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu48c65c8667988f899a810e7976ef07a4_48978_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223004213775_hu11861583013797104104.png 480w, /posts/the-first-gnome-try/image-20210223004213775_hu2828389278185911837.png 1024w"
 	loading="lazy"
 	
 		alt="Dash To Dock-启动项"
@@ -418,15 +404,15 @@
 <p>关闭该选项后，动画的不和谐感消失。</p>
 <p>当然，对于内心追求完美的我来说，一切本应还没有结束。考虑到 GNOME 扩展都是为 GNOME 定制的，扩展作者怎么可能加这种明显有问题的功能呢？最可能的情况是，这个功能本应该在某种情况下正常工作，但是我当前环境不满足扩展正常工作所需条件，因此才会出现这个 bug。</p>
 <p>我当然也更喜欢扩展提供的动画，但是在网上找很久都没有找到相关解决方案后，我还是决定放弃该动画，毕竟使用 Linux 不应把过多的时间放在美化上（<del>才不是为自己找借口</del>）。</p>
-<h3 id="第三回合压轴戏无尽-bug">第三回合：压轴戏，无尽 bug</h3>
-<p>无尽 bug，故名思义，即为我对目前 GNOME 使用体验的描述。如果要形象一点表述，我只能说，我感觉我被虫子包围了。</p>
+<h3 id="第三回合压轴戏无尽-bug">第三回合：压轴戏，无尽 bug
+</h3><p>无尽 bug，故名思义，即为我对目前 GNOME 使用体验的描述。如果要形象一点表述，我只能说，我感觉我被虫子包围了。</p>
 <p>是的，GNOME 日常使用如果加上扩展的话 bug 太多了&hellip;每天体验不同的 bug或者也是一种乐趣吧？</p>
-<h2 id="gnome-中我的扩展与美化">GNOME 中我的扩展与美化</h2>
-<p>该节仅为记录备份，请勿照搬安装我截图中的扩展。</p>
+<h2 id="gnome-中我的扩展与美化">GNOME 中我的扩展与美化
+</h2><p>该节仅为记录备份，请勿照搬安装我截图中的扩展。</p>
 <p><img src="/posts/the-first-gnome-try/image-20210223010034467.png"
 	width="2560"
 	height="1532"
-	srcset="/posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hud149367c0603b0104a669a2723a50bd1_249902_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223010034467_hu16166932644966710341.png 480w, /posts/the-first-gnome-try/image-20210223010034467_hu14816097114488675713.png 1024w"
 	loading="lazy"
 	
 		alt="我的扩展1"
@@ -440,7 +426,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223010209578.png"
 	width="2560"
 	height="1532"
-	srcset="/posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu21c83ea227ec97f09608958af6289be8_248251_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223010209578_hu15175732016937950785.png 480w, /posts/the-first-gnome-try/image-20210223010209578_hu317744850719837273.png 1024w"
 	loading="lazy"
 	
 		alt="我的扩展2"
@@ -454,7 +440,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223010538858.png"
 	width="2560"
 	height="1532"
-	srcset="/posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu002e63c3e490d5694ac95717a8841052_252849_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223010538858_hu17101311042971875858.png 480w, /posts/the-first-gnome-try/image-20210223010538858_hu17565039583772625355.png 1024w"
 	loading="lazy"
 	
 		alt="我的扩展3"
@@ -468,7 +454,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223010623143.png"
 	width="2554"
 	height="340"
-	srcset="/posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu787c2d144d620e57790c62ea3c9b68b5_44945_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223010623143_hu8593974894781965673.png 480w, /posts/the-first-gnome-try/image-20210223010623143_hu4498361871457034906.png 1024w"
 	loading="lazy"
 	
 		alt="我的扩展4"
@@ -483,7 +469,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223005830704.png"
 	width="2560"
 	height="1532"
-	srcset="/posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu5804e1f92dd71ca21875cab44b958563_132994_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223005830704_hu1402694353970085365.png 480w, /posts/the-first-gnome-try/image-20210223005830704_hu17307670859510791288.png 1024w"
 	loading="lazy"
 	
 		alt="我的主题搭配"
@@ -497,7 +483,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223005924530.png"
 	width="2560"
 	height="1532"
-	srcset="/posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu0d625b59c24d2eee8ca6e65a6645ec83_136655_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223005924530_hu10772046102914387089.png 480w, /posts/the-first-gnome-try/image-20210223005924530_hu14782446637696669867.png 1024w"
 	loading="lazy"
 	
 		alt="我的字体搭配"
@@ -512,7 +498,7 @@
 <p><img src="/posts/the-first-gnome-try/image-20210223010757838.png"
 	width="2560"
 	height="1600"
-	srcset="/posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_480x0_resize_box_3.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu353dc714355237e4820a76cb260a19db_5430814_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/the-first-gnome-try/image-20210223010757838_hu5800524346944887603.png 480w, /posts/the-first-gnome-try/image-20210223010757838_hu2501348441415218138.png 1024w"
 	loading="lazy"
 	
 		alt="我的桌面"
@@ -531,8 +517,8 @@
 <p>正确的高效率布局应该是 Dock 放侧栏（即 GNOME 默认设置）。</p>
 <p>那我为啥把 Dock 放底栏呢？
 <del>因为好看啊～</del></p>
-<h2 id="使用小结">使用小结</h2>
-<p>根据 Typora 的统计结果，这也是一篇 3000 字的长文了。粗略估计一下，我写这篇博文也花了三个多小时。实际上的写作体验由最开始的不知道写啥到后面的停不下来，还是非常舒畅的。我想这也是我这几天使用 GNOME 有很多有意思的体验，也有很多想法想分享给别人（虽然好像写了 3000 字，但实际上啥也没写）。</p>
+<h2 id="使用小结">使用小结
+</h2><p>根据 Typora 的统计结果，这也是一篇 3000 字的长文了。粗略估计一下，我写这篇博文也花了三个多小时。实际上的写作体验由最开始的不知道写啥到后面的停不下来，还是非常舒畅的。我想这也是我这几天使用 GNOME 有很多有意思的体验，也有很多想法想分享给别人（虽然好像写了 3000 字，但实际上啥也没写）。</p>
 <p>其实一开始写这篇博文是想分享一下 GNOME 的效率工具&amp;作业模式，但转念觉得教程性文章未免太没意思了一点，而目前整个博客几乎都是教程性文章，几乎看不出一个博客应有的样子，所以索性水了一篇这样的记录性博文。</p>
 <p>总而言之，希望将来的自己重新审视自己曾经写的博文的时候，能喜欢这篇文章。</p>
 
@@ -585,7 +571,7 @@
         
         
             <div class="article-image">
-                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hua5d991d6ea7f5c9325c13aae37ad3ea1_62330_250x150_fill_box_smart1_3.png" 
+                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu15090158947573214185.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -678,7 +664,7 @@
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -689,12 +675,12 @@
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

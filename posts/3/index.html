@@ -1,51 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='场景如下
-QQ/WeChat:
-A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000&#43; 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……
-声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。
-即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。
-这里简单介绍一下 iOS 通知推送机制。
-本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。
-远程推送 前提已满足条件：App 已注册远程推送通知。
-Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下：
-软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。
-也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="场景如下 QQ/WeChat: A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000+ 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起…… 声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。 即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。 这里简单介绍一下 iOS 通知推送机制。 本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。 远程推送 前提已满足条件：App 已注册远程推送通知。 Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下： 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。 也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。">
 <title>浅谈手机通知推送</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/3/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='浅谈手机通知推送'>
-<meta property='og:description' content='场景如下
-QQ/WeChat:
-A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000&#43; 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……
-声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。
-即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。
-这里简单介绍一下 iOS 通知推送机制。
-本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。
-远程推送 前提已满足条件：App 已注册远程推送通知。
-Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下：
-软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。
-也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="浅谈手机通知推送">
+<meta property='og:description' content="场景如下 QQ/WeChat: A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000+ 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起…… 声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。 即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。 这里简单介绍一下 iOS 通知推送机制。 本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。 远程推送 前提已满足条件：App 已注册远程推送通知。 Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下： 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。 也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。">
 <meta property='og:url' content='https://blog.linioi.com/posts/3/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='通知推送' /><meta property='article:published_time' content='2020-10-01T15:49:01&#43;00:00'/><meta property='article:modified_time' content='2020-10-01T15:49:01&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/posts/3/cover.jpg' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="浅谈手机通知推送">
-<meta name="twitter:description" content="场景如下
-QQ/WeChat:
-A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000&#43; 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……
-声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。
-即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。
-这里简单介绍一下 iOS 通知推送机制。
-本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。
-远程推送 前提已满足条件：App 已注册远程推送通知。
-Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下：
-软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。
-也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="场景如下 QQ/WeChat: A：我给你发消息你怎么半天没回？ 我：有事请 Telegram 联系，QQ/WeChat 随缘回复。 A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？ 我：（此处省略 1000+ 字） 忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起…… 声明 限于篇幅，这篇文章并不会太多牵扯到手机通知推送的技术细节。（毕竟主要是科普嘛~~） 文章内容仅代表作者个人认知和观点，欢迎发表你的观点。 文章内容限于作者能力可能存在某些错误，欢迎指出。 iOS 的通知推送 说起手机推送，不得不先提的是 iOS 的通知推送。 即使你是一个数码小白，至少也听说过 iOS 通知的及时。当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。 这里简单介绍一下 iOS 通知推送机制。 本地推送 本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。 远程推送 前提已满足条件：App 已注册远程推送通知。 Apple 开发者文档给出的推送过程示意图如下： 用文字描述过程如下： 软件需要推送通知 软件服务器将通知推送到 Apple Push Notification service（APNs） Apple Push Notification service（APNs） 将通知转发给用户。 可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件本身没有参与。 也就是说，iOS 通知推送并不需要软件的后台运行。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/posts/3/cover.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -91,7 +64,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -223,12 +196,12 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -236,7 +209,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -244,10 +217,11 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -258,8 +232,8 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
     <header class="article-header">
         <div class="article-image">
             <a href="/posts/3/">
-                <img src="/posts/3/cover_hu33c5f08c98762c53a78672665d2839cf_25837_800x0_resize_q75_box.jpg"
-                        srcset="/posts/3/cover_hu33c5f08c98762c53a78672665d2839cf_25837_800x0_resize_q75_box.jpg 800w, /posts/3/cover_hu33c5f08c98762c53a78672665d2839cf_25837_1600x0_resize_q75_box.jpg 1600w"
+                <img src="/posts/3/cover_hu11882075633404244599.jpg"
+                        srcset="/posts/3/cover_hu11882075633404244599.jpg 800w, /posts/3/cover_hu17416672241224248843.jpg 1600w"
                         width="800" 
                         height="420" 
                         loading="lazy"
@@ -344,27 +318,27 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 </ul>
 <p>忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……</p>
 <!-- raw HTML omitted -->
-<h2 id="声明">声明</h2>
-<ul>
+<h2 id="声明">声明
+</h2><ul>
 <li>限于篇幅，这篇文章并不会太多牵扯到手机通知推送的<em>技术细节</em>。（毕竟主要是科普嘛~~）</li>
 <li>文章内容仅代表作者个人认知和观点，欢迎发表你的观点。</li>
 <li>文章内容限于作者能力可能存在某些错误，欢迎指出。</li>
 </ul>
-<h2 id="ios-的通知推送">iOS 的通知推送</h2>
-<p>说起手机推送，不得不先提的是 iOS 的通知推送。</p>
+<h2 id="ios-的通知推送">iOS 的通知推送
+</h2><p>说起手机推送，不得不先提的是 iOS 的通知推送。</p>
 <p>即使你是一个数码小白，至少也听说过 iOS 通知的及时。<del>当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。</del></p>
 <p>这里简单介绍一下 iOS 通知推送机制。</p>
-<h3 id="本地推送">本地推送</h3>
-<p>本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。</p>
-<h3 id="远程推送">远程推送</h3>
-<blockquote>
+<h3 id="本地推送">本地推送
+</h3><p>本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。</p>
+<h3 id="远程推送">远程推送
+</h3><blockquote>
 <p>前提已满足条件：App 已注册远程推送通知。</p>
 </blockquote>
 <p>Apple 开发者文档给出的推送过程示意图如下：
 <img src="/posts/3/f70fd156eda99becc550aa1e97bc87d6.png"
 	width="1329"
 	height="393"
-	srcset="/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, /posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu1387511374364777666.png 480w, /posts/3/f70fd156eda99becc550aa1e97bc87d6_hu9772645220949237439.png 1024w"
 	loading="lazy"
 	
 		alt="通知推送示意图"
@@ -383,11 +357,11 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 </ol>
 <p>可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件<strong>本身没有参与</strong>。</p>
 <p>也就是说，<strong>iOS 通知推送并不需要软件的后台运行</strong>。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。<del>别羡慕了，羡慕就去买台果子吧。</del></p>
-<h2 id="android-的通知推送">Android 的通知推送</h2>
-<p>这里首先为被风评被害多年的 404 小厂的操作系统辩解一番。人家一个官网都常年打不开的小公司，怎么可能实现像 Apple Push Notification service 这样大体量的通知推送服务。（雾）</p>
+<h2 id="android-的通知推送">Android 的通知推送
+</h2><p>这里首先为被风评被害多年的 404 小厂的操作系统辩解一番。人家一个官网都常年打不开的小公司，怎么可能实现像 Apple Push Notification service 这样大体量的通知推送服务。（雾）</p>
 <p>如你所见，由于某些众所周知的原因，Android 的系统推送通知一直处于一个尴尬的情况 <del>(指国内)</del> 。于是在长期以来的 Android 发展中，各大公司群策群力，纷纷贡献自己的金点子银点子，携手解决这一难题。</p>
-<h3 id="google-的-fcm">Google 的 FCM</h3>
-<p>严格意义上来说，某 404 公司对于自己操作系统的推送服务还是有进行一番 <del>无意义的挣扎</del> 努力。</p>
+<h3 id="google-的-fcm">Google 的 FCM
+</h3><p>严格意义上来说，某 404 公司对于自己操作系统的推送服务还是有进行一番 <del>无意义的挣扎</del> 努力。</p>
 <blockquote>
 <p>2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。</p>
 <p>2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。</p>
@@ -396,7 +370,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 <p><img src="/posts/3/430ad3ada8a599674eb6136131587ad7.png"
 	width="1120"
 	height="1387"
-	srcset="/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, /posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w"
+	srcset="/posts/3/430ad3ada8a599674eb6136131587ad7_hu4887501005989032296.png 480w, /posts/3/430ad3ada8a599674eb6136131587ad7_hu14863234294249723984.png 1024w"
 	loading="lazy"
 	
 		alt="FCM 示意图"
@@ -420,7 +394,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 <p><img src="/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg"
 	width="1080"
 	height="514"
-	srcset="/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, /posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu4285177711546657347.jpg 480w, /posts/3/6f4d17b500537aebf393b3e47377dfc3_hu5508090596129122882.jpg 1024w"
 	loading="lazy"
 	
 		alt="FCM 已连接示意图"
@@ -431,20 +405,20 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 		data-flex-basis="504px"
 	
 ></p>
-<h3 id="各大互联网公司的解决方案">各大互联网公司的解决方案</h3>
-<p>由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。</p>
+<h3 id="各大互联网公司的解决方案">各大互联网公司的解决方案
+</h3><p>由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。</p>
 <p>事实上，这种小问题根本难不倒我们大天朝的互联网公司，以阿里巴巴等互联网巨头为首率先想出一种行之有效的解决方法——<strong>团结就是力量</strong>。</p>
 <p>可能上一段你看得有点懵，但不要紧，我给这种解决方法换一个更广为人知的名字你就熟了——<strong>链式启动</strong>。</p>
 <p>互联网公司通过自己的软件全家桶或和其他互联网公司相互合作，以<strong>相互唤醒</strong>的方式保证自己全家人后台存活，然后团结一致完成通知推送（当然也可能顺便干一点别的东西）。</p>
 <p>简单来说，如果这些软件中有一个不慎倒下了（后台被杀死），<strong>其他软件会迅速将其拉起</strong>，保证其在后台<strong>始终处于唤醒状态</strong>，让共用的推送通道保持活跃而不被系统杀死，以便消息能及时送达。</p>
 <p>这一方法简单粗暴，不仅体现了化繁为简这一哲学思想，更是弘扬了社会主义团结互助的精神，再次告诉我们什么叫做团结就是力量！（此处应有掌声）</p>
 <p>当然，这种方法还是有一点点小小的弊端，那就是手机耗电有点快，可能还会有点烫有点卡。<del>但是瑕不掩瑜，这点小问题和这天才般的创意比起来算什么呢？</del></p>
-<h3 id="手机厂商的推送服务">手机厂商的推送服务</h3>
-<p>面对 <del>群魔乱舞的</del> Android 推送问题，终究还是有手机厂商站了出来，模仿 Apple 和 404 小厂的做法建立了他们自己的推送服务，比如小米的「MiPush」。</p>
+<h3 id="手机厂商的推送服务">手机厂商的推送服务
+</h3><p>面对 <del>群魔乱舞的</del> Android 推送问题，终究还是有手机厂商站了出来，模仿 Apple 和 404 小厂的做法建立了他们自己的推送服务，比如小米的「MiPush」。</p>
 <p>这些推送服务被集成在各厂商高度定制的 Android 系统中，作为系统级推送存在。手机厂商试图通过模仿 Apple 和 404 小厂实现同等程度的通知绿色与时效性。</p>
 <p>但想法是美好的，事实上，开发者不可能兼顾所有的厂商，为每个品牌的手机都适配对应的推送服务，能专门适配其中一家到两家已经是很良心了 <del>(试图为某鹅狡辩)</del> 。除此之外，虽然手机厂商的推送服务也可以在其它品牌的手机上正常使用，但并不能像在自家定制系统上一样实现系统级的推送，推送服务依旧需要后台常驻。</p>
-<h3 id="也许是黎明的曙光统一推送联盟">也许是黎明的曙光——统一推送联盟</h3>
-<p>不知道你有没有听说过 <a class="link" href="https://green-android.org/"  target="_blank" rel="noopener"
+<h3 id="也许是黎明的曙光统一推送联盟">也许是黎明的曙光——统一推送联盟
+</h3><p>不知道你有没有听说过 <a class="link" href="https://green-android.org/"  target="_blank" rel="noopener"
     >Android 绿色应用公约</a>。如果没有听说过也没关系，现在你知道了。</p>
 <blockquote>
 <p><strong>宗旨</strong></p>
@@ -486,7 +460,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 <img src="/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg"
 	width="1080"
 	height="331"
-	srcset="/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, /posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w"
+	srcset="/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu17888537735899403363.jpg 480w, /posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu15949013312662787717.jpg 1024w"
 	loading="lazy"
 	
 		alt="官方回复「近期上线」"
@@ -498,8 +472,8 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
 	
 ></p>
 <p><del>我也不知道我有生之年能不能等到这天了。</del></p>
-<h2 id="题外话让我们回头看看-qqwechat">题外话：让我们回头看看 QQ/WeChat</h2>
-<p>看到这里，你大概对手机系统推送有了比较全面的了解。</p>
+<h2 id="题外话让我们回头看看-qqwechat">题外话：让我们回头看看 QQ/WeChat
+</h2><p>看到这里，你大概对手机系统推送有了比较全面的了解。</p>
 <p>那么你一定好奇，国民级软件 QQ 和 WeChat 是怎么实现手机通知推送的。</p>
 <p>iOS 当然没有任何疑问，通过 Apple Push Notification service。</p>
 <p>Android 上则一言难尽，因为<strong>这两个 App 都没有注册任何一个推送服务</strong>。<del>忘了 Google Play 版 WeChat 的 FCM 吧，它能不能推送完全看脸</del></p>
@@ -641,7 +615,7 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -652,12 +626,12 @@ Apple 开发者文档给出的推送过程示意图如下： 用文字描述过�
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

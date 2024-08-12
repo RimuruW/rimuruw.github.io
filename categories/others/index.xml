@@ -60,8 +60,8 @@
         
         <guid>https://blog.linioi.com/posts/change-to-new-domain/</guid>
         <description>&lt;p&gt;经历一番艰难的抉择与财力上的再三考量，我终于还是着手放弃&lt;a class=&#34;link&#34; href=&#34;qingxu.live&#34; &gt;原博客域名&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;更换域名的原因及旧域名处理方式&#34;&gt;更换域名的原因及旧域名处理方式&lt;/h3&gt;
-&lt;p&gt;更换域名的原因有两个：&lt;/p&gt;
+&lt;h3 id=&#34;更换域名的原因及旧域名处理方式&#34;&gt;更换域名的原因及旧域名处理方式
+&lt;/h3&gt;&lt;p&gt;更换域名的原因有两个：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;.live 域名续费价格超出我的想象…根据我查询结果，即使是最便宜的域名注册商(境外)的续费价格也是 $16 以上。这大概是两个 .com 域名的续费价格了(按最便宜的域名注册商价格算)。考虑到我对 .live 域名后缀没有特别的需求(&lt;del&gt;当初选择这个纯粹是因为腾讯云域名列表就它最便宜&lt;/del&gt;)，似乎没有坚持这个域名的必要了。&lt;/li&gt;
 &lt;li&gt;因为一系列原因，我对现域名注册商(腾讯云)由原来的略微反感到现在的强烈抵触。大概是不想被&lt;del&gt;国内域名注册商喂💩&lt;/del&gt;，即使是国内域名注册商价格明显优势的情况下，我还是选择了国外的域名注册商(当然，是最便宜那种)。&lt;/li&gt;
@@ -75,8 +75,8 @@
 &lt;li&gt;对于以 @qingxu.live 为后缀的邮件地址采取保持收件但停止发件。在未来的几年里逐步把绑定 @qingxu.live 邮件地址的其他帐号换绑为 @linioi.com（那些不能换绑邮箱的平台真让人头疼）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;话说好像还有很多人博客友链也还是指向 *.qingxu.live，我该怎么通知他们呢……&lt;/p&gt;
-&lt;h3 id=&#34;闲话&#34;&gt;闲话&lt;/h3&gt;
-&lt;p&gt;更换的&lt;a class=&#34;link&#34; href=&#34;linioi.com&#34; &gt;新域名&lt;/a&gt;其实是思考近半年后的结果了。期间考虑过无数域名前缀，但总不满意字符的美观性(&lt;del&gt;奇怪的审美增加了&lt;/del&gt;)及其代表的意义。当然，更关键的原因是我想到的域名都被注册了……最后选择的 linioi 其实是开始被否决了无数次的选项，但最后输入时却不由自主地输入了 linioi。或许是我平常 Linux 敲多了所以打字时有这样的下意识的举动，也或许是注定的奇妙的缘分，总之最后就是它了，凑合着也能用。&lt;/p&gt;
+&lt;h3 id=&#34;闲话&#34;&gt;闲话
+&lt;/h3&gt;&lt;p&gt;更换的&lt;a class=&#34;link&#34; href=&#34;linioi.com&#34; &gt;新域名&lt;/a&gt;其实是思考近半年后的结果了。期间考虑过无数域名前缀，但总不满意字符的美观性(&lt;del&gt;奇怪的审美增加了&lt;/del&gt;)及其代表的意义。当然，更关键的原因是我想到的域名都被注册了……最后选择的 linioi 其实是开始被否决了无数次的选项，但最后输入时却不由自主地输入了 linioi。或许是我平常 Linux 敲多了所以打字时有这样的下意识的举动，也或许是注定的奇妙的缘分，总之最后就是它了，凑合着也能用。&lt;/p&gt;
 &lt;p&gt;倒是域名后缀几乎没有纠结。之前最心心念念的其实是 .moe 域名后缀，但是 $13.99（最低价格）的购买价格让我不敢多看……其他很多域名都是购买价格还算正常，续费价格高得离谱（比如 .ink 这样本来极其适合做博客的域名…）。在了解域名定价机制之后，我深刻认识到了 .com 域名虽然看起来昂贵（$8.99 起步），但实际上是最靠谱的那个域名——价格波动非常小而且续费价格稳定（泪）。并且 .com 域名是完全意义上的国际通用，换上 .com 域名的博客看起来就靠谱（&lt;del&gt;虽然还是没人看&lt;/del&gt;）&lt;/p&gt;
 &lt;p&gt;说起来我折腾博客等其他一系列网站已经近一年了，一年前的我或许也从未想过自己竟然为了愿意为了博客破费购买域名吧（当初想要搭建一个静态博客就是因为听说静态博客免费）。自己第一个域名还是 Freenom 上免费领的，当时想到我也有了一个自己的域名而不是用 GitHub 的 github.io 的时候可激动了，现在认识了那些免费域名的套路后不禁因为当时的自己笑了起来。&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;所以换了新域名后，博客更新会勤快一点吗？&lt;/del&gt;&lt;/p&gt;
@@ -88,12 +88,12 @@
         <pubDate>Sun, 29 Nov 2020 13:54:04 +0000</pubDate>
         
         <guid>https://blog.linioi.com/posts/deploy-blog-to-cf/</guid>
-        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;作为一个 &lt;del&gt;很少更新博客&lt;/del&gt; 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。&lt;/p&gt;
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;作为一个 &lt;del&gt;很少更新博客&lt;/del&gt; 热衷于折腾博客的小白玩家，博客的速度一直是我评估博客必不可少的一个方面。在曾经漫长的 Next 主题使用过程中，最能激发我兴趣的莫过于优化 Next 主题的样式和加载速度。&lt;/p&gt;
 &lt;p&gt;可对于当时把博客托管 GitHub Pages 的我来说，不可避免的是国内极其尴尬的加载速度。为此，我尝试过把博客迁移到其他静态网站托管平台如 Netlify，但国内访问速度比起 GitHub Pages 也好不了多少，甚至还会出现服务器响应时间慢等问题……寻找一个足够理想的静态托管平台对于我来说是一个非常漫长的过程，即使是加载速度最令我满意的 Vercel 也不可避免网站刷新和域名问题。
 （关于静态托管平台我可能会专门写一篇文章总结各大平台优缺点，这些暂且后话）&lt;/p&gt;
-&lt;h3 id=&#34;为什么选择-cloudflare&#34;&gt;为什么选择 Cloudflare&lt;/h3&gt;
-&lt;p&gt;引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」&lt;/p&gt;
+&lt;h3 id=&#34;为什么选择-cloudflare&#34;&gt;为什么选择 Cloudflare
+&lt;/h3&gt;&lt;p&gt;引用一句幽默且常被许多站长挂在口中的一句话：「网站的访问速度一直是与光速作斗争。」&lt;/p&gt;
 &lt;p&gt;当访客访问一个网站的时候，他可能要面临的是与千里之外的某一台服务器建立连接，然后数据跋山涉水横跨千里最后出现在他的浏览器。而这个时间太长了，长到绝大多数访客都不愿意为此等待。因此，为了提升建立连接的速度，有了 HTTP 的升级；为了提升静态数据分发速度，有了 CDN。而 Cloudflare Workers Site 则宣布在此基础上他们再实现了一个重要的突破——将整个站点部署在网络边缘。&lt;/p&gt;
 &lt;p&gt;Cloudflare 拥有遍布全球的网络节点，200+ 数据中心让它的速度在全球范围内都有极其优秀的表现。与单纯的 CDN 相比，Cloudflare Workers Site 并不是将已缓存的静态资源放在边缘网络，让浏览器笨拙地跳转再跳转然后获取可能的最近最快的静态资源，而是&lt;strong&gt;直接将整个网站部署到全球边缘网络，让访客直接访问网站获取数据&lt;/strong&gt;。于是，在高速访问的基础上，Cloudflare Workers Site 进一步减少了回源时间，让整个站点在数据传输上接近完美。而 Cloudflare Workers Site 自带可编辑的 index.js 更是可以衍生不少实用和有趣的玩法。&lt;/p&gt;
 &lt;p&gt;在寻找理想的静态托管平台的过程中，Cloudflare Workers Site 无疑让我垂涎已久，只是 $5/Month 起步的订阅费用也让我这个脱贫路上的硬骨头望而却步，最终只能无奈转投他家。&lt;/p&gt;
@@ -102,120 +102,120 @@
 &lt;p&gt;虽然我知道 Cloudflare 向来慷慨大方（从 Free Plan 的免费额度中就可见一斑了），但也实在没想到它会直接到将 Workers 的核心付费功能 Cloudflare Workers KV 直接免费开放。&lt;/p&gt;
 &lt;p&gt;不仅如此，Cloudflare 还特意把 Workers KV 的单个文件大小限制由 10MB 调整到了 25MB，这无疑更方便了网站静态资源的存放。而每天 Workers 10w 次免费调用次数我想对于绝大多数站长还是绰绰有余的。&lt;/p&gt;
 &lt;p&gt;全球边缘网络加速 + 慷慨大方的免费额度，既然找不到拒绝的理由，那么就勉为其难地接受吧~~&lt;/p&gt;
-&lt;h2 id=&#34;常规部署&#34;&gt;常规部署&lt;/h2&gt;
-&lt;h3 id=&#34;准备-cli-部署工具&#34;&gt;准备 CLI 部署工具&lt;/h3&gt;
-&lt;p&gt;开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;常规部署&#34;&gt;常规部署
+&lt;/h2&gt;&lt;h3 id=&#34;准备-cli-部署工具&#34;&gt;准备 CLI 部署工具
+&lt;/h3&gt;&lt;p&gt;开始部署前，我们要先安装 Cloudflare Workers 的 CLI 管理工具 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wrangler&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;Wrangler 可以通过 &lt;code&gt;npm&lt;/code&gt; 或 &lt;code&gt;cargo&lt;/code&gt; 安装。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm i @cloudflare/wrangler -g
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 你也可以使用 Yarn 安装 Wrangler&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# yarn global add @cloudflare/wrangler&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo install wrangler
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm i @cloudflare/wrangler -g
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;# 你也可以使用 Yarn 安装 Wrangler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;# yarn global add @cloudflare/wrangler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo install wrangler
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{% note info simple %}
 经过实测，Wrangler 可能无法安装在 ARM 架构的设备上。如果可以，尽量使用 x86 设备。
 {% endnote %}&lt;/p&gt;
-&lt;h3 id=&#34;获取-api-token&#34;&gt;获取 API Token&lt;/h3&gt;
-&lt;p&gt;如果你没有一个 Cloudflare 帐号，则需要先&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/sign-up&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;获取-api-token&#34;&gt;获取 API Token
+&lt;/h3&gt;&lt;p&gt;如果你没有一个 Cloudflare 帐号，则需要先&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/sign-up&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;注册一个 Cloudflare 帐号&lt;/a&gt;，并绑定你的自定义域名。&lt;/p&gt;
 &lt;p&gt;使用 Wrangler 前需要先 &lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/profile/api-tokens&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;申请一个 API Token&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;在 API Token 申请界面选择「Edit Cloudflare Workers」模板。根据「所予权限最小化」的原则，建议删除默认权限模板中不需要的「Account」和「User」权限。&lt;/p&gt;
-&lt;h3 id=&#34;初始化项目&#34;&gt;初始化项目&lt;/h3&gt;
-&lt;p&gt;在博客源码的根目录输入如下命令进行初始化&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# my-static-blog 是目录名称，你可以改成你喜欢的其他名字&lt;/span&gt;
+&lt;h3 id=&#34;初始化项目&#34;&gt;初始化项目
+&lt;/h3&gt;&lt;p&gt;在博客源码的根目录输入如下命令进行初始化&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;# my-static-blog 是目录名称，你可以改成你喜欢的其他名字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler init --site my-static-blog
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会依照 Cloudflare Workers Site 的模板在项目里新生成 workers-site 目录（默认）和 wrangler.toml 配置文件。我们需要手动对配置文件进行一些简单的自定义编辑。&lt;/p&gt;
 &lt;p&gt;先使用文本编辑器打开 wrangler.toml 文件并依照你的需求进行修改&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;bucket&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./public&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;entry-point&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;workers-site&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Workers Site 配置代码目录，默认 workers-site 目录&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;account_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;workers_dev&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 是否启用 workers.dev 子域名，推荐不启用&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;route&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blog.linioi.com/*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Workers 路由配置，请指向你想绑定的自定义域名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;zone_id&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 域名的 Zone ID，可在 Cloudflare 仪表盘查看&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#e06c75&#34;&gt;site&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;bucket&lt;/span&gt; = &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;./public&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# 生成的 dist 路径，Hexo 和 Hugo 为 public，「.」的意思是当前目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;entry-point&lt;/span&gt; = &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;workers-site&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# Cloudflare Workers Site 配置代码目录，默认 workers-site 目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;account_id&lt;/span&gt; = &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# Cloudflare Account ID，可在 Cloudflare 仪表盘或个人主页的网址处负责&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;workers_dev&lt;/span&gt; = &lt;span style=&#34;color:#e5c07b&#34;&gt;false&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# 是否启用 workers.dev 子域名，推荐不启用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;route&lt;/span&gt; = &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;blog.linioi.com/*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# Workers 路由配置，请指向你想绑定的自定义域名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;zone_id&lt;/span&gt; = &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# 域名的 Zone ID，可在 Cloudflare 仪表盘查看&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;完成 wrangler.toml 的配置后，运行&lt;code&gt;wrangler config&lt;/code&gt;命令并依照命令行提示输入上一步获取的 API Token。&lt;/p&gt;
-&lt;h3 id=&#34;预览与部署&#34;&gt;预览与部署&lt;/h3&gt;
-&lt;p&gt;配置完成后，我们可以先输入如下命令预览一下部署效果。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler preview --watch
+&lt;h3 id=&#34;预览与部署&#34;&gt;预览与部署
+&lt;/h3&gt;&lt;p&gt;配置完成后，我们可以先输入如下命令预览一下部署效果。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler preview --watch
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wrangler 会上传配置文件中设定的&lt;code&gt;bucket&lt;/code&gt;路径的文件至 Cloudflare Workers KV，浏览器会自动打开一个窗口预览。&lt;/p&gt;
 &lt;p&gt;确认无误后，输入如下命令进行部署&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler publish
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置域名-dns-解析&#34;&gt;配置域名 DNS 解析&lt;/h3&gt;
-&lt;p&gt;上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wrangler publish
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置域名-dns-解析&#34;&gt;配置域名 DNS 解析
+&lt;/h3&gt;&lt;p&gt;上面的操作只是上传了博客文件，如果想要访客正常访问还需要进行「域名 DNS 解析」。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你在前面修改配置文件时设置了「workers_dev=true」，则 Cloudflare 会自动分配给你一个三级域名，你可以在 DNS 解析设置处创建你的自定义域名的 CNAME 解析，指向 Cloudflare 分配的三级域名。&lt;/li&gt;
 &lt;li&gt;如果你在前面修改配置文件时设置了「workers_dev=false」，则在 DNS 解析设置处创建你自定义域名的 A 解析，指向 IP &lt;code&gt;2.2.2.2&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;大功告成&#34;&gt;大功告成！&lt;/h3&gt;
-&lt;p&gt;如果一切正常，现在你可以输入你的自定义域名即可访问
+&lt;h3 id=&#34;大功告成&#34;&gt;大功告成！
+&lt;/h3&gt;&lt;p&gt;如果一切正常，现在你可以输入你的自定义域名即可访问
 你的博客。如果你想要实现更多的玩法，可以自己编辑 workers-site 下的 index.js。&lt;/p&gt;
-&lt;h2 id=&#34;使用-github-action-实现持续集成&#34;&gt;使用 GitHub Action 实现持续集成&lt;/h2&gt;
-&lt;p&gt;如果你从未接触过 GitHub Action 自动部署，建议你先看一下我写的另一篇文章  &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/archives/9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;使用-github-action-实现持续集成&#34;&gt;使用 GitHub Action 实现持续集成
+&lt;/h2&gt;&lt;p&gt;如果你从未接触过 GitHub Action 自动部署，建议你先看一下我写的另一篇文章  &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/archives/9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub Action 实现 Hexo 博客持续集成&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;与我写的另一篇文章略有不同，这里需要将文件推送到 Cloudflare Workers Site。我们可以 Cloudflare 官方 &lt;a class=&#34;link&#34; href=&#34;https://github.com/cloudflare/wrangler-action&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;wrangler-action&lt;/a&gt; 轻松实现这一过程。&lt;/p&gt;
 &lt;p&gt;wrangler-action 的使用同样需要设置 API Token。你可以选择使用上面生成的 API Token，也可以再申请一个 API Token，模板和权限与上面相同。&lt;/p&gt;
 &lt;p&gt;然后再 GitHub 存放你博客源码的仓库添加 Secrets 变量 &lt;code&gt;CF_WORKERS_TOKEN&lt;/code&gt;，内容为你申请的 API Token。&lt;/p&gt;
 &lt;p&gt;最后在 GitHub Action 配置文件末尾加上如下代码进行部署。（注意缩进）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;apiToken&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.CF_WORKERS_TOKEN }}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;我的-github-action-配置文件仅供参考&#34;&gt;我的 GitHub Action 配置文件（仅供参考）&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Builder For Blog&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy to Cloudflare Workers
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: cloudflare/wrangler-action@1.3.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#e06c75&#34;&gt;apiToken&lt;/span&gt;: ${{ secrets.CF_WORKERS_TOKEN }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;我的-github-action-配置文件仅供参考&#34;&gt;我的 GitHub Action 配置文件（仅供参考）
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: GitHub Auto Builder For Blog
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#  schedule:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#    - cron: &amp;#39;0 21 * * *&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;push&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#  schedule:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#    - cron: &amp;#39;0 21 * * *&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;TZ&lt;/span&gt;: Asia/Shanghai
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build and deploy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;strategy&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;matrix&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          - &lt;span style=&#34;color:#ae81ff&#34;&gt;12.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;x&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Hexo build and deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;runs-on&lt;/span&gt;: ubuntu-latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;strategy&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;matrix&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;node-version&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          - &lt;span style=&#34;color:#d19a66&#34;&gt;12.&lt;/span&gt;x
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout codes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/checkout@v2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Use Node.js ${{ matrix.node-version }}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-node@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ matrix.node-version }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Use Node.js ${{ matrix.node-version }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/setup-node@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;node-version&lt;/span&gt;: ${{ matrix.node-version }}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Cache Node Dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/cache@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;path&lt;/span&gt;: .npm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;key&lt;/span&gt;: ${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Clone themes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Clone themes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Install dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install hexo-cli -g
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files and gulp&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; gulp&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Generate files and gulp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; gulp&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;apiToken&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.CF_WORKERS_TOKEN }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy to Cloudflare Workers
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: cloudflare/wrangler-action@1.3.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#e06c75&#34;&gt;apiToken&lt;/span&gt;: ${{ secrets.CF_WORKERS_TOKEN }}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
@@ -234,27 +234,27 @@
 &lt;/ul&gt;
 &lt;p&gt;忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;声明&#34;&gt;声明&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;声明&#34;&gt;声明
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;限于篇幅，这篇文章并不会太多牵扯到手机通知推送的&lt;em&gt;技术细节&lt;/em&gt;。（毕竟主要是科普嘛~~）&lt;/li&gt;
 &lt;li&gt;文章内容仅代表作者个人认知和观点，欢迎发表你的观点。&lt;/li&gt;
 &lt;li&gt;文章内容限于作者能力可能存在某些错误，欢迎指出。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;ios-的通知推送&#34;&gt;iOS 的通知推送&lt;/h2&gt;
-&lt;p&gt;说起手机推送，不得不先提的是 iOS 的通知推送。&lt;/p&gt;
+&lt;h2 id=&#34;ios-的通知推送&#34;&gt;iOS 的通知推送
+&lt;/h2&gt;&lt;p&gt;说起手机推送，不得不先提的是 iOS 的通知推送。&lt;/p&gt;
 &lt;p&gt;即使你是一个数码小白，至少也听说过 iOS 通知的及时。&lt;del&gt;当然，你可能看到的是吐槽 Android 通知多么垃圾，这其实是反衬 iOS 通知的强大。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;这里简单介绍一下 iOS 通知推送机制。&lt;/p&gt;
-&lt;h3 id=&#34;本地推送&#34;&gt;本地推送&lt;/h3&gt;
-&lt;p&gt;本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。&lt;/p&gt;
-&lt;h3 id=&#34;远程推送&#34;&gt;远程推送&lt;/h3&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;本地推送&#34;&gt;本地推送
+&lt;/h3&gt;&lt;p&gt;本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。&lt;/p&gt;
+&lt;h3 id=&#34;远程推送&#34;&gt;远程推送
+&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Apple 开发者文档给出的推送过程示意图如下：
 &lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;393&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu30575964ae671bcf8a4d96116d3f4a35_29820_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu1387511374364777666.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu9772645220949237439.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;通知推送示意图&#34;
@@ -273,11 +273,11 @@
 &lt;/ol&gt;
 &lt;p&gt;可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件&lt;strong&gt;本身没有参与&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;也就是说，&lt;strong&gt;iOS 通知推送并不需要软件的后台运行&lt;/strong&gt;。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。&lt;del&gt;别羡慕了，羡慕就去买台果子吧。&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;android-的通知推送&#34;&gt;Android 的通知推送&lt;/h2&gt;
-&lt;p&gt;这里首先为被风评被害多年的 404 小厂的操作系统辩解一番。人家一个官网都常年打不开的小公司，怎么可能实现像 Apple Push Notification service 这样大体量的通知推送服务。（雾）&lt;/p&gt;
+&lt;h2 id=&#34;android-的通知推送&#34;&gt;Android 的通知推送
+&lt;/h2&gt;&lt;p&gt;这里首先为被风评被害多年的 404 小厂的操作系统辩解一番。人家一个官网都常年打不开的小公司，怎么可能实现像 Apple Push Notification service 这样大体量的通知推送服务。（雾）&lt;/p&gt;
 &lt;p&gt;如你所见，由于某些众所周知的原因，Android 的系统推送通知一直处于一个尴尬的情况 &lt;del&gt;(指国内)&lt;/del&gt; 。于是在长期以来的 Android 发展中，各大公司群策群力，纷纷贡献自己的金点子银点子，携手解决这一难题。&lt;/p&gt;
-&lt;h3 id=&#34;google-的-fcm&#34;&gt;Google 的 FCM&lt;/h3&gt;
-&lt;p&gt;严格意义上来说，某 404 公司对于自己操作系统的推送服务还是有进行一番 &lt;del&gt;无意义的挣扎&lt;/del&gt; 努力。&lt;/p&gt;
+&lt;h3 id=&#34;google-的-fcm&#34;&gt;Google 的 FCM
+&lt;/h3&gt;&lt;p&gt;严格意义上来说，某 404 公司对于自己操作系统的推送服务还是有进行一番 &lt;del&gt;无意义的挣扎&lt;/del&gt; 努力。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。&lt;/p&gt;
 &lt;p&gt;2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。&lt;/p&gt;
@@ -286,7 +286,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
 	width=&#34;1120&#34;
 	height=&#34;1387&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu9339029dbf8895be1313aca3cb059381_173150_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu4887501005989032296.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu14863234294249723984.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 示意图&#34;
@@ -310,7 +310,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;514&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu48ff6f5453c2e459a0d882e130c6a750_34715_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu4285177711546657347.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu5508090596129122882.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 已连接示意图&#34;
@@ -321,20 +321,20 @@
 		data-flex-basis=&#34;504px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;各大互联网公司的解决方案&#34;&gt;各大互联网公司的解决方案&lt;/h3&gt;
-&lt;p&gt;由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。&lt;/p&gt;
+&lt;h3 id=&#34;各大互联网公司的解决方案&#34;&gt;各大互联网公司的解决方案
+&lt;/h3&gt;&lt;p&gt;由上面的叙述我们可以知道，404 小厂的 FCM 是靠不住了，关键时刻还是需要我们自力更生，自给自足。&lt;/p&gt;
 &lt;p&gt;事实上，这种小问题根本难不倒我们大天朝的互联网公司，以阿里巴巴等互联网巨头为首率先想出一种行之有效的解决方法——&lt;strong&gt;团结就是力量&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;可能上一段你看得有点懵，但不要紧，我给这种解决方法换一个更广为人知的名字你就熟了——&lt;strong&gt;链式启动&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;互联网公司通过自己的软件全家桶或和其他互联网公司相互合作，以&lt;strong&gt;相互唤醒&lt;/strong&gt;的方式保证自己全家人后台存活，然后团结一致完成通知推送（当然也可能顺便干一点别的东西）。&lt;/p&gt;
 &lt;p&gt;简单来说，如果这些软件中有一个不慎倒下了（后台被杀死），&lt;strong&gt;其他软件会迅速将其拉起&lt;/strong&gt;，保证其在后台&lt;strong&gt;始终处于唤醒状态&lt;/strong&gt;，让共用的推送通道保持活跃而不被系统杀死，以便消息能及时送达。&lt;/p&gt;
 &lt;p&gt;这一方法简单粗暴，不仅体现了化繁为简这一哲学思想，更是弘扬了社会主义团结互助的精神，再次告诉我们什么叫做团结就是力量！（此处应有掌声）&lt;/p&gt;
 &lt;p&gt;当然，这种方法还是有一点点小小的弊端，那就是手机耗电有点快，可能还会有点烫有点卡。&lt;del&gt;但是瑕不掩瑜，这点小问题和这天才般的创意比起来算什么呢？&lt;/del&gt;&lt;/p&gt;
-&lt;h3 id=&#34;手机厂商的推送服务&#34;&gt;手机厂商的推送服务&lt;/h3&gt;
-&lt;p&gt;面对 &lt;del&gt;群魔乱舞的&lt;/del&gt; Android 推送问题，终究还是有手机厂商站了出来，模仿 Apple 和 404 小厂的做法建立了他们自己的推送服务，比如小米的「MiPush」。&lt;/p&gt;
+&lt;h3 id=&#34;手机厂商的推送服务&#34;&gt;手机厂商的推送服务
+&lt;/h3&gt;&lt;p&gt;面对 &lt;del&gt;群魔乱舞的&lt;/del&gt; Android 推送问题，终究还是有手机厂商站了出来，模仿 Apple 和 404 小厂的做法建立了他们自己的推送服务，比如小米的「MiPush」。&lt;/p&gt;
 &lt;p&gt;这些推送服务被集成在各厂商高度定制的 Android 系统中，作为系统级推送存在。手机厂商试图通过模仿 Apple 和 404 小厂实现同等程度的通知绿色与时效性。&lt;/p&gt;
 &lt;p&gt;但想法是美好的，事实上，开发者不可能兼顾所有的厂商，为每个品牌的手机都适配对应的推送服务，能专门适配其中一家到两家已经是很良心了 &lt;del&gt;(试图为某鹅狡辩)&lt;/del&gt; 。除此之外，虽然手机厂商的推送服务也可以在其它品牌的手机上正常使用，但并不能像在自家定制系统上一样实现系统级的推送，推送服务依旧需要后台常驻。&lt;/p&gt;
-&lt;h3 id=&#34;也许是黎明的曙光统一推送联盟&#34;&gt;也许是黎明的曙光——统一推送联盟&lt;/h3&gt;
-&lt;p&gt;不知道你有没有听说过 &lt;a class=&#34;link&#34; href=&#34;https://green-android.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;也许是黎明的曙光统一推送联盟&#34;&gt;也许是黎明的曙光——统一推送联盟
+&lt;/h3&gt;&lt;p&gt;不知道你有没有听说过 &lt;a class=&#34;link&#34; href=&#34;https://green-android.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android 绿色应用公约&lt;/a&gt;。如果没有听说过也没关系，现在你知道了。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;宗旨&lt;/strong&gt;&lt;/p&gt;
@@ -376,7 +376,7 @@
 &lt;img src=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;331&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu8d01b0c9479d1c4cccefe07f14b8aa36_23595_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu17888537735899403363.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu15949013312662787717.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;官方回复「近期上线」&#34;
@@ -388,8 +388,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;我也不知道我有生之年能不能等到这天了。&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;题外话让我们回头看看-qqwechat&#34;&gt;题外话：让我们回头看看 QQ/WeChat&lt;/h2&gt;
-&lt;p&gt;看到这里，你大概对手机系统推送有了比较全面的了解。&lt;/p&gt;
+&lt;h2 id=&#34;题外话让我们回头看看-qqwechat&#34;&gt;题外话：让我们回头看看 QQ/WeChat
+&lt;/h2&gt;&lt;p&gt;看到这里，你大概对手机系统推送有了比较全面的了解。&lt;/p&gt;
 &lt;p&gt;那么你一定好奇，国民级软件 QQ 和 WeChat 是怎么实现手机通知推送的。&lt;/p&gt;
 &lt;p&gt;iOS 当然没有任何疑问，通过 Apple Push Notification service。&lt;/p&gt;
 &lt;p&gt;Android 上则一言难尽，因为&lt;strong&gt;这两个 App 都没有注册任何一个推送服务&lt;/strong&gt;。&lt;del&gt;忘了 Google Play 版 WeChat 的 FCM 吧，它能不能推送完全看脸&lt;/del&gt;&lt;/p&gt;
@@ -419,11 +419,11 @@
 &lt;p&gt;上个月，欧盟议会发布了一份关于数字经济未来发展策略的&lt;a class=&#34;link&#34; href=&#34;https://www.europarl.europa.eu/committees/en/product/product-details/20200602CAN55527&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;研究报告&lt;/a&gt;，提出将建立欧盟的“互联网防火墙”，报告明确指出这个防火墙将“像中国的一样，会封锁一部分支持或者容忍（对欧盟而言的）非法行为的第三方国家的互联网服务。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;互联网防火墙可能是有预兆的必然&#34;&gt;互联网防火墙可能是有预兆的必然&lt;/h2&gt;
-&lt;p&gt;不禁让我想起了去年俄罗斯开始和中国交流“互联网防火墙”的建设。&lt;/p&gt;
+&lt;h2 id=&#34;互联网防火墙可能是有预兆的必然&#34;&gt;互联网防火墙可能是有预兆的必然
+&lt;/h2&gt;&lt;p&gt;不禁让我想起了去年俄罗斯开始和中国交流“互联网防火墙”的建设。&lt;/p&gt;
 &lt;p&gt;所谓“网络主权”正在被越来越多的国家挂在嘴上，而所谓“互联网自由”逐渐变成了一个笑话。一切真如很久以前有人说的，「互联网审查并将成为世界绝大多数国家的共识，互联网自由将随着互联网的发展而有名无实」。&lt;/p&gt;
-&lt;h2 id=&#34;历史总是相似的&#34;&gt;历史总是相似的&lt;/h2&gt;
-&lt;p&gt;此时被无数人想起的莫过于茨威格的《昨日的世界》&lt;/p&gt;
+&lt;h2 id=&#34;历史总是相似的&#34;&gt;历史总是相似的
+&lt;/h2&gt;&lt;p&gt;此时被无数人想起的莫过于茨威格的《昨日的世界》&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;自从第一次世界大战以来，世界所经历的能让人感觉到的最大倒退，莫过于对个人行动自由的限制，以及自由权利的缩小。
 在1914年以前，地球属于所有的人。每个人可以去他想去的地方，想停留多长时间就停留多长时间。没有所谓的许可，没有准入。
@@ -458,8 +458,8 @@
 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;你要先清楚某些东西&#34;&gt;你要先清楚某些东西…&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;你要先清楚某些东西&#34;&gt;你要先清楚某些东西…
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在私有仓库下使用 GitHub Action 是&lt;strong&gt;不完全免费的&lt;/strong&gt;。
 对于免费用户，&lt;strong&gt;你每个月只能使用 GitHub Action 工作 2000 min&lt;/strong&gt;。这个数据计算方法特别有意思，详见 &lt;a class=&#34;link&#34; href=&#34;https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;&lt;/li&gt;
@@ -480,18 +480,18 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@v1.0.0&#34; &gt;hexo-action@v1.0.0&lt;/a&gt; 会自动删除项目仓库下的&lt;code&gt;.deploy_git&lt;/code&gt;文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 &lt;a class=&#34;link&#34; href=&#34;mailto:hexo-action@1.0.1&#34; &gt;hexo-action@1.0.1&lt;/a&gt; 被修复。我认为这个修复是不合理的。&lt;/li&gt;
 &lt;li&gt;如果需要添加额外的 node module，则在&lt;code&gt;package.json&lt;/code&gt;中添加相应依赖。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;默认已满足的条件&#34;&gt;默认已满足的条件&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;默认已满足的条件&#34;&gt;默认已满足的条件
+&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;已注册 GitHub 账号&lt;/li&gt;
 &lt;li&gt;已有一个部署到 GitHub 且工作正常的 Hexo 博客&lt;/li&gt;
 &lt;li&gt;有一定动手能力&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;接下来，让我们开始……&lt;/p&gt;
-&lt;h2 id=&#34;方法一&#34;&gt;方法一&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;部署集成环境&#34;&gt;部署集成环境&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;方法一&#34;&gt;方法一
+&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&#34;部署集成环境&#34;&gt;部署集成环境
+&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;GitHub 建立一个新的仓库，公有还是私有，取决于你的选择。建议此时生成 SSH 密匙简化后续提交过程。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
@@ -501,43 +501,43 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;在博客源码中新建&lt;code&gt;.github/workflows/hexo.yml&lt;/code&gt;文件，在文件添加如下内容：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# workflow 名字&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy &lt;span style=&#34;color:#7f848e&#34;&gt;# workflow 名字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [&lt;span style=&#34;color:#ae81ff&#34;&gt;push]&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 触发事件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [push] &lt;span style=&#34;color:#7f848e&#34;&gt;# 触发事件&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;build&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# Job 1 ID&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 设定运行环境为最新版 Ubuntu，如果你有把握的话，你也可以改成其它运行环境。参见文末备注。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Step 1 获取源码&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 使用 actions/checkout@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 条件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;submodules&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;## Checkout private submodules(themes or something else).参见文末备注。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;build&lt;/span&gt;: &lt;span style=&#34;color:#7f848e&#34;&gt;# Job 1 ID&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;runs-on&lt;/span&gt;: ubuntu-latest &lt;span style=&#34;color:#7f848e&#34;&gt;# 设定运行环境为最新版 Ubuntu，如果你有把握的话，你也可以改成其它运行环境。参见文末备注。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy blog.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout &lt;span style=&#34;color:#7f848e&#34;&gt;# Step 1 获取源码&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/checkout@v1 &lt;span style=&#34;color:#7f848e&#34;&gt;# 使用 actions/checkout@v1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;: &lt;span style=&#34;color:#7f848e&#34;&gt;# 条件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;submodules&lt;/span&gt;: &lt;span style=&#34;color:#e5c07b&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;## Checkout private submodules(themes or something else).参见文末备注。&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache node modules&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Step 2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;node_modules&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ runner.os }}-node-${{ hashFiles(&amp;#39;**/package-lock.json&amp;#39;) }}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;restore-keys&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          ${{ runner.os }}-node-&lt;/span&gt;          
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install Dependencies&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Step 3 &lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;if&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;steps.cache.outputs.cache-hit != &amp;#39;true&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 如果变量 cache-hit 不等于 true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;npm install&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 安装 NPM 相关依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#7f848e&#34;&gt;# Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Cache node modules &lt;span style=&#34;color:#7f848e&#34;&gt;# Step 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/cache@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;path&lt;/span&gt;: node_modules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;key&lt;/span&gt;: ${{ runner.os }}-node-${{ hashFiles(&amp;#39;**/package-lock.json&amp;#39;) }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;restore-keys&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          ${{ runner.os }}-node-&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Install Dependencies &lt;span style=&#34;color:#7f848e&#34;&gt;# Step 3 &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;if&lt;/span&gt;: steps.cache.outputs.cache-hit != &amp;#39;true&amp;#39; &lt;span style=&#34;color:#7f848e&#34;&gt;# 如果变量 cache-hit 不等于 true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: npm install &lt;span style=&#34;color:#7f848e&#34;&gt;# 安装 NPM 相关依赖&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Deploy hexo blog website.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Step 4&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;deploy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;sma11black/hexo-action@v1.0.1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deploy_key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.DEPLOY_KEY }}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;user_name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;your github name&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#你 GitHub 用户名。如果去除该行则使用 bot。去除该行是不推荐行为。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;user_email&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;yourgithubemail@example.com&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#你 GitHub 邮箱。如果去除该行则使用 bot。去除该行是不推荐行为。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;commit_msg&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ github.event.head_commit.message }}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#Hexo 部署博客的自动提交备注&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#7f848e&#34;&gt;# Deploy hexo blog website.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy &lt;span style=&#34;color:#7f848e&#34;&gt;# Step 4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: sma11black/hexo-action@v1.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;deploy_key&lt;/span&gt;: ${{ secrets.DEPLOY_KEY }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;user_name&lt;/span&gt;: your github name &lt;span style=&#34;color:#7f848e&#34;&gt;#你 GitHub 用户名。如果去除该行则使用 bot。去除该行是不推荐行为。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;user_email&lt;/span&gt;: yourgithubemail@example.com &lt;span style=&#34;color:#7f848e&#34;&gt;#你 GitHub 邮箱。如果去除该行则使用 bot。去除该行是不推荐行为。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;commit_msg&lt;/span&gt;: ${{ github.event.head_commit.message }} &lt;span style=&#34;color:#7f848e&#34;&gt;#Hexo 部署博客的自动提交备注&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;部分内容需要根据你实际情况修改为相应内容&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;push 你的博客源码到刚刚新建的仓库。&lt;/li&gt;
@@ -548,7 +548,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;输入如下命令再生成一对 SSH 密匙。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;example@example.com&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;example@example.com&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你使用的是未预安装 OpenSSH 软件的 Linux 发行版，你需要先安装 OpenSSH 再进行如下步骤。
 命令中的邮箱填自己 GitHub 的邮箱。此时会在本地生成一对公匙和私匙。&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
@@ -562,15 +562,15 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;p&gt;享受你的 GitHub CI 吧~&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;备注内容可以不看&#34;&gt;备注内容（可以不看）&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;备注内容可以不看&#34;&gt;备注内容（可以不看）
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;其他可选的运行环境请参见 &lt;a class=&#34;link&#34; href=&#34;https://github.com/actions/virtual-environments/tree/ubuntu18/20200406.2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;关于 Submodules 参见 &lt;a class=&#34;link&#34; href=&#34;https://github.com/sma11black/hexo-action#use-submodule-in-your-hexo-repository&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;方法二&#34;&gt;方法二&lt;/h2&gt;
-&lt;ol&gt;
+&lt;h2 id=&#34;方法二&#34;&gt;方法二
+&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;打开 github.com&lt;/p&gt;
 &lt;/li&gt;
@@ -585,184 +585,184 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;如果你对自动部署细节不感兴趣，可以直接跳转 &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/9/#%E6%88%90%E5%93%81&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;成品&lt;/a&gt; 复制并根据自己情况修改即可。&lt;/p&gt;
-&lt;h3 id=&#34;配置内容&#34;&gt;配置内容&lt;/h3&gt;
-&lt;p&gt;1.名称(这个随意取)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo Blog Deploy&lt;/span&gt;
+&lt;h3 id=&#34;配置内容&#34;&gt;配置内容
+&lt;/h3&gt;&lt;p&gt;1.名称(这个随意取)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Hexo Blog Deploy
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;2.指定触发 workflow 的事件，这里选择的是推送至指定分支的事件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 这里是推送事件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 这里指定了推送的分支&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;push&lt;/span&gt;: &lt;span style=&#34;color:#7f848e&#34;&gt;# 这里是推送事件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - master &lt;span style=&#34;color:#7f848e&#34;&gt;# 这里指定了推送的分支&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;3.设置时区，这里设置的是上海的&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;TZ&lt;/span&gt;: Asia/Shanghai
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;4.指定 workflow 所运行的系统，此处设置的是最新 Ubuntu。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Hexo build
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;runs-on&lt;/span&gt;: ubuntu-latest
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;5.检出代码，设置 Node 环境&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout codes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/checkout@v2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup node&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-node@v1.1.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Node 的版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Setup node
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/setup-node@v1.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#7f848e&#34;&gt;# Node 的版本&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;6.同步子模块。如果没有使用子模块的话，这一步可以忽略。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout submodules&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git submodule sync --recursive
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;    
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout submodules
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git submodule sync --recursive
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;    
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;7.缓存 .npm 目录，加快构建速度&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Cache Node Dependencies &lt;span style=&#34;color:#7f848e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/cache@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;path&lt;/span&gt;: .npm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;key&lt;/span&gt;: ${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;8.安装依赖。我建议，如果可以，请每次都执行以下步骤。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    npm install&lt;/span&gt;    
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Install dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    npm install hexo-cli -g
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    npm install&lt;/span&gt;    
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;9.生成文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;    
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Generate files
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;    
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    mv ./deploy_git/.git ./public/
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    cd ./public
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git config --local user.email &amp;#34;your@email&amp;#34; # 你的邮箱
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git add .
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;成品&#34;&gt;成品&lt;/h3&gt;
-&lt;p&gt;最后的 workflow&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Blog Deploy&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    mv ./deploy_git/.git ./public/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    cd ./public
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git config --local user.email &amp;#34;your@email&amp;#34; # 你的邮箱
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;    git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;成品&#34;&gt;成品
+&lt;/h3&gt;&lt;p&gt;最后的 workflow&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Blog Deploy
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;push&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - master
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;TZ&lt;/span&gt;: Asia/Shanghai
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build and deploy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Hexo build and deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;runs-on&lt;/span&gt;: ubuntu-latest
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout codes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/checkout@v2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup node&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-node@v1.1.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Setup node
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/setup-node@v1.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 若需要同步子模块的话，将下面的注释删掉即可&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#      - name: Checkout submodules&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#        run: |&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#          auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#          git submodule sync --recursive&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#          git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;# 若需要同步子模块的话，将下面的注释删掉即可&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#      - name: Checkout submodules&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#        run: |&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#          auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#          git submodule sync --recursive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#7f848e&#34;&gt;#          git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Cache Node Dependencies &lt;span style=&#34;color:#7f848e&#34;&gt;# Npm 缓存，这一步报错的话，把这部分删掉即可&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/cache@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;path&lt;/span&gt;: .npm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;key&lt;/span&gt;: ${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Install dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install hexo-cli -g
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Generate files
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          mv ./deploy_git/.git ./public/
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          cd ./public
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config --local user.email &amp;#34;your@email&amp;#34; # 你的邮箱
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git add .
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;          
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;我的配置文件&#34;&gt;我的配置文件&lt;/h2&gt;
-&lt;p&gt;如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          mv ./deploy_git/.git ./public/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          cd ./public
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git config --local user.email &amp;#34;your@email&amp;#34; # 你的邮箱
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;我的配置文件&#34;&gt;我的配置文件
+&lt;/h2&gt;&lt;p&gt;如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub Auto Buider For Blog&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: GitHub Auto Buider For Blog
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;master&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;schedule&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;cron&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;0 21 * * *&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;push&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;schedule&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e06c75&#34;&gt;cron&lt;/span&gt;: &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#39;0 21 * * *&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;TZ&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Asia/Shanghai&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;TZ&lt;/span&gt;: Asia/Shanghai
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;blog-cicd&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hexo build and deploy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e06c75&#34;&gt;blog-cicd&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Hexo build and deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;runs-on&lt;/span&gt;: ubuntu-latest
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Checkout codes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Checkout codes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/checkout@v2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup node&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-node@v1.1.0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Setup node
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/setup-node@v1.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;node-version&lt;/span&gt;: &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;12.x&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Clone themes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Clone themes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Cache Node Dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cache&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/cache@v1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;path&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;.npm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;key&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Cache Node Dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;id&lt;/span&gt;: cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;uses&lt;/span&gt;: actions/cache@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;path&lt;/span&gt;: .npm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#e06c75&#34;&gt;key&lt;/span&gt;: ${{runner.OS}}-npm-caches-${{ hashFiles(&amp;#39;package-lock.json&amp;#39;) }}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm install
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          npm audit fix&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Install dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install hexo-cli -g
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm install
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          npm audit fix&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate files&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Generate files
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy blog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          mv ./deploy_git/.git ./public/
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          cd ./public
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config --local user.email &amp;#34;xxxx&amp;#34; # 你的邮箱
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config --local user.name &amp;#34;RimuruW&amp;#34; # 你的用户名
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git add .
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e06c75&#34;&gt;name&lt;/span&gt;: Deploy blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#98c379&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git clone &amp;#34;https://${{ secrets.GH_REF }}&amp;#34; deploy_git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          mv ./deploy_git/.git ./public/
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          cd ./public
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git config --local user.email &amp;#34;xxxx&amp;#34; # 你的邮箱
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git config --local user.name &amp;#34;RimuruW&amp;#34; # 你的用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;          
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考文档：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/sma11black/hexo-action&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

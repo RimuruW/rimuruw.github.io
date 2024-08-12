@@ -12,15 +12,15 @@
         <pubDate>Sat, 17 Oct 2020 22:19:36 +0000</pubDate>
         
         <guid>https://blog.linioi.com/posts/aria2-for-termux/</guid>
-        <description>&lt;h2 id=&#34;aria2-是什么&#34;&gt;Aria2 是什么？&lt;/h2&gt;
-&lt;blockquote&gt;
+        <description>&lt;h2 id=&#34;aria2-是什么&#34;&gt;Aria2 是什么？
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。&lt;/p&gt;
 &lt;p&gt;&amp;ndash; 摘自 &lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/zh-hans/Aria2?wprov=sfla1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;维基百科&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。&lt;/p&gt;
-&lt;h2 id=&#34;为什么会有这篇文章&#34;&gt;为什么会有这篇文章&lt;/h2&gt;
-&lt;p&gt;Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 &lt;a class=&#34;link&#34; href=&#34;https://github.com/mayswind/AriaNg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;为什么会有这篇文章&#34;&gt;为什么会有这篇文章
+&lt;/h2&gt;&lt;p&gt;Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 &lt;a class=&#34;link&#34; href=&#34;https://github.com/mayswind/AriaNg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AriaNg&lt;/a&gt; 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。&lt;/p&gt;
 &lt;p&gt;为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。&lt;/p&gt;
 &lt;p&gt;遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/P3TERX/aria2.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -29,8 +29,8 @@
 &lt;p&gt;但是考虑到 &lt;a class=&#34;link&#34; href=&#34;https://termux.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Termux&lt;/a&gt; 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。&lt;/p&gt;
 &lt;p&gt;下面，让我们开始…&lt;/p&gt;
-&lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载和安装-termux&#34;&gt;下载和安装 Termux
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;目前仅推荐以下两个下载渠道下载 Termux&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;del&gt;Google Play Store： &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://play.google.com/store/apps/details?id=com.termux&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
@@ -49,7 +49,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1390&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hubf0545f270cb54537e367a96641fe598_45258_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu11526315287323940314.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu15580938213580145718.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Termux 界面&#34;
@@ -65,9 +65,9 @@
 &lt;li&gt;请不要害怕终端的黑屏白字，实际上你需要操作的东西&lt;strong&gt;非常简单&lt;/strong&gt;，大部分终端里你看不懂的输出，&lt;strong&gt;都是你不需要关心的细节&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;第一次打开可能会要求进行初始化，请耐心等待初始化完成。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;下载和启动脚本&#34;&gt;下载和启动脚本&lt;/h2&gt;
-&lt;p&gt;下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。&lt;del&gt;如果出现了报错则另说&lt;/del&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;h2 id=&#34;下载和启动脚本&#34;&gt;下载和启动脚本
+&lt;/h2&gt;&lt;p&gt;下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。&lt;del&gt;如果出现了报错则另说&lt;/del&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash -c &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#c678dd&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。&lt;/li&gt;
 &lt;/ul&gt;
@@ -75,7 +75,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34;
 	width=&#34;1073&#34;
 	height=&#34;814&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hub014e4fdc2d696f23c153731f5275b9b_130933_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu9165247423246775450.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu18235387852486129134.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;脚本启动后界面&#34;
@@ -87,8 +87,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;后续启动脚本，如果你没有手动改变文件位置，则你只需要输入&lt;code&gt;bash aria2.sh&lt;/code&gt;即可启动脚本。&lt;/p&gt;
-&lt;h2 id=&#34;安装-aria2&#34;&gt;安装 Aria2&lt;/h2&gt;
-&lt;p&gt;脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。&lt;/p&gt;
+&lt;h2 id=&#34;安装-aria2&#34;&gt;安装 Aria2
+&lt;/h2&gt;&lt;p&gt;脚本启动后，请输入「1」并回车，脚本会自动下载和配置安装 Aria2。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;输入命令后脚本可能会询问你是否更换 Termux 镜像源，&lt;strong&gt;如果你是国内用户，请选择输入「y」确认更换&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;Aria2 的下载和安装需要一定时间，请耐心等待并保证 Termux 进程存活。&lt;/li&gt;
@@ -97,7 +97,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;984&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hubeff830a76e125a50838be37410b6f23_196302_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu4172826850386494957.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu14286092974263947683.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Aria2 安装和启动成功图&#34;
@@ -113,7 +113,7 @@
 &lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
 	width=&#34;1080&#34;
 	height=&#34;410&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_480x0_resize_box_3.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hub2d913ed3da81b2c3b0481b906365d25_44396_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu7382376384748909761.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu1024724787410120803.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Release wakelock&#34;
@@ -125,13 +125,13 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时你已经完成了 Aria2 安装所需的基本步骤，你的手机上已经成功配置一个可用的 Aria2。&lt;/p&gt;
-&lt;h2 id=&#34;使用-ariang&#34;&gt;使用 AriaNg&lt;/h2&gt;
-&lt;p&gt;如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。&lt;/p&gt;
+&lt;h2 id=&#34;使用-ariang&#34;&gt;使用 AriaNg
+&lt;/h2&gt;&lt;p&gt;如上文所说，Aria2 是一个命令行下载工具，命令行的操作方式对于大多数用户来说还是极为不友好。这里我们借助 AriaNg 进行 Aria2 的图形化管理和操作。&lt;/p&gt;
 &lt;p&gt;在脚本起始界面输入「7」查看 Aria2 配置信息如下图&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;521&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu642dc4ae64e2fefbea4fc0008fa92649_169879_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu9276399075247098766.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu1075058956219610262.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Aria2 配置信息&#34;
@@ -156,7 +156,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_480x0_resize_q75_box.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu813a54d6cf66b87b4dd078cc79959334_103266_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu1322458794347702212.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu5146318273024582684.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;AriaNg 连接成功&#34;

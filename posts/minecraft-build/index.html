@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
-Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
-如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……
-以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。
-厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。
-通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。 Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。 如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款…… 以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。 厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。 通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。">
 <title>Minecraft 服务器搭建教程</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/minecraft-build/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Minecraft 服务器搭建教程'>
-<meta property='og:description' content='教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
-Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
-如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……
-以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。
-厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。
-通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Minecraft 服务器搭建教程">
+<meta property='og:description' content="教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。 Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。 如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款…… 以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。 厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。 通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。">
 <meta property='og:url' content='https://blog.linioi.com/posts/minecraft-build/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Minecraft' /><meta property='article:published_time' content='2020-10-30T22:33:32&#43;00:00'/><meta property='article:modified_time' content='2020-10-30T22:33:32&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="Minecraft 服务器搭建教程">
-<meta name="twitter:description" content="教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。
-Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。
-如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……
-以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。
-厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。
-通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="教程使用的 Minecraft 服务端程序为官方服务端程序，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。 教程不考虑设备可能出现的如性能或内存不足导致无法运行服务端程序、因审查地区网络原因导致的设备无法下载服务端文件程序等问题。如出现以上问题请自己寻找解决方法。 这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；不介绍 macOS 是因为买不起。 Linux 搭建教程 本节无特殊说明的话，所有 「#」均代表注释，所有可能需要 root 权限执行的命令均会在命令最前面加上 「sudo」。 Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。 如需购买服务器，建议购买按量计费的服务器以减少相应费用。大多数情况下，带宽可能是你首先应该考虑的方面。因此，请尽可能避开那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款…… 以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。 厂商 优缺点 评价 谷歌云 优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）缺点：有点贵… 土豪和白嫖怪的不二之选 Vultr 优点：便宜，价格亲民，支持支付宝支付。缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的） 看网上多少 Vultr 的邀请链接你就懂了 阿里云 优点：经济实惠，按量付费价格可以接受缺点：国内厂商，使用需要实名…（你为什么不用阿里云国际版呢） 曾经的良心云（ 腾讯云 优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：链接（含 AFF）。缺点：国内厂商，使用需要实名… 是不是良心云还需要观察… SSH 连接服务器(家用设备请跳过) SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。 通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -76,7 +64,7 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -208,12 +196,12 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -221,7 +209,7 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -229,10 +217,11 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -314,12 +303,12 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 <li>这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；<del>不介绍 macOS 是因为买不起。</del></li>
 </ol>
 </blockquote>
-<h2 id="linux-搭建教程">Linux 搭建教程</h2>
-<blockquote>
+<h2 id="linux-搭建教程">Linux 搭建教程
+</h2><blockquote>
 <p>本节无特殊说明的话，所有 「#」<strong>均代表注释</strong>，所有可能需要 root 权限执行的命令<strong>均会在命令最前面加上 「sudo」</strong>。</p>
 </blockquote>
-<h3 id="linux-设备获取">Linux 设备获取</h3>
-<p>你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。</p>
+<h3 id="linux-设备获取">Linux 设备获取
+</h3><p>你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。</p>
 <p>如需购买服务器，建议购买按量计费的服务器以减少相应费用。<strong>大多数情况下，带宽可能是你首先应该考虑的方面</strong>。因此，请尽可能<strong>避开</strong>那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……</p>
 <p>以下是我个人用过的几个性价比较高的云服务厂商，个人评价仅供参考（毕竟我不是玩云主机的）。</p>
 <div class="table-wrapper"><table>
@@ -359,69 +348,69 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 </tr>
 </tbody>
 </table></div>
-<h3 id="ssh-连接服务器家用设备请跳过">SSH 连接服务器(家用设备请跳过)</h3>
-<blockquote>
+<h3 id="ssh-连接服务器家用设备请跳过">SSH 连接服务器(家用设备请跳过)
+</h3><blockquote>
 <p>SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。</p>
 </blockquote>
 <blockquote>
 <p>通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。</p>
 </blockquote>
-<h4 id="windowsmacoslinux-设备-ssh-连接服务器">Windows/macOS/Linux 设备 SSH 连接服务器</h4>
-<p>请根据你的系统类型打开终端 。Windows 为 cmd，同时按下 Win+R 后输入 cmd 并回车即可进入。</p>
+<h4 id="windowsmacoslinux-设备-ssh-连接服务器">Windows/macOS/Linux 设备 SSH 连接服务器
+</h4><p>请根据你的系统类型打开终端 。Windows 为 cmd，同时按下 Win+R 后输入 cmd 并回车即可进入。</p>
 <blockquote>
 <p>请确保你系统已安装 OpenSSH。目前已知 Windows 已于 2018 年集成 OpenSSH，macOS 已集成 OpenSSH，部分 Linux 发行版未集成 OpenSSH。</p>
 <p>对于未安装 OpenSSH 的系统，请手动安装 <code>openssh</code> 软件包。</p>
 </blockquote>
 <p>在确认已安装 OpenSSH 后，输入如下命令连接你的服务器</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p &lt;port&gt; &lt;username&gt;@&lt;ip&gt;
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#&lt;port&gt; 为 SSH 进程端口号，如默认端口号 22 可以省略。</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#&lt;username&gt; 为服务器用户名，&lt;ip&gt; 为服务器 IP 地址</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#以下是示例连接命令</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#ssh root@127.0.0.1</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p &lt;port&gt; &lt;username&gt;@&lt;ip&gt;
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#&lt;port&gt; 为 SSH 进程端口号，如默认端口号 22 可以省略。</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#&lt;username&gt; 为服务器用户名，&lt;ip&gt; 为服务器 IP 地址</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#以下是示例连接命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#ssh root@127.0.0.1</span>
 </span></span></code></pre></div><p>输入命令后会要求你输入服务器密码，请输入你设置的服务器密码。<strong>建议使用 SSH 密匙登录服务器并禁用密码登录以保证服务器安全。</strong></p>
-<h4 id="android-设备-ssh-连接服务器">Android 设备 SSH 连接服务器</h4>
-<p>请参照 <a class="link" href="https://blog.linioi.com/posts/minecraft-build/#%E8%BF%9E%E6%8E%A5-linux-deploy-%E5%AE%B9%E5%99%A8"  target="_blank" rel="noopener"
+<h4 id="android-设备-ssh-连接服务器">Android 设备 SSH 连接服务器
+</h4><p>请参照 <a class="link" href="https://blog.linioi.com/posts/minecraft-build/#%E8%BF%9E%E6%8E%A5-linux-deploy-%E5%AE%B9%E5%99%A8"  target="_blank" rel="noopener"
     >Android 搭建教程-连接 Linux Deploy 容器</a>。</p>
-<h3 id="设置-jre">设置 JRE</h3>
-<p>下面是几种常见的 Linux 发行版的安装命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Debian/Ubuntu</span>
+<h3 id="设置-jre">设置 JRE
+</h3><p>下面是几种常见的 Linux 发行版的安装命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e"># Debian/Ubuntu</span>
 </span></span><span style="display:flex;"><span>sudo apt-get install -y default-jre-headless
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#CentOS 8.0+</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#CentOS 8.0+</span>
 </span></span><span style="display:flex;"><span>sudo dnf install -y java-1.8.0-openjdk
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#对于 CentOS 8.0 以下的服务器，请输入下面的命令</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#sudo yum install -y java-1.8.0-openjdk</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Arch Linux</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#对于 CentOS 8.0 以下的服务器，请输入下面的命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#sudo yum install -y java-1.8.0-openjdk</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#Arch Linux</span>
 </span></span><span style="display:flex;"><span>sudo pacman -S --noconfirm jdk8-openjdk
-</span></span></code></pre></div><h3 id="下载-minecraft-服务端">下载 Minecraft 服务端</h3>
-<blockquote>
+</span></span></code></pre></div><h3 id="下载-minecraft-服务端">下载 Minecraft 服务端
+</h3><blockquote>
 <p>下载之前，你首先要了解 Minecraft 客户端 <a class="link" href="https://minecraft-zh.gamepedia.com/Java%E7%89%88"  target="_blank" rel="noopener"
     >Java 版</a>和<a class="link" href="https://minecraft-zh.gamepedia.com/%E5%9F%BA%E5%B2%A9%E7%89%88"  target="_blank" rel="noopener"
     >基岩版</a>的区别。</p>
 </blockquote>
 <p><strong>建议先建立一个专门的文件夹存放服务器数据。</strong>
 示例命令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir $HOME/minecraft
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir <span style="color:#e06c75">$HOME</span>/minecraft
 </span></span></code></pre></div><p>根据你的客户端平台，从以下两个链接中选择一个链接下载。</p>
 <p>Java 版请点击 <a class="link" href="https://www.minecraft.net/en-us/download/server"  target="_blank" rel="noopener"
     >https://www.minecraft.net/en-us/download/server</a></p>
 <p>基岩版请点击  <a class="link" href="https://www.minecraft.net/en-us/download/server/bedrock"  target="_blank" rel="noopener"
     >https://www.minecraft.net/en-us/download/server/bedrock</a></p>
 <p>示例下载命令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 如果创建了 minecraft 文件夹则先转到 minecraft 文件夹</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cd $HOME/minecraft</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e"># 如果创建了 minecraft 文件夹则先转到 minecraft 文件夹</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># cd $HOME/minecraft</span>
 </span></span><span style="display:flex;"><span>wget https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar
 </span></span></code></pre></div><blockquote>
 <p>注意，请务必将以上链接修改为<strong>你设备平台适用的服务端程序下载链接</strong>。</p>
 </blockquote>
-<h3 id="运行服务器端">运行服务器端</h3>
-<p>确认文件已下载完成后，根据自己服务器端版本输入以下命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xmx<span style="color:#f92672">[</span>初始启动分配内存<span style="color:#f92672">]</span> -Xms<span style="color:#f92672">[</span>最大分配内存<span style="color:#f92672">]</span> -jar <span style="color:#f92672">[</span>jar 包所在路径<span style="color:#f92672">]</span> nogui
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果要使用其图形用户界面启动服务器端，则可以省略「 nogui」部分。</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 运行示例命令</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.3.jar nogui</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 基岩版下载的默认是 zip 文件，需要解压后使用</span>
-</span></span><span style="display:flex;"><span>unzip bedrock-server*.zip <span style="color:#75715e">#解压下载的 zip 文件</span>
-</span></span><span style="display:flex;"><span>LD_LIBRARY_PATH<span style="color:#f92672">=</span>. ./bedrock_server
+<h3 id="运行服务器端">运行服务器端
+</h3><p>确认文件已下载完成后，根据自己服务器端版本输入以下命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xmx<span style="color:#56b6c2">[</span>初始启动分配内存<span style="color:#56b6c2">]</span> -Xms<span style="color:#56b6c2">[</span>最大分配内存<span style="color:#56b6c2">]</span> -jar <span style="color:#56b6c2">[</span>jar 包所在路径<span style="color:#56b6c2">]</span> nogui
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># 如果要使用其图形用户界面启动服务器端，则可以省略「 nogui」部分。</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># 运行示例命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.3.jar nogui</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e"># 基岩版下载的默认是 zip 文件，需要解压后使用</span>
+</span></span><span style="display:flex;"><span>unzip bedrock-server*.zip <span style="color:#7f848e">#解压下载的 zip 文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">LD_LIBRARY_PATH</span><span style="color:#56b6c2">=</span>. ./bedrock_server
 </span></span></code></pre></div><p>Java  版服务端程序在第一次运行后会生成初始配置文件后自动中止。你可以用任意 Linux 文本编辑器（如 VIM、nano）打开服务器端目录下的<code>eula.txt</code>，然后将 <code>eula=false</code> 改为 <code>eula=true</code>。</p>
 <blockquote>
 <p>EULA 是 <a class="link" href="https://account.mojang.com/documents/minecraft_eula"  target="_blank" rel="noopener"
@@ -429,10 +418,10 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 <p>你当然可以不同意，不过与之对应的是服务端程序无法运行。</p>
 </blockquote>
 <p>输入如下命令再次启动服务器端</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 示例命令</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e"># 示例命令</span>
 </span></span><span style="display:flex;"><span>java -Xmx1024M -Xms1024M -jar minecraft_server.1.16.3.jar nogui
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 示例命令</span>
-</span></span><span style="display:flex;"><span>LD_LIBRARY_PATH<span style="color:#f92672">=</span>. ./bedrock_server
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e"># 示例命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">LD_LIBRARY_PATH</span><span style="color:#56b6c2">=</span>. ./bedrock_server
 </span></span></code></pre></div><p>如需停止服务端，请直接输入<code>/stop</code>或<code>Ctrl+C</code>。</p>
 <p>官方服务器端配置中默认开启了正版验证，意在禁止盗版客户端连接服务器端，但是在实际操作中可能会出现正版用户也无法连接的情况。如果你在确认配置无误后不能连接服务器，请将 <code>server.properties</code> 中的 <code>online=true</code> 改为 <code>online=false</code>。</p>
 <blockquote>
@@ -441,16 +430,16 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 <p>你可以点击这个<a class="link" href="https://minecraft-zh.gamepedia.com/Server.properties"  target="_blank" rel="noopener"
     >链接</a>以了解有关 <code>server.properties</code> 的配置。</p>
 <p>为服务器端会话稳定，建议安装 Screen 并在 Screen 会话中运行服务端程序，这是远优于 nohup 的后台运行解决方案。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Debian/Ubuntu</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#Debian/Ubuntu</span>
 </span></span><span style="display:flex;"><span>sudo apt-get install -y screen
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#CentOS 8.0+</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#CentOS 8.0+</span>
 </span></span><span style="display:flex;"><span>sudo dnf install -y screen
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#CentOS 8.0 以下请输入以下命令</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#sudo yum install -y screen</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Arch Linux</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#CentOS 8.0 以下请输入以下命令</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#sudo yum install -y screen</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#Arch Linux</span>
 </span></span><span style="display:flex;"><span>sudo pacman -S --noconfirm screen
 </span></span></code></pre></div><p>输入如下命令创建一个 screen 会话</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>screen -S mc
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>screen -S mc
 </span></span></code></pre></div><p>Screen 其他基础命令：</p>
 <ul>
 <li>创建会话：<code>screen -S &lt;name&gt;</code></li>
@@ -459,16 +448,16 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 </ul>
 <p>更多命令可以查看该<a class="link" href="https://wiki.archlinux.org/index.php/GNU_Screen_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29"  target="_blank" rel="noopener"
     >链接</a>。</p>
-<h2 id="android-搭建教程">Android 搭建教程</h2>
-<blockquote>
+<h2 id="android-搭建教程">Android 搭建教程
+</h2><blockquote>
 <p>Android 搭建 Minecraft 服务器端的思路即<strong>先在 Android 上搭建 Linux 环境，然后再在 Linux 环境中运行服务端程序</strong>。</p>
 <p>因此，Android 搭建教程与 Linux 搭建教程高度相似。为避免重复，本节只叙述如何在 Android 上搭建一个基本可用 Linux 环境。</p>
 </blockquote>
 <blockquote>
 <p>注意，Android 端搭建 Linux 环境需要 Android 手机已获取 root 权限。</p>
 </blockquote>
-<h3 id="配置-linux-deploy">配置 Linux Deploy</h3>
-<p>请从 Google Play Store 下载并安装 <a class="link" href="https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy"  target="_blank" rel="noopener"
+<h3 id="配置-linux-deploy">配置 Linux Deploy
+</h3><p>请从 Google Play Store 下载并安装 <a class="link" href="https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy"  target="_blank" rel="noopener"
     >Linux Deploy</a> 。</p>
 <blockquote>
 <p>你可以尝试在其他渠道下载 Linux Deploy，但请尽可能确保 Linux Deploy 版本为最新版且为官方正版。</p>
@@ -485,30 +474,30 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 </blockquote>
 <p>在完成你的自定义配置后，点击右上角菜单后选择「安装」，如果出现 root 权限请求，请「允许」。</p>
 <p>安装结束后，请先点击底部的「停止」停止容器，然后点击底部的「启动」启动容器。</p>
-<h3 id="连接-linux-deploy-容器">连接 Linux Deploy 容器</h3>
-<p>Linux Deploy 仅提供容器而不提供可操作的终端(你能接受浏览器作为终端的话当我没说)，这意味着我们需要自己再下载一个 SSH 客户端以连接容器。</p>
-<h4 id="termux">Termux</h4>
-<p>这里推荐使用 <a class="link" href="https://play.google.com/store/apps/details?id=com.termux"  target="_blank" rel="noopener"
+<h3 id="连接-linux-deploy-容器">连接 Linux Deploy 容器
+</h3><p>Linux Deploy 仅提供容器而不提供可操作的终端(你能接受浏览器作为终端的话当我没说)，这意味着我们需要自己再下载一个 SSH 客户端以连接容器。</p>
+<h4 id="termux">Termux
+</h4><p>这里推荐使用 <a class="link" href="https://play.google.com/store/apps/details?id=com.termux"  target="_blank" rel="noopener"
     >Termux</a> 作为 SSH 客户端。</p>
 <p>Termux 作为一个强大的终端仿真器，集成了 Linux 环境，可自定义性高，对于有一定 Linux 使用经验的人来说非常方便。</p>
 <blockquote>
 <p>Termux 默认没有安装 <code>openssh</code>，需要输入<code>pkg in -y openssh</code>手动安装。</p>
 <p>对于审查地区，Termux 默认源的连接速度可能非常慢，可以输入如下命令更换清华源以提速</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39;</span> $PREFIX/etc/apt/sources.list
-</span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39;</span> $PREFIX/etc/apt/sources.list.d/game.list
-</span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39;</span> $PREFIX/etc/apt/sources.list.d/science.list
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#98c379">&#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39;</span> <span style="color:#e06c75">$PREFIX</span>/etc/apt/sources.list
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#98c379">&#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39;</span> <span style="color:#e06c75">$PREFIX</span>/etc/apt/sources.list.d/game.list
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#98c379">&#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39;</span> <span style="color:#e06c75">$PREFIX</span>/etc/apt/sources.list.d/science.list
 </span></span></code></pre></div></blockquote>
 <p>安装完 OpenSSH 后，输入以下命令连接 Linux Deploy 容器。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh &lt;username&gt;@&lt;ip&gt;
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#示例</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#ssh root@127.0.0.1</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh &lt;username&gt;@&lt;ip&gt;
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#示例</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#ssh root@127.0.0.1</span>
 </span></span></code></pre></div><p>输入该命令后会需要你输入密码，请输入你在 Linux Deploy 配置时设置的密码，密码在输入过程中无回显。</p>
-<h4 id="juice-ssh">Juice SSH</h4>
-<p>如果你终端使用经验不足，也可以选择小白友好的 <a class="link" href="https://play.google.com/store/apps/details?id=com.sonelli.juicessh"  target="_blank" rel="noopener"
+<h4 id="juice-ssh">Juice SSH
+</h4><p>如果你终端使用经验不足，也可以选择小白友好的 <a class="link" href="https://play.google.com/store/apps/details?id=com.sonelli.juicessh"  target="_blank" rel="noopener"
     >Juice SSH</a>。</p>
 <p>鉴于 Juice SSH 界面简洁易懂，这里不做过多描述。你只需输入在 Linux Deploy 配置时设置的 「用户名」和「密码」及容器的「 IP 地址」。如果是本机连接容器，IP 地址输入 「127.0.0.1」即可；如果是区域网内连接则输入安装容器的设备的「区域网 IP 地址」，区域网 IP 地址可以在手机「设置」查看。</p>
-<h3 id="安装和配置-minecraft-服务端">安装和配置 Minecraft 服务端</h3>
-<p>请参照 <a class="link" href="https:///blog.linioi.com/posts/minecraft-build/#linux-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B"  target="_blank" rel="noopener"
+<h3 id="安装和配置-minecraft-服务端">安装和配置 Minecraft 服务端
+</h3><p>请参照 <a class="link" href="https:///blog.linioi.com/posts/minecraft-build/#linux-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B"  target="_blank" rel="noopener"
     >Linux 搭建教程</a>。</p>
 <blockquote>
 <p>鉴于手机 CPU 架构及性能，建议不要尝试在手机上搭建 Java 服务器&hellip;</p>
@@ -517,8 +506,8 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 <p>官方基岩版服务端程序可能无法在 Linux Deploy 容器中运行，建议改用第三方服务端程序，如 <a class="link" href="https://github.com/CloudburstMC/Nukkit"  target="_blank" rel="noopener"
     >Nukkit</a>。</p>
 </blockquote>
-<h2 id="连接服务器端">连接服务器端</h2>
-<blockquote>
+<h2 id="连接服务器端">连接服务器端
+</h2><blockquote>
 <ul>
 <li>如果你希望在同一区域网下与其他玩家联机，则只需要处于同一区域网连接下即可。</li>
 <li>如果你是在家用设备上搭建 Minecraft 服务器（即无公网 IP），则其他玩家无法在非同一区域网下连接你的 Minecraft 服务器。你可以通过 <a class="link" href="https://zh.m.wikipedia.org/zh-hans/NAT%E7%A9%BF%E9%80%8F"  target="_blank" rel="noopener"
@@ -538,8 +527,8 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
 <li>协议或端口：Java 版选择 TCP，基岩版选择 UDP，然后在提供的字段中输入你配置文件中的端口号，Java 版默认 25565，基岩版默认 19132。</li>
 </ul>
 </blockquote>
-<h2 id="end">End</h2>
-<p>如果一切正常的话，你已经成功搭建并和你的小伙伴们一起进入游戏了，想不出什么话总结，只能祝你们玩得开心了😂。</p>
+<h2 id="end">End
+</h2><p>如果一切正常的话，你已经成功搭建并和你的小伙伴们一起进入游戏了，想不出什么话总结，只能祝你们玩得开心了😂。</p>
 
 </section>
 
@@ -586,7 +575,7 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
         
         
             <div class="article-image">
-                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hua5d991d6ea7f5c9325c13aae37ad3ea1_62330_250x150_fill_box_smart1_3.png" 
+                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu15090158947573214185.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -679,7 +668,7 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -690,12 +679,12 @@ Linux 设备获取 你可以在家用电脑上安装 Linux，或者购置一台 
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

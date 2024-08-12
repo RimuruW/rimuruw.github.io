@@ -1,84 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='拿到手机后干什么？刷机！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-刷机前请先看看最下面的乱七八糟的问题（
-由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。
-Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
-一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
-二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。
-三、下载刷机所需文件 Android Debug Bridge
-Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
-具体下载和配置可参考少数派的这篇文章。
-如果你使用一键刷入之类的应用，则不需要此操作。
-Recovery
-目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd）
-底包
-前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。
-有的系统自带底包，我们可以不刷入底包。
-如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。
-刷机包
-看各位喜好啦~~
-四、刷入 Recovery 手机关机，长按 音量减键 &#43; 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="拿到手机后干什么？刷机！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 刷机前请先看看最下面的乱七八糟的问题（ 由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。 Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。 一、得到这部手机 小米商城已经没有了，去其它地方看看吧（ 二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。 三、下载刷机所需文件 Android Debug Bridge Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。 具体下载和配置可参考少数派的这篇文章。 如果你使用一键刷入之类的应用，则不需要此操作。 Recovery 目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd） 底包 前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。 有的系统自带底包，我们可以不刷入底包。 如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。 刷机包 看各位喜好啦~~ 四、刷入 Recovery 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。">
 <title>如何在 Redmi Note 7 Pro 上刷机？</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/11/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='如何在 Redmi Note 7 Pro 上刷机？'>
-<meta property='og:description' content='拿到手机后干什么？刷机！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-刷机前请先看看最下面的乱七八糟的问题（
-由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。
-Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
-一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
-二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。
-三、下载刷机所需文件 Android Debug Bridge
-Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
-具体下载和配置可参考少数派的这篇文章。
-如果你使用一键刷入之类的应用，则不需要此操作。
-Recovery
-目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd）
-底包
-前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。
-有的系统自带底包，我们可以不刷入底包。
-如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。
-刷机包
-看各位喜好啦~~
-四、刷入 Recovery 手机关机，长按 音量减键 &#43; 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="如何在 Redmi Note 7 Pro 上刷机？">
+<meta property='og:description' content="拿到手机后干什么？刷机！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 刷机前请先看看最下面的乱七八糟的问题（ 由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。 Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。 一、得到这部手机 小米商城已经没有了，去其它地方看看吧（ 二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。 三、下载刷机所需文件 Android Debug Bridge Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。 具体下载和配置可参考少数派的这篇文章。 如果你使用一键刷入之类的应用，则不需要此操作。 Recovery 目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd） 底包 前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。 有的系统自带底包，我们可以不刷入底包。 如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。 刷机包 看各位喜好啦~~ 四、刷入 Recovery 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。">
 <meta property='og:url' content='https://blog.linioi.com/posts/11/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Redmi Note 7 Pro' /><meta property='article:published_time' content='2020-04-03T11:56:06&#43;00:00'/><meta property='article:modified_time' content='2020-04-03T11:56:06&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="如何在 Redmi Note 7 Pro 上刷机？">
-<meta name="twitter:description" content="拿到手机后干什么？刷机！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-如果你的设备出现损坏，我不会对你的设备负责！
-刷机前请先看看最下面的乱七八糟的问题（
-由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。
-Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。
-一、得到这部手机 小米商城已经没有了，去其它地方看看吧（
-二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。
-三、下载刷机所需文件 Android Debug Bridge
-Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。
-具体下载和配置可参考少数派的这篇文章。
-如果你使用一键刷入之类的应用，则不需要此操作。
-Recovery
-目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd）
-底包
-前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。
-有的系统自带底包，我们可以不刷入底包。
-如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。
-刷机包
-看各位喜好啦~~
-四、刷入 Recovery 手机关机，长按 音量减键 &#43; 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="拿到手机后干什么？刷机！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 如果你的设备出现损坏，我不会对你的设备负责！ 刷机前请先看看最下面的乱七八糟的问题（ 由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此链接来刷入。 Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 violet 。 一、得到这部手机 小米商城已经没有了，去其它地方看看吧（ 二、解锁 Bootloader 前往小米官方解锁页面申请权限并根据提示解锁。 三、下载刷机所需文件 Android Debug Bridge Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 Google 官方页面。 具体下载和配置可参考少数派的这篇文章。 如果你使用一键刷入之类的应用，则不需要此操作。 Recovery 目前我只推荐两个 Recovery：OrangeFox 和 LR.Team 定制版 TWRP（提取码：xipd） 底包 前往这里下载。一般来说，选择最新的开发版底包即可，除非 ROM 作者有特殊要求。 有的系统自带底包，我们可以不刷入底包。 如图，在 Device 那搜索并选择 violet ，点击 Download ，在跳转的页面中选择你需要的底包，点击 Download 来下载。 刷机包 看各位喜好啦~~ 四、刷入 Recovery 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -124,7 +64,7 @@ Recovery
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -256,12 +196,12 @@ Recovery
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -269,7 +209,7 @@ Recovery
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -277,10 +217,11 @@ Recovery
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -368,13 +309,13 @@ Recovery
 <blockquote>
 <p>Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 <code>violet</code> 。</p>
 </blockquote>
-<h2 id="一得到这部手机">一、得到这部手机</h2>
-<p>小米商城已经没有了，去其它地方看看吧（</p>
-<h2 id="二解锁-bootloader">二、解锁 Bootloader</h2>
-<p>前往<a class="link" href="https://www.miui.com/unlock/index.html"  target="_blank" rel="noopener"
+<h2 id="一得到这部手机">一、得到这部手机
+</h2><p>小米商城已经没有了，去其它地方看看吧（</p>
+<h2 id="二解锁-bootloader">二、解锁 Bootloader
+</h2><p>前往<a class="link" href="https://www.miui.com/unlock/index.html"  target="_blank" rel="noopener"
     >小米官方解锁页面</a>申请权限并根据提示解锁。</p>
-<h2 id="三下载刷机所需文件">三、下载刷机所需文件</h2>
-<ul>
+<h2 id="三下载刷机所需文件">三、下载刷机所需文件
+</h2><ul>
 <li>
 <p>Android Debug Bridge</p>
 <blockquote>
@@ -419,8 +360,8 @@ Recovery
 <p>看各位喜好啦~~</p>
 </li>
 </ul>
-<h2 id="四刷入-recovery">四、刷入 Recovery</h2>
-<ol>
+<h2 id="四刷入-recovery">四、刷入 Recovery
+</h2><ol>
 <li>
 <p>手机关机，<strong>长按 音量减键 + 电源键</strong> 进入 <code>FASTBOOT</code> 模式。用数据线把手机和电脑连接起来。</p>
 </li>
@@ -483,8 +424,8 @@ Finished. Total time: 2.427s
 <p>如果需要改简体中文，点击底部的 <code>Menu</code> &ndash;&gt; 右上角的齿轮图标 &ndash;&gt; <code>Regional</code> &ndash;&gt; 点击 <code>Language</code> 下的 <code>English</code> ，选择 <code>Chinese Simplified</code> 。</p>
 </li>
 </ol>
-<h2 id="五刷入-rom">五、刷入 ROM</h2>
-<ol>
+<h2 id="五刷入-rom">五、刷入 ROM
+</h2><ol>
 <li>
 <p>在上一步的状态下，返回主界面，点击下方的 <code>Menu</code> &ndash;&gt; <code>Manage Parttions</code> &ndash;&gt; 选择 <code>Data</code> &ndash;&gt; 点击右下方的勾 &ndash;&gt; 点击 <code>Format Data</code> &ndash;&gt; 输入 <code>yes</code> 来格式化 Data 。</p>
 </li>
@@ -508,10 +449,10 @@ Finished. Total time: 2.427s
 <p>通过数据线将刷机包，底包传到手机。先选择底包，滑动下方滑块来刷入，再刷入系统（有的系统自带底包，我们不需要额外刷入底包）。刷入完成后就可以重启到系统。</p>
 </li>
 </ol>
-<h2 id="六φ">六、φ(゜▽゜*)♪</h2>
-<p>不出意外，我们已经成功刷入了一个系统！！！</p>
-<h2 id="七乱七八糟的问题">七、乱七八糟的问题</h2>
-<ul>
+<h2 id="六φ">六、φ(゜▽゜*)♪
+</h2><p>不出意外，我们已经成功刷入了一个系统！！！</p>
+<h2 id="七乱七八糟的问题">七、乱七八糟的问题
+</h2><ul>
 <li>
 <p>重启到 Recovery 后显示 <code>The system has been destoryed</code> （可能只会出现在官方 MIUI 系统上）？</p>
 <p>这个与 AVB 2.0 有关。具体请参见 <a class="link" href="https://source.android.com/security/verifiedboot/avb"  target="_blank" rel="noopener"
@@ -685,7 +626,7 @@ Finished. Total time: 2.427s
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -696,12 +637,12 @@ Finished. Total time: 2.427s
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

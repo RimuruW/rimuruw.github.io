@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
-注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
-PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
-之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
-对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
-刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
-方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。 注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程 PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用…… 之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。 刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳 方法一： 如果你电脑是 Linux 发行版，请忽略此方法。 下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。">
 <title>Violet 机型 PE/Plus 刷入教程</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/10/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Violet 机型 PE/Plus 刷入教程'>
-<meta property='og:description' content='PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
-注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
-PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
-之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
-对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
-刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
-方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Violet 机型 PE/Plus 刷入教程">
+<meta property='og:description' content="PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。 注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程 PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用…… 之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。 刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳 方法一： 如果你电脑是 Linux 发行版，请忽略此方法。 下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。">
 <meta property='og:url' content='https://blog.linioi.com/posts/10/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Redmi Note 7 Pro' /><meta property='article:published_time' content='2020-04-13T11:44:52&#43;00:00'/><meta property='article:modified_time' content='2020-04-13T11:44:52&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="Violet 机型 PE/Plus 刷入教程">
-<meta name="twitter:description" content="PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。
-注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程
-PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用……
-之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车
-对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。
-刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳
-方法一： 如果你电脑是 Linux 发行版，请忽略此方法。
-下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。 注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 Violet 通用刷机教程 PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一番操作，目前已经完全没有作用…… 之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，拖你们下水 带你们上车 对于有一定英语水平的用户，直接看 Dyneteve 的 Flash Guide 即可。 刷前需知 刷入 ROM 前，请确保你的设备已解锁 Bootloader。 建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。 本文会提供两种刷入方式，请根据自己需求选择。 阅读本教程建议搭配这篇教程，食用效果更佳 方法一： 如果你电脑是 Linux 发行版，请忽略此方法。 下载 AOSP Recovery Flasher v4 和 PE/Plus 刷机包 如果你不使用 Telegram，可以从以下两个链接中选择一个下载。 GitHub （推荐） Google Drive （不推荐，需要审核） 解压上面下载的 AOSP Recovery Flasher v4 至电脑某个不含中文的目录。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -82,7 +64,7 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -214,12 +196,12 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -227,7 +209,7 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -235,10 +217,11 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -329,8 +312,8 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
 <p>对于有一定英语水平的用户，直接看 Dyneteve 的 <a class="link" href="https://telegra.ph/FlashingUpdating-PE-to-the-latest-version-using-AOSP-Recovery-v3-04-10-2"  target="_blank" rel="noopener"
     >Flash Guide</a> 即可。</p>
 </blockquote>
-<h2 id="刷前需知">刷前需知</h2>
-<ul>
+<h2 id="刷前需知">刷前需知
+</h2><ul>
 <li>刷入 ROM 前，请确保你的设备已解锁 Bootloader。</li>
 <li>建议在刷入前退出 Google 帐号和小米帐号，以免卡 Google 开机验证。</li>
 </ul>
@@ -339,8 +322,8 @@ PE/Plus 刷入教程又更新了！！ 原先的刷入教程因为 Dyneteve 一�
 阅读本教程建议搭配这篇<a class="link" href="https://riwihow.github.io/2020/04/03/How-to-flash-on-violet/"  target="_blank" rel="noopener"
     >教程</a>，食用效果更佳</p>
 </blockquote>
-<h3 id="方法一">方法一：</h3>
-<blockquote>
+<h3 id="方法一">方法一：
+</h3><blockquote>
 <p>如果你电脑是 Linux 发行版，请忽略此方法。</p>
 </blockquote>
 <ol>
@@ -402,8 +385,8 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 </li>
 </ol>
 <p>至此，刷入完成。</p>
-<h3 id="方法二">方法二：</h3>
-<ol>
+<h3 id="方法二">方法二：
+</h3><ol>
 <li>下载 <a class="link" href="https://t.me/pixelexperienceviolet/197641"  target="_blank" rel="noopener"
     >AOSP Recovery Flasher v4</a> 和 <a class="link" href="https://download.pixelexperience.org/changelog/violet/PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip"  target="_blank" rel="noopener"
     >PE/Plus 刷机包</a>
@@ -501,8 +484,8 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 <p>刷入教程至此结束。</p>
 <p><strong>AOSP Recovery 现证实可以刷入 Magisk Installer</strong>
 <strong>如果需要刷入 Magisk，直接在 AOSP Recovery 中刷入即可</strong></p>
-<h2 id="不借助-recovery-刷入-magisk">不借助 Recovery 刷入 Magisk</h2>
-<p>解压 PE 刷机包，结构大致如下：</p>
+<h2 id="不借助-recovery-刷入-magisk">不借助 Recovery 刷入 Magisk
+</h2><p>解压 PE 刷机包，结构大致如下：</p>
 <pre tabindex="0"><code>├── META-INF
 │   └── com
 │       ├── android
@@ -665,7 +648,7 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -676,12 +659,12 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
-你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
-需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
-话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！ 你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。 在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.">
 <title>GitHub Action 实现 Hexo 博客持续集成</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/9/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='GitHub Action 实现 Hexo 博客持续集成'>
-<meta property='og:description' content='无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
-你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
-需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
-话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="GitHub Action 实现 Hexo 博客持续集成">
+<meta property='og:description' content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！ 你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。 在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time.">
 <meta property='og:url' content='https://blog.linioi.com/posts/9/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub Action' /><meta property='article:tag' content='Hexo' /><meta property='article:published_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='article:modified_time' content='2020-04-29T01:47:09&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="GitHub Action 实现 Hexo 博客持续集成">
-<meta name="twitter:description" content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！
-你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。
-需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。
-话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。
-在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time."><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！ 你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。 需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。 话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。 在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： This is the workflow execution time which may be different than the billed time."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
  
 
     </head>
@@ -73,7 +64,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu265fda3c1dbd3d20acc279530891e5a9_128860_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -205,12 +196,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -218,7 +209,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -226,10 +217,11 @@
 
 
 
-                    <span>暗色模式</span>
-                </li>
-            
-        </div>
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -309,8 +301,8 @@
 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！</p>
 </blockquote>
 <!-- raw HTML omitted -->
-<h2 id="你要先清楚某些东西">你要先清楚某些东西…</h2>
-<ul>
+<h2 id="你要先清楚某些东西">你要先清楚某些东西…
+</h2><ul>
 <li>在私有仓库下使用 GitHub Action 是<strong>不完全免费的</strong>。
 对于免费用户，<strong>你每个月只能使用 GitHub Action 工作 2000 min</strong>。这个数据计算方法特别有意思，详见 <a class="link" href="https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions"  target="_blank" rel="noopener"
     >GitHub</a></li>
@@ -331,18 +323,18 @@
 <li><a class="link" href="mailto:hexo-action@v1.0.0" >hexo-action@v1.0.0</a> 会自动删除项目仓库下的<code>.deploy_git</code>文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 <a class="link" href="mailto:hexo-action@1.0.1" >hexo-action@1.0.1</a> 被修复。我认为这个修复是不合理的。</li>
 <li>如果需要添加额外的 node module，则在<code>package.json</code>中添加相应依赖。</li>
 </ul>
-<h2 id="默认已满足的条件">默认已满足的条件</h2>
-<ul>
+<h2 id="默认已满足的条件">默认已满足的条件
+</h2><ul>
 <li>已注册 GitHub 账号</li>
 <li>已有一个部署到 GitHub 且工作正常的 Hexo 博客</li>
 <li>有一定动手能力</li>
 </ul>
 <hr>
 <p>接下来，让我们开始……</p>
-<h2 id="方法一">方法一</h2>
-<hr>
-<h3 id="部署集成环境">部署集成环境</h3>
-<ol>
+<h2 id="方法一">方法一
+</h2><hr>
+<h3 id="部署集成环境">部署集成环境
+</h3><ol>
 <li>GitHub 建立一个新的仓库，公有还是私有，取决于你的选择。建议此时生成 SSH 密匙简化后续提交过程。</li>
 </ol>
 <blockquote>
@@ -352,43 +344,43 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <ol start="2">
 <li>在博客源码中新建<code>.github/workflows/hexo.yml</code>文件，在文件添加如下内容：</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span> <span style="color:#75715e"># workflow 名字</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">name</span>: Deploy <span style="color:#7f848e"># workflow 名字</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
-</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">push]</span> <span style="color:#75715e"># 触发事件</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">on</span>:
+</span></span><span style="display:flex;"><span>  [push] <span style="color:#7f848e"># 触发事件</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>: <span style="color:#75715e"># Job 1 ID</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span> <span style="color:#75715e"># 设定运行环境为最新版 Ubuntu，如果你有把握的话，你也可以改成其它运行环境。参见文末备注。</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout</span> <span style="color:#75715e"># Step 1 获取源码</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v1</span> <span style="color:#75715e"># 使用 actions/checkout@v1</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>: <span style="color:#75715e"># 条件</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e">## Checkout private submodules(themes or something else).参见文末备注。</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">build</span>: <span style="color:#7f848e"># Job 1 ID</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">runs-on</span>: ubuntu-latest <span style="color:#7f848e"># 设定运行环境为最新版 Ubuntu，如果你有把握的话，你也可以改成其它运行环境。参见文末备注。</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">name</span>: Deploy blog.
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e06c75">name</span>: Checkout <span style="color:#7f848e"># Step 1 获取源码</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">uses</span>: actions/checkout@v1 <span style="color:#7f848e"># 使用 actions/checkout@v1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">with</span>: <span style="color:#7f848e"># 条件</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">submodules</span>: <span style="color:#e5c07b">true</span> <span style="color:#7f848e">## Checkout private submodules(themes or something else).参见文末备注。</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。</span>
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache node modules</span> <span style="color:#75715e"># Step 2</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">node_modules</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restore-keys</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          ${{ runner.os }}-node-</span>          
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Dependencies</span> <span style="color:#75715e"># Step 3 </span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">if</span>: <span style="color:#ae81ff">steps.cache.outputs.cache-hit != &#39;true&#39;</span> <span style="color:#75715e"># 如果变量 cache-hit 不等于 true</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: <span style="color:#ae81ff">npm install</span> <span style="color:#75715e"># 安装 NPM 相关依赖</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e"># Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e06c75">name</span>: Cache node modules <span style="color:#7f848e"># Step 2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">uses</span>: actions/cache@v1
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">id</span>: cache
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">path</span>: node_modules
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">key</span>: ${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">restore-keys</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          ${{ runner.os }}-node-</span>          
+</span></span><span style="display:flex;"><span>    - <span style="color:#e06c75">name</span>: Install Dependencies <span style="color:#7f848e"># Step 3 </span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">if</span>: steps.cache.outputs.cache-hit != &#39;true&#39; <span style="color:#7f848e"># 如果变量 cache-hit 不等于 true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">run</span>: npm install <span style="color:#7f848e"># 安装 NPM 相关依赖</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Deploy hexo blog website.</span>
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span> <span style="color:#75715e"># Step 4</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">id</span>: <span style="color:#ae81ff">deploy</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">sma11black/hexo-action@v1.0.1</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">deploy_key</span>: <span style="color:#ae81ff">${{ secrets.DEPLOY_KEY }}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">user_name</span>: <span style="color:#ae81ff">your github name</span> <span style="color:#75715e">#你 GitHub 用户名。如果去除该行则使用 bot。去除该行是不推荐行为。</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">user_email</span>: <span style="color:#ae81ff">yourgithubemail@example.com</span> <span style="color:#75715e">#你 GitHub 邮箱。如果去除该行则使用 bot。去除该行是不推荐行为。</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">commit_msg</span>: <span style="color:#ae81ff">${{ github.event.head_commit.message }}</span> <span style="color:#75715e">#Hexo 部署博客的自动提交备注</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e"># Deploy hexo blog website.</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e06c75">name</span>: Deploy <span style="color:#7f848e"># Step 4</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">id</span>: deploy
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">uses</span>: sma11black/hexo-action@v1.0.1
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">deploy_key</span>: ${{ secrets.DEPLOY_KEY }}
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">user_name</span>: your github name <span style="color:#7f848e">#你 GitHub 用户名。如果去除该行则使用 bot。去除该行是不推荐行为。</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">user_email</span>: yourgithubemail@example.com <span style="color:#7f848e">#你 GitHub 邮箱。如果去除该行则使用 bot。去除该行是不推荐行为。</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">commit_msg</span>: ${{ github.event.head_commit.message }} <span style="color:#7f848e">#Hexo 部署博客的自动提交备注</span>
 </span></span></code></pre></div><p><strong>部分内容需要根据你实际情况修改为相应内容</strong></p>
 <ol start="3">
 <li>push 你的博客源码到刚刚新建的仓库。</li>
@@ -399,7 +391,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <ol start="4">
 <li>输入如下命令再生成一对 SSH 密匙。</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C <span style="color:#e6db74">&#34;example@example.com&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh-keygen -t rsa -f ~/.ssh/id_rsa_a -C <span style="color:#98c379">&#34;example@example.com&#34;</span>
 </span></span></code></pre></div><p>如果你使用的是未预安装 OpenSSH 软件的 Linux 发行版，你需要先安装 OpenSSH 再进行如下步骤。
 命令中的邮箱填自己 GitHub 的邮箱。此时会在本地生成一对公匙和私匙。</p>
 <ol start="5">
@@ -413,15 +405,15 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <p>享受你的 GitHub CI 吧~</p>
 </li>
 </ol>
-<h3 id="备注内容可以不看">备注内容（可以不看）</h3>
-<ul>
+<h3 id="备注内容可以不看">备注内容（可以不看）
+</h3><ul>
 <li>其他可选的运行环境请参见 <a class="link" href="https://github.com/actions/virtual-environments/tree/ubuntu18/20200406.2"  target="_blank" rel="noopener"
     >GitHub</a></li>
 <li>关于 Submodules 参见 <a class="link" href="https://github.com/sma11black/hexo-action#use-submodule-in-your-hexo-repository"  target="_blank" rel="noopener"
     >GitHub</a></li>
 </ul>
-<h2 id="方法二">方法二</h2>
-<ol>
+<h2 id="方法二">方法二
+</h2><ol>
 <li>
 <p>打开 github.com</p>
 </li>
@@ -436,184 +428,184 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </ol>
 <p>如果你对自动部署细节不感兴趣，可以直接跳转 <a class="link" href="https://blog.linioi.com/posts/9/#%E6%88%90%E5%93%81"  target="_blank" rel="noopener"
     >成品</a> 复制并根据自己情况修改即可。</p>
-<h3 id="配置内容">配置内容</h3>
-<p>1.名称(这个随意取)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo Blog Deploy</span>
+<h3 id="配置内容">配置内容
+</h3><p>1.名称(这个随意取)</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">name</span>: Hexo Blog Deploy
 </span></span></code></pre></div><p>2.指定触发 workflow 的事件，这里选择的是推送至指定分支的事件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">on</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>: <span style="color:#75715e"># 这里是推送事件</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">master</span> <span style="color:#75715e"># 这里指定了推送的分支</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">push</span>: <span style="color:#7f848e"># 这里是推送事件</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">branches</span>:
+</span></span><span style="display:flex;"><span>      - master <span style="color:#7f848e"># 这里指定了推送的分支</span>
 </span></span></code></pre></div><p>3.设置时区，这里设置的是上海的</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">env</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">TZ</span>: Asia/Shanghai
 </span></span></code></pre></div><p>4.指定 workflow 所运行的系统，此处设置的是最新 Ubuntu。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">blog-cicd</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">blog-cicd</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">name</span>: Hexo build
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">runs-on</span>: ubuntu-latest
 </span></span></code></pre></div><p>5.检出代码，设置 Node 环境</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Checkout codes
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">uses</span>: actions/checkout@v2
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup node</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1.1.0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">node-version</span>: <span style="color:#e6db74">&#34;12.x&#34;</span> <span style="color:#75715e"># Node 的版本</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Setup node
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">uses</span>: actions/setup-node@v1.1.0
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">node-version</span>: <span style="color:#98c379">&#34;12.x&#34;</span> <span style="color:#7f848e"># Node 的版本</span>
 </span></span></code></pre></div><p>6.同步子模块。如果没有使用子模块的话，这一步可以忽略。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout submodules</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git submodule sync --recursive
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span>    
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Checkout submodules
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git submodule sync --recursive
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span>    
 </span></span></code></pre></div><p>7.缓存 .npm 目录，加快构建速度</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span> <span style="color:#75715e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Cache Node Dependencies <span style="color:#7f848e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">id</span>: cache
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">uses</span>: actions/cache@v1
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">path</span>: .npm
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">key</span>: ${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}
 </span></span></code></pre></div><p>8.安装依赖。我建议，如果可以，请每次都执行以下步骤。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    npm install hexo-cli -g
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    npm install</span>    
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Install dependencies
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    npm install hexo-cli -g
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    npm install</span>    
 </span></span></code></pre></div><p>9.生成文件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    hexo clean &amp;&amp; hexo generate</span>    
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Generate files
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    hexo clean &amp;&amp; hexo generate</span>    
 </span></span></code></pre></div><p>10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    mv ./deploy_git/.git ./public/
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    cd ./public
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git config --local user.email &#34;your@email&#34; # 你的邮箱
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git config --local user.name &#34;yourname&#34; # 你的用户名
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git add .
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>    
-</span></span></code></pre></div><h3 id="成品">成品</h3>
-<p>最后的 workflow</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Blog Deploy</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#e06c75">name</span>: Deploy blog
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    mv ./deploy_git/.git ./public/
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    cd ./public
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git config --local user.email &#34;your@email&#34; # 你的邮箱
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git config --local user.name &#34;yourname&#34; # 你的用户名
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git add .
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">    git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>    
+</span></span></code></pre></div><h3 id="成品">成品
+</h3><p>最后的 workflow</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">name</span>: Blog Deploy
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">master</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">branches</span>:
+</span></span><span style="display:flex;"><span>      - master
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">env</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">TZ</span>: Asia/Shanghai
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">blog-cicd</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build and deploy</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">blog-cicd</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">name</span>: Hexo build and deploy
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">runs-on</span>: ubuntu-latest
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Checkout codes
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/checkout@v2
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup node</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1.1.0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">node-version</span>: <span style="color:#e6db74">&#34;12.x&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Setup node
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/setup-node@v1.1.0
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">node-version</span>: <span style="color:#98c379">&#34;12.x&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 若需要同步子模块的话，将下面的注释删掉即可</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#      - name: Checkout submodules</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#        run: |</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#          auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#          git submodule sync --recursive</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#          git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e"># 若需要同步子模块的话，将下面的注释删掉即可</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#      - name: Checkout submodules</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#        run: |</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#          auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#          git submodule sync --recursive</span>
+</span></span><span style="display:flex;"><span><span style="color:#7f848e">#          git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span> <span style="color:#75715e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Cache Node Dependencies <span style="color:#7f848e"># Npm 缓存，这一步报错的话，把这部分删掉即可</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">id</span>: cache
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/cache@v1
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">path</span>: .npm
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">key</span>: ${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install hexo-cli -g
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Install dependencies
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          npm install hexo-cli -g
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          npm install</span>          
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hexo clean &amp;&amp; hexo generate</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Generate files
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          hexo clean &amp;&amp; hexo generate</span>          
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          mv ./deploy_git/.git ./public/
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          cd ./public
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git config --local user.email &#34;your@email&#34; # 你的邮箱
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git config --local user.name &#34;yourname&#34; # 你的用户名
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git add .
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>          
-</span></span></code></pre></div><h2 id="我的配置文件">我的配置文件</h2>
-<p>如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。</p>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Deploy blog
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          mv ./deploy_git/.git ./public/
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          cd ./public
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git config --local user.email &#34;your@email&#34; # 你的邮箱
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git config --local user.name &#34;yourname&#34; # 你的用户名
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git add .
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>          
+</span></span></code></pre></div><h2 id="我的配置文件">我的配置文件
+</h2><p>如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。</p>
 <blockquote>
 <p>Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Auto Buider For Blog</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#e06c75">name</span>: GitHub Auto Buider For Blog
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">master</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">schedule</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">cron</span>: <span style="color:#e6db74">&#39;0 21 * * *&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">branches</span>:
+</span></span><span style="display:flex;"><span>      - master
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">schedule</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e06c75">cron</span>: <span style="color:#98c379">&#39;0 21 * * *&#39;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">env</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">Asia/Shanghai</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">TZ</span>: Asia/Shanghai
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">blog-cicd</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hexo build and deploy</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">blog-cicd</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">name</span>: Hexo build and deploy
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">runs-on</span>: ubuntu-latest
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout codes</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Checkout codes
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/checkout@v2
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup node</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1.1.0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">node-version</span>: <span style="color:#e6db74">&#34;12.x&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Setup node
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/setup-node@v1.1.0
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">node-version</span>: <span style="color:#98c379">&#34;12.x&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Clone themes</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Clone themes
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span>          
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Cache Node Dependencies</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">cache</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/cache@v1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">.npm</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">key</span>: <span style="color:#ae81ff">${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Cache Node Dependencies
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">id</span>: cache
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">uses</span>: actions/cache@v1
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">path</span>: .npm
+</span></span><span style="display:flex;"><span>          <span style="color:#e06c75">key</span>: ${{runner.OS}}-npm-caches-${{ hashFiles(&#39;package-lock.json&#39;) }}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install dependencies</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install hexo-cli -g
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm install
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          npm audit fix</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Install dependencies
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          npm install hexo-cli -g
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          npm install
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          npm audit fix</span>          
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Generate files</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hexo clean &amp;&amp; hexo generate</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Generate files
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          hexo clean &amp;&amp; hexo generate</span>          
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy blog</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          mv ./deploy_git/.git ./public/
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          cd ./public
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git config --local user.email &#34;xxxx&#34; # 你的邮箱
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git config --local user.name &#34;RimuruW&#34; # 你的用户名
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git add .
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>          
+</span></span><span style="display:flex;"><span>      - <span style="color:#e06c75">name</span>: Deploy blog
+</span></span><span style="display:flex;"><span>        <span style="color:#e06c75">run</span>: |<span style="color:#98c379">
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git clone &#34;https://${{ secrets.GH_REF }}&#34; deploy_git
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          mv ./deploy_git/.git ./public/
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          cd ./public
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git config --local user.email &#34;xxxx&#34; # 你的邮箱
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git config --local user.name &#34;RimuruW&#34; # 你的用户名
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git add .
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#98c379">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span>          
 </span></span></code></pre></div><p>参考文档：</p>
 <ul>
 <li><a class="link" href="https://github.com/sma11black/hexo-action"  target="_blank" rel="noopener"
@@ -721,7 +713,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
         
         
             <div class="article-image">
-                <img src="/posts/3/cover.27ce992381b08e5c6a5f984413b2bf45_hu33c5f08c98762c53a78672665d2839cf_25837_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/posts/3/cover.27ce992381b08e5c6a5f984413b2bf45_hu5314463091030808051.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -762,7 +754,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
     }
 </style><script>
     
-    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主"},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
+    Waline.init({"avatar":"mp","commentsorting":"latest","copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["//unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/bilibili","//unpkg.com/@waline/emojis@1.1.0/qq","//unpkg.com/@waline/emojis@1.1.0/tieba","//unpkg.com/@waline/emojis@1.1.0/tw-emoji"],"highlighter":true,"lang":"zh-CN","locale":{"admin":"博主","placeholder":null},"mathtagsupport":true,"pageSize":8,"pageview":true,"requiredMeta":["mail"],"serverURL":"https://waline.linioi.com","wordLimit":1000});
 </script>
 
     
@@ -773,12 +765,12 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
         
             2020 - 
         
-        2023 清絮的博客
+        2024 清絮的博客
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
