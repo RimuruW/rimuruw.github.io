@@ -225,7 +225,43 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#aria2-是什么">Aria2 是什么？</a></li>
+    <li><a href="#为什么会有这篇文章">为什么会有这篇文章</a></li>
+    <li><a href="#下载和安装-termux">下载和安装 Termux</a></li>
+    <li><a href="#下载和启动脚本">下载和启动脚本</a></li>
+    <li><a href="#安装-aria2">安装 Aria2</a></li>
+    <li><a href="#使用-ariang">使用 AriaNg</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -355,8 +391,15 @@
 </ul>
 <h2 id="下载和启动脚本">下载和启动脚本
 </h2><p>下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。<del>如果出现了报错则另说</del></p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bash -c <span style="color:#98c379">&#34;</span><span style="color:#c678dd">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span style="color:#c678dd">)</span><span style="color:#98c379">&#34;</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。</li>
 </ul>
 <p>脚本启动成功后如下图</p>

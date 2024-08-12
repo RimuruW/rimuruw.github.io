@@ -225,7 +225,48 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#无奈地一次-gnome-尝试">无奈地一次 GNOME 尝试</a></li>
+    <li><a href="#意料之外gnome-给我的惊喜">意料之外：GNOME 给我的惊喜</a></li>
+    <li><a href="#与-gnome-bug-的搏斗">与 GNOME bug 的搏斗</a>
+      <ol>
+        <li><a href="#第一回合下马威gdm-的罢工">第一回合：下马威，GDM 的罢工</a></li>
+        <li><a href="#第二回合下酒菜薛定谔的桌面动画">第二回合：下酒菜，薛定谔的桌面动画</a></li>
+        <li><a href="#第三回合压轴戏无尽-bug">第三回合：压轴戏，无尽 bug</a></li>
+      </ol>
+    </li>
+    <li><a href="#gnome-中我的扩展与美化">GNOME 中我的扩展与美化</a></li>
+    <li><a href="#使用小结">使用小结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -365,18 +406,41 @@
 <p>After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start"  target="_blank" rel="noopener"
     >start KMS early</a>. Another possible workaround is to <a class="link" href="https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units"  target="_blank" rel="noopener"
     >edit the systemd service</a> and either set its type to &ldquo;idle&rdquo; or add a small delay:</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#56b6c2">[</span>Service<span style="color:#56b6c2">]</span>
-</span></span><span style="display:flex;"><span> <span style="color:#e06c75">Type</span><span style="color:#56b6c2">=</span>idle
-</span></span></code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#56b6c2">[</span>Service<span style="color:#56b6c2">]</span>
-</span></span><span style="display:flex;"><span> <span style="color:#e06c75">ExecStartPre</span><span style="color:#56b6c2">=</span>/bin/sleep <span style="color:#d19a66">2</span>
-</span></span></code></pre></div><p>If a longer delay is required, increase the delay time.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> <span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl"> <span class="nv">Type</span><span class="o">=</span>idle
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>or</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> <span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl"> <span class="nv">ExecStartPre</span><span class="o">=</span>/bin/sleep <span class="m">2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If a longer delay is required, increase the delay time.</p>
 <p>看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？</p>
 <p>于是继续顺着超链接看了下去。</p>
 <p>嗯，在<code>/etc/mkinitcpio.conf</code>添加模块（MODULES），我是 AMD 核显所以应该添加<code>amdgpu</code>。</p>
 <p>所以应该是</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e06c75">MODULES</span><span style="color:#56b6c2">=(</span>amdgpu<span style="color:#56b6c2">)</span>  <span style="color:#7f848e">#又不是旧架构，我为啥要加 radeon？</span>
-</span></span></code></pre></div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">MODULES</span><span class="o">=(</span>amdgpu<span class="o">)</span>  <span class="c1">#又不是旧架构，我为啥要加 radeon？</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。</p>
 <p>确保这次开机不是偶然，我特意再重启了一遍，然后&hellip;&hellip;又卡在那个光标了。</p>
 <p>我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（</p>
 <p>抱着破罐子破摔的态度，我开始尝试我能想到的玄学方法，比如安装 linux-zen 内核（据说专为 Arch Linux 用户定制，对笔记本有玄学优化的神奇内核）。然后，就真开机了&hellip;&hellip;</p>

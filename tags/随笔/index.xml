@@ -77,18 +77,41 @@
 &lt;p&gt;After booting, GDM may present you with a black screen with a blinking white cursor in the top left. This may be caused by GDM starting before graphics drivers are fully initialized. One possible workaround is to &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Kernel_mode_setting#Early_KMS_start&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;start KMS early&lt;/a&gt;. Another possible workaround is to &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/index.php/Systemd#Editing_provided_units&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;edit the systemd service&lt;/a&gt; and either set its type to &amp;ldquo;idle&amp;rdquo; or add a small delay:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#56b6c2&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;Type&lt;/span&gt;&lt;span style=&#34;color:#56b6c2&#34;&gt;=&lt;/span&gt;idle
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;[&lt;/span&gt;Service&lt;span style=&#34;color:#56b6c2&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;ExecStartPre&lt;/span&gt;&lt;span style=&#34;color:#56b6c2&#34;&gt;=&lt;/span&gt;/bin/sleep &lt;span style=&#34;color:#d19a66&#34;&gt;2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If a longer delay is required, increase the delay time.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Service&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nv&#34;&gt;Type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;idle
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Service&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nv&#34;&gt;ExecStartPre&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/bin/sleep &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If a longer delay is required, increase the delay time.&lt;/p&gt;
 &lt;p&gt;看完 Wiki 的我猛拍大腿。对啊，提前启动 KMS，我咋没想到呢？？&lt;/p&gt;
 &lt;p&gt;于是继续顺着超链接看了下去。&lt;/p&gt;
 &lt;p&gt;嗯，在&lt;code&gt;/etc/mkinitcpio.conf&lt;/code&gt;添加模块（MODULES），我是 AMD 核显所以应该添加&lt;code&gt;amdgpu&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;所以应该是&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;MODULES&lt;/span&gt;&lt;span style=&#34;color:#56b6c2&#34;&gt;=(&lt;/span&gt;amdgpu&lt;span style=&#34;color:#56b6c2&#34;&gt;)&lt;/span&gt;  &lt;span style=&#34;color:#7f848e&#34;&gt;#又不是旧架构，我为啥要加 radeon？&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;MODULES&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;amdgpu&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;#又不是旧架构，我为啥要加 radeon？&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改完后保存退出重启，再次开机的时候，我终于看见了我久违的 GDM。&lt;/p&gt;
 &lt;p&gt;确保这次开机不是偶然，我特意再重启了一遍，然后&amp;hellip;&amp;hellip;又卡在那个光标了。&lt;/p&gt;
 &lt;p&gt;我凭借自己强大的心理素质忍住了想哭的冲动，平复心情后把 Arch Wiki 给出的所有方案操作了一遍，然后基本确定，我上一次开机真的只是偶然事件（&lt;/p&gt;
 &lt;p&gt;抱着破罐子破摔的态度，我开始尝试我能想到的玄学方法，比如安装 linux-zen 内核（据说专为 Arch Linux 用户定制，对笔记本有玄学优化的神奇内核）。然后，就真开机了&amp;hellip;&amp;hellip;&lt;/p&gt;

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 systemctl status nginx 输出： ● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 1 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 1 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） 1 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 1 systemctl status nginx 输出： 1 2 3 4 5 6 7 8 ● nginx.">
 <title>Arch Linux 服务器安装 LNMP</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/5/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Arch Linux 服务器安装 LNMP">
-<meta property='og:description' content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 systemctl status nginx 输出： ● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx.">
+<meta property='og:description' content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 1 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 1 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） 1 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 1 systemctl status nginx 输出： 1 2 3 4 5 6 7 8 ● nginx.">
 <meta property='og:url' content='https://blog.linioi.com/posts/5/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Server' /><meta property='article:published_time' content='2020-05-30T20:31:49&#43;00:00'/><meta property='article:modified_time' content='2020-05-30T20:31:49&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="Arch Linux 服务器安装 LNMP">
-<meta name="twitter:description" content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 systemctl status nginx 输出： ● nginx.service - A high performance web server and a reverse proxy server Loaded: loaded (/usr/lib/systemd/system/nginx."><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="没有其他发行版的一键脚本/运维面板 Arch Linux 用它的方式体现着它的超凡脱俗 其实就是用的人太少，没人写脚本 对 Arch Linux 进行一次全面更新 话说，这不是每天开机第一件事吗 1 sudo pacman -Syu 安装 Nginx Arch Linux 软件库中有两个版本的 Nginx，分别是 nginx 和 nginx-mainline，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。 输入如下命令安装旧版本 Nginx。 1 sudo pacman -S nginx 安装 nginx-mainline。（本教程安装的是 mainline） 1 sudo pacman -S nginx-mainline 以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。 1 systemctl status nginx 输出： 1 2 3 4 5 6 7 8 ● nginx."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -225,7 +225,40 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#对-arch-linux-进行一次全面更新">对 Arch Linux 进行一次全面更新</a></li>
+    <li><a href="#安装-nginx">安装 Nginx</a></li>
+    <li><a href="#安装-mariadb">安装 MariaDB</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -308,35 +341,93 @@ Arch Linux 用它的方式体现着它的超凡脱俗
 <!-- raw HTML omitted -->
 <h2 id="对-arch-linux-进行一次全面更新">对 Arch Linux 进行一次全面更新
 </h2><p><del>话说，这不是每天开机第一件事吗</del></p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -Syu
-</span></span></code></pre></div><h2 id="安装-nginx">安装 Nginx
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Syu
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装-nginx">安装 Nginx
 </h2><p>Arch Linux 软件库中有两个版本的 Nginx，分别是
 <a class="link" href="https://www.archlinux.org/packages/extra/x86_64/nginx/"  target="_blank" rel="noopener"
     >nginx</a> 和 <a class="link" href="https://www.archlinux.org/packages/community/x86_64/nginx-mainline/"  target="_blank" rel="noopener"
     >nginx-mainline</a>，与 Nginx 官方的两个版本对应。nginx 理论上更加稳定，但版本比较旧， 而 nginx-mainline 是 Nginx 最新的版本。
 但这并不表示 nginx-mainline = 不稳定。实际上 nginx.org 官网说明，如果没有非常必要的原因，则推荐使用 nginx mainline。
 输入如下命令安装旧版本 Nginx。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S nginx
-</span></span></code></pre></div><p>安装 nginx-mainline。（本教程安装的是 mainline）</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S nginx-mainline
-</span></span></code></pre></div><p>以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl status nginx
-</span></span></code></pre></div><p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>● nginx.service - A high performance web server and a reverse proxy server
-</span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#56b6c2">(</span>/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>     Active: active <span style="color:#56b6c2">(</span>running<span style="color:#56b6c2">)</span> since Tue 2016-04-12 13:10:57 CST; <span style="color:#d19a66">1</span> day 7h ago
-</span></span><span style="display:flex;"><span>   Main PID: <span style="color:#d19a66">2010</span> <span style="color:#56b6c2">(</span>nginx<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>      Tasks: <span style="color:#d19a66">2</span> <span style="color:#56b6c2">(</span>limit: 512<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>     CGroup: /system.slice/nginx.service
-</span></span><span style="display:flex;"><span>             ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid; daemon on; master_process on
-</span></span><span style="display:flex;"><span>             └─2011 nginx: worker process
-</span></span></code></pre></div><p>如果 Nginx 未运行，则输入以下的命令启动它。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start nginx <span style="color:#7f848e">#启动 Nginx</span>
-</span></span><span style="display:flex;"><span>sudo systemctl <span style="color:#e5c07b">enable</span> nginx <span style="color:#7f848e">#设置 Nginx 开机自启动</span>
-</span></span></code></pre></div><p>输入如下命令可查看 Nginx 的版本号</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#56b6c2">[</span>user@arch ~<span style="color:#56b6c2">]</span>$ nginx -v
-</span></span><span style="display:flex;"><span>nginx version: nginx/1.9.14
-</span></span></code></pre></div><p>在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nginx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装 nginx-mainline。（本教程安装的是 mainline）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S nginx-mainline
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以上两条命令默认会自动安装 geoip 和 geoip-database 两个软件包。安装完成后，使用 systemctl 来查看其状态。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status nginx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">● nginx.service - A high performance web server and a reverse proxy server
+</span></span><span class="line"><span class="cl">     Loaded: loaded <span class="o">(</span>/usr/lib/systemd/system/nginx.service<span class="p">;</span> enabled<span class="p">;</span> vendor preset: disabled<span class="o">)</span>
+</span></span><span class="line"><span class="cl">     Active: active <span class="o">(</span>running<span class="o">)</span> since Tue 2016-04-12 13:10:57 CST<span class="p">;</span> <span class="m">1</span> day 7h ago
+</span></span><span class="line"><span class="cl">   Main PID: <span class="m">2010</span> <span class="o">(</span>nginx<span class="o">)</span>
+</span></span><span class="line"><span class="cl">      Tasks: <span class="m">2</span> <span class="o">(</span>limit: 512<span class="o">)</span>
+</span></span><span class="line"><span class="cl">     CGroup: /system.slice/nginx.service
+</span></span><span class="line"><span class="cl">             ├─2010 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid<span class="p">;</span> daemon on<span class="p">;</span> master_process on
+</span></span><span class="line"><span class="cl">             └─2011 nginx: worker process
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果 Nginx 未运行，则输入以下的命令启动它。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl start nginx <span class="c1">#启动 Nginx</span>
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> nginx <span class="c1">#设置 Nginx 开机自启动</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入如下命令可查看 Nginx 的版本号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>user@arch ~<span class="o">]</span>$ nginx -v
+</span></span><span class="line"><span class="cl">nginx version: nginx/1.9.14
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在浏览器中输入 Arch Linux 服务器的 IP 地址，如果看见如下文字，则说明 Nginx 在正常运行。
 <img src="https://cdn.jsdelivr.net/gh/RimuruW/PicGoBed/blog/images/nginx.png"
 	
 	
@@ -348,72 +439,223 @@ Arch Linux 用它的方式体现着它的超凡脱俗
 	
 ></p>
 <p>如果你不知道服务器公网 IP，可以输入这条命令查看。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl http://icanhazip.com
-</span></span></code></pre></div><p>如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl http://icanhazip.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你是在本地主机安装，那么直接在浏览器地址栏输入 127.0.0.1 即可。</p>
 <h2 id="安装-mariadb">安装 MariaDB
 </h2><p>2013 年开始，Arch Linux 将 MariaDB 作为默认的 SQL 数据库软件，Oracle 的 MySQL 则被丢进 AUR（（（</p>
 <p>输入如下命令安装 MariaDB</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S mariadb
-</span></span></code></pre></div><p>在启动 MariaDB 服务之前，需要使用用 <code>mysql_install_db</code>命令初始化 MariaDB 的数据目录</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mysql_install_db --user<span style="color:#56b6c2">=</span>mysql --basedir<span style="color:#56b6c2">=</span>/usr --datadir<span style="color:#56b6c2">=</span>/var/lib/mysql
-</span></span></code></pre></div><p>启动 MariaDB 服务。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start mysqld
-</span></span></code></pre></div><p>查看 MariaDB 状态。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl status mysqld
-</span></span></code></pre></div><p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>● mysqld.service - MariaDB database server
-</span></span><span style="display:flex;"><span>   Loaded: loaded <span style="color:#56b6c2">(</span>/usr/lib/systemd/system/mysqld.service; disabled; vendor preset: disabled<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>   Active: active <span style="color:#56b6c2">(</span>running<span style="color:#56b6c2">)</span> since Wed 2016-04-13 21:09:45 CST; 5s ago
-</span></span><span style="display:flex;"><span>  Process: <span style="color:#d19a66">8373</span> <span style="color:#e06c75">ExecStartPost</span><span style="color:#56b6c2">=</span>/usr/bin/mysqld-post <span style="color:#56b6c2">(</span><span style="color:#e06c75">code</span><span style="color:#56b6c2">=</span>exited, <span style="color:#e06c75">status</span><span style="color:#56b6c2">=</span>0/SUCCESS<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span> Main PID: <span style="color:#d19a66">8372</span> <span style="color:#56b6c2">(</span>mysqld<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>    Tasks: <span style="color:#d19a66">26</span> <span style="color:#56b6c2">(</span>limit: 512<span style="color:#56b6c2">)</span>
-</span></span><span style="display:flex;"><span>   CGroup: /system.slice/mysqld.service
-</span></span><span style="display:flex;"><span>           └─8372 /usr/bin/mysqld --pid-file<span style="color:#56b6c2">=</span>/run/mysqld/mysqld.pid
-</span></span></code></pre></div><p>设置 MariaDB 开机自启动。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemclt <span style="color:#e5c07b">enable</span> mysqld
-</span></span></code></pre></div><p>运行安全安装脚本。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mysql_secure_installation
-</span></span></code></pre></div><p>它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S mariadb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在启动 MariaDB 服务之前，需要使用用 <code>mysql_install_db</code>命令初始化 MariaDB 的数据目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mysql_install_db --user<span class="o">=</span>mysql --basedir<span class="o">=</span>/usr --datadir<span class="o">=</span>/var/lib/mysql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>启动 MariaDB 服务。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl start mysqld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看 MariaDB 状态。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status mysqld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">● mysqld.service - MariaDB database server
+</span></span><span class="line"><span class="cl">   Loaded: loaded <span class="o">(</span>/usr/lib/systemd/system/mysqld.service<span class="p">;</span> disabled<span class="p">;</span> vendor preset: disabled<span class="o">)</span>
+</span></span><span class="line"><span class="cl">   Active: active <span class="o">(</span>running<span class="o">)</span> since Wed 2016-04-13 21:09:45 CST<span class="p">;</span> 5s ago
+</span></span><span class="line"><span class="cl">  Process: <span class="m">8373</span> <span class="nv">ExecStartPost</span><span class="o">=</span>/usr/bin/mysqld-post <span class="o">(</span><span class="nv">code</span><span class="o">=</span>exited, <span class="nv">status</span><span class="o">=</span>0/SUCCESS<span class="o">)</span>
+</span></span><span class="line"><span class="cl"> Main PID: <span class="m">8372</span> <span class="o">(</span>mysqld<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    Tasks: <span class="m">26</span> <span class="o">(</span>limit: 512<span class="o">)</span>
+</span></span><span class="line"><span class="cl">   CGroup: /system.slice/mysqld.service
+</span></span><span class="line"><span class="cl">           └─8372 /usr/bin/mysqld --pid-file<span class="o">=</span>/run/mysqld/mysqld.pid
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>设置 MariaDB 开机自启动。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemclt <span class="nb">enable</span> mysqld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行安全安装脚本。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mysql_secure_installation
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>它会询问你 MariaDB 的 root 密码，因为我们没有设置密码，所以按 Enter 键，再设置一个 root 密码。然后选择删除 test 数据库，anonymous 用户以及禁用 root 用户远程登录。</p>
 <p>查看 MariaDB 的版本。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#56b6c2">[</span>user@arch ~<span style="color:#56b6c2">]</span>$ mysql --version
-</span></span><span style="display:flex;"><span>mysql  Ver 15.1 Distrib 10.1.13-MariaDB, <span style="color:#c678dd">for</span> Linux <span style="color:#56b6c2">(</span>x86_64<span style="color:#56b6c2">)</span> using readline 5.1
-</span></span></code></pre></div><p>默认的配置文件位置为 <code>/etc/mysql/my.cnf</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>user@arch ~<span class="o">]</span>$ mysql --version
+</span></span><span class="line"><span class="cl">mysql  Ver 15.1 Distrib 10.1.13-MariaDB, <span class="k">for</span> Linux <span class="o">(</span>x86_64<span class="o">)</span> using readline 5.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>默认的配置文件位置为 <code>/etc/mysql/my.cnf</code>。</p>
 <p>第 4 步：安装 PHP7
 Arch Linux 软件库的 PHP 一般都是最新版本（目前是 7.4 版本）</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S php-fpm
-</span></span></code></pre></div><p>安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/nginx/nginx.conf
-</span></span></code></pre></div><p>找到 location ~ .php$这部分的配置，将这部分配置修改成如下。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#c678dd">location</span> ~ <span style="color:#98c379">\.php$</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">root</span>           <span style="color:#98c379">/usr/share/nginx/html</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">fastcgi_pass</span>   <span style="color:#98c379">unix:/run/php-fpm/php-fpm.sock</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">fastcgi_index</span>  <span style="color:#98c379">index.php</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">fastcgi_param</span>  <span style="color:#98c379">SCRIPT_FILENAME</span>  <span style="color:#e06c75">$document_root$fastcgi_script_name</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#c678dd">include</span>        <span style="color:#98c379">fastcgi_params</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span></code></pre></div><p>保存文件。然后启动 php-fpm，并设置开机自启动。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start php-fpm
-</span></span><span style="display:flex;"><span>sudo systemctl <span style="color:#e5c07b">enable</span> php-fpm
-</span></span></code></pre></div><p>第 5 步：测试 PHP
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S php-fpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装后，修改 Nginx 配置文件以使 Nginx 使用 php-fpm 来运行 PHP。编辑/etc/nginx/nginx.conf 文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/nginx/nginx.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>找到 location ~ .php$这部分的配置，将这部分配置修改成如下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kn">root</span>           <span class="s">/usr/share/nginx/html</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kn">fastcgi_pass</span>   <span class="s">unix:/run/php-fpm/php-fpm.sock</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kn">fastcgi_index</span>  <span class="s">index.php</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kn">fastcgi_param</span>  <span class="s">SCRIPT_FILENAME</span>  <span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kn">include</span>        <span class="s">fastcgi_params</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存文件。然后启动 php-fpm，并设置开机自启动。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl start php-fpm
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> php-fpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第 5 步：测试 PHP
 在网站根目录创建一个 test.php 文件。默认的网站根目录是/usr/share/nginx/html。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /usr/share/nginx/html/test.php
-</span></span></code></pre></div><p>在文件中添加如下 PHP 代码。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#56b6c2">&lt;?</span><span style="color:#e06c75">php</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">phpinfo</span>();
-</span></span><span style="display:flex;"><span><span style="color:#7f848e">?&gt;</span>
-</span></span></code></pre></div><p>保存文件。重新加载 Nginx。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl reload nginx
-</span></span></code></pre></div><p>然后在浏览器地址栏输入 <code>http://你服务器或本地主机IP/test.php</code>。将 server-ip 替换成 Arch Linux 服务器或本地主机 IP。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /usr/share/nginx/html/test.php
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件中添加如下 PHP 代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">phpinfo</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存文件。重新加载 Nginx。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl reload nginx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后在浏览器地址栏输入 <code>http://你服务器或本地主机IP/test.php</code>。将 server-ip 替换成 Arch Linux 服务器或本地主机 IP。
 此时，浏览器会显示有关 PHP 到底信息，这意味着你已修改成功。</p>
 <p>test.php 文件只是用来测试 PHP 的，为了不让他人看见服务器的信息，测试之后要将它删除。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo rm /usr/share/nginx/html/test.php
-</span></span></code></pre></div><p>启用 PHP 扩展
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo rm /usr/share/nginx/html/test.php
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>启用 PHP 扩展
 编辑 /etc/php/php.ini 配置文件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/php/php.ini
-</span></span></code></pre></div><p>找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>;<span style="color:#e06c75">extension</span><span style="color:#56b6c2">=</span><span style="color:#e06c75">mysqli</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">so</span>
-</span></span><span style="display:flex;"><span>;<span style="color:#e06c75">extension</span><span style="color:#56b6c2">=</span><span style="color:#e06c75">pdo_mysql</span><span style="color:#56b6c2">.</span><span style="color:#e06c75">so</span>
-</span></span></code></pre></div><p><code>mysqli.do</code> 用来建立数据库连接。<code>pdo_mysql.so</code> 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/php/php.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>找到如下两行文字，去掉前面的#符号以启用 mysqli 和 pdo_mysql。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="p">;</span><span class="nx">extension</span><span class="o">=</span><span class="nx">mysqli</span><span class="o">.</span><span class="nx">so</span>
+</span></span><span class="line"><span class="cl"><span class="p">;</span><span class="nx">extension</span><span class="o">=</span><span class="nx">pdo_mysql</span><span class="o">.</span><span class="nx">so</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>mysqli.do</code> 用来建立数据库连接。<code>pdo_mysql.so</code> 是 drupal 内容管理系统所必要的 PHP 扩展。如果需要在 WordPress, Drupal 内容管理系统中剪裁、旋转图片，那么需要启用 imagemagick 这个扩展。</p>
 <p>安装教程到此结束。</p>
 <p>转载自</p>
 <ul>

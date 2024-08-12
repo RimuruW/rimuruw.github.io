@@ -67,8 +67,15 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;下载和启动脚本&#34;&gt;下载和启动脚本
 &lt;/h2&gt;&lt;p&gt;下面的步骤极为简单，你只要复制和粘贴下面我列出的命令并在 Termux 中输入并回车，不需要关心其他的任何细节。&lt;del&gt;如果出现了报错则另说&lt;/del&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash -c &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span style=&#34;color:#c678dd&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -L https://raw.githubusercontent.com/RimuruW/Aria2-Termux/master/aria2.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;输入命令后 Termux 会自动下载脚本，请耐心等待。脚本下载完成后，Termux 会自动启动脚本。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;脚本启动成功后如下图&lt;/p&gt;

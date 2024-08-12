@@ -225,7 +225,46 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#刷入步骤">刷入步骤</a>
+      <ol>
+        <li><a href="#你需要准备什么">你需要准备什么？</a></li>
+        <li><a href="#那么让我们开始">那么，让我们开始…</a></li>
+        <li><a href="#某些问题的简单解答待更新">某些问题的简单解答（待更新）</a></li>
+      </ol>
+    </li>
+    <li><a href="#后记">后记</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -339,12 +378,23 @@
 <li>解压你下载的 <code>AOSP Recovery ROM Flasher V4.zip</code> 。
 解压后文件夹目录如下</li>
 </ol>
-<pre tabindex="0"><code>AOSP Recovery ROM Flasher V4
-├── flashme.bat
-├── images
-├── sideload
-└── windows
-</code></pre><p><em>你可能需要手动将你下载的 hentaiOS 刷机包放入解压后的 <code>sideload</code> 文件夹</em>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">AOSP</span> <span class="n">Recovery</span> <span class="n">ROM</span> <span class="n">Flasher</span> <span class="n">V4</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">flashme</span><span class="o">.</span><span class="n">bat</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">sideload</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">windows</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>你可能需要手动将你下载的 hentaiOS 刷机包放入解压后的 <code>sideload</code> 文件夹</em>。</p>
 <ol start="6">
 <li>
 <p>对于 Windows 用户，请打开你解压后的文件夹，双击 <code>flashme.bat</code> 并等待刷入结束；对于 Linux 用户，请解压你下载的<code>linux_flash.zip</code>到 <code>AOSP Recovery ROM Flasher V4.zip</code>解压后的文件夹中。</p>

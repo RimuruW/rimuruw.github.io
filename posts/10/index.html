@@ -225,7 +225,44 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#刷前需知">刷前需知</a>
+      <ol>
+        <li><a href="#方法一">方法一：</a></li>
+        <li><a href="#方法二">方法二：</a></li>
+      </ol>
+    </li>
+    <li><a href="#不借助-recovery-刷入-magisk">不借助 Recovery 刷入 Magisk</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -281,7 +318,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -364,16 +401,31 @@
 <p>在 Windows 命令行窗口回车后，选择要 sideload 的文件，输入文件前面的数字，回车，等待刷入到 47%，以下是一个示例。</p>
 </li>
 </ol>
-<pre tabindex="0"><code>Press POWER + VOL UP till you get to the redmi screen after you get there release after 2s
-Press enter after you put your recovery into sideload and the rom into the sideload folder
-Check your device you might need to press yes to continue flashing after 47
-To select the file press press the number in front of it
-   
-[1]. PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
-Enter a file to load: 1
-
-You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
-</code></pre><ol start="10">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">Press</span> <span class="n">POWER</span> <span class="o">+</span> <span class="n">VOL</span> <span class="n">UP</span> <span class="n">till</span> <span class="n">you</span> <span class="n">get</span> <span class="n">to</span> <span class="n">the</span> <span class="n">redmi</span> <span class="n">screen</span> <span class="n">after</span> <span class="n">you</span> <span class="n">get</span> <span class="n">there</span> <span class="n">release</span> <span class="n">after</span> <span class="mi">2</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">Press</span> <span class="n">enter</span> <span class="n">after</span> <span class="n">you</span> <span class="n">put</span> <span class="n">your</span> <span class="n">recovery</span> <span class="n">into</span> <span class="n">sideload</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">rom</span> <span class="n">into</span> <span class="n">the</span> <span class="n">sideload</span> <span class="n">folder</span>
+</span></span><span class="line"><span class="cl"><span class="n">Check</span> <span class="n">your</span> <span class="n">device</span> <span class="n">you</span> <span class="n">might</span> <span class="n">need</span> <span class="n">to</span> <span class="n">press</span> <span class="n">yes</span> <span class="n">to</span> <span class="k">continue</span> <span class="n">flashing</span> <span class="n">after</span> <span class="mi">47</span>
+</span></span><span class="line"><span class="cl"><span class="n">To</span> <span class="n">select</span> <span class="n">the</span> <span class="n">file</span> <span class="n">press</span> <span class="n">press</span> <span class="n">the</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">front</span> <span class="n">of</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span> <span class="n">PixelExperience_Plus_violet</span><span class="o">-</span><span class="mf">10.0</span><span class="o">-</span><span class="mi">20200410</span><span class="o">-</span><span class="mi">1304</span><span class="o">-</span><span class="n">OFFICIAL</span><span class="o">.</span><span class="n">zip</span>
+</span></span><span class="line"><span class="cl"><span class="n">Enter</span> <span class="n">a</span> <span class="n">file</span> <span class="n">to</span> <span class="nb">load</span><span class="p">:</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">You</span> <span class="n">selected</span> <span class="n">PixelExperience_Plus_violet</span><span class="o">-</span><span class="mf">10.0</span><span class="o">-</span><span class="mi">20200410</span><span class="o">-</span><span class="mi">1304</span><span class="o">-</span><span class="n">OFFICIAL</span><span class="o">.</span><span class="n">zip</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="10">
 <li>
 <p>输入到 47% 时，AOSP Recovery 会提示验证失败，是否继续刷入。使用手机的音量键和电源键，在上方的选项中选择 Yes，等待刷入完成。</p>
 </li>
@@ -407,52 +459,103 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 文件夹前几层结构大致如下：</p>
 </li>
 </ol>
-<pre tabindex="0"><code>├── flashme.bat
-├── images
-│   ├── BTFM.bin
-│   ├── NON-HLOS.bin
-│   ├── abl.elf
-│   ├── aop.mbn
-│   ├── cmnlib.mbn
-│   ├── cmnlib64.mbn
-│   ├── devcfg.mbn
-│   ├── dspso.bin
-│   ├── dtbo.img
-│   ├── hyp.mbn
-│   ├── imagefv.elf
-│   ├── km4.mbn
-│   ├── multi_image.mbn
-│   ├── qupv3fw.elf
-│   ├── recovery.img
-│   ├── storsec.mbn
-│   ├── tz.mbn
-│   ├── uefi_sec.mbn
-│   ├── vbmeta.img
-│   ├── vendor.img
-│   ├── xbl.elf
-│   └── xbl_config.elf
-├── sideload
-├── t.md
-└── windows
-    ├── AdbWinApi.dll
-    ├── AdbWinUsbApi.dll
-    ├── NOTICE.txt
-    ├── adb.exe
-    ├── api
-    ├── dmtracedump.exe
-    ├── etc1tool.exe
-    ├── fastboot.exe
-    ├── hprof-conv.exe
-    ├── lib64
-    ├── libwinpthread-1.dll
-    ├── make_f2fs.exe
-    ├── mke2fs.conf
-    ├── mke2fs.exe
-    ├── sideload.bat
-    ├── source.properties
-    ├── sqlite3.exe
-    └── systrace
-</code></pre><p>找到 images 文件夹下 vendor.img 文件，并解压至任意一个你可以找到的目录下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">flashme</span><span class="o">.</span><span class="n">bat</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">BTFM</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">NON</span><span class="o">-</span><span class="n">HLOS</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">abl</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">aop</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">cmnlib</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">cmnlib64</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">devcfg</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">dspso</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">dtbo</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">hyp</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">imagefv</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">km4</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">multi_image</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">qupv3fw</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">recovery</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">storsec</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">tz</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">uefi_sec</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">vbmeta</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">vendor</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">xbl</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">└──</span> <span class="n">xbl_config</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">sideload</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">t</span><span class="o">.</span><span class="n">md</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">windows</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">AdbWinApi</span><span class="o">.</span><span class="n">dll</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">AdbWinUsbApi</span><span class="o">.</span><span class="n">dll</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">NOTICE</span><span class="o">.</span><span class="n">txt</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">adb</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">api</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">dmtracedump</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">etc1tool</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">fastboot</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">hprof</span><span class="o">-</span><span class="n">conv</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">lib64</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">libwinpthread</span><span class="o">-</span><span class="mf">1.</span><span class="n">dll</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">make_f2fs</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">mke2fs</span><span class="o">.</span><span class="n">conf</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">mke2fs</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">sideload</span><span class="o">.</span><span class="n">bat</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">source</span><span class="o">.</span><span class="n">properties</span>
+</span></span><span class="line"><span class="cl">    <span class="err">├──</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">exe</span>
+</span></span><span class="line"><span class="cl">    <span class="err">└──</span> <span class="n">systrace</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>找到 images 文件夹下 vendor.img 文件，并解压至任意一个你可以找到的目录下。</p>
 <ol start="4">
 <li>手机参照<a class="link" href="https://blog.linioi.com/posts/8/"  target="_blank" rel="noopener"
     >此教程</a>刷入第三方 Recovery</li>
@@ -486,45 +589,89 @@ You selected PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip
 <strong>如果需要刷入 Magisk，直接在 AOSP Recovery 中刷入即可</strong></p>
 <h2 id="不借助-recovery-刷入-magisk">不借助 Recovery 刷入 Magisk
 </h2><p>解压 PE 刷机包，结构大致如下：</p>
-<pre tabindex="0"><code>├── META-INF
-│   └── com
-│       ├── android
-│       │   ├── metadata
-│       │   └── otacert
-│       └── google
-│           └── android
-│               ├── update-binary
-│               └── updater-script
-├── boot.img
-├── firmware-update
-│   ├── BTFM.bin
-│   ├── NON-HLOS.bin
-│   ├── abl.elf
-│   ├── aop.mbn
-│   ├── cmnlib.mbn
-│   ├── cmnlib64.mbn
-│   ├── devcfg.mbn
-│   ├── dspso.bin
-│   ├── dtbo.img
-│   ├── hyp.mbn
-│   ├── imagefv.elf
-│   ├── km4.mbn
-│   ├── multi_image.mbn
-│   ├── qupv3fw.elf
-│   ├── storsec.mbn
-│   ├── tz.mbn
-│   ├── uefi_sec.mbn
-│   ├── vbmeta.img
-│   ├── xbl.elf
-│   └── xbl_config.elf
-├── install
-│   └── bin
-│       ├── backuptool.functions
-│       └── backuptool.sh
-├── system.new.dat.br
-├── system.patch.dat
-└── system.transfer.list
-</code></pre><ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">META</span><span class="o">-</span><span class="bp">INF</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">└──</span> <span class="n">com</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">├──</span> <span class="n">android</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">metadata</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">│</span>   <span class="err">└──</span> <span class="n">otacert</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">└──</span> <span class="n">google</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>           <span class="err">└──</span> <span class="n">android</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>               <span class="err">├──</span> <span class="n">update</span><span class="o">-</span><span class="n">binary</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>               <span class="err">└──</span> <span class="n">updater</span><span class="o">-</span><span class="n">script</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">boot</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">firmware</span><span class="o">-</span><span class="n">update</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">BTFM</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">NON</span><span class="o">-</span><span class="n">HLOS</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">abl</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">aop</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">cmnlib</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">cmnlib64</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">devcfg</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">dspso</span><span class="o">.</span><span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">dtbo</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">hyp</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">imagefv</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">km4</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">multi_image</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">qupv3fw</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">storsec</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">tz</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">uefi_sec</span><span class="o">.</span><span class="n">mbn</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">vbmeta</span><span class="o">.</span><span class="n">img</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="n">xbl</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">└──</span> <span class="n">xbl_config</span><span class="o">.</span><span class="n">elf</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">install</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">└──</span> <span class="n">bin</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">├──</span> <span class="n">backuptool</span><span class="o">.</span><span class="n">functions</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>       <span class="err">└──</span> <span class="n">backuptool</span><span class="o">.</span><span class="n">sh</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">system</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">dat</span><span class="o">.</span><span class="n">br</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">system</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">dat</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">system</span><span class="o">.</span><span class="n">transfer</span><span class="o">.</span><span class="n">list</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
 <li>找到其中的 boot.img 文件，复制至手机任何一个你可以找到的目录。</li>
 <li>下载并安装 Magisk Manager，打开 Magisk Manager，点击 Magisk 旁的安装，点击“修补一个文件”。</li>
 <li>选择你解压的 boot.img 文件，等待 Magisk Manager 修补完成。修补后的文件会自动存放于 Download 文件夹中。你需要将该文件传输至电脑任意一个你可以找到的目录。</li>

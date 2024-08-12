@@ -225,7 +225,92 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#有些话必须放在前面">有些话必须放在前面……</a></li>
+    <li><a href="#正文">正文</a>
+      <ol>
+        <li><a href="#确定电脑的启动类型">确定电脑的启动类型</a></li>
+        <li><a href="#iso-镜像烧录">ISO 镜像烧录</a></li>
+        <li><a href="#启动前准备工作">启动前准备工作</a>
+          <ol>
+            <li><a href="#为-arch-linux-准备空闲的硬盘空间">为 Arch Linux 准备空闲的硬盘空间</a></li>
+            <li><a href="#禁用快速启动和安全启动">禁用快速启动和安全启动</a></li>
+            <li><a href="#设置-windows-时区偏移">设置 Windows 时区偏移</a></li>
+          </ol>
+        </li>
+        <li><a href="#电脑环境确认">电脑环境确认</a></li>
+        <li><a href="#启动盘使用">启动盘使用</a></li>
+        <li><a href="#连接网络并同步时间">连接网络并同步时间</a></li>
+      </ol>
+    </li>
+    <li><a href="#准备硬盘分区">准备硬盘分区</a></li>
+    <li><a href="#对硬盘进行分区">对硬盘进行分区</a>
+      <ol>
+        <li><a href="#以下是-arch-linux-官方推荐的分区方式">以下是 Arch Linux 官方推荐的分区方式</a></li>
+      </ol>
+    </li>
+    <li><a href="#挂载分区">挂载分区</a></li>
+    <li><a href="#安装-arch-linux-基本系统">安装 Arch Linux 基本系统</a></li>
+    <li><a href="#安装基本系统后的环境配置">安装基本系统后的环境配置</a></li>
+    <li><a href="#安装微码并配置-grub-引导">安装微码并配置 Grub 引导</a></li>
+    <li><a href="#配置语言和区域">配置语言和区域</a></li>
+    <li><a href="#安装桌面环境">安装桌面环境</a>
+      <ol>
+        <li><a href="#kde">KDE</a></li>
+        <li><a href="#gnome">GNOME</a></li>
+      </ol>
+    </li>
+    <li><a href="#对系统进行本地化">对系统进行本地化</a>
+      <ol>
+        <li><a href="#安装中文字体">安装中文字体</a></li>
+      </ol>
+    </li>
+    <li><a href="#arch-linux-已成功安装在你的电脑上">Arch Linux 已成功安装在你的电脑上！</a></li>
+    <li><a href="#安装完成后的一些基本配置和某些问题的解决">安装完成后的一些基本配置和某些问题的解决</a>
+      <ol>
+        <li><a href="#安装中文输入法">安装中文输入法</a></li>
+        <li><a href="#添加-arch-linux-cn-源">添加 Arch Linux CN 源</a></li>
+        <li><a href="#安装-yay没错就这名字">安装 yay（没错，就这名字）</a></li>
+        <li><a href="#解决-windows-加密问题">解决 Windows 加密问题</a></li>
+        <li><a href="#禁用-reflector">禁用 reflector</a></li>
+      </ol>
+    </li>
+    <li><a href="#相关内容补充">相关内容补充</a>
+      <ol>
+        <li><a href="#pacman-常用命令">Pacman 常用命令：</a></li>
+        <li><a href="#arch-相关链接">Arch 相关链接</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -285,7 +370,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 10 分钟
+                    阅读时长: 11 分钟
                 </time>
             </div>
         
@@ -445,8 +530,15 @@
 <ul>
 <li>Linux 使用 dd 命令 ：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dd <span style="color:#c678dd">if</span><span style="color:#56b6c2">=</span>ISO镜像位置 <span style="color:#e06c75">of</span><span style="color:#56b6c2">=</span>/dev/sdX <span style="color:#e06c75">bs</span><span style="color:#56b6c2">=</span>4M
-</span></span></code></pre></div><p><code>/dev/sdX </code>为用作启动盘的 U 盘标识。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> dd <span class="k">if</span><span class="o">=</span>ISO镜像位置 <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">bs</span><span class="o">=</span>4M
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>/dev/sdX </code>为用作启动盘的 U 盘标识。</p>
 <p>输入如下命令确定获取电脑硬盘信息，所获取的信息中应该包含 U 盘标识
 <code>sudo fdisk -l</code></p>
 <h3 id="启动前准备工作">启动前准备工作
@@ -498,8 +590,15 @@
 <p>Linux 和 Windows 对硬件时钟的处理方式不同，如果不加以特别设置容易造成两个系统时间混乱。</p>
 <p>Arch Wiki 及我个人推荐的方法是设置 Windows 时区偏移。</p>
 <p>Windows 下<strong>使用管理员权限</strong>执行下列命令即可。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#e06c75">reg</span> <span style="color:#e06c75">add</span> <span style="color:#98c379">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> /<span style="color:#e06c75">v</span> <span style="color:#e06c75">RealTimeIsUniversal</span> /<span style="color:#e06c75">d</span> <span style="color:#d19a66">1</span> /<span style="color:#e06c75">t</span> <span style="color:#e06c75">REG_DWORD</span> /<span style="color:#e06c75">f</span>
-</span></span></code></pre></div><p>直接执行此命令可能会导致 Windows 显示的当前时间向后偏移 8 个小时。请不用担心，安装 Arch Linux 并联网校时之后时间会恢复正常。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">reg</span> <span class="n">add</span> <span class="s2">&#34;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&#34;</span> <span class="p">/</span><span class="n">v</span> <span class="n">RealTimeIsUniversal</span> <span class="p">/</span><span class="n">d</span> <span class="mf">1</span> <span class="p">/</span><span class="n">t</span> <span class="n">REG_DWORD</span> <span class="p">/</span><span class="n">f</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>直接执行此命令可能会导致 Windows 显示的当前时间向后偏移 8 个小时。请不用担心，安装 Arch Linux 并联网校时之后时间会恢复正常。</p>
 <h3 id="电脑环境确认">电脑环境确认
 </h3><p>进行到这一步时，我们默认你电脑目前处于以下环境中的某一种。</p>
 <ul>
@@ -572,15 +671,29 @@
 <p>就像用户有自己的用户名，电脑或者说主机（host）也有自己的主机名（hostname）。考虑到一个操作系统一般不会同时运行在多个设备上，所以主机名一般是给系统和程序看的，你无需特别关心。你可以自定义你电脑的主机名。</p>
 <p>补充一下，上面那段话中括号内的英文不是我矫情作秀所以特意加上去体现我的文化水平（虽然也体现不了啥），而是告诉你这些常见名词的英文称呼。你可能会在系统安装过程中或者日后使用中遇到这些名词所对应的英文单词，了解这些英文称呼能帮助你判断当前系统的情况该从何下手。</p>
 <p>言归正传。经过上面简单解释，我们可以对如下的提示符进行科学的解释。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@archiso ~ <span style="color:#7f848e">#</span>
-</span></span></code></pre></div><p>提示符 @ 前的 root 是当前用户的用户名，@ 后的 archiso 是当前系统（Arch Linux 启动盘）的主机名，～ 符号代表你当前所处的目录（至于 ～ 算啥目录&hellip;这里就不加大新手理解负担了），# 代表当前用户为管理员用户（普通用户为 $），# 后面输入的命令将会以管理员权限无条件执行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@archiso ~ <span class="c1">#</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>提示符 @ 前的 root 是当前用户的用户名，@ 后的 archiso 是当前系统（Arch Linux 启动盘）的主机名，～ 符号代表你当前所处的目录（至于 ～ 算啥目录&hellip;这里就不加大新手理解负担了），# 代表当前用户为管理员用户（普通用户为 $），# 后面输入的命令将会以管理员权限无条件执行。</p>
 <p>特别说明，并非终端一定有这个提示符，也不是说提示符一定按照这个格式存在，因为这些都是可以由你自定义的。</p>
 <p>你需要在这个称之为终端的界面输入你的命令完成安装过程，命令输入后必须回车确认，系统才会执行。</p>
 <p>终端的命令需要精确到字符的大小写以及空格。除非你有进行特别配置，否则终端并不能智能地识别你的输入错误。所以，当你终端报错时，第一时间该做的就是检查是否打错了字符或者少了空格。</p>
 <p>终端（特指 zsh 和 bash 这样的 shell）有个特别强大且实用的功能是 Tab 键补全。比如当你需要输入 <code>pacstrap</code>，你可以只输入 <code>pacs</code> 然后按一次键盘的 Tab 键，终端会自动补全 <code>pacstrap</code>。当存在多个可能的补全项，比如你只输入一个 s 就按下了 Tab 键，终端无法做到自动补全，这时它可能会列出所有可能的选项或者报错。当然，就像上面一样，这也可以由你自定义。善用 Tab 补全能极高地提高我们的输入效率。</p>
 <p>我们通过下面一行简单的命令认识一下终端的命令。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf /*
-</span></span></code></pre></div><p><code>rm</code> 是英语单词 remove（移除）的简写，在 Linux 下通常指<strong>删除文件</strong>；短横线 <code>-</code> 后是该命令的参数，<code>r</code> 代表递归，<code>f</code> 代表强制执行；最后的 <code>/</code> 代表根目录，<code>/</code> 后加 <code>*</code> 是一种常见的匹配方法（姑且先这样解释），代表 / 目录下所有文件的和文件夹。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf /*
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rm</code> 是英语单词 remove（移除）的简写，在 Linux 下通常指<strong>删除文件</strong>；短横线 <code>-</code> 后是该命令的参数，<code>r</code> 代表递归，<code>f</code> 代表强制执行；最后的 <code>/</code> 代表根目录，<code>/</code> 后加 <code>*</code> 是一种常见的匹配方法（姑且先这样解释），代表 / 目录下所有文件的和文件夹。</p>
 <p>所以，根据上面的解释，我们现在可以理解，上面那行命令的意思是，删除 / 目录下所有文件和文件夹。空格将命令 <code>rm</code> 与参数 <code>-rf</code> 隔开，如果不隔开，终端会识别你输入的命令为 <code>rm-rf</code>。显然，这个命令不存在，所以终端会报错。</p>
 <h3 id="连接网络并同步时间">连接网络并同步时间
 </h3><ul>
@@ -596,29 +709,72 @@
 <p>物理禁用一般需要你的电脑存在可以物理按键或滑块可以手动关闭或打开网卡（当然，我觉得一般电脑是没有这玩意的）。</p>
 <p>软件禁用则考虑网卡是否被 rfkill 禁用，目前已知 ideapad（联想小新系列）会自动禁用无线网卡和蓝牙。</p>
 <p>对于无线网卡被 rfkill 禁用的用户，输入以下命令解除 block</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rfkill unblock all
-</span></span></code></pre></div><p>在确认无误后，输入 <code>iwctl</code> 进入 iwd 的 shell。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rfkill unblock all
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在确认无误后，输入 <code>iwctl</code> 进入 iwd 的 shell。</p>
 <p>输入 <code>device list</code> 列出你电脑的无线网络设备（一般就是你电脑的网卡）</p>
 <p>常见的网卡名称是 <code>wlan0</code> 这样的。请根据自己电脑的实际情况判断（如果看不懂上一个命令的输出可以用 <code>wlan0</code> 这个名字试试）。</p>
 <p>输入如下命令列出所有网络，命令中的 <code>device</code> 需要替换为你上一步看到的网卡的名称</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>station device get-networks
-</span></span></code></pre></div><p>比如，如果你的网卡名称是 <code>wlan0</code>，那么你应该输入的命令是</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>station wlan0 get-networks
-</span></span></code></pre></div><p>如果你的电脑无线网卡工作正常的话，此时屏幕上会列出你熟悉的 WiFi 名称。如果没有任何结果或者出现报错的话，则需要你自己检查是否是网卡出现问题或者你打错了某个字符或者少了空格。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">station device get-networks
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>比如，如果你的网卡名称是 <code>wlan0</code>，那么你应该输入的命令是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">station wlan0 get-networks
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你的电脑无线网卡工作正常的话，此时屏幕上会列出你熟悉的 WiFi 名称。如果没有任何结果或者出现报错的话，则需要你自己检查是否是网卡出现问题或者你打错了某个字符或者少了空格。</p>
 <p>输入如下命令连接 WiFi，就像上面一样，<code>device</code> 需要替换成你电脑网卡的名字，<code>SSID</code> 需要替换成你想要连接且上面已经列出的 WiFi 名称</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>station device connect SSID
-</span></span></code></pre></div><p>如果 WiFi 有密码，此时会提示你输入密码，输入 WiFi 密码后回车即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">station device connect SSID
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果 WiFi 有密码，此时会提示你输入密码，输入 WiFi 密码后回车即可。</p>
 <p>完成上述操作后，输入 <code>exit</code> 退出 iwd 的 shell。</p>
 <p>为了检测电脑真的是否连接上网络，我们可以输入如下命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping www.baidu.com
-</span></span></code></pre></div><p>ping 后面的网址可以是任何国内可以直连的网址。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping www.baidu.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>ping 后面的网址可以是任何国内可以直连的网址。</p>
 <p>如果已连接上网络，则电脑会疯狂输出一大堆延迟测试数据。反之则只有简单的<code>Timeout</code>报错或长时间无输出结果。</p>
 <p>此时按 <code>Ctrl+C</code> 以中止输出。</p>
 <p><code>Ctrl+C</code> 的意思是同时按住 Ctrl 键和 C 键。在 Linux 终端下，<code>Ctrl+C</code> 可以近似理解为强行终止当前终端的活动进程。比如上面，ping 这个进程正在运行，我们通过 <code>Ctrl+C</code> 将它强行终止。</p>
 <p>输入如下命令设置时间为 UTC 并完成 NTP 时间同步。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hwclock --systohc --utc
-</span></span><span style="display:flex;"><span>timedatectl set-ntp <span style="color:#e5c07b">true</span>
-</span></span></code></pre></div><h2 id="准备硬盘分区">准备硬盘分区
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hwclock --systohc --utc
+</span></span><span class="line"><span class="cl">timedatectl set-ntp <span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="准备硬盘分区">准备硬盘分区
 </h2><blockquote>
 <p>对于双系统而言，最麻烦的一部分无疑就是硬盘分区和双系统引导。完成这部分需要读者拥有发育健全的大脑并且有一定的自主操作能力。</p>
 </blockquote>
@@ -645,10 +801,24 @@
 <p><strong>最后一次提醒，<code>/dev/sdX</code> 只是示例，具体命令需要根据你实际情况进行更改，比如 <code>cfdisk /dev/nvme0n1</code> 这样的。</strong></p>
 <p>此时屏幕应该显示你电脑相应的系统硬盘的信息。
 同时，屏幕底部会显示几个［xxx］，其中有</p>
-<pre tabindex="0"><code>[ Delete ] [ New ] [ Quit ] [ Help ] [ Write ] [ Dump ]
-</code></pre><p>这几个［xxx］的意思分别是</p>
-<pre tabindex="0"><code>[删除] [新建] [退出] [帮助] [写入] [转储]
-</code></pre><p>底部的选项的位置可能会随着 cfdisk 的更新发生变化，但是相应选项的功能不会改变。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[ Delete ] [ New ] [ Quit ] [ Help ] [ Write ] [ Dump ]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这几个［xxx］的意思分别是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[删除] [新建] [退出] [帮助] [写入] [转储]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>底部的选项的位置可能会随着 cfdisk 的更新发生变化，但是相应选项的功能不会改变。</p>
 <blockquote>
 <p>在硬盘信息处，应该出现一个绿色的<code>Free space</code>，这个就是你在 Windows 中压缩给 Arch Linux 的空间。
 将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，以新建分区。</p>
@@ -739,8 +909,15 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>按上面建议的分区大小，分别建立四个分区后，选择<code>[ Write ]</code>写入再选择<code>[ Quit ]</code>退出。退出时你需要输入<code>yes</code>确认。<em>输入完整的<code>yes</code>不是输入一个<code>y</code></em>。</p>
 <h2 id="挂载分区">挂载分区
 </h2><p>在终端输入如下命令以检查分区情况：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdisk -l
-</span></span></code></pre></div><p>此时屏幕应该显示你当前电脑的硬盘及各硬盘的分区情况。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">fdisk -l
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时屏幕应该显示你当前电脑的硬盘及各硬盘的分区情况。</p>
 <p>分区表应该出现你所新建的分区，且大小与你输入的分区大小一致。</p>
 <p>确认新分区建立无误后，输入如下命令对新建分区进行格式化。这里使用经典的 ext4 文件系统，在你对 Linux 文件系统有一点了解后，你可以换用其他的文件系统，比如 btrfs。</p>
 <blockquote>
@@ -750,21 +927,49 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <ul>
 <li>
 <p>格式化<code>/mnt</code>分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.ext4 /dev/sda1
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkfs.ext4 /dev/sda1
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
 <p>格式化<code>/boot</code>分区（如果自行创建了 boot 分区）
 为了通用性，建议将该分区格式化为<code>fat32</code>格式：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.vfat -F32 /dev/sda2
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkfs.vfat -F32 /dev/sda2
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
 <p>初始化<code>/swap</code>分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkswap /dev/sda3
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkswap /dev/sda3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
 <p>格式化<code>/home</code>分区（如果有）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.ext4 /dev/sda4
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkfs.ext4 /dev/sda4
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <blockquote>
 <p>格式化分区为 ext4 分区时通常需要输入<code>y</code>以确认。
@@ -774,23 +979,53 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <ol>
 <li>挂载<code>/mnt</code>分区：</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mount /dev/sda1 /mnt
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount /dev/sda1 /mnt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
 <li>挂载<code>/boot</code>分区：
 再次强调，UEFI 引导<strong>必须</strong>有独立的 boot 分区（或者有类似功能的其他分区）作为 EFI 分区，<strong>否则系统将因无引导而无法启动</strong>。双系统安装可以直接挂载 Windows 的 EFI 分区，如果出现分区大小不足请自行创建一个 boot 分区。</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p /mnt/boot
-</span></span><span style="display:flex;"><span>mount /dev/sda2 /mnt/boot
-</span></span></code></pre></div><ol start="3">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /mnt/boot
+</span></span><span class="line"><span class="cl">mount /dev/sda2 /mnt/boot
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
 <li><code>/swap</code>分区无需挂载，但是需要输入如下命令启用：</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>swapon /dev/sda3
-</span></span></code></pre></div><ol start="4">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">swapon /dev/sda3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
 <li>建立<code>/home</code>分区目录并挂载分区：</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /mnt/home
-</span></span><span style="display:flex;"><span>mount /dev/sda4 /mnt/home
-</span></span></code></pre></div><p>至此，硬盘分区和相应目录挂载已经全部完成。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /mnt/home
+</span></span><span class="line"><span class="cl">mount /dev/sda4 /mnt/home
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>至此，硬盘分区和相应目录挂载已经全部完成。</p>
 <blockquote>
 <p>建议再次输入<code>lsblk</code>命令检查硬盘分区情况，一般情况下，每个相应的分区后面应该标注其挂载的目录。</p>
 </blockquote>
@@ -804,19 +1039,40 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>Arch Linux 的安装不仅需要连接网络，而且还要从网络下载大量数据。因为 Arch Linux 主服务器在国外，加之某些众所周知的原因，国内网络使用国外服务器下载会非常慢。因此，建议使用国内镜像网站进行下载和安装工作。</p>
 </blockquote>
 <p>输入如下命令，利用 reflector 自动替换国内镜像源</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>reflector --country <span style="color:#98c379">&#39;China&#39;</span> --age <span style="color:#d19a66">12</span> --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-</span></span></code></pre></div><p>该命令相对来说比较长，请注意不要打错字符或漏空格。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">reflector --country <span class="s1">&#39;China&#39;</span> --age <span class="m">12</span> --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>该命令相对来说比较长，请注意不要打错字符或漏空格。</p>
 <p>修改完镜像源之后，输入如下命令刷新镜像源</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -Syy
-</span></span></code></pre></div><p>下面开始安装基本系统。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -Syy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下面开始安装基本系统。</p>
 <p>开始之前，我有必要介绍一下 Linux 的 软件包管理程序（package manager，我简称为包管理）。Linux 的 包管理 是 Linux 发行版中最重要的软件之一（虽然有的 Linux 发行版没有包管理），不同的 Linux 发行版除非存在父子关系否则包管理是不同的，Linux 几乎所有的软件都必须通过 包管理 安装。</p>
 <p>包管理安装软件分为在线安装和本地安装。这里仅介绍在线安装（本地安装大家都懂吧&hellip;）。</p>
 <p>在线安装是绝大多数情况下你使用的安装方法。包管理在当前使用的软件镜像源（mirror）中搜索你想要安装的软件包，然后直接下载安装。为了加快在线下载速度，几乎所有 Linux 包管理都会从镜像源下载软件包列表，这样如果需要安装软件的话，可以直接从本地缓存中搜索软件包的下载链接。也因为本地缓存的机制，我们需要经常刷新本地缓存，上面的 <code>pacman -Syy</code> 就是 Arch Linux 刷新本地缓存的方法。</p>
 <p>Arch Linux 的包管理软件叫做 Pacman（没开玩笑，就这名字&hellip;）。Pacman 在线安装软件的命令为  <code>pacman -S 软件包名字</code>  ，关于 Pacman 的更多用法文末会进行介绍。</p>
 <p>输入如下命令借助 <a class="link" href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in"  target="_blank" rel="noopener"
     >pacstrap</a> 脚本完成安装。pacstrap 是 ArchISO 中的一个脚本，可以自动完成基础但繁琐的系统配置如内核的配置。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacstrap /mnt base base-devel linux linux-firmware nano vim e2fsprogs ntfs-3g 
-</span></span></code></pre></div><p>在上述命令中，base 是元软件包（基本系统所需依赖，你可以不知道它是啥但是必须安装），base-devel 是基础软件包组，linux 是内核，linux-firmware 是固件包，nano、vim 是常用编辑器，e2fsprogs 是 ext4 文件系统所需工具，如果你是按照上面教程使用 ext4 文件系统则必须安装该软件包。ntfs-3g 是与 Windows 的 NTFS 有关的软件包，如果是单系统可以不安装。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacstrap /mnt base base-devel linux linux-firmware nano vim e2fsprogs ntfs-3g 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在上述命令中，base 是元软件包（基本系统所需依赖，你可以不知道它是啥但是必须安装），base-devel 是基础软件包组，linux 是内核，linux-firmware 是固件包，nano、vim 是常用编辑器，e2fsprogs 是 ext4 文件系统所需工具，如果你是按照上面教程使用 ext4 文件系统则必须安装该软件包。ntfs-3g 是与 Windows 的 NTFS 有关的软件包，如果是单系统可以不安装。</p>
 <p>这里简单介绍一下软件包组。对于 Linux 用户来说，我们可能需要一次性安装一大堆软件包。虽然我们可以通过包管理批量安装多个软件，但是敲那么多软件的名字无疑非常的枯燥无聊且繁琐。因此，Arch Linux 的打包者将具有相关性的多个软件包归入一个软件包组，虽然软件包组不是一个软件包，但是安装操作与一个真正的软件包相同。比如上面的 base-devel 就是将系统基础软件包归入一个软件包组，我们只需要输入软件包组的名字就可以安装这些软件包。</p>
 <blockquote>
 <p>你可以将上述命令中的<code>linux</code>替换为 <a class="link" href="https://wiki.archlinux.org/index.php/Kernel"  target="_blank" rel="noopener"
@@ -831,55 +1087,137 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
     >Arch Linux CN Messages</a> 的<a class="link" href="https://t.me/archlinuxcn/228"  target="_blank" rel="noopener"
     >消息</a>，因为 archlinux-keyring 20220713 替换了一部分 master key ，一些包使用新 key 打包，安装时可能出现一些包无法经过签名校验。如果你上一个命令执行出现报错，可以先尝试以下命令单独更新 archlinux-keyring，然后再重新进行安装。</p>
 <p>报错示例：</p>
-<pre tabindex="0"><code>#这是错误日志不是命令
-error: failed to commit transaction (invalid or corrupted &gt; package)
-Errors occurred, no packages were upgraded.
-==&gt; ERROR: Failed to install packages to new root
-</code></pre><p>单独更新 archlinux-keyring：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -Sy archlinux-keyring
-</span></span></code></pre></div></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#这是错误日志不是命令
+</span></span><span class="line"><span class="cl">error: failed to commit transaction (invalid or corrupted &gt; package)
+</span></span><span class="line"><span class="cl">Errors occurred, no packages were upgraded.
+</span></span><span class="line"><span class="cl">==&gt; ERROR: Failed to install packages to new root
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>单独更新 archlinux-keyring：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -Sy archlinux-keyring
+</span></span></code></pre></td></tr></table>
+</div>
+</div></blockquote>
 <p>当安装停止且成功后，输入如下命令以生成 fstab 文件。fstab 是 file system table 的缩写，你可以不知道它是啥但是它必不可少。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
-</span></span></code></pre></div><p>为了确认文件生成，建议输入如下命令以确认：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /mnt/etc/fstab
-</span></span></code></pre></div><p>确认无误后，输入<code>Ctrl + X</code>退出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>为了确认文件生成，建议输入如下命令以确认：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /mnt/etc/fstab
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>确认无误后，输入<code>Ctrl + X</code>退出。</p>
 <p>Nano 是 Linux 下一个简单轻量的文本编辑器，适合新手使用，后文还会多次使用该编辑器。如果已经有一定的 Linux 使用经验，建议换用 Vim。</p>
 <p>如果一切正常的话，此时你应该成功在电脑硬盘安装了 Arch Linux 基本系统。</p>
 <h2 id="安装基本系统后的环境配置">安装基本系统后的环境配置
 </h2><p>输入如下命令进入新安装的系统：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>arch-chroot /mnt /bin/bash
-</span></span></code></pre></div><p>现在你进入了电脑硬盘上的 Arch Linux 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">arch-chroot /mnt /bin/bash
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>现在你进入了电脑硬盘上的 Arch Linux 。</p>
 <p>如果一切正常的话，细心的你会发现提示符由 <code>root@archiso ~ #</code> 变为 <code>[root@archiso /]#</code>。</p>
 <p>上面有提及，Linux 中默认有一个用户叫 <code>root</code>，拥有对系统的一切权力。这意味着，即使让系统删除自己本身也会执行无误，比如著名命令 <code>rm -rf /*</code>，<strong>千万不要输入这个命令，否则后果自负</strong>。</p>
 <p>现在安装系统默认使用的是 root 用户。</p>
 <p>输入下面命令来设置 root 用户密码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">passwd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>输入密码后需要回车确认，密码需要输入两次。</p>
 <p>密码在输入的时候不会显示，不用担心是自己键盘坏了。</p>
 </blockquote>
 <p>因为root用户权力过大大，即使删掉系统本身，也会被执行。为了避免日常使用因为权限过高造成某些不可逆而又本可以避免的损失，Linux 桌面用户需要添加一个普通用户，且该用户可以获取临时root权限。
 一般情况下，这个新添加的用户将会是你后续登录 Linux 的<em>主要用户</em>。</p>
 <p>执行以下命令新建一个隶属于 wheel 组的新用户。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>useradd -m -G wheel -s /bin/bash 你的用户名 
-</span></span></code></pre></div><p>这里友情提醒一下，上面所设的用户名必须是小写字母，而且最好短一点（如果你不怕之后使用麻烦的话就随意吧）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">useradd -m -G wheel -s /bin/bash 你的用户名 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里友情提醒一下，上面所设的用户名必须是小写字母，而且最好短一点（如果你不怕之后使用麻烦的话就随意吧）。</p>
 <p>输入如下命令为新建用户设置密码（修改密码也是这个命令），密码不少于 6 位或 8 位。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd 你的用户名
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">passwd 你的用户名
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>同上，密码需要输入两次，且密码不会显示。</p>
 <p>因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长，但为了安全性也不要太短太简单。</p>
 </blockquote>
 <p>为了该普通用户能获取临时 root 权限，我们需要修改 wheel 的权限设置。修改权限设置的最好方法就是使用 <code>visudo</code>，但是对于不会使用 vi 的新手，也可以直接使用 nano 修改相关文件。
 输入如下命令打开sudoers文件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /etc/sudoers
-</span></span></code></pre></div><p>在打开的文件中找到以下两行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">## Uncomment to allow members of group wheel to execute any command</span>
-</span></span><span style="display:flex;"><span><span style="color:#7f848e"># %wheel ALL=(ALL) ALL</span>
-</span></span></code></pre></div><p>确认无误后， 把<code>%wheel</code>前面的注释符号（#）去掉，（%）要留下。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/sudoers
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在打开的文件中找到以下两行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## Uncomment to allow members of group wheel to execute any command</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># %wheel ALL=(ALL) ALL</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>确认无误后， 把<code>%wheel</code>前面的注释符号（#）去掉，（%）要留下。
 最后的结果应该是下面这样：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">## Uncomment to allow members of group wheel to execute any command</span>
-</span></span><span style="display:flex;"><span>%wheel <span style="color:#e06c75">ALL</span><span style="color:#56b6c2">=(</span>ALL<span style="color:#56b6c2">)</span> ALL
-</span></span></code></pre></div><p>同时按<code>Ctrl + X</code>，然后保存退出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## Uncomment to allow members of group wheel to execute any command</span>
+</span></span><span class="line"><span class="cl">%wheel <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> ALL
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同时按<code>Ctrl + X</code>，然后保存退出。</p>
 <blockquote>
 <p>后续若需要普通用户在执行某条命令时临时获得 root 权限，则在该条命令前加上<code>sudo</code></p>
 <p>例：<code>sudo pacman -Syu</code></p>
@@ -888,20 +1226,50 @@ Errors occurred, no packages were upgraded.
 </blockquote>
 <p>如同用户有一个名字一样，Linux 下电脑也需要一个名字。
 输入如下命令配置电脑的主机名：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> 你电脑的主机名 &gt; /etc/hostname
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> 你电脑的主机名 &gt; /etc/hostname
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。如果你不清楚的话，最好不要在主机名中加入一些奇奇怪怪的特殊字符（不会真的有人那么无聊吧）。</p>
 </blockquote>
 <p>下面对系统 host 进行配置（可选，如果嫌麻烦可以跳过这一步，如果不设置可能会在网络变更时出现应用无法启动等问题）。</p>
 <p>输入以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /etc/hosts
-</span></span></code></pre></div><p>你应该会看到如下符号</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#&lt;ip-address&gt; &lt;hostname.domain.org&gt; &lt;hostname&gt;</span>
-</span></span></code></pre></div><p>你需要添加相应字符，使得界面如下所示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>127.0.0.1	localhost
-</span></span><span style="display:flex;"><span>::1		localhost
-</span></span><span style="display:flex;"><span>127.0.1.1	你电脑主机名.localdomain	你电脑主机名
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/hosts
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你应该会看到如下符号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#&lt;ip-address&gt; &lt;hostname.domain.org&gt; &lt;hostname&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你需要添加相应字符，使得界面如下所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">127.0.0.1	localhost
+</span></span><span class="line"><span class="cl">::1		localhost
+</span></span><span class="line"><span class="cl">127.0.1.1	你电脑主机名.localdomain	你电脑主机名
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>，不过一般来说是没有这个东西的。</p>
 </blockquote>
 <p>确认无误后，同时按住<code>Ctrl + X</code>，输入<code>y</code>，回车再退出。</p>
@@ -910,12 +1278,26 @@ Errors occurred, no packages were upgraded.
 <ul>
 <li>
 <p>Intel 用户输入如下命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S intel-ucode
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S intel-ucode
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>
 <p>AMD 用户输入如下命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S amd-ucode
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S amd-ucode
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <p>至于其他型号的处理器比如国产处理器我就不知道怎么安装了&hellip;</p>
 <p><em>以下操作分为传统 BIOS 引导和 UEFI 引导</em></p>
@@ -923,10 +1305,24 @@ Errors occurred, no packages were upgraded.
 <ul>
 <li>
 <p>如果你是传统BIOS引导，则输入以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S grub os-prober
-</span></span></code></pre></div><p>然后输入以下命令安装到硬盘：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub-install --target<span style="color:#56b6c2">=</span>i386-pc /dev/sda --recheck
-</span></span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S grub os-prober
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后输入以下命令安装到硬盘：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>i386-pc /dev/sda --recheck
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <blockquote>
 <p>第二条命令中<code>/dev/sda</code>应该根据你实际情况，改为你自己硬盘名字</p>
@@ -934,27 +1330,66 @@ Errors occurred, no packages were upgraded.
 <ul>
 <li>
 <p>如果你是UEFI引导，则输入以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S grub efibootmgr os-prober
-</span></span></code></pre></div><p>然后输入以下命令安装到硬盘：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S grub efibootmgr os-prober
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后输入以下命令安装到硬盘：</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub-install --target<span style="color:#56b6c2">=</span>x86_64-efi --efi-directory<span style="color:#56b6c2">=</span>/boot --bootloader-id<span style="color:#56b6c2">=</span>grub --recheck
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot --bootloader-id<span class="o">=</span>grub --recheck
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，<em>请自行修改 &ndash;efi-directory 的值</em></p>
 </blockquote>
 <p>Grub 2.06 更新后默认禁用 os-prober。虽然我一时半会也还不知道这样做的意义何在，但是上游有改动，我们用户也只能动手适配了。</p>
 <p>输入下面命令为 Grub 启用 os-prober。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;GRUB_DISABLE_OS_PROBER=false&#34;</span> &gt;&gt; /etc/default/grub
-</span></span></code></pre></div><p>然后输入如下命令生成必要的配置文件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub-mkconfig -o /boot/grub/grub.cfg
-</span></span></code></pre></div><p>注意，你一定要确定输入上面命令有输出结果。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;GRUB_DISABLE_OS_PROBER=false&#34;</span> &gt;&gt; /etc/default/grub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后输入如下命令生成必要的配置文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意，你一定要确定输入上面命令有输出结果。</p>
 <p>输出结果大致如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Generating grub configuration file ...
-</span></span><span style="display:flex;"><span>Found linux image: /boot/vmlinuz-linux
-</span></span><span style="display:flex;"><span>Found initrd image<span style="color:#56b6c2">(</span>s<span style="color:#56b6c2">)</span> in /boot: initramfs-linux.img
-</span></span><span style="display:flex;"><span>Found fallback initrd image<span style="color:#56b6c2">(</span>s<span style="color:#56b6c2">)</span> in /boot: initramfs-linux-fallback.img
-</span></span><span style="display:flex;"><span><span style="color:#c678dd">done</span>
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Generating grub configuration file ...
+</span></span><span class="line"><span class="cl">Found linux image: /boot/vmlinuz-linux
+</span></span><span class="line"><span class="cl">Found initrd image<span class="o">(</span>s<span class="o">)</span> in /boot: initramfs-linux.img
+</span></span><span class="line"><span class="cl">Found fallback initrd image<span class="o">(</span>s<span class="o">)</span> in /boot: initramfs-linux-fallback.img
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>如果输入上一条命令没有任何输出结果，<strong>请务必停下来检查</strong>上面所有步骤有没有哪一处出现问题，或者重新进行所有安装步骤！！</p>
 </blockquote>
 <h2 id="配置语言和区域">配置语言和区域
@@ -962,10 +1397,19 @@ Errors occurred, no packages were upgraded.
 输入如下命令修改 locale.gen 文件，配置语言环境：
 <code>nano /etc/locale.gen</code></p>
 <p>分别找到以下字符，删除该行最前面的<code>#</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#en_US.UTF-8 UTF-8</span>
-</span></span><span style="display:flex;"><span><span style="color:#7f848e">#zh_CN.UTF-8 UTF-8</span>
-</span></span><span style="display:flex;"><span><span style="color:#7f848e">#zh_TW.UTF-8 UTF-8</span>
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#en_US.UTF-8 UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#zh_CN.UTF-8 UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#zh_TW.UTF-8 UTF-8</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>比如，你看到<code>#en_US.UTF-8 UTF-8</code>时，你需要删除该行最前面的<code>#</code>，使之变成<code>en_US.UTF-8 UTF-8</code>。</p>
 </blockquote>
 <blockquote>
@@ -973,21 +1417,51 @@ Errors occurred, no packages were upgraded.
 </blockquote>
 <p>编辑完成后同时按住<code>Ctrl + X</code>退出。</p>
 <p>退出后输入如下命令刷新区域信息：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>locale-gen
-</span></span></code></pre></div><p>如果你上一步操作无误的话，命令输出结果应该包含</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>en_US.UTF-8 UTF-8
-</span></span><span style="display:flex;"><span>zh_CN.UTF-8 UTF-8
-</span></span><span style="display:flex;"><span>zh_TW.UTF-8 UTF-8
-</span></span></code></pre></div><p>输入如下命令将区域信息写入 locale-conf 文件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#e06c75">LANG</span><span style="color:#56b6c2">=</span>en_US.UTF-8 &gt; /etc/locale.conf
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">locale-gen
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你上一步操作无误的话，命令输出结果应该包含</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">en_US.UTF-8 UTF-8
+</span></span><span class="line"><span class="cl">zh_CN.UTF-8 UTF-8
+</span></span><span class="line"><span class="cl">zh_TW.UTF-8 UTF-8
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入如下命令将区域信息写入 locale-conf 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 &gt; /etc/locale.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>毫无疑问，你可以选择将上一条命令的<code>en_US.UTF-8</code>改为<code>zh_CN.UTF-8</code>。<strong>但请谨慎考虑后进行操作</strong>。</p>
 <p>locale.conf 文件是全局设置，如果这里设成中文或者其他非英文环境，桌面环境下字符会正常显示，<strong>但是在命令行下会变成乱码</strong>。</p>
 <p>如果看不懂请忽略此段。</p>
 </blockquote>
 <p>输入如下命令设置时区为亚洲上海：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-</span></span></code></pre></div><h2 id="安装桌面环境">安装桌面环境
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装桌面环境">安装桌面环境
 </h2><p>没错，对于 Linux 发行版，系统和 GUI 环境是分离的。（GUI 是图形化用户界面的简称）</p>
 <p>一般来说，一个完整的 Linux 操作系统是不需要 GUI 的。如果我们是想将电脑变成一个 Linux 服务器，安装教程可以到此为止，但是对于我们普通的 Linux 桌面用户，则需要安装相应的图形化界面。</p>
 <p>Linux 下的图形化界面可以不严谨地分为窗口管理器（Windows Manager，简称 WM）和桌面环境（Desktop Environment，简称 DE）。虽然有话说“窗口管理器是所有 Linux 用户的终点”，但是对于新手来说，桌面环境要更为友好一点。</p>
@@ -1012,8 +1486,15 @@ Errors occurred, no packages were upgraded.
 <p>没错，显示管理器和桌面环境也是分开的。虽然这看起来让人感觉有点凌乱，但是这不恰恰说明 Linux 的高度自由性吗？（雾）</p>
 <p>Arch Linux 可选择的桌面环境很多，这里只介绍相对主流和热门的两个桌面环境，显示管理器会附带介绍。请千万<strong>不要同时安装两个及以上的桌面环境</strong>，虽然确实可以同时安装多个桌面环境然后开机时切换自己想要的桌面环境，但是多个桌面环境的软件包和配置文件是共存于你的系统中的，而不同桌面的软件包和配置文件又往往有兼容性问题。说简单点，如果不知道怎么操作又盲目地安装多个桌面环境，<del>你可能怎么死的都不知道</del> 电脑容易出现一些奇怪的问题。也正因如此，如果你想更换桌面环境，请务必将前一个桌面环境<strong>卸载干净</strong>再安装新的桌面环境。</p>
 <p>不过在安装桌面环境之前，我们需要先安装 Xorg。输入如下命令安装 Xorg 软件包组。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S xorg
-</span></span></code></pre></div><p>安装过程中，系统会询问你安装其中哪些软件包。如无其他需求或考虑，直接回车即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S xorg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中，系统会询问你安装其中哪些软件包。如无其他需求或考虑，直接回车即可。</p>
 <h3 id="kde">KDE
 </h3><p>KDE 被誉为“最像 Windows 的 Linux 桌面”（雾）。基于 Qt 的 KDE 拥有超高的可自定义性、华丽的系统特效、完善的系统功能、人类友好的交互逻辑，以及你熟悉的开始菜单（</p>
 <p>虽然 KDE 默认的样式有点一言难尽，但是 KDE 的高度可自定义性让 KDE 可以变得极其华丽甚至长得和 Windows 或 macOS 接近一模一样。不夸张地说，KDE 几乎可以在外观上做到变成用户想要的任何样子，这一点可以参考 KDE 的美化教程的数量（虽然和 KDE 默认长得太丑也有一点关系）。</p>
@@ -1021,20 +1502,55 @@ Errors occurred, no packages were upgraded.
 <p>由于以上诸多优点，KDE 被认为是最适合新手并且也是最适合人类的 Linux 桌面环境，Arch Linux + KDE 很多时候被认为是一种标配。</p>
 <p>配合 KDE-Plasma 使用的最佳选择是 SDDM 显示管理器， KDE 和 Arch Wiki 都推荐使用此组合。</p>
 <p>输入如下命令安装 SDDM 和 KDE Plasma 桌面和某些 KDE 基础组件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S plasma sddm konsole dolphin ark gwenview
-</span></span></code></pre></div><p>你也可以直接输入下面的命令安装 SDDM 和 KDE 全家桶：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S plasma sddm kde-applications
-</span></span></code></pre></div><p>KDE 全家桶内包含了许多小游戏和某些意义不明的软件，适合 KDE 信仰用户。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S plasma sddm konsole dolphin ark gwenview
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你也可以直接输入下面的命令安装 SDDM 和 KDE 全家桶：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S plasma sddm kde-applications
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>KDE 全家桶内包含了许多小游戏和某些意义不明的软件，适合 KDE 信仰用户。</p>
 <blockquote>
 <p>目前为止，KDE 默认使用的是 X11，Wayland 支持尚不完善。如果你想使用 Wayland，则需要安装 plasma-wayland，然后在 SDDM 登录时选择 Wayland 版本 Plasma。</p>
 <p>输入如下命令安装 plasma-wayland：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S plasma-wayland
-</span></span></code></pre></div><p>如果你使用 Nvida 显卡，则需要额外安装 egl-wayland：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S egl-wayland
-</span></span></code></pre></div></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S plasma-wayland
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你使用 Nvida 显卡，则需要额外安装 egl-wayland：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S egl-wayland
+</span></span></code></pre></td></tr></table>
+</div>
+</div></blockquote>
 <p>输入如下命令设置 SDDM 开机自启：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl <span style="color:#e5c07b">enable</span> sddm
-</span></span></code></pre></div><p>输入完命令后，下次开机会直接进入图形界面，而非命令行界面。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> sddm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入完命令后，下次开机会直接进入图形界面，而非命令行界面。</p>
 <h3 id="gnome">GNOME
 </h3><p>GNOME 被誉为“超像 macOS 的 Linux 桌面”（不是最像，因为某些桌面比它还像，令人叹为观止）。GNOME 基于 GTK，是 GNU 项目的一部分，虽然前段时间由于某些开源社区的冲突，GNOME 官方公开声明表示自己不属于 GNU，但是这不改变它最初的性质。因为 GNU 协议，GNOME 是 Ubuntu 等一众 Linux 桌面发行版的默认桌面。</p>
 <p>GNOME 遵循 Material Degisn 设计语言，界面圆润清新，动画优雅舒适，自带功能较少但是扩展插件极多且功能丰富，可自定义性较强，有着先进但是不怎么人类友好的交互逻辑。</p>
@@ -1044,21 +1560,56 @@ Errors occurred, no packages were upgraded.
 <p>GNOME 自带软件实用性较差，如果有需求的话，可以使用 KDE 软件作为补充。</p>
 <p>值得一提的是，截止目前，我本人使用的桌面环境还是 GNOME，所以请各位友军放下刀，<del>我真的不是 GNOME 黑</del>。</p>
 <p>GNOME 有配套的显示管理器 GDM。输入如下命令安装 GNOME 和 GDM。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S gnome gdm
-</span></span></code></pre></div><p>如果想要 GNOME 全家桶的话，可以安装 gnome-extras 软件包组</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S gnome-extras
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S gnome gdm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果想要 GNOME 全家桶的话，可以安装 gnome-extras 软件包组</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S gnome-extras
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>GNOME 默认使用 Wayland 且表现基本满足日常使用需求（我没有开玩笑），但是如果你使用 Wayland 出现问题，可以通过在 GDM 禁用 Wayland 以更换为 X11。</p>
 <p>我们需要编辑 <code>/etc/gdm/custom.conf</code> 以禁用 Wayland。输入如下命令打开该文件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /etc/gdm/custom.conf
-</span></span></code></pre></div><p>在文件中找到以下行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#WaylandEnable=false</span>
-</span></span></code></pre></div><p>去除该行开头的 <code>#</code> 注释，然后 <code>Ctrl+X</code> 再输入 y 保存退出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/gdm/custom.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件中找到以下行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#WaylandEnable=false</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>去除该行开头的 <code>#</code> 注释，然后 <code>Ctrl+X</code> 再输入 y 保存退出。</p>
 <p>重启后下次登录将默认禁用 Wayland。</p>
 </blockquote>
 <p>输入如下命令设置 GDM 开机自启：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl <span style="color:#e5c07b">enable</span> gdm
-</span></span></code></pre></div><p>输入完命令后，下次开机会直接进入图形界面，而非命令行界面。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> gdm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入完命令后，下次开机会直接进入图形界面，而非命令行界面。</p>
 <h2 id="对系统进行本地化">对系统进行本地化
 </h2><h3 id="安装中文字体">安装中文字体
 </h3><p>可选的字体含以下几种：</p>
@@ -1074,8 +1625,15 @@ wqy-microhei
 wqy-zenhei</li>
 </ul>
 <p>以文泉驿为例，输入如下命令安装文泉驿米黑字体：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S wqy-microhei
-</span></span></code></pre></div><p>这里建议全部安装以避免字体缺失导致的显示异常。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S wqy-microhei
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里建议全部安装以避免字体缺失导致的显示异常。</p>
 <ol start="2">
 <li>
 <p>设置中文区域</p>
@@ -1085,68 +1643,188 @@ wqy-zenhei</li>
 在文件中添加以下内容：</p>
 </li>
 </ol>
-<pre tabindex="0"><code>export LANG=zh_CN.UTF-8
-
-export LANGUAGE=zh_CN:en_US
-
-export LC_CTYPE=en_US.UTF-8
-</code></pre><p>同时按住<code>Ctrl + X</code>，然后保存退出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="k">export</span> <span class="n">LANG</span><span class="o">=</span><span class="n">zh_CN</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="n">LANGUAGE</span><span class="o">=</span><span class="n">zh_CN</span><span class="p">:</span><span class="n">en_US</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="n">LC_CTYPE</span><span class="o">=</span><span class="n">en_US</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同时按住<code>Ctrl + X</code>，然后保存退出。</p>
 <p>如果你是一步步按照本教程操作，则你此时是在 root 用户目录创建了 .xprofile 文件。因此，此时 .xprofile 只会影响 root 用户。
 输入如下命令，将该文件复制到你创建的普通用户目录下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp ~/.xprofile /home/你的用户名
-</span></span></code></pre></div><p>此时，你创建的普通用户区域也配置完成。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp ~/.xprofile /home/你的用户名
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时，你创建的普通用户区域也配置完成。</p>
 <h2 id="arch-linux-已成功安装在你的电脑上">Arch Linux 已成功安装在你的电脑上！
 </h2><p>至此，Arch Linux 已经算是安装完成了。但是对于日常桌面用户，我们还有一些东西没有配置，而这些配置能优化我们的桌面体验。以及，你是否还记得 Windows 的引导还没生成呢（</p>
 <p>我们先输入如下命令启用 NetworkManager（注意大小写）。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl <span style="color:#e5c07b">enable</span> NetworkManager
-</span></span></code></pre></div><p>NetworkManager 是一个方便好用的网络管理小组件，大部分桌面环境都内置了该软件。如果你当前使用的桌面环境没有内置该软件，则输入以下命令安装并启用。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S networkmanager
-</span></span><span style="display:flex;"><span>systemctl <span style="color:#e5c07b">enable</span> NetworkManager
-</span></span></code></pre></div><p>做完这些，我们先重启到你的桌面环境完成后续步骤。重启到桌面环境的好处是，你可以直接使用鼠标复制我后续的命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> NetworkManager
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>NetworkManager 是一个方便好用的网络管理小组件，大部分桌面环境都内置了该软件。如果你当前使用的桌面环境没有内置该软件，则输入以下命令安装并启用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S networkmanager
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> NetworkManager
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>做完这些，我们先重启到你的桌面环境完成后续步骤。重启到桌面环境的好处是，你可以直接使用鼠标复制我后续的命令。</p>
 <p>如果你是按照我的教程一步一步来的，你现在应该还没有安装浏览器。这里推荐先安装 Firefox 浏览器（Chrome、Edge 之类的由于打包协议不在官方软件仓库中，无法在 Pacman 直接安装，后续会介绍如何安装 Chrome 和 Edge）。</p>
 <p>输入如下命令安装 Firefox：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S firefox
-</span></span></code></pre></div><p>先输入 <code>exit</code> 退出 chroot，然后输入<code>reboot</code>重启，在屏幕完全黑下来的时候拔掉你的 U 盘。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -S firefox
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>先输入 <code>exit</code> 退出 chroot，然后输入<code>reboot</code>重启，在屏幕完全黑下来的时候拔掉你的 U 盘。</p>
 <p>启动成功后，登录你的普通用户即可。</p>
 <h2 id="安装完成后的一些基本配置和某些问题的解决">安装完成后的一些基本配置和某些问题的解决
 </h2><p>首先在系统设置连接网络（直接插网线的就不需要什么额外操作了）。</p>
 <p>接着找到你桌面环境的虚拟终端（Terminal，KDE 自带的叫做 Konsole，GNOME 自带的叫做 gnome-terminal）。后续命令在这个虚拟终端输入就行。</p>
 <h3 id="安装中文输入法">安装中文输入法
 </h3><p>安装 fcitx 输入法模块：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S fcitx-im fcitx5-chinese-addons 
-</span></span></code></pre></div><p>配置输入法的环境变量，输入如下命令编辑 /etc/environment</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/environment
-</span></span></code></pre></div><p>在文件中添加以下内容：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e06c75">GTK_IM_MODULE</span><span style="color:#56b6c2">=</span>fcitx
-</span></span><span style="display:flex;"><span><span style="color:#e06c75">QT_IM_MODULE</span><span style="color:#56b6c2">=</span>fcitx
-</span></span><span style="display:flex;"><span><span style="color:#e06c75">XMODIFIERS</span><span style="color:#56b6c2">=</span>@im<span style="color:#56b6c2">=</span>fcitx
-</span></span><span style="display:flex;"><span><span style="color:#e06c75">SDL_IM_MODULE</span><span style="color:#56b6c2">=</span>fcitx
-</span></span></code></pre></div><p>　　修改完成后，保存退出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S fcitx-im fcitx5-chinese-addons 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>配置输入法的环境变量，输入如下命令编辑 /etc/environment</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/environment
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在文件中添加以下内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">XMODIFIERS</span><span class="o">=</span>@im<span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">SDL_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>　　修改完成后，保存退出。</p>
 <blockquote>
 <p>重启电脑后在 fcitx 设置即可选择中文输入法。你也可以根据自己的需求安装其他输入法，如搜狗输入法。</p>
 </blockquote>
 <h3 id="添加-arch-linux-cn-源">添加 Arch Linux CN 源
 </h3><p>输入如下命令编辑 pacman.conf 文件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/pacman.conf
-</span></span></code></pre></div><p>在该文件末尾添加以下内容</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#56b6c2">[</span>archlinuxcn<span style="color:#56b6c2">]</span>
-</span></span><span style="display:flex;"><span><span style="color:#e06c75">Server</span> <span style="color:#56b6c2">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span style="color:#e06c75">$arch</span>
-</span></span></code></pre></div><p>接着输入如下命令刷新源：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -Syy
-</span></span></code></pre></div><p>然后安装密匙：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S archlinuxcn-keyring
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/pacman.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在该文件末尾添加以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>archlinuxcn<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Server</span> <span class="o">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>2023 年 12 月 18 日更新：</p>
+<p>由于 farseerfc 的 key 的信任数不足，新系统中安装 archlinuxcn-keyring 包前需要手动信任 farseerfc 的 key，详情见 <a class="link" href="https://www.archlinuxcn.org/archlinuxcn-keyring-manually-trust-farseerfc-key/"  target="_blank" rel="noopener"
+    >Arch 中文社区公告</a>。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman-key --lsign-key <span class="s2">&#34;farseerfc@archlinux.org&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接着输入如下命令刷新源：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Syy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后安装密匙：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S archlinuxcn-keyring
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>若密匙安装出错，则依次输入以下命令解决：</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -Syu haveged
-</span></span><span style="display:flex;"><span>systemctl start haveged
-</span></span><span style="display:flex;"><span>systemctl <span style="color:#e5c07b">enable</span> haveged
-</span></span><span style="display:flex;"><span>rm -rf /etc/pacman.d/gnupg
-</span></span><span style="display:flex;"><span>sudo pacman-key --init
-</span></span><span style="display:flex;"><span>sudo pacman-key --populate archlinux
-</span></span><span style="display:flex;"><span>sudo pacman-key --populate archlinuxcn
-</span></span><span style="display:flex;"><span>sudo pacman -S archlinuxcn-keyring
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Syu haveged
+</span></span><span class="line"><span class="cl">systemctl start haveged
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> haveged
+</span></span><span class="line"><span class="cl">rm -rf /etc/pacman.d/gnupg
+</span></span><span class="line"><span class="cl">sudo pacman-key --init
+</span></span><span class="line"><span class="cl">sudo pacman-key --populate archlinux
+</span></span><span class="line"><span class="cl">sudo pacman-key --populate archlinuxcn
+</span></span><span class="line"><span class="cl">sudo pacman -S archlinuxcn-keyring
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>Arch Linux 中文社区仓库是由 Arch Linux 中文社区驱动的非官方软件仓库，包含许多官方仓库未提供的额外的软件包，以及已有软件的 git 版本等变种。一部分软件包的打包脚本来源于 AUR，但也有许多包与 AUR 不一样。
 详情见 <a class="link" href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/"  target="_blank" rel="noopener"
     >Arch 中文社区</a></p>
@@ -1155,28 +1833,70 @@ export LC_CTYPE=en_US.UTF-8
 </h3><p>yay 是目前比较好用的 <a class="link" href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29"  target="_blank" rel="noopener"
     >AUR</a> 助手之一，可以方便快捷地帮助你完成 AUR 软件的安装。
 archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S yay
-</span></span></code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S yay
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>yay 使用上与 Pacman 大致一致。
 应避免以 root 权限运行 yay，即避免<code>sudo yay</code>这样的命令。
 你也可以选择其他的 AUR 助手。</p>
 </blockquote>
 <p>有了 yay，我们可以直接输入命令安装 AUR 的软件，比如，我们可以输入如下命令安装 Chrome。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S google-chrome
-</span></span></code></pre></div><h3 id="解决-windows-加密问题">解决 Windows 加密问题
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S google-chrome
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解决-windows-加密问题">解决 Windows 加密问题
 </h3><p>如果你是双系统安装，则输入以下命令安装 dislocker 。</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S dislocker
-</span></span></code></pre></div><p>然后输入如下命令再次生成配置文件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo grub-mkconfig -o /boot/grub/grub.cfg
-</span></span></code></pre></div><p>如果一切正常，现在输出结果中应该含有<code>Windows</code>字样
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S dislocker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后输入如下命令再次生成配置文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果一切正常，现在输出结果中应该含有<code>Windows</code>字样
 <del>如果没有的话，我也不知道怎么办了</del></p>
 <h3 id="禁用-reflector">禁用 reflector
 </h3><p>如果你还有印象的话，在安装过程中我们曾使用 reflector 更换替换国内镜像源。之所以使用 reflector 而不是直接修改镜像源列表不是因为这个东东多好用，而是这玩意它会未经你同意自动帮你替换镜像源列表，与其辛辛苦苦敲了半天网址结果被它自动换掉了，还不如直接就先用它替换国内镜像源。在日常使用中，我推荐禁用 reflector（默认应该是禁用状态，如果你喜欢也可以启用，不过它的国内体验非常感人&hellip;）。</p>
 <p>输入如下命令禁用并停止 reflector：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl disable --now reflector.service
-</span></span></code></pre></div><p>输入如下命令启用并启动 reflector：</p>
-<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl <span style="color:#e5c07b">enable</span> --now reflector.service
-</span></span></code></pre></div><p>你还可以选择安装 zsh 和 Yakuake，这里不再介绍。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl disable --now reflector.service
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入如下命令启用并启动 reflector：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now reflector.service
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你还可以选择安装 zsh 和 Yakuake，这里不再介绍。</p>
 <p>安装教程至此可以说已经正式结束。Arch Linux 的配置当然不止于此（显卡驱动之类的还没配置呢），还有许多玩法等待你发现，但是这些内容放在安装教程中肯定不太合适。我后续应该会写一篇专门的优化教程，但是肯定不会像这篇教程一样详细了（实在太累了&hellip;）。</p>
 <h2 id="相关内容补充">相关内容补充
 </h2><h3 id="pacman-常用命令">Pacman 常用命令：

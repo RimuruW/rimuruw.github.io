@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2.040s] Writing &#39;recovery&#39; OKAY [ 0.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： 1 2 3 4 C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2.">
 <title>通过 ADB 给手机刷入第三方 Recovery</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/8/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="通过 ADB 给手机刷入第三方 Recovery">
-<meta property='og:description' content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2.040s] Writing &#39;recovery&#39; OKAY [ 0.">
+<meta property='og:description' content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： 1 2 3 4 C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2.">
 <meta property='og:url' content='https://blog.linioi.com/posts/8/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Recovery' /><meta property='article:published_time' content='2020-04-13T11:46:44&#43;00:00'/><meta property='article:modified_time' content='2020-04-13T11:46:44&#43;00:00'/><meta property='og:image' content='https://blog.linioi.com/src/opengraph.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="通过 ADB 给手机刷入第三方 Recovery">
-<meta name="twitter:description" content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2.040s] Writing &#39;recovery&#39; OKAY [ 0."><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="对于大多数刷机用户而言，好用的第三方 Recovery 可以无疑可以带来许多便利 刷入适合你机型的第三方 Recovery 目前推荐的第三方 Recovery 有 OrangeFox 和 TeamWinRecoveryProject （即 TWRP） Windows 操作系统下 ADB 环境配置请参阅该链接 OrangeFox 是基于 TWRP 制作的。你可以理解为 TWRP 的魔改版本 刷入步骤 手机关机，长按 音量减键 + 电源键 进入 FASTBOOT 模式。用数据线把手机和电脑连接起来。 以 OrangeFox 为示例。在上述步骤的下载后会得到一个压缩包，打开该压缩包，解压其中的 recovery.img 到任意一个位置。(压缩包是为了在有第三方 Recovery 的情况下刷入/更新 OrangeFox ，但是我们目前并没有，所以我们需要解压其中的 recovery.img 来使用 fastboot 刷入。) 如果你选择使用 LR.Team 定制版 TWRP，可以选择一键刷入版，就不会有下一步复杂的操作。 打开 cmd （或者其它终端），输入 fastboot flash recovery 上一步解压的 recovery.img 的文件地址 。以下是一个示例： 1 2 3 4 C:\\Users\\XXXX&gt;fastboot flash recovery D:\\recovery.img Sending &#39;recovery&#39; (65536 KB) OKAY [ 2."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/src/opengraph.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -225,7 +225,40 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#刷入适合你机型的第三方--recoveryhttpswapbaikebaiducomitemrecovery9995978ms1rid11417116585990428221rt-err900rt-msgunkown">刷入适合你机型的第三方  <a href="https://wapbaike.baidu.com/item/Recovery/9995978?ms=1&amp;rid=11417116585990428221&amp;rt-err=900&amp;rt-msg=unkown">Recovery</a></a></li>
+    <li><a href="#刷入步骤">刷入步骤</a></li>
+    <li><a href="#一点小小的补充">一点小小的补充</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -321,11 +354,21 @@
 </li>
 <li>
 <p>打开 cmd （或者其它终端），输入 <code>fastboot flash recovery 上一步解压的 recovery.img 的文件地址</code> 。以下是一个示例：</p>
-<pre tabindex="0"><code>C:\Users\XXXX&gt;fastboot flash recovery D:\recovery.img
-Sending &#39;recovery&#39; (65536 KB)                      OKAY [  2.040s]
-Writing &#39;recovery&#39;                                 OKAY [  0.368s]
-Finished. Total time: 2.427s
-</code></pre><p>如果出现</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\Users\XXXX&gt;fastboot flash recovery D:\recovery.img
+</span></span><span class="line"><span class="cl">Sending &#39;recovery&#39; (65536 KB)                      OKAY [  2.040s]
+</span></span><span class="line"><span class="cl">Writing &#39;recovery&#39;                                 OKAY [  0.368s]
+</span></span><span class="line"><span class="cl">Finished. Total time: 2.427s
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果出现</p>
 <p><code>'fastboot' 不是内部或外部命令，也不是可运行的程序或批处理文件。</code> 说明你没有配置好 ADB 环境。</p>
 </li>
 <li>
