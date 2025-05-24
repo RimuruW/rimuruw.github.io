@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/6/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="DD 指令用法详解">
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="DD 指令用法详解">
 <meta property='og:description' content=" 平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看\ndd 指令的解释 dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。\n注意：指定数字的地方若以下列字符结尾，则乘以相应的数字 例如b=512；c=1；k=1024；w=2\n参数注释：\nif=&lt;文件名&gt;：输入文件名，缺省为标准输入。即指定源文件。&lt; if=input file &gt; of=&lt;文件名&gt;：输出文件名，缺省为标准输出。即指定目的文件。&lt; of=output file &gt; ibs=：一次读入bytes个字节，即指定一个块大小为bytes个字节。 obs=：一次输出bytes个字节，即指定一个块大小为bytes个字节。 bs=：同时设置读入/输出的块大小为bytes个字节。 cbs=：一次转换bytes个字节，即指定转换缓冲区大小。 skip=：从输入文件开头跳过blocks个块后再开始复制。 seek=：从输出文件开头跳过blocks个块后再开始复制。 注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。\ncount=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。 conv=conversion：用指定的参数转换文件。 ascii：转换ebcdic为ascii ebcdic：转换ascii为ebcdic ibm：转换ascii为alternate ebcdic block：把每一行转换为长度为cbs，不足部分用空格填充 unblock：使每一行的长度都为cbs，不足部分用空格填充 lcase：把大写字符转换为小写字符 ucase：把小写字符转换为大写字符 swab：交换输入的每对字节 noerror：出错时不停止 notrunc：不截短输出文件 sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。\ndd指令应用实例 将本地的/dev/hdb整盘备份到/dev/hdd #dd if=/dev/hdb of=/dev/hdd 将/dev/hdb全盘数据备份到指定路径的image文件 #dd if=/dev/hdb of=/root/image 将备份文件恢复到指定盘 #dd if=/root/image of=/dev/hdb 备份/dev/hdb全盘数据，并利用gzip工具进行压缩，保存到指定路径 #dd if=/dev/hdb | gzip &gt; /root/image.gz 将压缩的备份文件恢复到指定盘 #gzip -dc /root/image.gz | dd of=/dev/hdb 备份与恢复MBR 备份磁盘开始的512个字节大小的MBR信息到指定文件： #dd if=/dev/hda of=/root/image count=1 bs=512 恢复： #dd if=/root/image of=/dev/had 将备份的MBR信息写到磁盘开始部分 count=1指仅拷贝一个块；bs=512指块大小为512个字节。\n">
 <meta property='og:url' content='https://blog.linioi.com/posts/6/'>
 <meta property='og:site_name' content='清絮的博客'>
@@ -61,7 +61,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
+                        <img src="/img/avatar_hu_a72892fbb85e8724.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -326,29 +326,26 @@
     
     
     <blockquote>
-<p>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看</p>
-</blockquote>
-<!-- raw HTML omitted -->
+<p>平常用 dd 命令用的比较少，干脆记一点关于 dd 命令的笔记，自己之后可以看看</p></blockquote>
+<!-- less -->
 <h2 id="dd-指令的解释">dd 指令的解释
 </h2><p>dd：用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换。</p>
 <blockquote>
 <p>注意：指定数字的地方若以下列字符结尾，则乘以相应的数字
-例如<code>b=512；c=1；k=1024；w=2</code></p>
-</blockquote>
+例如<code>b=512；c=1；k=1024；w=2</code></p></blockquote>
 <p>参数注释：</p>
 <ul>
 <li>if=&lt;文件名&gt;：输入文件名，缺省为标准输入。即指定源文件。<code>&lt; if=input file &gt;</code></li>
 <li>of=&lt;文件名&gt;：输出文件名，缺省为标准输出。即指定目的文件。<code>&lt; of=output file &gt;</code></li>
-<li>ibs=<!-- raw HTML omitted -->：一次读入bytes个字节，即指定一个块大小为bytes个字节。</li>
-<li>obs=<!-- raw HTML omitted -->：一次输出bytes个字节，即指定一个块大小为bytes个字节。</li>
-<li>bs=<!-- raw HTML omitted -->：同时设置读入/输出的块大小为bytes个字节。</li>
-<li>cbs=<!-- raw HTML omitted -->：一次转换bytes个字节，即指定转换缓冲区大小。</li>
-<li>skip=<!-- raw HTML omitted -->：从输入文件开头跳过blocks个块后再开始复制。</li>
-<li>seek=<!-- raw HTML omitted -->：从输出文件开头跳过blocks个块后再开始复制。</li>
+<li>ibs=<bytes>：一次读入bytes个字节，即指定一个块大小为bytes个字节。</li>
+<li>obs=<bytes>：一次输出bytes个字节，即指定一个块大小为bytes个字节。</li>
+<li>bs=<bytes>：同时设置读入/输出的块大小为bytes个字节。</li>
+<li>cbs=<bytes>：一次转换bytes个字节，即指定转换缓冲区大小。</li>
+<li>skip=<blocks>：从输入文件开头跳过blocks个块后再开始复制。</li>
+<li>seek=<blocks>：从输出文件开头跳过blocks个块后再开始复制。</li>
 </ul>
 <blockquote>
-<p>注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。</p>
-</blockquote>
+<p>注意：通常只用当输出文件是磁盘或磁带时才有效，即备份到磁盘或磁带时才有效。</p></blockquote>
 <ul>
 <li>count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。</li>
 <li>conv=conversion：用指定的参数转换文件。</li>
@@ -364,8 +361,7 @@ ucase：把小写字符转换为大写字符
 swab：交换输入的每对字节
 noerror：出错时不停止
 notrunc：不截短输出文件
-sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。</p>
-</blockquote>
+sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字符补齐。</p></blockquote>
 <h2 id="dd指令应用实例">dd指令应用实例
 </h2><ul>
 <li>将本地的/dev/hdb整盘备份到/dev/hdd
@@ -386,8 +382,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 将备份的MBR信息写到磁盘开始部分</li>
 </ul>
 <blockquote>
-<p>count=1指仅拷贝一个块；bs=512指块大小为512个字节。</p>
-</blockquote>
+<p>count=1指仅拷贝一个块；bs=512指块大小为512个字节。</p></blockquote>
 <ul>
 <li>备份软盘
 <code>#dd if=/dev/fd0 of=disk.img count=1 bs=1440k</code>
@@ -410,8 +405,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 <code>#dd if=/dev/urandom of=/dev/hda1</code></li>
 </ul>
 <blockquote>
-<p>注意：利用随机的数据填充硬盘，在某些必要的场合可以用来<em>销毁数据</em>。</p>
-</blockquote>
+<p>注意：利用随机的数据填充硬盘，在某些必要的场合可以用来<em>销毁数据</em>。</p></blockquote>
 <ul>
 <li>测试硬盘的读写速度</li>
 </ul>
@@ -450,8 +444,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 </ul>
 <blockquote>
 <p>若硬盘较长时间(一年以上)放置不使用，磁盘上会产生magnetic flux point。当磁头读到这些区域时会遇到困难，并可能导致I/O错误。
-当这种情况影响到硬盘的第一个扇区时，可能导致硬盘报废。上边的命令有可能使这些数据起死回生。并且这个过程是<strong>安全、高效</strong>的。</p>
-</blockquote>
+当这种情况影响到硬盘的第一个扇区时，可能导致硬盘报废。上边的命令有可能使这些数据起死回生。并且这个过程是<strong>安全、高效</strong>的。</p></blockquote>
 <ul>
 <li>利用netcat远程备份
 <code>#dd if=/dev/hda bs=16065b | netcat &lt; targethost-IP &gt; 1234</code>
@@ -477,8 +470,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 </ul>
 <blockquote>
 <p>在进行linux的实验中，如果没有多余的硬盘来做测试。则可以在linux下使用文件来模拟磁盘，以供测试目的。
-其模拟过程如下所示，摘录自《Oracle数据库核心技术与实务详解－教你如何成为Oracle 10g OCP》一书。</p>
-</blockquote>
+其模拟过程如下所示，摘录自《Oracle数据库核心技术与实务详解－教你如何成为Oracle 10g OCP》一书。</p></blockquote>
 <p>1)以root用户创建一个ASM磁盘所在的目录。</p>
 <p><code>#mkdir –p /u01/asmdisks</code></p>
 <p>2)通过dd命令创建6个400M大小的文件，每个文件代表一块磁盘。</p>
@@ -549,8 +541,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
 </div>
 </div><blockquote>
 <p>注意：如果要删除通过dd模拟出的虚拟磁盘文件的话，直接删除模拟出的磁盘文件
-（也就是asm_disk1、asm_disk2…asm_disk6）还不够，还必须执行losetup -d /dev/loopN，在这里N从1到6。否则，磁盘文件所占用的磁盘空间不能释放</p>
-</blockquote>
+（也就是asm_disk1、asm_disk2…asm_disk6）还不够，还必须执行losetup -d /dev/loopN，在这里N从1到6。否则，磁盘文件所占用的磁盘空间不能释放</p></blockquote>
 
 </section>
 
@@ -597,7 +588,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
         
             <div class="article-image">
-                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu15090158947573214185.png" 
+                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu_bd16d42db4ef9451.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -701,12 +692,12 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
         
             2020 - 
         
-        2024 清絮的博客
+        2025 清絮的博客
     </section>
     
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -795,7 +786,7 @@ sync：将每个输入块填充到ibs个字节，不足部分用空（NUL）字�
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

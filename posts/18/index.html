@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/18/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Arch Linux + Windows 双系统安装教程">
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Arch Linux + Windows 双系统安装教程">
 <meta property='og:description' content="有些话必须放在前面…… 无论从哪个角度看，Arch Linux 都不是一个新手友好型 Linux 发行版。无论你是因为什么原因选择安装 Arch Linux，我都希望你能够满足下条件：\n具有基本阅读理解水平，至少要能跟着教程来 掌握电脑基础使用，能够正常开关机 对电脑键盘键位和其按钮有基本了解（打字都不会的就不要打扰了。。。） 能够面对满屏的命令行输出保持基本冷静 具有基础的英语水平，至少命令行报错（比如出现 error）的时候，你能反应过来该命令执行出现错误。 有一定自主操作能力，能根据自己实际情况解决相应问题 出现突发情况，能够自行解决或者上网查阅相关资料 必须说明的是，写一篇面向新手的教程本身就是一件非常令人苦恼的事情。我不能确定我眼中的常识是否是新手闻所未闻的新知识，我不能确定我习惯并自以为清晰明了的描述会不会让新手看的云里雾里。因此在教程中我尽可能侧重于讲解而不是一直单调地告诉你如何去做。同时，因为面向新手，教程也会尽量避免其他知识的扩展以减少新手的阅读压力。此外，因为我很少使用 Windows（或者说 Windows 使用经验几乎为零），所以下文关于 Windows 的描述可能会有一些不准确的地方。如有错误还请指正。\n当然，你可以另辟蹊径，通过一些特殊方法（如安装脚本）完成安装过程，但是这样无疑失去了 Arch Linux 安装的意义。这样做最直接的后果是，对于 Arch Linux 这种需要你自己维护的系统，如果你甚至没有自己动手完成你的系统安装过程，那么在系统出现问题的时候你多半无计可施只能重装系统了。\n如果你是一个小白也不用太过担心，安装过程虽然是通过命令行一步一步操作，看似非常复杂繁琐。但是实际操作过程中你会发现，大多数情况下你并不需要理解每一个步骤的原因、每一行命令的意思。一般来说，安装过程也不会出现什么技术难点。\n如果你有一定的 Linux 使用经验，根据本教程，你可以轻松完成 Arch Linux + Windows 双系统的安装，部分命令可以根据你的习惯或者需求改为其他命令，本教程仅供参照。\n如果你并不是想安装双系统，只是单纯安装 Arch Linux 这一个系统，可以根据需求对教程进行改动（教程步骤中也会进行说明）或参阅我单独的 Arch Linux 安装教程（写完了会贴在评论区）。\n我更希望的是，新人们能通过我这篇教程更多地了解 Arch Linux 和 Linux 本身，而不是机械式和目的性地完成一个操作系统的安装。\n正文 确定电脑的启动类型 电脑启动类型可以粗略地分为「传统 BIOS」（简称 BIOS）和「UEFI」。因为两者在启动盘制作上和安装步骤上存在差异，所以必须在安装前对电脑的启动类型进行确认。如果是最近十年生产的设备，使用的一般是 UEFI 引导。\n首先启动进入 Windows 桌面，同时按下 Win+R 打开运行对话框，然后输入 msinfo32 后回车确认打开系统信息，查看「BIOS 模式」是不是 UEFI。如果是，则为 UEFI 引导，反之则为传统 BIOS 引导。\n">
 <meta property='og:url' content='https://blog.linioi.com/posts/18/'>
 <meta property='og:site_name' content='清絮的博客'>
@@ -61,7 +61,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
+                        <img src="/img/avatar_hu_a72892fbb85e8724.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -409,18 +409,16 @@
     >Rufus</a> 烧录镜像。</li>
 </ul>
 <blockquote>
-<p>Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</p>
-</blockquote>
+<p>Rufus 是一个可以帮助格式化和创建可引导USB闪存盘的工具，比如 USB 随身碟，记忆棒等等。麻雀虽小，五脏俱全，体积虽小，功能全面。</p></blockquote>
 <blockquote>
-<p>注意，在某些 Linux 可用的软碟通(UItraISO)<strong>不适用于</strong> Arch Linux</p>
-</blockquote>
+<p>注意，在某些 Linux 可用的软碟通(UItraISO)<strong>不适用于</strong> Arch Linux</p></blockquote>
 <ol>
 <li>
 <p>下载完成后，双击打开该文件，允许或不允许 Rufus 联网检查程序更新皆可。</p>
 <p><img src="/posts/18/6d1d86f6e363c.png"
 	width="462"
 	height="150"
-	srcset="/posts/18/6d1d86f6e363c_hu15904439725432294233.png 480w, /posts/18/6d1d86f6e363c_hu7111934904608377958.png 1024w"
+	srcset="/posts/18/6d1d86f6e363c_hu_1c9b8a7984ef6aa3.png 480w, /posts/18/6d1d86f6e363c_hu_d4119ae366ee305a.png 1024w"
 	loading="lazy"
 	
 		alt="检查更新"
@@ -434,18 +432,18 @@
 </li>
 <li>
 <p>插入你的 U 盘，在「设备」选项框中选择你的 U 盘（一般会默认选中，以下图片均为示例）。</p>
-<!-- raw HTML omitted -->
+<img src="0f603f3cf3f5f.png" alt="选择设备" style="zoom: 80%;" />
 </li>
 <li>
 <p>在「引导类型选择」下选择 「镜像文件（请选择）」，然后单击右侧的「选择」来选择你下载好的镜像。</p>
-<!-- raw HTML omitted -->
+<img src="f1f580a8a0ff3-1622905253656.png" style="zoom:80%;" />
 </li>
 <li>
 <p>「持久分区大小」默认即可。对于「分区类型」，UEFI 引导选择「GPT」，BIOS 引导保持「MBR」即可</p>
 <p><img src="/posts/18/69aa1ec442d7a.png"
 	width="418"
 	height="580"
-	srcset="/posts/18/69aa1ec442d7a_hu4964946742250688322.png 480w, /posts/18/69aa1ec442d7a_hu1042907559540985558.png 1024w"
+	srcset="/posts/18/69aa1ec442d7a_hu_c8bee8c64e94275d.png 480w, /posts/18/69aa1ec442d7a_hu_b6704c380029e104.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -462,7 +460,7 @@
 <p><img src="/posts/18/5377133faa985.png"
 	width="418"
 	height="580"
-	srcset="/posts/18/5377133faa985_hu7941154187049820209.png 480w, /posts/18/5377133faa985_hu17033631114938520321.png 1024w"
+	srcset="/posts/18/5377133faa985_hu_ee010a5a471794cf.png 480w, /posts/18/5377133faa985_hu_ea9a9fa8999003e9.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -479,7 +477,7 @@
 <p><img src="/posts/18/ea1b166c824e3.png"
 	width="548"
 	height="269"
-	srcset="/posts/18/ea1b166c824e3_hu7273006962467631805.png 480w, /posts/18/ea1b166c824e3_hu15571549864606401710.png 1024w"
+	srcset="/posts/18/ea1b166c824e3_hu_a9b35d5f66dca782.png 480w, /posts/18/ea1b166c824e3_hu_c35264b3ce607a4f.png 1024w"
 	loading="lazy"
 	
 	
@@ -494,7 +492,7 @@
 <p><img src="/posts/18/b3191015dc98e.png"
 	width="431"
 	height="167"
-	srcset="/posts/18/b3191015dc98e_hu4114158518985154995.png 480w, /posts/18/b3191015dc98e_hu3074390718922486027.png 1024w"
+	srcset="/posts/18/b3191015dc98e_hu_76a55eb7899a128c.png 480w, /posts/18/b3191015dc98e_hu_a659b88720bb5b9.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -511,7 +509,7 @@
 <p><img src="/posts/18/7b7db13921e76.png"
 	width="418"
 	height="580"
-	srcset="/posts/18/7b7db13921e76_hu5278384403353852453.png 480w, /posts/18/7b7db13921e76_hu1163152209236177119.png 1024w"
+	srcset="/posts/18/7b7db13921e76_hu_6028e00ab47d5969.png 480w, /posts/18/7b7db13921e76_hu_c9f07a89a5f6e3c0.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -550,7 +548,7 @@
 <p><img src="/posts/18/7fe58c1243b16.png"
 	width="986"
 	height="708"
-	srcset="/posts/18/7fe58c1243b16_hu15365314294241125379.png 480w, /posts/18/7fe58c1243b16_hu8319932140081402060.png 1024w"
+	srcset="/posts/18/7fe58c1243b16_hu_230ee92f53abf687.png 480w, /posts/18/7fe58c1243b16_hu_74477d514c4557df.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -576,8 +574,7 @@
 </li>
 </ul>
 <blockquote>
-<p>友情提醒：<strong>不同分区压缩出来的空闲空间不会合并在一起给你用。所以，不要想着从每个分区里拿一个空间出来凑足需要的空闲空间。</strong></p>
-</blockquote>
+<p>友情提醒：<strong>不同分区压缩出来的空闲空间不会合并在一起给你用。所以，不要想着从每个分区里拿一个空间出来凑足需要的空闲空间。</strong></p></blockquote>
 <p>关于这个空间的大小，我认为对于初步的接触和学习来说，至少要 30G 以上，50G 为基准线。如果小于 30G 但是在 20G 以上，安装当然没有问题，不过<em>基本上没有空间给用户存储数据使用了</em>。</p>
 <h4 id="禁用快速启动和安全启动">禁用快速启动和安全启动
 </h4><p>Arch Linux 单系统安装可以不禁用 Windows 的快速启动但一定要禁用安全启动。</p>
@@ -607,8 +604,7 @@
 <blockquote>
 <p>你问怎么从 U 盘启动？？我建议你点击此<a class="link" href="https://www.baidu.com"  target="_blank" rel="noopener"
     >链接</a>获取帮助</p>
-<p>大多数的电脑都有一个在开机时按下一个按键来选择从哪里启动的选项（例如 Dell 和 Lenovo 是 F12，台式机是 Delete）。</p>
-</blockquote>
+<p>大多数的电脑都有一个在开机时按下一个按键来选择从哪里启动的选项（例如 Dell 和 Lenovo 是 F12，台式机是 Delete）。</p></blockquote>
 <p>如果你的电脑旧到不支持从 U 盘启动……
 建议还是换台电脑吧……</p>
 <p>从U盘启动后电脑会出现一个新界面，传统BIOS启动和UEFI启动在该界面显示结果不一样。</p>
@@ -616,7 +612,7 @@
 <p><img src="/posts/18/4cda84d1a6d0c.png"
 	width="640"
 	height="480"
-	srcset="/posts/18/4cda84d1a6d0c_hu15889996582837342268.png 480w, /posts/18/4cda84d1a6d0c_hu1083338740622875316.png 1024w"
+	srcset="/posts/18/4cda84d1a6d0c_hu_a88337037d0256ca.png 480w, /posts/18/4cda84d1a6d0c_hu_6e88ef181d2fdbeb.png 1024w"
 	loading="lazy"
 	
 		alt="BIOS"
@@ -631,7 +627,7 @@
 <p><img src="/posts/18/303179878abc6.png"
 	width="1024"
 	height="768"
-	srcset="/posts/18/303179878abc6_hu1245963312482614392.png 480w, /posts/18/303179878abc6_hu13561615058428870930.png 1024w"
+	srcset="/posts/18/303179878abc6_hu_e7086aa6cd7fd789.png 480w, /posts/18/303179878abc6_hu_804327c9118c3b9a.png 1024w"
 	loading="lazy"
 	
 		alt="UEFI"
@@ -647,7 +643,7 @@
 <img src="/posts/18/bf76fecd4806a.png"
 	width="800"
 	height="600"
-	srcset="/posts/18/bf76fecd4806a_hu17639888589180222609.png 480w, /posts/18/bf76fecd4806a_hu1838910895626535166.png 1024w"
+	srcset="/posts/18/bf76fecd4806a_hu_1195e02f1471aab5.png 480w, /posts/18/bf76fecd4806a_hu_6e0105febb3bbe7a.png 1024w"
 	loading="lazy"
 	
 		alt="示例"
@@ -659,8 +655,7 @@
 	
 ></p>
 <blockquote>
-<p>如果未出现该提示符，则可能是启动盘出现了问题，建议重新烧录镜像…</p>
-</blockquote>
+<p>如果未出现该提示符，则可能是启动盘出现了问题，建议重新烧录镜像…</p></blockquote>
 <p>这里先简单地对这个界面（终端）进行介绍，以减少后面重复累赘（当然，这部分不看也行，我觉得可能大部分人现在还看不懂，看得懂的又没必要看&hellip;）。</p>
 <p>首先，包括 Arch Linux 在内的绝大多数 Linux 发行版以及 Windows 都是多用户操作系统。多用户操作系统，顾名思义，一个操作系统上可以存在多个相对独立的用户帐号，就像你熟悉的 QQ 可以同时登录多个 QQ 号。</p>
 <p>为了区分不同的用户，我们需要给不同的用户一个唯一的用户名以对他们进行区分。比如，如果已经存在一个用户他叫 xiaoming，则不能在同一个操作系统存在另一个也叫 xiaoming 的用户，这就像集合内元素的互异性。</p>
@@ -700,8 +695,7 @@
 </ul>
 <blockquote>
 <p>2020 年 7 月的 ArchISO 砍掉了 netctl，经典的 wifi-menu 已被 iwctl 取代。如果你在某个教程里还看到了「使用 wifi-menu 连接 WiFi」的字样，请提醒作者更新教程……</p>
-<p><del>所以 wpa_supplicant 使用者竟成最后赢家。</del></p>
-</blockquote>
+<p><del>所以 wpa_supplicant 使用者竟成最后赢家。</del></p></blockquote>
 <p>在使用 iwctl 之前，我们需要先检查一下你的网卡是否被物理禁用或软件禁用。</p>
 <p>物理禁用一般需要你的电脑存在可以物理按键或滑块可以手动关闭或打开网卡（当然，我觉得一般电脑是没有这玩意的）。</p>
 <p>软件禁用则考虑网卡是否被 rfkill 禁用，目前已知 ideapad（联想小新系列）会自动禁用无线网卡和蓝牙。</p>
@@ -773,24 +767,20 @@
 </div>
 </div><h2 id="准备硬盘分区">准备硬盘分区
 </h2><blockquote>
-<p>对于双系统而言，最麻烦的一部分无疑就是硬盘分区和双系统引导。完成这部分需要读者拥有发育健全的大脑并且有一定的自主操作能力。</p>
-</blockquote>
+<p>对于双系统而言，最麻烦的一部分无疑就是硬盘分区和双系统引导。完成这部分需要读者拥有发育健全的大脑并且有一定的自主操作能力。</p></blockquote>
 <p>你可以先输入<code>fdisk -l</code>查看当前电脑硬盘的状态。</p>
 <p>输出结果中的 /dev/sdX 代表的是你电脑的硬盘。</p>
 <blockquote>
-<p>（<em>输出结果不可能真的出现<code>/dev/sdX</code>，此处的 X 只是代表如 a、b、c 这样的符号，如数学中用字母代替数的作用</em>）</p>
-</blockquote>
+<p>（<em>输出结果不可能真的出现<code>/dev/sdX</code>，此处的 X 只是代表如 a、b、c 这样的符号，如数学中用字母代替数的作用</em>）</p></blockquote>
 <blockquote>
 <p>如果你的电脑只有一个硬盘，你的输出结果应该仅含 <code>/dev/sda</code>和<code>/dev/sdb</code>。</p>
 <p>其中，<code>/dev/sda</code> 代表的是你电脑的硬盘，<code>/dev/sdb </code>代表的是你的启动盘（U 盘）。</p>
 <p><code>/dev/sda</code> 后的数字，如<code>/dev/sda1</code>，则代表<code>/dev/sda</code> 这个磁盘下的第几个分区。</p>
-<p>如果这是一块新硬盘或者已经清空的硬盘的话，你大概看不到 <code>/dev/sda1 </code>这样的分区。</p>
-</blockquote>
+<p>如果这是一块新硬盘或者已经清空的硬盘的话，你大概看不到 <code>/dev/sda1 </code>这样的分区。</p></blockquote>
 <blockquote>
 <p>如果你看到了一些其它的东西，比如<code>/dev/nvme0n1</code> 这样的，则代表你的电脑上有一块 NVMe SSD</p>
 <p>如果是<code>/dev/mmcblk0</code> 这样的，则代表你的电脑上有 eMMC 存储。</p>
-<p>此时你的启动盘可能会被归为 <code>/dev/sda </code>，所以<strong>下面要根据你自己实际情况操作</strong></p>
-</blockquote>
+<p>此时你的启动盘可能会被归为 <code>/dev/sda </code>，所以<strong>下面要根据你自己实际情况操作</strong></p></blockquote>
 <p><del>再有其他情况我也不知道了</del></p>
 <h2 id="对硬盘进行分区">对硬盘进行分区
 </h2><p>在终端输入如下命令进行分区：
@@ -818,12 +808,10 @@
 </div><p>底部的选项的位置可能会随着 cfdisk 的更新发生变化，但是相应选项的功能不会改变。</p>
 <blockquote>
 <p>在硬盘信息处，应该出现一个绿色的<code>Free space</code>，这个就是你在 Windows 中压缩给 Arch Linux 的空间。
-将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，以新建分区。</p>
-</blockquote>
+将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，以新建分区。</p></blockquote>
 <blockquote>
 <p>新建分区需要手动输入分区大小。
-例如新建一个 30G 大小的分区，你应该将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，敲回车后输入<code>30G</code>，然后回车确认</p>
-</blockquote>
+例如新建一个 30G 大小的分区，你应该将光标通过键盘上下方向键移至<code>Free space</code>，再通过键盘左右方向键选择<code>[New]</code>，敲回车后输入<code>30G</code>，然后回车确认</p></blockquote>
 <p>对于怎么分区以及分多大我先要进行一些说明。你可能在其他 Arch Linux 安装教程或者其他别的 Linux 发行版安装教程中看到他们关于分区大小的各种理论或规范，实际上，如何分区、分区多大是没有固定标准的。当你对 Linux 足够熟悉并清楚该如何操作，不分区都是可以的，只要完成 Windows 的引导要求即可。</p>
 <p>这里介绍一个比较通行的分区方法，同时也建议按照如下顺序进行分区。</p>
 <ul>
@@ -897,12 +885,10 @@
 </table></div>
 <blockquote>
 <p>如果电脑是传统BIOS启动，选择<code>[ New ]</code>回车后有可能需要选择建立<code>主分区</code>还是<code>扩展分区</code>。(该情形会在硬盘中没有分区或者主分区不足4个时询问。如果硬盘已经有4个主分区则不会询问，默认建立扩展分区。)
-EFI启动可以建立无限个主分区，所以不会询问，直接建立主分区。</p>
-</blockquote>
+EFI启动可以建立无限个主分区，所以不会询问，直接建立主分区。</p></blockquote>
 <blockquote>
 <p>原则上尽量使用主分区。如果主分区用尽，建立扩展分区时注意<strong>不要修改分区大小</strong>，直接回车。因为扩展分区本身<em>不是一个分区</em>。
-回车后会发现扩展分区下的硬盘还是剩余空间，只是被划分到扩展分区下了。</p>
-</blockquote>
+回车后会发现扩展分区下的硬盘还是剩余空间，只是被划分到扩展分区下了。</p></blockquote>
 <p>按上面建议的分区大小，分别建立四个分区后，选择<code>[ Write ]</code>写入再选择<code>[ Quit ]</code>退出。退出时你需要输入<code>yes</code>确认。<em>输入完整的<code>yes</code>不是输入一个<code>y</code></em>。</p>
 <h2 id="挂载分区">挂载分区
 </h2><p>在终端输入如下命令以检查分区情况：</p>
@@ -919,8 +905,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>确认新分区建立无误后，输入如下命令对新建分区进行格式化。这里使用经典的 ext4 文件系统，在你对 Linux 文件系统有一点了解后，你可以换用其他的文件系统，比如 btrfs。</p>
 <blockquote>
 <p>下面所有的分区符号如<code>/dev/sda1</code>仅为示例，实际操作时应该结合自己实际情况进行格式化。
-假设新建的<code>/mnt</code>分区符号为<code>/dev/sdb3</code>，则应该输入<code>mkfs.ext4 /dev/sdb3</code>以格式化</p>
-</blockquote>
+假设新建的<code>/mnt</code>分区符号为<code>/dev/sdb3</code>，则应该输入<code>mkfs.ext4 /dev/sdb3</code>以格式化</p></blockquote>
 <ul>
 <li>
 <p>格式化<code>/mnt</code>分区：</p>
@@ -970,8 +955,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </ul>
 <blockquote>
 <p>格式化分区为 ext4 分区时通常需要输入<code>y</code>以确认。
-其他分区格式化，没有报错则意味着操作成功。</p>
-</blockquote>
+其他分区格式化，没有报错则意味着操作成功。</p></blockquote>
 <p>接下来挂载分区</p>
 <ol>
 <li>挂载<code>/mnt</code>分区：</li>
@@ -1024,17 +1008,14 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </div>
 </div><p>至此，硬盘分区和相应目录挂载已经全部完成。</p>
 <blockquote>
-<p>建议再次输入<code>lsblk</code>命令检查硬盘分区情况，一般情况下，每个相应的分区后面应该标注其挂载的目录。</p>
-</blockquote>
+<p>建议再次输入<code>lsblk</code>命令检查硬盘分区情况，一般情况下，每个相应的分区后面应该标注其挂载的目录。</p></blockquote>
 <blockquote>
 <p>以上过程中若出现报错不通过的情况，为了节约排查问题时间，可以直接从重新执行<code>cfdisk</code>命令重新分区开始。<strong>重新分区前，已经挂载好的目录需要进行卸载。</strong>
 例，卸载<code>/home</code>分区目录的命令如下：
-<code>unmount /dev/sda4 /mnt/home</code></p>
-</blockquote>
+<code>unmount /dev/sda4 /mnt/home</code></p></blockquote>
 <h2 id="安装-arch-linux-基本系统">安装 Arch Linux 基本系统
 </h2><blockquote>
-<p>Arch Linux 的安装不仅需要连接网络，而且还要从网络下载大量数据。因为 Arch Linux 主服务器在国外，加之某些众所周知的原因，国内网络使用国外服务器下载会非常慢。因此，建议使用国内镜像网站进行下载和安装工作。</p>
-</blockquote>
+<p>Arch Linux 的安装不仅需要连接网络，而且还要从网络下载大量数据。因为 Arch Linux 主服务器在国外，加之某些众所周知的原因，国内网络使用国外服务器下载会非常慢。因此，建议使用国内镜像网站进行下载和安装工作。</p></blockquote>
 <p>输入如下命令，利用 reflector 自动替换国内镜像源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1073,12 +1054,10 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>这里简单介绍一下软件包组。对于 Linux 用户来说，我们可能需要一次性安装一大堆软件包。虽然我们可以通过包管理批量安装多个软件，但是敲那么多软件的名字无疑非常的枯燥无聊且繁琐。因此，Arch Linux 的打包者将具有相关性的多个软件包归入一个软件包组，虽然软件包组不是一个软件包，但是安装操作与一个真正的软件包相同。比如上面的 base-devel 就是将系统基础软件包归入一个软件包组，我们只需要输入软件包组的名字就可以安装这些软件包。</p>
 <blockquote>
 <p>你可以将上述命令中的<code>linux</code>替换为 <a class="link" href="https://wiki.archlinux.org/index.php/Kernel"  target="_blank" rel="noopener"
-    >Kernel</a> 页面中介绍的内核软件包。如果知道自己的需求并了解后果，可以不安装 <code>linux-firmware</code>.</p>
-</blockquote>
+    >Kernel</a> 页面中介绍的内核软件包。如果知道自己的需求并了解后果，可以不安装 <code>linux-firmware</code>.</p></blockquote>
 <blockquote>
 <p>安装过程中会出现选择软件包的提示，建议“默认=all”，即直接敲回车默认安装，输入一个“y”确认安装。
-在网络不佳的情况下，下载过程可能会出现意外断流，此时重复上面的命令即可。</p>
-</blockquote>
+在网络不佳的情况下，下载过程可能会出现意外断流，此时重复上面的命令即可。</p></blockquote>
 <blockquote>
 <p>根据 <a class="link" href="https://t.me/archlinuxcn"  target="_blank" rel="noopener"
     >Arch Linux CN Messages</a> 的<a class="link" href="https://t.me/archlinuxcn/228"  target="_blank" rel="noopener"
@@ -1154,8 +1133,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </div>
 </div><blockquote>
 <p>输入密码后需要回车确认，密码需要输入两次。</p>
-<p>密码在输入的时候不会显示，不用担心是自己键盘坏了。</p>
-</blockquote>
+<p>密码在输入的时候不会显示，不用担心是自己键盘坏了。</p></blockquote>
 <p>因为root用户权力过大大，即使删掉系统本身，也会被执行。为了避免日常使用因为权限过高造成某些不可逆而又本可以避免的损失，Linux 桌面用户需要添加一个普通用户，且该用户可以获取临时root权限。
 一般情况下，这个新添加的用户将会是你后续登录 Linux 的<em>主要用户</em>。</p>
 <p>执行以下命令新建一个隶属于 wheel 组的新用户。</p>
@@ -1179,8 +1157,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </div>
 </div><blockquote>
 <p>同上，密码需要输入两次，且密码不会显示。</p>
-<p>因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长，但为了安全性也不要太短太简单。</p>
-</blockquote>
+<p>因为这个密码在日常使用中可能需要经常输入，所以建议密码不要太长，但为了安全性也不要太短太简单。</p></blockquote>
 <p>为了该普通用户能获取临时 root 权限，我们需要修改 wheel 的权限设置。修改权限设置的最好方法就是使用 <code>visudo</code>，但是对于不会使用 vi 的新手，也可以直接使用 nano 修改相关文件。
 输入如下命令打开sudoers文件：</p>
 <div class="highlight"><div class="chroma">
@@ -1219,8 +1196,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <p>后续若需要普通用户在执行某条命令时临时获得 root 权限，则在该条命令前加上<code>sudo</code></p>
 <p>例：<code>sudo pacman -Syu</code></p>
 <p>　　<code>sudo rm -rf /*</code></p>
-<p>在有密码的情况下，使用 sudo 执行命令需要输入 <strong>当前用户的密码</strong> 以二次确认。</p>
-</blockquote>
+<p>在有密码的情况下，使用 sudo 执行命令需要输入 <strong>当前用户的密码</strong> 以二次确认。</p></blockquote>
 <p>如同用户有一个名字一样，Linux 下电脑也需要一个名字。
 输入如下命令配置电脑的主机名：</p>
 <div class="highlight"><div class="chroma">
@@ -1232,8 +1208,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。如果你不清楚的话，最好不要在主机名中加入一些奇奇怪怪的特殊字符（不会真的有人那么无聊吧）。</p>
-</blockquote>
+<p>主机名可以是任何你喜欢的名字，但是不能含空格等字符。如果你不清楚的话，最好不要在主机名中加入一些奇奇怪怪的特殊字符（不会真的有人那么无聊吧）。</p></blockquote>
 <p>下面对系统 host 进行配置（可选，如果嫌麻烦可以跳过这一步，如果不设置可能会在网络变更时出现应用无法启动等问题）。</p>
 <p>输入以下命令：</p>
 <div class="highlight"><div class="chroma">
@@ -1267,8 +1242,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>，不过一般来说是没有这个东西的。</p>
-</blockquote>
+<p><em>如果系统有一个永久的 IP 地址，请使用这个永久的 IP 地址而不是 <code>127.0.1.1</code></em>，不过一般来说是没有这个东西的。</p></blockquote>
 <p>确认无误后，同时按住<code>Ctrl + X</code>，输入<code>y</code>，回车再退出。</p>
 <h2 id="安装微码并配置-grub-引导">安装微码并配置 Grub 引导
 </h2><p>微码安装命令根据处理器选择。</p>
@@ -1322,8 +1296,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </div></li>
 </ul>
 <blockquote>
-<p>第二条命令中<code>/dev/sda</code>应该根据你实际情况，改为你自己硬盘名字</p>
-</blockquote>
+<p>第二条命令中<code>/dev/sda</code>应该根据你实际情况，改为你自己硬盘名字</p></blockquote>
 <ul>
 <li>
 <p>如果你是UEFI引导，则输入以下命令：</p>
@@ -1347,8 +1320,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，<em>请自行修改 &ndash;efi-directory 的值</em></p>
-</blockquote>
+<p>如果你未按照上述过程将 EFI 系统分区挂载到 /boot ，<em>请自行修改 &ndash;efi-directory 的值</em></p></blockquote>
 <p>Grub 2.06 更新后默认禁用 os-prober。虽然我一时半会也还不知道这样做的意义何在，但是上游有改动，我们用户也只能动手适配了。</p>
 <p>输入下面命令为 Grub 启用 os-prober。</p>
 <div class="highlight"><div class="chroma">
@@ -1387,8 +1359,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>如果输入上一条命令没有任何输出结果，<strong>请务必停下来检查</strong>上面所有步骤有没有哪一处出现问题，或者重新进行所有安装步骤！！</p>
-</blockquote>
+<p>如果输入上一条命令没有任何输出结果，<strong>请务必停下来检查</strong>上面所有步骤有没有哪一处出现问题，或者重新进行所有安装步骤！！</p></blockquote>
 <h2 id="配置语言和区域">配置语言和区域
 </h2><p>/etc/locale.gen 是一个仅包含注释文档的文本文件。指定您需要的本地化类型，只需移除对应行前面的注释符号<code>＃</code>即可。（建议选择带 UTF-8 的项）
 输入如下命令修改 locale.gen 文件，配置语言环境：
@@ -1407,11 +1378,9 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>比如，你看到<code>#en_US.UTF-8 UTF-8</code>时，你需要删除该行最前面的<code>#</code>，使之变成<code>en_US.UTF-8 UTF-8</code>。</p>
-</blockquote>
+<p>比如，你看到<code>#en_US.UTF-8 UTF-8</code>时，你需要删除该行最前面的<code>#</code>，使之变成<code>en_US.UTF-8 UTF-8</code>。</p></blockquote>
 <blockquote>
-<p>你也可以根据自己需求，添加其他环境。</p>
-</blockquote>
+<p>你也可以根据自己需求，添加其他环境。</p></blockquote>
 <p>编辑完成后同时按住<code>Ctrl + X</code>退出。</p>
 <p>退出后输入如下命令刷新区域信息：</p>
 <div class="highlight"><div class="chroma">
@@ -1447,8 +1416,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </div><blockquote>
 <p>毫无疑问，你可以选择将上一条命令的<code>en_US.UTF-8</code>改为<code>zh_CN.UTF-8</code>。<strong>但请谨慎考虑后进行操作</strong>。</p>
 <p>locale.conf 文件是全局设置，如果这里设成中文或者其他非英文环境，桌面环境下字符会正常显示，<strong>但是在命令行下会变成乱码</strong>。</p>
-<p>如果看不懂请忽略此段。</p>
-</blockquote>
+<p>如果看不懂请忽略此段。</p></blockquote>
 <p>输入如下命令设置时区为亚洲上海：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1477,8 +1445,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 <blockquote>
 <p>这里插几句题外话。</p>
 <p>你可能在某些地方看到一些 Linux 狂热粉/半吊子 狂吹 “Linux bug 数量少”、“稳定性吊打 Windows 和 macOS”、“安全性高”之类的<del>鬼话</del>发言。虽然我的观点一直是“系统的稳定性和安全性取决于用户”，但可以肯定的是，Linux 的安全性和稳定性确实很高，但是前提是没有安装 GUI 环境。。。。</p>
-<p>虽然较之前几年，Linux 的 GUI 环境尤其是桌面环境有了长足发展，从开始“能看个视频就不错”到现在“甚至还能玩游戏”，但是平心而论当前综合体验相较 Windows 和 macOS 来说，功能属于基本能用，bug 数量相较 Windows 和 macOS 堪称各有千秋。Linux 有很多桌面环境可以自由选择，但是几乎每一款都很坑。如果你没有感受到桌面的 bug 的话，只能说明你没发现（所以很多 Linux 用户都去玩窗口管理器了。。。</p>
-</blockquote>
+<p>虽然较之前几年，Linux 的 GUI 环境尤其是桌面环境有了长足发展，从开始“能看个视频就不错”到现在“甚至还能玩游戏”，但是平心而论当前综合体验相较 Windows 和 macOS 来说，功能属于基本能用，bug 数量相较 Windows 和 macOS 堪称各有千秋。Linux 有很多桌面环境可以自由选择，但是几乎每一款都很坑。如果你没有感受到桌面的 bug 的话，只能说明你没发现（所以很多 Linux 用户都去玩窗口管理器了。。。</p></blockquote>
 <p>咳咳，言归正传。上面已经说到，Linux 的桌面是独立于系统本身的，也就是说，系统的启动和桌面的启动是完完全全的两码事。如果你不想每次启动系统后都要在黑乎乎的终端手动启动桌面的话，可以借助显示管理器（Display Manager，简称 DM，有些地方叫做登录管理器）。显示管理器同样也有很多个，可以和不同的桌面环境交叉使用。</p>
 <p>没错，显示管理器和桌面环境也是分开的。虽然这看起来让人感觉有点凌乱，但是这不恰恰说明 Linux 的高度自由性吗？（雾）</p>
 <p>Arch Linux 可选择的桌面环境很多，这里只介绍相对主流和热门的两个桌面环境，显示管理器会附带介绍。请千万<strong>不要同时安装两个及以上的桌面环境</strong>，虽然确实可以同时安装多个桌面环境然后开机时切换自己想要的桌面环境，但是多个桌面环境的软件包和配置文件是共存于你的系统中的，而不同桌面的软件包和配置文件又往往有兼容性问题。说简单点，如果不知道怎么操作又盲目地安装多个桌面环境，<del>你可能怎么死的都不知道</del> 电脑容易出现一些奇怪的问题。也正因如此，如果你想更换桌面环境，请务必将前一个桌面环境<strong>卸载干净</strong>再安装新的桌面环境。</p>
@@ -1595,8 +1562,7 @@ EFI启动可以建立无限个主分区，所以不会询问，直接建立主�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>去除该行开头的 <code>#</code> 注释，然后 <code>Ctrl+X</code> 再输入 y 保存退出。</p>
-<p>重启后下次登录将默认禁用 Wayland。</p>
-</blockquote>
+<p>重启后下次登录将默认禁用 Wayland。</p></blockquote>
 <p>输入如下命令设置 GDM 开机自启：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1742,8 +1708,7 @@ wqy-zenhei</li>
 </div>
 </div><p>　　修改完成后，保存退出。</p>
 <blockquote>
-<p>重启电脑后在 fcitx 设置即可选择中文输入法。你也可以根据自己的需求安装其他输入法，如搜狗输入法。</p>
-</blockquote>
+<p>重启电脑后在 fcitx 设置即可选择中文输入法。你也可以根据自己的需求安装其他输入法，如搜狗输入法。</p></blockquote>
 <h3 id="添加-arch-linux-cn-源">添加 Arch Linux CN 源
 </h3><p>输入如下命令编辑 pacman.conf 文件：</p>
 <div class="highlight"><div class="chroma">
@@ -1768,8 +1733,7 @@ wqy-zenhei</li>
 </div><blockquote>
 <p>2023 年 12 月 18 日更新：</p>
 <p>由于 farseerfc 的 key 的信任数不足，新系统中安装 archlinuxcn-keyring 包前需要手动信任 farseerfc 的 key，详情见 <a class="link" href="https://www.archlinuxcn.org/archlinuxcn-keyring-manually-trust-farseerfc-key/"  target="_blank" rel="noopener"
-    >Arch 中文社区公告</a>。</p>
-</blockquote>
+    >Arch 中文社区公告</a>。</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1797,8 +1761,7 @@ wqy-zenhei</li>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>若密匙安装出错，则依次输入以下命令解决：</p>
-</blockquote>
+<p>若密匙安装出错，则依次输入以下命令解决：</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1824,8 +1787,7 @@ wqy-zenhei</li>
 </div><blockquote>
 <p>Arch Linux 中文社区仓库是由 Arch Linux 中文社区驱动的非官方软件仓库，包含许多官方仓库未提供的额外的软件包，以及已有软件的 git 版本等变种。一部分软件包的打包脚本来源于 AUR，但也有许多包与 AUR 不一样。
 详情见 <a class="link" href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/"  target="_blank" rel="noopener"
-    >Arch 中文社区</a></p>
-</blockquote>
+    >Arch 中文社区</a></p></blockquote>
 <h3 id="安装-yay没错就这名字">安装 yay（没错，就这名字）
 </h3><p>yay 是目前比较好用的 <a class="link" href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29"  target="_blank" rel="noopener"
     >AUR</a> 助手之一，可以方便快捷地帮助你完成 AUR 软件的安装。
@@ -1841,8 +1803,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
 </div><blockquote>
 <p>yay 使用上与 Pacman 大致一致。
 应避免以 root 权限运行 yay，即避免<code>sudo yay</code>这样的命令。
-你也可以选择其他的 AUR 助手。</p>
-</blockquote>
+你也可以选择其他的 AUR 助手。</p></blockquote>
 <p>有了 yay，我们可以直接输入命令安装 AUR 的软件，比如，我们可以输入如下命令安装 Chrome。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1998,7 +1959,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
         
         
             <div class="article-image">
-                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu15090158947573214185.png" 
+                <img src="/posts/clash-on-arch/clash.c7f03bc14ba7dafb058585eacfa574d8_hu_bd16d42db4ef9451.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -2102,12 +2063,12 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
         
             2020 - 
         
-        2024 清絮的博客
+        2025 清絮的博客
     </section>
     
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -2196,7 +2157,7 @@ archlinuxcn 中已经包含 yay，可以输入如下命令直接安装 yay：</p
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

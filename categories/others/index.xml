@@ -320,16 +320,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Clone themes&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Install dependencies&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Generate files and gulp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; gulp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; gulp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Deploy to Cloudflare Workers&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;cloudflare/wrangler-action@1.3.0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -354,7 +354,7 @@
 &lt;li&gt;我：（此处省略 1000+ 字）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;!-- more --&gt;
 &lt;h2 id=&#34;声明&#34;&gt;声明
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;限于篇幅，这篇文章并不会太多牵扯到手机通知推送的&lt;em&gt;技术细节&lt;/em&gt;。（毕竟主要是科普嘛~~）&lt;/li&gt;
@@ -369,13 +369,12 @@
 &lt;/h3&gt;&lt;p&gt;本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。&lt;/p&gt;
 &lt;h3 id=&#34;远程推送&#34;&gt;远程推送
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Apple 开发者文档给出的推送过程示意图如下：
 &lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;393&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu1387511374364777666.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu9772645220949237439.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu_ae9fc9a3fc7a0b41.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu_d57b0b5b84b8bf8f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;通知推送示意图&#34;
@@ -402,12 +401,11 @@
 &lt;blockquote&gt;
 &lt;p&gt;2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。&lt;/p&gt;
 &lt;p&gt;2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。&lt;/p&gt;
-&lt;p&gt;2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
 	width=&#34;1120&#34;
 	height=&#34;1387&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu4887501005989032296.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu14863234294249723984.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu_30828869e3969da6.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu_33691d77497d06b3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 示意图&#34;
@@ -431,7 +429,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;514&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu4285177711546657347.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu5508090596129122882.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu_13cce983dcb6f226.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu_9002070f8efe93fc.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 已连接示意图&#34;
@@ -477,8 +475,7 @@
 &lt;p&gt;涉及到功能与设备体验之间的潜在冲突时，遵循最终选择权给予用户的原则。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;——《Android 绿色应用公约 4.0》&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;——《Android 绿色应用公约 4.0》&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;del&gt;虽然在我看来公约里的部分 App 也不怎么绿色。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;我们可以看到，在 &lt;a class=&#34;link&#34; href=&#34;https://green-android.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android 绿色应用公约&lt;/a&gt;中的互联网大公司的软件屈指可数。&lt;del&gt;（好吧，别自欺欺人了，是基本上没有，有的也不咋绿色）&lt;/del&gt;&lt;/p&gt;
@@ -488,8 +485,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;　　统一推送联盟成立于2017年10月，挂靠单位是电信终端产业协会（TAF），接受工业和信息化部业务指导，住所设在北京。联盟核心任务是：探索推送行业创新，促进终端生产厂商、应用开发厂商和第三方服务提供商等进行深入合作，整合行业资源，助推形成统一的推送体系，创造绿色环境，减少与终端用户的利益冲突，提升整体行业形象，降低整体行业的实现成本，形成自律基础上的产业链协同发展，实现产业的共同繁荣。&lt;/p&gt;
 &lt;p&gt;　　统一推送联盟是在自愿、平等、互利、合作的基础上，由国内外消息推送产业相关的企、事业单位、社团组织、高等院校、科研院所等自愿结成的跨行业、开放性、非营利性的社会组织。本联盟旨在促进相关主体之间的交流和深度合作，促进供需对接和知识共享，形成优势互补，有效推进消息推送产业的发展，切实解决产业现实问题。&lt;/p&gt;
-&lt;p&gt;——统一推送联盟《关于我们》&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;——统一推送联盟《关于我们》&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;事实证明统一推送联盟是实现了巨大的影响的。&lt;/p&gt;
 &lt;p&gt;不到两年时间里，统一推送联盟就实现了由「全民讨论统一推送后 Android 美好的幸福生活」到「全民讨论 统一推送联盟 到底黄没黄」的巨大转变。&lt;/p&gt;
 &lt;p&gt;但是，我们要客观、发展性地看待问题，统一推送联盟一直在时刻努力着，前段时间还发表了一篇名为 &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/JJ_cd3kHiggqb8pNqAOQkA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -497,7 +493,7 @@
 &lt;img src=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;331&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu17888537735899403363.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu15949013312662787717.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu_b9512010b7e6d478.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu_cc784459e81087f3.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;官方回复「近期上线」&#34;
@@ -518,8 +514,7 @@
 &lt;p&gt;保证 QQ 和 WeChat 的通知时效性一直是困扰大部分开发者和所有国内手机厂商的难题。对此大部份国内手机厂商的解决方法都是对 QQ 和 WeChat 后台无限制以最大程度保活，实现通知推送正常。&lt;/p&gt;
 &lt;p&gt;而此时，Telegram 支持 FCM 的优点就体现出来了——对于我来说，我能第一时间收到你发给我的消息并回复，而 QQ 和 WeChat 还得等上一阵子。我希望私聊我的人用 Telegram 而不是 QQ 和 WeChat 的原因很简单：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我不想浪费我的时间在无意义的事情上，比如保证 QQ 和 WeChat 能及时收到消息。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;我不想浪费我的时间在无意义的事情上，比如保证 QQ 和 WeChat 能及时收到消息。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果你用某一品牌的手机，QQ 和 WeChat 经常收不到消息，请不要咒骂这个手机厂商。如果可以的话，请劝告你身边的人也不要这样做。手机厂商也在尽自己最大的努力，只不过他们只能尽人事听天命。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考链接：
@@ -533,13 +528,11 @@
         
         <guid>https://blog.linioi.com/posts/13/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- less --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;上个月，欧盟议会发布了一份关于数字经济未来发展策略的&lt;a class=&#34;link&#34; href=&#34;https://www.europarl.europa.eu/committees/en/product/product-details/20200602CAN55527&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;研究报告&lt;/a&gt;，提出将建立欧盟的“互联网防火墙”，报告明确指出这个防火墙将“像中国的一样，会封锁一部分支持或者容忍（对欧盟而言的）非法行为的第三方国家的互联网服务。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;研究报告&lt;/a&gt;，提出将建立欧盟的“互联网防火墙”，报告明确指出这个防火墙将“像中国的一样，会封锁一部分支持或者容忍（对欧盟而言的）非法行为的第三方国家的互联网服务。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;互联网防火墙可能是有预兆的必然&#34;&gt;互联网防火墙可能是有预兆的必然
 &lt;/h2&gt;&lt;p&gt;不禁让我想起了去年俄罗斯开始和中国交流“互联网防火墙”的建设。&lt;/p&gt;
 &lt;p&gt;所谓“网络主权”正在被越来越多的国家挂在嘴上，而所谓“互联网自由”逐渐变成了一个笑话。一切真如很久以前有人说的，「互联网审查并将成为世界绝大多数国家的共识，互联网自由将随着互联网的发展而有名无实」。&lt;/p&gt;
@@ -551,15 +544,13 @@
 当我跟现在的年轻人讲到我在1914年以前去了印度和美国，没有带护照，也根本没见过护照是什么样子，我总是看到他们脸上的惊奇。
 人们上车下车，不需要问什么，也不被人盘问；今天人们被要求填写的上百份表格，当时一份也不用填写。没有居留许可，没有签证，没有刁难。
 今天的国界线，因为大家彼此之间病态的不信任，已经被海关、警察、哨所变成了一道铁丝网，而那时的国界线无非是一条象征性的界线，谁都可以不假思索地越过，就如同格林尼治的子午线一样。&lt;/p&gt;
-&lt;p&gt;　　　　——茨威格 《昨日的世界》&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;　　　　——茨威格 《昨日的世界》&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;所谓自由只是在管制下的一点漏洞。当制度逐渐完善，自由只剩下狭义的自由，也就是政治中的「&lt;strong&gt;真正的自由&lt;/strong&gt;」。&lt;/p&gt;
 &lt;p&gt;想起许多年前无数人苦苦追求的“言论自由”，又与无数人把西方某些国家当作自由的标杆，心中自由的圣地，便觉得可笑到了极点，世界总是这样让人意想不到、啼笑皆非。&lt;/p&gt;
 &lt;p&gt;引用一位博主的一段话：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;互联网也曾撕开一个时代的裂缝，现在中文互联网上还有人在怀念上一个十年乃至上上个十年，怀念那时候自由的互联网风气，全世界的网站、服务须臾指间，点击可达——和茨威格一样，他们也认为那是理所当然。&lt;/p&gt;
-&lt;p&gt;其实我们都不过是见证了裂缝渐渐闭合的过程而已，现在这个过程也要降临到欧洲了。&lt;strong&gt;一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;其实我们都不过是见证了裂缝渐渐闭合的过程而已，现在这个过程也要降临到欧洲了。&lt;strong&gt;一直到有一天，我们也会像讲一个神话故事一样告诉下一代：“我们这个时代，访问外国的任何互联网服务都不需要护照。”&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;恍然间，昨日如梦。&lt;/p&gt;
 &lt;p&gt;参考文章:&lt;/p&gt;
 &lt;ul&gt;
@@ -576,9 +567,8 @@
         <guid>https://blog.linioi.com/posts/9/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;无需配置 Hexo 环境~
-在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
+在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- less --&gt;
 &lt;h2 id=&#34;你要先清楚某些东西&#34;&gt;你要先清楚某些东西…
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在私有仓库下使用 GitHub Action 是&lt;strong&gt;不完全免费的&lt;/strong&gt;。
@@ -589,8 +579,7 @@
 &lt;p&gt;据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。
 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。&lt;/p&gt;
 &lt;p&gt;需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。&lt;/p&gt;
-&lt;p&gt;话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;在测试过程中，&lt;strong&gt;我发现即使使用 Linux 作为 Operating system，  GitHub Action 实际工作时间也和 GitHub 计费时间并不相同&lt;/strong&gt;。
 同时，我在 GitHub Action 界面发现如下文字：&lt;/li&gt;
@@ -624,8 +613,7 @@
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;特别提醒，对于 GitHub 免费用户，私有仓库每个月的数据传输上限为 1GB&lt;/strong&gt;。 &amp;lt;===&lt;em&gt;该部分内容源自 GitHub 文档，但是实际操作中并未发现该现象，目前还在考证中&lt;/em&gt;。
-GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&gt;
-&lt;/blockquote&gt;
+GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;在博客源码中新建&lt;code&gt;.github/workflows/hexo.yml&lt;/code&gt;文件，在文件添加如下内容：&lt;/li&gt;
 &lt;/ol&gt;
@@ -693,7 +681,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;node_modules&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;${{ runner.os }}-node-${{ hashFiles(&amp;#39;**/package-lock.json&amp;#39;) }}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;restore-keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          ${{ runner.os }}-node-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          ${{ runner.os }}-node-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Install Dependencies&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Step 3 &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;steps.cache.outputs.cache-hit != &amp;#39;true&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 如果变量 cache-hit 不等于 true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 安装 NPM 相关依赖&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -714,8 +702,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。&lt;/p&g
 &lt;li&gt;push 你的博客源码到刚刚新建的仓库。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;建议在 push 前进行一次 &lt;code&gt;hexo clean&lt;/code&gt;。且在每一次&lt;code&gt;hexo g&lt;/code&gt;后准备 push，都应该进行一次 &lt;code&gt;hexo clean&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;建议在 push 前进行一次 &lt;code&gt;hexo clean&lt;/code&gt;。且在每一次&lt;code&gt;hexo g&lt;/code&gt;后准备 push，都应该进行一次 &lt;code&gt;hexo clean&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;输入如下命令再生成一对 SSH 密匙。&lt;/li&gt;
 &lt;/ol&gt;
@@ -847,7 +834,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    auth_header=&amp;#34;$(git config --local --get http.https://github.com/.extraheader)&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git submodule sync --recursive
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git -c &amp;#34;http.extraheader=$auth_header&amp;#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;7.缓存 .npm 目录，加快构建速度&lt;/p&gt;
@@ -881,7 +868,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Install dependencies&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;9.生成文件。&lt;/p&gt;
@@ -894,7 +881,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Generate files&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages&lt;/p&gt;
@@ -921,7 +908,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git add .
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;    git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;成品&#34;&gt;成品
@@ -1030,11 +1017,11 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Install dependencies&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install hexo-cli -g
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Generate files&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Deploy blog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
@@ -1045,14 +1032,13 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git config --local user.name &amp;#34;yourname&amp;#34; # 你的用户名
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git add .
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;我的配置文件&#34;&gt;我的配置文件
 &lt;/h2&gt;&lt;p&gt;如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL&lt;/p&gt;&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1142,7 +1128,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Clone themes&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Cache Node Dependencies&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;cache&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -1155,11 +1141,11 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install hexo-cli -g
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm install
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm audit fix&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          npm audit fix&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Generate files&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          hexo clean &amp;amp;&amp;amp; hexo generate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Deploy blog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;
@@ -1170,7 +1156,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git config --local user.name &amp;#34;RimuruW&amp;#34; # 你的用户名
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git add .
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git commit -m &amp;#34;GitHub Actions Auto Builder at $(date +&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          git push --force &amp;#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&amp;#34; master:master&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;参考文档：&lt;/p&gt;
@@ -1190,8 +1176,7 @@ GH_TOKEN 内容为上面所获取的 Token。&lt;/p&gt;
         <guid>https://blog.linioi.com/posts/7/</guid>
         <description>&lt;p&gt;第一篇博客，Hello world~~&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;del&gt;希望自己删库跑路不要那么快&lt;/del&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;希望自己删库跑路不要那么快&lt;/del&gt;&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         

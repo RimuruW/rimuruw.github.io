@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/aria2-for-termux/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Android 一键安装配置 Aria2">
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Android 一键安装配置 Aria2">
 <meta property='og:description' content="Aria2 是什么？ Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。\n&ndash; 摘自 维基百科\n如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。\n为什么会有这篇文章 Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 AriaNg 这样较完善和便利的 GUI 管理界面），但是配置 Aria2 依然足以劝退某些小白。\n为此，又有一众大佬制作 Aria2 Docker 和 Aria2 一键管理脚本，使得即便是小白也可以轻松完成 Aria2 的配置安装。\n遗憾的是，可能是因为大部分 Aria2 用户集中在 Linux 平台，这些 Aria2 一键管理脚本也一直仅支持 Linux 平台。为此，我基于 P3TERX 的 aria2.sh，制作了该一键管理脚本的 Termux 移植版 Aria2-Termux，便于 Android 用户一键安装、配置和管理 Aria2。\n但是考虑到 Termux 在普通 Android 用户中的使用普及度，我想一篇较为详细的说明性文章还是有必要的，于是便自己动手写了这样一篇简略的文章，暂作为 Aria2-Termux 的使用文档。\n下面，让我们开始…\n下载和安装 Termux 目前仅推荐以下两个下载渠道下载 Termux\nGoogle Play Store： https://play.google.com/store/apps/details?id=com.termux 因为这些原因，Google Play 不再是受推荐的下载渠道。\n">
 <meta property='og:url' content='https://blog.linioi.com/posts/aria2-for-termux/'>
 <meta property='og:site_name' content='清絮的博客'>
@@ -61,7 +61,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
+                        <img src="/img/avatar_hu_a72892fbb85e8724.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -337,8 +337,7 @@
 </h2><blockquote>
 <p>Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。</p>
 <p>&ndash; 摘自 <a class="link" href="https://zh.wikipedia.org/zh-hans/Aria2?wprov=sfla1"  target="_blank" rel="noopener"
-    >维基百科</a></p>
-</blockquote>
+    >维基百科</a></p></blockquote>
 <p>如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。</p>
 <h2 id="为什么会有这篇文章">为什么会有这篇文章
 </h2><p>Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 <a class="link" href="https://github.com/mayswind/AriaNg"  target="_blank" rel="noopener"
@@ -358,8 +357,7 @@
 </ul>
 <blockquote>
 <p><em>因为<a class="link" href="https://github.com/termux/termux-app/issues/1072"  target="_blank" rel="noopener"
-    >这些原因</a>，Google Play 不再是受推荐的下载渠道。</em></p>
-</blockquote>
+    >这些原因</a>，Google Play 不再是受推荐的下载渠道。</em></p></blockquote>
 <ul>
 <li>F-Droid：https://f-droid.org/packages/com.termux/</li>
 </ul>
@@ -370,7 +368,7 @@
 <p><img src="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg"
 	width="1080"
 	height="1390"
-	srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu11526315287323940314.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu15580938213580145718.jpg 1024w"
+	srcset="/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu_5162b873194279e2.jpg 480w, /posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu_70f98b34cf49fc49.jpg 1024w"
 	loading="lazy"
 	
 		alt="Termux 界面"
@@ -403,7 +401,7 @@
 <p><img src="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg"
 	width="1073"
 	height="814"
-	srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu9165247423246775450.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu18235387852486129134.jpg 1024w"
+	srcset="/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu_ddc1731b8342c649.jpg 480w, /posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu_4baf43cb9a107504.jpg 1024w"
 	loading="lazy"
 	
 		alt="脚本启动后界面"
@@ -425,7 +423,7 @@
 <p><img src="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg"
 	width="1080"
 	height="984"
-	srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu4172826850386494957.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu14286092974263947683.jpg 1024w"
+	srcset="/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu_5eb56527e6a4a09a.jpg 480w, /posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu_2f5c76a4e5bfe380.jpg 1024w"
 	loading="lazy"
 	
 		alt="Aria2 安装和启动成功图"
@@ -441,7 +439,7 @@
 <img src="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png"
 	width="1080"
 	height="410"
-	srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu7382376384748909761.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu1024724787410120803.png 1024w"
+	srcset="/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu_c6fe8c7bc7b26276.png 480w, /posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu_6e7c140b572eb69f.png 1024w"
 	loading="lazy"
 	
 		alt="Release wakelock"
@@ -459,7 +457,7 @@
 <p><img src="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg"
 	width="1080"
 	height="521"
-	srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu9276399075247098766.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu1075058956219610262.jpg 1024w"
+	srcset="/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu_29dcdce4b021b254.jpg 480w, /posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu_370041153d8cca9e.jpg 1024w"
 	loading="lazy"
 	
 		alt="Aria2 配置信息"
@@ -471,20 +469,18 @@
 	
 ></p>
 <blockquote>
-<p>对于大部分普通用户，你只需要复制下面 <code>AriaNg</code> 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容</p>
-</blockquote>
+<p>对于大部分普通用户，你只需要复制下面 <code>AriaNg</code> 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容</p></blockquote>
 <blockquote>
 <p>对于已经对 Aria2 有所了解的用户，请明确以下内容</p>
 <ul>
 <li>大多数情况下，请将 Aria2 的地址设为 127.0.0.1 而非内网 IP，已确保连接在 Aria2 每次启动后都始终可用</li>
 <li>如果你需要在其他同区域网设备上连接该设备，Aria2 地址请设为配置信息中的「内网 IP」</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <p>进入 AriaNg 并连接成功后界面如图所示</p>
 <p><img src="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg"
 	width="1080"
 	height="2340"
-	srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu1322458794347702212.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu5146318273024582684.jpg 1024w"
+	srcset="/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu_eb29cede18a86da9.jpg 480w, /posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu_ff79fe7bcb9974c2.jpg 1024w"
 	loading="lazy"
 	
 		alt="AriaNg 连接成功"
@@ -641,12 +637,12 @@
         
             2020 - 
         
-        2024 清絮的博客
+        2025 清絮的博客
     </section>
     
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -735,7 +731,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

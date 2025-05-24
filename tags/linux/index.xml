@@ -20,14 +20,12 @@
     &gt;README&lt;/a&gt; 的声明则是对这场闹剧的终结。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Qv2ray: &lt;em&gt;2019-03-28 - 2021-08-17&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Qv2ray: &lt;em&gt;2019-03-28 - 2021-08-17&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;v2.7.0&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者&lt;/p&gt;
 &lt;p&gt;致敬&lt;/p&gt;
-&lt;p&gt;gcc 写于 8 月 17 日&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;gcc 写于 8 月 17 日&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。&lt;/p&gt;
 &lt;p&gt;属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。&lt;/p&gt;
 &lt;h2 id=&#34;安装-clash&#34;&gt;安装 Clash
@@ -110,7 +108,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999.png&#34;
 	width=&#34;2052&#34;
 	height=&#34;1456&#34;
-	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu3865299393144146600.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu8750526546762586813.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu_9c55013dfb0256fc.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012020999_hu_cb4bee6e254fd6f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网络代理&#34;
@@ -125,7 +123,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124.png&#34;
 	width=&#34;970&#34;
 	height=&#34;860&#34;
-	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hu10760433836594045509.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hu14728277693818334004.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hu_cf31003e17caae2b.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818012226124_hu_a830c9e7f734693b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网络代理&#34;
@@ -752,7 +750,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;1044&#34;
-	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu9184890319638956520.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu6896752068641693268.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu_cd70a862934e7fd.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818024446945_hu_2832f7abfb97d8d4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;yarn start&#34;
@@ -769,7 +767,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047.png&#34;
 	width=&#34;2564&#34;
 	height=&#34;1536&#34;
-	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_hu9025717971762774464.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_hu1468116074052733575.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_hu_1a4777bb96e1c4c.png 480w, https://blog.linioi.com/posts/clash-on-arch/image-20210818025247047_hu_46b1bf3659dd30a3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;clash-dashboard&#34;

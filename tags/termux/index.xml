@@ -16,8 +16,7 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Aria2 是一款自由、跨平台命令行界面的下载管理器，该软件根据 GPLv2 许可证进行分发。支持的下载协议有：HTTP、HTTPS、FTP、Bittorrent 和 Metalink。&lt;/p&gt;
 &lt;p&gt;&amp;ndash; 摘自 &lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/zh-hans/Aria2?wprov=sfla1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;维基百科&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;维基百科&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如上所述，不同于其他下载器（如 IDM+）或闭源或付费，Aria2 在支持多种下载协议的基础上保持开源和免费，是目前最强大的下载器之一。&lt;/p&gt;
 &lt;h2 id=&#34;为什么会有这篇文章&#34;&gt;为什么会有这篇文章
 &lt;/h2&gt;&lt;p&gt;Aria2 固然强大，但是它的配置和使用并不像其他下载器全 GUI 化，这对某些新手来说非常不友好。即使已经有一众大佬出手降低 Aria2 的使用门槛（如 &lt;a class=&#34;link&#34; href=&#34;https://github.com/mayswind/AriaNg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -37,8 +36,7 @@
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;因为&lt;a class=&#34;link&#34; href=&#34;https://github.com/termux/termux-app/issues/1072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;这些原因&lt;/a&gt;，Google Play 不再是受推荐的下载渠道。&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;这些原因&lt;/a&gt;，Google Play 不再是受推荐的下载渠道。&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;F-Droid：https://f-droid.org/packages/com.termux/&lt;/li&gt;
 &lt;/ul&gt;
@@ -49,7 +47,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1390&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu11526315287323940314.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu15580938213580145718.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu_5162b873194279e2.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/4b9fd56fc248e0308f60c1dc4db74b87_hu_70f98b34cf49fc49.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Termux 界面&#34;
@@ -82,7 +80,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89.jpg&#34;
 	width=&#34;1073&#34;
 	height=&#34;814&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu9165247423246775450.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu18235387852486129134.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu_ddc1731b8342c649.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/f51fbae04df03b5a4ee1f0e1a1d87f89_hu_4baf43cb9a107504.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;脚本启动后界面&#34;
@@ -104,7 +102,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;984&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu4172826850386494957.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu14286092974263947683.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu_5eb56527e6a4a09a.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/2987f46b9989121d49fde4389adfef06_hu_2f5c76a4e5bfe380.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Aria2 安装和启动成功图&#34;
@@ -120,7 +118,7 @@
 &lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04.png&#34;
 	width=&#34;1080&#34;
 	height=&#34;410&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu7382376384748909761.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu1024724787410120803.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu_c6fe8c7bc7b26276.png 480w, https://blog.linioi.com/posts/aria2-for-termux/c8f5978d2e0dad424b82bcdca8934e04_hu_6e7c140b572eb69f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Release wakelock&#34;
@@ -138,7 +136,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;521&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu9276399075247098766.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu1075058956219610262.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu_29dcdce4b021b254.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/b5ed855aea5dcb1ae103be819b723fc3_hu_370041153d8cca9e.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Aria2 配置信息&#34;
@@ -150,20 +148,18 @@
 	
 &gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;对于大部分普通用户，你只需要复制下面 &lt;code&gt;AriaNg&lt;/code&gt; 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;对于大部分普通用户，你只需要复制下面 &lt;code&gt;AriaNg&lt;/code&gt; 后的链接并在浏览器打开即可进入 AriaNg，其他细节属于你无需关心的内容&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;对于已经对 Aria2 有所了解的用户，请明确以下内容&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;大多数情况下，请将 Aria2 的地址设为 127.0.0.1 而非内网 IP，已确保连接在 Aria2 每次启动后都始终可用&lt;/li&gt;
 &lt;li&gt;如果你需要在其他同区域网设备上连接该设备，Aria2 地址请设为配置信息中的「内网 IP」&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;进入 AriaNg 并连接成功后界面如图所示&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
-	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu1322458794347702212.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu5146318273024582684.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu_eb29cede18a86da9.jpg 480w, https://blog.linioi.com/posts/aria2-for-termux/945faa0bd9be7d37683142a2814d3006_hu_ff79fe7bcb9974c2.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;AriaNg 连接成功&#34;

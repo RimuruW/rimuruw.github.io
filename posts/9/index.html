@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.linioi.com/posts/9/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="GitHub Action 实现 Hexo 博客持续集成">
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="GitHub Action 实现 Hexo 博客持续集成">
 <meta property='og:description' content=" 无需配置 Hexo 环境~ 在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！\n你要先清楚某些东西… 在私有仓库下使用 GitHub Action 是不完全免费的。 对于免费用户，你每个月只能使用 GitHub Action 工作 2000 min。这个数据计算方法特别有意思，详见 GitHub 据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。\n需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。\n话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。\n在测试过程中，我发现即使使用 Linux 作为 Operating system， GitHub Action 实际工作时间也和 GitHub 计费时间并不相同。 同时，我在 GitHub Action 界面发现如下文字： 1 This is the workflow execution time which may be different than the billed time. 如果你需要自定义域名，你的CNAME文件应放在 Hexo 源码仓库的 source 文件夹下。 hexo-action@v1.0.0 会自动删除项目仓库下的.deploy_git文件。即每次提交源码后，部署 Hexo 的那个仓库的所有历史提交将会被清空。这个问题在 hexo-action@1.0.1 被修复。我认为这个修复是不合理的。 如果需要添加额外的 node module，则在package.json中添加相应依赖。 默认已满足的条件 已注册 GitHub 账号 已有一个部署到 GitHub 且工作正常的 Hexo 博客 有一定动手能力 接下来，让我们开始……\n">
 <meta property='og:url' content='https://blog.linioi.com/posts/9/'>
 <meta property='og:site_name' content='清絮的博客'>
@@ -61,7 +61,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
+                        <img src="/img/avatar_hu_a72892fbb85e8724.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -340,9 +340,8 @@
     
     <blockquote>
 <p>无需配置 Hexo 环境~
-在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！</p>
-</blockquote>
-<!-- raw HTML omitted -->
+在任何可以打开网页的设备上即可编辑你的 Hexo 博客并部署！</p></blockquote>
+<!-- less -->
 <h2 id="你要先清楚某些东西">你要先清楚某些东西…
 </h2><ul>
 <li>在私有仓库下使用 GitHub Action 是<strong>不完全免费的</strong>。
@@ -353,8 +352,7 @@
 <p>据我多次测试，对于我的博客，GitHub Action 每次部署大概要耗时 1 min。
 假设你每次提交需要耗时 2 min，这意味着你如果使用私有仓库存放后续操作中的源码，你每个月只能提交 1000 次博客。折算下来，也就是说，你每天只能提交 33 次博客。</p>
 <p>需要特别说明的，上面的时间计算是在 Linux 环境下的计算。如果你在后续操作中使用的 Operating system 是 Windows 或 macOS ，则 GitHub Action 记录的时间分别是你实际使用时间的 2 倍和 10 倍。</p>
-<p>话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。</p>
-</blockquote>
+<p>话说，如果你能做到每天提交 33 次博客，请务必留个联系方式让我认识一下。没别的意思，就是想瞻仰一下劳模的风采。</p></blockquote>
 <ul>
 <li>在测试过程中，<strong>我发现即使使用 Linux 作为 Operating system，  GitHub Action 实际工作时间也和 GitHub 计费时间并不相同</strong>。
 同时，我在 GitHub Action 界面发现如下文字：</li>
@@ -388,8 +386,7 @@
 </ol>
 <blockquote>
 <p><strong>特别提醒，对于 GitHub 免费用户，私有仓库每个月的数据传输上限为 1GB</strong>。 &lt;===<em>该部分内容源自 GitHub 文档，但是实际操作中并未发现该现象，目前还在考证中</em>。
-GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
-</blockquote>
+GitHub Actions 部署时使用的数据不会计入数据传输上限。</p></blockquote>
 <ol start="2">
 <li>在博客源码中新建<code>.github/workflows/hexo.yml</code>文件，在文件添加如下内容：</li>
 </ol>
@@ -457,7 +454,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">node_modules</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">          ${{ runner.os }}-node-</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          ${{ runner.os }}-node-</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Dependencies</span><span class="w"> </span><span class="c"># Step 3 </span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">steps.cache.outputs.cache-hit != &#39;true&#39;</span><span class="w"> </span><span class="c"># 如果变量 cache-hit 不等于 true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">npm install</span><span class="w"> </span><span class="c"># 安装 NPM 相关依赖</span><span class="w">
@@ -478,8 +475,7 @@ GitHub Actions 部署时使用的数据不会计入数据传输上限。</p>
 <li>push 你的博客源码到刚刚新建的仓库。</li>
 </ol>
 <blockquote>
-<p>建议在 push 前进行一次 <code>hexo clean</code>。且在每一次<code>hexo g</code>后准备 push，都应该进行一次 <code>hexo clean</code></p>
-</blockquote>
+<p>建议在 push 前进行一次 <code>hexo clean</code>。且在每一次<code>hexo g</code>后准备 push，都应该进行一次 <code>hexo clean</code></p></blockquote>
 <ol start="4">
 <li>输入如下命令再生成一对 SSH 密匙。</li>
 </ol>
@@ -611,7 +607,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">    auth_header=&#34;$(git config --local --get http.https://github.com/.extraheader)&#34;
 </span></span></span><span class="line"><span class="cl"><span class="sd">    git submodule sync --recursive
-</span></span></span><span class="line"><span class="cl"><span class="sd">    git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="sd">    git -c &#34;http.extraheader=$auth_header&#34; -c protocol.version=2 submodule update --init --force --recursive --depth=1</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>7.缓存 .npm 目录，加快构建速度</p>
@@ -645,7 +641,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install dependencies</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">    npm install hexo-cli -g
-</span></span></span><span class="line"><span class="cl"><span class="sd">    npm install</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="sd">    npm install</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>9.生成文件。</p>
@@ -658,7 +654,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Generate files</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">    hexo clean &amp;&amp; hexo generate</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="sd">    hexo clean &amp;&amp; hexo generate</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>10.将 GitHub Pages 仓库克隆下来，并将 .git 目录移动到生成文件的文件夹文件夹中（这样可以保留之前的 commit 记录），然后再将其推送到 GitHub Pages</p>
@@ -685,7 +681,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">    git config --local user.name &#34;yourname&#34; # 你的用户名
 </span></span></span><span class="line"><span class="cl"><span class="sd">    git add .
 </span></span></span><span class="line"><span class="cl"><span class="sd">    git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">    git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="sd">    git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="成品">成品
@@ -794,11 +790,11 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install dependencies</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">          npm install hexo-cli -g
-</span></span></span><span class="line"><span class="cl"><span class="sd">          npm install</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          npm install</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Generate files</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">          hexo clean &amp;&amp; hexo generate</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          hexo clean &amp;&amp; hexo generate</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy blog</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
@@ -809,14 +805,13 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git config --local user.name &#34;yourname&#34; # 你的用户名
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git add .
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="我的配置文件">我的配置文件
 </h2><p>如果你还是无法理解的话，可以直接复制我的配置文件，然后修改用户名和邮箱为自己 GitHub 的用户名和邮箱。</p>
 <blockquote>
-<p>Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL</p>
-</blockquote>
+<p>Note：请注意修改 Clone themes 中的主题链接为你所用的主题的 URL</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -906,7 +901,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Clone themes</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          git clone -b dev https://github.com/YunYouJun/hexo-theme-yun.git themes/yun</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache Node Dependencies</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">cache</span><span class="w">
@@ -919,11 +914,11 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">          npm install hexo-cli -g
 </span></span></span><span class="line"><span class="cl"><span class="sd">          npm install
-</span></span></span><span class="line"><span class="cl"><span class="sd">          npm audit fix</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          npm audit fix</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Generate files</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">          hexo clean &amp;&amp; hexo generate</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          hexo clean &amp;&amp; hexo generate</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy blog</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
@@ -934,7 +929,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git config --local user.name &#34;RimuruW&#34; # 你的用户名
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git add .
 </span></span></span><span class="line"><span class="cl"><span class="sd">          git commit -m &#34;GitHub Actions Auto Builder at $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="sd">          git push --force &#34;https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}&#34; master:master</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>参考文档：</p>
@@ -1044,7 +1039,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
         
         
             <div class="article-image">
-                <img src="/posts/3/cover.27ce992381b08e5c6a5f984413b2bf45_hu5314463091030808051.jpg" 
+                <img src="/posts/3/cover.27ce992381b08e5c6a5f984413b2bf45_hu_b2ae3d35e886bcbf.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1096,12 +1091,12 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
         
             2020 - 
         
-        2024 清絮的博客
+        2025 清絮的博客
     </section>
     
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -1190,7 +1185,7 @@ GH_TOKEN 内容为上面所获取的 Token。</p>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

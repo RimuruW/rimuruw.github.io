@@ -21,7 +21,7 @@
 &lt;li&gt;我：（此处省略 1000+ 字）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;忽然我意识到了，其实大部分人对自己的 IM 软件一无所知，那么一篇有必要的科普文章就应该开始动手了。Telegram 的优点当然不仅在于通知推送，但是我想从通知推送说起……&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;!-- more --&gt;
 &lt;h2 id=&#34;声明&#34;&gt;声明
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;限于篇幅，这篇文章并不会太多牵扯到手机通知推送的&lt;em&gt;技术细节&lt;/em&gt;。（毕竟主要是科普嘛~~）&lt;/li&gt;
@@ -36,13 +36,12 @@
 &lt;/h3&gt;&lt;p&gt;本地推送其实就是 App 的定时推送。App 注册本地推送通知，指定一个时间并在该时间推送通知。&lt;/p&gt;
 &lt;h3 id=&#34;远程推送&#34;&gt;远程推送
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;前提已满足条件：App 已注册远程推送通知。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Apple 开发者文档给出的推送过程示意图如下：
 &lt;img src=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;393&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu1387511374364777666.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu9772645220949237439.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu_ae9fc9a3fc7a0b41.png 480w, https://blog.linioi.com/posts/3/f70fd156eda99becc550aa1e97bc87d6_hu_d57b0b5b84b8bf8f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;通知推送示意图&#34;
@@ -69,12 +68,11 @@
 &lt;blockquote&gt;
 &lt;p&gt;2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。&lt;/p&gt;
 &lt;p&gt;2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。&lt;/p&gt;
-&lt;p&gt;2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7.png&#34;
 	width=&#34;1120&#34;
 	height=&#34;1387&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu4887501005989032296.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu14863234294249723984.png 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu_30828869e3969da6.png 480w, https://blog.linioi.com/posts/3/430ad3ada8a599674eb6136131587ad7_hu_33691d77497d06b3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 示意图&#34;
@@ -98,7 +96,7 @@
 &lt;p&gt;&lt;img src=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;514&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu4285177711546657347.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu5508090596129122882.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu_13cce983dcb6f226.jpg 480w, https://blog.linioi.com/posts/3/6f4d17b500537aebf393b3e47377dfc3_hu_9002070f8efe93fc.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;FCM 已连接示意图&#34;
@@ -144,8 +142,7 @@
 &lt;p&gt;涉及到功能与设备体验之间的潜在冲突时，遵循最终选择权给予用户的原则。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;——《Android 绿色应用公约 4.0》&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;——《Android 绿色应用公约 4.0》&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;del&gt;虽然在我看来公约里的部分 App 也不怎么绿色。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;我们可以看到，在 &lt;a class=&#34;link&#34; href=&#34;https://green-android.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android 绿色应用公约&lt;/a&gt;中的互联网大公司的软件屈指可数。&lt;del&gt;（好吧，别自欺欺人了，是基本上没有，有的也不咋绿色）&lt;/del&gt;&lt;/p&gt;
@@ -155,8 +152,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;　　统一推送联盟成立于2017年10月，挂靠单位是电信终端产业协会（TAF），接受工业和信息化部业务指导，住所设在北京。联盟核心任务是：探索推送行业创新，促进终端生产厂商、应用开发厂商和第三方服务提供商等进行深入合作，整合行业资源，助推形成统一的推送体系，创造绿色环境，减少与终端用户的利益冲突，提升整体行业形象，降低整体行业的实现成本，形成自律基础上的产业链协同发展，实现产业的共同繁荣。&lt;/p&gt;
 &lt;p&gt;　　统一推送联盟是在自愿、平等、互利、合作的基础上，由国内外消息推送产业相关的企、事业单位、社团组织、高等院校、科研院所等自愿结成的跨行业、开放性、非营利性的社会组织。本联盟旨在促进相关主体之间的交流和深度合作，促进供需对接和知识共享，形成优势互补，有效推进消息推送产业的发展，切实解决产业现实问题。&lt;/p&gt;
-&lt;p&gt;——统一推送联盟《关于我们》&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;——统一推送联盟《关于我们》&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;事实证明统一推送联盟是实现了巨大的影响的。&lt;/p&gt;
 &lt;p&gt;不到两年时间里，统一推送联盟就实现了由「全民讨论统一推送后 Android 美好的幸福生活」到「全民讨论 统一推送联盟 到底黄没黄」的巨大转变。&lt;/p&gt;
 &lt;p&gt;但是，我们要客观、发展性地看待问题，统一推送联盟一直在时刻努力着，前段时间还发表了一篇名为 &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/JJ_cd3kHiggqb8pNqAOQkA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -164,7 +160,7 @@
 &lt;img src=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;331&#34;
-	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu17888537735899403363.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu15949013312662787717.jpg 1024w&#34;
+	srcset=&#34;https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu_b9512010b7e6d478.jpg 480w, https://blog.linioi.com/posts/3/ef81f741eee5fba23e6c1678aa187b4a_hu_cc784459e81087f3.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;官方回复「近期上线」&#34;
@@ -185,8 +181,7 @@
 &lt;p&gt;保证 QQ 和 WeChat 的通知时效性一直是困扰大部分开发者和所有国内手机厂商的难题。对此大部份国内手机厂商的解决方法都是对 QQ 和 WeChat 后台无限制以最大程度保活，实现通知推送正常。&lt;/p&gt;
 &lt;p&gt;而此时，Telegram 支持 FCM 的优点就体现出来了——对于我来说，我能第一时间收到你发给我的消息并回复，而 QQ 和 WeChat 还得等上一阵子。我希望私聊我的人用 Telegram 而不是 QQ 和 WeChat 的原因很简单：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我不想浪费我的时间在无意义的事情上，比如保证 QQ 和 WeChat 能及时收到消息。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;我不想浪费我的时间在无意义的事情上，比如保证 QQ 和 WeChat 能及时收到消息。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果你用某一品牌的手机，QQ 和 WeChat 经常收不到消息，请不要咒骂这个手机厂商。如果可以的话，请劝告你身边的人也不要这样做。手机厂商也在尽自己最大的努力，只不过他们只能尽人事听天命。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考链接：

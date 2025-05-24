@@ -17,12 +17,10 @@
 &lt;li&gt;教程使用的 Minecraft 服务端程序为&lt;strong&gt;官方服务端程序&lt;/strong&gt;，你可以根据自身需求下载第三方服务端程序以获取更好的插件支持。第三方服务端程序的运行方法可能与官方版不同。&lt;/li&gt;
 &lt;li&gt;教程不考虑设备可能出现的如&lt;strong&gt;性能或内存不足导致无法运行服务端程序&lt;/strong&gt;、&lt;strong&gt;因审查地区网络原因导致的设备无法下载服务端文件程序&lt;/strong&gt;等问题。如出现以上问题请自己寻找解决方法。&lt;/li&gt;
 &lt;li&gt;这里仅介绍 Linux 与 Android 的搭建方法。不介绍 Windows 是因为 Windows 搭建太简单了，而且网上教程实在有点多；&lt;del&gt;不介绍 macOS 是因为买不起。&lt;/del&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;linux-搭建教程&#34;&gt;Linux 搭建教程
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;本节无特殊说明的话，所有 「#」&lt;strong&gt;均代表注释&lt;/strong&gt;，所有可能需要 root 权限执行的命令&lt;strong&gt;均会在命令最前面加上 「sudo」&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;本节无特殊说明的话，所有 「#」&lt;strong&gt;均代表注释&lt;/strong&gt;，所有可能需要 root 权限执行的命令&lt;strong&gt;均会在命令最前面加上 「sudo」&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;linux-设备获取&#34;&gt;Linux 设备获取
 &lt;/h3&gt;&lt;p&gt;你可以在家用电脑上安装 Linux，或者购置一台 Linux 服务器。无论如何，建议服务端设备内存大于 3G 且带宽大于 5M 以确保服务器连接稳定（如果联机人数少则相应配置可以低一点，具体配置需求建议自行测试）。&lt;/p&gt;
 &lt;p&gt;如需购买服务器，建议购买按量计费的服务器以减少相应费用。&lt;strong&gt;大多数情况下，带宽可能是你首先应该考虑的方面&lt;/strong&gt;。因此，请尽可能&lt;strong&gt;避开&lt;/strong&gt;那些 1Mbps 带宽的「高性能服务器」，如果你不慎已入手一台，请尽早退款……&lt;/p&gt;
@@ -39,19 +37,19 @@
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;谷歌云&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）&lt;!-- raw HTML omitted --&gt;缺点：有点贵…&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;优点：高速稳定，新用户有 $300 美元赠金（不过现在只有 90 天了）&lt;br&gt;缺点：有点贵…&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;土豪和白嫖怪的不二之选&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.vultr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vultr&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;优点：便宜，价格亲民，支持支付宝支付。&lt;!-- raw HTML omitted --&gt;缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;优点：便宜，价格亲民，支持支付宝支付。&lt;br&gt;缺点：相同价位性能偏低（貌似买它的人也不是奔着性能去的）&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;看网上多少 Vultr 的邀请链接你就懂了&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cn.aliyun.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;阿里云&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;优点：经济实惠，按量付费价格可以接受&lt;!-- raw HTML omitted --&gt;缺点：国内厂商，使用需要实名…&lt;!-- raw HTML omitted --&gt;（你为什么不用&lt;a class=&#34;link&#34; href=&#34;https://aliyun.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+          &lt;td style=&#34;text-align: center&#34;&gt;优点：经济实惠，按量付费价格可以接受&lt;br&gt;缺点：国内厂商，使用需要实名…&lt;br&gt;（你为什么不用&lt;a class=&#34;link&#34; href=&#34;https://aliyun.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;阿里云国际版&lt;/a&gt;呢）&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;曾经的良心云（&lt;/td&gt;
       &lt;/tr&gt;
@@ -59,24 +57,21 @@
           &lt;td style=&#34;text-align: center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;腾讯云&lt;/a&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;优点：经济实惠，按量付费价格可以接受，最近优惠力度蛮大，大有做一个「良心云」的态度。优惠券：&lt;a class=&#34;link&#34; href=&#34;https://curl.qcloud.com/SplOD4rQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;链接（含 AFF）&lt;/a&gt;。&lt;!-- raw HTML omitted --&gt;缺点：国内厂商，使用需要实名…&lt;/td&gt;
+    &gt;链接（含 AFF）&lt;/a&gt;。&lt;br&gt;缺点：国内厂商，使用需要实名…&lt;/td&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;是不是良心云还需要观察…&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;ssh-连接服务器家用设备请跳过&#34;&gt;SSH 连接服务器(家用设备请跳过)
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;SSH（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。SSH 通过在网络中创建安全隧道来实现 SSH 客户端与服务器之间的连接。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;通过 SSH 连接你的服务器需要你的服务器已启用 SSH 服务并放行 SSH 服务端口(默认为 22)。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;windowsmacoslinux-设备-ssh-连接服务器&#34;&gt;Windows/macOS/Linux 设备 SSH 连接服务器
 &lt;/h4&gt;&lt;p&gt;请根据你的系统类型打开终端 。Windows 为 cmd，同时按下 Win+R 后输入 cmd 并回车即可进入。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;请确保你系统已安装 OpenSSH。目前已知 Windows 已于 2018 年集成 OpenSSH，macOS 已集成 OpenSSH，部分 Linux 发行版未集成 OpenSSH。&lt;/p&gt;
-&lt;p&gt;对于未安装 OpenSSH 的系统，请手动安装 &lt;code&gt;openssh&lt;/code&gt; 软件包。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;对于未安装 OpenSSH 的系统，请手动安装 &lt;code&gt;openssh&lt;/code&gt; 软件包。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;在确认已安装 OpenSSH 后，输入如下命令连接你的服务器&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -138,8 +133,7 @@
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;下载之前，你首先要了解 Minecraft 客户端 &lt;a class=&#34;link&#34; href=&#34;https://minecraft-zh.gamepedia.com/Java%E7%89%88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Java 版&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://minecraft-zh.gamepedia.com/%E5%9F%BA%E5%B2%A9%E7%89%88&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;基岩版&lt;/a&gt;的区别。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;基岩版&lt;/a&gt;的区别。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;建议先建立一个专门的文件夹存放服务器数据。&lt;/strong&gt;
 示例命令如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -169,8 +163,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;注意，请务必将以上链接修改为&lt;strong&gt;你设备平台适用的服务端程序下载链接&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;注意，请务必将以上链接修改为&lt;strong&gt;你设备平台适用的服务端程序下载链接&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;运行服务器端&#34;&gt;运行服务器端
 &lt;/h3&gt;&lt;p&gt;确认文件已下载完成后，根据自己服务器端版本输入以下命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -203,8 +196,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;EULA 是 &lt;a class=&#34;link&#34; href=&#34;https://account.mojang.com/documents/minecraft_eula&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Minecraft 最终用户许可协议&lt;/a&gt;，修改为 true 即代表你同意许可协议。&lt;/p&gt;
-&lt;p&gt;你当然可以不同意，不过与之对应的是服务端程序无法运行。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;你当然可以不同意，不过与之对应的是服务端程序无法运行。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;输入如下命令再次启动服务器端&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -229,8 +221,7 @@
 &lt;/div&gt;&lt;p&gt;如需停止服务端，请直接输入&lt;code&gt;/stop&lt;/code&gt;或&lt;code&gt;Ctrl+C&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;官方服务器端配置中默认开启了正版验证，意在禁止盗版客户端连接服务器端，但是在实际操作中可能会出现正版用户也无法连接的情况。如果你在确认配置无误后不能连接服务器，请将 &lt;code&gt;server.properties&lt;/code&gt; 中的 &lt;code&gt;online=true&lt;/code&gt; 改为 &lt;code&gt;online=false&lt;/code&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果你使用的是诸如谷歌云、微软云、阿里云这样 NAT 服务器，你可能需要进行内网 IP 端口转发才能正常连接服务器。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果你使用的是诸如谷歌云、微软云、阿里云这样 NAT 服务器，你可能需要进行内网 IP 端口转发才能正常连接服务器。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;你可以点击这个&lt;a class=&#34;link&#34; href=&#34;https://minecraft-zh.gamepedia.com/Server.properties&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;以了解有关 &lt;code&gt;server.properties&lt;/code&gt; 的配置。&lt;/p&gt;
 &lt;p&gt;为服务器端会话稳定，建议安装 Screen 并在 Screen 会话中运行服务端程序，这是远优于 nohup 的后台运行解决方案。&lt;/p&gt;
@@ -288,17 +279,14 @@
 &lt;h2 id=&#34;android-搭建教程&#34;&gt;Android 搭建教程
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Android 搭建 Minecraft 服务器端的思路即&lt;strong&gt;先在 Android 上搭建 Linux 环境，然后再在 Linux 环境中运行服务端程序&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;因此，Android 搭建教程与 Linux 搭建教程高度相似。为避免重复，本节只叙述如何在 Android 上搭建一个基本可用 Linux 环境。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;因此，Android 搭建教程与 Linux 搭建教程高度相似。为避免重复，本节只叙述如何在 Android 上搭建一个基本可用 Linux 环境。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意，Android 端搭建 Linux 环境需要 Android 手机已获取 root 权限。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;注意，Android 端搭建 Linux 环境需要 Android 手机已获取 root 权限。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;配置-linux-deploy&#34;&gt;配置 Linux Deploy
 &lt;/h3&gt;&lt;p&gt;请从 Google Play Store 下载并安装 &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux Deploy&lt;/a&gt; 。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;你可以尝试在其他渠道下载 Linux Deploy，但请尽可能确保 Linux Deploy 版本为最新版且为官方正版。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;你可以尝试在其他渠道下载 Linux Deploy，但请尽可能确保 Linux Deploy 版本为最新版且为官方正版。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;安装后打开 Linux Deploy，点击右下角的配置按钮，根据你的实际需求修改你的配置信息。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -307,8 +295,7 @@
 &lt;li&gt;为避免异常，请将默认用户名「android」修改为 「root」。&lt;/li&gt;
 &lt;li&gt;请在「本地化」配置中修改配置为「zh_CN.UTF-8」。&lt;/li&gt;
 &lt;li&gt;请务必勾选 SSH 配置中的「启用 SSH 服务器」。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;在完成你的自定义配置后，点击右上角菜单后选择「安装」，如果出现 root 权限请求，请「允许」。&lt;/p&gt;
 &lt;p&gt;安装结束后，请先点击底部的「停止」停止容器，然后点击底部的「启动」启动容器。&lt;/p&gt;
 &lt;h3 id=&#34;连接-linux-deploy-容器&#34;&gt;连接 Linux Deploy 容器
@@ -355,12 +342,10 @@
 &lt;/h3&gt;&lt;p&gt;请参照 &lt;a class=&#34;link&#34; href=&#34;https:///blog.linioi.com/posts/minecraft-build/#linux-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux 搭建教程&lt;/a&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;鉴于手机 CPU 架构及性能，建议不要尝试在手机上搭建 Java 服务器&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;鉴于手机 CPU 架构及性能，建议不要尝试在手机上搭建 Java 服务器&amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;官方基岩版服务端程序可能无法在 Linux Deploy 容器中运行，建议改用第三方服务端程序，如 &lt;a class=&#34;link&#34; href=&#34;https://github.com/CloudburstMC/Nukkit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Nukkit&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Nukkit&lt;/a&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;连接服务器端&#34;&gt;连接服务器端
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
@@ -368,8 +353,7 @@
 &lt;li&gt;如果你是在家用设备上搭建 Minecraft 服务器（即无公网 IP），则其他玩家无法在非同一区域网下连接你的 Minecraft 服务器。你可以通过 &lt;a class=&#34;link&#34; href=&#34;https://zh.m.wikipedia.org/zh-hans/NAT%E7%A9%BF%E9%80%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;内网穿透&lt;/a&gt; 以实现公网环境连接内网设备。&lt;strong&gt;请注意相关安全防护以避免因内网穿透造成内网环境被攻击&lt;/strong&gt;。&lt;strong&gt;Minecraft 基岩版内网穿透协议为 UDP 且需要本地端口与远程端口一致才可以正常连接&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;公网设备请注意保护 IP 地址，毕竟某些&lt;strong&gt;闲人&lt;/strong&gt;还是很多的。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果是区域网内搭建的服务端，则在 IP 地址中填入服务端「区域网 IP 地址」，公网设备与内网穿透设备填写设备的公网 IP。端口填你在服务端配置文件中设置的端口（Java 版默认 25565，基岩版默认 19132）。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;请注意检查你服务器防火墙设置中是否放行相应端口，未放行相应端口则客户端无法连接服务器端。&lt;/p&gt;
@@ -380,8 +364,7 @@
 &lt;li&gt;来源过滤条件：IP 地址范围&lt;/li&gt;
 &lt;li&gt;来源 IP 地址范围：&lt;code&gt;0.0.0.0/0&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;协议或端口：Java 版选择 TCP，基岩版选择 UDP，然后在提供的字段中输入你配置文件中的端口号，Java 版默认 25565，基岩版默认 19132。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;end&#34;&gt;End
 &lt;/h2&gt;&lt;p&gt;如果一切正常的话，你已经成功搭建并和你的小伙伴们一起进入游戏了，想不出什么话总结，只能祝你们玩得开心了😂。&lt;/p&gt;
 </description>

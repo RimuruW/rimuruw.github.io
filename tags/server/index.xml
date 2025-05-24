@@ -15,9 +15,8 @@
         <description>&lt;blockquote&gt;
 &lt;p&gt;没有其他发行版的一键脚本/运维面板
 Arch Linux 用它的方式体现着它的超凡脱俗
-&lt;del&gt;其实就是用的人太少，没人写脚本&lt;/del&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;del&gt;其实就是用的人太少，没人写脚本&lt;/del&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- less --&gt;
 &lt;h2 id=&#34;对-arch-linux-进行一次全面更新&#34;&gt;对 Arch Linux 进行一次全面更新
 &lt;/h2&gt;&lt;p&gt;&lt;del&gt;话说，这不是每天开机第一件事吗&lt;/del&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

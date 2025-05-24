@@ -13,9 +13,8 @@
         
         <guid>https://blog.linioi.com/posts/12/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Redmi Note 7 Pro 第一个非 Port Android 11，再怎么垃圾也不得不忍啊…&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- less --&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;&lt;del&gt;待会再补上&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;刷入步骤&#34;&gt;刷入步骤
@@ -23,8 +22,7 @@
 &lt;p&gt;注意：以下为 hentaiOS 作者 Dyneteve 给出的&lt;a class=&#34;link&#34; href=&#34;https://t.me/hentaiOSViolet/238933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方刷入步骤&lt;/a&gt;。其他刷机方法待更新。&lt;/p&gt;
 &lt;p&gt;如果你无法理解本文的某些内容，你可以参照&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/10/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;这篇教程&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;这篇教程&lt;/a&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;你需要准备什么&#34;&gt;你需要准备什么？
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一台电脑 (Windows 和 Linux 皆可)&lt;/li&gt;
@@ -42,8 +40,7 @@
 &lt;p&gt;hentaiOS 刷机包：&lt;a class=&#34;link&#34; href=&#34;https://one.linioi.com/onedrive/%E5%88%B7%E6%9C%BA%E8%B5%84%E6%BA%90/Redmi%20Note%207%20Pro%20%28Violet%29/ROM/Hentai%20OS/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;AOSP Recovery：&lt;a class=&#34;link&#34; href=&#34;https://one.linioi.com/onedrive/%E5%88%B7%E6%9C%BA%E8%B5%84%E6%BA%90/Redmi%20Note%207%20Pro%20%28Violet%29/Recovery/AOSP%20Recovery%20ROM%20Flasher%20V4.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Link&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Link&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;那么让我们开始&#34;&gt;那么，让我们开始…
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;备份你的数据，准备好相应的救砖工具以备不时之需。&lt;/li&gt;
@@ -111,21 +108,18 @@
         
         <guid>https://blog.linioi.com/posts/10/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;PE 即 Pixel Experience。Violet 为 Redmi Note 7 Pro 的机型代号，同时，该机型也是 PE 现维护机型之一。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- less --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注意：由于 Violet 机型 PE/Plus 已更换维护者，本教程刷入方法已作废，现 PE/Plus 刷入方法请参照 &lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/11/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Violet 通用刷机教程&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Violet 通用刷机教程&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;PE/Plus 刷入教程又更新了！！&lt;/strong&gt;
 原先的&lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/15857831?shareKey=OTdjZWMwNTk2N2E3NWU5M2M5ZmU~&amp;amp;shareUid=2815584&amp;amp;shareFrom=com.coolapk.market_10.0.4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;刷入教程&lt;/a&gt;因为 Dyneteve 一番操作，目前已经完全没有作用……&lt;/p&gt;
 &lt;p&gt;之所以写这篇教程，是因为我发现 PE/Plus 这么优秀的 ROM 推出后竟鲜见人上车…故此，我决定再写一篇刷入教程，&lt;del&gt;拖你们下水&lt;/del&gt;  带你们上车&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;对于有一定英语水平的用户，直接看 Dyneteve 的 &lt;a class=&#34;link&#34; href=&#34;https://telegra.ph/FlashingUpdating-PE-to-the-latest-version-using-AOSP-Recovery-v3-04-10-2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Flash Guide&lt;/a&gt; 即可。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Flash Guide&lt;/a&gt; 即可。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;刷前需知&#34;&gt;刷前需知
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;刷入 ROM 前，请确保你的设备已解锁 Bootloader。&lt;/li&gt;
@@ -134,12 +128,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;本文会提供两种刷入方式，请根据自己需求选择。
 阅读本教程建议搭配这篇&lt;a class=&#34;link&#34; href=&#34;https://riwihow.github.io/2020/04/03/How-to-flash-on-violet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;教程&lt;/a&gt;，食用效果更佳&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;教程&lt;/a&gt;，食用效果更佳&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;方法一&#34;&gt;方法一：
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;如果你电脑是 Linux 发行版，请忽略此方法。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果你电脑是 Linux 发行版，请忽略此方法。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;下载 &lt;a class=&#34;link&#34; href=&#34;https://t.me/pixelexperienceviolet/197641&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AOSP Recovery Flasher v4&lt;/a&gt; 和 &lt;a class=&#34;link&#34; href=&#34;https://download.pixelexperience.org/changelog/violet/PixelExperience_Plus_violet-10.0-20200410-1304-OFFICIAL.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -339,8 +331,7 @@
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;据反馈，使用 TWRP 刷入可能出现不开机情况。
-建议使用 OrangeFox 刷入。&lt;/p&gt;
-&lt;/blockquote&gt;
+建议使用 OrangeFox 刷入。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;手机长按音量+和电源键进入第三方 Recovery。&lt;/p&gt;
@@ -466,18 +457,16 @@
         
         <guid>https://blog.linioi.com/posts/11/</guid>
         <description>&lt;p&gt;拿到手机后干什么？刷机！&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;!-- less --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
 &lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
-&lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果你的设备出现损坏，我不会对你的设备负责！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;刷机前请先看看最下面的乱七八糟的问题（&lt;/p&gt;
 &lt;p&gt;由于 Dyneteve 的骚操作，本篇文章不针对 PE 进行说明。如果你是为了刷入 PE ，请点击此&lt;a class=&#34;link&#34; href=&#34;https://blog.linioi.com/posts/10/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;来刷入。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 &lt;code&gt;violet&lt;/code&gt; 。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Redmi Note 7 Pro，是 Redmi 于 2019-3-18 发布的手机。机型代号为 &lt;code&gt;violet&lt;/code&gt; 。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;一得到这部手机&#34;&gt;一、得到这部手机
 &lt;/h2&gt;&lt;p&gt;小米商城已经没有了，去其它地方看看吧（&lt;/p&gt;
 &lt;h2 id=&#34;二解锁-bootloader&#34;&gt;二、解锁 Bootloader
@@ -489,8 +478,7 @@
 &lt;p&gt;Android Debug Bridge&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作（例如安装和调试应用），并提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。来自 &lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/command-line/adb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Google 官方页面&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Google 官方页面&lt;/a&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;具体下载和配置可参考少数派的&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/40471&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这篇&lt;/a&gt;文章。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果你使用一键刷入之类的应用，则不需要此操作。&lt;/p&gt;
@@ -557,8 +545,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;如果出现 &lt;code&gt;&#39;fastboot&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。&lt;/code&gt; 说明你没有配置好 ADB 环境。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果出现 &lt;code&gt;&#39;fastboot&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。&lt;/code&gt; 说明你没有配置好 ADB 环境。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;在上一步的状态下，&lt;strong&gt;长按 音量加键 + 电源键&lt;/strong&gt; 进入 &lt;code&gt;Recovery&lt;/code&gt; 模式。（当然你也可以使用 &lt;code&gt;fastboot reboot recovery&lt;/code&gt; 来进入 &lt;code&gt;Recovery&lt;/code&gt; 模式，但是我没成功过（&lt;/p&gt;

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n">
 <title>Arch Linux Clash 安装配置记录</title>
 
 <link rel='canonical' href='https://blog.linioi.com/posts/clash-on-arch/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Arch Linux Clash 安装配置记录">
-<meta property='og:description' content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。\n">
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Arch Linux Clash 安装配置记录">
+<meta property='og:description' content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n">
 <meta property='og:url' content='https://blog.linioi.com/posts/clash-on-arch/'>
 <meta property='og:site_name' content='清絮的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Arch Linux' /><meta property='article:tag' content='Clash' /><meta property='article:tag' content='Linux' /><meta property='article:published_time' content='2021-08-17T23:32:39&#43;08:00'/><meta property='article:modified_time' content='2021-08-17T23:32:39&#43;08:00'/><meta property='og:image' content='https://blog.linioi.com/posts/clash-on-arch/clash.png' />
 <meta name="twitter:site" content="@Hikolary">
     <meta name="twitter:creator" content="@Hikolary"><meta name="twitter:title" content="Arch Linux Clash 安装配置记录">
-<meta name="twitter:description" content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="前言 在此之前，我使用的代理解决方案是 Qv2ray + cgproxy 透明代理。\nQv2ray 是 Linux 下久负盛名的 GUI 代理程序，在 Linux 用户群中有极高的热度。截止目前（2021 年 8 月 17 日），Qv2ray 的 GitHub Star 为 11.9k。\n但是自 4 月 30 日 Qv2ray 开发组及 V2Fly 项目相关成员发生内部冲突以来，Qv2ray 的开发基本停滞。如果说此前还可以用 qv2ray-git (3.0.0) 自欺欺人的话，那么现在 Qv2ray README 的声明则是对这场闹剧的终结。\nQv2ray: 2019-03-28 - 2021-08-17\n自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 v2.7.0。\n感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者\n致敬\ngcc 写于 8 月 17 日\n作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.linioi.com/posts/clash-on-arch/clash.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
  
@@ -61,7 +61,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu17122468056926286060.jpg" width="300"
+                        <img src="/img/avatar_hu_a72892fbb85e8724.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -272,8 +272,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/posts/clash-on-arch/">
-                <img src="/posts/clash-on-arch/clash_hu17247283030030083815.png"
-                        srcset="/posts/clash-on-arch/clash_hu17247283030030083815.png 800w, /posts/clash-on-arch/clash_hu16562357285661054681.png 1600w"
+                <img src="/posts/clash-on-arch/clash_hu_ed8ef6e8b316226f.png"
+                        srcset="/posts/clash-on-arch/clash_hu_ed8ef6e8b316226f.png 800w, /posts/clash-on-arch/clash_hu_1340e1941c39d874.png 1600w"
                         width="800" 
                         height="450" 
                         loading="lazy"
@@ -360,14 +360,12 @@
     >README</a> 的声明则是对这场闹剧的终结。</p>
 <blockquote>
 <blockquote>
-<p>Qv2ray: <em>2019-03-28 - 2021-08-17</em></p>
-</blockquote>
+<p>Qv2ray: <em>2019-03-28 - 2021-08-17</em></p></blockquote>
 <p>自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 <a class="link" href="https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0"  target="_blank" rel="noopener"
     >v2.7.0</a>。</p>
 <p>感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者</p>
 <p>致敬</p>
-<p>gcc 写于 8 月 17 日</p>
-</blockquote>
+<p>gcc 写于 8 月 17 日</p></blockquote>
 <p>作为一个见证了闹剧的开始与落幕的观众，我内心的失望是不言而喻的。如果之前对开源社区还抱有极高的崇敬与憧憬的话，现在算是认清了“开发者也是通俗意义上的人”的事实。Qv2ray 事件也好，RMS 事件也罢，由人组成的团体可以如此相似和单调枯燥。</p>
 <p>属于 Qv2ray 的时代已经谢幕。可预见的是，如果 Linux 开源社区仍然像这样一滩死水的话，Linux 也到了淡出舞台的时候了，它过去所让人热爱和追捧的一切会是最后击垮它的落石。</p>
 <h2 id="安装-clash">安装 Clash
@@ -450,7 +448,7 @@
 <p><img src="/posts/clash-on-arch/image-20210818012020999.png"
 	width="2052"
 	height="1456"
-	srcset="/posts/clash-on-arch/image-20210818012020999_hu3865299393144146600.png 480w, /posts/clash-on-arch/image-20210818012020999_hu8750526546762586813.png 1024w"
+	srcset="/posts/clash-on-arch/image-20210818012020999_hu_9c55013dfb0256fc.png 480w, /posts/clash-on-arch/image-20210818012020999_hu_cb4bee6e254fd6f6.png 1024w"
 	loading="lazy"
 	
 		alt="网络代理"
@@ -465,7 +463,7 @@
 <p><img src="/posts/clash-on-arch/image-20210818012226124.png"
 	width="970"
 	height="860"
-	srcset="/posts/clash-on-arch/image-20210818012226124_hu10760433836594045509.png 480w, /posts/clash-on-arch/image-20210818012226124_hu14728277693818334004.png 1024w"
+	srcset="/posts/clash-on-arch/image-20210818012226124_hu_cf31003e17caae2b.png 480w, /posts/clash-on-arch/image-20210818012226124_hu_a830c9e7f734693b.png 1024w"
 	loading="lazy"
 	
 		alt="网络代理"
@@ -1092,7 +1090,7 @@
 <p><img src="/posts/clash-on-arch/image-20210818024446945.png"
 	width="1400"
 	height="1044"
-	srcset="/posts/clash-on-arch/image-20210818024446945_hu9184890319638956520.png 480w, /posts/clash-on-arch/image-20210818024446945_hu6896752068641693268.png 1024w"
+	srcset="/posts/clash-on-arch/image-20210818024446945_hu_cd70a862934e7fd.png 480w, /posts/clash-on-arch/image-20210818024446945_hu_2832f7abfb97d8d4.png 1024w"
 	loading="lazy"
 	
 		alt="yarn start"
@@ -1109,7 +1107,7 @@
 <p><img src="/posts/clash-on-arch/image-20210818025247047.png"
 	width="2564"
 	height="1536"
-	srcset="/posts/clash-on-arch/image-20210818025247047_hu9025717971762774464.png 480w, /posts/clash-on-arch/image-20210818025247047_hu1468116074052733575.png 1024w"
+	srcset="/posts/clash-on-arch/image-20210818025247047_hu_1a4777bb96e1c4c.png 480w, /posts/clash-on-arch/image-20210818025247047_hu_46b1bf3659dd30a3.png 1024w"
 	loading="lazy"
 	
 		alt="clash-dashboard"
@@ -1277,12 +1275,12 @@
         
             2020 - 
         
-        2024 清絮的博客
+        2025 清絮的博客
     </section>
     
     <section class="powerby">
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -1371,7 +1369,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
